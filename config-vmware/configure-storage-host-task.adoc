@@ -1,0 +1,20 @@
+---
+permalink: config-vmware/configure-storage-host-task.html 
+sidebar: sidebar 
+keywords: configure storage ESXi, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 您可以将分配给 ESXi 主机的存储用作虚拟机文件系统（ VMFS\ ）数据存储库或原始设备映射（ RDM ）。基于光纤通道的 NVMe 协议不支持 RDM 。 
+---
+= 在主机上配置存储
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以将分配给 ESXi 主机的存储用作虚拟机文件系统（ Virtual Machine File System ， VMFS ）数据存储库或原始设备映射（ Raw Device Mapping ， RDM ）。基于光纤通道的 NVMe 协议不支持 RDM 。
+
+ESXi 的所有 6._x_ 和 7_x_ 版本均支持 VMFS 版本 5 和 6 。
+
+.步骤
+. 确保已正确发现映射到 ESXi 主机的卷。
+. 有关在 vSphere Client 或 vSphere Web Client 中创建 VMFS 数据存储库或使用卷作为 RDM 的说明，请参见 https://www.vmware.com/support/pubs/["VMware 文档网站"^]。
+

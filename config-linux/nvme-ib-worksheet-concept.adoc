@@ -1,0 +1,236 @@
+---
+permalink: config-linux/nvme-ib-worksheet-concept.html 
+sidebar: sidebar 
+keywords: NVMe over Infiniband worksheet Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 使用此工作表记录基于 Infiniband 的 NVMe 存储配置信息。 
+---
+= 记录您的基于 IB 的 NVMe 配置
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以生成并打印此页面的 PDF ，然后使用以下工作表记录基于 InfiniBand 的 NVMe 存储配置信息。要执行配置任务，您需要此信息。
+
+
+
+== 主机标识符
+
+
+NOTE: 软件启动程序 NQN 在任务期间确定。
+
+找到并记录每个主机上的启动程序 NQN 。NQN 通常位于 /etc/nve/hostnqn 文件中。
+
+|===
+| 标注编号 | 主机端口连接 | 主机 NQN 
+
+
+ a| 
+1.
+ a| 
+主机（启动程序） 1.
+ a| 
+
+
+
+ a| 
+不适用
+ a| 
+ a| 
+
+
+
+ a| 
+不适用
+ a| 
+ a| 
+
+
+
+ a| 
+不适用
+ a| 
+ a| 
+
+
+
+ a| 
+不适用
+ a| 
+ a| 
+
+|===
+
+
+== 建议的配置
+
+在直连拓扑中，一个或多个主机直接连接到子系统。在 SANtricity OS 11.50 版本中，我们支持从每个主机到子系统控制器的单个连接，如下所示。在此配置中，每个主机的一个 HCA （主机通道适配器）端口应与所连接的 E 系列控制器端口位于同一子网中，但与另一个 HCA 端口位于不同的子网中。
+
+image::../media/nvmeof_direct_connect.gif[nvmeof 直接连接]
+
+
+
+== 目标 NQN
+
+记录存储阵列的目标 NQN 。您将在中使用此信息 xref:nvme-ib-configure-storage-connections-task.adoc[配置存储阵列基于 InfiniBand 的 NVMe 连接]。
+
+使用 SANtricity 查找存储阵列 NQN 名称： * 存储阵列 * > * 基于 Infiniband 的 NVMe * > * 管理设置 * 。如果您从不支持发送目标发现的操作系统创建基于 InfiniBand 的 NVMe 会话，则可能需要此信息。
+
+|===
+| 标注编号 | 阵列名称 | 目标 IQN 
+
+
+ a| 
+6.
+ a| 
+阵列控制器（目标）
+ a| 
+
+|===
+
+
+== 网络配置：
+
+记录将用于 InfiniBand 网络结构上的主机和存储的网络配置。这些说明假定将使用两个子网实现完全冗余。
+
+网络管理员可以提供以下信息。您可以在主题中使用此信息， xref:nvme-ib-configure-storage-connections-task.adoc[配置存储阵列基于 InfiniBand 的 NVMe 连接]。
+
+
+
+=== 子网 A
+
+定义要使用的子网。
+
+|===
+| 网络地址 | 网络掩码 
+
+
+ a| 
+ a| 
+
+|===
+记录阵列端口和每个主机端口要使用的 NQN 。
+
+|===
+| 标注编号 | 阵列控制器（目标）端口连接 | NQN 
+
+
+ a| 
+3.
+ a| 
+交换机
+ a| 
+_ 不适用 _
+
+
+
+ a| 
+5.
+ a| 
+控制器 A ，端口 1
+ a| 
+
+
+
+ a| 
+4.
+ a| 
+控制器 B ，端口 1
+ a| 
+
+
+
+ a| 
+2.
+ a| 
+主机 1 ，端口 1
+ a| 
+
+
+
+ a| 
+ a| 
+（可选）主机 2 ，端口 1
+ a| 
+
+|===
+
+
+=== 子网 B
+
+定义要使用的子网。
+
+|===
+| 网络地址 | 网络掩码 
+
+
+ a| 
+ a| 
+
+|===
+记录阵列端口和每个主机端口要使用的 IQN 。
+
+|===
+| 标注编号 | 阵列控制器（目标）端口连接 | NQN 
+
+
+ a| 
+8.
+ a| 
+交换机
+ a| 
+_ 不适用 _
+
+
+
+ a| 
+10
+ a| 
+控制器 A ，端口 2
+ a| 
+
+
+
+ a| 
+9
+ a| 
+控制器 B ，端口 2
+ a| 
+
+
+
+ a| 
+7.
+ a| 
+主机 1 ，端口 2
+ a| 
+
+
+
+ a| 
+ a| 
+（可选）主机 2 ，端口 2
+ a| 
+
+|===
+
+
+== 正在映射主机名
+
+
+NOTE: 映射主机名会在工作流期间创建。
+
+|===
+
+
+ a| 
+正在映射主机名
+ a| 
+
+
+
+ a| 
+主机操作系统类型
+ a| 
+
+|===

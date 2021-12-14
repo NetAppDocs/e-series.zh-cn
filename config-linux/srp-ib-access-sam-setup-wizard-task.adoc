@@ -1,0 +1,94 @@
+---
+permalink: config-linux/srp-ib-access-sam-setup-wizard-task.html 
+sidebar: sidebar 
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 您可以使用 SANtricity 系统管理器中的设置向导配置存储阵列。 
+---
+= 访问 SANtricity 系统管理器并使用设置向导
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+要配置存储阵列，您可以使用 SANtricity 系统管理器中的设置向导。
+
+SANtricity System Manager 是一个基于 Web 的界面，嵌入在每个控制器上。要访问用户界面，请将浏览器指向控制器的 IP 地址。设置向导可帮助您开始进行系统配置。
+
+.您需要什么？ #8217 ；将需要什么
+* 带外管理。
+* 用于访问 SANtricity 系统管理器的管理工作站，其中包括以下浏览器之一：
++
+|===
+| 浏览器 | 最低版本 
+
+
+ a| 
+Google Chrome
+ a| 
+79.
+
+
+
+ a| 
+Microsoft Internet Explorer
+ a| 
+11.
+
+
+
+ a| 
+Microsoft Edge
+ a| 
+79.
+
+
+
+ a| 
+Mozilla Firefox
+ a| 
+70
+
+
+
+ a| 
+Safari
+ a| 
+12
+
+|===
+
+
+在打开 System Manager 或刷新浏览器且至少满足以下条件之一时，向导将自动重新启动：
+
+* 未检测到池和卷组。
+* 未检测到工作负载。
+* 未配置任何通知。
+
+
+.步骤
+. 在浏览器中，输入以下 URL ： ` +https://<DomainNameOrIPAddress>+`
++
+`IPAddress` 是一个存储阵列控制器的地址。
+
++
+首次在尚未配置的阵列上打开 SANtricity 系统管理器时，将显示设置管理员密码提示符。基于角色的访问管理可配置四个本地角色：管理员，支持，安全性和监控。后三个角色具有无法猜测的随机密码。为管理员角色设置密码后，您可以使用管理员凭据更改所有密码。有关四个本地用户角色的详细信息，请参见 SANtricity System Manager 用户界面中提供的联机帮助。
+
+. 在设置管理员密码和确认密码字段中输入管理员角色的 System Manager 密码，然后单击 * 设置密码 * 。
++
+如果未配置池，卷组，工作负载或通知，则设置向导将启动。
+
+. 使用设置向导执行以下任务：
++
+** * 验证硬件（控制器和驱动器） * —验证存储阵列中的控制器和驱动器数量。为阵列分配一个名称。
+** * 验证主机和操作系统 * - 验证存储阵列可以访问的主机和操作系统类型。
+** * 接受池 * - 接受快速安装方法建议的池配置。池是一组逻辑驱动器。
+** * 配置警报 * - 允许 System Manager 在存储阵列出现问题时自动接收通知。
+** * 启用 AutoSupport * - 自动监控存储阵列的运行状况，并将派单发送给技术支持。
+
+
+. 如果尚未创建卷，请转到菜单： Storage[ 卷 > 创建 > 卷 ] 创建一个卷。
++
+有关详细信息，请参见 SANtricity System Manager 的联机帮助。
+
+

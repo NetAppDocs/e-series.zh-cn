@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: san-spvc-ic-login-and-navigation.html 
+keywords: log in vCenter plugin, login Plugin for vCenter, browsers vCenter plugin user interface, vCenter GUI, 
+summary: 登录并导航适用于 vCenter 的插件。 
+---
+= 登录并导航适用于 vCenter 的存储插件
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以登录到适用于 vCenter 的存储插件以导航用户界面。
+
+. 登录到插件之前，请确保使用的是以下浏览器之一：
++
+** Google Chrome 79 或更高版本
+** Mozilla Firefox 70 或更高版本
+** Microsoft Edge 79 或更高版本
+
+
+. 使用对插件具有读 / 写权限的用户帐户登录到 vSphere Client 。
+. 在 vSphere Client 主页页面中，单击 * 适用于 vCenter 的 SANtricity 存储插件 * 。
++
+此插件将在 vSphere Client 窗口中打开。此时，插件的主页将打开至 * 管理 - 全部 * 。
+
+. 从左侧导航边栏访问存储管理任务：
++
+** * 管理 * —发现网络中的存储阵列，打开阵列的 System Manager ，将设置从一个阵列导入到多个阵列，管理阵列组，升级操作系统软件以及配置存储。
+** * 证书管理 * —管理用于在浏览器和客户端之间进行身份验证的证书。
+** * 操作 * —查看批处理操作的进度，例如将设置从一个阵列导入到另一个阵列。
+** * 支持 * —查看技术支持选项，资源和联系人。
+
+
+

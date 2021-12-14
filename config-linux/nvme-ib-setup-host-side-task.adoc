@@ -1,0 +1,215 @@
+---
+permalink: config-linux/nvme-ib-setup-host-side-task.html 
+sidebar: sidebar 
+keywords: configure Linux host, express linux configuration, linux host, 
+summary: 在 InfiniBand 环境中配置 NVMe 启动程序包括安装和配置 InfiniBand ， NVMe-CLI 和 RDMA 软件包，配置启动程序 IP 地址以及在主机上设置 NVMe-oF 层。 
+---
+= 在主机端设置基于 InfiniBand 的 NVMe
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在 InfiniBand 环境中配置 NVMe 启动程序包括安装和配置 InfiniBand ， NVMe-CLI 和 RDMA 软件包，配置启动程序 IP 地址以及在主机上设置 NVMe-oF 层。
+
+您必须运行最新兼容的 RHEL 7 ， RHEL 8 ， SUSE Linux Enterprise Server 12 或 15 Service Pack 操作系统。请参见 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^] 有关最新要求的完整列表。
+
+.步骤
+. 安装 RDMA ， NVMe-CLI 和 InfiniBand 软件包：
++
+* SLES 12 或 SLES 15*
+
++
+[listing]
+----
+
+# zypper install infiniband-diags
+# zypper install rdma-core
+# zypper install nvme-cli
+----
++
+* RHEL 7 或 RHEL 8*
+
++
+[listing]
+----
+
+# yum install infiniband-diags
+# yum install rdma-core
+# yum install nvme-cli
+----
+. 启用 `IPoIB` 。编辑 /etc/rdma/Rdma.conf 文件并修改用于加载的条目 `ipoIB` ：
++
+[listing]
+----
+IPOIB_LOAD=yes
+----
+. 检查两个 IB 端口链路是否均已启动且状态 = 活动：
++
+[listing]
+----
+ # ibstat
+----
++
+[listing]
+----
+CA 'mlx4_0'
+        CA type: MT4099
+        Number of ports: 2
+        Firmware version: 2.40.7000
+        Hardware version: 1
+        Node GUID: 0x0002c90300317850
+        System image GUID: 0x0002c90300317853
+        Port 1:
+                State: Active
+                Physical state: LinkUp
+                Rate: 40
+                Base lid: 4
+                LMC: 0
+                SM lid: 4
+                Capability mask: 0x0259486a
+                Port GUID: 0x0002c90300317851
+                Link layer: InfiniBand
+        Port 2:
+                State: Active
+                Physical state: LinkUp
+                Rate: 56
+                Base lid: 5
+                LMC: 0
+                SM lid: 4
+                Capability mask: 0x0259486a
+                Port GUID: 0x0002c90300317852
+                Link layer: InfiniBand
+----
+. 在 IB 端口上设置 IPv4 IP 地址。
++
+* SLES 12 或 SLES 15*
+
++
+使用以下内容创建文件 /etc/sysconfig/network/ifcfg-ib0 。
+
++
+[listing]
+----
+
+  BOOTPROTO='static'
+  BROADCAST=
+  ETHTOOL_OPTIONS=
+  IPADDR='10.10.10.100/24'
+  IPOIB_MODE='connected'
+  MTU='65520'
+  NAME=
+  NETWORK=
+  REMOTE_IPADDR=
+  STARTMODE='auto'
+----
++
+然后，创建文件 /etc/sysconfig/network/ifcfg-ib1 。
+
++
+[listing]
+----
+
+  BOOTPROTO='static'
+  BROADCAST=
+  ETHTOOL_OPTIONS=
+  IPADDR='11.11.11.100/24'
+  IPOIB_MODE='connected'
+  MTU='65520'
+  NAME=
+  NETWORK=
+  REMOTE_IPADDR=
+  STARTMODE='auto'
+----
++
+* RHEL 7 或 RHEL 8*
+
++
+使用以下内容创建文件 /etc/sysconfig/network-scripts/ifcfg-ib0 。
+
++
+[listing]
+----
+
+  CONNECTED_MODE=no
+  TYPE=InfiniBand
+  PROXY_METHOD=none
+  BROWSER_ONLY=no
+  BOOTPROTO=static
+  IPADDR='10.10.10.100/24'
+  DEFROUTE=no
+  IPV4=FAILURE_FATAL=yes
+  IPV6INIT=no
+  NAME=ib0
+  ONBOOT=yes
+----
++
+然后，创建文件 /etc/sysconfig/network-scripts/ifcfg-ib1 ：
+
++
+[listing]
+----
+
+  CONNECTED_MODE=no
+  TYPE=InfiniBand
+  PROXY_METHOD=none
+  BROWSER_ONLY=no
+  BOOTPROTO=static
+  IPADDR='11.11.11.100/24'
+  DEFROUTE=no
+  IPV4=FAILURE_FATAL=yes
+  IPV6INIT=no
+  NAME=ib1
+  ONBOOT=yes
+----
+. 启用 `IB` 接口：
++
+[listing]
+----
+
+# ifup ib0
+# ifup ib1
+----
+. 验证要用于连接到阵列的 IP 地址。对 `ib0` 和 `ib1` 运行以下命令：
++
+[listing]
+----
+
+# ip addr show ib0
+# ip addr show ib1
+----
++
+如以下示例所示， `ib0` 的 IP 地址为 `10.10.10.255` 。
+
++
+[listing]
+----
+10: ib0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 65520 qdisc pfifo_fast state UP group default qlen 256
+    link/infiniband 80:00:02:08:fe:80:00:00:00:00:00:00:00:02:c9:03:00:31:78:51 brd 00:ff:ff:ff:ff:12:40:1b:ff:ff:00:00:00:00:00:00:ff:ff:ff:ff
+    inet 10.10.10.255 brd 10.10.10.255 scope global ib0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::202:c903:31:7851/64 scope link
+       valid_lft forever preferred_lft forever
+----
++
+如以下示例所示， `ib1` 的 IP 地址为 `11.11.11.255` 。
+
++
+[listing]
+----
+10: ib1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 65520 qdisc pfifo_fast state UP group default qlen 256
+    link/infiniband 80:00:02:08:fe:80:00:00:00:00:00:00:00:02:c9:03:00:31:78:51 brd 00:ff:ff:ff:ff:12:40:1b:ff:ff:00:00:00:00:00:00:ff:ff:ff:ff
+    inet 11.11.11.255 brd 11.11.11.255 scope global ib0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::202:c903:31:7851/64 scope link
+       valid_lft forever preferred_lft forever
+----
+. 在主机上设置 NVMe-oF 层。在 /etc/moduls-load.d/ 下创建以下文件，以加载 `NVMe-RDMA` 内核模块，并确保内核模块始终处于打开状态，即使重新启动后也是如此：
++
+[listing]
+----
+
+# cat /etc/modules-load.d/nvme-rdma.conf
+  nvme-rdma
+----
+

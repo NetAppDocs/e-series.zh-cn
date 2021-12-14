@@ -1,0 +1,179 @@
+---
+permalink: config-vmware/fc-perform-specific-task.html 
+sidebar: sidebar 
+keywords: Fibre Channel protocol, switches, zone switches, zoning, host port identifiers, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 对于光纤通道协议，您可以配置交换机并确定主机端口标识符。 
+---
+= 执行特定于 FC 的任务
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+对于光纤通道协议，您可以配置交换机并确定主机端口标识符。
+
+
+
+== 第 1 步：配置 FC 交换机— ​VMware
+
+通过配置（分区）光纤通道（ FC ）交换机，主机可以连接到存储阵列并限制路径数。您可以使用交换机的管理界面对交换机进行分区。
+
+.您需要什么？ #8217 ；将需要什么
+* 交换机的管理员凭据。
+* 每个主机启动程序端口以及连接到交换机的每个控制器目标端口的 WWPN 。（使用 HBA 实用程序进行发现。）
+
+
+
+NOTE: 供应商的 HBA 实用程序可用于升级和获取有关 HBA 的特定信息。有关如何获取 HBA 实用程序的说明，请参见供应商网站的支持部分。
+
+每个启动程序端口都必须位于一个单独的分区中，并具有所有相应的目标端口。有关对交换机进行分区的详细信息，请参见交换机供应商的文档。
+
+.步骤
+. 登录到 FC 交换机管理程序，然后选择分区配置选项。
+. 创建一个新分区，其中包含第一个主机启动程序端口，也包括与启动程序连接到同一 FC 交换机的所有目标端口。
+. 为交换机中的每个 FC 主机启动程序端口创建其他分区。
+. 保存分区，然后激活新的分区配置。
+
+
+
+
+== 第 2 步：确定主机端口 WWPN — ​FC
+
+要配置 FC 分区，必须确定每个启动程序端口的全球通用端口名称（ WWPN ）。
+
+.步骤
+. 使用 SSH 或 ESXi Shell 连接到 ESXi 主机。
+. 运行以下命令：
++
+[listing]
+----
+esxcfg-scsidevs –a
+----
+. 记录启动程序标识符。输出将类似于以下示例：
++
+[listing]
+----
+vmhba3 lpfc link-up  fc.20000090fa05e848:10000090fa05e848 (0000:03:00.0)
+Emulex Corporation Emulex LPe16000 16Gb PCIe Fibre Channel Adapter
+vmhba4 lpfc link-up  fc.20000090fa05e849:10000090fa05e849 (0000:03:00.1)
+Emulex Corporation Emulex LPe16000 16Gb PCIe Fibre Channel Adapter
+----
+
+
+
+
+== 第 3 步：记录您的配置
+
+您可以生成并打印此页面的 PDF ，然后使用以下工作表记录 FC 存储配置信息。要执行配置任务，您需要此信息。
+
+图中显示了在两个分区中连接到 E 系列存储阵列的主机。一个分区用蓝线表示，另一个分区用红线表示。每个分区包含一个启动程序端口和所有目标端口。
+
+image::../media/port_identifiers_host_and_target_conf-vmw.gif[端口标识符主机和目标配置 VMW]
+
+
+
+=== 主机标识符
+
+|===
+| 标注编号 | 主机（启动程序）端口连接 | WWPN 
+
+
+ a| 
+1.
+ a| 
+主机
+ a| 
+_ 不适用 _
+
+
+
+ a| 
+2.
+ a| 
+主机端口 0 到 FC 交换机分区 0
+ a| 
+
+
+
+ a| 
+7.
+ a| 
+主机端口 1 到 FC 交换机分区 1
+ a| 
+
+|===
+
+
+=== 目标标识符
+
+|===
+| 标注编号 | 阵列控制器（目标）端口连接 | WWPN 
+
+
+ a| 
+3.
+ a| 
+交换机
+ a| 
+_ 不适用 _
+
+
+
+ a| 
+6.
+ a| 
+阵列控制器（目标）
+ a| 
+_ 不适用 _
+
+
+
+ a| 
+5.
+ a| 
+控制器 A ，端口 1 到 FC 交换机 1
+ a| 
+
+
+
+ a| 
+9
+ a| 
+控制器 A ，端口 2 到 FC 交换机 2
+ a| 
+
+
+
+ a| 
+4.
+ a| 
+控制器 B ，端口 1 到 FC 交换机 1
+ a| 
+
+
+
+ a| 
+8.
+ a| 
+控制器 B ，端口 2 到 FC 交换机 2
+ a| 
+
+|===
+
+
+=== 正在映射主机
+
+|===
+
+
+ a| 
+正在映射主机名
+ a| 
+
+
+
+ a| 
+主机操作系统类型
+ a| 
+
+|===

@@ -1,0 +1,15 @@
+---
+permalink: install-hw-e2800-e5700/install-setup-overview-concept.html 
+sidebar: sidebar 
+keywords: E2800, E5700, installation process overview 
+summary: 查看安装和设置 E2800 和 E5700 的过程。 
+---
+= 概述
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在安装和设置新存储系统之前，请熟悉安装过程：
+
+image::../media/ef600_isi_workflow_v_2_inst-hw-e2800-e5700.bmp[ef600 ISI 工作流 v 2 inst HW e2800 e5700]

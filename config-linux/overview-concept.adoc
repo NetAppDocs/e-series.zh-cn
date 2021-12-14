@@ -1,0 +1,146 @@
+---
+permalink: config-linux/overview-concept.html 
+sidebar: sidebar 
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 查看使用快速方法设置 E 系列阵列和 Linux 主机的要求。 
+---
+= 假设
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Linux express 方法基于以下假设：
+
+|===
+| 组件 | 假设 
+
+
+ a| 
+硬件
+ a| 
+* 您已使用控制器架随附的《安装和设置说明》安装硬件。
+* 您已在可选驱动器架和控制器之间连接缆线。
+* 您已为存储系统通电。
+* 您已安装所有其他硬件（例如管理工作站，交换机）并进行了必要的连接。
+* 如果您使用的是基于 Infiniband 的 NVMe ，基于 RoCE 的 NVMe 或基于光纤通道的 NVMe ，则每个 EF300 ， EF600 ， EF570 或 E5700 控制器至少包含 32 GB RAM 。
+
+
+
+
+ a| 
+主机
+ a| 
+* 您已在存储系统和数据主机之间建立连接。
+* 您已安装主机操作系统。
+* 您未将 Linux 用作虚拟化子系统。
+* 您未将数据（ I/O 连接）主机配置为从 SAN 启动。
+* 您已安装在下列出的任何操作系统更新 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]。
+
+
+
+
+ a| 
+存储管理工作站
+ a| 
+* 您正在使用 1 Gbps 或更快的管理网络。
+* 您正在使用单独的工作站进行管理，而不是使用数据（ I/O 连接）主机。
+* 您使用的是带外管理，其中，存储管理工作站会通过控制器的以太网连接向存储系统发送命令。
+* 您已将管理工作站连接到与存储管理端口相同的子网。
+
+
+
+
+ a| 
+IP 地址
+ a| 
+* 您已安装并配置 DHCP 服务器。
+* 您尚未在管理工作站和存储系统之间建立以太网连接。
+
+
+
+
+ a| 
+存储配置
+ a| 
+* 您不会使用共享卷。
+* 您将创建池，而不是卷组。
+
+
+
+
+ a| 
+协议： FC
+ a| 
+* 您已建立所有主机端 FC 连接并激活交换机分区。
+* 您正在使用 NetApp 支持的 FC HBA 和交换机。
+* 您正在使用中列出的 FC HBA 驱动程序和固件版本 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]。
+
+
+
+
+ a| 
+协议： iSCSI
+ a| 
+* 您正在使用能够传输 iSCSI 流量的以太网交换机。
+* 您已根据供应商的 iSCSI 建议配置以太网交换机。
+
+
+
+
+ a| 
+协议： SAS
+ a| 
+* 您正在使用 NetApp 支持的 SAS HBA 。
+* 您正在使用中列出的 SAS HBA 驱动程序和固件版本 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]。
+
+
+
+
+ a| 
+协议：基于 InfiniBand 的 iSER
+ a| 
+* 您正在使用 InfiniBand 网络结构。
+* 您正在使用中列出的 IB-iSER HBA 驱动程序和固件版本 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]。
+
+
+
+
+ a| 
+协议：基于 InfiniBand 的 SRP
+ a| 
+* 您正在使用 InfiniBand 网络结构。
+* 您正在使用中列出的 IB-SRP 驱动程序和固件版本 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]。
+
+
+
+
+ a| 
+协议：基于 InfiniBand 的 NVMe
+ a| 
+* 您已在预先配置了基于 InfiniBand 协议的 NVMe 的 EF300 ， EF600 ， EF570 或 E5700 存储系统中收到 100G 或 200G 主机接口卡，或者这些控制器已订购标准 IB 端口，需要转换为 NVMe-oF 端口。
+* 您正在使用 InfiniBand 网络结构。
+* 您正在使用中列出的 NVMe/IB 驱动程序和固件版本 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]。
+
+
+
+
+ a| 
+协议：基于 RoCE 的 NVMe
+ a| 
+* 您已在预先配置了基于 RoCE 的 NVMe 协议的 EF300 ， EF600 ， EF570 或 E5700 存储系统中收到 100G 或 200G 主机接口卡，或者这些控制器已订购标准 IB 端口，需要转换为 NVMe-oF 端口。
+* 您正在使用中列出的 NVMe/RoCE 驱动程序和固件版本 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]。
+
+
+
+
+ a| 
+协议：基于光纤通道的 NVMe
+ a| 
+* 您已在预先配置了基于光纤通道的 NVMe 协议的 EF300 ， EF600 ， EF570 或 E5700 存储系统中收到 32G 主机接口卡，或者这些控制器已订购标准 FC 端口，需要转换为 NVMe-oF 端口。
+* 您正在使用中列出的 NVMe/FC 驱动程序和固件版本 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]。
+
+
+|===
+
+NOTE: 这些快速方法说明包括 SUSE Linux Enterprise Server （ SLES ）和 Red Hat Enterprise Linux （ RHEL ）的示例。

@@ -1,0 +1,54 @@
+---
+permalink: config-windows/verify-windows-config-support-task.html 
+sidebar: sidebar 
+keywords: express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 验证是否支持 Windows 配置。 
+---
+= 验证是否支持 Windows 配置
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+为了确保操作可靠，请创建一个实施计划，然后使用 NetApp 互操作性表工具（ IMT ）验证是否支持整个配置。
+
+.步骤
+. 转至 http://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]。
+. 单击 * 存储解决方案搜索 * 图块。
+. 在菜单：协议 [SAN 主机 ] 区域中，单击 * E 系列 SAN 主机 * 旁边的 * 添加 * 按钮。
+. 单击 * 查看细化搜索条件 * 。
++
+此时将显示细化搜索条件部分。在本节中，您可以选择适用的协议以及其他配置标准，例如操作系统， NetApp 操作系统和主机多路径驱动程序。选择您知道配置所需的条件，然后查看适用的兼容配置要素。根据需要，根据工具中的规定更新操作系统和协议。单击右页面箭头可在查看支持的配置页面上访问选定配置的详细信息。
+
+. 根据需要，根据表中列出的操作系统和协议进行更新。
++
+|===
+| 操作系统更新 | 协议 | 与协议相关的更新 
+
+
+ a| 
+您可能需要安装开箱即用的驱动程序，以确保正常运行和可支持性。
+
+每个 HBA 供应商都有特定的方法来更新启动代码和固件。请参阅供应商网站的支持部分，获取更新 HBA 启动代码和固件所需的说明和软件。
+ a| 
+FC
+ a| 
+主机总线适配器（ HBA ）驱动程序，固件和启动代码
+
+
+
+ a| 
+iSCSI
+ a| 
+网络接口卡（ Network Interface Card ， NIC ）驱动程序，固件和启动代码。
+
+
+
+ a| 
+（ SAS ）。
+ a| 
+主机总线适配器（ HBA ）驱动程序，固件和启动代码
+
+|===
+

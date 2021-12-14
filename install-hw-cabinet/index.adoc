@@ -1,0 +1,30 @@
+---
+permalink: install-hw-cabinet/index.html 
+sidebar: sidebar 
+keywords: 3040 40U cabinet, cabinet installation, drive tray installation, controller installation, shelf installation, E2800, E5700, EF300, EF600, 
+summary: 在 E 系列 3040 40U 机柜中安装驱动器托盘概述 
+---
+= 在 3040 40U 机柜中安装托盘
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在 E 系列 3040 40U 机柜中安装以下控制器驱动器托盘和扩展驱动器托盘：
+
+* E2612 ， E2624 和 E2660 控制器驱动器托盘
+* E2712 ， E2724 和 E2760 控制器驱动器托盘
+* E5412 ， E5424 和 E5460 控制器驱动器托盘
+* E5512 ， E5524 和 E5560 控制器驱动器托盘
+* E5612 ， E5624 和 E5660 控制器驱动器托盘
+* EF540 ， EF550 和 EF560 闪存阵列
+* DE1600 ， DE5600 和 DE6600 驱动器托盘
+
+
+您还可以在机柜中安装以下 SAS-3 控制器架和驱动器架。
+
+* E2812 ， E2824 和 E5724 控制器架
+* DE212C 和 DE224C 驱动器架
+
+
+但是，这些过程未列出这些磁盘架的规格。请参见 https://hwu.netapp.com["NetApp Hardware Universe"^]。

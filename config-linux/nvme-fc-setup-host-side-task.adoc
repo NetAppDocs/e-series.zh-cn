@@ -1,0 +1,99 @@
+---
+permalink: config-linux/nvme-fc-setup-host-side-task.html 
+sidebar: sidebar 
+keywords: NVMe over Fibre Channel, host side, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 光纤通道环境中的 NVMe 启动程序配置包括安装和配置 NVMe-CLI 软件包，以及在主机上启用 NVMe/FC 启动程序。 
+---
+= 在主机端设置基于光纤通道的 NVMe
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+光纤通道环境中的 NVMe 启动程序配置包括安装和配置 NVMe-CLI 软件包以及在主机上启用 NVMe/FC 启动程序。
+
+以下操作步骤适用于使用支持 Broadcom Emulex 或 QLogic NVMe/FC 的 FC HBA 的 RHEL 7 ， RHEL 8 ， SLES 12 和 SLES 15 。有关支持这些操作系统或 HBA 的版本的详细信息，请参见 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]。
+
+.步骤
+. 安装 `NVMe-CLI` 软件包：
++
+* SLES 12 或 SLES 15*
+
++
+[listing]
+----
+
+# zypper install nvme-cli
+----
++
+* RHEL 7 或 RHEL 8*
+
++
+[listing]
+----
+
+# yum install nvme-cli
+----
++
+.. 仅适用于 RHEL 7 ，通过下载并安装用于 NVMe/FC 连接的外部 Broadcom AutoConnect 脚本 https://www.broadcom.com/support/download-search["Broadcom 网站"^]。输入关键字 * 通过 FC 驱动程序为收件箱 NVMe 输入 AutoConnect 脚本文件 * ，然后选择特定于您的操作系统的最新版本。
+.. 对于 Qlogic ，请在安装 Broadcom NVMe/FC 自动连接脚本后修改 ` /lib/systemd/system/nvmefc-boot-connections.service` 以包含以下内容：
++
+[listing]
+----
+[Unit]
+Description=Auto-connect to subsystems on FC-NVME devices found during boot
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c "echo add > /sys/class/fc/fc_udev_device/nvme_discovery"
+
+[Install]
+WantedBy=default.target
+----
+
+
+. 启用并启动 `nvmefc-boot-connections` 服务。
++
+[listing]
+----
+systemctl enable nvmefc-boot-connections.service
+----
++
+[listing]
+----
+systemctl start nvmefc-boot-connections.service
+----
+
+
+* Emulex HBA 的主机端设置： *
+
+
+NOTE: 以下步骤仅适用于 Emulex HBA 。
+
+. 将 `lpfc_enable_FC4_type` 设置为 `3` 以启用 SLES12 SP4 作为 NVMe/FC 启动程序。
++
+[listing]
+----
+# cat /etc/modprobe.d/lpfc.conf
+options lpfc lpfc_enable_fc4_type=3
+----
+. 重新构建 `initrd` 以获取 Emulex 更改和启动参数更改。
++
+[listing]
+----
+# dracut --force
+----
+. 重新启动主机以加载对 `IPFC` 驱动程序所做的更改。
++
+[listing]
+----
+# reboot
+----
++
+主机将重新启动，并在主机上启用 NVMe/FC 启动程序。
+
++
+
+NOTE: 完成主机端设置后，将自动通过光纤通道端口连接 NVMe 。
+
+

@@ -1,0 +1,130 @@
+---
+sidebar: sidebar 
+permalink: san-spvc-ic-user-access.html 
+keywords: user access vCenter plugin, user roles vCenter plugin, privileges vCenter plugin, access permissions vCenter plugin 
+summary: 配置适用于 vCenter 的存储插件的访问权限。 
+---
+= 配置插件访问权限
+:hardbreaks:
+:experimental: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以为适用于 vCenter 的存储插件配置访问权限，其中包括用户，角色和权限。
+
+
+
+== 查看所需的 vSphere 特权
+
+要在 vSphere Client 中访问此插件，必须将您分配给具有适当 vSphere 权限的角色。具有 " 配置数据存储库 " vSphere 权限的用户可以对插件进行读写访问，而具有 " 浏览数据存储库 " 权限的用户可以进行只读访问。如果用户既不具有上述权限，插件将显示 " 权限不足 " 消息。
+
+|===
+| 插件访问类型 | 需要 vSphere 权限 
+
+
+| 读写（配置） | 数据存储库。配置 
+
+
+| 只读（查看） | 数据存储库。浏览 
+|===
+
+
+== 配置存储管理员角色
+
+要为插件用户提供读 / 写权限，您可以创建，克隆或编辑角色。有关在 vSphere Client 中配置角色的详细信息，请参见 VMware 文档中心中的以下主题：
+
+* https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-41E5E52E-A95B-4E81-9724-6AD6800BEF78.html["创建自定义角色"^]
+
+
+
+
+=== 访问角色操作
+
+. 从 vSphere Client 的主页中，从访问控制区域中选择 * 管理员 * 。
+. 单击访问控制区域中的 * 角色 * 。
+. 执行以下操作之一：
++
+** * 创建新角色 * ：单击 * 创建角色 * 操作图标。
+** * 克隆角色 * ：选择一个现有角色，然后单击 * 克隆角色 * 操作图标。
+** * 编辑现有角色 * ：选择一个现有角色，然后单击 * 编辑角色 * 操作图标。
+
+
+
+
+
+NOTE: 管理员角色不可编辑。
+
+此时将显示相应的向导，具体取决于上述选择。
+
+
+
+=== 创建新角色
+
+. 在权限列表中，选择要分配给此角色的访问权限。
++
+要允许对插件进行只读访问，请选择 * 数据存储库 * > * 浏览 * * * * 数据存储库 * 。要允许读写访问，请选择 * 数据存储库 * > * 配置数据存储库 * 。
+
+. 如果需要，为列表分配其他权限，然后单击 * 下一步 * 。
+. 为角色命名并提供问题描述。
+. 单击 * 完成 * 。
+
+
+
+
+=== 克隆角色
+
+. 为角色命名并提供问题描述。
+. 单击 * 确定 * 完成向导。
+. 从列表中选择克隆的角色，然后单击 * 编辑角色 * 。
+. 在权限列表中，选择要分配给此角色的访问权限。
++
+要允许对插件进行只读访问，请选择菜单： Datastore[Browse datastore] 。要允许读写访问，请选择菜单： Datastore[Configure datastore] 。
+
+. 单击 * 下一步 * 。
+. 如果需要，更新名称和问题描述。
+. 单击 * 完成 * 。
+
+
+
+
+=== 编辑现有角色
+
+. 在权限列表中，选择要分配给此角色的访问权限。
++
+要允许对插件进行只读访问，请选择菜单： Datastore[Browse datastore] 。要允许读写访问，请选择菜单： Datastore[Configure datastore] 。
+
+. 单击 * 下一步 * 。
+. 如果需要，请更新名称或问题描述。
+. 单击 * 完成 * 。
+
+
+
+
+== 设置 vCenter Server 设备的权限
+
+为角色设置权限后，您必须向 vCenter Server 设备添加权限。此权限允许给定的用户或组访问此插件。
+
+. 从菜单下拉列表中，选择 * 主机和集群 * 。
+. 从访问控制区域中选择 * vCenter Server Appliance* 。
+. 单击 * 权限 * 选项卡。
+. 单击 * 添加权限 * 操作图标。
+. 选择相应的域和用户 / 组。
+. 选择创建的允许读 / 写插件权限的角色。
+. 如果需要，启用 * 传播到子系统 * 选项。
+. 单击 * 确定 * 。
+
+
+
+NOTE: 您可以选择现有权限并对其进行修改，以使用创建的角色。* 但是，请注意，角色必须具有与读取 / 写入插件权限相同的特权，以避免权限重写。 *
+
+要访问此插件，您必须使用对该插件具有读 / 写权限的用户帐户登录到 vSphere Client 。
+
+有关管理权限的详细信息，请参见 VMware 文档中心中的以下主题：
+
+* https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-3B78EEB3-23E2-4CEB-9FBD-E432B606011A.html["管理 vCenter 组件的权限"^]
+* https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-FAA074CC-E8C9-4F13-ABCF-6CF7F15F04EE.html["角色和权限的最佳实践"^]
+

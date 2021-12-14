@@ -1,0 +1,54 @@
+---
+sidebar: sidebar 
+permalink: early-versions.html 
+keywords: early versions, e-series, hardware, santricity, os 
+summary: 文档的早期版本 
+---
+= 早期版本
+
+
+[role="lead"]
+请访问以下链接以访问早期版本 E 系列硬件和 SANtricity 软件的文档。通过这些链接，您可以访问其他文档站点。
+
+
+
+== 早期版本的硬件文档
+
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2484026["安装 E2712 ， E2724 ， E5612 ， E5624 控制器驱动器托盘以及 DE1600 和 DE5600 扩展驱动器托盘"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2484072["安装 E2760 和 E5660 控制器驱动器托盘和 DE6600 扩展驱动器托盘"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2484108["安装 EF560 闪存阵列和 DE5600 闪存扩展托盘"^]
+* https://mysupport.netapp.com/info/web/ECMP11392380.html["安装旧系统"^]
+* https://mysupport.netapp.com/info/web/ECMP11751516.html["维护旧系统"^]
+* https://mysupport.netapp.com/ecm/ecm_download_file/ECMP1394872["向 E2600 和 E2700 添加第二个控制器"^]
+* https://mysupport.netapp.com/info/web/ECMP11750309.html["更改或添加主机协议"^]
+* https://mysupport.netapp.com/ecm/ecm_download_file/ECMP1656638["将交流电源转换为直流电源"^]
+
+
+
+
+== 早期版本的软件文档
+
+
+
+=== SANtricity 版本 11.6.
+
+* https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-116/home.html["System Manager 联机帮助"^]
+* https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-uni-32/home.html["Unified Manager 联机帮助"^]
+
+
+
+
+=== SANtricity 11.5 版
+
+* https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-115/home.html["System Manager 联机帮助"^]
+* https://mysupport.netapp.com/NOW/public/eseries/unified_archive1150/index.html["Unified Manager 联机帮助"^]
+
+
+
+
+=== SANtricity 版本 11.4
+
+* https://mysupport.netapp.com/NOW/public/eseries/sam_archive1140/index.html["System Manager （ E2800 ）联机帮助"^]
+* https://mysupport.netapp.com/ecm/ecm_get_file/ECMLP2862590["AMW （ E2700 ， E5600/EF560 ）联机帮助"^]
+* https://mysupport.netapp.com/ecm/ecm_get_file/ECMLP2862588["EMW （ E2700 ， E5600/EF560 ）联机帮助"^]
+

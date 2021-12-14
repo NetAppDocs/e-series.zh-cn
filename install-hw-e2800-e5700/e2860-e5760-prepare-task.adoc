@@ -1,0 +1,140 @@
+---
+permalink: install-hw-e2800-e5700/e2860-e5760-prepare-task.html 
+sidebar: sidebar 
+keywords: E2860, E5760, DE460, installation 
+summary: 要安装 E2860 ， E5760 或 DE460 ，请创建一个帐户并注册硬件。 
+---
+= 准备安装
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+了解如何准备安装 E2860 ， E5760 或 DE460 系列存储系统。
+
+.步骤
+. 在中创建帐户并注册硬件 http://mysupport.netapp.com/["mysupport.netapp.com"^]。
+. 确保收到的包装盒中包含以下物品。
++
+|===
+
+
+ a| 
+image:../media/trafford_overview.png[""]
+ a| 
+磁盘架，挡板和机架硬件
+
+
+
+ a| 
+image:../media/handles_counted.png[""]
+ a| 
+磁盘架可处理 4 个磁盘架
+
+|===
++
+The following table identifies the types of cables you might receive.如果您收到的缆线未在表中列出，请参见 https://hwu.netapp.com/["Hardware Universe"^] 以找到缆线并确定其用途。
+
++
+|===
+| Connector type | 缆线类型 | 使用 ... 
+
+
+ a| 
+image:../media/cable_ethernet_inst-hw-e2800-e5700.png[""]
+ a| 
+以太网缆线
+
+（如果已订购）
+ a| 
+管理连接
+
+
+
+ a| 
+image:../media/cable_io_inst-hw-e2800-e5700.png[""]
+ a| 
+I/O 缆线
+
+（如果已订购）
+ a| 
+为数据主机布线
+
+
+
+ a| 
+image:../media/cable_power_inst-hw-e2800-e5700.png[""]
+ a| 
+Power cables
+
+每个磁盘架 2 个
+
+（如果已订购）
+ a| 
+启动存储系统
+
+
+
+ a| 
+image:../media/sas_cable.png[""]
+ a| 
+SAS 缆线（仅随驱动器架提供）
+ a| 
+为磁盘架布线
+
+|===
+. 请确保提供以下各项。
++
+|===
+
+
+ a| 
+image:../media/screwdriver_inst-hw-e2800-e5700.png[""]
+ a| 
+Phillips #2 screwdriver
+
+
+
+ a| 
+image:../media/flashlight_inst-hw-e2800-e5700.png[""]
+ a| 
+Flashlight
+
+
+
+ a| 
+image:../media/wrist_strap_inst-hw-e2800-e5700.png[""]
+ a| 
+ESD 腕带
+
+
+
+ a| 
+image:../media/4u_dummy.png[""]
+ a| 
+4U 机架空间：标准 19 英寸（ 48.30 厘米）机架，用于安装以下尺寸的 4U 磁盘架。
+
+* 深度 * ： 38.25 英寸（ 97.16 厘米）
+
+* 宽度 * ： 17.66 英寸（ 44.86 厘米）
+
+* 高度 * ： 6.87 英寸（ 17.46 厘米）
+
+* 最大重量 * ： 113 千克（ 250 磅）
+
+
+
+ a| 
+image:../media/management_station_inst-hw-e2800-e5700_g60b3.png[""]
+ a| 
+管理软件支持的浏览器：
+
+** Google Chrome （ 47 及更高版本）
+** Microsoft Internet Explorer （ 11 及更高版本）
+** Microsoft Edge （ EdgeHTML 12 及更高版本）
+** Mozilla Firefox （ 31 及更高版本）
+** Safari （版本 9 及更高版本）
+
+
+|===
+

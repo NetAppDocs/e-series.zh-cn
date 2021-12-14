@@ -1,0 +1,125 @@
+---
+permalink: config-linux/fc-worksheet-concept.html 
+sidebar: sidebar 
+keywords: FC worksheet Linux, express linux configuration, software configuration, linux host, 
+summary: 使用此工作表记录 FC 存储配置信息。 
+---
+= 记录 FC 配置
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以生成并打印此页面的 PDF ，然后使用以下工作表记录 FC 存储配置信息。要执行配置任务，您需要此信息。
+
+图中显示了在两个分区中连接到 E 系列存储阵列的主机。一个分区用蓝线表示，另一个分区用红线表示。任何一个端口都有两条通往存储的路径（每个控制器一条）。
+
+image::../media/port_identifiers_host_and_target_conf-lin.gif[端口标识符主机和目标配置 LIN]
+
+
+
+== 主机标识符
+
+|===
+| 标注编号 | 主机（启动程序）端口连接 | WWPN 
+
+
+ a| 
+1.
+ a| 
+主机
+ a| 
+_ 不适用 _
+
+
+
+ a| 
+2.
+ a| 
+主机端口 0 到 FC 交换机分区 0
+ a| 
+
+
+
+ a| 
+7.
+ a| 
+主机端口 1 到 FC 交换机分区 1
+ a| 
+
+|===
+
+
+== 目标标识符
+
+|===
+| 标注编号 | 阵列控制器（目标）端口连接 | WWPN 
+
+
+ a| 
+3.
+ a| 
+交换机
+ a| 
+_ 不适用 _
+
+
+
+ a| 
+6.
+ a| 
+阵列控制器（目标）
+ a| 
+_ 不适用 _
+
+
+
+ a| 
+5.
+ a| 
+控制器 A ，端口 1 到 FC 交换机 1
+ a| 
+
+
+
+ a| 
+9
+ a| 
+控制器 A ，端口 2 到 FC 交换机 2
+ a| 
+
+
+
+ a| 
+4.
+ a| 
+控制器 B ，端口 1 到 FC 交换机 1
+ a| 
+
+
+
+ a| 
+8.
+ a| 
+控制器 B ，端口 2 到 FC 交换机 2
+ a| 
+
+|===
+
+
+== 正在映射主机
+
+|===
+
+
+ a| 
+正在映射主机名
+ a| 
+
+
+
+ a| 
+主机操作系统类型
+ a| 
+
+|===

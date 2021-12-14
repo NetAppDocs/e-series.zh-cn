@@ -1,0 +1,28 @@
+---
+permalink: config-linux/nvme-ib-display-devices-visible-host-task.html 
+sidebar: sidebar 
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 使用 NVMe-CLI 软件包中的 SMdevices 工具查看主机上当前可见的卷。这是 NVMe list 命令的替代方案。 
+---
+= 显示主机可见的卷
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 SMdevices 工具查看主机上当前可见的卷。此工具是 NVMe-CLI 软件包的一部分，可用作 `nvme list` 命令的替代方法。
+
+要查看有关 E 系列卷的每个 NVMe 路径的信息，请使用 `nvme netapp smdevices （ -o <format>]` 命令。输出 ` <format>` 可以是 normal （如果不使用 -o ，则为默认值）， column 或 json 。
+
+[listing]
+----
+# nvme netapp smdevices
+/dev/nvme1n1, Array Name ICTM0706SYS04, Volume Name NVMe2, NSID 1, Volume ID 000015bd5903df4a00a0980000af4462, Controller A, Access State unknown, 2.15GB
+/dev/nvme1n2, Array Name ICTM0706SYS04, Volume Name NVMe3, NSID 2, Volume ID 000015c05903e24000a0980000af4462, Controller A, Access State unknown, 2.15GB
+/dev/nvme1n3, Array Name ICTM0706SYS04, Volume Name NVMe4, NSID 4, Volume ID 00001bb0593a46f400a0980000af4462, Controller A, Access State unknown, 2.15GB
+/dev/nvme1n4, Array Name ICTM0706SYS04, Volume Name NVMe6, NSID 6, Volume ID 00001696593b424b00a0980000af4112, Controller A, Access State unknown, 2.15GB
+/dev/nvme2n1, Array Name ICTM0706SYS04, Volume Name NVMe2, NSID 1, Volume ID 000015bd5903df4a00a0980000af4462, Controller B, Access State unknown, 2.15GB
+/dev/nvme2n2, Array Name ICTM0706SYS04, Volume Name NVMe3, NSID 2, Volume ID 000015c05903e24000a0980000af4462, Controller B, Access State unknown, 2.15GB
+/dev/nvme2n3, Array Name ICTM0706SYS04, Volume Name NVMe4, NSID 4, Volume ID 00001bb0593a46f400a0980000af4462, Controller B, Access State unknown, 2.15GB
+/dev/nvme2n4, Array Name ICTM0706SYS04, Volume Name NVMe6, NSID 6, Volume ID 00001696593b424b00a0980000af4112, Controller B, Access State unknown, 2.15GB
+----

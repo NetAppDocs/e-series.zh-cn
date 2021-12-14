@@ -1,0 +1,272 @@
+---
+permalink: getting-started/learn-hardware-concept.html 
+sidebar: sidebar 
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, hardware, all flash array, E-Series protocols, E-Series rack 
+summary: E 系列存储阵列提供多种配置和型号。 
+---
+= E 系列硬件概述
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+E 系列存储阵列提供多种配置和型号。
+
+存储阵列包括磁盘架，控制器，驱动器，软件和固件。该阵列可以安装在机架或机柜中，并可为一个或两个控制器提供可自定义的硬件，这些硬件位于 12 ， 24 或 60 个驱动器的磁盘架中。您可以将存储阵列从多种接口类型连接到 SAN 以及各种主机操作系统。
+
+E 系列阵列有以下型号：
+
+* E2800 系列—入门级混合
+* EF280 系列—入门级全闪存
+* EF300 系列—入门级全闪存，全 NVMe
+* E5700 系列—中端混合
+* EF570 系列—中端全闪存
+* EF600 系列—中端全闪存，全 NVMe
+
+
+
+
+== E2800 型号
+
+|===
+| 组件 | 规格 
+
+
+ a| 
+机架大小：
+ a| 
+* 2U12 （ 2 个机架单元； 12 个驱动器）
+* 2U24 （ 2 个机架单元； 24 个驱动器）
++
+image::../media/e2800_2u_front.gif[e2800 2U 正面]
+
+* 4U60 （ 4 个机架单元； 60 个驱动器）
++
+image::../media/e2860_front.gif[e2860 正面]
+
+
+
+
+
+ a| 
+驱动器：
+ a| 
+支持以下驱动器类型：
+
+* 3.5 英寸 NL-SAS （最多 180 个）
+* 2.5 英寸 SAS SSD （最多 120 个）
+* 2.5 英寸 SAS HDD （最多 180 个）
+
+
+
+
+ a| 
+接口：
+ a| 
+可用于以下接口：
+
+* 12 GB SAS
+* 10 Gb 或 25 Gb iSCSI
+* 16 Gb 或 32 Gb 光纤通道
+
+
+|===
+
+
+== EF280 型号
+
+|===
+| 组件 | 规格 
+
+
+ a| 
+机架大小：
+ a| 
+2U24 （ 2 个机架单元； 24 个驱动器）image:../media/ef570_front.gif[""]
+
+
+
+ a| 
+驱动器：
+ a| 
+最多支持 96 个 2.5 英寸 SSD 驱动器
+
+
+
+ a| 
+接口：
+ a| 
+可用于以下接口：
+
+* 12 GB SAS
+* 10 Gb 或 25 Gb iSCSI
+* 16 Gb 或 32 Gb 光纤通道
+
+
+|===
+
+
+== EF300 型号
+
+|===
+| 组件 | 规格 
+
+
+ a| 
+机架大小：
+ a| 
+2U24 （ 2 个机架单元； 24 个驱动器）image:../media/ef570_front.gif[""]
+
+
+
+ a| 
+驱动器和 HIC ：
+ a| 
+最多支持 24 个 NVMe SSD ，每个控制器一个主机接口卡（ HIC ）。
+
+
+
+ a| 
+接口：
+ a| 
+可用于以下接口：
+
+* 25 GB iSCSI
+* 32 Gb NVMe/Fibre Channel
+* 32 Gb SCSI/ 光纤通道
+* 100 GB iSER / IB
+* 100 GB SRS/IB
+* 100 GB NVMe/IB
+* 100 GB NVMe/RoCE
+
+
+|===
+
+
+== E5700 型号
+
+|===
+| 组件 | 规格 
+
+
+ a| 
+机架大小：
+ a| 
+* 2U24 （ 2 个机架单元； 24 个驱动器）
++
+image::../media/e2800_2u_front.gif[e2800 2U 正面]
+
+* 4U60 （ 4 个机架单元； 60 个驱动器）
++
+image::../media/e2860_front.gif[e2860 正面]
+
+
+
+
+
+ a| 
+驱动器：
+ a| 
+最多支持 480 种以下驱动器类型：
+
+* 3.5 英寸 NL-SAS 驱动器
+* 2.5 英寸 SAS SSD 驱动器
+* 2.5 英寸 SAS HDD 驱动器
+
+
+
+
+ a| 
+接口：
+ a| 
+可用于以下接口：
+
+* 12 GB SAS
+* 10 Gb 或 25 Gb iSCSI
+* 16 Gb 或 32 Gb 光纤通道
+* 32 Gb NVMe/Fibre Channel
+* 100 GB iSER / IB
+* 100 GB SRS/IB
+* 100 GB NVMe/IB
+* 100 GB NVMe/RoCE
+
+
+|===
+
+
+== EF570 型号
+
+|===
+| 组件 | 规格 
+
+
+ a| 
+机架大小：
+ a| 
+2U24 （ 2 个机架单元； 24 个驱动器）image:../media/ef570_front.gif[""]
+
+
+
+ a| 
+驱动器：
+ a| 
+最多支持 120 个 2.5 英寸 SSD 驱动器
+
+
+
+ a| 
+接口：
+ a| 
+可用于以下接口：
+
+* 12 GB SAS
+* 10 Gb 或 25 Gb iSCSI
+* 16 Gb 或 32 Gb 光纤通道
+* 32 Gb NVMe/Fibre Channel
+* 100 GB iSER / IB
+* 100 GB SRS/IB
+* 100 GB NVMe/IB
+* 100 GB NVMe/RoCE
+
+
+|===
+
+
+== EF600 型号
+
+|===
+| 组件 | 规格 
+
+
+ a| 
+机架大小：
+ a| 
+2U24 （ 2 个机架单元； 24 个驱动器）image:../media/ef570_front.gif[""]
+
+
+
+ a| 
+驱动器和 HIC ：
+ a| 
+最多支持 24 个 NVMe SSD ，每个控制器具有两个主机接口卡（ Host Interface Card ， HIC ）。
+
+
+
+ a| 
+接口：
+ a| 
+可用于以下接口：
+
+* 25 GB iSCSI
+* 32 Gb NVMe/Fibre Channel
+* 32 Gb SCSI/ 光纤通道
+* 100 GB iSER / IB
+* 100 GB SRS/IB
+* 100 GB NVMe/IB
+* 100 GB NVMe/RoCE
+* 200 GB iSER / IB
+* 200 GB NVMe/IB
+* 200 GB NVMe/RoCE
+
+
+|===

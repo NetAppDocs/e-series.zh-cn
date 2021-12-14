@@ -1,0 +1,22 @@
+---
+permalink: upgrade-santricity/index.html 
+sidebar: sidebar 
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, SANtricity, drive firmware, upgrade SANtricity, upgrade OS, upgrade E-Series, upgrade firmware, upgrading, upgrade IOM firmware, upgrade NVSRAM, upgrade controller 
+summary: 升级 SANtricity ® 操作系统概述 
+---
+= 升级 SANtricity 操作系统概述
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以将操作系统和系统硬件组件升级到最新版本的 SANtricity 软件和固件。
+
+这些升级过程包括以下方面的单独说明：
+
+* 单控制器—包括升级存储阵列软件以及（可选） IOM 固件和非易失性静态随机存取存储器（ NVSRAM ）的过程。
+* 多个控制器—包括在多个相同类型的存储阵列上升级 SANtricity OS 软件的过程。
+* drive —提供有关升级驱动器固件的说明。
+
+
+开始升级之前，请务必查看 link:overview-upgrade-consider-task.html["升级注意事项"]。

@@ -1,0 +1,54 @@
+---
+sidebar: sidebar 
+permalink: san-spvc-ic-overview.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter, VMware vSphere Client 
+summary: 适用于 vCenter 的 SANtricity 存储插件可在 VMware vSphere 客户端会话中对 E 系列存储阵列进行集成管理。 
+---
+= 适用于 vCenter 的存储插件概述
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+适用于 vCenter 的 SANtricity 存储插件可在 VMware vSphere 客户端会话中对 E 系列存储阵列进行集成管理。
+
+适用于 vCenter 的插件提供了以下功能：
+
+* 查看和管理网络中发现的存储阵列。
+* 对包含多个存储阵列的组执行批处理操作。
+* 在软件操作系统上执行升级。
+* 将设置从一个存储阵列导入到另一个存储阵列。
+* 配置卷， SSD 缓存，主机，主机集群，池， 和卷组。
+* 启动 System Manager 界面以在阵列上执行其他管理任务。
+
+
+
+NOTE: 此插件不能直接替代 SANtricity System Manager 软件。在单个阵列上执行某些存储管理任务仍需要 System Manager 。
+
+要安装和运行插件 Web 服务器，插件需要在 VMware 环境中部署一个 VMware vCenter Server 设备以及一个应用程序主机。
+
+有关 vCenter 环境中通信的详细信息，请参见下图。
+
+image::../media/vcenter_communication.png[vCenter 通信]
+
+
+
+== 配置概述
+
+. link:san-spvc-ic-installation.html["安装并注册插件"]。
+. link:san-spvc-ic-user-access.html["配置插件访问权限"]。
+. link:san-spvc-ic-login-and-navigation.html["登录到插件界面"]。
+. link:san-spvc-ic-storage-array-discovery.html["发现存储阵列"]。
+. link:san-spvc-ic-storage-provisioning.html["配置存储"]。
+
+
+
+
+== 了解更多信息
+
+* 有关联机帮助，请参见适用于 vCenter 的存储插件的用户界面。
+* 有关在 vSphere Client 中管理数据存储库的详细信息，请参见 https://docs.vmware.com/en/VMware-vSphere/index.html["VMware vSphere 文档"^]。
+

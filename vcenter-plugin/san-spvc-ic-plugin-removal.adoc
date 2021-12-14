@@ -1,0 +1,99 @@
+---
+sidebar: sidebar 
+permalink: san-spvc-ic-plugin-removal.html 
+keywords: remove vCenter plugin, uninstall Plugin for vCenter, unregister vCenter plugin, 
+summary: 删除 vCenter 插件。 
+---
+= 删除适用于 vCenter 的存储插件
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以从 vCenter Server 设备中删除此插件，并从应用程序主机中卸载此插件 Web 服务器。
+
+以下是两个不同的步骤，您可以按任意顺序执行。但是，如果您选择在注销插件之前从应用程序主机中删除插件 Web 服务器，则注册脚本将在此过程中被删除，并且无法使用方法 1 取消注册。
+
+
+
+== 从 vCenter Server 设备取消注册此插件
+
+要从 vCenter Server 设备取消注册插件，请选择以下方法之一：
+
+* 方法 1 ：执行注册脚本
+* 方法 2 ：使用 vCenter Server 移动页面
+
+
+
+
+=== 方法 1 ：执行注册脚本
+
+. 通过命令行打开提示符并导航到以下目录：
++
+` <install directory>\vCenter-register\bin`
+
+. 执行 `vCenter-register.bat` 文件：
++
+`vcenter-register.bat ^`
+
++
+` 操作未注册插件 ^`
+
++
+` -vcenterHostname <vCenter FQDN> ^`
+
++
+` 用户名 < 管理员用户名 > ^`
+
+. 验证脚本是否成功。
++
+这些日志将保存到 ` %install_dir%/log/vc-registration.log` 中。
+
+
+
+
+
+=== 方法 2 ：使用 vCenter Server 移动页面
+
+. 打开 Web 浏览器并输入以下 URL ：
++
+++ https://<FQDN[] vCenter Server 的数量 >/mob ++
+
+. 使用管理员凭据登录。
+. 查找 `extsionManager` 的属性名称，然后单击与该属性关联的链接。
+. 单击 * 更多 *… 展开属性列表 链接。
+. 验证扩展名 `plugin.netapp.eseries` 是否位于列表中。
+. 如果存在，请单击 Method `UnregisterExtension` 。
+. 在对话框中输入值 `plugin.netapp.eseries` ，然后单击 * 调用方法 * 。
+. 关闭对话框并刷新 Web 浏览器。
+. 验证 `plugin.netapp.eseries` 扩展名是否不在列表中。
+
+
+
+NOTE: 此操作步骤会从 vCenter Server 设备中取消注册此插件，但不会从服务器中删除插件软件包文件。要删除软件包文件，请使用 SSH 访问 vCenter Server 设备并导航到以下目录：
+
+`etc/vmware/vsphere-ui/vc-packages/vsphere-client-sereni/`
+
+然后删除与此插件关联的目录。
+
+
+
+== 从应用程序主机中删除插件 Web 服务器
+
+要从应用程序主机中删除插件软件，请执行以下步骤：
+
+. 在应用程序服务器中，导航到 * 控制面板 * 。
+. 转至 * 应用程序和功能 * ，然后选择 * 适用于 vCenter 的 SANtricity 存储插件 * 。
+. 单击 * 卸载 / 更改 * 。
++
+此时将打开确认对话框。
+
+. 单击 * 卸载 * 。
++
+卸载完成后，将显示一条确认消息。
+
+. 单击 * 完成 * 。
+

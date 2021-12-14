@@ -1,0 +1,17 @@
+---
+permalink: maintenance-ef600/power-overview-requirements2-concept.html 
+sidebar: sidebar 
+keywords: replace EF300 power supply, replace EF600 power supply, 
+summary: 在更换 EF300 或 EF600 电源之前，请查看要求和注意事项。 
+---
+= 更换 EF300 或 EF600 电源的要求
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在更换 EF300 或 EF600 阵列中的电源之前，请查看以下要求。
+
+* 您必须更换为您的控制器架或驱动器架型号支持的电源。
+* 您必须具有 ESD 腕带，或者已采取其他防静电预防措施。
+

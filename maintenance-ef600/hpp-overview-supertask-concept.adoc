@@ -1,0 +1,21 @@
+---
+permalink: maintenance-ef600/hpp-overview-supertask-concept.html 
+sidebar: sidebar 
+keywords: convert EF300 host protocol, convert EF600 host protocol, 
+summary: 在转换 EF300 或 EF600 主机协议之前，请查看要求和注意事项。 
+---
+= EF300 或 EF600 主机协议转换的要求
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在转换 EF300 或 EF600 阵列的主机协议之前，请查看以下要求。
+
+* 您已为此操作步骤计划停机维护时段。
+* 执行转换时，必须停止主机 I/O 操作。在成功完成转换之前，您无法访问存储阵列上的数据。
+* 您正在使用带外管理。（您不能使用带内管理来完成此操作步骤。）
+* 您已获得进行转换所需的硬件，其中可能包括一组新的 HIC 和 / 或 SFP 。您的 NetApp 销售代表可以帮助您确定所需的硬件，并帮助您订购正确的部件。
+* 双协议 SFP 收发器支持 16 Gb 和 8 Gb FC 以及 10 Gb iSCSI 。因此，如果您使用双协议，并且只是在 FC 和 iSCSI 之间切换，或者只在 iSCSI 之间切换，则可能不需要更改 SFP 。
+* 某些主机端口协议转换可能需要添加或升级主机接口卡。
+

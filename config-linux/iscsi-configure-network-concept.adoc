@@ -1,0 +1,24 @@
+---
+permalink: config-linux/iscsi-configure-network-concept.html 
+sidebar: sidebar 
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 配置 iSCSI 网络。 
+---
+= 配置网络连接
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+根据数据存储要求，您可以通过多种方式设置 iSCSI 网络。
+
+有关为您的环境选择最佳配置的提示，请咨询您的网络管理员。
+
+要为 iSCSI 网络配置基本冗余，请将每个主机端口以及每个控制器中的一个端口连接到不同的交换机，并对不同网段或 VLAN 上的每组主机端口和控制器端口进行分区。
+
+您必须启用发送和接收硬件流量控制 * 端到端 * 。您必须禁用优先级流量控制。
+
+如果出于性能原因在 IP SAN 中使用巨型帧，请确保将阵列，交换机和主机配置为使用巨型帧。有关如何在主机和交换机上启用巨型帧的信息，请参见操作系统和交换机文档。要在阵列上启用巨型帧，请完成中的步骤 link:../iscsi-configure-array-side-network-task.html["配置阵列端网络"]。
+
+
+NOTE: 许多网络交换机必须配置为超过 9 ， 000 字节，才能实现 IP 开销。有关详细信息，请参见交换机文档。

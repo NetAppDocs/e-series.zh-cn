@@ -1,0 +1,67 @@
+---
+permalink: maintenance-ef600/index.html 
+sidebar: sidebar 
+keywords: EF300 maintenance, EF600 maintenance, repairing EF300, repairing EF600, replace EF300 components, replace EF600 components 
+summary: 维护 EF300 和 EF600 硬件 
+---
+= 维护 EF300 和 EF600 硬件
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+对于 EF300 和 EF600 存储系统，您可以对以下组件执行维护过程。
+
+
+
+== 电池
+
+控制器附带电池，如果交流电源发生故障，则会保留缓存的数据。
+
+
+
+== 控制器
+
+控制器由主板，固件和软件组成。它控制驱动器并实施 SANtricity 系统管理器功能。
+
+
+
+== DIMM
+
+如果存在内存不匹配或 DIMM 发生故障，则必须更换 DIMM （双列直插式内存模块）。
+
+
+
+== 驱动器
+
+驱动器是为数据提供物理存储介质的设备。
+
+
+
+== 风扇
+
+每个 EF300 或 EF600 控制器架或驱动器架都包含五个风扇，用于冷却控制器。
+
+
+
+== 主机接口卡（ HIC ）
+
+必须在控制器箱中安装主机接口卡（ HIC ）。EF600 控制器在可选 HIC 上包含主机端口。HIC 中内置的主机端口称为 HIC 端口。
+
+
+
+== 主机端口协议
+
+您可以将主机的协议转换为其他协议，以便建立兼容性和通信。
+
+
+
+== 电源
+
+电源可在控制器架中提供冗余电源。
+
+
+
+== SAS 扩展卡
+
+SAS 扩展卡可以安装在控制器箱中。EF300 控制器支持 SAS 扩展。

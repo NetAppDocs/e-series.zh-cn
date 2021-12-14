@@ -1,0 +1,37 @@
+---
+permalink: getting-started/index.html 
+sidebar: sidebar 
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, 
+summary: 此站点包含有关特定 E 系列版本，型号和组件的信息。 
+---
+= 此站点包含的内容
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+此站点包含有关特定 E 系列版本，型号和组件的信息。
+
+|===
+| 包含的内容 | 包含的内容 _not_ 
+
+
+ a| 
+此站点包含以下版本和组件类型的信息：
+
+* * SANtricity software* — 11.50 及更高版本。
+* * 控制器固件 * — 8.50 及更高版本。
+* * 控制器类型 * —所有 E2800 ， EF280 ， EF300 ， E5700 ， EF570 ， 和 EF600 型号。
+* * 接口类型 * —光纤通道， iSCSI ， iSER ， SAS 和 NVMe 。
+* * 主机上安装的操作系统 * — Linux ， VMware 和 Windows 。
++
+
+NOTE: 可能支持其他接口和操作系统。有关详细信息，请联系技术支持。
+
+
+ a| 
+此站点不包含早于 _ 软件版本 11.50 或固件版本 8.50 的版本的信息。对于早期版本，请转到 https://www.netapp.com/us/documentation/eseries-santricity.aspx["E 系列和 SANtricity 文档资源"^] 页面。
+
+有关站点准备要求的信息，请访问 https://hwu.netapp.com/["NetApp Hardware Universe"^]。
+
+|===

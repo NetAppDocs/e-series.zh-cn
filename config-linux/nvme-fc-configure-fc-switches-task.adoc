@@ -1,0 +1,29 @@
+---
+permalink: config-linux/nvme-fc-configure-fc-switches-task.html 
+sidebar: sidebar 
+keywords: FC switch, zoning, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 通过配置光纤通道 \ （分区 \ ）交换机，主机可以连接到存储阵列并限制路径数。您可以使用交换机的管理界面对交换机进行分区。 
+---
+= 配置 FC 交换机
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过配置（分区）光纤通道（ FC ）交换机，主机可以连接到存储阵列并限制路径数。您可以使用交换机的管理界面对交换机进行分区。
+
+.您需要什么？ #8217 ；将需要什么
+* 交换机的管理员凭据。
+* 每个主机启动程序端口以及连接到交换机的每个控制器目标端口的 WWPN 。（使用 HBA 实用程序进行发现。）
+
+
+有关对交换机进行分区的详细信息，请参见交换机供应商的文档。
+
+每个启动程序端口都必须位于一个单独的分区中，并具有所有相应的目标端口。
+
+.步骤
+. 登录到 FC 交换机管理程序，然后选择分区配置选项。
+. 创建一个新分区，其中包含第一个主机启动程序端口，也包括与启动程序连接到同一 FC 交换机的所有目标端口。
+. 为交换机中的每个 FC 主机启动程序端口创建其他分区。
+. 保存分区，然后激活新的分区配置。
+

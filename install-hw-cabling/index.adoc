@@ -1,0 +1,74 @@
+---
+permalink: install-hw-cabling/index.html 
+sidebar: sidebar 
+keywords: cabling, cables, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C 
+summary: 使用缆线将主机直接连接到控制器或使用交换机。 
+---
+= 布线概述
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用缆线将主机直接连接到控制器，也可以使用交换机将主机连接到控制器。
+
+如果存储系统包含一个或多个驱动器架，则必须使用缆线将其连接到控制器架。您可以在存储系统的其他组件仍通电的情况下添加新驱动器架。此外，您还可以将存储系统连接到网络以进行带外管理。
+
+布线信息适用于要安装或扩展存储系统的硬件安装程序或系统管理员。假定您已按照硬件的 _Installation and Setup Instructions_中 所述安装了存储系统。
+
+
+
+== 适用的硬件型号
+
+布线信息适用场景以下硬件型号。
+
+|===
+| * 控制器架 * | * 驱动器架 * 
+
+
+ a| 
+EF600
+ a| 
+不适用。
+
+
+
+ a| 
+E5724 ， EF570 ， E2812 ， E2824 ， EF280
+ a| 
+DE212C ， DE224C
+
+
+
+ a| 
+E2860 ， E5760
+ a| 
+DE460C
+
+|===
+
+
+== 其他布线信息
+
+如果要为以下配置布线，请参见 https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057["将 IOM 驱动器架添加到现有 E27XX ， E56XX 或 EF560 控制器架。"^]
+
+|===
+| * 控制器架 * | * 驱动器架 * 
+
+
+ a| 
+E2712 ， E2724 ， E5612 ， E5624 ， EF560
+ a| 
+DE212C ， DE224C
+
+
+
+ a| 
+E2760 ， E5660
+ a| 
+DE460C
+
+|===
+有关其他布线选项的信息，请参见 https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2773533["《 E 系列硬件布线指南》"^] 对于较旧的系统。
+
+有关为支持镜像功能而布线的信息，请参见 https://www.netapp.com/us/media/tr-4656.pdf["《同步和异步镜像功能说明和部署指南》"^]。

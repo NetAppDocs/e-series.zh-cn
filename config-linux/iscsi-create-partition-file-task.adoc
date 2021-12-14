@@ -1,0 +1,86 @@
+---
+permalink: config-linux/iscsi-create-partition-file-task.html 
+sidebar: sidebar 
+keywords: partitions, file systems, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 新 LUN 在 Linux 主机首次发现时没有分区或文件系统。必须先格式化 LUN ，然后才能使用它。 
+---
+= 创建分区和文件系统
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+由于新 LUN 在 Linux 主机首次发现时没有分区或文件系统，因此必须先格式化 LUN ，然后才能使用它。您也可以选择在 LUN 上创建文件系统。
+
+.您需要什么？ #8217 ；将需要什么
+* 主机发现的 LUN 。
+* 可用磁盘的列表。（要查看可用磁盘，请在 /dev/mapper 文件夹中运行 `ls` 命令。）
+
+
+您可以使用 GUID 分区表（ GPT ）或主启动记录（ MBR ）将磁盘初始化为基本磁盘。
+
+使用 ext4 等文件系统格式化 LUN 。某些应用程序不需要执行此步骤。
+
+.步骤
+. 发出 `sanlun lun show -p` 命令，以检索映射磁盘的 SCSI ID 。
++
+SCSI ID 是一个 33 个字符的十六进制数字字符串，从数字 3 开始。如果启用了用户友好名称，则设备映射程序会将磁盘报告为 mpath ，而不是 SCSI ID 。
+
++
+[listing]
+----
+# sanlun lun show -p
+
+                E-Series Array: ictm1619s01c01-SRP(60080e50002908b40000000054efb9d2)
+                   Volume Name:
+               Preferred Owner: Controller in Slot B
+                 Current Owner: Controller in Slot B
+                          Mode: RDAC (Active/Active)
+                       UTM LUN: None
+                           LUN: 116
+                      LUN Size:
+                       Product: E-Series
+                   Host Device: mpathr(360080e50004300ac000007575568851d)
+              Multipath Policy: round-robin 0
+            Multipath Provider: Native
+--------- ---------- ------- ------------ ----------------------------------------------
+host      controller                      controller
+path      path       /dev/   host         target
+state     type       node    adapter      port
+--------- ---------- ------- ------------ ----------------------------------------------
+up        secondary  sdcx    host14       A1
+up        secondary  sdat    host10       A2
+up        secondary  sdbv    host13       B1
+----
+. 根据适用于您的 Linux 操作系统版本的方法创建新分区。
++
+通常，标识磁盘分区的字符会附加到 SCSI ID （例如，数字 1 或 P3 ）中。
+
++
+[listing]
+----
+# parted -a optimal -s -- /dev/mapper/360080e5000321bb8000092b1535f887a mklabel
+gpt mkpart primary ext4 0% 100%
+----
+. 在分区上创建文件系统。
++
+创建文件系统的方法因所选的文件系统而异。
+
++
+[listing]
+----
+# mkfs.ext4 /dev/mapper/360080e5000321bb8000092b1535f887a1
+----
+. 创建一个文件夹以挂载新分区。
++
+[listing]
+----
+# mkdir /mnt/ext4
+----
+. 挂载分区。
++
+[listing]
+----
+# mount /dev/mapper/360080e5000321bb8000092b1535f887a1 /mnt/ext4
+----
+

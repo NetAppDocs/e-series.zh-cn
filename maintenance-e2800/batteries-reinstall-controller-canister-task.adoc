@@ -1,0 +1,40 @@
+---
+permalink: maintenance-e2800/batteries-reinstall-controller-canister-task.html 
+sidebar: sidebar 
+keywords: E2800 battery fail, E2800 battery, E2800 battery replacement, replace E2800 battery, replacing E2800 battery, E2800, E-Series, eseries 
+summary: 安装新电池后，将控制器箱重新安装到控制器架中。 
+---
+= 重新安装 E2800 控制器箱
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+安装新电池后，将控制器箱重新安装到控制器架中。
+
+.步骤
+. 将控制器箱盖从背面向前滑动，直到按钮卡入到位，从而重新安装控制器箱上的盖。
+. 将控制器箱翻转，使可拆卸盖朝下。
+. 在凸轮把手处于打开位置的情况下，将控制器箱完全滑入控制器架。
++
+image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[28 dwg e2824 卸下控制器箱维护 e2800]
+
++
+* （ 1 ） * _ 控制器箱 _
+
++
+* （ 2 ） * _Cam handle
+
++
+image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[28 dwg e2860 添加控制器箱维护 e2800]
+
++
+* （ 1 ） * _ 控制器箱 _
+
++
+* （ 2 ） * _Cam handle
+
+. 将凸轮把手移至左侧，将控制器箱锁定到位。
+. 重新连接所有缆线。
+. 转至 link:batteries-complete-replacement-task.html["完成 E2800 电池更换"]。
+

@@ -1,0 +1,85 @@
+---
+permalink: install-hw-cabling/driveshelf-cable-task.html 
+sidebar: sidebar 
+keywords: cabling, cables, drive shelf cabling, controller shelf cabling, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C 
+summary: 将控制器架中的每个控制器连接到驱动器架中的 I/O 模块（ IOM ）。 
+---
+= 驱动器架布线
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必须将控制器架中的每个控制器连接到驱动器架中的 I/O 模块（ IOM ）。
+
+如果要使用缆线将旧控制器架连接到 DE212C ， DE224C 或 DE460 ，请参见 https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057["将 IOM 驱动器架添加到现有 E27XX ， E56XX 或 EF560 控制器架"^]。
+
+
+
+== 为 E2800 和 E5700 布线
+
+以下信息适用场景使用缆线将 E5700 ， EF570 ， E2800 或 EF280 控制器架连接到 DE212C ， DE224C 或 DE460 驱动器架。
+
+
+
+=== 为 12 驱动器或 24 驱动器磁盘架布线
+
+您可以使用缆线将控制器架连接到一个或多个 12 驱动器或 24 驱动器磁盘架。
+
+下图显示了控制器架和驱动器架的表示形式。要查找您的型号上的端口，请参见 https://hwu.netapp.com/Controller/Index?platformTypeId=2357027["Hardware Universe"^]。
+
+
+
+==== 一个控制器架和 12 驱动器或 24 驱动器架
+
+image::../media/12_24_cabling.png[12 24 条布线]
+
+
+
+=== 为 60 个驱动器的磁盘架布线
+
+您可以使用缆线将控制器架连接到一个或多个 60 驱动器磁盘架。
+
+下图显示了控制器架和驱动器架的表示形式。要查找您的型号上的端口，请参见 https://hwu.netapp.com/Controller/Index?platformTypeId=2357027["Hardware Universe"^]。
+
+
+
+==== 一个控制器架和 60 个驱动器架
+
+image::../media/60_cabling.png[60 个布线]
+
+
+
+== 为 EF300 布线
+
+以下信息是通过适用场景将 EF300 控制器架连接到 DE212C ， DE224C 或 DE460 驱动器架的信息。
+
+在为 EF300 布线之前，请确保固件已更新到最新版本。要更新固件，请按照中的说明进行操作 link:../upgrade-santricity/index.html["升级 SANtricity OS"^]。
+
+
+
+=== 为 12 驱动器或 24 驱动器磁盘架布线
+
+您可以使用缆线将控制器架连接到一个或多个 12 驱动器或 24 驱动器磁盘架。
+
+下图显示了控制器架和驱动器架的表示形式。要查找您的型号上的端口，请参见 https://hwu.netapp.com/Controller/Index?platformTypeId=2357027["Hardware Universe"^]。
+
+
+
+==== 一个控制器架和 12 驱动器或 24 驱动器架
+
+image::../media/ef_to_de224c_four_shelves.png[EF 到 de224c 四个磁盘架]
+
+
+
+=== 为 60 个驱动器的磁盘架布线
+
+您可以使用缆线将控制器架连接到一个或多个 60 驱动器磁盘架。
+
+下图显示了控制器架和驱动器架的表示形式。要查找您的型号上的端口，请参见 https://hwu.netapp.com/Controller/Index?platformTypeId=2357027["Hardware Universe"^]。
+
+
+
+==== 一个控制器架和 60 个驱动器架
+
+image::../media/ef_to_de460c.png[EF 到 de460c]

@@ -1,0 +1,561 @@
+---
+permalink: maintenance-e2800/hpp-change-host-protocol-task.html 
+sidebar: sidebar 
+keywords: E2800 convert host port protocol, convert E2800 FC iSCSI, Fibre Channel protocol, iSCSI protocol, convert HPP, converting host port protocol, SFP+ (optical) host ports, E2800, E-Series, eseries 
+summary: 将主机端口协议从光纤通道（ Fibre Channel ， FC ）更改为 iSCSI 或从 iSCSI 更改为 FC 。 
+---
+= 更改 E2800 的主机协议
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您的 E2800 存储阵列使用 SFP+ （光纤）主机端口，则可以将主机端口协议从光纤通道（ FC ）更改为 iSCSI ，或者从 iSCSI 更改为 FC 。
+
+您可以更改控制器中内置的主机端口所使用的协议（ _basebboard host ports_ ），主机接口卡上的主机端口所使用的协议（ _HIC ports_ ）或所有主机端口的协议。
+
+
+
+== 第 1 步：确定您是否具有双协议 SFP
+
+使用 SANtricity 系统管理器确定您拥有的 SFP 收发器类型。由于这些 SFP 可以与 FC 和 iSCSI 协议结合使用，因此称为 _dual-protocol_ 或 _unified_SFP 。
+
+.步骤
+. 在 SANtricity 系统管理器中，选择 * 支持 * 。
+. 选择 * 支持中心 * 图块。
+. 在支持资源选项卡上，找到并选择 * 存储阵列配置文件 * 链接。
+. 在文本框中键入 * SFP * ，然后单击 * 查找 * 。
+. 对于存储阵列配置文件中列出的每个 SFP ，找到 * 支持的数据速率 * 条目。
++
+image::../media/sam1130_ss_e2800_unified_spf_maint-e2800.gif[sam1130 ss e2800 统一 SPF 维护 e2800]
+
+. 请参见下表以确定是否可以重复使用 SFP ，如下所示：
++
+|===
+| 支持的数据速率 | SFP 类型 | 支持的协议 
+
+
+ a| 
+16 Gbps ， 10 Gbps ， 4 Gbps
+ a| 
+双协议
+ a| 
+** * FC ： * 16 Gbps ， 4 Gbps
+** **iSCSI ： 10.10 Gbps
+
+
+
+
+ a| 
+25 Gbps ， 10 Gbps
+ a| 
+25 Gbps 。10 Gbps ，
+ a| 
+仅限 iSCSI
+
+
+
+ a| 
+32 Gbps ， 16 Gbps ， 8 Gbps ， 4 Gbps
+ a| 
+32 Gbps ， 16 Gbps
+ a| 
+仅限 FC
+
+|===
++
+** 如果您使用双协议 SFP ，则可以在转换协议后继续使用它们。
++
+
+NOTE: 双协议 SFP 不支持 1 Gb iSCSI 。如果要将主机端口转换为 iSCSI ，请注意，双协议 SFP 仅支持与所连接端口的 10 Gb 链路。
+
+** 如果您有 16 Gbps SFP ，并且要将主机端口转换为 iSCSI ，则必须在转换协议后删除这些 SFP 并将其替换为双协议或 10 Gbps SFP 。根据需要，您还可以使用带有 SFP 的专用双 AX 缆线使用 10 Gbps iSCSI 铜线。
++
+
+NOTE: E28xx 或 E57xx 控制器不支持 8 Gbps FC SFP 。仅支持 16 Gbps 和 32 Gbps FC SFP 。
+
+** 如果您有 10 Gbps SFP ，并且要将主机端口转换为 FC ，则必须在转换协议后从这些端口中删除 SFP ，并将其替换为双协议或 16 Gbps SFP 。
+
+
+
+
+
+
+== 第 2 步：获取功能包
+
+要获取功能包，您需要控制器架中的序列号，功能激活代码以及存储阵列的功能启用标识符。
+
+.步骤
+. 找到序列号。
++
+.. 在 SANtricity 系统管理器中，选择菜单： Support[ 支持中心 ] 。
+.. 选择 * 支持资源 * 选项卡后，滚动到 * 查看存储阵列顶部属性 * 部分。
+.. 找到 * 机箱序列号 * ，并将此值复制到文本文件。
++
+image::../media/sam1130_ss_e2800_storage_array_profile_sn_smid_copy_maint-e2800.gif[SA1130 ss e2800 存储阵列配置文件 SN SMID 副本维护 e2800]
+
+
+
+. 找到 * 功能包子型号 ID* 。
++
+.. 在支持资源选项卡上，找到并选择 * 存储阵列配置文件 * 链接。
+.. 在文本框中键入 * 功能包子型号 ID* ，然后单击 * 查找 * 。
+.. 找到起始配置的功能包子型号 ID 。
++
+image::../media/storage_array_profile2_maint-e2800.gif[存储阵列配置文件 2 维护 e2800]
+
+
+
+. 使用功能包子型号 ID ，找到起始配置对应的控制器子型号 ID ，并在下表中找到所需结束配置的功能激活代码。然后，将该功能激活代码复制到文本文件。
++
+|===
+3+| 正在启动配置 3+| 正在结束配置 .2+| 功能激活代码 
+
+
+| 控制器子型号 ID | 基板端口 | HIC 端口 | 控制器子型号 ID | 基板端口 | HIC 端口 
+
+
+ a| 
+318
+ a| 
+FC
+ a| 
+FC
+ a| 
+319
+ a| 
+FC
+ a| 
+iSCSI
+ a| 
+ZGW-4L2-Z36IJ
+
+
+
+ a| 
+320
+ a| 
+iSCSI
+ a| 
+FC
+ a| 
+4GZ-NL2-Z4NRP
+
+
+
+ a| 
+321.
+ a| 
+iSCSI
+ a| 
+iSCSI
+ a| 
+TG2-7L2-Z5485
+
+
+
+ a| 
+无 HIC 或非光纤 HIC_
+ a| 
+321.
+ a| 
+iSCSI
+ a| 
+TG2-7L2-Z5485
+
+
+
+ a| 
+319
+ a| 
+FC
+ a| 
+iSCSI
+ a| 
+318
+ a| 
+FC
+ a| 
+FC
+ a| 
+1G5-QL2-Z7LFC
+
+
+
+ a| 
+320
+ a| 
+iSCSI
+ a| 
+FC
+ a| 
+FGS-AL2-Z82RW
+
+
+
+ a| 
+321.
+ a| 
+iSCSI
+ a| 
+iSCSI
+ a| 
+5G7-0K2-Z0G8X
+
+
+
+ a| 
+320
+ a| 
+iSCSI
+ a| 
+FC
+ a| 
+318
+ a| 
+FC
+ a| 
+FC
+ a| 
+4GP-HL2-ZYRKP
+
+
+
+ a| 
+319
+ a| 
+FC
+ a| 
+iSCSI
+ a| 
+PGU-KL2-Z1P7I
+
+
+
+ a| 
+321.
+ a| 
+iSCSI
+ a| 
+iSCSI
+ a| 
+BGA-8K2-ZQM5
+
+
+
+ a| 
+321.
+ a| 
+iSCSI
+ a| 
+iSCSI
+ a| 
+318
+ a| 
+FC
+ a| 
+FC
+ a| 
+SGH-UK2-ZUCJG
+
+
+
+ a| 
+319
+ a| 
+FC
+ a| 
+iSCSI
+ a| 
+1GK-EK2-ZVSW1
+
+
+
+ a| 
+320
+ a| 
+iSCSI
+ a| 
+FC
+ a| 
+AGM-XL2-ZWA8A
+
+|===
++
+|===
+3+| 正在启动配置 3+| 正在结束配置 .2+| 功能激活代码 
+
+
+| 控制器子型号 ID | 基板端口 | HIC 端口 | 控制器子型号 ID | 基板端口 | HIC 端口 
+
+
+ a| 
+338-338-
+ a| 
+FC
+ a| 
+FC
+ a| 
+339
+ a| 
+FC
+ a| 
+iSCSI
+ a| 
+PGC-RK2-ZREUT
+
+
+
+ a| 
+340
+ a| 
+iSCSI
+ a| 
+FC
+ a| 
+MGF-BK2-ZSU3Z
+
+
+
+ a| 
+341.
+ a| 
+iSCSI
+ a| 
+iSCSI
+ a| 
+NGR-1L2-ZZ8QC
+
+
+
+ a| 
+无 HIC 或非光纤 HIC_
+ a| 
+341.
+ a| 
+iSCSI
+ a| 
+NGR-1L2-ZZ8QC
+
+
+
+ a| 
+339
+ a| 
+FC
+ a| 
+iSCSI
+ a| 
+338-338-
+ a| 
+FC
+ a| 
+FC
+ a| 
+DGT-7M2-ZKBmd
+
+
+
+ a| 
+340
+ a| 
+iSCSI
+ a| 
+FC
+ a| 
+GA-TL2-Z9J50
+
+
+
+ a| 
+341.
+ a| 
+iSCSI
+ a| 
+iSCSI
+ a| 
+SGC-DL2-ZBZIB
+
+
+
+ a| 
+340
+ a| 
+iSCSI
+ a| 
+FC
+ a| 
+338-338-
+ a| 
+FC
+ a| 
+FC
+ a| 
+4Gm — km2-ZGWS1
+
+
+
+ a| 
+339
+ a| 
+FC
+ a| 
+iSCSI
+ a| 
+PG0-4 m2-ZHDZ6
+
+
+
+ a| 
+341.
+ a| 
+iSCSI
+ a| 
+iSCSI
+ a| 
+XGR-NM2-ZJUGR
+
+
+
+ a| 
+341.
+ a| 
+iSCSI
+ a| 
+iSCSI
+ a| 
+338-338-
+ a| 
+FC
+ a| 
+FC
+ a| 
+3GE-WL2-ZCHNY
+
+
+
+ a| 
+339
+ a| 
+FC
+ a| 
+iSCSI
+ a| 
+FGH-HL2-ZDY3R
+
+
+
+ a| 
+340
+ a| 
+iSCSI
+ a| 
+FC
+ a| 
+VGJ-1L2-ZFFEW
+
+|===
++
+
+NOTE: 如果未列出您的控制器子型号 ID ，请联系 http://mysupport.netapp.com["NetApp 支持"^]。
+
+. 在 System Manager 中，找到功能启用标识符。
++
+.. 转到菜单：设置 [ 系统 ] 。
+.. 向下滚动到 * 加载项 * 。
+.. 在 * 更改功能包 * 下，找到 * 功能启用标识符 * 。
+.. 将此 32 位数字复制并粘贴到文本文件中。
++
+image::../media/sam1130_ss_e2800_change_feature_pack_feature_enable_identifier_copy_maint-e2800.gif[sam1130 ss e2800 change feature pack 功能启用了标识符副本 maint e2800]
+
+
+
+. 转至 http://partnerspfk.netapp.com["NetApp 许可证激活：存储阵列高级功能激活"^]，并输入获取功能包所需的信息。
++
+** 机箱序列号
+** 功能激活代码
+** 功能启用标识符
++
+
+NOTE: 高级功能激活网站提供了一个链接，指向 "`高级功能激活说明 " 。` 请勿尝试对此操作步骤使用这些说明。
+
+
+
+. 选择是通过电子邮件接收功能包的密钥文件，还是直接从站点下载。
+
+
+
+
+== 第 3 步：停止主机 I/O
+
+在转换主机端口的协议之前，必须停止主机上的所有 I/O 操作。在成功完成转换之前，您无法访问存储阵列上的数据。
+
+.步骤
+. 确保存储阵列与所有已连接主机之间未发生任何 I/O 操作。例如，您可以执行以下步骤：
++
+** 停止涉及从存储映射到主机的 LUN 的所有进程。
+** 确保没有应用程序向从存储映射到主机的任何 LUN 写入数据。
+** 卸载与阵列上的卷关联的所有文件系统。
++
+
+NOTE: 停止主机 I/O 操作的确切步骤取决于主机操作系统和配置，这些步骤不在本说明的范围之内。如果您不确定如何停止环境中的主机 I/O 操作，请考虑关闭主机。
+
++
+
+CAUTION: * 可能的数据丢失 * - 如果在执行 I/O 操作时继续执行此操作步骤，则主机应用程序可能会因为无法访问存储而无法访问数据。
+
+
+
+. 如果存储阵列参与镜像关系，请停止二级存储阵列上的所有主机 I/O 操作。
+. 等待缓存中的所有数据写入驱动器。
++
+当需要将缓存数据写入驱动器时，每个控制器背面的绿色缓存活动 LED 亮起。您必须等待此 LED 关闭。image:../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[""]
+
++
+|===
+| Callout | 主机端口的类型 
+
+
+ a| 
+* （ 1 ） *
+ a| 
+缓存活动 LED
+
+|===
+. 从 SANtricity 系统管理器的主页页面中，选择 * 查看正在执行的操作 * 。
+. 等待所有操作完成，然后再继续下一步。
+
+
+
+
+== 第 4 步：更改功能包
+
+更改功能包以转换基板主机端口， IB HIC 端口或这两种类型的端口的主机协议。
+
+.步骤
+. 在 SANtricity 系统管理器中，选择菜单：设置 [ 系统 ] 。
+. 在 * 加载项 * 下，选择 * 更改功能包 * 。
++
+image::../media/sam1130_ss_system_change_feature_pack_maint-e2800.gif[sam1130 ss system change feature pack maint e2800]
+
+. 单击 * 浏览 * ，然后选择要应用的功能包。
+. 在字段中键入 `change` 。
+. 单击 * 更改 * 。
++
+开始迁移功能包。两个控制器都会自动重新启动两次，以使新功能包生效。重新启动完成后，存储阵列将恢复为响应状态。
+
+. 确认主机端口具有所需的协议。
++
+.. 在 SANtricity 系统管理器中，选择 * 硬件 * 。
+.. 单击 * 显示磁盘架的背面 * 。
+.. 选择控制器 A 或控制器 B 的图形
+.. 从上下文菜单中选择 * 查看设置 * 。
+.. 选择 * 主机接口 * 选项卡。
+.. 单击 * 显示更多设置 * 。
+.. 查看所示的基板端口和 HIC 端口（标记为 " `slot 1` " ）的详细信息，并确认每种类型的端口都具有您期望的协议。
+
+
+
+
+转至 link:hpp-complete-protocol-conversion-task.html["完成主机协议转换"]。

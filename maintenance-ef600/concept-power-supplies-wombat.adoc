@@ -1,0 +1,13 @@
+---
+permalink: maintenance-ef600/concept-power-supplies-wombat.html 
+sidebar: sidebar 
+keywords: power, supply, redundant, source, controller, shelf, supplies 
+summary: 电源可在控制器架中提供冗余电源。 
+---
+= 电源
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+电源可在控制器架中提供冗余电源。

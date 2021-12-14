@@ -1,0 +1,69 @@
+---
+permalink: config-linux/nvme-ib-verify-linux-config-support-task.html 
+sidebar: sidebar 
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 为了确保操作可靠，您需要创建一个实施计划，然后使用 NetApp 互操作性表工具（ IMT ）验证是否支持整个配置。 
+---
+= 验证 Linux 支持并查看限制
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+首先，您应验证 Linux 配置是否受支持，并查看控制器，主机和恢复限制。
+
+
+
+== 验证是否支持 Linux 配置
+
+为了确保操作可靠，您需要创建一个实施计划，然后使用 NetApp 互操作性表工具（ IMT ）验证是否支持整个配置。
+
+.步骤
+. 转至 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]。
+. 单击 * 解决方案 Search* 图块。
+. 在菜单：协议 [SAN 主机 ] 区域中，单击 * E 系列 SAN 主机 * 旁边的 * 添加 * 按钮。
+. 单击 * 查看细化搜索条件 * 。
++
+此时将显示细化搜索条件部分。在本节中，您可以选择适用的协议以及其他配置标准，例如操作系统， NetApp 操作系统和主机多路径驱动程序。
+
+. 选择您知道配置所需的条件，然后查看适用的兼容配置要素。
+. 根据需要，根据工具中的规定更新操作系统和协议。
++
+单击右页面箭头可在查看支持的配置页面上访问选定配置的详细信息。
+
+
+
+
+
+== 查看基于 InfiniBand 的 NVMe 限制
+
+在使用基于 InfiniBand 的 NVMe 之前，请查看控制器，主机和恢复限制。有关所有限制的最新列表，请参见 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]。
+
+
+
+=== 控制器限制
+
+* 可以为 EF300 （仅限 100 GB 控制器）， EF600 ， EF570 或 E5700 控制器配置基于 InfiniBand 的 NVMe 。控制器必须具有 100 GB 或 200 GB InfiniBand 主机端口。
+* 此协议只能用于 EF300 ， EF600 ， EF570 或 EF570 控制器。要在 EF600 ， EF570 和 E5700 控制器上使用此协议，至少需要 32 GB 物理内存。对于 EF300 ，至少需要 16 GB 的物理内存。如果在每天开始操作期间不满足控制器的最低内存要求，则会显示一条消息，帮助您诊断问题。
+* 不支持单工（单控制器）配置。
+* 不支持混合使用基于 InfiniBand 的 NVMe 和 SCSI 主机接口。
+* 对于 EF300 控制器， IB 接口支持的 NVMe 主机不能超过 64 个。
+
+
+
+
+=== 主机，主机协议和主机操作系统限制
+
+* 主机必须运行最新兼容的 RHEL 7 ， SUSE Linux Enterprise Server 12 或 15 Service Pack 操作系统。请参见 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^] 有关最新要求的完整列表。
+* 只有 Mellanox 才支持主机通道适配器。请参见 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^] 有关详细信息 ...
+* 唯一支持的主机接口卡（ HIC ）是 100G 或 200G EDR IB HIC ，它也支持 iSER 和 SRP （但不支持同时使用 iSER 和 SRP ）。
+
+
+
+
+=== 存储和灾难恢复限制
+
+* 不支持异步和同步镜像。
+* 不支持精简配置（创建精简卷）。
+

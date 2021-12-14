@@ -1,0 +1,96 @@
+---
+permalink: config-linux/srp-ib-worksheet-concept.html 
+sidebar: sidebar 
+keywords: SRP over Infiniband worksheet Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 使用此工作表记录基于 Infiniband 的 SRP 存储配置信息。 
+---
+= 记录基于 IB 的 SRP 配置
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以生成并打印此页面的 PDF ，然后使用以下工作表记录基于 InfiniBand 的 SRP 存储配置信息。要执行配置任务，您需要此信息。
+
+image::../media/port_identifiers_ib_srp.gif[端口标识符 IB SRP]
+
+
+
+== 主机标识符
+
+
+NOTE: 启动程序 GUID 在任务中确定， xref:srp-ib-determine-host-port-guids-task.adoc[确定主机端口 GUID 并进行建议的设置]。
+
+|===
+| 标注编号 | 主机（启动程序）端口连接 | GUID 
+
+
+ a| 
+1.
+ a| 
+主机
+ a| 
+_ 不适用 _
+
+
+
+ a| 
+3.
+ a| 
+交换机
+ a| 
+_ 不适用 _
+
+
+
+ a| 
+4.
+ a| 
+目标（存储阵列）
+ a| 
+_ 不适用 _
+
+
+
+ a| 
+2.
+ a| 
+主机端口 1 到 IB 交换机 1 （ "A" 路径）
+ a| 
+
+
+
+ a| 
+5.
+ a| 
+主机端口 2 到 IB 交换机 2 （ "B" 路径）
+ a| 
+
+|===
+
+
+== 建议的配置
+
+建议的配置包括两个启动程序端口和四个目标端口。
+
+
+
+== 正在映射主机名
+
+
+NOTE: 映射主机名会在工作流期间创建。
+
+|===
+
+
+ a| 
+正在映射主机名
+ a| 
+
+
+
+ a| 
+主机操作系统类型
+ a| 
+
+|===

@@ -1,0 +1,60 @@
+---
+permalink: web-services-proxy/overview-compat-concept.html 
+sidebar: sidebar 
+keywords: Web Services, WSP, SANtricity API, 
+summary: WSP 的兼容性和限制。 
+---
+= 兼容性和限制
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+以下兼容性和限制适用于使用 Web 服务代理。
+
+|===
+| 注意事项 | 兼容性或限制 
+
+
+ a| 
+HTTP 支持
+ a| 
+Web 服务代理允许使用 HTTP 或 HTTPS 。（出于安全原因，嵌入式版本的 Web 服务需要 HTTPS 。）
+
+
+
+ a| 
+存储系统和固件
+ a| 
+Web 服务代理可以管理所有 E 系列存储系统，包括混合使用旧系统和最新的 E2800 ， EF280 ， E5700 ， EF570 ， EF300 ， 和 EF600 系列系统。
+
+
+
+ a| 
+IP 支持
+ a| 
+Web 服务代理支持 IPv4 协议或 IPv6 协议。
+
+
+NOTE: 当 Web 服务代理尝试从控制器配置自动发现管理地址时， IPv6 协议可能会失败。失败的可能原因包括在存储系统上启用 IP 地址转发或 IPv6 期间出现问题，但服务器上未启用 IPv6 。
+
+
+
+ a| 
+NVSRAM 文件名限制
+ a| 
+Web 服务代理使用 NVSRAM 文件名来准确标识版本信息。因此，在将 NVSRAM 文件名与 Web 服务代理结合使用时，您无法更改这些文件名。Web 服务代理可能无法将重命名的 NVSRAM 文件识别为有效的固件文件。
+
+
+
+ a| 
+符号 Web
+ a| 
+符号 Web 是 REST API 中的 URL 。它可以访问几乎所有符号调用。SYMBOL 函数属于以下 URL ：
+
+` +http://host:port/devmgr/storage-system/storage 数组 ID/ 符号 / 符号函数 +`
+
+
+NOTE: 通过 Web 服务代理支持已禁用符号的存储系统。
+
+|===

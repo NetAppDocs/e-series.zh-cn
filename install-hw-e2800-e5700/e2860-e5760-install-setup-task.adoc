@@ -1,0 +1,13 @@
+---
+permalink: install-hw-e2800-e5700/e2860-e5760-install-setup-task.html 
+sidebar: sidebar 
+keywords: instruction, describe, install, storage, system, link, additional, content, installation, setup, e2860, e5760, de460c 
+summary: 这些说明介绍如何安装和设置新存储系统，并提供指向其他内容的链接。 
+---
+= 《 E2860 ， E5760 和 DE460C 安装和设置说明》
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+这些说明介绍如何安装和设置新存储系统，并提供指向其他内容的链接。

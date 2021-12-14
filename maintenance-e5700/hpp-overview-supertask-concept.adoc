@@ -1,0 +1,102 @@
+---
+permalink: maintenance-e5700/hpp-overview-supertask-concept.html 
+sidebar: sidebar 
+keywords: E5700 change host protocol, E5700 baseboard ports, convert E5700 protocol, IB protocol, Infiniband protocol, Fibre Channel protocol, FC protocol, iSCSI protocol, converting host port protocol, 
+summary: 转换 E5700 的主机协议。 
+---
+= 更改 E5700 主机端口协议的要求
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在转换 E5700 中的主机端口协议之前，请查看相关要求。
+
+下图显示了 E5700 及其 SFP+ （光纤）基板主机端口 * （ 1 ） * 和两个可选 IB HIC 端口 * （ 2 ） * 。
+
+image::../media/e5700_with_2_port_100g_edr_infiniband_hic_w_callouts.gif[带有 2 端口 100g EDR InfiniBand hic 的 e5700 带有标注]
+
+
+
+== 要求
+
+* 您必须为此操作步骤计划停机维护窗口。
+* 在执行转换时，您必须停止主机 I/O 操作，并且在成功完成转换之前，您将无法访问存储阵列上的数据。
+* 您必须使用带外管理。（您不能使用带内管理来完成此操作步骤。）
+* 您已获得转换所需的硬件。您的 NetApp 销售代表可以帮助您确定所需的硬件，并帮助您订购正确的部件。
+* 如果您尝试更改存储阵列的基板主机端口，并且该阵列当前使用从 NetApp 购买的双协议（也称为 _unified_） SFP 收发器，则无需更改 SFP 收发器。
+* 确保双协议 SFP 收发器既支持 FC （ 4 Gbps 或 16 Gbps ），也支持 iSCSI （ 10 Gbps ），但不支持 1 Gbps iSCSI 。请参见 link:hpp-change-host-protocol-task.html["第 1 步：确定您是否具有双协议 SFP"] 以确定安装的 SFP 收发器类型。
+
+
+
+
+== 更改主机协议的注意事项
+
+更改主机协议的注意事项取决于基板主机端口和 HIC 端口的起始和结束协议。
+
+如果您使用镜像功能或数据保证（ Data Assurance ， DA ）功能，则必须了解更改主机端口协议时这些功能会发生什么情况。
+
+
+NOTE: 只有在转换已使用的存储阵列时，以下注意事项才适用。如果要转换尚未定义主机和卷的新存储阵列，则这些注意事项不适用。
+
+
+
+=== 从 FC 转换为 iSCSI
+
+* 异步镜像要求本地存储阵列和远程存储阵列使用相同的协议。
++
+** 如果您当前正在通过基板使用异步镜像，则必须在应用功能包之前使用这些端口停用异步镜像关系。
+** 要从本地和远程存储阵列中删除所有镜像一致性组并删除所有镜像对，请参见 SANtricity 系统管理器的联机帮助。此外，请按照联机帮助中的说明停用异步镜像。
++
+
+NOTE: 如果您的配置包含连接到 FC 基板端口的 SAN 启动主机，请检查 https://mysupport.netapp.com/NOW/products/interoperability["NetApp 互操作性表"^] 用于确保 iSCSI 支持此配置的工具。否则，您将无法将主机协议转换为 iSCSI 。
+
+
+
+* iSCSI 不支持同步镜像功能。
++
+** 如果您当前正在通过基板端口使用同步镜像关系，则必须停用这些同步镜像关系。
+** 要删除所有同步镜像对，请参见 SANtricity 系统管理器的联机帮助，此操作将删除本地存储阵列和远程存储阵列上的镜像关系。此外，请按照联机帮助中的说明停用同步镜像。
++
+
+CAUTION: 如果在转换为 iSCSI 之前未停用同步镜像关系，则系统将丢失数据访问，并且可能发生数据丢失。
+
+
+
+
+
+
+
+=== 从 iSCSI 转换为 FC
+
+* 异步镜像要求本地存储阵列和远程存储阵列使用相同的协议。如果您当前正在对基板端口使用异步镜像，则必须在更改协议之前停用异步镜像。
+* 要从本地和远程存储阵列中删除所有镜像一致性组并删除所有镜像对，请参见 SANtricity 系统管理器的联机帮助。此外，请按照联机帮助中的说明停用异步镜像。
+
+
+
+
+=== 将 IB-iSER 转换为 IB-SRP 或从 IB-SRP 转换为 IB-iSER
+
+* 从 iSER 转换为 SRP 时，您无需对硬件进行任何更改。
+* SRP 不支持数据保证（ Data Assurance ， DA ）功能。
+* IB-SRP 不支持 DA 功能。如果您当前正在通过 IB-HIC 使用此功能，并且要将这些端口从 iSER 转换为 SRP ，则必须在所有卷上永久禁用 DA 。要更改卷的设置以永久禁用数据保证设置，请参见 SANtricity 系统管理器的联机帮助。
++
+
+NOTE: 禁用后，无法在卷上重新启用 DA 。
+
+* 确认以下内容：
++
+** SANtricity 系统管理器可通过 Web 浏览器访问。
+** 存储系统正在运行 SANtricity 操作系统（控制器固件）版本 08.40.11.00 或更高版本。
+
+
+
+
+
+
+=== 镜像操作需要使用相同的主机协议
+
+如果在应用功能包后用于镜像的主机端口保持相同的协议，则镜像操作不会受到影响。即使如此，在应用此功能包之前，您应确认所有镜像一致性组均已同步。应用此功能包后，您应测试本地存储阵列与远程存储阵列之间的通信。如果您对此有任何疑问，请参见 SANtricity System Manager 的联机帮助。
+
+
+NOTE: 基于网络结构的 NVMe 不支持异步和同步镜像。要禁用异步和同步镜像，您可以通过命令行界面使用 `disable storageArray feature=asyncMirror` 或 `disable storageArray feature=SyncMirror` 命令。请参见 http://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-cli-115/GUID-0F156C94-C2A7-4458-A922-56439A098C09.html["禁用存储阵列功能"^] 有关如何禁用镜像的详细信息，请参见命令行界面命令参考联机帮助下的镜像命令。

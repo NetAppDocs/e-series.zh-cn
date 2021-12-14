@@ -1,0 +1,185 @@
+---
+permalink: web-services-proxy/install-config-task.html 
+sidebar: sidebar 
+keywords: configure Web Services Proxy, WSP configuration, start stop Webserver, start stop WSP service 
+summary: 您可以修改 Web 服务代理设置，以满足环境的独特操作和性能要求。 
+---
+= 配置 Web 服务代理
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以修改 Web 服务代理设置，以满足环境的独特操作和性能要求。
+
+
+
+== 停止或重新启动 Web 服务器
+
+Web 服务器服务会在安装期间启动并在后台运行。在某些配置任务期间，您可能需要停止或重新启动 Web 服务器服务。
+
+.步骤
+. 执行以下操作之一：
++
+** 对于 Windows ，请转到 * 开始 * 菜单，选择菜单：管理工具 [ 服务 ] ，找到 * NetApp SANtricity Web Services* ，然后选择 * 停止 * 或 * 重新启动 * 。
+** 对于 Linux ，选择停止和重新启动适用于您的操作系统版本的 Web 服务器的方法。在安装期间，弹出对话框会指示启动的守护进程。例如：
++
+`web_services_proxy webserver 已安装并启动。您可以使用 systemctl start|stop|restart|status web_services_proxy.service` 与其进行交互
+
++
+与此服务交互的最常见方法是使用 `systemctl` 命令。
+
+
+
+
+
+
+
+== 解决端口冲突
+
+如果 Web 服务代理正在运行，而另一个应用程序在定义的地址或端口上可用，则可以在 wsconfig.xml 文件中解决端口冲突。
+
+.步骤
+. 打开 wsconfig.xml 文件，该文件位于：
++
+** （ Windows ）— C ： \Program Files\NetApp\SANtricity Web 服务代理
+** （ Linux ）— /opt/netapp/SANtricity web_services_proxy
+
+
+. 将以下行添加到 wsconfig.xml 文件中，其中 _n_ 是端口号：
++
+[listing]
+----
+<sslport clientauth=”request”>*n*</sslport>
+<port>n</port>
+----
++
+下表显示了控制 HTTP 端口和 HTTPS 端口的属性。
+
++
+|===
+| Name | Description | 父节点 | 属性 | Required 
+
+
+ a| 
+配置
+ a| 
+配置的根节点
+ a| 
+空
+ a| 
+version —配置模式的当前版本为 1.0 。
+ a| 
+是的。
+
+
+
+ a| 
+sslport
+ a| 
+用于侦听 SSL 请求的 TCP 端口。默认为 8443 。
+ a| 
+配置
+ a| 
+客户端身份验证
+ a| 
+否
+
+
+
+ a| 
+port
+ a| 
+用于侦听 HTTP 请求的 TCP 端口默认为 8080 。
+ a| 
+配置
+ a| 
+-
+ a| 
+否
+
+|===
+. 保存并关闭文件。
+. 重新启动 Web 服务器服务，以使更改生效。
+
+
+
+
+== 配置负载平衡和 / 或高可用性
+
+要在高可用性（ HA ）配置中使用 Web 服务代理，您可以配置负载平衡。在 HA 配置中，通常一个节点接收所有请求，而另一个节点处于备用状态，或者在所有节点之间对请求进行负载平衡。
+
+Web 服务代理可以位于高可用性（ HA ）环境中，无论请求的接收方是谁，大多数 API 都可以正常运行。元数据标记和文件夹是两个例外，因为标记和文件夹存储在本地数据库中，不会在 Web 服务代理实例之间共享。
+
+但是，在少数请求中会出现一些已知的时间问题。具体而言，对于小型窗口，一个代理实例的数据更新速度可以比另一个实例更快。Web 服务代理包含一个特殊配置，用于删除此计时问题描述。默认情况下，此选项不会启用，因为它会增加处理请求所需的时间（以确保数据一致性）。要启用此选项，必须向 .ini 文件（适用于 Windows ）或 .SH 文件（适用于 Linux ）添加属性。
+
+.步骤
+. 执行以下操作之一：
++
+** Windows ：打开 appserver64.ini 文件，然后添加 `Dload-balance.enables=true` 属性。
++
+例如： `vmarg.7=-dload-balance.enabled=true`
+
+** Linux ：打开 webserver.sh 文件，然后添加 `Dload-balance.enables=true` 属性。
++
+例如： `debug_start_options="-dload-balance.enabled=true"`
+
+
+
+. 保存所做的更改。
+. 重新启动 Web 服务器服务，以使更改生效。
+
+
+
+
+== 禁用符号 HTTPS
+
+您可以禁用符号命令（默认设置）并通过远程操作步骤调用（ RPC ）发送命令。可以在 wsconfig.xml 文件中更改此设置。
+
+默认情况下，对于运行 SANtricity OS 08.40 或更高版本的所有 E2800 系列和 E5700 系列存储系统， Web 服务代理都会通过 HTTPS 发送符号命令。通过 HTTPS 发送的符号命令将通过身份验证发送到存储系统。如果需要，您可以禁用 HTTPS 符号支持并通过 RPC 发送命令。只要配置了基于 RPC 的符号，存储系统的所有被动命令都将在不进行身份验证的情况下启用。
+
+
+NOTE: 使用基于 RPC 的符号时， Web 服务代理无法连接到禁用了符号管理端口的系统。
+
+.步骤
+. 打开 wsconfig.xml 文件，该文件位于：
++
+** （ Windows ）— C ： \Program Files\NetApp\SANtricity Web 服务代理
+** （ Linux ）— /opt/netapp/SANtricity web_services_proxy
+
+
+. 在 `devicemgt.symbolclientstrategy` 条目中，将 `https Preferred` 值替换为 `rpcOnly` 。
++
+例如：
+
++
+`` <env key="devicemgt.symbolclientstrategy">rpcOnly"``
+
+. 保存文件。
+
+
+
+
+== 配置跨源资源共享
+
+您可以配置跨源资源共享（ CORS ），这种机制使用额外的 HTTP 标头为一个源运行的 Web 应用程序提供从另一个源服务器访问选定资源的权限。
+
+CORS 由工作目录中的 cors.cfg 文件处理。默认情况下， CORS 配置处于打开状态，因此跨域访问不受限制。
+
+如果不存在任何配置文件，则 CORS 处于打开状态。但是，如果存在 cors.cfg 文件，则会使用它。如果 cors.cfg 文件为空，则无法发出 CORS 请求。
+
+.步骤
+. 打开位于工作目录中的 cors.cfg 文件。
+. 将所需行添加到文件中。
++
+CORS 配置文件中的每一行都是要匹配的正则表达式模式。原始标题必须与 cors.cfg 文件中的一行匹配。如果任何线模式与原始标题匹配，则允许请求。将比较完整的原始服务器，而不仅仅是主机元素。
+
+. 保存文件。
+
+
+请求会在主机上根据协议进行匹配，如以下协议：
+
+* 将 localhost 与任何协议匹配 - ` \* localhost*`
+* 仅将 localhost 与 HTTPS 匹配 - ` +https://localhost*+`
+

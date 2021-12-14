@@ -1,0 +1,90 @@
+---
+permalink: config-linux/nvme-roce-discover-connect-storage-host-task.html 
+sidebar: sidebar 
+keywords: discover storage, host, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 在 SANtricity System Manager 中定义每个主机之前，您必须先从主机发现目标控制器端口，然后建立 NVMe 连接。 
+---
+= 发现并从主机连接到存储
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在 SANtricity System Manager 中定义每个主机之前，您必须先从主机发现目标控制器端口，然后建立 NVMe 连接。
+
+.步骤
+. 使用以下命令发现 NVMe-oF 目标上所有路径的可用子系统：
++
+[listing]
+----
+nvme discover -t rdma -a target_ip_address
+----
++
+在此命令中， `target_ip_address` 是目标端口的 IP 地址。
+
++
+
+NOTE: `nvme discover` 命令可发现子系统中的所有控制器端口，而不管主机访问权限如何。
+
++
+[listing]
+----
+# nvme discover -t rdma -a 192.168.1.77
+Discovery Log Number of Records 2, Generation counter 0
+=====Discovery Log Entry 0======
+trtype:  rdma
+adrfam:  ipv4
+subtype: nvme subsystem
+treq:    not specified
+portid:  0
+trsvcid: 4420
+subnqn:  nqn.1992-08.com.netapp:5700.600a098000a527a7000000005ab3af94
+traddr:  192.168.1.77
+rdma_prtype: roce
+rdma_qptype: connected
+rdma_cms:    rdma-cm
+rdma_pkey: 0x0000
+=====Discovery Log Entry 1======
+trtype:  rdma
+adrfam:  ipv4
+subtype: nvme subsystem
+treq:    not specified
+portid:  1
+trsvcid: 4420
+subnqn:  nqn.1992-08.com.netapp:5700.600a098000a527a7000000005ab3af94
+traddr:  192.168.2.77
+rdma_prtype: roce
+rdma_qptype: connected
+rdma_cms:    rdma-cm
+rdma_pkey: 0x0000
+----
+. 对任何其他连接重复步骤 1 。
+. 使用以下命令连接到第一条路径上发现的子系统： `nvme connect -t rdma -n discovered_sub_nqn-a target_ip_address -Q queue_depth_setting-l controller_los_timeout_period`
++
+
+NOTE: 上述命令在重新启动后不会持续存在。每次重新启动后，都需要执行 `nvme connect` 命令以重新建立 NVMe 连接。
+
++
+
+NOTE: 未为主机无法访问的任何已发现端口建立连接。
+
++
+
+NOTE: 如果使用此命令指定端口号，则连接将失败。默认端口是为连接设置的唯一端口。
+
++
+
+NOTE: 建议的队列深度设置为 1024 。使用 `` -Q 1024``命令行选项将默认设置 128 替换为 1024 ，如以下示例所示。
+
++
+
+NOTE: 建议的控制器丢失超时期限（以秒为单位）为 60 分钟（ 3600 秒）。使用 ` -l 3600` 命令行选项将默认设置 600 秒替换为 3600 秒，如以下示例所示。
+
++
+[listing]
+----
+# nvme connect -t rdma -a 192.168.1.77 -n nqn.1992-08.com.netapp:5700.600a098000a527a7000000005ab3af94 -Q 1024 -l 3600
+# nvme connect -t rdma -a 192.168.2.77 -n nqn.1992-08.com.netapp:5700.600a098000a527a7000000005ab3af94 -Q 1024 -l 3600
+----
+. 重复步骤 3 ，在第二条路径上连接已发现的子系统。
+

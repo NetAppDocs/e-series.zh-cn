@@ -1,0 +1,75 @@
+---
+permalink: cloud-connector/uninstall-intro-concept.html 
+sidebar: sidebar 
+keywords: Cloud Connector uninstall, remove Cloud Connector 
+summary: 您可以通过图形卸载程序或控制台卸载 SANtricity 云连接器。 
+---
+= 卸载 SANtricity 云连接器
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以通过图形卸载程序或控制台模式卸载 SANtricity 云连接器。
+
+
+
+== 使用图形模式卸载
+
+您可以使用图形模式在 Linux 操作系统上卸载 SANtricity 云连接器。
+
+.步骤
+. 在终端窗口中，导航到包含 SANtricity Cloud Connector 卸载文件的目录。
++
+SANtricity 云连接器的卸载文件位于以下默认目录位置：
+
++
+[listing]
+----
+/opt/netapp/santricity_cloud_connector4/uninstall_cloud_connector4
+----
+. 从包含 SANtricity 云连接器卸载文件的目录中，运行以下命令：
++
+[listing]
+----
+./uninstall_cloud_connector4 –i gui
+----
++
+SANtricity 云连接器的卸载过程已初始化。
+
+. 在卸载窗口中，单击 * 卸载 * 继续卸载 SANtricity 云连接器。
++
+卸载过程已完成， SANtricity 云连接器应用程序将在 Linux 操作系统中卸载。
+
+
+
+
+
+== 使用控制台模式卸载
+
+您可以使用控制台模式在 Linux 操作系统上卸载 SANtricity 云连接器。
+
+.步骤
+. 在终端窗口中，导航到包含 SANtricity Cloud Connector 卸载文件的目录。
++
+SANtricity 云连接器的卸载文件位于以下默认目录位置：
+
++
+[listing]
+----
+/opt/netapp/santricity_cloud_connector4/uninstall_cloud_connector4
+----
+. 从包含 SANtricity 云连接器卸载文件的目录中，运行以下命令：
++
+[listing]
+----
+./uninstall_cloud_connector4 –i console
+----
++
+SANtricity 云连接器的卸载过程已初始化。
+
+. 在卸载窗口中，按 * 输入 * 继续卸载 SANtricity 云连接器。
++
+卸载过程已完成， SANtricity 云连接器应用程序将在 Linux 操作系统中卸载。
+
+

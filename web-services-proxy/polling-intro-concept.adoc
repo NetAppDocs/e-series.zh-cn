@@ -1,0 +1,99 @@
+---
+permalink: web-services-proxy/polling-intro-concept.html 
+sidebar: sidebar 
+keywords: polling Web Services Proxy, WSP statistics, poll WSP, 
+summary: 您可以为已发现的存储系统上的所有磁盘和卷统计信息配置自动轮询。 
+---
+= 管理 Web 服务代理统计信息的自动轮询
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以为已发现的存储系统上的所有磁盘和卷统计信息配置自动轮询。
+
+
+
+== 统计信息概述
+
+统计信息提供了有关存储系统的数据收集速率和性能的信息。
+
+通过 Web 服务代理可以访问以下类型的统计信息：
+
+* raw statistics —收集数据时数据点的总计数器。原始统计信息可用于总读取操作或总写入操作。
+* "分析 的统计信息 " —为间隔计算的信息。分析的统计信息示例为每秒读取输入 / 输出操作（ IOPS ）或写入吞吐量。
+
+
+原始统计信息是线性的，通常需要至少两个收集的数据点才能从中获得可用数据。分析的统计信息是原始统计信息的派生，这些统计信息提供了重要的指标。为了方便起见，可以从原始统计信息派生的许多值会在分析的统计信息中以可用的时间点格式显示。
+
+无论是否启用了自动轮询，您都可以检索原始统计信息。您可以将 `usecache=true` 查询字符串添加到 URL 末尾，以从上次轮询中检索缓存的统计信息。使用缓存的结果会显著提高统计信息检索的性能。但是，如果多个调用的速率等于或小于配置的轮询间隔缓存，则会检索相同的数据。
+
+
+
+== 统计信息功能
+
+Web 服务代理可通过 API 端点从支持的硬件型号和软件版本检索原始的和分析的控制器和接口统计信息。
+
+
+
+=== 原始统计信息 API
+
+* ` +/storage-systems/｛ system-id ｝ /controller-statistics+`
+* ` +/storage-systems/｛ system-id ｝ /drive-statistics/ ｛ optional list of disk IDs｝ +`
+* ` +/storage-systems/｛ system-id ｝ /interface-statistics/ ｛ optional list of interface IDs｝ +`
+* ` +/storage-systems/｛ system-id ｝ /volume-statistics/ ｛ optional list of volume IDs｝ +`
+
+
+
+
+=== 已分析统计信息 API
+
+* ` +/storage-systems/｛ id ｝ /analysed-controller-statistics/+`
+* ` +/storage-systems/｛ id ｝ /analysed-drive-statistics/ ｛ optional list of disk IDs｝ +`
+* ` +/storage-systems/｛ id ｝ /analysed-interface-statistics/ ｛ optional list of interface IDs｝ +`
+* ` +/storage-systems/｛ id ｝ /analysed-volume-statistics/ ｛ optional list of volume IDs｝ +`
+
+
+这些 URL 将从上次轮询中检索分析的统计信息，只有在启用轮询时才可用。这些 URL 包含以下输入输出数据：
+
+* 每秒操作数
+* 吞吐量（以 MB/ 秒为单位）
+* 响应时间（以毫秒为单位）
+
+
+计算基于统计轮询迭代之间的差异，这些迭代是最常见的存储性能衡量指标。这些统计信息比未分析的统计信息更好。
+
+
+NOTE: 系统启动时，以前不会收集任何统计信息来计算各种指标，因此，分析的统计信息在启动后至少需要一个轮询周期才能返回数据。此外，如果重置累积计数器，则下一轮询周期的数据数将不可预测。
+
+
+
+== 配置轮询间隔
+
+要配置轮询间隔，请修改 wsconfig.xml 文件以指定轮询间隔（以秒为单位）。
+
+
+NOTE: 由于统计信息会缓存在内存中，因此每个存储系统的内存使用量可能会增加大约 1.5 MB 。
+
+.开始之前
+* 存储系统必须由代理发现。
+
+
+.步骤
+. 打开 wsconfig.xml 文件，该文件位于：
++
+** （ Windows ）— C ： \Program Files\NetApp\SANtricity Web 服务代理
+** （ Linux ）— /opt/netapp/SANtricity web_services_proxy
+
+
+. 在 ` <env-entries>` 标记中添加以下行，其中 `n` 是轮询请求之间间隔的秒数：
++
+[listing]
+----
+<env key="stats.poll.interval">n</env>
+----
++
+例如，如果输入 60 ，则轮询将以 60 秒为间隔开始。也就是说，系统会在上一轮询期完成后 60 秒开始轮询（无论上一轮询期的持续时间如何）。所有统计信息都带有检索时间戳。系统使用时间戳或时间差来计算 60 秒。
+
+. 保存文件。
+

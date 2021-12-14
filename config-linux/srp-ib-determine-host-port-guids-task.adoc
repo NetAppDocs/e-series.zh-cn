@@ -1,0 +1,23 @@
+---
+permalink: config-linux/srp-ib-determine-host-port-guids-task.html 
+sidebar: sidebar 
+keywords: host port GUIDs, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 确定主机端口 GUID 。 
+---
+= 确定主机端口 GUID 并进行建议的设置
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+InfiniBand diags 软件包包含用于显示每个 InfiniBand （ IB ）端口的全局唯一 ID （ GUID ）的命令。通过附带的软件包支持的大多数具有 OFED/RDMA 的 Linux 分发版也具有 InfiniBand diags 软件包，其中包含用于显示有关 HCA 的信息的命令。
+
+.步骤
+. 使用操作系统的软件包管理命令安装 InfiniBand 诊断软件包。
+. 运行 `ibstat` 命令以显示端口信息。
+. 在上记录启动程序的 GUID xref:srp-ib-worksheet-concept.adoc[SRP 工作表]。
+. 在 HBA 实用程序中选择相应的设置。
++
+的注释列中列出了适用于您的配置的设置 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]。
+
+

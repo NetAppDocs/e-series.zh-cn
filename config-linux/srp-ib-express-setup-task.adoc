@@ -1,0 +1,11 @@
+---
+permalink: config-linux/srp-ib-express-setup-task.html 
+sidebar: sidebar 
+keywords: srp, infiniband, express, setup 
+summary: 基于 InfiniBand 的 SRP 快速设置 
+---
+= 基于 InfiniBand 的 SRP 快速设置
+:icons: font
+:imagesdir: ../media/
+
+

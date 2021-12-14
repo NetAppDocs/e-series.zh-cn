@@ -1,0 +1,72 @@
+---
+permalink: config-linux/iser-ib-configure-subnet-manager-task.html 
+sidebar: sidebar 
+keywords: subnet manager, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 使用 InfiniBand 交换机运行子网管理器可能会在高负载期间发生原因意外丢失路径。为避免路径丢失，请使用 opensm 在一台或多台主机上配置子网管理器。 
+---
+= 配置子网管理器
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+子网管理器必须在您的环境中的交换机或主机上运行。如果您正在主机端运行此命令，请使用以下操作步骤进行设置。
+
+.步骤
+. 在要运行子网管理器的所有主机上安装 `opensm` 软件包。
+. 使用 `ibstat -p` 命令查找 HBA 端口的 `GUID0` 和 `GUID1` 。例如：
++
+[listing]
+----
+# ibstat -p
+ 0x248a070300a80a80
+ 0x248a070300a80a81
+----
+. 在主机上连接的 HCA 的每个端口上启用子网管理器：
++
+* SLES 示例 *
+
++
+** 在 /etc/rc.d/rc.after 中添加以下两行。将步骤 2 中找到的值替换为 `GUID0` 和 `GUID1` 。对于 `P0` 和 `P1` ，请使用子网管理器的优先级，其中 1 为最低优先级， 15 为最高优先级：
++
+[listing]
+----
+ opensm -B -g GUID0 -p P0 -f /var/log/opensm-ib0.log
+ opensm -B -g GUID1 -p P1 -f /var/log/opensm-ib1.log
+----
++
+使用值替换的命令示例：
+
++
+[listing]
+----
+# cat /etc/rc.d/rc.local
+ opensm -B -g 0x248a070300a80a80 -p 15 -f /var/log/opensm-ib0.log
+ opensm -B -g 0x248a070300a80a81 -p 1 -f /var/log/opensm-ib1.log
+----
+
+
++
+* RHEL 示例 *
+
++
+** 将以下两行添加到 /etc/rc.d/rc.local 。将步骤 2 中找到的值替换为 `GUID0` 和 `GUID1` 。对于 `P0` 和 `P1` ，请使用子网管理器的优先级，其中 1 为最低优先级， 15 为最高优先级：
++
+[listing]
+----
+opensm -B -g GUID0 -p P0 -f /var/log/opensm-ib0.log
+opensm -B -g GUID1 -p P1 -f /var/log/opensm-ib1.log
+----
++
+使用值替换的命令示例：
+
++
+[listing]
+----
+# cat /etc/rc.d/rc.local
+ opensm -B -g 0x248a070300a80a80 -p 15 -f /var/log/opensm-ib0.log
+ opensm -B -g 0x248a070300a80a81 -p 1 -f /var/log/opensm-ib1.log
+----
+
+
+

@@ -1,0 +1,94 @@
+---
+permalink: install-hw-e2800-e5700/e2824-e5724-connect-cables-task.html 
+sidebar: sidebar 
+keywords: E2800, E5700, connect power cables 
+summary: 连接电源线并打开驱动器架的电源。 
+---
+= 连接缆线
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+了解如何连接电源线并打开驱动器架的电源。
+
+.开始之前
+* 安装硬件。
+* 采取防静电预防措施。
+
+
+.步骤
+. 为磁盘架布线。
++
+根据您的配置为系统布线。如果所需布线选项比所示示示示例更多，请参见 link:../install-hw-cabling/index.html["Cabling"]。
+
++
+对于所示示示示例，您需要使用以下缆线：
+
++
+|===
+
+
+ a| 
+image:../media/sas_cable.png[""]
+ a| 
+* SAS 缆线 *
+
+|===
++
+image:../media/example_a_28_57.png[""]
+
++
+.. 使用缆线将控制器 A 连接到第一个驱动器架的 IOM A 。
+.. 使用缆线将第一个驱动器架的 IOM A 连接到第二个驱动器架的 IOM A 。
+.. 使用缆线将第二个驱动器架的 IOM A 连接到第三个驱动器架的 IOM A 。
+.. 使用缆线将控制器 B 连接到第三个驱动器架的 IOM B 。
+.. 使用缆线将第二个驱动器架的 IOM B 连接到第三个驱动器架的 IOM B 。
+.. 使用缆线将第一个驱动器架的 IOM B 连接到第二个驱动器架的 IOM B 。
+
+
++
+image:../media/example_b_57_28.png[""]
+
++
+.. 使用缆线将控制器 A 连接到 IOM A
+.. 使用缆线将控制器 B 连接到 IOM B
+
+
+. 为驱动器架供电。
++
+您需要以下缆线：
+
++
+|===
+
+
+ a| 
+image:../media/power_cable_inst-hw-e2800-e5700.png[""]
+ a| 
+* 电源线 *
+
+|===
++
+
+CAUTION: 确认驱动器架电源开关已关闭。
+
++
+.. 将每个磁盘架的两根电源线连接到机柜或机架中的不同配电单元（ PDU ）。
+.. 如果有驱动器架，请先打开其两个电源开关。等待 2 分钟，然后再为控制器架通电。
+.. 打开控制器架上的两个电源开关。
+.. 检查每个控制器上的 LED 和七段显示。
++
+在启动期间，七段显示屏将重复显示操作系统 SD 的顺序为空，表示控制器正在执行一天的开始处理。控制器启动后，将显示磁盘架 ID 。
+
+
+
++
+|===
+
+
+ a| 
+* 示例：电源连接位于磁盘架背面。 *image:../media/trafford_power.png[""]
+
+|===
+

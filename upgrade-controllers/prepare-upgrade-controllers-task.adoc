@@ -1,0 +1,159 @@
+---
+permalink: upgrade-controllers/prepare-upgrade-controllers-task.html 
+sidebar: sidebar 
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, upgrade controller requirements, upgrade controller key management, prepare upgrade controller, upgrade controller preparation, preparing controller upgrade 
+summary: 准备通过保存驱动器安全密钥，收集支持数据以及使控制器脱机来升级控制器。 
+---
+= 准备升级控制器
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+准备升级控制器，方法是保存驱动器安全密钥（如果使用），记录序列号，收集支持数据，禁用某些功能（如果使用）以及使控制器脱机。
+
+
+NOTE: 收集支持数据可能会暂时影响存储阵列的性能。
+
+.步骤
+. 确保现有存储阵列已更新为可用于当前控制器的最新版本的操作系统（控制器固件）。从 SANtricity 系统管理器中，转到菜单： Support[ 升级中心 ] 以查看软件和固件清单。
++
+
+NOTE: 如果要升级到支持 SANtricity OS 8.50 版的控制器，则必须在安装并启动新控制器后安装最新版本的 SANtricity OS 和最新的 NVSRAM 。如果不执行此升级，则可能无法为存储阵列配置自动负载平衡（ ALB ）。
+
+. 如果您要执行完整的控制器更换并同时使用驱动器安全功能，请针对您的安全类型（内部或外部）和驱动器状态完成下表中相应的步骤。
++
+
+NOTE: 驱动器安全性是一种存储阵列功能，可通过全磁盘加密（ Full Disk Encryption ， FDE ）驱动器或联邦信息处理标准（ Federal Information Processing Standard ， FIPS ）驱动器提供额外的安全层。如果将这些驱动器与驱动器安全功能结合使用，则需要使用安全密钥才能访问其数据。
+
++
+|===
+| 安全类型和上下文 | 步骤 
+
+
+ a| 
+内部密钥管理，一个或多个驱动器已锁定
+ a| 
+.. 将内部安全密钥文件导出到管理客户端上的已知位置（使用浏览器访问 System Manager 的系统）。使用 `export storageArray securityKey` CLI 命令。您必须提供与安全密钥关联的密码短语，并指定要保存命令的位置。有关使用此命令的信息，请参见 _Command Line Referse_ 。
+.. 了解与内部安全密钥关联的密码短语。
+
+
+
+
+ a| 
+外部密钥管理，所有驱动器均已锁定，您可以临时过渡到内部密钥管理以更换控制器（建议）。
+ a| 
+按顺序执行以下步骤：
+
+.. 记录外部 KMS 服务器地址和端口号。从 System Manager 中，转到菜单：设置 [ 系统 > 安全密钥管理 > 查看 / 编辑密钥管理服务器设置 ] 。
+.. 确保本地主机上提供了客户端和服务器证书，以便存储阵列和密钥管理服务器可以在控制器更换完成后相互进行身份验证。使用 `save storageArray keyManagementCertificate` CLI 命令保存证书。请务必运行此命令两次，一次是在将 `certificateType` 参数设置为 `client` 的情况下运行，另一次是在将参数设置为 `server` 的情况下运行。有关使用此命令的信息，请参见 _Command Line Referse_ 。
+.. 运行 `disable storageArray externalKeyManagement` CLI 命令，过渡到内部密钥管理。
+.. 将内部安全密钥文件导出到管理客户端上的已知位置（使用浏览器访问 System Manager 的系统）。使用 `export storageArray securityKey` CLI 命令。您必须提供与安全密钥关联的密码短语，并指定要保存命令的位置。有关使用此命令的信息，请参见 _Command Line Referse_ 。
+.. 了解与内部安全密钥关联的密码短语。
+
+
+
+
+ a| 
+外部密钥管理，所有驱动器均已锁定，您无法临时过渡到内部密钥管理以更换控制器。
+ a| 
+按顺序执行以下步骤：
+
+.. 记录外部 KMS 服务器地址和端口号。从 System Manager 中，转到菜单：设置 [ 系统 > 安全密钥管理 > 查看 / 编辑密钥管理服务器设置 ] 。
+.. 确保本地主机上提供了客户端和服务器证书，以便存储阵列和密钥管理服务器可以在控制器更换完成后相互进行身份验证。使用 `save storageArray keyManagementCertificate` CLI 命令保存证书。请务必运行此命令两次，一次是在将 `certificateType` 参数设置为 `client` 的情况下运行，另一次是在将参数设置为 `server` 的情况下运行。有关使用此命令的信息，请参见 _Command Line Referse_ 。
+
+
+
+
+ a| 
+外部密钥管理，部分驱动器已锁定
+ a| 
+无需执行其他步骤。
+
+|===
+. 记录存储阵列的序列号：
++
+.. 在 System Manager 中，选择菜单： Support[ 支持中心 > 支持资源选项卡 ] 。
+.. 向下滚动到 * 启动详细存储阵列信息 * ，然后选择 * 存储阵列配置文件 * 。
++
+此时，报告将显示在您的屏幕上。
+
+.. 要在存储阵列配置文件下找到机箱序列号，请在 * 查找 * 文本框中键入 * 序列号 * ，然后单击 * 查找 * 。
++
+所有匹配的术语均会突出显示。要一次滚动浏览一个所有结果，请继续单击 * 查找 * 。
+
+.. 记录 `机箱序列号` 。
++
+您需要此序列号才能执行中的步骤 link:complete-upgrade-controllers-task.html["完成控制器升级"]。
+
+
+
+. 使用 GUI 或 CLI 收集有关存储阵列的支持数据：
++
+** 使用 System Manager 或 Storage Manager 中的阵列管理窗口收集并保存存储阵列的支持包。
++
+*** 在 System Manager 中，选择菜单： Support[ 支持中心 > 诊断选项卡 ] 。然后选择 * 收集支持数据 * 并单击 * 收集 * 。
+*** 从阵列管理窗口工具栏中，选择菜单： Monitor[ 运行状况 > 手动收集支持数据 ] 。然后，输入一个名称并指定系统上要存储支持包的位置。
++
+此文件将保存在浏览器的 "Downloads" 文件夹中，名为 `support-data.7z` 。
+
++
+如果磁盘架包含抽盒，则该磁盘架的诊断数据将归档在名为 `try-component-state-capture.7z` 的单独压缩文件中。
+
+
+
+** 使用 CLI 运行 `save storageArray supportData` 命令，以收集有关存储阵列的全面支持数据。
+
+
+. 确保存储阵列与所有已连接主机之间未发生 I/O 操作：
++
+.. 停止涉及从存储映射到主机的 LUN 的所有进程。
+.. 确保没有应用程序向从存储映射到主机的任何 LUN 写入数据。
+.. 卸载与阵列上的卷关联的所有文件系统。
++
+
+NOTE: 停止主机 I/O 操作的确切步骤取决于主机操作系统和配置，这些步骤不在本说明的范围之内。如果您不确定如何停止环境中的主机 I/O 操作，请考虑关闭主机。
+
++
+
+CAUTION: * 可能的数据丢失 * - 如果在执行 I/O 操作时继续执行此操作步骤，则可能会丢失数据。
+
+
+
+. 如果存储阵列参与镜像关系，请停止二级存储阵列上的所有主机 I/O 操作。
+. 如果您使用的是异步或同步镜像，请通过 System Manager 或阵列管理窗口删除任何镜像对并停用任何镜像关系。
+. 如果有一个精简配置卷作为精简卷报告给主机，而旧阵列正在运行支持 UNMAP 功能的固件（ 8.25 固件或更高版本），请对所有精简卷禁用回写缓存：
++
+.. 在 System Manager 中，选择菜单： Storage[Volumes] 。
+.. 选择任何卷，然后选择菜单：更多（更改缓存设置）。
++
+此时将显示更改缓存设置对话框。存储阵列上的所有卷都会显示在此对话框中。
+
+.. 选择 * 基本 * 选项卡并更改读取缓存和写入缓存的设置。
+.. 单击 * 保存 * 。
+.. 等待五分钟，以便将缓存中的所有数据转储到磁盘。
+
+
+. 如果在控制器上启用了安全断言标记语言（ SAML ），请联系技术支持以禁用 SAML 身份验证。
++
+
+NOTE: 启用 SAML 后，您无法通过 SANtricity 系统管理器界面将其禁用。要禁用 SAML 配置，请联系技术支持以获得帮助。
+
+. 等待所有正在进行的操作完成，然后再继续下一步。
++
+.. 从 System Manager 的 * 主页 * 页面中，选择 * 查看正在执行的操作 * 。
+.. 确保 * 正在执行的操作 * 窗口中显示的所有操作均已完成，然后再继续。
+
+
+. 关闭控制器驱动器托盘的电源
++
+等待控制器驱动器托盘上的所有 LED 变暗。
+
+. 关闭与控制器驱动器托盘相连的每个驱动器托盘的电源
++
+等待两分钟，使所有驱动器都旋转。
+
+
+
+转至 link:remove-controllers-task.html["删除控制器"]。

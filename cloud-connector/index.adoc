@@ -1,0 +1,50 @@
+---
+permalink: cloud-connector/index.html 
+sidebar: sidebar 
+keywords: Cloud Connector 
+summary: SANtricity 云连接器 
+---
+= SANtricity ® Cloud Connector 概述
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SANtricity 云连接器是一款基于主机的 Linux 应用程序，可用于对 S3 投诉帐户（例如 Amazon Simple Storage Service 和 NetApp StorageGRID ）和 NetApp AltaVault 设备执行基于块和基于文件的完整备份和恢复。
+
+SANtricity 云连接器可安装在 RedHat 和 SUSE Linux 平台上，它是一个打包的解决方案（ .bin 文件）。安装 SANtricity 云连接器后，您可以对应用程序进行配置，以便将 E 系列卷的备份和还原作业备份到 AltaVault 设备或现有 Amazon S3 或 StorageGRID 帐户。通过 SANtricity 云连接器执行的所有作业都使用基于 REST 的 API 。
+
+
+
+== 注意事项
+
+在使用这些过程时，请注意：
+
+* 这些过程中所述的配置和备份 / 还原作业适用于 SANtricity 云连接器的图形用户界面版本。
+* 这些过程不会介绍 SANtricity 云连接器应用程序的 REST API 工作流。对于有经验的开发人员， API 文档提供了每个 SANtricity Cloud Connector 操作的端点。可通过浏览器导航到 ``http://<hostname.domain>:<port>/docs`` 来访问 API 文档。
+
+
+
+
+== 备份类型
+
+SANtricity 云连接器提供两种类型的备份：基于映像的备份和基于文件的备份。
+
+* * 基于映像的备份 *
++
+基于映像的备份会从快照卷读取原始数据块，并将其备份到称为映像的文件。快照卷上的所有数据块都会进行备份，包括空块，已删除文件占用的块，与分区相关的块以及文件系统元数据。映像备份的优势是，无论 Snapshot 卷上的分区方案或文件系统如何，都可以将所有信息存储在该卷中。
+
++
+此映像不会作为单个文件存储在备份目标上，而是会划分为一系列数据块，这些数据块的大小为 64 MB 。数据块允许 SANtricity Cloud Connector 使用多个连接到备份目标，从而提高备份过程的性能。
+
++
+对于 StorageGRID 和 Amazon Web Services （ S3 ）的备份，每个数据区块使用单独的加密密钥对该区块进行加密。该密钥是一个 SHA256 哈希，由用户提供的密码短语和用户数据的 SHA256 哈希组合而成。对于 AltaVault 备份， SANtricity 云连接器不会对数据块进行加密，因为 AltaVault 会执行此操作。
+
+* * 基于文件的备份 *
++
+基于文件的备份会读取文件系统分区中包含的文件，并将其备份到一系列大小为 64 MB 的数据块中。基于文件的备份不会备份已删除的文件或分区和文件系统元数据。与基于映像的备份一样，数据块允许 SANtricity Cloud Connector 使用多个连接到备份目标，从而提高备份过程的性能。
+
++
+对于 StorageGRID 和 Amazon Web Services 的备份，每个数据块都使用一个单独的加密密钥对该块进行加密。该密钥是一个 SHA256 哈希，由用户提供的密码短语和用户数据的 SHA256 哈希组合而成。对于 AltaVault 备份， SANtricity 云连接器不会对数据块进行加密，因为 AltaVault 会执行此操作。
+
+

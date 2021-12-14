@@ -1,0 +1,88 @@
+---
+permalink: config-linux/sas-worksheet-concept.html 
+sidebar: sidebar 
+keywords: SAS worksheet Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 使用此工作表记录 SAS 存储配置信息。 
+---
+= 记录您的 SAS 配置
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以生成并打印此页面的 PDF ，然后使用以下工作表记录 SAS 存储配置信息。要执行配置任务，您需要此信息。
+
+image::../media/sas_topology_diagram_conf-lin.gif[图： SAS 拓扑]
+
+
+
+== 主机标识符
+
+|===
+| 标注编号 | 主机（启动程序）端口连接 | SAS 地址 
+
+
+ a| 
+1.
+ a| 
+主机
+ a| 
+_ 不适用 _
+
+
+
+ a| 
+2.
+ a| 
+主机（启动程序）端口 1 连接到控制器 A 的端口 1
+ a| 
+
+
+
+ a| 
+3.
+ a| 
+主机（启动程序）端口 1 连接到控制器 B 的端口 1
+ a| 
+
+
+
+ a| 
+4.
+ a| 
+主机（启动程序）端口 2 连接到控制器 A 的端口 1
+ a| 
+
+
+
+ a| 
+5.
+ a| 
+主机（启动程序）端口 2 连接到控制器 B 的端口 1
+ a| 
+
+|===
+
+
+== 目标标识符
+
+建议的配置包含两个目标端口。
+
+
+
+== 正在映射主机
+
+|===
+
+
+ a| 
+正在映射主机名
+ a| 
+
+
+
+ a| 
+主机操作系统类型
+ a| 
+
+|===

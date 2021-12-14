@@ -1,0 +1,98 @@
+---
+permalink: web-services-proxy/install-uninstall-task.html 
+sidebar: sidebar 
+keywords: uninstall Web Services Proxy, remove WSP, 
+summary: 要删除 Web 服务代理和 Unified Manager ，您可以使用任何模式（图形，控制台，静默或 RPM 文件），而不管使用哪种方法安装代理。 
+---
+= 卸载 Web 服务代理
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+要删除 Web 服务代理和 Unified Manager ，您可以使用任何模式（图形，控制台，静默或 RPM 文件），而不管使用哪种方法安装代理。
+
+
+
+== 图形模式卸载
+
+您可以在图形模式下对 Windows 或 Linux 运行卸载。在图形模式下，系统会在 Windows 模式界面中显示提示。
+
+.步骤
+. 对 Windows 或 Linux 启动卸载，如下所示：
++
+** Windows —转到包含 uninstall_web_services_proxy 卸载文件的目录。默认目录位于以下位置： C ： /Program Files/NetApp/SANtricity Web 服务代理 / 。双击 `uninstall_web_services_proxy.exe` 。
++
+
+NOTE: 或者，您也可以转到菜单：控制面板 [ 程序 > 卸载程序 ] ，然后选择 "NetApp SANtricity Web 服务代理 " 。
+
+** Linux —转到包含 Web 服务代理卸载文件的目录。默认目录位于以下位置： + ` /opt/netapp/SANtricity web_services_proxy/uninstall_web_services_proxy`
+
+
+. 运行以下命令：
++
+`uninstall_web_services_proxy -i 图形用户界面`
+
++
+此时将显示 SANtricity Web 服务代理启动屏幕。
+
+. 在卸载对话框中，单击 * 卸载 * 。
++
+此时将显示卸载程序进度条并显示进度。
+
+. 出现 "卸 载完成 " 消息时，单击 * 完成 * 。
+
+
+
+
+== 控制台模式卸载
+
+您可以在控制台模式下对 Windows 或 Linux 运行卸载。在控制台模式下，终端窗口中会显示提示。
+
+.步骤
+. 转到 uninstall_web_services_proxy 目录。
+. 运行以下命令：
++
+`uninstall_web_services_proxy -i console`
+
++
+卸载过程将开始。
+
+. 卸载完成后，按 * 输入 * 退出安装程序。
+
+
+
+
+== 静默模式卸载
+
+您可以在静默模式下对 Windows 或 Linux 运行卸载。在静默模式下，终端窗口中不会显示任何返回消息或脚本。
+
+.步骤
+. 转到 uninstall_web_services_proxy 目录。
+. 运行以下命令：
++
+`uninstall_web_services_proxy -i silent`
+
++
+卸载过程将运行，但终端窗口中不会显示任何返回消息或脚本。成功卸载 Web 服务代理后，终端窗口将显示命令提示符。
+
+
+
+
+
+== rpm 命令卸载（仅限 Linux ）
+
+您可以使用 RPM 命令从 Linux 系统卸载 Web 服务代理。
+
+.步骤
+. 打开终端窗口。
+. 输入以下命令行：
++
+`rpm -e SANtricity Web 服务`
+
++
+
+NOTE: 卸载过程可能会留下不属于原始安装的文件。手动删除这些文件以完全删除 Web 服务代理。
+
+

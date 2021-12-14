@@ -1,0 +1,165 @@
+---
+permalink: config-linux/iser-ib-configure-network-attached-hosts-task.html 
+sidebar: sidebar 
+keywords: configure network Linux, configure hosts linux, express linux configuration, linux host, 
+summary: InfiniBand OFED 驱动程序堆栈支持在相同端口上同时运行 iSER 和 SRP ，因此不需要额外的硬件。 
+---
+= 为存储连接的主机配置网络连接
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您的配置使用 iSER over InfiniBand 协议，请执行本节中的步骤。
+
+InfiniBand OFED 驱动程序堆栈支持在相同端口上同时运行 iSER 和 SRP ，因此不需要额外的硬件。
+
+系统上安装了 NetApp 建议的 OFED 。有关详细信息，请参见 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]。
+
+.步骤
+. 在主机上启用并启动 iSCSI 服务：
++
+* Red Hat Enterprise Linux 7 和 8 （ RHEL 7 和 RHEL 8 ） *
+
++
+[listing]
+----
+
+# systemctl start iscsi
+# systemctl start iscsid
+# systemctl enable iscsi
+# systemctl enable iscsid
+----
++
+* SUSE Linux Enterprise Server 12 和 15 （ SLES 12 和 SLES 15 ） *
+
++
+[listing]
+----
+
+# systemctl start iscsid.service
+# systemctl enable iscsid.service
+----
+. 配置 IPoIB 网络接口：
++
+.. 确定要使用的 InfiniBand 端口。记录每个端口的硬件地址（ MAC 地址）。
+.. 配置 InfiniBand 网络接口设备的持久名称。
+.. 为标识的 IPoIB 接口配置 IP 地址和网络信息。
++
+所需的特定接口配置可能因所使用的操作系统而异。有关具体实施信息，请参见供应商的操作系统文档。
+
+.. 通过重新启动网络服务或手动重新启动每个接口来启动 IB 网络接口。例如：
++
+[listing]
+----
+systemctl restart network
+----
+.. 验证与目标端口的连接。从主机对配置网络连接时配置的 IP 地址执行 ping 操作。
+
+
+. 重新启动服务以加载 iSER 模块。
+. 在 /etc/iscsi/iscsid.conf 中编辑 iSCSI 设置。
++
+[listing]
+----
+node.startup = automatic replacement_timeout = 20
+----
+. 创建 iSCSI 会话配置：
++
+.. 为每个 InfiniBand 接口创建 iface 配置文件。
++
+
+NOTE: iSCSI iface 文件的目录位置取决于操作系统。以下示例适用于使用 Red Hat Enterprise Linux ：
+
++
+[listing]
+----
+iscsiadm -m iface -I iser > /var/lib/iscsi/ifaces/iface-ib0
+iscsiadm -m iface -I iser > /var/lib/iscsi/ifaces/iface-ib1
+----
+.. 编辑每个 iface 文件以设置接口名称和启动程序 IQN 。为每个 iface 文件正确设置以下参数：
++
+|===
+| 选项 | 价值 
+
+
+ a| 
+iface.net_ifacename
+ a| 
+接口设备名称（例如ib0 ）。
+
+
+
+ a| 
+iface.initiatorname
+ a| 
+工作表中记录的主机启动程序 IQN 。
+
+|===
+.. 创建与目标的 iSCSI 会话。
++
+创建会话的首选方法是使用 SendTargets 发现方法。但是，此方法在某些操作系统版本上不起作用。
+
++
+
+NOTE: 对于 RHEL 6.x 或 SLES 11.3 或更高版本，请使用 * 方法 2* 。
+
++
+*** * 方法 1 — SendTargets 发现： * 对其中一个目标门户 IP 地址使用 SendTargets 发现机制。这将为每个目标门户创建会话。
++
+[listing]
+----
+iscsiadm -m discovery -t st -p 192.168.130.101 -I iser
+----
+*** * 方法 2 - 手动创建： * 对于每个目标门户 IP 地址，使用适当的主机接口 iface 配置创建会话。在此示例中，接口 ib0 位于子网 A 上，接口 ib1 位于子网 B 上对于这些变量，请用工作表中的相应值替换：
++
+**** <Target IQN> = 存储阵列目标 IQN
+**** <Target Port IP> = 指定目标端口上配置的 IP 地址
+
+
+
+
+
+
++
+[listing]
+----
+# Controller A Port 1
+iscsiadm -m node -target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l -o new
+# Controller B Port 1
+iscsiadm -m node -target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l -o new
+# Controller A Port 2
+iscsiadm -m node -target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l -o new
+# Controller B Port 2
+iscsiadm -m node -target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l -o new
+----
+. 登录到 iSCSI 会话。
++
+对于每个会话，运行 iscsiadm 命令以登录到此会话。
+
++
+[listing]
+----
+# Controller A Port 1
+iscsiadm -m node -target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l
+# Controller B Port 1
+iscsiadm -m node -target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l
+# Controller A Port 2
+iscsiadm -m node -target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l
+# Controller B Port 2
+iscsiadm -m node -target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l
+----
+. 验证 iSE1/iSCSI 会话。
++
+.. 从主机检查 iSCSI 会话状态：
++
+[listing]
+----
+iscsiadm -m session
+----
+.. 从阵列中检查 iSCSI 会话状态。在 SANtricity 系统管理器中，导航到 * 存储阵列 * > * iSER * > * 查看 / 结束会话 * 。
+
+
+
+
+当 OFED/RDMA 服务启动时， iSER 内核模块会在 iSCSI 服务运行时默认加载。要完成 iSER 连接设置，应加载 iSER 模块。目前，这需要重新启动主机。

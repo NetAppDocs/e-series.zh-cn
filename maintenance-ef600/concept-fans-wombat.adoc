@@ -1,0 +1,13 @@
+---
+permalink: maintenance-ef600/concept-fans-wombat.html 
+sidebar: sidebar 
+keywords: ef300, ef600, controller, shelf, drive, fan, cooling 
+summary: 每个 EF300 或 EF600 控制器架或驱动器架都包含五个风扇，用于冷却控制器。 
+---
+= 风扇
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+每个 EF300 或 EF600 控制器架或驱动器架都包含五个风扇，用于冷却控制器。

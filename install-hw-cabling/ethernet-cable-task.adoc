@@ -1,0 +1,35 @@
+---
+permalink: install-hw-cabling/ethernet-cable-task.html 
+sidebar: sidebar 
+keywords: cabling, cables, ethernet cabling, ethernet cable, out of band, direct topology, fabric topology, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C 
+summary: 将存储系统连接到以太网网络以进行带外管理。 
+---
+= 管理工作站的以太网布线
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以将存储系统连接到以太网网络，以便进行带外存储阵列管理。所有存储阵列管理连接都必须使用以太网缆线。
+
+
+
+== 直接拓扑
+
+直接拓扑可将控制器直接连接到以太网网络。
+
+您必须在每个控制器上连接管理端口 1 以进行带外管理，并保留端口 2 以供技术支持访问存储阵列。
+
+.直接存储管理连接
+image::../media/74167.gif[74167]
+
+
+
+== 网络结构拓扑
+
+网络结构拓扑使用交换机将控制器连接到以太网网络。
+
+您必须在每个控制器上连接管理端口 1 以进行带外管理，并保留端口 2 以供技术支持访问存储阵列。
+
+.光纤存储管理连接
+image::../media/74110.gif[74110]

@@ -1,0 +1,132 @@
+---
+permalink: config-linux/nvme-roce-setup-host-side-task.html 
+sidebar: sidebar 
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: RoCE 环境中的 NVMe 启动程序配置包括安装和配置 RDMA-core 和 NVMe-CLI 软件包，配置启动程序 IP 地址以及在主机上设置 NVMe-oF 层。 
+---
+= 在主机端设置基于 RoCE 的 NVMe
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+RoCE 环境中的 NVMe 启动程序配置包括安装和配置 RDMA-core 和 NVMe-CLI 软件包，配置启动程序 IP 地址以及在主机上设置 NVMe-oF 层。
+
+您必须运行 RHEL 7 ， RHEL 8 以及最新兼容的 SUSE Linux Enterprise Server 12 和 15 Service Pack 操作系统。请参见 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^] 有关最新要求的完整列表。
+
+.步骤
+. 安装 RDMA 和 NVMe-CLI 软件包：
++
+* SLES 12 或 SLES 15*
+
++
+[listing]
+----
+
+# zypper install rdma-core
+# zypper install nvme-cli
+----
++
+* RHEL 7 或 RHEL 8*
+
++
+[listing]
+----
+
+# yum install rdma-core
+# yum install nvme-cli
+----
+. 在用于通过 RoCE 连接 NVMe 的以太网端口上设置 IPv4 IP 地址。对于每个网络接口，创建一个配置脚本，其中包含该接口的不同变量。
++
+此步骤中使用的变量基于服务器硬件和网络环境。这些变量包括 `IPADDR` 和 `网关` 。以下是适用于 SLES 和 RHEL 的示例说明：
+
++
+* SLES 12 和 SLES 15*
+
++
+** 按如下所示创建示例文件 ` /etc/sysconfig/network/ifcfg-eth4` ：
++
+[listing]
+----
+BOOTPROTO='static'
+   BROADCAST=
+   ETHTOOL_OPTIONS=
+   IPADDR='192.168.1.87/24'
+   GATEWAY='192.168.1.1'
+   MTU=
+   NAME='MT27800 Family [ConnectX-5]'
+   NETWORK=
+   REMOTE_IPADDR=
+   STARTMODE='auto'
+----
+** 按如下所示创建文件 ` /etc/sysconfig/network/ifcfg-eth5` ：
++
+[listing]
+----
+BOOTPROTO='static'
+   BROADCAST=
+   ETHTOOL_OPTIONS=
+   IPADDR='192.168.2.87/24'
+   GATEWAY='192.168.2.1'
+   MTU=
+   NAME='MT27800 Family [ConnectX-5]'
+   NETWORK=
+   REMOTE_IPADDR=
+   STARTMODE='auto'
+----
++
+* RHEL 7 和 RHEL 8*
+
+** 按如下所示创建示例文件 ` /etc/sysconfig/network-scripts/ifcfg-eth4` ：
++
+[listing]
+----
+BOOTPROTO='static'
+  BROADCAST=
+  ETHTOOL_OPTIONS=
+  IPADDR='192.168.1.87/24’
+  GATEWAY='192.168.1.1'
+  MTU=
+  NAME='MT27800 Family [ConnectX-5]'
+  NETWORK=
+  REMOTE_IPADDR=
+  STARTMODE='auto'
+----
+** 按如下所示创建文件 ` /etc/sysconfig/network-scripts/ifcfg-eth5` ：
++
+[listing]
+----
+BOOTPROTO='static'
+   BROADCAST=
+   ETHTOOL_OPTIONS=
+   IPADDR='192.168.2.87/24'
+   GATEWAY='192.168.2.1'
+   MTU=
+   NAME='MT27800 Family [ConnectX-5]'
+   NETWORK=
+   REMOTE_IPADDR=
+   STARTMODE='auto'
+----
+
+
+. 启用网络接口：
++
+[listing]
+----
+
+# ifup eth4
+# ifup eth5
+----
+. 在主机上设置 NVMe-oF 层。
++
+.. 在 ` /etc/moduls-load.d/` 下创建以下文件，以加载 `NVMe-RDMA` 内核模块，并确保内核模块始终处于打开状态，即使在重新启动后也是如此：
++
+[listing]
+----
+
+# cat /etc/modules-load.d/nvme-rdma.conf
+  nvme-rdma
+----
+
+
+

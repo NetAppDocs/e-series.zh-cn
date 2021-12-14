@@ -1,0 +1,834 @@
+---
+settings:
+  name: E-Series
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: true
+    langs: zh-cn,us-en,ja-jp
+sidebar:
+  entries:
+  - title: E 系列文档
+    url: "/index.html"
+  - title: 发行说明
+    entries:
+    - title: 新增功能
+      url: "/whats-new.html"
+    - title: 发行说明
+      url: "/known-issues.html"
+  - title: 入门
+    entries:
+    - title: 此站点包含的内容
+      url: "/getting-started/index.html"
+    - title: 了解 E 系列系统
+      entries:
+      - title: E 系列术语
+        url: "/getting-started/learn-terms-concept.html"
+      - title: E 系列硬件概述
+        url: "/getting-started/learn-hardware-concept.html"
+      - title: E 系列磁盘架类型
+        url: "/getting-started/learn-shelf-concept.html"
+      - title: SANtricity 软件概述
+        url: "/getting-started/learn-software-concept.html"
+      - title: E 系列视频
+        url: "/getting-started/learn-video-concept.html"
+    - title: 启动并运行 E 系列
+      url: "/getting-started/getup-run-concept.html"
+  - title: 安装硬件
+    entries:
+    - title: EF300 和 EF600
+      entries:
+      - title: 概述
+        url: "/install-hw-ef600/index.html"
+      - title: 安装过程
+        url: "/install-hw-ef600/overview-concept.html"
+      - title: 准备安装
+        url: "/install-hw-ef600/prepare-for-install-task.html"
+      - title: 安装硬件
+        url: "/install-hw-ef600/install-hardware-task.html"
+      - title: 打开控制器架的电源
+        url: "/install-hw-ef600/power-controller-shelves-task.html"
+      - title: 完成存储系统设置
+        url: "/install-hw-ef600/complete-setup-task.html"
+    - title: E2800 和 E5700
+      entries:
+      - title: 概述
+        url: "/install-hw-e2800-e5700/index.html"
+      - title: 安装过程
+        url: "/install-hw-e2800-e5700/install-setup-overview-concept.html"
+      - title: 安装和设置 60 个驱动器
+        entries:
+        - title: 准备安装
+          url: "/install-hw-e2800-e5700/e2860-e5760-prepare-task.html"
+        - title: 安装硬件
+          url: "/install-hw-e2800-e5700/e2860-e5760-install-hardware-task.html"
+        - title: 使用缆线架
+          url: "/install-hw-e2800-e5700/e2860-e5760-connect-cables-task.html"
+        - title: 完成存储系统设置
+          url: "/install-hw-e2800-e5700/e2860-e5760-complete-setup-task.html"
+      - title: 安装和设置 12 个和 24 个驱动器
+        entries:
+        - title: 准备安装
+          url: "/install-hw-e2800-e5700/e2824-e5724-prepare-task.html"
+        - title: 安装硬件
+          url: "/install-hw-e2800-e5700/e2824-e5724-install-hardware-task.html"
+        - title: 连接缆线
+          url: "/install-hw-e2800-e5700/e2824-e5724-connect-cables-task.html"
+        - title: 完成存储系统设置
+          url: "/install-hw-e2800-e5700/e2824-e5724-complete-setup-task.html"
+    - title: 3040 40U 机柜
+      entries:
+      - title: 概述
+        url: "/install-hw-cabinet/index.html"
+      - title: 规格
+        url: "/install-hw-cabinet/overview-cabinet-specs-concept.html"
+      - title: 收集所需的工具和设备
+        url: "/install-hw-cabinet/cabinet-gather-tools-equipment-task.html"
+      - title: 准备移动机柜
+        url: "/install-hw-cabinet/prepare-move-cabinet-task.html"
+      - title: 将机柜移至永久位置
+        url: "/install-hw-cabinet/move-cabinet-task.html"
+      - title: 完成机柜安装
+        url: "/install-hw-cabinet/complete-cabinet-install-task.html"
+    - title: 机架式硬件
+      url: "/rackmount-hardware.html"
+    - title: Cabling
+      entries:
+      - title: 概述
+        url: "/install-hw-cabling/index.html"
+      - title: 要求
+        url: "/install-hw-cabling/cable-overview-requirements-concept.html"
+      - title: 主机布线
+        url: "/install-hw-cabling/host-cable-task.html"
+      - title: 驱动器架布线
+        url: "/install-hw-cabling/driveshelf-cable-task.html"
+      - title: 电源布线
+        url: "/install-hw-cabling/power-cable-task.html"
+      - title: 热添加驱动器架
+        url: "/install-hw-cabling/hotadd-drive-shelf-task.html"
+      - title: 以太网布线
+        url: "/install-hw-cabling/ethernet-cable-task.html"
+  - title: 部署软件
+    entries:
+    - title: Linux 快速配置
+      entries:
+      - title: 概述
+        url: "/config-linux/index.html"
+      - title: 假设
+        url: "/config-linux/overview-concept.html"
+      - title: 光纤通道快速设置
+        entries:
+        - title: 验证 Linux 配置
+          url: "/config-linux/fc-verify-linux-config-support-task.html"
+        - title: 使用 DHCP 配置 IP 地址
+          url: "/config-linux/fc-configure-ip-address-dhcp-task.html"
+        - title: 安装和配置主机实用程序
+          url: "/config-linux/fc-install-configure-host-utilities-task.html"
+        - title: 安装 SANtricity 存储管理器
+          url: "/config-linux/fc-install-smcli-11-53-task.html"
+        - title: 访问 SANtricity 系统管理器
+          url: "/config-linux/fc-access-sam-setup-wizard-task.html"
+        - title: 配置多路径软件
+          url: "/config-linux/fc-configure-multipath-software-task.html"
+        - title: 设置 multipath.conf 文件
+          url: "/config-linux/fc-setup-multipath-conf-file-concept.html"
+        - title: 配置 FC 交换机
+          url: "/config-linux/fc-configure-switches-task.html"
+        - title: 确定主机 WWPN
+          url: "/config-linux/fc-determine-host-port-wwpns-task.html"
+        - title: 创建分区和文件系统
+          url: "/config-linux/fc-create-partition-file-task.html"
+        - title: 验证主机上的存储访问
+          url: "/config-linux/fc-verify-storage-access-host-task.html"
+        - title: 适用于 Linux 的 FC 工作表
+          url: "/config-linux/fc-worksheet-concept.html"
+      - title: SAS 设置
+        entries:
+        - title: 验证 Linux 配置
+          url: "/config-linux/sas-verify-linux-config-support-task.html"
+        - title: 使用 DHCP 配置 IP 地址
+          url: "/config-linux/sas-configure-ip-address-dhcp-task.html"
+        - title: 安装和配置主机实用程序
+          url: "/config-linux/sas-install-configure-host-utilities-task.html"
+        - title: 安装 SANtricity 存储管理器
+          url: "/config-linux/sas-install-smcli-11-53-task.html"
+        - title: 访问 SANtricity 系统管理器
+          url: "/config-linux/sas-access-sam-setup-wizard-task.html"
+        - title: 配置多路径软件
+          url: "/config-linux/sas-configure-multipath-software-task.html"
+        - title: 设置 multipath.conf 文件
+          url: "/config-linux/sas-setup-multipath-conf-file-concept.html"
+        - title: 确定 SAS 主机标识符
+          url: "/config-linux/sas-determine-sas-host-ids-task.html"
+        - title: 创建分区和文件系统
+          url: "/config-linux/sas-create-partitions-filesystems-task.html"
+        - title: 验证主机上的存储访问
+          url: "/config-linux/sas-verify-storage-access-host-task.html"
+        - title: 适用于 Linux 的 SAS 工作表
+          url: "/config-linux/sas-worksheet-concept.html"
+      - title: iSCSI 设置
+        entries:
+        - title: 验证 Linux 配置
+          url: "/config-linux/iscsi-verify-linux-config-support-task.html"
+        - title: 使用 DHCP 配置 IP 地址
+          url: "/config-linux/iscsi-configure-ip-address-dhcp-task.html"
+        - title: 安装和配置主机实用程序
+          url: "/config-linux/iscsi-install-configure-host-utilities-task.html"
+        - title: 安装 SANtricity 存储管理器
+          url: "/config-linux/iscsi-install-smcli-11-53-task.html"
+        - title: 访问 SANtricity 系统管理器
+          url: "/config-linux/iscsi-access-sam-setup-wizard-task.html"
+        - title: 配置多路径软件
+          url: "/config-linux/iscsi-configure-multipath-software-task.html"
+        - title: 设置 multipath.conf 文件
+          url: "/config-linux/iscsi-setup-multipath-conf-file-concept.html"
+        - title: 配置交换机
+          url: "/config-linux/iscsi-configure-switches-concept.html"
+        - title: 配置网络连接
+          url: "/config-linux/iscsi-configure-network-concept.html"
+        - title: 配置阵列端网络
+          url: "/config-linux/iscsi-configure-array-side-network-task.html"
+        - title: 配置主机端网络
+          url: "/config-linux/iscsi-configure-host-side-network-task.html"
+        - title: 验证 IP 网络连接
+          url: "/config-linux/iscsi-verify-ip-network-connections-task.html"
+        - title: 创建分区和文件系统
+          url: "/config-linux/iscsi-create-partition-file-task.html"
+        - title: 验证主机上的存储访问
+          url: "/config-linux/iscsi-verify-storage-access-host-task.html"
+        - title: 适用于 Linux 的 iSCSI 工作表
+          url: "/config-linux/iscsi-worksheet-concept.html"
+      - title: iSER over InfiniBand 设置
+        entries:
+        - title: 验证 Linux 配置
+          url: "/config-linux/iser-ib-verify-linux-config-support-task.html"
+        - title: 使用 DHCP 配置 IP 地址
+          url: "/config-linux/iser-ib-configure-ip-address-dhcp-task.html"
+        - title: 配置子网管理器
+          url: "/config-linux/iser-ib-configure-subnet-manager-task.html"
+        - title: 安装和配置主机实用程序
+          url: "/config-linux/iser-ib-install-configure-host-utilities-task.html"
+        - title: 安装 SANtricity 存储管理器
+          url: "/config-linux/iser-ib-install-smcli-11-53-task.html"
+        - title: 访问 SANtricity 系统管理器
+          url: "/config-linux/iser-ib-access-sam-setup-wizard-task.html"
+        - title: 配置多路径软件
+          url: "/config-linux/iser-ib-configure-multipath-software-task.html"
+        - title: 设置 multipath.conf 文件
+          url: "/config-linux/iser-ib-setup-multipath-conf-file-concept.html"
+        - title: 配置网络连接
+          url: "/config-linux/iser-ib-configure-network-connections-task.html"
+        - title: 配置网络连接
+          url: "/config-linux/iser-ib-configure-network-attached-hosts-task.html"
+        - title: 创建分区和文件系统
+          url: "/config-linux/iser-ib-create-partition-files-task.html"
+        - title: 验证主机上的存储访问
+          url: "/config-linux/iser-ib-verify-storage-access-host-task.html"
+        - title: iSER over InfiniBand 工作表
+          url: "/config-linux/iser-ib-worksheet-concept.html"
+      - title: 基于 InfiniBand 的 SRP 设置
+        entries:
+        - title: 验证 Linux 配置
+          url: "/config-linux/srp-ib-verify-linux-config-support-task.html"
+        - title: 使用 DHCP 配置 IP 地址
+          url: "/config-linux/srp-ib-configure-ip-address-dhcp-task.html"
+        - title: 配置子网管理器
+          url: "/config-linux/srp-ib-configure-subnet-manager-task.html"
+        - title: 安装和配置主机实用程序
+          url: "/config-linux/srp-ib-install-configure-host-utilities-task.html"
+        - title: 安装 SANtricity 存储管理器
+          url: "/config-linux/srp-ib-install-smcli-11-53-task.html"
+        - title: 访问 SANtricity 系统管理器
+          url: "/config-linux/srp-ib-access-sam-setup-wizard-task.html"
+        - title: 配置多路径软件
+          url: "/config-linux/srp-ib-configure-multipath-software-task.html"
+        - title: 设置 multipath.conf 文件
+          url: "/config-linux/srp-ib-setup-multipath-conf-file-concept.html"
+        - title: 确定主机端口 GUID
+          url: "/config-linux/srp-ib-determine-host-port-guids-task.html"
+        - title: '配置基于 Infiniband 的网络连接和 #8212 ；和 #8203 ； SRP'
+          url: "/config-linux/srp-ib-configure-network-connections-task.html"
+        - title: 创建分区和文件系统
+          url: "/config-linux/srp-ib-create-partitions-filesystems-task.html"
+        - title: 验证主机上的存储访问
+          url: "/config-linux/srp-ib-verify-storage-access-host-task.html"
+        - title: 基于 Infiniband 的 SRP 工作表
+          url: "/config-linux/srp-ib-worksheet-concept.html"
+      - title: 基于 InfiniBand 的 NVMe 设置
+        entries:
+        - title: 验证 Linux 配置
+          url: "/config-linux/nvme-ib-verify-linux-config-support-task.html"
+        - title: 使用 DHCP 配置 IP 地址
+          url: "/config-linux/nvme-ib-configure-ip-address-dhcp-task.html"
+        - title: 安装适用于 SMCLI 的 SANtricity 存储管理器
+          url: "/config-linux/nvme-ib-install-smcli-11-53-task.html"
+        - title: 访问 SANtricity 系统管理器并使用设置向导
+          url: "/config-linux/nvme-ib-access-sam-setup-wizard-task.html"
+        - title: 配置子网管理器
+          url: "/config-linux/nvme-ib-configure-subnet-manager-task.html"
+        - title: 在主机端设置基于 InfiniBand 的 NVMe
+          url: "/config-linux/nvme-ib-setup-host-side-task.html"
+        - title: 配置存储阵列基于 InfiniBand 的 NVMe 连接
+          url: "/config-linux/nvme-ib-configure-storage-connections-task.html"
+        - title: 发现并从主机连接到存储
+          url: "/config-linux/nvme-ib-discover-connect-storage-host-task.html"
+        - title: 定义主机
+          url: "/config-linux/nvme-ib-define-host-task.html"
+        - title: 分配卷
+          url: "/config-linux/ib-assign-volume-nvme-task.html"
+        - title: 显示主机可见的卷
+          url: "/config-linux/nvme-ib-display-devices-visible-host-task.html"
+        - title: 设置故障转移
+          url: "/config-linux/nvme-ib-set-up-failover-task.html"
+        - title: 访问虚拟设备目标的 NVMe 卷
+          url: "/config-linux/nvme-ib-access-virtual-targets-concept.html"
+        - title: 访问物理设备目标的 NVMe 卷
+          url: "/config-linux/nvme-ib-access-physical-targets-concept.html"
+        - title: 创建文件系统（ RHEL 7 和 SLES 12 ）
+          url: "/config-linux/nvme-ib-create-filesystems-sles-12-task.html"
+        - title: 创建文件系统（ RHEL 8 和 SLES 15 ）
+          url: "/config-linux/nvme-ib-create-filesystems-sles-15-task.html"
+        - title: 验证主机上的存储访问
+          url: "/config-linux/nvme-ib-verify-storage-access-host-task.html"
+        - title: 基于 InfiniBand 的 NVMe 工作表
+          url: "/config-linux/nvme-ib-worksheet-concept.html"
+      - title: 基于 RoCE 的 NVMe 设置
+        entries:
+        - title: 验证 Linux 配置
+          url: "/config-linux/nvme-roce-verify-linux-config-support-task.html"
+        - title: 使用 DHCP 配置 IP 地址
+          url: "/config-linux/nvme-roce-configure-ip-address-dhcp-task.html"
+        - title: 安装 SANtricity 存储管理器
+          url: "/config-linux/nvme-roce-install-smcli-11-53-task.html"
+        - title: 访问 SANtricity 系统管理器
+          url: "/config-linux/nvme-roce-access-sam-setup-wizard-task.html"
+        - title: 配置交换机
+          url: "/config-linux/nvme-roce-configure-switch-task.html"
+        - title: 在主机上设置基于 RoCE 的 NVMe
+          url: "/config-linux/nvme-roce-setup-host-side-task.html"
+        - title: 配置 NVMe 端口设置
+          url: "/config-linux/nvme-roce-configure-storage-connections-task.html"
+        - title: 从主机连接到存储
+          url: "/config-linux/nvme-roce-discover-connect-storage-host-task.html"
+        - title: 定义主机
+          url: "/config-linux/nvme-roce-define-host-task.html"
+        - title: 分配卷
+          url: "/config-linux/nvme-roce-assign-volume-task.html"
+        - title: 显示主机可见的卷
+          url: "/config-linux/nvme-roce-display-volumes-visible-host-task.html"
+        - title: 在主机上设置故障转移
+          url: "/config-linux/nvme-roce-setup-failover-host-task.html"
+        - title: 访问虚拟设备目标的 NVMe 卷
+          url: "/config-linux/nvme-roce-access-virtual-targets-concept.html"
+        - title: 访问物理设备目标的 NVMe 卷
+          url: "/config-linux/nvme-roce-access-physical-targets-concept.html"
+        - title: 创建文件系统（ RHEL 7 和 SLES 12 ）
+          url: "/config-linux/nvme-roce-create-filesystems-sles-12-task.html"
+        - title: 创建文件系统（ RHEL 8 和 SLES 15 ）
+          url: "/config-linux/nvme-roce-create-filesystems-sles-15-task.html"
+        - title: 验证主机上的存储访问
+          url: "/config-linux/nvme-roce-verify-storage-access-host-task.html"
+        - title: 适用于 Linux 的基于 RoCE 的 NVMe 工作表
+          url: "/config-linux/nvme-roce-worksheet-for-concept.html"
+      - title: 基于光纤通道的 NVMe 设置
+        entries:
+        - title: 验证 Linux 配置
+          url: "/config-linux/nvme-fc-verify-linux-config-support-task.html"
+        - title: 使用 DHCP 配置 IP 地址
+          url: "/config-linux/nvme-fc-configure-ip-address-dhcp-task.html"
+        - title: 安装 SANtricity 存储管理器
+          url: "/config-linux/nvme-fc-install-smcli-11-53-task.html"
+        - title: 访问 SANtricity 系统管理器
+          url: "/config-linux/nvme-fc-access-sam-setup-wizard-task.html"
+        - title: 配置 FC 交换机
+          url: "/config-linux/nvme-fc-configure-fc-switches-task.html"
+        - title: 在主机端设置基于光纤通道的 NVMe
+          url: "/config-linux/nvme-fc-setup-host-side-task.html"
+        - title: 定义主机
+          url: "/config-linux/nvme-fc-define-host-task.html"
+        - title: 分配卷
+          url: "/config-linux/fc-assign-volume-nvme-task.html"
+        - title: 显示主机可见的卷
+          url: "/config-linux/nvme-fc-display-volumes-visible-host-task.html"
+        - title: 在主机上设置故障转移
+          url: "/config-linux/nvme-fc-setup-failover-host-task.html"
+        - title: 访问虚拟设备目标的 NVMe 卷
+          url: "/config-linux/nvme-fc-access-virtual-targets-concept.html"
+        - title: 访问物理设备目标的 NVMe 卷
+          url: "/config-linux/nvme-fc-access-physical-targets-concept.html"
+        - title: 创建分区和文件系统
+          url: "/config-linux/nvme-fc-create-partition-files-task.html"
+        - title: 验证主机上的存储访问
+          url: "/config-linux/nvme-fc-verify-storage-access-host-task.html"
+        - title: 适用于 Linux 的基于光纤通道的 NVMe 工作表
+          url: "/config-linux/nvme-fc-worksheet-concept.html"
+    - title: VMware 快速配置
+      entries:
+      - title: 概述
+        url: "/config-vmware/index.html"
+      - title: 假设
+        url: "/config-vmware/overview-concept.html"
+      - title: 了解工作流
+        url: "/config-vmware/understand-vmware-workflow-concept.html"
+      - title: 验证 VMware 配置
+        url: "/config-vmware/verify-vmware-config-support-task.html"
+      - title: 使用 DHCP 配置 IP 地址
+        url: "/config-vmware/configure-ip-address-using-dhcp-task.html"
+      - title: 配置多路径软件
+        url: "/config-vmware/configure-multipath-software-concept.html"
+      - title: 访问 SANtricity 系统管理器
+        url: "/config-vmware/access-sam-setup-wizard-task.html"
+      - title: 执行特定于 FC 的任务
+        url: "/config-vmware/fc-perform-specific-task.html"
+      - title: 通过 FC 专用任务执行 NMVe
+        url: "/config-vmware/nmve-fc-perform-specific-task.html"
+      - title: 执行 iSCSI 专用任务
+        url: "/config-vmware/iscsi-perform-specific-task.html"
+      - title: 执行 SAS 专用任务
+        url: "/config-vmware/sas-perform-specific-task.html"
+      - title: 发现主机上的存储
+        url: "/config-vmware/discover-storage-host-task.html"
+      - title: 在主机上配置存储
+        url: "/config-vmware/configure-storage-host-task.html"
+      - title: 验证主机上的存储访问
+        url: "/config-vmware/verify-storage-access-host-task.html"
+    - title: Windows 快速配置
+      entries:
+      - title: 概述
+        url: "/config-windows/index.html"
+      - title: 假设
+        url: "/config-windows/overview-concept.html"
+      - title: 了解工作流
+        url: "/config-windows/understand-windows-concept.html"
+      - title: 验证 Windows 配置
+        url: "/config-windows/verify-windows-config-support-task.html"
+      - title: 使用 DHCP 配置 IP 地址
+        url: "/config-windows/configure-ip-address-dhcp-task.html"
+      - title: 配置多路径软件
+        url: "/config-windows/configure-multipath-software-task.html"
+      - title: 安装和配置 Unified Host Utilities
+        url: "/config-windows/install-configure-host-utilities-task.html"
+      - title: 安装 SANtricity 存储管理器
+        url: "/config-windows/install-storage-manager-for-smcli-task.html"
+      - title: 访问 SANtricity 系统管理器
+        url: "/config-windows/access-sam-setup-wizard-task.html"
+      - title: 执行特定于 FC 的任务
+        url: "/config-windows/fc-perform-specific-task.html"
+      - title: 执行 iSCSI 专用任务
+        url: "/config-windows/iscsi-perform-specific-task.html"
+      - title: 执行 SAS 专用任务
+        url: "/config-windows/sas-perform-specific-task.html"
+      - title: 发现主机上的存储
+        url: "/config-windows/discover-storage-host-task.html"
+      - title: 在主机上配置存储
+        url: "/config-windows/configure-storage-host-task.html"
+      - title: 验证主机上的存储访问
+        url: "/config-windows/verify-storage-access-host-task.html"
+  - title: 升级系统
+    entries:
+    - title: 控制器
+      pdf-filename: 控制器硬件升级
+      entries:
+      - title: 概述
+        url: "/upgrade-controllers/index.html"
+      - title: 升级注意事项
+        url: "/upgrade-controllers/overview-requirements-concept.html"
+      - title: 准备升级控制器
+        url: "/upgrade-controllers/prepare-upgrade-controllers-task.html"
+      - title: 删除控制器
+        url: "/upgrade-controllers/remove-controllers-task.html"
+      - title: 安装新控制器
+        url: "/upgrade-controllers/install-controllers-task.html"
+      - title: 解锁驱动器
+        url: "/upgrade-controllers/upgrade-unlock-drives-task.html"
+      - title: 完成控制器升级
+        url: "/upgrade-controllers/complete-upgrade-controllers-task.html"
+      - title: 将供应商从 LSI 更改为 NetApp 后重新挂载卷
+        url: "/upgrade-controllers/remount-volumes-lsi-task.html"
+      - title: 重新配置 SAS-2 系统
+        url: "/upgrade-controllers/reconfigure-sas-task.html"
+    - title: SANtricity 操作系统
+      pdf-filename: SANtricity 软件升级
+      entries:
+      - title: 概述
+        url: "/upgrade-santricity/index.html"
+      - title: 升级注意事项
+        url: "/upgrade-santricity/overview-upgrade-consider-task.html"
+      - title: 升级单个控制器
+        url: "/upgrade-santricity/upgrade-single-controller-task.html"
+      - title: 升级多个控制器
+        url: "/upgrade-santricity/upgrade-multiple-controller-task.html"
+      - title: 升级驱动器固件
+        url: "/upgrade-santricity/upgrade-drive-firmware-task.html"
+  - title: 维护系统
+    entries:
+    - title: EF300 和 EF600
+      pdf-filename: EF300-EF600 维护系统
+      entries:
+      - title: 概述
+        url: "/maintenance-ef600/index.html"
+      - title: 电池
+        pdf-filename: EF300-EF600 维护电池
+        entries:
+        - title: 概述和要求
+          url: "/maintenance-ef600/batteries-overview-requirements-concept.html"
+        - title: 更换电池
+          url: "/maintenance-ef600/batteries-replace-supertask-task.html"
+      - title: 控制器
+        pdf-filename: EF300-EF600 维护控制器
+        entries:
+        - title: 概述和要求
+          url: "/maintenance-ef600/controllers-overview-supertask-concept.html"
+        - title: 更换控制器
+          url: "/maintenance-ef600/controllers-replace-supertask-task.html"
+      - title: DIMM
+        pdf-filename: EF300-EF600 维护 DIMM
+        entries:
+        - title: 概述和要求
+          url: "/maintenance-ef600/dimms-overview-supertask-concept.html"
+        - title: 更换 DIMM
+          url: "/maintenance-ef600/dimms-replace-supertask-task.html"
+      - title: 驱动器
+        pdf-filename: EF300-EF600 维护驱动器
+        entries:
+        - title: 概述和要求
+          url: "/maintenance-ef600/drives-overview-supertask-concept.html"
+        - title: 更换 EF300 驱动器
+          url: "/maintenance-ef600/drives-replace-EF300-task.html"
+        - title: 更换 EF600 驱动器
+          url: "/maintenance-ef600/drives-replace-supertask-task.html"
+      - title: 风扇
+        pdf-filename: EF300-EF600 可保持风扇正常运行
+        entries:
+        - title: 概述和要求
+          url: "/maintenance-ef600/fans-overview-requirements-replacing2-concept.html"
+        - title: 更换风扇
+          url: "/maintenance-ef600/fans-replace-supertask-task.html"
+      - title: 主机接口卡
+        pdf-filename: EF300-EF600 维护 HIC
+        entries:
+        - title: 概述和要求
+          url: "/maintenance-ef600/hics-overview-supertask-concept.html"
+        - title: 添加主机接口卡
+          url: "/maintenance-ef600/hics-add-supertask-task.html"
+        - title: 升级主机接口卡
+          url: "/maintenance-ef600/hics-upgrade-intro.html"
+        - title: 更换发生故障的主机接口卡
+          url: "/maintenance-ef600/hics-replace-supertask-task.html"
+      - title: 主机端口协议转换
+        pdf-filename: EF300-EF600 维护主机端口
+        entries:
+        - title: 概述和要求
+          url: "/maintenance-ef600/hpp-overview-supertask-concept.html"
+        - title: 更改主机协议
+          url: "/maintenance-ef600/hpp-change-supertask-task.html"
+        - title: 完成主机协议转换
+          url: "/maintenance-ef600/hpp-complete-protocol-conversion-task.html"
+      - title: 电源
+        pdf-filename: EF300-EF600 维护电源
+        entries:
+        - title: 概述和要求
+          url: "/maintenance-ef600/power-overview-requirements2-concept.html"
+        - title: 更换电源
+          url: "/maintenance-ef600/power-replace-supertask-task.html"
+      - title: SAS 扩展卡
+        entries:
+        - title: 概述和要求
+          url: "/maintenance-ef600/sas-overview-supertask-concept.html"
+        - title: 添加 SAS 扩展卡
+          url: "/maintenance-ef600/sas-add-supertask-task.html"
+    - title: E2800
+      pdf-filename: E2800 维护系统
+      entries:
+      - title: 概述
+        url: "/maintenance-e2800/index.html"
+      - title: 电池
+        pdf-filename: E2800 维护电池
+        entries:
+        - title: 电池更换要求
+          url: "/maintenance-e2800/batteries-overview-requirements-concept.html"
+        - title: 准备更换电池
+          url: "/maintenance-e2800/batteries-prepare-replace-task.html"
+        - title: 拆下控制器箱
+          url: "/maintenance-e2800/batteries-remove-controller-canister-task.html"
+        - title: 取出故障电池
+          url: "/maintenance-e2800/batteries-remove-failed-task.html"
+        - title: 安装新电池
+          url: "/maintenance-e2800/batteries-install-new-task.html"
+        - title: 重新安装控制器箱
+          url: "/maintenance-e2800/batteries-reinstall-controller-canister-task.html"
+        - title: 完成电池更换
+          url: "/maintenance-e2800/batteries-complete-replacement-task.html"
+      - title: 控制器
+        pdf-filename: E2800 维护控制器
+        entries:
+        - title: 控制器更换要求
+          url: "/maintenance-e2800/controllers-overview-supertask-concept.html"
+        - title: 添加第二个控制器箱
+          url: "/maintenance-e2800/controllers-second-add-task.html"
+        - title: 更换双工配置中的控制器
+          url: "/maintenance-e2800/controllers-duplex-supertask-task.html"
+        - title: 更换单工配置中的控制器
+          url: "/maintenance-e2800/controllers-simplex-supertask-task.html"
+      - title: 箱
+        pdf-filename: E2800 可维护箱
+        entries:
+        - title: 更换箱的要求
+          url: "/maintenance-e2800/canisters-overview-supertask-concept.html"
+        - title: 更换电源（ 12 个或 24 个驱动器）
+          url: "/maintenance-e2800/canisters-supply-supertask-task.html"
+        - title: 更换电源箱（ 60 个驱动器）
+          url: "/maintenance-e2800/canisters-60-replace-power-task.html"
+        - title: 更换风扇箱（ 60 个驱动器）
+          url: "/maintenance-e2800/canisters-fan-supertask-task.html"
+      - title: 驱动器
+        pdf-filename: E2800 维护驱动器
+        entries:
+        - title: 驱动器更换要求
+          url: "/maintenance-e2800/drives-overview-supertask-concept.html"
+        - title: 更换驱动器（ 12 个或 24 个驱动器）
+          url: "/maintenance-e2800/drives-12-24-supertask-task.html"
+        - title: 更换驱动器（ 60 个驱动器）
+          url: "/maintenance-e2800/drives-60-replace-task.html"
+        - title: 更换驱动器抽盒（ 60 个驱动器）
+          url: "/maintenance-e2800/drives-60-supertask-task.html"
+      - title: 主机接口卡
+        pdf-filename: E2800 可维护 HIC
+        entries:
+        - title: HIC 更换要求
+          url: "/maintenance-e2800/hics-overview-supertask-concept.html"
+        - title: 添加主机接口卡
+          url: "/maintenance-e2800/hics-add-supertask-task.html"
+        - title: 升级主机接口卡
+          url: "/maintenance-e2800/hics-upgrade-supertask-task.html"
+        - title: 更换主机接口卡
+          url: "/maintenance-e2800/hics-replace-supertask-task.html"
+      - title: 主机端口协议转换
+        pdf-filename: E2800 转换主机协议
+        entries:
+        - title: 转换要求
+          url: "/maintenance-e2800/hpp-overview-supertask-concept.html"
+        - title: 更改主机协议
+          url: "/maintenance-e2800/hpp-change-host-protocol-task.html"
+        - title: 完成主机协议转换
+          url: "/maintenance-e2800/hpp-complete-protocol-conversion-task.html"
+    - title: E5700
+      pdf-filename: E5700 维护系统
+      entries:
+      - title: 概述
+        url: "/maintenance-e5700/index.html"
+      - title: 电池
+        pdf-filename: E5700 可维护电池
+        entries:
+        - title: 概述和要求
+          url: "/maintenance-e5700/batteries-intro-concept.html"
+        - title: 更换电池
+          url: "/maintenance-e5700/batteries-replace-supertask-task.html"
+      - title: 控制器
+        pdf-filename: E5700 维护控制器
+        entries:
+        - title: 概述和要求
+          url: "/maintenance-e5700/controllers-overview-concept.html"
+        - title: 更换双工配置中的控制器
+          url: "/maintenance-e5700/controllers-duplex-supertask-task.html"
+      - title: 箱
+        pdf-filename: E5700 可维护箱
+        entries:
+        - title: 概述和要求
+          url: "/maintenance-e5700/canisters-overview-supertask-concept.html"
+        - title: 更换电源（ 24 个驱动器）
+          url: "/maintenance-e5700/canisters-supply-replace-task.html"
+        - title: 更换电源箱（ 60 个驱动器）
+          url: "/maintenance-e5700/canisters-power-supertask-task.html"
+        - title: 更换风扇箱（ 60 个驱动器）
+          url: "/maintenance-e5700/canisters-fan-replace-task.html"
+      - title: 驱动器
+        pdf-filename: E5700 维护驱动器
+        entries:
+        - title: 概述和要求
+          url: "/maintenance-e5700/drives-overview-supertask-concept.html"
+        - title: 更换驱动器（ 24 个驱动器）
+          url: "/maintenance-e5700/drives-24-supertask-task.html"
+        - title: 更换驱动器（ 60 个驱动器）
+          url: "/maintenance-e5700/drives-60-replace-task.html"
+        - title: 更换驱动器抽盒（ 60 个驱动器）
+          url: "/maintenance-e5700/drives-drawer-supertask-task.html"
+      - title: 主机接口卡
+        pdf-filename: E5700 可维护 HIC
+        entries:
+        - title: 概述和要求
+          url: "/maintenance-e5700/hics-overview-supertask-concept.html"
+        - title: 添加主机接口卡
+          url: "/maintenance-e5700/hics-add-supertask-task.html"
+        - title: 升级主机接口卡
+          url: "/maintenance-e5700/hics-upgrade-supertask-task.html"
+        - title: 更换主机接口卡
+          url: "/maintenance-e5700/hics-replace-supertask-task.html"
+      - title: 主机端口协议
+        pdf-filename: E5700 更改主机协议
+        entries:
+        - title: 概述和要求
+          url: "/maintenance-e5700/hpp-overview-supertask-concept.html"
+        - title: 更改主机协议
+          url: "/maintenance-e5700/hpp-change-host-protocol-task.html"
+        - title: 完成主机协议转换
+          url: "/maintenance-e5700/hpp-complete-protocol-conversion-task.html"
+  - title: 管理存储
+    url: "/manage-storage.html"
+  - title: 使用 SANtricity 解决方案
+    entries:
+    - title: Web 服务代理
+      entries:
+      - title: 概述
+        url: "/web-services-proxy/index.html"
+      - title: 了解 Web 服务
+        entries:
+        - title: Web 服务 API 概述
+          url: "/web-services-proxy/overview-intro-concept.html"
+        - title: 兼容性和限制
+          url: "/web-services-proxy/overview-compat-concept.html"
+        - title: API 基础知识
+          url: "/web-services-proxy/overview-api-concept.html"
+        - title: 术语和概念
+          url: "/web-services-proxy/overview-terms-concept.html"
+      - title: 安装和配置
+        entries:
+        - title: 查看要求
+          url: "/web-services-proxy/install-reqs-task.html"
+        - title: 安装 Web 服务代理
+          url: "/web-services-proxy/install-wsp-task.html"
+        - title: 登录到 API 和 Unified Manager
+          url: "/web-services-proxy/install-login-task.html"
+        - title: 配置 Web 服务代理
+          url: "/web-services-proxy/install-config-task.html"
+        - title: 卸载 Web 服务代理
+          url: "/web-services-proxy/install-uninstall-task.html"
+      - title: 管理用户访问
+        url: "/web-services-proxy/access-intro-concept.html"
+      - title: 管理安全性和证书
+        url: "/web-services-proxy/certificates-intro-concept.html"
+      - title: 管理存储系统
+        url: "/web-services-proxy/array-intro-concept.html"
+      - title: 管理自动轮询
+        url: "/web-services-proxy/polling-intro-concept.html"
+      - title: 管理 AutoSupport
+        url: "/web-services-proxy/asup-intro-concept.html"
+    - title: 远程卷镜像
+      entries:
+      - title: 概述
+        url: "/remote-storage-volumes/index.html"
+      - title: 要求和限制
+        url: "/remote-storage-volumes/system-reqs-concept.html"
+      - title: 配置硬件
+        url: "/remote-storage-volumes/setup-remote-volumes-concept.html"
+      - title: 导入远程存储
+        url: "/remote-storage-volumes/import-remote-storage-task.html"
+      - title: 管理导入进度
+        url: "/remote-storage-volumes/view-import-progress-task.html"
+      - title: 修改连接设置
+        url: "/remote-storage-volumes/modify-remote-storage-task.html"
+      - title: 删除远程存储对象
+        url: "/remote-storage-volumes/remove-remote-storage-task.html"
+    - title: 适用于 vCenter 的存储插件
+      entries:
+      - title: 概述
+        url: "/san-spvc-ic-overview.html"
+      - title: 安装插件
+        url: "/san-spvc-ic-installation.html"
+      - title: 配置访问权限
+        url: "/san-spvc-ic-user-access.html"
+      - title: 登录并导航
+        url: "/san-spvc-ic-login-and-navigation.html"
+      - title: 发现存储阵列
+        url: "/san-spvc-ic-storage-array-discovery.html"
+      - title: 配置存储
+        url: "/san-spvc-ic-storage-provisioning.html"
+      - title: 删除插件
+        url: "/san-spvc-ic-plugin-removal.html"
+    - title: 传统解决方案
+      entries:
+      - title: 云连接器
+        entries:
+        - title: 概述
+          url: "/cloud-connector/index.html"
+        - title: 要求
+          url: "/cloud-connector/learn-intro-concept.html"
+        - title: 安装 Cloud Connector
+          url: "/cloud-connector/install-intro-concept.html"
+        - title: 首次配置 Cloud Connector
+          url: "/cloud-connector/config-intro-concept.html"
+        - title: 登录到 Cloud Connector
+          url: "/cloud-connector/login-task.html"
+        - title: 备份
+          url: "/cloud-connector/backup-intro-concept.html"
+        - title: 还原
+          url: "/cloud-connector/restore-intro-concept.html"
+        - title: 修改设置
+          url: "/cloud-connector/modify-intro-concept.html"
+        - title: 卸载 Cloud Connector
+          url: "/cloud-connector/uninstall-intro-concept.html"
+  - title: 早期版本
+    url: "/early-versions.html"
+  - title: 技术报告
+    url: "/tech-reports.html"
+  - title: 法律声明
+    url: "/legal-notices.html"
+homepage:
+  tiles:
+  - title: 入门
+    links:
+    - title: 快速入门
+      url: "/getting-started/getup-run-concept.html"
+    - title: EF 系列概述
+      url: https://www.netapp.com/pdf.html?item=/media/19339-DS-4082.pdf
+    - title: E5700 系列概述
+      url: https://www.netapp.com/pdf.html?item=/media/7572-ds-3894.pdf
+    - title: E2800 系列概述
+      url: https://www.netapp.com/pdf.html?item=/media/7573-ds-3805.pdf
+    - title: SANtricity 软件概述
+      url: https://www.netapp.com/pdf.html?item=/media/7676-ds-3891.pdf
+  - title: 联机帮助
+    links:
+    - title: SANtricity System Manager 11.7
+      url: https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-117/home.html
+    - title: SANtricity 统一管理器 5.
+      url: https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-uni-5/home.html
+    - title: 命令行界面（ CLI ）参考
+      url: https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-cli-115/home.html
+  - title: SANtricity API
+    links:
+    - title: Web 服务
+      url: "/web-services-proxy/index.html"
+    - title: 适用于 vCenter 的插件
+      url: "/san-spvc-ic-overview.html"
+    - title: SMI-S 提供程序
+      url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62208
+  - title: 性能应用程序附加组件
+    links:
+    - title: 适用于 Splunk Enterprise 的 SANtricity 应用
+      url: https://splunkbase.splunk.com/app/1932/
+    - title: 适用于 SANtricity 的 Splunk 技术附加项
+      url: https://splunkbase.splunk.com/app/1933/
+    - title: 采用 E 系列 + Grafana 的性能分析器
+      url: https://github.com/NetApp/eseries-perf-analyzer
+    - title: 有关 E 系列性能分析器的博客
+      url: https://blog.netapp.com/monitoring-netapp-eseries
+  - title: 对于 SE
+    links:
+    - title: E 系列 /EF 系列技术培训（需要登录）
+      url: https://fieldportal.netapp.com/content/199944
+    - title: EF300 概述和技术详细信息（需要登录）
+      url: https://fieldportal.netapp.com/content/1417672
+    - title: NetApp Fusion （需要登录）
+      url: https://fusion.netapp.com/
+  - title: 工具支持
+    links:
+    - title: NetApp 互操作性表
+      url: http://mysupport.netapp.com/matrix/
+    - title: NetApp 知识库
+      url: https://kb.netapp.com/
+    - title: Active IQ （需要登录）
+      url: https://activeiq.netapp.com/?source=aiqnsspage
+    - title: E 系列 /SANtricity 下载（需要登录）
+      url: https://mysupport.netapp.com/site/downloads#E

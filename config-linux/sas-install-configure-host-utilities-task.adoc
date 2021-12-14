@@ -1,0 +1,25 @@
+---
+permalink: config-linux/sas-install-configure-host-utilities-task.html 
+sidebar: sidebar 
+keywords: Linux Unified Host Utilities, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: Linux Unified Host Utilities 7.1 包含用于管理 NetApp 存储的工具，包括故障转移策略和物理路径。 
+---
+= 安装和配置 Linux Unified Host Utilities
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Linux Unified Host Utilities 工具可帮助您管理 NetApp 存储，包括故障转移策略和物理路径。
+
+.步骤
+. 使用 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^] 确定要安装的 Unified Host Utilities 的适当版本。
++
+在每个支持的配置中，版本会以一列的形式列出。
+
+. 从下载 Unified Host Utilities https://mysupport.netapp.com/site/["NetApp 支持"^]。
++
+
+NOTE: 或者，您也可以使用 SANtricity SMdevices 实用程序执行与统一主机实用程序工具相同的功能。SMdevices 实用程序包含在 SMutils 软件包中。SMutils 软件包是一组实用程序，用于验证主机从存储阵列中看到的内容。它作为 SANtricity 软件安装的一部分提供。
+
+

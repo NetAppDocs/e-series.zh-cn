@@ -1,0 +1,72 @@
+---
+permalink: config-windows/configure-storage-host-task.html 
+sidebar: sidebar 
+keywords: LUNs, configure LUNs, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 在主机上为 Windows 快速方法配置存储。 
+---
+= 在主机上配置存储
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+由于新 LUN 处于脱机状态，并且在 Windows 主机首次发现它时没有分区或文件系统，因此您必须使卷联机并在 Windows 中对其进行初始化。您也可以选择使用文件系统格式化 LUN 。
+
+您可以使用 GPT 或 MBR 分区表将磁盘初始化为基本磁盘。通常，使用新技术文件系统（ NTFS ）等文件系统格式化 LUN 。
+
+主机发现的 LUN 。
+
+.步骤
+. 在 Windows 命令提示符处，输入 `diskpart` context 。
++
+[listing]
+----
+> diskpart
+----
+. 查看可用磁盘的列表。
++
+[listing]
+----
+> list disk
+----
+. 选择要联机的磁盘。
++
+[listing]
+----
+> select disk 1
+----
+. 使磁盘联机。
++
+[listing]
+----
+> online disk
+----
+. 创建分区。
++
+[listing]
+----
+> create partition primary
+----
++
+
+NOTE: 在 Windows Server 2008 及更高版本中，创建分区后会立即提示您格式化磁盘并为其指定名称。在提示符处选择 * 取消 * 以继续按照以下说明格式化分区并为其命名。
+
+. 分配驱动器号。
++
+[listing]
+----
+> assign letter=f
+----
+. 格式化磁盘。
++
+[listing]
+----
+> format FS=NTFS LABEL=”New Volume” QUICK
+----
+. 退出 diskpart 上下文。
++
+[listing]
+----
+> exit
+----
+

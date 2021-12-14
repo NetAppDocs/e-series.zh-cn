@@ -1,0 +1,34 @@
+---
+permalink: upgrade-controllers/index.html 
+sidebar: sidebar 
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, upgrade controller, upgrade DIMMs 
+summary: 通过更换控制器升级 E 系列阵列概述。 
+---
+= 升级控制器概述
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以通过更换现有控制器来升级存储阵列。
+
+
+
+== 控制器组件
+
+控制器由主板，固件和软件组成。它控制驱动器，并实施管理软件功能。
+
+
+
+== 何时使用此操作步骤
+
+如果要将所有控制器升级到不同型号或平台，通常使用此操作步骤。此操作步骤涉及更换控制器驱动器托盘中的所有控制器
+
+在以下情况下，您也可以使用此操作步骤：
+
+* 控制器驱动器托盘中的所有控制器都发生硬件故障且无法再正常工作时。
+* 要升级控制器驱动器托盘中的双列直插式内存模块（ DIMM ），请将这两个控制器更换为相同型号的控制器，但更换为不同的 DIMM 。
+
+
+
+NOTE: 此操作步骤不会介绍 HIC 升级情形。请参阅 E 系列系统的 HIC 添加，升级和更换过程。

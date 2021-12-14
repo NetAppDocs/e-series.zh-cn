@@ -1,0 +1,54 @@
+---
+permalink: config-linux/iscsi-verify-ip-network-connections-task.html 
+sidebar: sidebar 
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 您可以使用 ping 测试来验证 Internet 协议 \ （ IP\ ）网络连接，以确保主机和阵列能够进行通信。 
+---
+= 验证 IP 网络连接
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 ping 测试来验证 Internet 协议（ IP ）网络连接，以确保主机和阵列能够进行通信。
+
+.步骤
+. 在主机上，根据是否启用了巨型帧，运行以下命令之一：
++
+** 如果未启用巨型帧，请运行以下命令：
++
+[listing]
+----
+ping -I <hostIP\> <targetIP\>
+----
+** 如果启用了巨型帧，请使用有效负载大小 8 ， 9772 字节运行 ping 命令。IP 和 ICMP 合并标头为 28 字节，如果添加到有效负载中，则等于 9 ， 000 字节。s 开关设置 `数据包大小` 位。d 开关用于设置调试选项。通过这些选项，可以在 iSCSI 启动程序和目标之间成功传输 9 ， 000 字节的巨型帧。
++
+[listing]
+----
+ping -I <hostIP\> -s 8972 -d <targetIP\>
+----
++
+在此示例中， iSCSI 目标 IP 地址为 `192.0.2.8` 。
+
++
+[listing]
+----
+#ping -I 192.0.2.100 -s 8972 -d 192.0.2.8
+Pinging 192.0.2.8 with 8972 bytes of data:
+Reply from 192.0.2.8: bytes=8972 time=2ms TTL=64
+Reply from 192.0.2.8: bytes=8972 time=2ms TTL=64
+Reply from 192.0.2.8: bytes=8972 time=2ms TTL=64
+Reply from 192.0.2.8: bytes=8972 time=2ms TTL=64
+Ping statistics for 192.0.2.8:
+  Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+  Minimum = 2ms, Maximum = 2ms, Average = 2ms
+----
+
+
+. 从每个主机的启动程序地址（用于 iSCSI 的主机以太网端口的 IP 地址）到每个控制器 iSCSI 端口执行问题描述 a `ping` 命令。从配置中的每个主机服务器执行此操作，并根据需要更改 IP 地址。
++
+
+NOTE: 如果命令失败（例如， returns `Packet needs to be fragmented but df set` ），请验证主机服务器，存储控制器和交换机端口上以太网接口的 MTU 大小（巨型帧支持）。
+
+

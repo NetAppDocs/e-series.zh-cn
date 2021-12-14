@@ -1,0 +1,106 @@
+---
+permalink: install-hw-cabinet/cabinet-gather-tools-equipment-task.html 
+sidebar: sidebar 
+keywords: 3040 40U cabinet, cabinet installation, drive tray installation, controller installation, shelf installation, E2800, E5700, EF300, EF600 
+summary: 安装 3040 40U 机柜之前，请收集所需的工具和设备。 
+---
+= 收集所需的工具和设备
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在安装 3040 40U 机柜之前，请确保您具有所需的工具和设备。
+
+.步骤
+. 收集下表中列出的所有项。
++
+|===
+|  | 项目 | 随机柜一起提供 
+
+
+ a| 
+image:../media/83009_02.gif[""]
+ a| 
+* 1/4 英寸扳手 * （在装运箱中提供）—用于在机柜下方升高和降低水平脚。
+
+* 1/4 英寸六角扳手 * —用于提升和降低机柜正面的稳定性支脚。
+ a| 
+image:../media/77037_11.gif[""]
+
+
+
+ a| 
+* NEMA L6-30*
+
+image:../media/73121_01_dwg_nema_l6_30_power_cord.gif[""]
+ a| 
+* 交流电源线 * —用于将机柜连接到外部电源（墙插）。
+
+** NEMA L6-30 连接器适用于美国和加拿大。
+** IEC-60309 连接器适用于全球，美国和加拿大除外。
+
+
+
+NOTE: 每个 PDU 都必须连接到一个独立的电源。
+ a| 
+image:../media/77037_11.gif[""]
+
+
+
+ a| 
+"*
+
+image:../media/73122_01_dwg_iec_60309_power_cord.gif[""]
+
+
+
+ a| 
+image:../media/78038_21.png[""]
+ a| 
+"* SAS 缆线 " （可选）—每个驱动器托盘附带两根缆线，而主机端缆线必须单独购买。
+
+"** 通信缆线 "* （可选）—将托盘连接到主机。
+
+有关所需的其他项目，请参见相应的控制器驱动器托盘安装指南。
+ a| 
+
+
+
+ a| 
+image:../media/77038_06.gif[""]
+ a| 
+* 可安装缆线卷轴 * —沿垂直配电插座两侧安装，以容纳多余的缆线长度和缆线布线。每个控制器驱动器托盘附带两个缆线卷轴电缆卷轴还随附独立驱动器托盘。
+ a| 
+image:../media/77037_11.gif[""]
+
+
+
+ a| 
+ a| 
+"* Shears"* –用于剪切运输箱上的金属带。
+ a| 
+
+
+
+ a| 
+ a| 
+"* 叉车式 " （可选）—从装运托盘中卸下机柜。
+ a| 
+
+
+
+ a| 
+ a| 
+* 前面板套件 * （可选）—用于盖住机柜正面的空托架。
+ a| 
+
+
+
+ a| 
+ a| 
+"* 防静电袋 " （可选）—用于保护在机柜安装操作步骤期间卸下的组件。
+ a| 
+
+|===
+

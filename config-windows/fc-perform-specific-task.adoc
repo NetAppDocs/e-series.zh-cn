@@ -1,0 +1,177 @@
+---
+permalink: config-windows/fc-perform-specific-task.html 
+sidebar: sidebar 
+keywords: Fibre Channel protocol, switches, zone switches, zoning, host port identifiers, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 对于光纤通道协议，您可以配置交换机并确定主机端口标识符。 
+---
+= 执行特定于 FC 的任务
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+对于光纤通道协议，您可以配置交换机并确定主机端口标识符。
+
+
+
+== 第 1 步：配置 FC 交换机— ​Windows
+
+通过配置（分区）光纤通道（ FC ）交换机，主机可以连接到存储阵列并限制路径数。您可以使用交换机的管理界面对交换机进行分区。
+
+.您需要什么？ #8217 ；将需要什么
+* 交换机的管理员凭据。
+* 每个主机启动程序端口以及连接到交换机的每个控制器目标端口的 WWPN 。（使用 HBA 实用程序进行发现。）
+
+
+您必须按 WWPN 进行分区，而不是按物理端口进行分区。每个启动程序端口都必须位于一个单独的分区中，并具有所有相应的目标端口。有关对交换机进行分区的详细信息，请参见交换机供应商的文档。
+
+.步骤
+. 登录到 FC 交换机管理程序，然后选择分区配置选项。
+. 创建一个新分区，其中包含第一个主机启动程序端口，也包括与启动程序连接到同一 FC 交换机的所有目标端口。
+. 为交换机中的每个 FC 主机启动程序端口创建其他分区。
+. 保存分区，然后激活新的分区配置。
+
+
+
+
+== 第 2 步：确定主机 WWPN 并设置建议的设置— ​FC ， Windows
+
+您可以安装 FC HBA 实用程序，以便查看每个主机端口的全球通用端口名称（ WWPN ）。此外，您还可以使用 HBA 实用程序更改的 "Notes" 列中建议的任何设置 http://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^] 支持的配置。
+
+查看 HBA 实用程序的以下准则：
+
+* 大多数 HBA 供应商都提供 HBA 实用程序。您需要为主机操作系统和 CPU 提供正确版本的 HBA 。FC HBA 实用程序的示例包括：
++
+** 适用于 Emulex HBA 的 Emulex OneCommand Manager
+** 适用于 QLogic HBA 的 QLogic QConverge 控制台
+
+
+* 如果安装了主机上下文代理，则主机 I/O 端口可能会自动注册。
+
+
+.步骤
+. 从 HBA 供应商的网站下载相应的实用程序。
+. 安装实用程序。
+. 在 HBA 实用程序中选择相应的设置。
++
+的注释列中列出了适用于您的配置的设置 http://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]。
+
+
+
+
+
+== 第 3 步：记录您的配置
+
+您可以生成并打印此页面的 PDF ，然后使用以下工作表记录 FC 存储配置信息。要执行配置任务，您需要此信息。
+
+图中显示了在两个分区中连接到 E 系列存储阵列的主机。一个分区用蓝线表示，另一个分区用红线表示。任何一个端口都有两条通往存储的路径（每个控制器一条）。
+
+image::../media/port_identifiers_host_and_target_conf-win.gif[端口标识符 host 和 target conf win]
+
+
+
+=== 主机标识符
+
+|===
+| 标注编号 | 主机（启动程序）端口连接 | WWPN 
+
+
+ a| 
+1.
+ a| 
+主机
+ a| 
+_ 不适用 _
+
+
+
+ a| 
+2.
+ a| 
+主机端口 0 到 FC 交换机分区 0
+ a| 
+
+
+
+ a| 
+7.
+ a| 
+主机端口 1 到 FC 交换机分区 1
+ a| 
+
+|===
+
+
+=== 目标标识符
+
+|===
+| 标注编号 | 阵列控制器（目标）端口连接 | WWPN 
+
+
+ a| 
+3.
+ a| 
+交换机
+ a| 
+_ 不适用 _
+
+
+
+ a| 
+6.
+ a| 
+阵列控制器（目标）
+ a| 
+_ 不适用 _
+
+
+
+ a| 
+5.
+ a| 
+控制器 A ，端口 1 到 FC 交换机 1
+ a| 
+
+
+
+ a| 
+9
+ a| 
+控制器 A ，端口 2 到 FC 交换机 2
+ a| 
+
+
+
+ a| 
+4.
+ a| 
+控制器 B ，端口 1 到 FC 交换机 1
+ a| 
+
+
+
+ a| 
+8.
+ a| 
+控制器 B ，端口 2 到 FC 交换机 2
+ a| 
+
+|===
+
+
+=== 正在映射主机名
+
+|===
+
+
+ a| 
+正在映射主机名
+ a| 
+
+
+
+ a| 
+主机操作系统类型
+ a| 
+
+|===

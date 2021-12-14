@@ -1,0 +1,83 @@
+---
+permalink: remote-storage-volumes/setup-remote-volumes-concept.html 
+sidebar: sidebar 
+keywords: configure Remote Storage Volumes, set up RTV, configure remote volumes, set up remote storage E-Series 
+summary: 要使 E 系列系统能够通过支持的 iSCSI 协议连接到远程存储，需要进行初始设置。 
+---
+= 为远程存储卷配置硬件
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+必须将 E 系列存储系统配置为通过支持的 iSCSI 协议与远程存储系统进行通信。
+
+
+
+== 配置远程存储设备和 E 系列阵列
+
+在继续使用 SANtricity 系统管理器配置远程存储卷功能之前，请执行以下操作：
+
+. 手动在 E 系列系统和远程存储系统之间建立缆线连接，以便可以将这两个系统配置为通过 iSCSI 进行通信。
+. 配置 iSCSI 端口，使 E 系列系统和远程存储系统能够成功地彼此通信。
+. 获取 E 系列系统的 IQN 。
+. 使 E 系列系统对远程存储系统可见。如果远程存储系统是 E 系列系统，请使用目标 E 系列系统的 IQN 作为主机端口的连接信息来创建主机。
+. 如果远程存储设备正在由主机 / 应用程序使用：
++
+** 停止远程存储设备的 I/O 。
+** 取消映射 / 卸载远程存储设备。
+
+
+. 将远程存储设备映射到为 E 系列存储系统定义的主机。
+. 获取用于映射的设备的 LUN 编号。
+
+
+
+NOTE: 建议：在启动导入过程之前备份远程源卷。
+
+
+
+== 为存储阵列布线
+
+在设置过程中，存储阵列和 I/O 主机必须连接到与 iSCSI 兼容的接口。
+
+下图举例说明了如何为系统布线，以便它们通过 iSCSI 连接执行远程存储卷操作。
+
+image:../media/remote_target_volumes_iscsi_use_case_1.png[""] image:../media/remote_target_volumes_iscsi_use_case_2.png[""]
+
+
+
+== 配置 iSCSI 端口
+
+您必须配置 iSCSI 端口，以确保目标（本地 E 系列存储阵列）与源（远程存储阵列）之间的通信。
+
+根据您的子网，可以通过多种方式配置 iSCSI 端口。以下是有关如何配置 iSCSI 端口以用于远程存储卷功能的几个示例。
+
+|===
+| 源 A | 源 B | 目标 A | 目标 B 
+
+
+ a| 
+10.10.1.100/22
+ a| 
+10.10.2.100/22
+ a| 
+10.10.1.101/22
+ a| 
+10.10.2.101/22
+
+|===
+|===
+| 源 A | 源 B | 目标 A | 目标 B 
+
+
+ a| 
+10.10.0.100/16
+ a| 
+10.10.0.100/16
+ a| 
+10.10.0.101/16
+ a| 
+10.10.0.101/16
+
+|===

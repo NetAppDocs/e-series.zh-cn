@@ -1,0 +1,23 @@
+---
+permalink: config-linux/srp-ib-verify-storage-access-host-task.html 
+sidebar: sidebar 
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 在使用卷之前，您需要验证主机是否可以将数据写入卷并将其读回。 
+---
+= 验证主机上的存储访问
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在使用卷之前，您需要验证主机是否可以将数据写入卷并将其读回。
+
+使用文件系统格式化的初始化卷。
+
+.步骤
+. 在主机上，将一个或多个文件复制到磁盘的挂载点。
+. 将文件复制回原始磁盘上的其他文件夹。
+. 运行 `dIFF` 命令将复制的文件与原始文件进行比较。
+
+
+删除复制的文件和文件夹。

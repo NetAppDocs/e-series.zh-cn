@@ -1,0 +1,26 @@
+---
+permalink: remote-storage-volumes/remove-remote-storage-task.html 
+sidebar: sidebar 
+keywords: remove storage object, disconnect remote storage 
+summary: 您可以通过 SANtricity 系统管理器删除任何已配置的远程存储对象。 
+---
+= 删除远程存储对象
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+导入完成后，如果您不再需要在本地设备和远程设备之间复制数据，则可以删除远程存储对象。
+
+.步骤
+. 确保没有与要删除的远程存储对象关联的导入。
+. 从 SANtricity 系统管理器的远程存储屏幕中，在结果列表部分下选择所需的远程存储对象。
+. 单击 * 删除 * 。
++
+此时将显示确认删除远程存储连接对话框。
+
+. 键入 `remove` 然后单击 * 删除 * ，确认操作。
++
+此时将删除选定的远程存储对象。
+
+

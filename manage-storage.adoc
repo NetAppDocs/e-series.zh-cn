@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: manage-storage.html 
+keywords: online help, System Manager, Unified Manager 
+summary: 管理存储 
+---
+= 管理存储
+
+
+[role="lead"]
+使用以下链接访问介绍如何配置，管理和监控存储对象和 E 系列存储系统的文档。通过这些链接，您可以访问其他文档站点。
+
+
+
+== System Manager 11.7 的联机帮助
+
+访问 https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-117/home.html["SANtricity System Manager 11.7 联机帮助"^]，您可以在其中找到有关如何规划，配置，管理存储阵列以及对其进行故障排除的信息。
+
+
+
+== Unified Manager 5 的联机帮助
+
+访问 https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-uni-5/home.html["SANtricity Unified Manager 5 联机帮助"^]，您可以在此了解如何在多个网络存储阵列上执行存储管理命令。
+
+
+
+== 命令参考
+
+访问 https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-cli-115/home.html["命令参考"^]，您可以在此了解如何使用命令行界面（ CLI ）命令配置和监控存储阵列。

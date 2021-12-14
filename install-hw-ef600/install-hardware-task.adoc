@@ -1,0 +1,96 @@
+---
+permalink: install-hw-ef600/install-hardware-task.html 
+sidebar: sidebar 
+keywords: EF300, EF600, installation, 
+summary: 将 EF300 或 EF600 安装在两柱机架或 NetApp 系统机柜中。 
+---
+= Install the hardware
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在两柱机架或 NetApp 系统机柜中安装 EF300 或 EF600 存储系统。
+
+在安装 EF300 或 EF600 存储系统之前，请确保执行以下操作：
+
+* 在注册硬件 http://mysupport.netapp.com/["mysupport.netapp.com"^]。
+* 准备一个无静电的平面工作区。
+* 采取防静电预防措施。
+
+
+.步骤
+. 打开硬件包装。
++
+.. 打开包装箱内物品的包装，并根据装箱单清点所含硬件。
+.. 在继续操作之前，请通读所有说明。
+
+
+. 安装导轨。
++
+
+NOTE: 为了防止设备发生倒装，请从机架或机柜的底部直到顶部安装硬件。
+
++
+|===
+
+
+ a| 
+如果机架安装硬件附带了相关说明，请参见这些说明，了解如何安装导轨。有关机架安装的其他说明，请参见 link:../rackmount-hardware.html["机架式硬件"]。
+
+
+
+ a| 
+image:../media/install_rails_inst-hw-ef600.png[""]
+
+|===
+. 安装磁盘架。
++
+|===
+
+
+ a| 
+.. 如果要安装多个磁盘架，请从机柜的底部到顶部开始安装。将磁盘架的背面置于导轨上。
++
+
+CAUTION: 安装磁盘架时，请使用两个人的团队搬运机。
+
+.. 从底部支撑好磁盘架，将其滑入机柜。
+
+
+
+
+ a| 
+image:../media/install_ef600.png[""]
+
+|===
+. 固定磁盘架。
++
+|===
+
+
+ a| 
+有关详细信息，请参见 link:../rackmount-hardware.html["机架式硬件"]。
+
+
+
+ a| 
+image:../media/secure_shelf_inst-hw-ef600.png[""]
+
+|===
+. 安装面板。
++
+|===
+
+
+ a| 
+.. 将面板与磁盘架对齐，然后卡入到位。
+
+
+
+
+ a| 
+image:../media/install_faceplate_2_0_inst-hw-ef600.png[""]
+
+|===
+

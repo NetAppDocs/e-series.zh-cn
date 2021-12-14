@@ -1,0 +1,22 @@
+---
+permalink: config-vmware/discover-storage-host-task.html 
+sidebar: sidebar 
+keywords: discover storage ESXi, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 将卷分配给主机后，您可以执行重新扫描，以便主机检测并配置卷以实现多路径。 
+---
+= 发现主机上的存储
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+将卷分配给主机后，您可以执行重新扫描，以便主机检测并配置卷以实现多路径。
+
+默认情况下， ESXi 主机每五分钟自动执行一次重新扫描。在执行手动重新扫描之前，卷可能会在您创建卷并将其分配给主机之间出现。无论怎样，您都可以执行手动重新扫描，以确保所有卷均已正确配置。
+
+.步骤
+. 创建一个或多个卷并将其分配给 ESXi 主机。
+. 如果使用的是 vCenter Server ，请将此主机添加到服务器的清单中。
+. 使用 vSphere Client 或 vSphere Web Client 直接连接到 vCenter Server 或 ESXi 主机。
+. 有关如何在 ESXi 主机上重新扫描存储的说明，请搜索 https://kb.vmware.com/s/["VMware 知识库"^] 有关此主题的文章。
+

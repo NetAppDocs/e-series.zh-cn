@@ -1,0 +1,63 @@
+---
+permalink: maintenance-ef600/batteries-overview-requirements-concept.html 
+sidebar: sidebar 
+keywords: replace EF300 battery, replace EF600 battery, EF300 battery fail, EF600 battery fail 
+summary: 更换 EF300 或 EF600 电池的要求和注意事项。 
+---
+= 更换 EF300 或 EF600 电池的要求
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在更换 EF300 或 EF600 电池之前，请查看要求和注意事项。
+
+控制器附带电池，如果交流电源发生故障，则会保留缓存的数据。
+
+
+
+== Recovery Guru 警报
+
+如果 SANtricity System Manager 中的恢复 Guru 报告以下状态之一，则必须更换受影响的电池：
+
+* 电池出现故障
+* 需要更换电池
+
+
+在 SANtricity 系统管理器中，查看恢复 Guru 中的详细信息，确认问题描述具有电池，并确保不需要先解决任何其他问题。
+
+
+
+== 操作步骤概述
+
+要保护数据，您必须尽快更换发生故障的电池。
+
+下面概述了更换 EF300 或 EF600 控制器中的电池的步骤：
+
+. 使控制器脱机。
+. 拆下控制器箱。
+. 更换电池。
+. 更换控制器箱。
+. 使控制器联机。
+
+
+
+
+== 要求
+
+如果您计划更换电池，则必须具备以下条件：
+
+* 更换电池。
+* ESD 腕带，或者您已采取其他防静电预防措施。
+* 用于标识连接到控制器箱的每个缆线的标签。
+* 一个管理工作站，其浏览器可访问控制器的 SANtricity 系统管理器。（要打开 System Manager 界面，请将浏览器指向控制器的域名或 IP 地址。）
++
+您也可以使用命令行界面（ CLI ）执行某些过程。如果您无法访问 CLI ，可以执行以下操作之一：
+
++
+** * 对于 SANtricity System Manager （ 11.60 及更高版本） * —从 System Manager 下载命令行界面包（ zip 文件）。转到菜单：设置 [ 系统 > 加载项 > 命令行界面 ] 。然后，您可以从操作系统提示符处执行问题描述命令行界面命令，例如 DOS C ：提示符。
+** * 对于 SANtricity 存储管理器 / 企业管理窗口（ EMW ） * —按照快速指南中的说明下载并安装该软件。您可以从 EMW 中运行命令行界面命令，方法是选择菜单： Tools[ 执行脚本 ] 。
+
+
+

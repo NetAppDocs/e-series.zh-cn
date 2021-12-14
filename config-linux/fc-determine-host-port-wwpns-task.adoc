@@ -1,0 +1,35 @@
+---
+permalink: config-linux/fc-determine-host-port-wwpns-task.html 
+sidebar: sidebar 
+keywords: host wwpn, HBA utility, express linux configuration, software configuration, linux host, 
+summary: '您可以安装 FC HBA 实用程序，以便查看每个主机端口的全球通用端口名称 \ （ WWPN ）。此外，您还可以使用 HBA 实用程序更改 NetApp 互操作性表工具的 "Notes" 列中针对支持的配置建议的任何设置。' 
+---
+= 确定主机 WWPN 并进行建议的设置
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以安装 FC HBA 实用程序，以便查看每个主机端口的全球通用端口名称（ WWPN ）。
+
+此外，您还可以使用 HBA 实用程序更改的 "Notes" 列中建议的任何设置 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^] 支持的配置。
+
+查看 HBA 实用程序的以下准则：
+
+* 大多数 HBA 供应商都提供 HBA 实用程序。您需要为主机操作系统和 CPU 提供正确版本的 HBA 。FC HBA 实用程序的示例包括：
++
+** 适用于 Emulex HBA 的 Emulex OneCommand Manager
+** 适用于 QLogic HBA 的 QLogic QConverge 控制台
+
+
+* 如果安装了主机上下文代理，则主机 I/O 端口可能会自动注册。
+
+
+.步骤
+. 从 HBA 供应商的网站下载相应的实用程序。
+. 安装实用程序。
+. 在 HBA 实用程序中选择相应的设置。
++
+的注释列中列出了适用于您的配置的设置 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]。
+
+

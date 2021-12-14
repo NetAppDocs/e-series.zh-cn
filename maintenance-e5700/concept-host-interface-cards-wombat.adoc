@@ -1,0 +1,13 @@
+---
+permalink: maintenance-e5700/concept-host-interface-cards-wombat.html 
+sidebar: sidebar 
+keywords: host, interface, card, hic, install, controller, canister, e5700, built-in, port, baseboard 
+summary: 可以选择在控制器箱中安装主机接口卡（ HIC\ ）。E5700 控制器在控制器卡本身上包括内置主机端口，并在可选 HIC 上包括主机端口。控制器中内置的主机端口称为基板主机端口。HIC 中内置的主机端口称为 HIC 端口。 
+---
+= 主机接口卡
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+可以选择将主机接口卡（ HIC ）安装在控制器箱中。E5700 控制器在控制器卡本身上包括内置主机端口，并在可选 HIC 上包括主机端口。控制器中内置的主机端口称为基板主机端口。HIC 中内置的主机端口称为 HIC 端口。

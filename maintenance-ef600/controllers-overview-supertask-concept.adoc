@@ -1,0 +1,38 @@
+---
+permalink: maintenance-ef600/controllers-overview-supertask-concept.html 
+sidebar: sidebar 
+keywords: replace EF300 controller, replace EF600 controller, 
+summary: 更换 EF300 或 EF600 控制器的要求和注意事项 
+---
+= 更换 EF300 或 EF600 控制器的要求
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在更换 EF300 或 EF600 控制器之前，请查看要求和注意事项。
+
+控制器由主板，固件和软件组成。它控制驱动器并实施 SANtricity 系统管理器功能。
+
+
+
+== 控制器更换要求
+
+在更换控制器之前，您必须具备以下条件：
+
+* 与要更换的控制器箱部件号相同的替代控制器箱。
+* ESD 腕带，或者您已采取其他防静电预防措施。
+* 用于标识连接到控制器箱的每个缆线的标签。
+* 1 号十字螺丝刀。
+* 一个管理工作站，其浏览器可访问控制器的 SANtricity 系统管理器。（要打开 System Manager 界面，请将浏览器指向控制器的域名或 IP 地址。）
+
+
+
+
+== 在启动时更换
+
+如果满足以下条件，您可以在存储阵列启动并执行主机 I/O 操作时更换控制器箱：
+
+* 磁盘架中的第二个控制器箱处于最佳状态。
+* SANtricity 系统管理器中恢复 Guru 的详细信息区域中的 * 确定删除 * 字段显示 * 是 * ，表示删除此组件是安全的。
+

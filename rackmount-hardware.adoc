@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: rackmount-hardware.html 
+keywords: rackmount, rack-mount, install in rack, rails 
+summary: 机架式安装硬件。 
+---
+= 机架式硬件
+
+
+[role="lead"]
+使用以下链接访问介绍如何安装机架安装硬件的文档。
+
+
+
+== 可调整的支持导轨
+
+访问 https://mysupport.netapp.com/ecm/ecm_download_file/ECMP1652045["安装可调整的支持导轨"^] 用于安装单独发售的控制器驱动器托盘或驱动器托盘（尚未安装在机柜中）。此操作步骤适用于以下 2U （ 9 厘米或 3.5 英寸）托盘：
+
+* DE1600 或 DE5600
+* E2612 或 E2624
+* E5412 ， E5424 ， E5512 或 E5524
+
+
+
+
+== 两柱机架— 2U
+
+访问 https://mysupport.netapp.com/ecm/ecm_download_file/ECMM1280302["将 2U 设备安装到两柱机架中"^]。
+
+
+
+== 四柱机架或机柜— 2U
+
+访问 https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2484194["在四柱机架或机柜中安装 2U 12 驱动器机箱"^]。
+
+
+
+== 四柱机架— SuperRail
+
+访问 http://docs.netapp.com/platstor/topic/com.netapp.doc.hw-rail-superrail/home.html["将 SuperRail 安装到四柱机架中（ DE224C/DE460C 磁盘架）"^]。

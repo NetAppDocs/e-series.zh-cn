@@ -1,0 +1,144 @@
+---
+permalink: config-linux/iscsi-configure-host-side-network-task.html 
+sidebar: sidebar 
+keywords: configure iSCSI networking, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 在主机端配置 iSCSI 网络。 
+---
+= 配置主机端网络
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+要配置主机端网络，必须执行几个步骤。
+
+您可以通过以下方式在主机端配置 iSCSI 网络：设置每个物理路径的节点会话数，打开相应的 iSCSI 服务，为 iSCSI 端口配置网络，创建 iSCSI 端绑定以及在启动程序和目标之间建立 iSCSI 会话。
+
+大多数情况下，您可以使用适用于 iSCSI CNA/NIC 的收件箱软件启动程序。您无需下载最新的驱动程序，固件和 BIOS 。请参见 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^] 以确定代码要求。
+
+.步骤
+. 检查 /etc/iscsi/iscsid.conf 文件中的 `node.session.nr_sessions` 变量，查看每个物理路径的默认会话数。如有必要，将默认会话数更改为一个会话。
++
+[listing]
+----
+node.session.nr_sessions = 1
+----
+. 将 /etc/iscsi/iscsid.conf 文件中的 `node.session.timeo.replacement_timeout` 变量更改为 `20` ，默认值为 `120` 。
++
+[listing]
+----
+node.session.timeo.replacement_timeout=20
+----
+. 确保 `iscsid` 和 ` （ open-） iSCSI` 服务已打开并启用，可用于启动。
++
+* Red Hat Enterprise Linux 7 和 8 （ RHEL 7 和 RHEL 8 ） *
+
++
+[listing]
+----
+# systemctl start iscsi
+# systemctl start iscsid
+# systemctl enable iscsi
+# systemctl enable iscsid
+----
++
+* SUSE Linux Enterprise Server 12 和 15 （ SLES 12 和 SLES 15 ） *
+
++
+[listing]
+----
+# systemctl start iscsid.service
+# systemctl enable iscsid.service
+----
++
+或者，您也可以在 /etc/iscsi/iscsid.conf 中设置 `node.star启动 = automatic` ，然后再运行任何 `iscsiadm` 命令，以便在重新启动后持久保留会话。
+
+. 获取主机 IQN 启动程序名称，该名称将用于将主机配置到阵列。
++
+[listing]
+----
+# cat /etc/iscsi/initiatorname.iscsi
+----
+. 为 iSCSI 端口配置网络：
++
+
+NOTE: 除了公有网络端口之外， iSCSI 启动程序还应在单独的私有分段或 VLAN 上使用两个或更多 NIC 。
+
++
+.. 使用 ` # ifconfig -a` 命令确定 iSCSI 端口名称。
+.. 设置 iSCSI 启动程序端口的 IP 地址。启动程序端口应与 iSCSI 目标端口位于同一子网中。
++
+[listing]
+----
+# vim /etc/sysconfig/network-scripts/ifcfg-<NIC port>
+Edit:
+BOOTPROTO=none
+ONBOOT=yes
+NM_CONTROLLED=no
+Add:
+IPADDR=192.168.xxx.xxx
+NETMASK=255.255.255.0
+----
++
+
+NOTE: 请务必为两个 iSCSI 启动程序端口设置地址。
+
+.. 重新启动网络服务。
++
+[listing]
+----
+# systemctl restart network
+----
+.. 确保 Linux 服务器可以对 iSCSI 目标端口执行 ping 操作。
+
+
+. 通过创建两个 iSCSI iface 绑定来配置 iSCSI 接口。
++
+[listing]
+----
+iscsiadm -m iface -I iface0 -o new
+iscsiadm -m iface -I iface0 -o update -n iface.net_ifacename -v <NIC port1>
+----
++
+[listing]
+----
+iscsiadm -m iface -I iface1 -o new
+iscsiadm -m iface -I iface1 -o update -n iface.net_ifacename -v <NIC port2>
+----
++
+
+NOTE: 要列出这些接口，请使用 `iscsiadm -m iface` 。
+
+. 在启动程序和目标之间建立 iSCSI 会话（共四个）。
++
+.. 发现 iSCSI 目标。在工作表中保存 IQN （与每次发现相同），以供下一步使用。
++
+[listing]
+----
+iscsiadm -m discovery -t sendtargets -p 192.168.0.1:3260 -I iface0 -P 1
+----
++
+
+NOTE: IQN 如下所示：
+
++
+[listing]
+----
+iqn.1992-01.com.netapp:2365.60080e50001bf1600000000531d7be3
+----
+.. 使用 ifaces 在 iSCSI 启动程序和 iSCSI 目标之间创建连接。
++
+[listing]
+----
+iscsiadm -m node -T iqn.1992-01.com.netapp:2365.60080e50001bf1600000000531d7be3
+-p 192.168.0.1:3260 -I iface0 -l
+----
+.. 列出在主机上建立的 iSCSI 会话。
++
+[listing]
+----
+# iscsiadm -m session
+----
+
+
+

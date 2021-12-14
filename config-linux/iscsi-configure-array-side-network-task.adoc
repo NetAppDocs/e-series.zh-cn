@@ -1,0 +1,127 @@
+---
+permalink: config-linux/iscsi-configure-array-side-network-task.html 
+sidebar: sidebar 
+keywords: configure iSCSI networking, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 在阵列端配置 iSCSI 网络。 
+---
+= 配置阵列端网络
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 SANtricity 系统管理器图形用户界面在阵列端配置 iSCSI 网络。
+
+.您需要什么？ #8217 ；将需要什么
+* 一个存储阵列控制器的 IP 地址或域名。
+* System Manager GUI ，基于角色的访问控制（ Role-Based Access Control ， RBAC ）或 LDAP 以及为对存储阵列进行适当安全访问而配置的目录服务的密码。有关访问管理的详细信息，请参见 SANtricity System Manager 联机帮助。
+
+
+此任务介绍如何从 System Manager 的硬件页面访问 iSCSI 端口配置。您也可以从菜单： System[ 设置 > 配置 iSCSI 端口 ] 访问配置。
+
+.步骤
+. 在浏览器中，输入以下 URL ： ` +https://<DomainNameOrIPAddress>+`
++
+`IPAddress` 是一个存储阵列控制器的地址。
+
++
+首次在尚未配置的阵列上打开 SANtricity 系统管理器时，将显示设置管理员密码提示符。基于角色的访问管理可配置四个本地角色：管理员，支持，安全性和监控。后三个角色具有无法猜测的随机密码。为管理员角色设置密码后，您可以使用管理员凭据更改所有密码。有关四个本地用户角色的详细信息，请参见 SANtricity System Manager 用户界面中提供的联机帮助。
+
+. 在设置管理员密码和确认密码字段中输入管理员角色的 System Manager 密码，然后单击 * 设置密码 * 。
++
+如果未配置池，卷组，工作负载或通知，则设置向导将启动。
+
+. 关闭设置向导。
++
+您稍后将使用此向导完成其他设置任务。
+
+. 选择 * 硬件 * 。
+. 如果图形显示了驱动器，请单击 * 显示磁盘架背面 * 。
++
+此图将发生变化，以显示控制器，而不是驱动器。
+
+. 单击包含要配置的 iSCSI 端口的控制器。
++
+此时将显示控制器的上下文菜单。
+
+. 选择 * 配置 iSCSI 端口 * 。
++
+此时将打开配置 iSCSI 端口对话框。
+
+. 在下拉列表中，选择要配置的端口，然后单击 * 下一步 * 。
+. 选择配置端口设置，然后单击 * 下一步 * 。
++
+要查看所有端口设置，请单击对话框右侧的 * 显示更多端口设置 * 链接。
+
++
+|===
+| 端口设置 | Description 
+
+
+ a| 
+已配置以太网端口速度
+ a| 
+选择所需的速度。下拉列表中显示的选项取决于您的网络可以支持的最大速度（例如 10 Gbps ）。
+
+
+NOTE: 控制器上提供的可选 25 Gb iSCSI 主机接口卡不会自动协商速度。您必须将每个端口的速度设置为 10 GB 或 25 GB 。所有端口都必须设置为相同的速度。
+
+
+
+ a| 
+启用 IPv4/Enable IPv6
+ a| 
+选择一个或两个选项以启用对 IPv4 和 IPv6 网络的支持。
+
+
+
+ a| 
+TCP 侦听端口（可通过单击 * 显示更多端口设置 * 来使用。）
+ a| 
+如有必要，请输入新的端口号。
+
+侦听端口是控制器用于侦听主机 iSCSI 启动程序的 iSCSI 登录的 TCP 端口号。默认侦听端口为 3260 。您必须输入 3260 或 49152 到 65535 之间的值。
+
+
+
+ a| 
+MTU 大小（可通过单击 * 显示更多端口设置 * 来获取。）
+ a| 
+如有必要，请为最大传输单元（ Maximum Transmission Unit ， MTU ）输入一个新大小（以字节为单位）。
+
+默认最大传输单元（ Maximum Transmission Unit ， MTU ）大小为每帧 1500 字节。您必须输入一个介于 1500 和 9000 之间的值。
+
+
+
+ a| 
+启用 ICMP ping 响应
+ a| 
+选择此选项可启用 Internet 控制消息协议（ Internet Control Message Protocol ， ICMP ）。网络计算机的操作系统使用此协议发送消息。这些 ICMP 消息可确定主机是否可访问以及从该主机获取数据包所需的时间。
+
+|===
++
+如果选择了 * 启用 IPv* ，则在单击 * 下一步 * 后，将打开一个对话框，用于选择 IPv4 设置。如果选择了 * 启用 IPv6* ，则在单击 * 下一步 * 后，将打开一个对话框，用于选择 IPv6 设置。如果同时选择了这两个选项，则 IPv4 设置对话框将首先打开，然后单击 * 下一步 * ， IPv6 设置对话框将打开。
+
+. 自动或手动配置 IPv4 和 / 或 IPv6 设置。要查看所有端口设置，请单击对话框右侧的 * 显示更多设置 * 链接。
++
+|===
+| 端口设置 | Description 
+
+
+ a| 
+自动获取配置
+ a| 
+选择此选项可自动获取配置。
+
+
+
+ a| 
+手动指定静态配置
+ a| 
+选择此选项，然后在字段中输入静态地址。对于 IPv4 ，请包括网络子网掩码和网关。对于 IPv6 ，请包括可路由的 IP 地址和路由器 IP 地址。
+
+|===
+. 单击 * 完成 * 。
+. 关闭 System Manager 。
+

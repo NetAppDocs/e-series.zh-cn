@@ -1,0 +1,45 @@
+---
+permalink: config-linux/index.html 
+sidebar: sidebar 
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 对具有 E 系列系统的 Linux 主机使用快速配置。 
+---
+= Linux 快速配置概述
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+用于安装存储阵列和访问 SANtricity 系统管理器的 Linux 快速方法适用于为 E 系列存储系统设置独立的 Linux 主机。它旨在以最低的决策点尽快启动和运行存储系统。
+
+
+
+=== 操作步骤概述
+
+Linux 快速方法包括以下步骤。
+
+. 设置以下通信环境之一：
++
+** 光纤通道（ FC ）
+** iSCSI
+** （ SAS ）。
+** 基于 Infiniband 的 iSER
+** 基于 Infiniband 的 SRP
+** 基于 Infiniband 的 NVMe
+** 基于 RoCE 的 NVMe
+** 基于光纤通道的 NVMe
+
+
+. 在存储阵列上创建逻辑卷。
+. 使卷可供数据主机使用。
+
+
+
+
+=== 了解更多信息
+
+* 联机帮助—介绍如何使用 SANtricity System Manager 完成配置和存储管理任务。可从产品中获取。
+* https://kb.netapp.com/["NetApp 知识库"^] （文章数据库）—提供各种 NetApp 产品和技术的故障排除信息，常见问题解答和说明。
+* http://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^] —用于搜索符合 NetApp 指定标准和要求的 NetApp 产品和组件的配置。
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2547936["《 Linux Unified Host Utilities 7.1 安装指南》"^] —介绍如何使用 Linux Unified Host Utilities 7.1 。
+

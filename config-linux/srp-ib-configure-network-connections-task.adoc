@@ -1,0 +1,115 @@
+---
+permalink: config-linux/srp-ib-configure-network-connections-task.html 
+sidebar: sidebar 
+keywords: configure network SRP over IB, configure Linux network, OFED, RDMA, express linux configuration, linux host, 
+summary: 如果您的配置使用基于 Infiniband 的 SRP 协议，请按照本节中的步骤进行操作。 
+---
+= 配置基于 Infiniband 的网络连接和 #8212 ；和 #8203 ； SRP
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您的配置使用基于 Infiniband 的 SRP 协议，请按照本节中的步骤进行操作。
+
+要将 Linux 主机连接到存储阵列，必须使用相应的选项启用 InfiniBand 驱动程序堆栈。不同 Linux 分发版的特定设置可能会有所不同。检查 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^] 有关特定于您的解决方案的具体说明和其他建议设置，请参见。
+
+.步骤
+. 为您的操作系统安装 OFED/RDMA 驱动程序堆栈。
++
+* SLES *
+
++
+[listing]
+----
+zypper install rdma-core
+----
++
+* RHEL *
+
++
+[listing]
+----
+yum install rdma-core
+----
+. 配置 OFED/RDMA 以加载 SRP 模块。
++
+* SLES *
+
++
+[listing]
+----
+zypper install srp_daemon
+----
++
+* RHEL *
+
++
+[listing]
+----
+ yum install srp_daemon
+----
+. 在 OFED/RDMA 配置文件中，设置 `Srp_load=yes` 和 `Srp_daema_enable=yes` 。
++
+RDMA 配置文件位于以下位置：
+
++
+[listing]
+----
+/etc/rdma/rdma.conf
+----
+. 启用并启动 OFED/RDMA 服务。
++
+* RHEL 7.x 和 SLES 12.x 或更高版本 *
+
++
+** 要在启动时加载 InfiniBand 模块，请执行以下操作：
++
+[listing]
+----
+systemctl enable rdma
+----
+** 要立即加载 InfiniBand 模块，请执行以下操作：
++
+[listing]
+----
+systemctl start rdma
+----
+
+
+. 启用 SRP 守护进程。
++
+* RHEL 7.x 和 SLES 12 或更高版本 *
+
++
+** 要使 SRP 守护进程在启动时启动，请执行以下操作：
++
+[listing]
+----
+systemctl enable srp_daemon
+----
+** 立即启动 SRP 守护进程：
++
+[listing]
+----
+systemctl start srp_daemon
+----
+
+
+. 如果需要修改 SRP 配置，请输入以下命令创建 ` /etc/modprobe.d/IB_SRP.conf` 。
++
+[listing]
+----
+options ib_srp cmd_sg_entries=255 allow_ext_sg=y indirect_sg_entries=2048
+----
++
+.. 在 ` /etc/sSRP 守护进程 .conf` 下，添加以下行。
++
+[listing]
+----
+a
+    max_sect=4096
+----
+
+
+

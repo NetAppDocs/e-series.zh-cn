@@ -1,0 +1,160 @@
+---
+permalink: web-services-proxy/install-login-task.html 
+sidebar: sidebar 
+keywords: log in API, log in Unified Manager 
+summary: 访问并登录到 Web 服务 API 和 Unified Manager 。 
+---
+= 登录到 API 和 Unified Manager
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Web 服务包括 API 文档，您可以通过这些文档直接与 REST API 进行交互。它还包括 Unified Manager ，这是一个基于浏览器的界面，用于管理多个 E 系列存储系统。
+
+
+
+== 登录到 Web 服务 API
+
+安装 Web 服务代理后，您可以在浏览器中访问交互式 API 文档。
+
+API 文档随每个 Web 服务实例一起运行，也可以从 NetApp 支持站点获得静态 PDF 格式的文档。要访问交互式版本，请打开浏览器并输入指向 Web 服务所在位置的 URL （嵌入式版本的控制器或代理的服务器）。
+
+
+NOTE: Web 服务 API 实施 OpenAPI 规范（最初称为 Swagger 规范）。
+
+首次登录时，请使用 "admin" 凭据。"admin" 被视为超级管理员，可以访问所有功能和角色。
+
+.步骤
+. 打开浏览器。
+. 输入嵌入式或代理实施的 URL ：
++
+** 嵌入式： ` +https://<controller>:<port>/devmgr/docs/+`
++
+在此 URL 中， ` < 控制器 >` 是控制器的 IP 地址或 FQDN ， ` < 端口 >` 是控制器的管理端口号（默认为 8443 ）。
+
+** 代理： ` + http ： //< 服务器 > ： < 端口 >/devmgr/docs/+`
++
+在此 URL 中， ` <server>` 是安装了代理的服务器的 IP 地址或 FQDN ， ` <port>` 是侦听端口号（对于 HTTP ，默认为 8080 ，对于 HTTPS ，默认为 8443 ）。
+
++
+
+NOTE: 如果侦听端口已在使用中，则代理会检测到冲突并提示您选择其他侦听端口。
+
++
+此时将在浏览器中打开 API 文档。
+
+
+
+. 交互式 API 文档打开后，转到页面右上角的下拉菜单并选择 * 实用程序 * 。
+. 单击 * 登录 * 类别以查看可用端点。
+. 单击 * 发布： /login* 端点，然后单击 * 试用 * 。
+. 对于首次登录，输入 admin 作为用户名和密码。
+. 单击 * 执行 * 。
+. 要访问端点以进行存储管理，请转到右上角的下拉菜单并选择 * v2* 。
++
+此时将显示端点的高级类别。您可以按照表中所述导航 API 文档。
+
++
+|===
+| 区域 | Description 
+
+
+ a| 
+下拉菜单
+ a| 
+页面右上角的下拉菜单提供了在 API 文档（ V2 ）版本 2 ，符号界面（ SYMBOL V2 ）和用于登录的 API 实用程序（ utils ）之间切换的选项。
+
+
+NOTE: 由于 API 文档的版本 1 是预发布版本，并且不普遍提供，因此下拉菜单中不会包含 V1 。
+
+
+
+ a| 
+类别
+ a| 
+API 文档按高级类别（例如：管理，配置）进行组织。单击某个类别可查看相关端点。
+
+
+
+ a| 
+端点
+ a| 
+选择一个端点以查看其 URL 路径，所需参数，响应正文以及 URL 可能返回的状态代码。
+
+
+
+ a| 
+试用
+ a| 
+单击 * 试用 * 直接与端点交互。此按钮在端点的每个展开视图中提供。
+
+单击按钮时，将显示用于输入参数的字段（如果适用）。然后，您可以输入值并单击 * 执行 * 。
+
+交互式文档使用 JavaScript 直接向 API 发出请求，而不是测试请求。
+
+|===
+
+
+
+
+== 登录到 Unified Manager
+
+安装 Web 服务代理后，您可以访问 Unified Manager 以在基于 Web 的界面中管理多个存储系统。
+
+要访问 Unified Manager ，请打开浏览器并输入指向安装代理的 URL 。支持以下浏览器和版本。
+
+|===
+| 浏览器 | 最低版本 
+
+
+ a| 
+Google Chrome
+ a| 
+79.
+
+
+
+ a| 
+Microsoft Internet Explorer
+ a| 
+11.
+
+
+
+ a| 
+Microsoft Edge
+ a| 
+79.
+
+
+
+ a| 
+Mozilla Firefox
+ a| 
+70
+
+
+
+ a| 
+Safari
+ a| 
+12
+
+|===
+.步骤
+. 打开浏览器并输入以下 URL ：
++
+` + http ： //< 服务器 > ： < 端口 >/um+`
+
++
+在此 URL 中， ` < 服务器 >` 表示安装了 Web 服务代理的服务器的 IP 地址或 FQDN ， ` < 端口 >` 表示侦听端口号（对于 HTTP ，默认为 8080 ，对于 HTTPS ，默认为 8443 ）。
+
++
+此时将打开 Unified Manager 登录页面。
+
+. 对于首次登录，请输入 `admin` 作为用户名，然后设置并确认管理员用户的密码。
++
+此密码最多可包含 30 个字符。有关用户和密码的详细信息，请参见 Unified Manager 联机帮助的访问管理部分。
+
+

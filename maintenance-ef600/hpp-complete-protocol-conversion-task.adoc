@@ -1,0 +1,23 @@
+---
+permalink: maintenance-ef600/hpp-complete-protocol-conversion-task.html 
+sidebar: sidebar 
+keywords: host protocol change, EF300 host protocol, EF600 host protocol 
+summary: 转换主机端口的协议后，执行其他步骤以使用新协议。 
+---
+= 完成 EF300 或 EF600 的主机协议转换
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+应用功能包密钥转换协议后，必须将主机配置为使用相应的协议。
+
+有关分步说明，请参见适用于您的系统的指南：
+
+* link:../config-linux/index.html["Linux 快速配置"]
+* link:../config-vmware/index.html["VMware 快速配置"]
+* link:../config-windows/index.html["Windows 快速配置"]
++
+具体设置可能会有所不同。检查 http://mysupport.netapp.com/matrix["NetApp 互操作性表"^] 有关解决方案的具体说明和其他建议设置，请参见。
+
+

@@ -1,0 +1,15 @@
+---
+layout: astra 
+sidebar: sidebar 
+permalink: index.html 
+lead: E-Series systems give you an integrated hardware and software solution for dedicated, high-bandwidth applications like data analytics, video surveillance, and disk-based backup that need simple, fast, reliable SAN storage. 
+summary: E 系列系统为您提供集成的硬件和软件解决方案，用于需要简单，快速，可靠的 SAN 存储的专用高带宽应用程序，例如数据分析，视频监控和基于磁盘的备份。 
+---
+= E 系列和 SANtricity 文档
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+

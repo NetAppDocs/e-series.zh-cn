@@ -1,0 +1,70 @@
+---
+permalink: install-hw-e2800-e5700/e2824-e5724-install-hardware-task.html 
+sidebar: sidebar 
+keywords: E2800, E5700, installation 
+summary: 将 E2800 或 E5700 安装在两柱机架或 NetApp 系统机柜中。 
+---
+= Install the hardware
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+了解如何安装 E5724 ， EF570 ， EF280 ， E2812 ， E2824 ， DE212C 或 DE224C 存储系统位于两柱机架或 NetApp 系统机柜中。
+
+安装硬件之前，请确保执行以下操作：
+
+* 在注册硬件 http://mysupport.netapp.com/["mysupport.netapp.com"^]。
+* 准备一个无静电的平面工作区。
+* 获取 ESD 腕带并采取防静电预防措施。
+
+
+请通读所有说明，然后继续执行以下步骤。
+
+.步骤
+. 拆开硬件内容的包装，然后根据装箱单清点包含的硬件。
+. 安装导轨。
++
+如果机架安装硬件附带了相关说明，请参见这些说明，了解有关如何安装导轨的详细信息。有关机架安装的其他说明，请参见 link:../rackmount-hardware.html["机架式硬件"]。
+
++
+
+NOTE: 从机架或机柜的底部直至顶部安装硬件，以防止设备发生翻倒。
+
++
+image:../media/install_rails_inst-hw-e2800-e5700.png[""]
+
+. 安装磁盘架。
++
+
+CAUTION: 装满驱动器后，每个磁盘架的重量约为 64 磅（ 29 千克）。要安全移动磁盘架，需要两个人或机械升降机。
+
++
+.. 从机柜底部所需的磁盘架开始，将磁盘架的背面（带有连接器的一端）放在导轨上。
+.. 从底部支撑好磁盘架，将其滑入机柜。image:../media/4_person_lift_source.png[""]
+
+
+. 固定磁盘架。
++
+按照中的说明将磁盘架固定到机架 link:../rackmount-hardware.html["机架式硬件"]。
+
++
+.. 将螺钉插入两侧磁盘架顶部的第一个和第三个孔中，以将其固定到机柜正面。
+.. 将两个后支架放在磁盘架后上部分的每一侧。将螺钉插入每个支架的第一个和第三个孔中，以固定机柜的背面。
+
+
++
+image:../media/trafford_secure.png[""]
+
+. 安装挡板或端盖。
++
+.. 将前挡板置于控制器架前部，使每一端的孔与控制器架上的紧固件对齐。
+.. 将挡板卡入到位。
+.. 如果您有可选的驱动器架，请将左端盖放在驱动器架前面，使端盖中的孔与驱动器架左侧的紧固件对齐。
+.. 将端盖卡入到位。
+.. 对右端盖重复上述步骤。
+
+
+
+
+image:../media/trafford_overview.png[""]

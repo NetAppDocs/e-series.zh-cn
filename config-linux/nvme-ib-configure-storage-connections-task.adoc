@@ -1,0 +1,36 @@
+---
+permalink: config-linux/nvme-ib-configure-storage-connections-task.html 
+sidebar: sidebar 
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 如果控制器包含基于 InfiniBand 的 NVMe 端口，则可以使用 SANtricity 系统管理器配置每个端口的 IP 地址。 
+---
+= 配置存储阵列基于 InfiniBand 的 NVMe 连接
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果控制器包含基于 InfiniBand 的 NVMe 端口，则可以使用 SANtricity 系统管理器配置每个端口的 IP 地址。
+
+.步骤
+. 从 System Manager 界面中，选择 * 硬件 * 。
+. 如果图形显示了驱动器，请单击 * 显示磁盘架背面 * 。
++
+此图将发生变化，以显示控制器，而不是驱动器。
+
+. 单击包含要配置的基于 InfiniBand 的 NVMe 端口的控制器。
++
+此时将显示控制器的上下文菜单。
+
+. 选择 * 配置基于 InfiniBand 端口的 NVMe * 。
++
+
+NOTE: 只有在 System Manager 检测到控制器上的基于 InfiniBand 的 NVMe 端口时，才会显示配置基于 InfiniBand 的 NVMe 选项。
+
++
+此时将打开 * 配置基于 InfiniBand 端口的 NVMe * 对话框。
+
+. 在下拉列表中，选择要配置的 HIC 端口，然后输入此端口的 IP 地址。
+. 单击 * 配置 * 。
+. 对要使用的其他 HIC 端口重复步骤 5 和 6 。
+

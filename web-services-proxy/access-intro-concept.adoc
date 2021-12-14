@@ -1,0 +1,227 @@
+---
+permalink: web-services-proxy/access-intro-concept.html 
+sidebar: sidebar 
+keywords: Web Services, WSP, roles WSP, user access WSP 
+summary: 出于安全考虑，您可以管理用户对 Web 服务 API 和 Unified Manager 的访问。 
+---
+= 在 Web 服务代理中管理用户访问
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+出于安全考虑，您可以管理用户对 Web 服务 API 和 Unified Manager 的访问。
+
+
+
+== 访问管理概述
+
+访问管理包括基于角色的登录，密码加密，基本身份验证和 LDAP 集成。
+
+
+
+=== 基于角色的访问
+
+基于角色的访问控制（ Role-Based Access Control ， RBAC ）可将预定义用户与角色关联起来。每个角色都会为特定级别的功能授予权限。
+
+下表介绍了每个角色。
+
+|===
+| Role | Description 
+
+
+ a| 
+security.admin
+ a| 
+SSL 和证书管理。
+
+
+
+ a| 
+storage.admin
+ a| 
+对存储系统配置的完全读 / 写访问权限。
+
+
+
+ a| 
+storage.monitor
+ a| 
+用于查看存储系统数据的只读访问权限。
+
+
+
+ a| 
+support.admin
+ a| 
+访问存储系统上的所有硬件资源以及 AutoSupport （ ASUP ）检索等支持操作。
+
+|===
+默认用户帐户在 users.properties 文件中定义。您可以通过直接修改 users.properties 文件或使用 Unified Manager 中的访问管理功能来更改用户帐户。
+
+下表列出了可用于 Web 服务代理的用户登录。
+
+|===
+| 预定义的用户登录 | Description 
+
+
+ a| 
+管理员
+ a| 
+超级管理员，有权访问所有功能并包括所有角色。对于 Unified Manager ，您必须在首次登录时设置密码。
+
+
+
+ a| 
+storage
+ a| 
+负责所有存储配置的管理员。此用户包括以下角色： storage.admin ， support.admin 和 storage.monitor 。在设置密码之前，此帐户将被禁用。
+
+
+
+ a| 
+安全性
+ a| 
+负责安全配置的用户。此用户包括以下角色： security.admin 和 storage.monitor 。在设置密码之前，此帐户将被禁用。
+
+
+
+ a| 
+支持
+ a| 
+负责硬件资源，故障数据和固件升级的用户。此用户包括以下角色： support.admin 和 storage.monitor 。在设置密码之前，此帐户将被禁用。
+
+
+
+ a| 
+监控
+ a| 
+对系统具有只读访问权限的用户。此用户仅包含 storage.monitor 角色。在设置密码之前，此帐户将被禁用。
+
+
+
+ a| 
+rw
+ a| 
+RW （读 / 写）用户包括以下角色： storage.admin ， support.admin 和 storage.monitor 。在设置密码之前，此帐户将被禁用。
+
+
+
+ a| 
+执行
+ a| 
+ro （只读）用户仅包含 storage.monitor 角色。在设置密码之前，此帐户将被禁用。
+
+|===
+
+
+=== 密码加密
+
+对于每个密码，您可以使用现有 SHA256 密码编码应用一个额外的加密过程。此附加加密过程会对每个 SHA256 哈希加密的每个密码（ Salt ）随机应用一组字节。所有新创建的密码均采用 Salted SHA256 加密。
+
+
+NOTE: 在 Web 服务代理 3.0 版之前，密码仅通过 SHA256 哈希进行加密。任何现有的 SHA256 仅哈希加密密码都会保留此编码，并且在 users.properties 文件下仍然有效。但是， SHA256 仅哈希加密密码不如采用 Salted SHA256 加密的密码安全。
+
+
+
+=== 基本身份验证
+
+默认情况下，基本身份验证处于启用状态，这意味着服务器返回基本身份验证质询。可以在 wsconfig.xml 文件中更改此设置。
+
+
+
+=== LDAP
+
+为 Web 服务代理启用了轻型目录访问协议（ Lightweight Directory Access Protocol ， LDAP ），这是一种用于访问和维护分布式目录信息服务的应用程序协议。LDAP 集成支持用户身份验证以及将角色映射到组。
+
+有关配置 LDAP 功能的信息，请参阅 Unified Manager 界面或交互式 API 文档的 LDAP 部分中的配置选项。
+
+
+
+== 配置用户访问
+
+您可以通过对密码应用额外加密，设置基本身份验证以及定义基于角色的访问来管理用户访问。
+
+
+
+=== 对密码应用额外加密
+
+为了获得最高的安全性，您可以使用现有 SHA256 密码编码对密码应用额外的加密。
+
+此附加加密过程会对每个 SHA256 哈希加密的每个密码（ Salt ）随机应用一组字节。所有新创建的密码均采用 Salted SHA256 加密。
+
+.步骤
+. 打开 users.properties 文件，该文件位于：
++
+** （ Windows ）— C ： \Program Files\NetApp\SANtricity Web Services Proxy\data\config
+** （ Linux ）— /opt/netapp/SANtricity web_services_proxy/data/config
+
+
+. 以纯文本格式重新输入加密密码。
+. 运行 `securepasswds` 命令行实用程序重新加密密码，或者只需重新启动 Web 服务代理即可。此实用程序安装在 Web 服务代理的根目录安装目录中。
++
+
+NOTE: 或者，每当通过 Unified Manager 编辑密码时，您都可以对本地用户密码进行盐和哈希处理。
+
+
+
+
+
+=== 配置基本身份验证
+
+默认情况下，基本身份验证处于启用状态，这意味着服务器返回基本身份验证质询。如果需要，您可以在 wsconfig.xml 文件中更改此设置。
+
+. 打开 wsconfig.xml 文件，该文件位于：
++
+** （ Windows ）— C ： \Program Files\NetApp\SANtricity Web 服务代理
+** （ Linux ）— /opt/netapp/SANtricity web_services_proxy
+
+
+. 通过指定 false （未启用）或 true （已启用）修改文件中的以下行。
++
+例如： ` <env key="enable-basic-auth">true</env>`
+
+. 保存文件。
+. 重新启动 Web 服务器服务，以使更改生效。
+
+
+
+
+=== 配置基于角色的访问
+
+要限制用户对特定功能的访问，您可以修改为每个用户帐户指定的角色。
+
+Web 服务代理包括基于角色的访问控制（ Role-Based Access Control ， RBAC ），其中的角色与预定义的用户相关联。每个角色都会为特定级别的功能授予权限。您可以通过直接修改 users.properties 文件来更改分配给用户帐户的角色。
+
+
+NOTE: 您也可以使用 Unified Manager 中的访问管理来更改用户帐户。有关详细信息，请参见 Unified Manager 提供的联机帮助。
+
+.步骤
+. 打开 users.properties 文件，该文件位于：
++
+** （ Windows ）— C ： \Program Files\NetApp\SANtricity Web Services Proxy\data\config
+** （ Linux ）— /opt/netapp/SANtricity web_services_proxy/data/config
+
+
+. 找到要修改的用户帐户所在的行（存储，安全性，监控，支持， RW ， 或 ro ）。
++
+
+NOTE: 请勿修改管理员用户。这是一个超级用户，可以访问所有功能。
+
+. 根据需要添加或删除指定的角色。
++
+角色包括：
+
++
+** security.admin — SSL 和证书管理。
+** storage.admin —对存储系统配置的完全读 / 写访问权限。
+** storage.monitor —用于查看存储系统数据的只读访问权限。
+** support.admin —访问存储系统上的所有硬件资源以及 AutoSupport （ ASUP ）检索等支持操作。
++
+
+NOTE: 包括管理员在内的所有用户都需要 storage.monitor 角色。
+
+
+
+. 保存文件。
+

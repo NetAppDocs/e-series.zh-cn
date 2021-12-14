@@ -1,0 +1,694 @@
+---
+permalink: maintenance-ef600/hpp-change-supertask-task.html 
+sidebar: sidebar 
+keywords: host protocol change, EF300 host protocol, EF600 host protocol 
+summary: 更改 EF300 或 EF600 阵列的主机端口协议。 
+---
+= 更改 EF300 或 EF600 的主机协议
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+按照此操作步骤更改 EF300 或 EF600 阵列中的主机端口协议。此操作步骤仅适用于使用 Infiniband （ IB ）或光纤通道（ FC ）的主机接口卡（ HIC ）。
+
+
+
+== 第 1 步：获取功能包密钥
+
+要获取功能包密钥，您需要控制器架中的序列号，功能激活代码以及存储阵列的功能启用标识符。
+
+.步骤
+. 找到序列号。
++
+.. 在 SANtricity 系统管理器中，选择菜单： Support[ 支持中心 ] 。
+.. 选择 * 支持资源 * 选项卡后，滚动到 * 查看存储阵列顶部属性 * 部分。
+.. 找到 * 机箱序列号 * ，并将此值复制到文本文件。
++
+image::../media/sam1130_ss_e2800_storage_array_profile_sn_smid_copy_maint-ef600.gif[sam1130 ss e2800 存储阵列配置文件 SN SMID copy maint ef600]
+
+
+
+. 找到 * 功能包子型号 ID* 。
++
+.. 在 SANtricity 系统管理器中，选择 * 支持 * 。
+.. 选择 * 支持中心 * 图块。
+.. 在支持资源选项卡上，找到并选择 * 存储阵列配置文件 * 链接。
+.. 在文本框中键入 * 功能包子型号 ID* ，然后单击 * 查找 * 。
+.. 找到起始配置的功能包子型号 ID 。
++
+image::../media/storage_array_profile2_maint-ef600.gif[存储阵列配置文件 2 维护 ef600]
+
+
+
+. 使用功能包子型号 ID ，找到起始配置对应的控制器子型号 ID ，并在下表中找到所需结束配置的功能激活代码。然后，将该功能激活代码复制到文本文件。
++
+|===
+2+| 正在启动配置 2+| 正在结束配置 .2+| 功能激活代码 
+
+
+| 控制器子型号 ID | HIC 端口 | 控制器子型号 ID | HIC 端口 
+
+
+ a| 
+443.
+ a| 
+NVMe/FC
+
+或
+
+NVMe/RoCE
+ a| 
+444.
+ a| 
+NVMe/IB
+ a| 
+DH5-HB4-ZK9QH
+
+
+
+ a| 
+448
+ a| 
+FC
+ a| 
+7Hz-EB4-ZHAYW
+
+
+
+ a| 
+491
+ a| 
+iSE/IB
+ a| 
+0H1-675-Z5SII
+
+
+
+ a| 
+492
+ a| 
+SRP/IB
+ a| 
+NHD-V75-ZB6ZX
+
+
+
+ a| 
+444.
+ a| 
+NVMe/FC
+
+或
+
+NVMe/IB
+ a| 
+443.
+ a| 
+NVMe/RoCE
+ a| 
+YH3-XB4-ZJRIZ
+
+
+
+ a| 
+448
+ a| 
+FC
+ a| 
+2HU-BB4-ZFCG5
+
+
+
+ a| 
+491
+ a| 
+iSE/IB
+ a| 
+2H3-P75-Z6AQG
+
+
+
+ a| 
+492
+ a| 
+SRP/IB
+ a| 
+5HG-G75-ZDEZ
+
+
+
+ a| 
+448
+ a| 
+FC
+ a| 
+443.
+ a| 
+NVMe/FC
+
+或
+
+NVMe/RoCE
+ a| 
+JHX-UB4-ZGTP1
+
+
+
+ a| 
+444.
+ a| 
+NVMe/FC
+
+或
+
+NVMe/IB
+ a| 
+LHS-RB4-ZDV29
+
+
+
+ a| 
+491
+ a| 
+iSE/IB
+ a| 
+FH6-975-Z7Q7H
+
+
+
+ a| 
+492
+ a| 
+SRP/IB
+ a| 
+0HI-Z75-ZE4L5
+
+
+
+ a| 
+491
+ a| 
+iSE/IB
+ a| 
+443.
+ a| 
+NVMe/FC 或 NVMe/RoCE
+ a| 
+总部 M85-ZIJNT
+
+
+
+ a| 
+444.
+ a| 
+NVMe/FC 或 NVMe/IB
+ a| 
+4HS-683-ZJZ1U
+
+
+
+ a| 
+448
+ a| 
+FC
+ a| 
+YHU-P85-ZLHCX
+
+
+
+ a| 
+465
+ a| 
+FC/PTL
+ a| 
+AHX-985-ZMXMI
+
+
+
+ a| 
+492
+ a| 
+SRP/IB
+ a| 
+ZHZ-S85-ZNF4J
+
+
+
+ a| 
+492
+ a| 
+SRP/IB
+ a| 
+443.
+ a| 
+NVMe/FC 或 NVMe/RoCE
+ a| 
+EH3-C85-Z0V93
+
+
+
+ a| 
+444.
+ a| 
+NVMe/FC 或 NVMe/IB
+ a| 
+BH5-V85-ZQDQJ
+
+
+
+ a| 
+448
+ a| 
+FC
+ a| 
+1H8-F85-ZRT1V
+
+
+
+ a| 
+465
+ a| 
+FC/PTL
+ a| 
+1HA-Y85-ZSB7S
+
+
+
+ a| 
+491
+ a| 
+iSE/IB
+ a| 
+KHD-I85-ZUSMI
+
+
+
+ a| 
+465
+ a| 
+FC/PTL
+ a| 
+491
+ a| 
+iSER
+ a| 
+6H8-S75-Z98FH
+
+
+
+ a| 
+492
+ a| 
+SRP
+ a| 
+NHL-J75-ZFL3W
+
+
+
+ a| 
+516.
+ a| 
+NVMe/RoCE
+ a| 
+517-17
+ a| 
+NVMe/IB
+ a| 
+LHF-285-ZV9YZ
+
+
+
+ a| 
+518
+ a| 
+FC
+ a| 
+IHI-L85-ZXQEP
+
+
+
+ a| 
+519
+ a| 
+iSE/IB
+ a| 
+RHK-585-ZY7P5
+
+
+
+ a| 
+520
+ a| 
+FC-PTL
+ a| 
+NHN-095-ZZ0XF
+
+
+
+ a| 
+521.
+ a| 
+SRP/IB
+ a| 
+GHP-895-Z25BD
+
+
+
+ a| 
+517-17
+ a| 
+NVMe/IB
+ a| 
+516.
+ a| 
+NVMe/RoCE
+ a| 
+7HS-R95-Z3M06
+
+
+
+ a| 
+518
+ a| 
+FC
+ a| 
+UH-B95-Z43X2
+
+
+
+ a| 
+519
+ a| 
+FC-PTL
+ a| 
+8HX-U95-Z5K6F
+
+
+
+ a| 
+520
+ a| 
+iSE/IB
+ a| 
+UHZ-E95-Z71 左侧
+
+
+
+ a| 
+521.
+ a| 
+SRP/IB
+ a| 
+SH2-X95-Z8IVS
+
+
+
+ a| 
+518
+ a| 
+FC
+ a| 
+516.
+ a| 
+NVMe/FC 或
+
+NVMe/RoCE
+ a| 
+UH5-H95-Z9Z58
+
+
+
+ a| 
+517-17
+ a| 
+NVMe/FC 或
+
+NVMe/IB
+ a| 
+XH7-195-ZBGJC
+
+
+
+ a| 
+519
+ a| 
+FC-PTL
+ a| 
+FHA-K95-ZCXX0
+
+
+
+ a| 
+520
+ a| 
+iSE/IB
+ a| 
+JHC-595-ZDE3X
+
+
+
+ a| 
+521.
+ a| 
+SRP/IB
+ a| 
+0HF-095-ZFVFN
+
+
+
+ a| 
+519
+ a| 
+FC-PTL
+ a| 
+516.
+ a| 
+NVMe/FC 或 NVMe/RoCE
+ a| 
+YHH-895-ZGCXS
+
+
+
+ a| 
+517-17
+ a| 
+NVMe/FC 或 NVMe/IB
+ a| 
+2H-R95-ZHT83
+
+
+
+ a| 
+518
+ a| 
+FC
+ a| 
+1HM-BA5-ZJALA
+
+
+
+ a| 
+520
+ a| 
+iSE/IB
+ a| 
+YHP-UA5-ZKRXA
+
+
+
+ a| 
+521.
+ a| 
+SRP/IB
+ a| 
+MHR-EA5-ZL83V
+
+
+
+ a| 
+520
+ a| 
+iSE/IB
+ a| 
+516.
+ a| 
+NVMe/FC 或 NVMe/RoCE
+ a| 
+HHU-XA5-ZNPLT
+
+
+
+ a| 
+517-17
+ a| 
+NVMe/FC 或 NVMe/IB
+ a| 
+YHW-HA5-Z07QK
+
+
+
+ a| 
+518
+ a| 
+FC
+ a| 
+WHZ-1A5-ZPN4U
+
+
+
+ a| 
+519
+ a| 
+FC/PTL
+ a| 
+7H2-KA5-ZR5C3
+
+
+
+ a| 
+521.
+ a| 
+SRP
+ a| 
+3H5-4A5-ZSLVx
+
+
+
+ a| 
+521.
+ a| 
+SRP/IB
+ a| 
+516.
+ a| 
+NVMe/FC 或 NVMe/RoCE
+ a| 
+1HS-NA5-ZT31W
+
+
+
+ a| 
+517-17
+ a| 
+NVMe/FC 或 NVMe/IB
+ a| 
+XHA-7A5-ZVJGC
+
+
+
+ a| 
+518
+ a| 
+FC
+ a| 
+KHC-QA5-ZW1P3
+
+
+
+ a| 
+519
+ a| 
+FC/PTL
+ a| 
+Che-AA5-ZXH2F
+
+
+
+ a| 
+520
+ a| 
+iSE/IB
+ a| 
+SHH-TA5-ZZYHS
+
+|===
++
+
+NOTE: 如果未列出您的控制器子型号 ID ，请联系 https://mysupport.netapp.com/site/["NetApp 支持"^]。
+
+. 在 System Manager 中，找到功能启用标识符。
++
+.. 转到菜单：设置 [ 系统 ] 。
+.. 向下滚动到 * 加载项 * 。
+.. 在 * 更改功能包 * 下，找到 * 功能启用标识符 * 。
+.. 将此 32 位数字复制并粘贴到文本文件中。
++
+image::../media/sam1130_ss_e2800_change_feature_pack_feature_enable_identifier_copy_maint-ef600.gif[sam1130 ss e2800 change feature pack 功能启用了标识符副本 maint ef600]
+
+
+
+. 转至 http://partnerspfk.netapp.com["NetApp 许可证激活：存储阵列高级功能激活"^]，并输入获取功能包所需的信息。
++
+** 机箱序列号
+** 功能激活代码
+** 功能启用标识符注意：高级功能激活网站包含一个链接，可访问 "`高级功能激活说明 " 。` 请勿尝试对此操作步骤使用这些说明。
+
+
+. 选择是通过电子邮件接收功能包的密钥文件，还是直接从站点下载。
+
+
+
+
+== 第 2 步：停止主机 I/O
+
+在转换主机端口的协议之前，请停止主机上的所有 I/O 操作。
+
+在成功完成转换之前，您无法访问存储阵列上的数据。
+
+.步骤
+. 确保存储阵列与所有已连接主机之间未发生任何 I/O 操作。例如，您可以执行以下步骤：
++
+** 停止涉及从存储映射到主机的 LUN 的所有进程。
+** 确保没有应用程序向从存储映射到主机的任何 LUN 写入数据。
+** 卸载与阵列上的卷关联的所有文件系统。
++
+
+NOTE: 停止主机 I/O 操作的确切步骤取决于主机操作系统和配置，这些步骤不在本说明的范围之内。如果您不确定如何停止环境中的主机 I/O 操作，请考虑关闭主机。
+
++
+
+CAUTION: * 可能的数据丢失 * - 如果在执行 I/O 操作时继续执行此操作步骤，则可能会丢失数据。
+
+
+
+. 等待缓存中的所有数据写入驱动器。
++
+当需要将缓存数据写入驱动器时，每个控制器背面的绿色缓存活动 LED 亮起。您必须等待此 LED 关闭。
+
+. 从 SANtricity 系统管理器的主页页面中，选择 * 查看正在执行的操作 * 。
+. 等待所有操作完成，然后再继续下一步。
+
+
+
+
+== 第 3 步：更改功能包
+
+更改功能包以转换主机端口的主机协议。
+
+.步骤
+. 在 SANtricity 系统管理器中，选择菜单：设置 [ 系统 ] 。
+. 在 * 加载项 * 下，选择 * 更改功能包 * 。
++
+image::../media/sam1130_ss_system_change_feature_pack_maint-ef600.gif[sam1130 ss system change feature pack maint ef600]
+
+. 单击 * 浏览 * ，然后选择要应用的功能包。
+. 在字段中键入 * 更改 * 。
+. 单击 * 更改 * 。
++
+开始迁移功能包。两个控制器都会自动重新启动两次，以使新功能包生效。重新启动完成后，存储阵列将恢复为响应状态。
+
+. 确认主机端口具有所需的协议。
++
+.. 在 SANtricity 系统管理器中，选择 * 硬件 * 。
+.. 单击 * 显示磁盘架的背面 * 。
+.. 选择控制器 A 或控制器 B 的图形
+.. 从上下文菜单中选择 * 查看设置 * 。
+.. 选择 * 主机接口 * 选项卡。
+.. 单击 * 显示更多设置 * 。
+
+
+
+
+转至 link:hpp-complete-protocol-conversion-task.html["完成主机协议转换"]。

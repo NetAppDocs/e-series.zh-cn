@@ -1,0 +1,81 @@
+---
+permalink: getting-started/getup-run-concept.html 
+sidebar: sidebar 
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, 
+summary: 要启动并运行 E 系列系统，您需要安装硬件组件，配置主机系统以及配置存储。 
+---
+= 启动并运行 E 系列
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+要启动并运行 E 系列系统，您需要安装硬件组件，配置主机系统以及配置存储。
+
+部署存储阵列涉及以下工作流：
+
+image::../media/doccenterworkflow.gif[文档中心工作流]
+
+
+
+== 第 1 步：安装硬件
+
+要安装 E 系列硬件，请访问适用于您的存储阵列和磁盘架类型的安装和设置说明：
+
+* link:../install-hw-ef600/index.html["EF600 或 EF300 系列，带 24 个驱动器架"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2842063["E2800/EF280 或 E5700/EF570 系列，配有 12 个或 24 个驱动器的磁盘架"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2842061["E2800 或 E5700 系列，含 60 个驱动器的磁盘架"^]
+
+
+
+
+== 第 2 步：设置机柜
+
+如果要为存储阵列设置新的机柜，则需要将机柜移至其永久位置，安装硬件并将其连接到电源。要设置机柜，请按照以下说明进行操作：
+
+* link:../install-hw-cabinet/index.html["安装 3040 40U 机柜"^]
+
+
+
+
+== 第 3 步：安装导轨
+
+发货时，每个磁盘架都包含机架安装硬件。有关安装导轨的详细说明，请选择您的导轨类型：
+
+* https://mysupport.netapp.com/ecm/ecm_download_file/ECMP1652045["安装可调整的支撑导轨"^]
+* https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2484194["将 2U 机箱安装到四柱机架中"^]
+* https://mysupport.netapp.com/ecm/ecm_download_file/ECMM1280302["将 DE224C 磁盘架安装到两柱机架中"^]
+* http://docs.netapp.com/platstor/topic/com.netapp.doc.hw-rail-superrail/home.html["将 SuperRail 安装到四柱机架中（ DE224C/DE460C 磁盘架）"^]
+
+
+
+
+== 第 4 步：连接缆线
+
+安装和设置说明（步骤 1 ）包括有关连接缆线的说明。但是，如果您需要列出支持的缆线和收发器，布线最佳实践以及有关控制器主机端口的详细信息，请访问以下说明：
+
+* link:../install-hw-cabling/index.html["为 E 系列硬件布线"]
+
+
+
+
+== 第 5 步：配置主机
+
+要使存储可供主机使用，请为主机的操作系统类型选择一个指南：
+
+* link:../config-linux/index.html["Linux 快速配置"]
+* link:../config-vmware/index.html["VMware 快速配置"]
+* link:../config-windows/index.html["Windows 快速配置"]
+
+
+
+
+== 第 6 步：配置存储
+
+要配置存储，您可以通过将浏览器指向控制器的 IP 地址来访问基于 Web 的界面 System Manager 。设置向导可帮助您开始进行系统配置。此外，您还可以使用命令行界面（ CLI ）。
+
+选择要使用的接口：
+
+* https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-117/home.html["适用于 11.7x 的 SANtricity System Manager 联机帮助"]
+* https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-116/home.html["适用于 11.6x 的 SANtricity System Manager 联机帮助"]
+

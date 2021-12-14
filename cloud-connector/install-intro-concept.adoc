@@ -1,0 +1,256 @@
+---
+permalink: cloud-connector/install-intro-concept.html 
+sidebar: sidebar 
+keywords: Cloud Connector installation, install Cloud Connector 
+summary: SANtricity 云连接器软件包解决方案（ .bin 文件）仅适用于 RedHat 和 SUSE Linux 平台。 
+---
+= 安装 SANtricity 云连接器
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SANtricity 云连接器软件包解决方案（ .bin 文件）仅适用于 RedHat 和 SUSE Linux 平台。
+
+您可以通过图形模式或控制台模式在兼容的 Linux 操作系统上安装 SANtricity 云连接器应用程序。在安装过程中，您必须为 SANtricity 云连接器指定非 SSL 和 SSL 端口号。安装后， SANtricity 云连接器将作为守护进程运行。
+
+查看以下注释：
+
+* 如果 SANtricity Web 服务代理已安装在与 SANtricity 云连接器相同的服务器上，则非 SSL 端口号和 SSL 端口号之间将发生冲突。在这种情况下，请在 SANtricity 云连接器安装期间为非 SSL 端口和 SSL 端口选择适当的数字。
+* 如果对主机执行了任何硬件更改，请重新安装 SANtricity 云连接器应用程序以确保加密一致性。
+* 通过 SANtricity Cloud Connector 应用程序 3.1 版创建的备份与 SANtricity Cloud Connector 应用程序 4.0 版不兼容。如果要维护这些备份，则必须继续使用先前版本的 SANtricity 云连接器。为了确保成功安装单独的 SANtricity 云连接器 3.1 和 4.0 版，必须为每个应用程序版本分配唯一的端口号。
+
+
+
+
+== 安装设备映射程序多路径（ DM-MP ）
+
+运行 SANtricity 云连接器的任何主机还必须运行 Linux 设备映射程序多路径（ DM-MP ）并安装多路径工具包。
+
+SANtricity 云连接器发现过程依靠多路径工具包来发现和识别要备份或还原的卷和文件。有关如何设置和配置设备映射程序的详细信息，请参见下 SANtricity 适用于您所使用的 SANtricity 版本的 _Storage Manager 多路径驱动程序指南 https://mysupport.netapp.com/info/web/ECMP1658252.html["E 系列和 SANtricity 文档资源"^]。
+
+
+
+== 安装 Cloud Connector
+
+您可以在图形模式或控制台模式下在 Linux 操作系统上安装 SANtricity 云连接器。
+
+
+
+=== 图形模式
+
+您可以使用图形模式在 Linux 操作系统上安装 SANtricity 云连接器。
+
+为 SANtricity 云连接器安装指定主机位置。
+
+.步骤
+. 将 SANtricity 云连接器安装文件下载到所需的主机位置。
+. 打开终端窗口。
+. 导航到包含 SANtricity Cloud Connector 安装文件的目录文件。
+. 启动 SANtricity 云连接器安装过程：
++
+[listing]
+----
+./cloudconnector-xxxx.bin –i gui
+----
++
+在此命令中， `xxxx` 指定应用程序的版本号。
+
++
+此时将显示安装程序窗口。
+
+. 查看简介陈述，然后单击 * 下一步 * 。
++
+安装程序窗口中会显示 NetApp ， Inc. 软件的许可协议。
+
+. 接受许可协议的条款，然后单击 * 下一步 * 。
++
+此时将显示使用先前版本的 SANtricity 云连接器创建的备份页面。
+
+. 要确认使用先前版本的 SANtricity 云连接器创建的备份消息，请单击 * 下一步 * 。
++
+
+NOTE: 要在维护先前版本的同时安装 SANtricity 云连接器 4.0 版，必须为每个应用程序版本分配唯一的端口号。
+
++
+此时将在安装程序窗口中显示选择安装页面。Where would you like to Install 字段会显示以下默认安装文件夹： `opt/NetApp/SANtricity cloud connector4/`
+
+. 选择以下选项之一：
++
+** 要接受默认位置，请单击 * 下一步 * 。
+** 要更改默认位置，请输入新的文件夹位置。此时将显示输入非 SSL Jetty 端口号页面。为非 SSL 端口分配默认值 8080 。
+
+
+. 选择以下选项之一：
++
+** 要接受默认 SSL 端口号，请单击 * 下一步 * 。
+** 要更改默认 SSL 端口号，请输入新的所需端口号值。
+
+
+. 选择以下选项之一：
++
+** 要接受默认的非 SSL 端口号，请单击 * 下一步 * 。
+** 要更改默认的非 SSL 端口号，请输入新的所需端口号值。此时将显示 " 安装前摘要 " 页面。
+
+
+. 查看显示的安装前摘要，然后单击 * 安装 * 。
++
+此时将开始安装 SANtricity 云连接器，并显示 Webserver 守护进程设置提示符。
+
+. 单击 * 确定 * 确认 Webserver 守护进程设置提示。
++
+此时将显示安装完成消息。
+
+. 单击 * 完成 * 退出 SANtricity 云连接程序安装程序。
+
+
+
+
+=== 控制台模式
+
+您可以使用控制台模式在 Linux 操作系统上安装 SANtricity 云连接器。
+
+为 SANtricity 云连接器安装指定主机位置。
+
+.步骤
+. 将 SANtricity 云连接器安装文件下载到所需的 IO 主机位置。
+. 打开终端窗口。
+. 导航到包含 SANtricity Cloud Connector 安装文件的目录文件。
+. 启动 SANtricity 云连接器安装过程：
++
+[listing]
+----
+./cloudconnector-xxxx.bin –i console
+----
++
+在此命令中， `xxxx` 表示应用程序的版本号。
+
++
+SANtricity 云连接器的安装过程已初始化。
+
+. 按 * 输入 * 继续安装过程。
++
+安装程序窗口中会显示 NetApp ， Inc. 软件的最终用户许可协议。
+
++
+
+NOTE: 要随时取消安装过程，请在安装程序窗口下键入 `quit` 。
+
+. 按 * 输入 * 继续完成最终用户许可协议的每个部分。
++
+安装程序窗口下会显示许可协议接受声明。
+
+. 要接受最终用户许可协议的条款并继续安装 SANtricity 云连接器，请输入 `Y` 并在安装程序窗口下按 * 输入 * 。
++
+此时将显示使用先前版本的 SANtricity 云连接器创建的备份页面。
+
++
+
+NOTE: 如果您不接受最终用户协议的条款，请键入 `N` 并按 * 输入 * 以终止 SANtricity 云连接器的安装过程。
+
+. 要确认使用先前版本的 SANtricity 云连接器创建的备份消息，请按 * 输入 * 。
++
+
+NOTE: 要在维护先前版本的同时安装 SANtricity 云连接器 4.0 版，必须为每个应用程序版本分配唯一的端口号。
+
++
+此时将显示一条 Choose Install Folder 消息，其中包含 SANtricity 云连接器的以下默认安装文件夹：`` /opt/netapp/SANtricity cloud connector4/sn`` 。
+
+. 选择以下选项之一：
++
+** 要接受默认安装位置，请按 * 输入 * 。
+** 要更改默认安装位置，请输入新文件夹位置。此时将显示输入非 SSL Jetty 端口号消息。为非 SSL 端口分配默认值 8080 。
+
+
+. 选择以下选项之一：
++
+** 要接受默认 SSL 端口号，请按 * 下一步 * 。
+** 要更改默认 SSL 端口号，请输入新的所需端口号值。
+
+
+. 选择以下选项之一：
++
+** 要接受默认的非 SSL 端口号，请按 * 输入 * 。
+** 要更改默认的非 SSL 端口号，请输入新的端口号值。此时将显示 SANtricity 云连接器的安装前摘要。
+
+
+. 查看显示的安装前摘要，然后按 * 输入 * 。
+. 按 * 输入 * 确认 Webserver 守护进程设置提示。
++
+此时将显示安装完成消息。
+
+. 按 * 输入 * 退出 SANtricity 云连接程序安装程序。
+
+
+
+
+== 将服务器证书和 CA 证书添加到密钥库中
+
+要使用从浏览器到 SANtricity 云连接器主机的安全 https 连接，您可以接受来自 SANtricity 云连接器主机的自签名证书，或者添加浏览器和 SANtricity 云连接器应用程序均可识别的证书和信任链。
+
+SANtricity 云连接器应用程序必须安装在主机上。
+
+.步骤
+. 使用 `systemctl` 命令停止服务。
+. 从默认安装位置访问工作目录。
++
+
+NOTE: SANtricity 云连接器的默认安装位置为 ` /opt/netapp/SANtricity cloud connector4` 。
+
+. 使用 `keytool` 命令创建服务器证书和证书签名请求（ CSR ）。
++
+* 示例 *
+
++
+[listing]
+----
+keytool -genkey -dname "CN=host.example.com, OU=Engineering, O=Company, L=<CITY>, S=<STATE>, C=<COUNTRY>" -alias cloudconnect -keyalg "RSA" -sigalg SHA256withRSA -keysize 2048 -validity 365 -keystore keystore_cloudconnect.jks -storepass changeit
+keytool -certreq -alias cloudconnect -keystore keystore_cloudconnect.jks -storepass changeit -file cloudconnect.csr
+----
+. 将生成的 CSR 发送给您选择的证书颁发机构（ CA ）。
++
+证书颁发机构对证书请求签名并返回签名证书。此外，您还会从 CA 本身收到证书。必须将此 CA 证书导入到密钥库中。
+
+. 将证书和 CA 证书链导入到应用程序密钥库中： ` /<install Path>/working/keystore`
++
+* 示例 *
+
++
+[listing]
+----
+keytool -import -alias ca-root -file root-ca.cer -keystore keystore_cloudconnect.jks -storepass <password> -noprompt
+keytool -import -alias ca-issuing-1 -file issuing-ca-1.cer -keystore keystore_cloudconnect.jks -storepass <password> -noprompt
+keytool -import -trustcacerts -alias cloudconnect -file certnew.cer -keystore keystore_cloudconnect.jks -storepass <password>
+----
+. 重新启动服务。
+
+
+
+
+== 将 StorageGRID 证书添加到密钥库中
+
+如果要将 StorageGRID 配置为 SANtricity 云连接器应用程序的目标类型，则必须先将 StorageGRID 证书添加到 SANtricity 云连接器密钥库中。
+
+.开始之前
+* 您已拥有签名的 StorageGRID 证书。
+* 您已在主机上安装 SANtricity 云连接器应用程序。
+
+
+.步骤
+. 使用 `systemctl` 命令停止服务。
+. 从默认安装位置访问工作目录。
++
+
+NOTE: SANtricity 云连接器的默认安装位置为 ` /opt/netapp/SANtricity cloud connector4` 。
+
+. 将 StorageGRID 证书导入到应用程序密钥库中： ` /<install Path>/wing/keystore`
++
+* 示例 *
+
++
+[listing]
+----
+opt/netapp/santricity_cloud_connector4/jre/bin/keytool -import -trustcacerts -storepass changeit -noprompt -alias StorageGrid_SSL -file /home/ictlabsg01.cer -keystore /opt/netapp/santricity_cloud_connector/jre/lib/security/cacerts
+----
+. 重新启动服务。
+

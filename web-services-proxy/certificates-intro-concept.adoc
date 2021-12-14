@@ -1,0 +1,129 @@
+---
+permalink: web-services-proxy/certificates-intro-concept.html 
+sidebar: sidebar 
+keywords: Certificates Web Services Proxy, WSP certificates, 
+summary: 使用 Web 服务代理配置文件， API 命令或 Unified Manager 界面管理证书。 
+---
+= 在 Web 服务代理中管理安全性和证书
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+为了确保 Web 服务代理中的安全性，您可以指定 SSL 端口名称并管理证书。证书用于标识客户端和服务器之间安全连接的网站所有者。
+
+
+
+== 启用 SSL
+
+Web 服务代理使用安全套接字层（ SSL ）来实现安全性，此功能在安装期间启用。您可以在 wsconfig.xml 文件中更改 SSL 端口指定。
+
+.步骤
+. 打开 wsconfig.xml 文件，该文件位于：
++
+** （ Windows ）— C ： \Program Files\NetApp\SANtricity Web 服务代理
+** （ Linux ）— /opt/netapp/SANtricity web_services_proxy
+
+
+. 添加或更改 SSL 端口号，类似于以下示例：
++
+[listing]
+----
+<sslport clientauth="request">8443</sslport>
+----
+
+
+在配置了 SSL 的情况下启动服务器时，服务器将查找密钥库和信任存储库文件。
+
+* 如果服务器未找到密钥库，则服务器将使用检测到的第一个非环回 IPv4 地址的 IP 地址生成密钥库，然后向密钥库添加自签名证书。
+* 如果服务器未找到信任存储库，或者未指定信任存储库，则服务器将使用密钥库作为信任存储库。
+
+
+
+
+== 绕过证书验证
+
+为了支持安全连接， Web 服务代理会根据自己的可信证书验证存储系统的` 证书。如果需要，您可以指定代理在连接到存储系统之前绕过此验证。
+
+.开始之前
+* 所有存储系统连接都必须安全。
+
+
+.步骤
+. 打开 wsconfig.xml 文件，该文件位于：
++
+** （ Windows ）— C ： \Program Files\NetApp\SANtricity Web 服务代理
+** （ Linux ）— /opt/netapp/SANtricity web_services_proxy
+
+
+. 在 `trust.all.arrays` 条目中输入 `true` ，如示例所示：
++
+[listing]
+----
+<env key="trust.all.arrays">true</env>
+----
+. 保存文件。
+
+
+
+
+== 生成并导入主机管理证书
+
+证书用于标识客户端和服务器之间安全连接的网站所有者。要为安装了 Web 服务代理的主机系统生成和导入证书颁发机构（ CA ）证书，您可以使用 API 端点。
+
+要管理主机系统的证书，请使用 API 执行以下任务：
+
+* 为主机系统创建证书签名请求（ CSR ）。
+* 将 CSR 文件发送到 CA ，然后等待它们向您发送证书文件。
+* 将签名证书导入到主机系统。
+
+
+
+NOTE: 您还可以在 Unified Manager 界面中管理证书。有关详细信息，请参见 Unified Manager 中提供的联机帮助。
+
+.步骤
+. 登录到 link:install-login-task.html["交互式 API 文档"]。
+. 转到右上角的下拉菜单，然后选择 * 。 v2* 。
+. 展开 * 管理 * 链接并向下滚动到 * /certificates * 端点。
+. 生成 CSR 文件：
++
+.. 选择 * 发布： /certificates * ，然后选择 * 试用 * 。
++
+Web 服务器将重新生成自签名证书。然后，您可以在字段中输入信息，以定义通用名称，组织，组织单位，备用 ID 以及用于生成 CSR 的其他信息。
+
+.. 在 * 示例值 * 窗格中添加所需信息以生成有效的 CA 证书，然后执行命令。
++
+
+NOTE: 请勿再次调用 * POST ： /certificates * 或 * POST ： /certifics/reset* ，否则必须重新生成 CSR 。调用 * POST ： /certificates* 或 * POST ： /certificates/reset* 时，将使用新的私钥生成新的自签名证书。如果您发送的 CSR 是在服务器上上次重置私钥之前生成的，则新的安全证书将不起作用。您必须生成新的 CSR 并请求新的 CA 证书。
+
+.. 执行 * 获取： /certificates /server* 端点，确认当前证书状态为自签名证书，并使用从 * post ： /certificates * 命令添加的信息。
++
+此时，服务器证书（以别名 `jetty` 表示）仍为自签名证书。
+
+.. 展开 * 发布： /certifices/export* 端点，选择 * 试用 * ，输入 CSR 文件的文件名，然后单击 * 执行 * 。
+
+
+. 将 `fileUrl` 复制并粘贴到新的浏览器选项卡中以下载 CSR 文件，然后将 CSR 文件发送到有效的 CA 以请求新的 Web 服务器证书链。
+. 当 CA 发出新的证书链时，请使用证书管理器工具拆分根证书，中间证书和 Web 服务器证书，然后将其导入到 Web 服务代理服务器：
++
+.. 展开 * POST ： /sslconfig/server* 端点并选择 * 试用 * 。
+.. 在 * 别名 * 字段中输入 CA 根证书的名称。
+.. 在 * replaceMainServerCertificer* 字段中选择 * false * 。
+.. 浏览并选择新的 CA 根证书。
+.. 单击 * 执行 * 。
+.. 确认证书上传成功。
+.. 对 CA 中间证书重复 CA 证书上传操作步骤。
+.. 对新的 Web 服务器安全证书文件重复证书上传操作步骤，但在此步骤中，请在 * 更换主服务器证书 * 下拉列表中选择 * 真 * 。
+.. 确认 Web 服务器安全证书导入成功。
+.. 要确认新的根证书，中间证书和 Web 服务器证书在密钥库中可用，请运行 * 获取： /certificates/server* 。
+
+
+. 选择并展开 * 发布： /certifices/reload * 端点，然后选择 * 试用 * 。出现提示时，无论是否要重新启动这两个控制器，请选择 * 错误 * 。（ "True" 仅适用于双阵列控制器。） 单击 * 执行 * 。
++
+/certifices/reload * 端点通常会返回成功的 http 202 响应。但是，重新加载 Web 服务器信任存储库和密钥库证书确实会在 API 进程和 Web 服务器证书重新加载进程之间造成争用情况。在极少数情况下， Web 服务器证书重新加载可能会击败 API 处理。在这种情况下，即使重新加载成功完成，它也似乎失败。如果发生这种情况，请继续执行下一步。如果重新加载实际失败，下一步也会失败。
+
+. 关闭与 Web 服务代理的当前浏览器会话，打开一个新的浏览器会话，然后确认可以与 Web 服务代理建立新的安全浏览器连接。
++
+通过使用匿名或非公开浏览会话，您可以打开与服务器的连接，而无需使用先前浏览会话中保存的任何数据。
+
+

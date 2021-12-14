@@ -1,0 +1,68 @@
+---
+permalink: maintenance-e2800/batteries-remove-controller-canister-task.html 
+sidebar: sidebar 
+keywords: E2800 battery fail, E2800 battery, E2800 battery replacement, replace E2800 battery, replacing E2800 battery, E2800, E-Series, eseries 
+summary: 要取出电池，请先从控制器架中取出控制器箱。 
+---
+= 拆下 E2800 控制器箱
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您需要从控制器架中取出控制器箱，以便取出电池。
+
+卸下控制器箱时，必须断开所有缆线。然后，您可以将控制器箱滑出控制器架。
+
+.您需要什么？ #8217 ；将需要什么
+* ESD 腕带，或者您已采取其他防静电预防措施。
+* 用于标识连接到控制器箱的每个缆线的标签。
+
+
+.步骤
+. 戴上 ESD 腕带或采取其他防静电预防措施。
+. 为连接到控制器箱的每个缆线贴上标签。
+. 断开控制器箱的所有缆线。
++
+
+CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on the cables.
+
+. 如果控制器箱上的主机端口使用 SFP+ 收发器，请保持安装状态。
+. 确认控制器背面的缓存活动 LED 是否熄灭。
+. 按压凸轮把手上的闩锁，直到其释放为止，然后打开右侧的凸轮把手，以从磁盘架中释放控制器箱。
++
+下图是 E2812 控制器架， E2824 控制器架或 EF280 闪存阵列的示例：
+
++
+image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[28 dwg e2824 卸下控制器箱维护 e2800]
+
++
+* （ 1 ） * _ 控制器箱 _
+
++
+* （ 2 ） * _Cam handle
+
++
+下图是 E2860 控制器架的示例：
+
++
+image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[28 dwg e2860 添加控制器箱维护 e2800]
+
++
+* （ 1 ） * _ 控制器箱 _
+
++
+* （ 2 ） * _Cam handle
+
+. 用两只手和凸轮把手将控制器箱滑出磁盘架。
++
+
+CAUTION: 始终用双手支撑控制器箱的重量。
+
++
+如果要从 E2812 控制器架， E2824 控制器架或 EF280 闪存阵列中卸下控制器箱，则可以通过一个翼片摆动到位，以阻止空托架，从而有助于保持气流和散热。
+
+. 将控制器箱翻转，使可拆卸盖朝上。
+. 将控制器箱放在无静电的平面上。
+. 转至 link:batteries-remove-failed-task.html["取出发生故障的 E2800 电池"]。
+

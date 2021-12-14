@@ -1,0 +1,89 @@
+---
+permalink: cloud-connector/learn-intro-concept.html 
+sidebar: sidebar 
+keywords: Cloud Connector requirements 
+summary: 与 SANtricity 云连接器应用程序关联的系统要求，设置，安装，配置和作业。 
+---
+= Cloud Connector 的系统要求
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您的系统必须满足 SANtricity 云连接器的兼容性要求。
+
+
+
+== 主机硬件要求
+
+您的硬件必须满足以下最低要求：
+
+* 至少 5 GB 的内存； 4 GB 表示已配置的最大堆大小
+* 软件安装至少需要 5 GB 的可用磁盘空间
+
+
+您必须安装 SANtricity Web 服务代理才能使用 SANtricity 云连接器。您可以在本地安装 Web 服务代理，也可以在其他服务器上远程运行应用程序。有关安装 SANtricity Web 服务代理的信息，请参见 link:../web-services-proxy/index.html["Web 服务代理主题"]。
+
+
+
+== 支持的浏览器
+
+SANtricity 云连接器应用程序支持以下浏览器（请注意最低版本）：
+
+* Firefox v31
+* Google Chrome V47
+* Microsoft Internet Explorer v11
+* Microsoft Edge ， EdgeHTML 12
+* Safari v9
+
+
+
+NOTE: 在 Microsoft Internet Explorer v11 浏览器中使用兼容性视图设置时，不会加载 SANtricity 云连接器应用程序的 API 文档。为了确保 API 文档在 Microsoft Internet Explorer v11 浏览器下正确显示，建议禁用兼容性视图设置。
+
+
+
+== 兼容的存储阵列和控制器固件
+
+在使用 SANtricity 云连接器应用程序之前，您应验证存储阵列和固件的兼容性。
+
+有关 SANtricity 云连接器的所有兼容存储阵列和固件的完整最新列表，请参见 http://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]。
+
+
+
+== 兼容的操作系统
+
+SANtricity 云连接器 4.0 应用程序与以下操作系统兼容并受其支持：
+
+|===
+| 操作系统 | version | 架构 
+
+
+ a| 
+Red Hat Enterprise Linux （ RHEL ）
+ a| 
+7.x
+ a| 
+64 位
+
+
+
+ a| 
+SUSE Linux Enterprise Server （ SLES ）
+ a| 
+12.x
+ a| 
+64 位
+
+|===
+
+
+== 支持的文件系统
+
+您必须使用支持的文件系统通过 SANtricity 云连接器应用程序执行备份和还原。
+
+SANtricity 云连接器应用程序支持以下文件系统进行备份和还原操作：
+
+* ext2
+* ext3
+* ext4
+

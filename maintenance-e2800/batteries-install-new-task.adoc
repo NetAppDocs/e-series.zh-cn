@@ -1,0 +1,61 @@
+---
+permalink: maintenance-e2800/batteries-install-new-task.html 
+sidebar: sidebar 
+keywords: E2800 battery fail, E2800 battery, E2800 battery replacement, replace E2800 battery, replacing E2800 battery, E2800, E-Series, eseries 
+summary: 安装新电池。 
+---
+= 安装新的 E2800 电池
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+取出故障电池后，您可以安装新电池。
+
+.您需要什么？ #8217 ；将需要什么
+* 更换电池。
+* 一个无静电的平面。
+
+
+.步骤
+. 拆开新电池的包装，将其放在无静电的平面上。
++
+
+NOTE: 为了安全地遵守 IATA 规定，更换电池在发货时的荷电状态（ SoC ）不超过 30% 。重新接通电源时，请记住，在更换电池电量已满且其完成初始学习周期之前，写入缓存不会恢复。
+
+. 调整控制器箱的方向，使电池插槽面向您。
+. 将电池略微向下插入控制器箱。
++
+您必须将电池前部的金属法兰插入控制器箱底部的插槽中，然后将电池顶部滑入控制器箱左侧的小对齐销下。
+
+. 向上移动电池闩锁以固定电池。
++
+当闩锁卡入到位时，闩锁的底部会挂到机箱上的金属插槽中。
+
++
+image::../media/28_dwg_e2800_insert_battery_maint-e2800.gif[28 dwg e2800 插入电池维护 e2800]
+
++
+* （ 1 ） * 电池释放闩锁 _
+
++
+* （ 2 ） * 电池 _
+
+. 将控制器箱翻转，以确认电池安装正确。
++
+
+CAUTION: * 可能的硬件损坏 * —电池前部的金属法兰必须完全插入控制器箱上的插槽（如第一图所示）。如果电池安装不正确（如图 2 所示），则金属法兰可能会接触控制器板，从而在您接通电源时损坏控制器。
+
++
+** * 正确 * —电池的金属法兰已完全插入控制器上的插槽：
+
+
++
+image:../media/28_dwg_e2800_battery_flange_ok_maint-e2800.gif[""]
+
++
+** * 不正确 * —电池的金属法兰未插入控制器上的插槽： +image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e2800.gif[""]
+
+
+. 转至 link:batteries-reinstall-controller-canister-task.html["重新安装 E2800 控制器箱"]。
+

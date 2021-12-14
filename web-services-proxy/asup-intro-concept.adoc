@@ -1,0 +1,169 @@
+---
+permalink: web-services-proxy/asup-intro-concept.html 
+sidebar: sidebar 
+keywords: ASUP configuration Web Services, AutoSupport Web Services Proxy, WSP ASUP config 
+summary: 您可以配置 AutoSupport （ ASUP ），该功能会收集数据，然后自动将数据发送给技术支持以进行远程故障排除和问题分析。 
+---
+= 使用 Web 服务代理管理 AutoSupport
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以配置 AutoSupport （ ASUP ），该功能会收集数据，然后自动将数据发送给技术支持以进行远程故障排除和问题分析。
+
+
+
+== AutoSupport 概述（ ASUP ）
+
+AutoSupport （ ASUP ）功能会根据手动和基于计划的标准自动向 NetApp 传输消息。
+
+每个 AutoSupport 消息都是一组日志文件，配置数据，状态数据和性能指标。默认情况下， AutoSupport 每周向 NetApp 支持团队传输一次下表中列出的文件。
+
+|===
+| 文件名 | Description 
+
+
+ a| 
+x-headers-data.txt
+ a| 
+一个 .txt 文件，其中包含 X-header 信息。
+
+
+
+ a| 
+Manifest.xml
+ a| 
+一个 .xml 文件，详细说明了消息的内容。
+
+
+
+ a| 
+arraydata.xml
+ a| 
+一个 .xml 文件，其中包含客户端持久数据的列表。
+
+
+
+ a| 
+appserver-config.txt
+ a| 
+一个 .txt 文件，其中包含应用程序服务器配置数据。
+
+
+
+ a| 
+wsconfig.txt
+ a| 
+一个 .txt 文件，其中包含 Web 服务配置数据。
+
+
+
+ a| 
+host-info.txt
+ a| 
+一个 .txt 文件，其中包含有关主机环境的信息。
+
+
+
+ a| 
+Server-logs.7z
+ a| 
+包含每个可用 Web 服务器日志文件的 .7z 文件。
+
+
+
+ a| 
+client-info.txt
+ a| 
+一个 .txt 文件，其中包含用于应用程序特定计数器的任意键 / 值对，例如方法和网页访问。
+
+
+
+ a| 
+WebServices-profile.json
+ a| 
+这些文件包含 Webservices 配置文件数据和 Jersey 监控统计数据。默认情况下， Jersey 监控统计信息处于启用状态。您可以在 wsconfig.xml 文件中启用和禁用它们，如下所示：
+
+* 启用： ` <env key="enable.jersy.statistics">true</env>`
+* disable ： ` <env key="enable.jersy.statistics">false</env>`
+
+
+|===
+
+
+== 配置 AutoSupport
+
+默认情况下， AutoSupport 在安装时处于启用状态；但是，您可以更改此设置或修改交付类型。
+
+
+
+=== 启用或禁用 AutoSupport
+
+在首次安装 Web 服务代理期间， AutoSupport 功能处于启用或禁用状态，但您可以在 ASUPConfig 文件中更改此设置。
+
+您可以通过 ASUPConfig.xml 文件启用或禁用 AutoSupport ，如以下步骤所述。或者，您也可以使用 * 配置 * 和 * 后 / 上 * 通过 API 启用或禁用此功能，然后输入 "true" 或 "false" 。
+
+. 打开工作目录中的 ASUPConfig.xml 文件。
+. 找到 ` <asupdata enabled=" （布尔值） " timestamp=>` 的行
+. 输入 `true` （ enable ）或 `false` （ disable ）。例如：
++
+[listing]
+----
+<asupdata enabled="false" timestamp="0">
+----
++
+
+NOTE: 时间戳条目是多余的。
+
+. 保存文件。
+
+
+
+
+=== 配置 AutoSupport 交付方法
+
+您可以将 AutoSupport 功能配置为使用 HTTPS ， HTTP 或 SMTP 交付方法。HTTPS 是默认传送方法。
+
+. 访问工作目录中的 ASUPConfig.xml 文件。
+. 在字符串 ` <delivery type="n">` 中，按表中所述输入 1 ， 2 或 3 ：
++
+|===
+| 价值 | Description 
+
+
+ a| 
+1.
+ a| 
+* HTTPS * （默认）
+
+<delivery type="1">
+
+
+
+ a| 
+2.
+ a| 
+* HTTP *
+
+<delivery type="2">
+
+
+
+ a| 
+3.
+ a| 
+* SMTP * —要将 AutoSupport 传送类型正确配置为 SMTP ，必须包括 SMTP 邮件服务器地址以及发件人和收件人用户电子邮件，如下例所示：
+
+[listing]
+----
+<delivery type="3">
+<smtp>
+<mailserver>smtp.example.com</mailserver>
+<sender>user@example.com</sender>
+<replyto>user@example.com</replyto>
+</smtp>
+</delivery>
+----
+|===
+

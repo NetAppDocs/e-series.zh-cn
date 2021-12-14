@@ -1,0 +1,98 @@
+---
+sidebar: sidebar 
+permalink: tech-reports.html 
+keywords: technical reports, e-series, hardware, santricity, os 
+summary: E 系列技术报告 
+---
+= 技术报告
+
+
+[role="lead"]
+请访问以下链接以访问 E 系列硬件和 SANtricity 软件的技术报告。通过这些链接，您可以访问其他文档站点。
+
+
+
+== 平台 TR
+
+* https://www.netapp.com/pdf.html?item=/media/17026-tr4725pdf.pdf["E2800 阵列功能概述"^]
+* https://www.netapp.com/pdf.html?item=/media/17120-tr4724pdf.pdf["E5700 阵列功能概述"^]
+* https://www.netapp.com/pdf.html?item=/media/21363-tr-4877.pdf["EF300 阵列功能概述"^]
+* https://www.netapp.com/pdf.html?item=/media/17009-tr4800pdf.pdf["EF600 阵列功能概述"^]
+
+
+
+
+== 安全 TR
+
+* https://www.netapp.com/pdf.html?item=/media/17162-tr4474pdf.pdf["《 NetApp SANtricity 驱动器安全功能详细信息指南》"^]
+* https://www.netapp.com/pdf.html?item=/media/17079-tr4712pdf.pdf["《 NetApp SANtricity 管理安全性功能详细信息和配置指南》"^]
+* https://www.netapp.com/pdf.html?item=/media/17218-tr4813pdf.pdf["管理 NetApp E 系列存储系统的证书"^]
+* https://www.netapp.com/pdf.html?item=/media/19422-tr-4855.pdf["《 NetApp SANtricity 安全强化指南》"^]
+* https://fieldportal.netapp.com/content/1117377["E 系列存储系统的访问管理"^]
+
+
+
+
+== 解决方案 TR
+
+
+
+=== Splunk
+
+* https://www.netapp.com/pdf.html?item=/media/16851-tr-4623pdf.pdf["采用 Splunk Enterprise 的 E5700"^]
+* https://www.netapp.com/media/57104-tr-4903.pdf["采用 Splunk Enterprise 的 EF300"^]
+
+
+
+
+=== 企业数据库
+
+* https://www.netapp.com/pdf.html?item=/media/17086-tr4764pdf.pdf["《采用 NetApp EF 系列的 Microsoft SQL Server 最佳实践指南》"^]
+* https://www.netapp.com/pdf.html?item=/media/17248-tr4794pdf.pdf["基于 NetApp EF 系列的 Oracle 数据库"^]
+
+
+
+
+=== 备份和恢复
+
+* https://www.netapp.com/pdf.html?item=/media/17042-tr4320pdf.pdf["Commvault Data Platform V11 的最佳实践"^]
+* https://www.netapp.com/pdf.html?item=/media/17159-tr4471pdf.pdf["Veeam Backup & amp ；复制的最佳实践"^]
+* https://www.netapp.com/pdf.html?item=/media/16433-tr-4704pdf.pdf["使用 NetApp E 系列存储部署 Veritas NetBackup"^]
+
+
+
+
+=== VSS
+
+* https://www.netapp.com/pdf.html?item=/media/17200-tr4825pdf.pdf["《适用于视频监控的 NetApp E 系列最佳实践指南》"^]
+* https://www.netapp.com/pdf.html?item=/media/6143-tr4818pdf.pdf["使用 NetApp E 系列存储虚拟化视频管理系统"^]
+* https://www.netapp.com/pdf.html?item=/media/19400-tr-4848.pdf["采用 NetApp E 系列 E2800 磁盘存储阵列的博世视频录制解决方案"^]
+
+
+
+
+=== HPC
+
+* https://www.netapp.com/pdf.html?item=/media/31665-tr-4884.pdf["采用 NetApp E 系列和 IBM Spectrum Scale 的入门级 HPC 系统"^]
+* https://www.netapp.com/pdf.html?item=/media/22029-tr-4859.pdf["使用 NetApp E 系列存储部署 IBM Spectrum Scale"^]
+* https://www.netapp.com/pdf.html?item=/media/19407-tr-4856-deploy.pdf["在使用 Red Hat Enterprise Linux Server 的 E 系列中实现 BeeGFS 高可用性"^]
+* https://www.netapp.com/pdf.html?item=/media/19431-tr-4862.pdf["使用 SUSE Linux Enterprise Server 在 E 系列中实现 BeeGFS 高可用性"^]
+
+
+
+
+== 功能 TR
+
+* https://www.netapp.com/pdf.html?item=/media/28697-tr-4893-deploy.pdf["SANtricity 远程存储卷"^]
+* https://www.netapp.com/pdf.html?item=/media/19405-tr-4839.pdf["SANtricity 同步和异步镜像（ 11.62 及更高版本）"^]
+* https://www.netapp.com/pdf.html?item=/media/17167-tr4747pdf.pdf["《 SANtricity 快照功能概述和部署指南》"^]
+* https://www.netapp.com/ko/media/12421-tr4652.pdf["SANtricity 动态磁盘池"^]
+* https://www.netapp.com/pdf.html?item=/media/17144-tr4737pdf.pdf["SANtricity 自动负载平衡功能概述和实施"^]
+
+
+
+
+== 接口 TR
+
+* https://www.netapp.com/pdf.html?item=/media/17142-tr4736pdf.pdf["SANtricity Web 服务 API —内置和中央管理功能"^]
+

@@ -1,0 +1,21 @@
+---
+permalink: install-hw-cabling/cable-overview-requirements-concept.html 
+sidebar: sidebar 
+keywords: cabling, cabling requirements, drive shelf cabling, controller cabling, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C 
+summary: 为 E 系列磁盘架布线需要多个组件。 
+---
+= 要求
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+除了控制器架和驱动器架之外，在为存储系统布线时，您可能还需要以下部分或全部组件：
+
+* 缆线： SAS ，光纤通道（ FC ），以太网， InfiniBand
+* 小型可插拔（ SFP ）或四路 SFP （ QSFP ）收发器
+* 交换机
+* 主机总线适配器（ HBA ）
+* 主机通道适配器（ Host Channel Adapter ， HCA ）
+* 网络接口卡（ NIC ）
+

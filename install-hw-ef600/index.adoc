@@ -1,0 +1,26 @@
+---
+permalink: install-hw-ef600/index.html 
+sidebar: sidebar 
+keywords: EF300, EF600, installation 
+summary: 安装并设置 EF300 和 EF600 阵列。 
+---
+= 安装和设置 EF300 和 EF600 存储系统
+:icons: font
+:imagesdir: ../media/
+:pdfdir: ../pdf/
+
+
+[role="lead"]
+了解如何安装和设置 EF300 或 EF600 存储系统。
+
+您可以选择以下格式之一来指导您完成新存储系统的安装和设置。
+
+* * PDF *
++
+这是 https://library.netapp.com/ecm/ecm_download_file/ECMLP2851449["PDF 海报"^] 分步说明，并可通过实时链接访问其他内容。
+
+* * 联机说明 *
++
+这些是本站点上介绍的联机设置说明。从开始 xref:prepare-for-install-task.adoc[准备安装] 开始使用。
+
+

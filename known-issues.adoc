@@ -1,0 +1,16 @@
+---
+sidebar: sidebar 
+permalink: known-issues.html 
+keywords: known, issues, santricity, os 
+summary: 已知问题 
+---
+= 发行说明
+
+
+[role="lead"]
+此站点以外的站点提供了发行说明。系统将提示您使用 NetApp 支持站点凭据登录。
+
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2874254["11.70 发行说明"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2857931["11.60 发行说明"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2842060["11.50 发行说明"^]
+

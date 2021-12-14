@@ -1,0 +1,15 @@
+---
+permalink: config-vmware/understand-vmware-workflow-concept.html 
+sidebar: sidebar 
+keywords: workflow, guide, express, method, configuring, configure, storage, array, system, manager, host, understand 
+summary: 使用 WVMware 快速配置工作流。 
+---
+= 了解 VMware 工作流
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+此工作流将指导您完成配置存储阵列和 SANtricity System Manager 以使存储可供 VMware 主机使用的 " 快速方法 " 。
+
+image::../media/1130_flw_sys_mgr_vmware_express_guide_all_protocols.png[1130 FLW sys mgr VMware 快速指南所有协议]

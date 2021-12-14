@@ -1,0 +1,23 @@
+---
+permalink: config-linux/iscsi-configure-switches-concept.html 
+sidebar: sidebar 
+keywords: Switches, zoning, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 根据供应商针对 iSCSI 的建议配置交换机。 
+---
+= 配置交换机
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以根据供应商针对 iSCSI 的建议配置交换机。这些建议可能包括配置指令以及代码更新。
+
+您必须确保满足以下条件：
+
+* 为了实现高可用性，您有两个单独的网络。确保将 iSCSI 流量隔离到不同的网段。
+* 必须启用流量控制 * 端到端 * 。
+* 如果适用，您已启用巨型帧。
+
+
+
+NOTE: 控制器的交换机端口不支持端口通道 /LACP 。不建议使用主机端 LACP ；多路径具有相同的优势，在某些情况下具有更好的优势。

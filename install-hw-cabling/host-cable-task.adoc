@@ -1,0 +1,41 @@
+---
+permalink: install-hw-cabling/host-cable-task.html 
+sidebar: sidebar 
+keywords: cabling, cables, host cabling, direct-attached topology, switch topology, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C, 
+summary: 您可以使用缆线将主机直接连接到控制器或使用交换机。 
+---
+= 主机布线
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用缆线将主机直接连接到控制器（直连拓扑），也可以使用交换机（交换机拓扑）将主机连接到控制器。
+
+
+
+== 直连拓扑的布线
+
+直连拓扑可将主机适配器直接连接到存储系统中的控制器。
+
+下图显示了一个连接示例。为了帮助确保最佳性能，请使用所有可用的主机适配器端口。
+
+.两个主机和两个控制器
+image::../media/topology_host_direct_generic_web_low.png[拓扑主机直接通用 Web 低]
+
+* （ 1 ） * _ 将每个主机适配器端口直接连接到控制器上的主机端口。 _
+
+
+
+== 为交换机拓扑布线
+
+交换机拓扑使用交换机将主机连接到存储系统中的控制器。交换机必须支持主机和控制器之间使用的连接类型。
+
+下图显示了一个连接示例。对于提供配置功能的交换机，您应隔离每个启动程序和目标对。
+
+.两台主机和两台交换机
+image::../media/topology_host_fabric_generic.png[拓扑主机网络结构通用]
+
+* （ 1 ） * _ 将每个主机适配器直接连接到交换机。 _
+
+* （ 2 ） * _ 将每个交换机直接连接到控制器上的主机端口。要帮助确保最佳性能，请使用所有可用的主机适配器端口。 _

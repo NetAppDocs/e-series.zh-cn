@@ -1,0 +1,115 @@
+---
+permalink: config-windows/sas-perform-specific-task.html 
+sidebar: sidebar 
+keywords: sas, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 对于 SAS 协议，您可以确定主机端口地址并进行建议的设置。 
+---
+= 执行 SAS 专用任务
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+对于 SAS 协议，您可以确定主机端口地址并进行相应的设置。
+
+
+
+== 第 1 步：确定 SAS 主机标识符— ​Windows
+
+使用 HBA 实用程序查找 SAS 地址，然后使用 HBA BIOS 进行相应的配置设置。
+
+查看 HBA 实用程序的准则：
+
+* 大多数 HBA 供应商都提供 HBA 实用程序。根据您的主机操作系统和 CPU ，使用 lsi-sas2flash （ 6G ）或 sas3flash （ 12 G ）实用程序。
+* 如果安装了主机上下文代理，则主机 I/O 端口可能会自动注册。
+
+
+.步骤
+. 从 HBA 供应商的网站下载 lsi-sas2flash （ 6G ）或 sas3flash （ 12 G ）实用程序。
+. 安装实用程序。
+. 使用 HBA BIOS 为您的配置选择适当的设置。
++
+有关设置建议的信息，请参见的注释列 http://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]。
+
+
+
+
+
+== 第 2 步：记录您的配置
+
+您可以生成并打印此页面的 PDF ，然后使用以下工作表记录特定于协议的存储配置信息。要执行配置任务，您需要此信息。
+
+image::../media/sas_topology_diagram_conf-win.gif[图： SAS 拓扑]
+
+
+
+=== 主机标识符
+
+|===
+| 标注编号 | 主机（启动程序）端口连接 | SAS 地址 
+
+
+ a| 
+1.
+ a| 
+主机
+ a| 
+_ 不适用 _
+
+
+
+ a| 
+2.
+ a| 
+主机（启动程序）端口 1 连接到控制器 A 的端口 1
+ a| 
+
+
+
+ a| 
+3.
+ a| 
+主机（启动程序）端口 1 连接到控制器 B 的端口 1
+ a| 
+
+
+
+ a| 
+4.
+ a| 
+主机（启动程序）端口 2 连接到控制器 A 的端口 1
+ a| 
+
+
+
+ a| 
+5.
+ a| 
+主机（启动程序）端口 2 连接到控制器 B 的端口 1
+ a| 
+
+|===
+
+
+=== 目标标识符
+
+建议的配置包含两个目标端口。
+
+
+
+=== 正在映射主机名
+
+|===
+
+
+ a| 
+正在映射主机名
+ a| 
+
+
+
+ a| 
+主机操作系统类型
+ a| 
+
+|===

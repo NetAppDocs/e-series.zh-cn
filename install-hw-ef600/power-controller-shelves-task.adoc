@@ -1,0 +1,52 @@
+---
+permalink: install-hw-ef600/power-controller-shelves-task.html 
+sidebar: sidebar 
+keywords: EF300, EF600, installation, power on, power cables 
+summary: 连接电源线并打开驱动器架的电源。 
+---
+= 为控制器架供电
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+了解如何连接电源线并打开驱动器架的电源。
+
+在为控制器架通电之前，请确保执行以下操作：
+
+* 安装硬件。
+* 采取防静电预防措施。
+
+
+.步骤
+. 插入电源线，每个控制器一根（下图为 EF600 ）。
++
+|===
+
+
+ a| 
+image:../media/power_cable_inst-hw-ef600.png[""]
+ a| 
+* 电源线 *
+
+|===
++
+|===
+
+
+ a| 
+image:../media/cabling_power.png[""]
+
+|===
+. 将两根电源线（每个控制器一根）连接到机柜或机架中两个单独的配电单元（ PDU ）。
++
+
+CAUTION: 第三方 PDU 可能会阻止从磁盘架访问 EF300 或 EF600 控制器箱。请勿使用控制器箱正后面的电源插座。
+
+. 在完成存储系统设置和配置之前，让控制器启动五分钟。
+
+
+控制器将自动启动。LED 会闪烁，风扇会开始指示控制器正在启动。
+
+
+NOTE: 风扇在首次启动时声音很大。

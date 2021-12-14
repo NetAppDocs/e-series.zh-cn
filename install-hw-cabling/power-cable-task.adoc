@@ -1,0 +1,24 @@
+---
+permalink: install-hw-cabling/power-cable-task.html 
+sidebar: sidebar 
+keywords: cabling, cables, power cable, power cabling, power supply cabling, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C 
+summary: 将每个组件的电源连接到单独的电路。 
+---
+= 电源布线
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必须将每个组件的电源连接到单独的电路。
+
+.开始之前
+* 您已确认您所在位置提供了所需的电源。
+* 必须关闭两个磁盘架电源上的两个电源开关。
+
+
+存储系统的电源必须能够满足新驱动器架的电源要求。有关存储系统的功耗信息，请参见 https://hwu.netapp.com/Controller/Index?platformTypeId=2357027["Hardware Universe"^]。
+
+.步骤
+. 将每个磁盘架的两根电源线连接到机柜或机架中的不同配电单元（ PDU ）。
+

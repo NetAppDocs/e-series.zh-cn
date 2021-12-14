@@ -1,0 +1,15 @@
+---
+permalink: config-vmware/verify-storage-access-host-task.html 
+sidebar: sidebar 
+keywords: verify storage ESXi, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 在使用卷之前，您需要验证主机是否可以将数据写入卷并将其读回。 
+---
+= 验证主机上的存储访问
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在使用卷之前，请验证主机是否可以将数据写入卷并将其读回。
+
+要执行此操作，请验证卷是否已用作虚拟机文件系统（ Virtual Machine File System ， VMFS ）数据存储库或已直接映射到 VM 以用作原始设备映射（ Raw Device Mapping ， RDM ）。

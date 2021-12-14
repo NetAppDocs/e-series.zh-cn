@@ -1,0 +1,25 @@
+---
+permalink: config-windows/configure-multipath-software-task.html 
+sidebar: sidebar 
+keywords: multipath software for Windows, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 安装 DSM 软件包，其中包含适用于 Windows 的多路径软件。 
+---
+= 配置多路径软件
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+要为存储阵列提供冗余路径，您可以安装 SANtricity Windows DSM 软件包并使用适用于 Windows 的多路径软件包。
+
+正确的管理员或超级用户权限。
+
+如果某个物理路径中断，多路径软件可提供指向存储阵列的冗余路径。在使用多路径之前，您需要先安装 SANtricity Windows DSM 软件包。此软件包包含适用于 Windows 的多路径软件。
+
+Windows 安装会使用原生 MPIO 设备专用模块（ DSM ）驱动程序进行故障转移。在安装并启用 SANtricity Windows DSM 软件包时，无需采取进一步操作即可使用多路径。
+
+.步骤
+. 从下载 * SANtricity Windows DSM* 软件包 https://mysupport.netapp.com/site/products/all/details/eseries-santricityos/downloads-tab["SANtricity OS 软件页面"^]。选择您的软件版本，接受许可协议，然后在 " 其他下载 " 下选择 * SANtricity Windows DSM* 。
+. 运行 * SANtricity Windows DSM* 安装程序。双击要执行的安装包。
+. 使用安装向导在管理工作站上安装软件包。
+

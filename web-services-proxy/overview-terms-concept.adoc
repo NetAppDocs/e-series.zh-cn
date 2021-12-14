@@ -1,0 +1,87 @@
+---
+permalink: web-services-proxy/overview-terms-concept.html 
+sidebar: sidebar 
+keywords: Web Services terms, WSP concepts 
+summary: 了解 Web 服务 API 
+---
+= 术语和概念
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+以下术语适用于 Web 服务代理。
+
+|===
+| 期限 | 定义 
+
+
+ a| 
+API
+ a| 
+应用程序编程接口（ Application Programming Interface ， API ）是一组协议和方法，可使开发人员与设备进行通信。Web 服务 API 用于与 E 系列存储系统进行通信。
+
+
+
+ a| 
+ASUP
+ a| 
+AutoSupport （ ASUP ）功能可收集客户支持包中的数据，并自动将消息文件发送给技术支持以进行远程故障排除和问题分析。
+
+
+
+ a| 
+端点
+ a| 
+端点是可通过 API 使用的功能。端点包括 HTTP 动词和 URI 路径。在 Web 服务中，端点可以执行发现存储系统和创建卷等任务。
+
+
+
+ a| 
+HTTP 动词
+ a| 
+HTTP 动词是端点对应的操作，例如检索和创建数据。在 Web 服务中， HTTP 动词包括 POST ， GET 和 DELETE 。
+
+
+
+ a| 
+JSON
+ a| 
+JavaScript 对象表示法（ JavaScript Object Notation ， JSON ）是一种结构化数据格式，与 XML 非常相似，它使用的是最低可读格式。Web 服务中的数据通过 JSON 进行编码。
+
+
+
+ a| 
+REST / RESTful
+ a| 
+表述性状态传输（ Representational state transfer ， REST ）是一种宽松的规范，用于定义 API 的架构模式。由于大多数 REST API 不完全符合规范，因此它们被描述为 `reSTful` 或 `reST 类。` 通常， " `reSTful` " API 与编程语言无关，并且具有以下特征：
+
+* 基于 HTTP ，遵循协议的一般语义
+* 结构化数据（ JSON ， XML 等）的生产者和使用者
+* 面向对象（而不是面向操作）
+
+
+Web 服务是一种 RESTful API ，可用于访问几乎所有 SANtricity 管理功能。
+
+
+
+ a| 
+存储系统
+ a| 
+存储系统是 E 系列阵列，其中包括磁盘架，控制器，驱动器，软件， 和固件。
+
+
+
+ a| 
+符号 API
+ a| 
+SYMBOL 是一种用于管理 E 系列存储系统的传统 API 。Web 服务 API 的底层实施使用 SYMBOL 。
+
+
+
+ a| 
+Web 服务
+ a| 
+Web 服务是 NetApp 为开发人员设计的一种 API ，用于管理 E 系列存储系统。Web 服务有两种实施方式：嵌入在控制器上，一个单独的代理可以安装在 Linux 或 Windows 上。
+
+|===
