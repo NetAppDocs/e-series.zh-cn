@@ -37,4 +37,4 @@ summary: 机架式安装硬件。
 
 == 四柱机架— SuperRail
 
-访问 http://docs.netapp.com/platstor/topic/com.netapp.doc.hw-rail-superrail/home.html["将 SuperRail 安装到四柱机架中（ DE224C/DE460C 磁盘架）"^]。
+访问 https://docs.netapp.com/us-en/ontap-systems/platform-supplemental/superrail-install.html["将 SuperRail 安装到四柱机架中（ DE224C/DE460C 磁盘架）"^]。

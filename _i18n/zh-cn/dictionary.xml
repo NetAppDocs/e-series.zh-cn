@@ -4218,7 +4218,6 @@
   <block id="5eba68d12705561c14a5cf782039d9a6" category="paragraph">访问<block ref="790da98275795a97c8f97401754053cf" category="inline-link-rx"></block>。</block>
   <block id="eef7cecc379e5c2c29880cbc37d1d2ad" category="section-title">四柱机架— SuperRail</block>
   <block id="10b221abe33d91a2165eab967641529e" category="inline-link">将 SuperRail 安装到四柱机架中（ DE224C/DE460C 磁盘架）</block>
-  <block id="aa4da505d9ac0c194290aad8a1e6b651" category="paragraph">访问<block ref="d9ba70e55bcf9403da0fc6f7472c8719" category="inline-link-rx"></block>。</block>
   <block id="9ec28cb381dd9edd5e1a4ad5641fba96" category="summary">必须在控制器箱中安装主机接口卡（ HIC\ ）。EF600 控制器在可选 HIC 上包含主机端口。HIC 中内置的主机端口称为 HIC 端口。</block>
   <block id="4340eb550bf9d82ec63ae6c684b4ce19" category="paragraph">必须在控制器箱中安装主机接口卡（ HIC ）。EF600 控制器在可选 HIC 上包含主机端口。HIC 中内置的主机端口称为 HIC 端口。</block>
   <block id="04a3d4071a9450f7356dbc04b8b8747c" category="summary">SAS 扩展卡可以安装在控制器箱中。EF300 控制器支持 SAS 扩展。</block>
@@ -7235,4 +7234,5 @@
   <block id="668e2078ef1b1722c77cdb5c523a4463" category="sidebar">NetApp 知识库</block>
   <block id="2bae42f280067110dfd52cc69a468364" category="sidebar">Active IQ （需要登录）</block>
   <block id="54708ac788109e3332a896f8d957e38f" category="sidebar">E 系列 /SANtricity 下载（需要登录）</block>
+  <block id="a6d47447094eb5b7920c8d1f16d0d25d" category="paragraph">访问<block ref="384159b715a893ce026df1e06010cefa" category="inline-link-rx"></block>。</block>
 </blocks>
