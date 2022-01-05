@@ -4133,75 +4133,15 @@
   <block id="08385efafc220bb5d9523658f838574a" category="paragraph">此时将删除选定的远程存储对象。</block>
   <block id="ba9cfc353a18613ef436f853ea8d8177" category="summary">E 系列技术报告</block>
   <block id="00f36bd2b4cd1d9e59ff895b5e131be2" category="doc">技术报告</block>
-  <block id="69ed63d8f63a513b7b221a16b7d6770d" category="paragraph">请访问以下链接以访问 E 系列硬件和 SANtricity 软件的技术报告。通过这些链接，您可以访问其他文档站点。</block>
   <block id="775ecf6ed5e3db61059ce09b5b398110" category="section-title">平台 TR</block>
-  <block id="b23d5c53359244445edcc8cfe1c5b68d" category="inline-link">E2800 阵列功能概述</block>
-  <block id="16ff4902487cd064d56ffb3b86ab36c8" category="list-text"><block ref="16ff4902487cd064d56ffb3b86ab36c8" category="inline-link-rx"></block></block>
-  <block id="898e88ad69ca9fc629d1d2d1f606a711" category="inline-link">E5700 阵列功能概述</block>
-  <block id="eafd8f4b98343b0121406e6104794c0d" category="list-text"><block ref="eafd8f4b98343b0121406e6104794c0d" category="inline-link-rx"></block></block>
-  <block id="1c4e746408ecc672a8fa01475213593c" category="inline-link">EF300 阵列功能概述</block>
-  <block id="4538be78dd9b90f5d2c449c88aca79e4" category="list-text"><block ref="4538be78dd9b90f5d2c449c88aca79e4" category="inline-link-rx"></block></block>
-  <block id="181315424114d9d2f5ec684584ce56b3" category="inline-link">EF600 阵列功能概述</block>
-  <block id="ebd911e107217be3eb9edc30d7351983" category="list-text"><block ref="ebd911e107217be3eb9edc30d7351983" category="inline-link-rx"></block></block>
   <block id="58e0dda41aec654996f2661ca9ee6f7b" category="section-title">安全 TR</block>
-  <block id="6c816941847f23814f0b67de408921e7" category="inline-link">《 NetApp SANtricity 驱动器安全功能详细信息指南》</block>
-  <block id="f44b156667b2b7e7165f16d050dcb7ba" category="list-text"><block ref="f44b156667b2b7e7165f16d050dcb7ba" category="inline-link-rx"></block></block>
-  <block id="f85c0dde1ebe54dfbe908b449502d421" category="inline-link">《 NetApp SANtricity 管理安全性功能详细信息和配置指南》</block>
-  <block id="fbadb010caac57b53cdb50fd0f864c61" category="list-text"><block ref="fbadb010caac57b53cdb50fd0f864c61" category="inline-link-rx"></block></block>
-  <block id="306ba5ebe8ead53daa1e764d2dace044" category="inline-link">管理 NetApp E 系列存储系统的证书</block>
-  <block id="39a2f7076e4842014c5e4a67f9fb2aa5" category="list-text"><block ref="39a2f7076e4842014c5e4a67f9fb2aa5" category="inline-link-rx"></block></block>
-  <block id="7d4ac049f87cc55ca9f2f3d95737caf6" category="inline-link">《 NetApp SANtricity 安全强化指南》</block>
-  <block id="331f520711faa43bb8cfde786154c5de" category="list-text"><block ref="331f520711faa43bb8cfde786154c5de" category="inline-link-rx"></block></block>
-  <block id="81e30c0b72d9c44b69be4caa144648a3" category="inline-link">E 系列存储系统的访问管理</block>
-  <block id="11195d6786c0a38b897f5950b4654a1b" category="list-text"><block ref="11195d6786c0a38b897f5950b4654a1b" category="inline-link-rx"></block></block>
   <block id="ecf549e9fad795bd98e9fd921c59f8e9" category="section-title">解决方案 TR</block>
   <block id="2f9304fe9b427489507405bef9a0bb9f" category="section-title">Splunk</block>
-  <block id="8d57f3acffc07114c5d60f9de1cd2c65" category="inline-link">采用 Splunk Enterprise 的 E5700</block>
-  <block id="b437944fa1b051bdc08800fe58f9b158" category="list-text"><block ref="b437944fa1b051bdc08800fe58f9b158" category="inline-link-rx"></block></block>
-  <block id="58a4693f875b25f529892f32970a1228" category="inline-link">采用 Splunk Enterprise 的 EF300</block>
-  <block id="657d7a868aea5d5b4bc7a6a9fba5c5ea" category="list-text"><block ref="657d7a868aea5d5b4bc7a6a9fba5c5ea" category="inline-link-rx"></block></block>
   <block id="bf8e2974cd692b57a29e42874b662b52" category="section-title">企业数据库</block>
-  <block id="f7c8053dd991ca240a8a5262d57d65ba" category="inline-link">《采用 NetApp EF 系列的 Microsoft SQL Server 最佳实践指南》</block>
-  <block id="87f027bfb44dcf97755ebc6b9025ec18" category="list-text"><block ref="87f027bfb44dcf97755ebc6b9025ec18" category="inline-link-rx"></block></block>
-  <block id="bc113eb23aa0579a5e1d93e97ca13635" category="inline-link">基于 NetApp EF 系列的 Oracle 数据库</block>
-  <block id="4205d5e497ed4902518c141d6049cc2e" category="list-text"><block ref="4205d5e497ed4902518c141d6049cc2e" category="inline-link-rx"></block></block>
   <block id="8a7d992e887a76abe4703518ec317a4c" category="section-title">备份和恢复</block>
-  <block id="1f888b6dbea59445884ac50975d60a78" category="inline-link">Commvault Data Platform V11 的最佳实践</block>
-  <block id="c666780b1c26e8bbb6730bfff78ccced" category="list-text"><block ref="c666780b1c26e8bbb6730bfff78ccced" category="inline-link-rx"></block></block>
-  <block id="5bd89c58b60cc38fa2c06b3b770030fe" category="inline-link">Veeam Backup &amp; amp ；复制的最佳实践</block>
-  <block id="30662fca56b1de8116e41a251badf6bb" category="list-text"><block ref="fc61ecf1831fcc7c2428ac81b3292a95" category="inline-link-rx"></block></block>
-  <block id="74e4bedcc2ff5b37a8770caa0ef72975" category="inline-link">使用 NetApp E 系列存储部署 Veritas NetBackup</block>
-  <block id="fd7e1af1146c892e2118be623b3f9d4f" category="list-text"><block ref="fd7e1af1146c892e2118be623b3f9d4f" category="inline-link-rx"></block></block>
   <block id="4b1723f1cc6cad1502f558faf333c23d" category="section-title">VSS</block>
-  <block id="eeaae7dc7ebda820d5842865bc001e69" category="inline-link">《适用于视频监控的 NetApp E 系列最佳实践指南》</block>
-  <block id="16e01e7a999c054a5d83cc3b4e524406" category="list-text"><block ref="16e01e7a999c054a5d83cc3b4e524406" category="inline-link-rx"></block></block>
-  <block id="51c220f8536ec3495d98314d663c580c" category="inline-link">使用 NetApp E 系列存储虚拟化视频管理系统</block>
-  <block id="72669f81c4718759227072ed9802a058" category="list-text"><block ref="72669f81c4718759227072ed9802a058" category="inline-link-rx"></block></block>
-  <block id="1ad4277a6861554ade29d6dce706f4cb" category="inline-link">采用 NetApp E 系列 E2800 磁盘存储阵列的博世视频录制解决方案</block>
-  <block id="5793439e18508592eda54541c11e39ed" category="list-text"><block ref="5793439e18508592eda54541c11e39ed" category="inline-link-rx"></block></block>
   <block id="2f569257101cf136a49d983584bfc44f" category="section-title">HPC</block>
-  <block id="30dac41f0e95eef43f97c64cde0b8a43" category="inline-link">采用 NetApp E 系列和 IBM Spectrum Scale 的入门级 HPC 系统</block>
-  <block id="94af92b47961ad0426d3ff5711d54687" category="list-text"><block ref="94af92b47961ad0426d3ff5711d54687" category="inline-link-rx"></block></block>
-  <block id="1db760587a86f5c1b9ab39aa8cf8cf3d" category="inline-link">使用 NetApp E 系列存储部署 IBM Spectrum Scale</block>
-  <block id="d764b98b8ca6c8b1d6c558506962e3b9" category="list-text"><block ref="d764b98b8ca6c8b1d6c558506962e3b9" category="inline-link-rx"></block></block>
-  <block id="606edee1c825b3191104ba3f41b63d36" category="inline-link">在使用 Red Hat Enterprise Linux Server 的 E 系列中实现 BeeGFS 高可用性</block>
-  <block id="1c2b0aa068c7905e44503ee35da0df25" category="list-text"><block ref="1c2b0aa068c7905e44503ee35da0df25" category="inline-link-rx"></block></block>
-  <block id="f98461ec0af2f28bbef20111d5a0f0c1" category="inline-link">使用 SUSE Linux Enterprise Server 在 E 系列中实现 BeeGFS 高可用性</block>
-  <block id="745276f15dd2989e7a125e35c9daa495" category="list-text"><block ref="745276f15dd2989e7a125e35c9daa495" category="inline-link-rx"></block></block>
   <block id="9e90820ac4b8e4889e0e892b92aae973" category="section-title">功能 TR</block>
-  <block id="1fd86e20cadd5fb4e0d2ebb95f048594" category="inline-link">SANtricity 远程存储卷</block>
-  <block id="e2308521725094902a5cae6ce73e9ac2" category="list-text"><block ref="e2308521725094902a5cae6ce73e9ac2" category="inline-link-rx"></block></block>
-  <block id="d143dc599d8551616398aac2492551e2" category="inline-link">SANtricity 同步和异步镜像（ 11.62 及更高版本）</block>
-  <block id="d4e0528913095a126f18952d81a32504" category="list-text"><block ref="d4e0528913095a126f18952d81a32504" category="inline-link-rx"></block></block>
-  <block id="b323310b7b4fe4df21d52d229443a231" category="inline-link">《 SANtricity 快照功能概述和部署指南》</block>
-  <block id="8bbf01944d1883b9a2c1c13956b91360" category="list-text"><block ref="8bbf01944d1883b9a2c1c13956b91360" category="inline-link-rx"></block></block>
-  <block id="e6f9000a8693f074fa4dfe54819e7509" category="inline-link">SANtricity 动态磁盘池</block>
-  <block id="576390a63e3538fee153d4e5964f7764" category="list-text"><block ref="576390a63e3538fee153d4e5964f7764" category="inline-link-rx"></block></block>
-  <block id="1bfe1eafc48e84b8443d4b9e38785490" category="inline-link">SANtricity 自动负载平衡功能概述和实施</block>
-  <block id="e716f851ea6cc3a39a32f3fa6dbf5128" category="list-text"><block ref="e716f851ea6cc3a39a32f3fa6dbf5128" category="inline-link-rx"></block></block>
-  <block id="a7aaf3b92e5fde6d0d346e1fe80c72e0" category="section-title">接口 TR</block>
-  <block id="5a3edc10f3b991335f0882c8ce53b5f3" category="inline-link">SANtricity Web 服务 API —内置和中央管理功能</block>
-  <block id="aa50e1250072aaa9e043b5a082365661" category="list-text"><block ref="aa50e1250072aaa9e043b5a082365661" category="inline-link-rx"></block></block>
   <block id="d4f48db40cc9ccb47737f1fc78496e37" category="summary">机架式安装硬件。</block>
   <block id="bd0b9fd60ba60fb26f0df0fcd090ce57" category="paragraph">使用以下链接访问介绍如何安装机架安装硬件的文档。</block>
   <block id="d6fb953a021a6ff678e8a0c03802aad8" category="section-title">可调整的支持导轨</block>
@@ -7235,4 +7175,96 @@
   <block id="2bae42f280067110dfd52cc69a468364" category="sidebar">Active IQ （需要登录）</block>
   <block id="54708ac788109e3332a896f8d957e38f" category="sidebar">E 系列 /SANtricity 下载（需要登录）</block>
   <block id="a6d47447094eb5b7920c8d1f16d0d25d" category="paragraph">访问<block ref="384159b715a893ce026df1e06010cefa" category="inline-link-rx"></block>。</block>
+  <block id="b6b43207fabb2016009a280e58d984e1" category="doc">浏览特色技术报告</block>
+  <block id="c9655bd030e403ee317812921fe9c345" category="inline-link">* TR-4893 ： SANtricity 远程存储卷 *</block>
+  <block id="d8669c8a517e0a9ef2fc1b4209947887" category="cell"><block ref="d8669c8a517e0a9ef2fc1b4209947887" category="inline-link-rx"></block></block>
+  <block id="1a1ac7a0c3f35e22cacb2c550a2df1d9" category="inline-link">* TR-4839 ： SANtricity 同步和异步镜像 *</block>
+  <block id="d509b57060f226bd7e2c44a452f89f7b" category="cell"><block ref="d509b57060f226bd7e2c44a452f89f7b" category="inline-link-rx"></block></block>
+  <block id="4ad675687f473ec16e280e823a6f3390" category="inline-link">* TR-4747 ：《 SANtricity 快照功能概述和部署指南》 *</block>
+  <block id="876a07b4a179bcb94de902848f25e8a0" category="cell"><block ref="876a07b4a179bcb94de902848f25e8a0" category="inline-link-rx"></block></block>
+  <block id="aa798eeebd2e602192497fec8d5a7af0" category="cell">介绍解决方案架构以及如何使用 E 系列存储系统从现有远程存储设备导入数据。</block>
+  <block id="1e63a15616a71c16975a6ce6873851d7" category="cell">介绍 SANtricity 同步和异步镜像功能。</block>
+  <block id="0d31bf4155130c7e1b044f877c983556" category="cell">介绍 SANtricity Snapshot 功能，包括使用 SANtricity 系统管理器的图形用户界面导航说明。</block>
+  <block id="20b51996662da655011d140b6ce13e08" category="inline-link">* TR-4652 ： SANtricity 动态磁盘池 *</block>
+  <block id="94b9edbcfa8896e9837abb98f7178d0b" category="cell"><block ref="94b9edbcfa8896e9837abb98f7178d0b" category="inline-link-rx"></block></block>
+  <block id="c84200fc0d3d1c17f835b93cac2a4073" category="inline-link">* TR-4737 ： SANtricity 自动负载平衡 *</block>
+  <block id="9e438ddc696936eea7043d42a5d772c2" category="cell"><block ref="9e438ddc696936eea7043d42a5d772c2" category="inline-link-rx"></block></block>
+  <block id="b855ed13871c8956bc535c1dcafa14d2" category="inline-link">* TR-4736 ： SANtricity Web 服务 APi*</block>
+  <block id="4326d77c3acc0dbfc96e7f9272191ffd" category="cell"><block ref="4326d77c3acc0dbfc96e7f9272191ffd" category="inline-link-rx"></block></block>
+  <block id="70f747e2b25caced64506b369bc562c5" category="cell">介绍存储管理员如何将类似磁盘的集合分组到池拓扑中，池中的所有驱动器都参与 I/O 工作流。</block>
+  <block id="958efa95bcd23aab2dfe387642f119c1" category="cell">简要介绍 ALB 功能的行为，其主要配置参数及其主机互操作性增强功能。</block>
+  <block id="43d61efb5c5b9a22659cb0751fa61930" category="cell">介绍 SANtricity Web 服务概述，此 API 用于配置和管理 E 系列存储系统。</block>
+  <block id="ffd5fe59de4864e1fa36c0721ab16c74" category="doc">浏览解决方案技术报告</block>
+  <block id="158f8674c1793cce2d98e8cbcb20b6bf" category="inline-link">* TR-4623 ：采用 Splunk Enterprise* 的 E5700</block>
+  <block id="2cf8e7dfbbc127c7fc8a9b5579f49087" category="cell"><block ref="2cf8e7dfbbc127c7fc8a9b5579f49087" category="inline-link-rx"></block></block>
+  <block id="d6bc9f7e61ad87366a99e2b38a35d217" category="inline-link">* TR-4903 ： EF300 与 Splunk Enterprise*</block>
+  <block id="48611860e08a7021a7a32db63f370c03" category="cell"><block ref="48611860e08a7021a7a32db63f370c03" category="inline-link-rx"></block></block>
+  <block id="acc1921e66c3e2d692f3a9d26ff19962" category="cell">介绍 E5700 系统和 Splunk 设计的集成架构。本文档还总结了从 Splunk 计算机日志事件模拟工具获得的性能测试结果。</block>
+  <block id="ef0a7b34f1fe40e5b839eca3326eb739" category="cell">介绍 EF300 全闪存阵列和 Splunk 设计的集成架构。本文档还总结了从 Splunk 计算机日志事件模拟工具获得的性能测试结果。</block>
+  <block id="4b23b3afe3be27a8aef7f52e987e9e75" category="inline-link">* TR-4764 ：《采用 NetApp EF 系列的 Microsoft SQL Server 最佳实践指南》 *</block>
+  <block id="c6aff4e6a6907e8ad632932a56bba161" category="cell"><block ref="c6aff4e6a6907e8ad632932a56bba161" category="inline-link-rx"></block></block>
+  <block id="44249e3e6f499b6ef16f3c604a4060f0" category="inline-link">* TR-4794 ：《基于 NetApp EF 系列的 Oracle 数据库》 *</block>
+  <block id="116671a22501aac3b12ba87e23615719" category="cell"><block ref="116671a22501aac3b12ba87e23615719" category="inline-link-rx"></block></block>
+  <block id="1be89425e0cebd7d4e13e5744baebbbd" category="cell">帮助存储管理员和数据库管理员在 NetApp EF 系列存储上成功部署 Microsoft SQL Server 。</block>
+  <block id="ea2848b98724bc7c864ab419f1efd076" category="cell">帮助存储管理员和数据库管理员在 NetApp EF 系列存储上成功部署 Oracle 。</block>
+  <block id="569680cec832ec2d53d80483c8dbc439" category="inline-link">* TR-4320 ： Commvault Data Platform V11* 的最佳实践</block>
+  <block id="484210f783b83f032755dfc404923829" category="cell"><block ref="484210f783b83f032755dfc404923829" category="inline-link-rx"></block></block>
+  <block id="0cd4f7215cb7ec8c6f73c51d9dc39a48" category="inline-link">* TR-4471: Veeam Backup and Replication" 的最佳实践</block>
+  <block id="08fcfb094209aa6fd6eccf8aa5b05de1" category="cell"><block ref="08fcfb094209aa6fd6eccf8aa5b05de1" category="inline-link-rx"></block></block>
+  <block id="5941ff1b3a4ffc80a4b2f0ae157b8b6d" category="inline-link">* TR-4704 ：《使用 NetApp E 系列存储部署 Veritas NetBackup 》 *</block>
+  <block id="d5da5f4acb6ce9cd96c756f74b96e9a0" category="cell"><block ref="d5da5f4acb6ce9cd96c756f74b96e9a0" category="inline-link-rx"></block></block>
+  <block id="12d1a4b387bfcab1922f0a411bb84852" category="cell">介绍在 Commvault Data Platform V11 环境中使用 NetApp E 系列存储时的参考架构和最佳实践。</block>
+  <block id="a1b3500cdb406a82f102b18ae88f8421" category="cell">介绍在 Veeam Backup &amp; Replication 9.5 环境中使用 NetApp E 系列存储时的参考架构和最佳实践。</block>
+  <block id="ac8df2201a6c1727b46dd8779e1c479e" category="cell">介绍在 NetApp E 系列存储上部署 Veritas NetBackup 的情况。</block>
+  <block id="faacb27f48573fe7471c6c5407114769" category="inline-link">* TR-4825 ：《适用于视频监控的 NetApp E 系列最佳实践指南》 *</block>
+  <block id="1cb1ebb36d511709a2d47a00b912e28e" category="cell"><block ref="1cb1ebb36d511709a2d47a00b912e28e" category="inline-link-rx"></block></block>
+  <block id="133e06e6567e2be753a017c1d83c75be" category="inline-link">* TR-4818 ：《使用 NetApp E 系列存储虚拟化视频管理系统》 *</block>
+  <block id="9f78f0c3a696ac09970d273359d55850" category="cell"><block ref="9f78f0c3a696ac09970d273359d55850" category="inline-link-rx"></block></block>
+  <block id="3a3bcd9a696371d87aa6a1357bd3bca8" category="inline-link">* TR-4848 ：采用 NetApp E 系列 E2800 磁盘存储阵列的博世视频录制解决方案 *</block>
+  <block id="38a88b97f187a582e7a91f2bdabb2776" category="cell"><block ref="38a88b97f187a582e7a91f2bdabb2776" category="inline-link-rx"></block></block>
+  <block id="642678f34e43644119ca55a845b8eb4b" category="cell">介绍将 E 系列阵列部署到视频监控环境中的最佳实践。</block>
+  <block id="644b5ebc90114208620320ba2274e62f" category="cell">介绍如何使用 NetApp E 系列存储设计和部署视频管理系统。</block>
+  <block id="ad020464f813cff9b3a34232e148f45c" category="cell">介绍视频监控解决方案架构，并详细介绍组件和存储最佳实践。</block>
+  <block id="2ef204b7fe6dd7fb4f5db43ce00f752e" category="inline-link">* TR-4884 ：采用 NetApp E 系列和 IBM Spectrum Scale* 的入门级 HPC 系统</block>
+  <block id="b989c6f72bf677952e698328421db82b" category="cell"><block ref="b989c6f72bf677952e698328421db82b" category="inline-link-rx"></block></block>
+  <block id="e1fad75d320cd96b4ad2ead776fbc81b" category="inline-link">* TR-4859 ：《使用 NetApp E 系列存储部署 IBM Spectrum Scale 》 *</block>
+  <block id="01284e373ad40bcbe95d69ca79432e5d" category="cell"><block ref="01284e373ad40bcbe95d69ca79432e5d" category="inline-link-rx"></block></block>
+  <block id="923277575dfc7bb479a4c1326fc68339" category="inline-link">* TR-4856 ：《使用 Red Hat Enterprise Linux Server* 的 E 系列的 BeeGFS 高可用性》</block>
+  <block id="246730575426f6a6e68bf2f52c15bc44" category="cell"><block ref="246730575426f6a6e68bf2f52c15bc44" category="inline-link-rx"></block></block>
+  <block id="2b744bc0da850f7e10b8914e1573c0b3" category="cell">介绍基于 NetApp E 系列存储系统和 IBM Spectrum Scale 的入门级 HPC 系统的参考架构。</block>
+  <block id="d73f064cebb5bd197545fc7004a56153" category="cell">介绍基于 IBM 的 Spectrum Scale 软件堆栈部署完整并行文件系统解决方案的过程。</block>
+  <block id="0d183f627b10c74a5ad15f70918e5661" category="cell">介绍在 NetApp E 系列系统支持的 BeeGFS 架构中实施高可用性以及使用 RedHat Enterprise Linux 提供 BeeGFS 存储，元数据和管理服务所需的配置。</block>
+  <block id="1625bed3aae287fb145324112cba2acf" category="inline-link">* TR-4862 ：《使用 SUSE Linux Enterprise Server* 的 E 系列的 BeeGFS 高可用性》</block>
+  <block id="503f8b25bc421dea7e73387381d435f4" category="cell"><block ref="503f8b25bc421dea7e73387381d435f4" category="inline-link-rx"></block></block>
+  <block id="075df837bf753b5aee2b8bcb4b81e05c" category="cell">介绍在 NetApp E 系列系统支持的 BeeGFS 架构中实施高可用性以及使用 SUSE Linux Enterprise Server for BeeGFS 存储，元数据和管理服务所需的配置。</block>
+  <block id="4fca16c33bb8244a7b60dd7da4eec715" category="doc">浏览平台技术报告</block>
+  <block id="a28b8b732f1d7a87c511f615fe886bc4" category="inline-link">* TR-4725 ： E2800 阵列功能概述 *</block>
+  <block id="fac7424958d70cf4f8d849fb90db1f68" category="cell"><block ref="fac7424958d70cf4f8d849fb90db1f68" category="inline-link-rx"></block></block>
+  <block id="16ee0112605f5c7f44d31ab4fb0f7c73" category="inline-link">+++TR-4724 ： E5700 阵列功能概述 ++*</block>
+  <block id="cdbe326a711e037f4bddbe4b226edfa6" category="cell"><block ref="cdbe326a711e037f4bddbe4b226edfa6" category="inline-link-rx"></block></block>
+  <block id="346bfe6c5f1a40af18c578c446b216aa" category="inline-link">+++TR-4877 ： EF300 阵列功能概述 ++*</block>
+  <block id="ca74b797e6d3bd7c698dff9a991616e6" category="cell"><block ref="ca74b797e6d3bd7c698dff9a991616e6" category="inline-link-rx"></block></block>
+  <block id="c3bad4531ac09819ae11c8f1eef46379" category="cell">介绍 E2800 混合阵列的硬件和软件功能以及最新的 SANtricity 操作系统功能。</block>
+  <block id="170c5373a5aea2b6d6daa41c328182fc" category="cell">介绍 E5700 产品信息，包括最新版本的 SANtricity 引入的新硬件和软件功能。</block>
+  <block id="6bf4f338106e6cad43fd2f2fecfcaafa" category="cell">介绍 EF300 全闪存阵列的硬件和软件功能以及新的 SANtricity OS 功能。</block>
+  <block id="f3a3500a11e0c13b98d7092f5af6a6c7" category="inline-link">* TR-4800 ： EF600 阵列功能概述 *</block>
+  <block id="567d596a04a1bf27275d8aa991230778" category="cell"><block ref="567d596a04a1bf27275d8aa991230778" category="inline-link-rx"></block></block>
+  <block id="6b4552e99c78bda589322e0594a1d89b" category="cell">介绍 EF600 全闪存阵列的硬件和软件功能以及新的 SANtricity OS 功能。</block>
+  <block id="3c3f8e33386d2b91256fb1a3f1ed9389" category="doc">浏览安全技术报告</block>
+  <block id="d46165f424a559168595411d0e129de6" category="inline-link">* TR-4474 ：《 SANtricity 驱动器安全功能指南》 *</block>
+  <block id="7aeb5576c50c1baeaf78d974491ebf2e" category="cell"><block ref="7aeb5576c50c1baeaf78d974491ebf2e" category="inline-link-rx"></block></block>
+  <block id="5671444c44b849b5c9fe3625aca83a32" category="inline-link">* TR-4712 ： SANtricity 管理安全功能 *</block>
+  <block id="3fbbca07210386bb17ab330852008ab0" category="cell"><block ref="3fbbca07210386bb17ab330852008ab0" category="inline-link-rx"></block></block>
+  <block id="ab8408b6fd9cba5084539eb227cd6e7a" category="inline-link">* TR-4813 ：管理 E 系列系统的证书 *</block>
+  <block id="5121e9a4ab6f5ca2bcf73d97f25849ac" category="cell"><block ref="5121e9a4ab6f5ca2bcf73d97f25849ac" category="inline-link-rx"></block></block>
+  <block id="eb61863f24474705952b6b8529693268" category="cell">介绍 E 系列系统的全磁盘加密功能，包括对 FIPS 140-2 验证驱动器的支持以及内部和外部密钥管理支持。</block>
+  <block id="4f9496e09027a6c99404d536d6528ce0" category="cell">介绍 NetApp E 系列 E2800 ， E5700 ， EF280 ， EF570 ， EF300 的 SANtricity 安全功能 和 EF600 存储系统。</block>
+  <block id="72a5b80ae6deeca3b9add8212e4901c5" category="cell">介绍如何使用最新的 E 系列控制器和应用程序管理安全证书。</block>
+  <block id="57c209da6062d5aa25d9d4dbcd594886" category="inline-link">* TR-4855 ：《 SANtricity 安全加固指南》 *</block>
+  <block id="192196583ec73bab69f6c492d37d3fd0" category="cell"><block ref="192196583ec73bab69f6c492d37d3fd0" category="inline-link-rx"></block></block>
+  <block id="5b5856c61cf4a86cdb8a64af93f7b87e" category="inline-link">* TR-4853 ： E 系列系统访问管理 *</block>
+  <block id="78854dc2e21b4170d3d1fe6b1d9eef4f" category="cell"><block ref="78854dc2e21b4170d3d1fe6b1d9eef4f" category="inline-link-rx"></block></block>
+  <block id="47258fb44590338243e024351300f997" category="cell">介绍如何部署 SANtricity 以满足信息系统机密性，完整性和可用性的规定安全目标。</block>
+  <block id="39a9002fa4dcf0afc27b1355c1567969" category="cell">介绍如何配置访问管理，包括基于角色的访问控制（ Role-Based Access Control ， RBAC ），轻型目录访问协议（ Lightweight Directory Access Protocol ， LDAP ）和安全断言标记语言（ Security Assertion Markup Language ， SAML ）。</block>
+  <block id="82e361f392a68c54a4e7d72ceec97843" category="sidebar">配置网络连接— ​SRP 基于 Infiniband</block>
 </blocks>

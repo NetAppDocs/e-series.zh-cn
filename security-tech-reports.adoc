@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: security-tech-reports.html 
+keywords: security technical reports, e-series, hardware, santricity, os 
+summary: E 系列技术报告 
+---
+= 浏览安全技术报告
+
+
+
+
+== 安全 TR
+
+[cols="9,9,9"]
+|===
+
+
+| https://www.netapp.com/pdf.html?item=/media/17162-tr4474pdf.pdf["* TR-4474 ：《 SANtricity 驱动器安全功能指南》 *"] | https://www.netapp.com/pdf.html?item=/media/17079-tr4712pdf.pdf["* TR-4712 ： SANtricity 管理安全功能 *"] | https://www.netapp.com/pdf.html?item=/media/17218-tr4813pdf.pdf["* TR-4813 ：管理 E 系列系统的证书 *"] 
+
+
+| 介绍 E 系列系统的全磁盘加密功能，包括对 FIPS 140-2 验证驱动器的支持以及内部和外部密钥管理支持。 | 介绍 NetApp E 系列 E2800 ， E5700 ， EF280 ， EF570 ， EF300 的 SANtricity 安全功能 和 EF600 存储系统。 | 介绍如何使用最新的 E 系列控制器和应用程序管理安全证书。 
+
+
+|  |  |  
+
+
+|  |  |  
+
+
+| https://www.netapp.com/pdf.html?item=/media/19422-tr-4855.pdf["* TR-4855 ：《 SANtricity 安全加固指南》 *"] | https://www.netapp.com/media/19404-tr-4853.pdf["* TR-4853 ： E 系列系统访问管理 *"] |  
+
+
+| 介绍如何部署 SANtricity 以满足信息系统机密性，完整性和可用性的规定安全目标。 | 介绍如何配置访问管理，包括基于角色的访问控制（ Role-Based Access Control ， RBAC ），轻型目录访问协议（ Lightweight Directory Access Protocol ， LDAP ）和安全断言标记语言（ Security Assertion Markup Language ， SAML ）。 |  
+|===

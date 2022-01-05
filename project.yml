@@ -247,7 +247,7 @@ sidebar:
           url: "/config-linux/srp-ib-setup-multipath-conf-file-concept.html"
         - title: 确定主机端口 GUID
           url: "/config-linux/srp-ib-determine-host-port-guids-task.html"
-        - title: '配置基于 Infiniband 的网络连接和 #8212 ；和 #8203 ； SRP'
+        - title: 配置网络连接— ​SRP 基于 Infiniband
           url: "/config-linux/srp-ib-configure-network-connections-task.html"
         - title: 创建分区和文件系统
           url: "/config-linux/srp-ib-create-partitions-filesystems-task.html"
@@ -771,7 +771,15 @@ sidebar:
   - title: 早期版本
     url: "/early-versions.html"
   - title: 技术报告
-    url: "/tech-reports.html"
+    entries:
+    - title: 平台 TR
+      url: "/platform-tech-reports.html"
+    - title: 安全 TR
+      url: "/security-tech-reports.html"
+    - title: 功能 TR
+      url: "/feature-tech-reports.html"
+    - title: 解决方案 TR
+      url: "/solution-tech-reports.html"
   - title: 法律声明
     url: "/legal-notices.html"
 homepage:

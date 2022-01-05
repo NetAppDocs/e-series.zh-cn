@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: feature-tech-reports.html 
+keywords: feature technical reports, e-series, hardware, santricity, os 
+summary: E 系列技术报告 
+---
+= 浏览特色技术报告
+
+
+
+
+== 功能 TR
+
+[cols="9,9,9"]
+|===
+
+
+| https://www.netapp.com/pdf.html?item=/media/28697-tr-4893-deploy.pdf["* TR-4893 ： SANtricity 远程存储卷 *"^] | https://www.netapp.com/pdf.html?item=/media/19405-tr-4839.pdf["* TR-4839 ： SANtricity 同步和异步镜像 *"^] | https://www.netapp.com/pdf.html?item=/media/17167-tr4747pdf.pdf["* TR-4747 ：《 SANtricity 快照功能概述和部署指南》 *"^] 
+
+
+| 介绍解决方案架构以及如何使用 E 系列存储系统从现有远程存储设备导入数据。 | 介绍 SANtricity 同步和异步镜像功能。 | 介绍 SANtricity Snapshot 功能，包括使用 SANtricity 系统管理器的图形用户界面导航说明。 
+
+
+|  |  |  
+
+
+|  |  |  
+
+
+| https://www.netapp.com/ko/media/12421-tr4652.pdf["* TR-4652 ： SANtricity 动态磁盘池 *"^] | https://www.netapp.com/pdf.html?item=/media/17144-tr4737pdf.pdf["* TR-4737 ： SANtricity 自动负载平衡 *"^] | https://www.netapp.com/pdf.html?item=/media/17142-tr4736pdf.pdf["* TR-4736 ： SANtricity Web 服务 APi*"^] 
+
+
+| 介绍存储管理员如何将类似磁盘的集合分组到池拓扑中，池中的所有驱动器都参与 I/O 工作流。 | 简要介绍 ALB 功能的行为，其主要配置参数及其主机互操作性增强功能。 | 介绍 SANtricity Web 服务概述，此 API 用于配置和管理 E 系列存储系统。 
+|===
