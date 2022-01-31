@@ -520,7 +520,6 @@
   <block id="e278e6437347ba1b8b43475dafb1ed84" category="inline-link">11.50 发行说明</block>
   <block id="7d69ef318412295725664b5711e60b81" category="list-text"><block ref="7d69ef318412295725664b5711e60b81" category="inline-link-rx"></block></block>
   <block id="7bf44c1a455e947396fedd5ddf411974" category="summary">SANtricity OS 中的新增功能。</block>
-  <block id="e8c6def5b285f222ff823e524f74b08f" category="doc">SANtricity OS 中的新增功能和功能</block>
   <block id="6145bf00e47cb3c5a3eda8fca6aabc42" category="paragraph">下表介绍了 SANtricity 操作系统中的新增功能。</block>
   <block id="03dc85e2c8b5b9e533b1cfe1c880a8d1" category="admonition">资源配置功能仅适用于具有特定 NVMe SSD 的 EF300 和 EF600 系统，在 11.71 和 11.72 版中已禁用，以便解决未解决的问题。请注意，在某些 System Manager 视图中，组件可能会报告为支持资源配置（或 DULBE） ，但无法创建资源配置的卷。</block>
   <block id="1a75366a6d4c821ee7e455bce4cffa25" category="section-title">11.72 版中的新增功能</block>
@@ -6147,7 +6146,6 @@
   <block id="6a4d0dbc61fd816c20d68cb9db43dd53" category="list-text">如果命令输出为 `Y` ，则原生 NVMe 多路径将处于启用状态，您发现的任何 NVMe 设备将使用该功能。</block>
   <block id="c6d2cbe524754a93e33c6a6214065d08" category="admonition">对于 SLES 15 ，原生 NVMe 多路径默认处于启用状态，不需要进行其他配置。</block>
   <block id="210e6499642ef4cb56b0a0b8f858e5a6" category="summary">如果您的配置使用基于 Infiniband 的 SRP 协议，请按照本节中的步骤进行操作。</block>
-  <block id="319377a956f2ad8b0c1d7f2fc49c93b4" category="doc">配置基于 Infiniband 的网络连接和 #8212 ；和 #8203 ； SRP</block>
   <block id="6ad990bbfc5964e82429678d558d6312" category="paragraph">要将 Linux 主机连接到存储阵列，必须使用相应的选项启用 InfiniBand 驱动程序堆栈。不同 Linux 分发版的特定设置可能会有所不同。检查<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> 有关特定于您的解决方案的具体说明和其他建议设置，请参见。</block>
   <block id="7ca26655b7b9ad8ac64151af48311ace" category="list-text">为您的操作系统安装 OFED/RDMA 驱动程序堆栈。</block>
   <block id="86a10b4eb734a918e85e2f5d261ce7ea" category="paragraph">* SLES *</block>
@@ -7267,4 +7265,5 @@
   <block id="47258fb44590338243e024351300f997" category="cell">介绍如何部署 SANtricity 以满足信息系统机密性，完整性和可用性的规定安全目标。</block>
   <block id="39a9002fa4dcf0afc27b1355c1567969" category="cell">介绍如何配置访问管理，包括基于角色的访问控制（ Role-Based Access Control ， RBAC ），轻型目录访问协议（ Lightweight Directory Access Protocol ， LDAP ）和安全断言标记语言（ Security Assertion Markup Language ， SAML ）。</block>
   <block id="82e361f392a68c54a4e7d72ceec97843" category="sidebar">配置网络连接— ​SRP 基于 Infiniband</block>
+  <block id="b71e2b4d6a1e1e3ddb1014777fc5a53c" category="doc">SANtricity OS 中的新增功能</block>
 </blocks>

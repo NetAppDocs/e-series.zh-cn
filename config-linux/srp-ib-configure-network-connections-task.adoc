@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: configure network SRP over IB, configure Linux network, OFED, RDMA, express linux configuration, linux host, 
 summary: 如果您的配置使用基于 Infiniband 的 SRP 协议，请按照本节中的步骤进行操作。 
 ---
-= 配置基于 Infiniband 的网络连接和 #8212 ；和 #8203 ； SRP
+= 配置网络连接— ​SRP 基于 Infiniband
 :icons: font
 :imagesdir: ../media/
 

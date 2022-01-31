@@ -4,7 +4,7 @@ permalink: whats-new.html
 keywords: whats new, new features, SANtricity 11.72 
 summary: SANtricity OS 中的新增功能。 
 ---
-= SANtricity OS 中的新增功能和功能
+= SANtricity OS 中的新增功能
 
 
 [role="lead"]
