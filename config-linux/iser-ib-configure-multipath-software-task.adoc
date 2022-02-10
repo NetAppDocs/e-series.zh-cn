@@ -62,7 +62,7 @@ SLES 12.x 和 15.x 系统：
 `systemctl enable multipathd`
 
 |===
-. 在 /boot 目录下重建 initramfs 映像或 initrd 映像：
+. 在 /boot 目录下重建 `initramfs` 映像或 `initrd` 映像：
 +
 |===
 | 如果使用的是 ... | 执行此操作 ... 
