@@ -212,4 +212,19 @@ CA 'mlx4_0'
 # cat /etc/modules-load.d/nvme-rdma.conf
   nvme-rdma
 ----
++
+要验证是否已加载 `NVMe-RDMA` 内核模块，请运行以下命令：
+
++
+[listing]
+----
+
+# lsmod | grep nvme
+nvme_rdma              36864  0
+nvme_fabrics           24576  1 nvme_rdma
+nvme_core             114688  5 nvme_rdma,nvme_fabrics
+rdma_cm               114688  7 rpcrdma,ib_srpt,ib_srp,nvme_rdma,ib_iser,ib_isert,rdma_ucm
+ib_core               393216  15 rdma_cm,ib_ipoib,rpcrdma,ib_srpt,ib_srp,nvme_rdma,iw_cm,ib_iser,ib_umad,ib_isert,rdma_ucm,ib_uverbs,mlx5_ib,qedr,ib_cm
+t10_pi                 16384  2 sd_mod,nvme_core
+----
 

@@ -67,4 +67,4 @@ image:../media/trafford_secure.png[""]
 
 
 
-image:../media/trafford_overview.png[""]
+image:../media/install_faceplate_2_0_inst-hw-e2800-e5700.png[""]

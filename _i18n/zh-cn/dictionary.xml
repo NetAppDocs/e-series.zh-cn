@@ -3353,7 +3353,6 @@
   <block id="0ae25f6f8fb841bfcaec3b0d4a60caed" category="image-alt">带 HDD 标注的 ｛ \f2 DWG Trafford ｝ 抽盒维护 e2800</block>
   <block id="f3b87b99157e2d4c6ce764334780ad25" category="admonition">E2860 存储阵列可能包含一个或多个 SAS-2 原有扩展驱动器托盘，包括 DE1600 12 驱动器托盘， DE5600 24 驱动器托盘或 DE6600 60 驱动器托盘有关更换其中一个驱动器托盘中的驱动器的说明，请参见 <block ref="9e136a997bcf3e05c018623bc12de242" category="inline-link-macro-rx"></block> 和 <block ref="168600e88979a841f5ba5db5c2e4bc72" category="inline-link-macro-rx"></block>。</block>
   <block id="777b0649fcc5fcc5bb1164b9d7eaa265" category="paragraph">您可以更换 E2860 控制器架和 DE460C 驱动器架中的驱动器抽盒。Each of these 60-drive shelves has five drive drawers.</block>
-  <block id="113cabefba6314f00b60f0b88bc8b1fa" category="paragraph"><block ref="f20b4bef1c485b65027bb64c40283577" category="inline-image-macro-rx" type="image"></block> <block ref="8589ea515c203c5bc845d521107b1586" category="inline-image-macro-rx" type="image"></block></block>
   <block id="95d290c7c8680af128bf09d62a8aa6c0" category="section-title">驱动器处理</block>
   <block id="9ab2450e73d8b1c6fcd4cbdd796e2f91" category="summary">将主机接口卡（ HIC ）添加到 E2800 阵列。</block>
   <block id="01ff5ad67baf6b4ef35176cfabf729e1" category="doc">添加 E2800 主机接口卡（ HIC ）</block>
@@ -5798,7 +5797,6 @@
   <block id="d6824df6c78161020f612be2cf0dd5ea" category="paragraph">`policy='service-time 0' prio=10 status=active`</block>
   <block id="a602b51c709c08f2a0056a93c3f7347c" category="paragraph">请注意， `active` 路径是指 `nvme2` ，因此 I/O 将通过此路径定向到控制器 B</block>
   <block id="a5974dd8ce70a548614c8d5d17a3d822" category="list-text">执行以下操作之一以在启动时启用 multipathd 守护进程。</block>
-  <block id="9473d9f79f6f9f58365aacf4bc3692ed" category="list-text">在 /boot 目录下重建 initramfs 映像或 initrd 映像：</block>
   <block id="ee916e0d414bc638aa03071c909609ac" category="list-text">确保在启动配置文件中选择了新创建的 /boot/initrams-* 映像或 /boot/initrd-* 映像。</block>
   <block id="46bcd2758b72eff5e80f3a63941f1254" category="paragraph">例如，对于 grub ，它为 ` /boot/grub/menu.lst` ；对于 grub2 ，它为 ` /boot/grub2/menu.cfg` 。</block>
   <block id="cfacf32d5f730b5bb16ae4c5d345f88e" category="summary">通过配置光纤通道 \ （分区 \ ）交换机，主机可以连接到存储阵列并限制路径数。您可以使用交换机的管理界面对交换机进行分区。</block>
@@ -5879,7 +5877,6 @@
   <block id="01310ef017ef25d822f741c21c117a36" category="paragraph">使用值替换的命令示例：</block>
   <block id="9f02febaba0653c0eaad0ff1bbaad908" category="paragraph">* RHEL 示例 *</block>
   <block id="ab3920ef337c66be846f600286085d4d" category="list-text">将以下两行添加到 /etc/rc.d/rc.local 。将步骤 2 中找到的值替换为 `GUID0` 和 `GUID1` 。对于 `P0` 和 `P1` ，请使用子网管理器的优先级，其中 1 为最低优先级， 15 为最高优先级：</block>
-  <block id="b1d612f8bc6f63ea300e554a42b1cbbb" category="list-text">在 ` /boot 目录` 下重建 `initramfs` 映像或 `initrd` 映像：</block>
   <block id="cd811d566fa107f125fee827c9a97038" category="summary">您可以使用 SANtricity 系统管理器定义向存储阵列发送数据的主机。定义主机是让存储阵列知道连接了哪些主机并允许对卷进行 I/O 访问所需的步骤之一。</block>
   <block id="de91602d965d3f24d55de1a618deaaff" category="doc">定义主机</block>
   <block id="e05bf6d17d783fdea5d98847101f7fbc" category="paragraph">定义主机时，请牢记以下准则：</block>
@@ -5912,7 +5909,6 @@
   <block id="446e80fe7b2b546a067aa727557f83e0" category="paragraph">创建文件系统的方法因所选的文件系统而异。此示例显示了如何创建 ext4 文件系统。</block>
   <block id="975fd0c9892b022cfeeec8b2a371f30b" category="paragraph">选择要使用的主机接口类型。如果您配置的阵列只有一个可用的主机接口类型，则可能无法选择此设置。</block>
   <block id="365f3205f151d2c0162b586cda9fa899" category="paragraph">默认别名为 `` &lt; 主机名端口号 &gt;`` 。例如，为 `主机 IPT 创建的第一个端口的默认别名是 ipt_1` 。</block>
-  <block id="cc30f274a8a39d689efd61eb14c09e98" category="list-text">在设置管理员密码和确认密码字段中输入管理员角色的 System Manager 密码，然后选择 * 设置密码 * 。</block>
   <block id="710df034a9973ed95466a5c185556f12" category="summary">在 SANtricity System Manager 中定义每个主机之前，您必须先从主机发现目标控制器端口，然后建立 NVMe 连接。</block>
   <block id="f2a10b60273c2d45f86ba6d1349e46ec" category="doc">发现并从主机连接到存储</block>
   <block id="439cfd29f74a2517f05ea9a0f22d1652" category="list-text">使用以下命令发现 NVMe-oF 目标上所有路径的可用子系统：</block>
@@ -6831,10 +6827,7 @@
   <block id="dfc89ed29b8093883ce7ea3c4c99b457" category="list-text"><block ref="dfc89ed29b8093883ce7ea3c4c99b457" category="inline-link-rx"></block></block>
   <block id="f4553fe3f97fd4025f4ff41e1c663e50" category="section-title">SANtricity 11.5 版</block>
   <block id="8331ef16c33d5befa6eb42b34efce9e4" category="list-text"><block ref="8331ef16c33d5befa6eb42b34efce9e4" category="inline-link-rx"></block></block>
-  <block id="faa01428232843c880bdec559135813c" category="list-text"><block ref="faa01428232843c880bdec559135813c" category="inline-link-rx"></block></block>
   <block id="cc54f468d2ac18e796e79f84a331074c" category="section-title">SANtricity 版本 11.4</block>
-  <block id="7536a2061c4368d5b7d751060ed52eac" category="inline-link">System Manager （ E2800 ）联机帮助</block>
-  <block id="ad0d3e53db3511f30eba4fe654f73723" category="list-text"><block ref="ad0d3e53db3511f30eba4fe654f73723" category="inline-link-rx"></block></block>
   <block id="e14af5af57d07a1e059a7501d1dd8049" category="inline-link">AMW （ E2700 ， E5600/EF560 ）联机帮助</block>
   <block id="f102ce57babbb1ddaf5712f2d567e723" category="list-text"><block ref="f102ce57babbb1ddaf5712f2d567e723" category="inline-link-rx"></block></block>
   <block id="451309945948c56a3f40b082fd1af9f3" category="inline-link">EMW （ E2700 ， E5600/EF560 ）联机帮助</block>
@@ -6960,7 +6953,6 @@
   <block id="7f91b3bbd1281f9b80cef4d909c6db05" category="list-text">如果要用手抬起磁盘架，请连接四个提升把手。向上推每个手柄，直到其卡入到位。</block>
   <block id="f8a163eecaf819af57298c9a255ffb1c" category="list-text">从底部支撑好磁盘架，将其滑入机柜。如果使用了升降把手，请在将升降架滑入机柜时一次将其卸下一组。要卸下手柄，请向后拉释放闩锁，向下推，然后从磁盘架中拉出。</block>
   <block id="8da92aca81a2b2221d6b182da0317a70" category="paragraph"><block ref="8da92aca81a2b2221d6b182da0317a70" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="32b5404fbe312401c8fe1625cf4f29fc" category="paragraph"><block ref="32b5404fbe312401c8fe1625cf4f29fc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8f57d3a728dbee93c91f52df708a0f03" category="list-text">安装驱动器。</block>
   <block id="e7f546cb3de7b0b2f545861ec3bd8faf" category="list-text">将 ESD 腕带的腕带一端绕在腕带上，并将扣具一端固定到金属接地，以防止静电放电。</block>
   <block id="441cd839d4b2fb880029cd3ae287e829" category="list-text">从顶部抽盒的左前插槽开始，安装每个驱动器，方法是将其轻轻放入驱动器插槽中，然后降低凸起的驱动器把手，直到其卡入到位。</block>
@@ -7088,14 +7080,12 @@
   <block id="36ea2743576b4967eefec734fdf225a7" category="sidebar">E2800</block>
   <block id="fa62d1ff5c8df2db90b5a0e66ffb499d" category="sidebar">E2800 维护系统</block>
   <block id="90dcd50961ab2150c40f87fb4d43a7bd" category="sidebar">E2800 维护电池</block>
-  <block id="7f7cf3af2708f90b78cf062cc1e437cf" category="sidebar">电池更换要求</block>
   <block id="bd9f159fb2ba43c274d5642a1cc1ef25" category="sidebar">准备更换电池</block>
   <block id="3baa1fee1e1b39bd0fd8a6bf141e043f" category="sidebar">拆下控制器箱</block>
   <block id="99bee74f5d740a2a8a8b9d5def2c97dd" category="sidebar">取出故障电池</block>
   <block id="3cec1b2f6a283292e50d93f442dd85e3" category="sidebar">重新安装控制器箱</block>
   <block id="b83cceb33f417f30c5b7a19d7dd4fee3" category="sidebar">完成电池更换</block>
   <block id="91b40d84f48e5d6f1d066eddec6eaa5a" category="sidebar">E2800 维护控制器</block>
-  <block id="8ba2c7b7e7e041afe017948946f3e750" category="sidebar">控制器更换要求</block>
   <block id="740b55f851abbca6a657db02ffeff89a" category="sidebar">添加第二个控制器箱</block>
   <block id="f49fcc97f8c0dfeaa8ca82bf8c67cb27" category="sidebar">更换单工配置中的控制器</block>
   <block id="604d449a82a2afb8f31d42b6ab329b65" category="sidebar">E2800 可维护箱</block>
@@ -7103,15 +7093,12 @@
   <block id="607f7947f757dd2fb95ff0346170a6e2" category="sidebar">更换电源箱（ 60 个驱动器）</block>
   <block id="e87621d4d3b3341d1a85640a80dbe8ba" category="sidebar">更换风扇箱（ 60 个驱动器）</block>
   <block id="aa9efa5146b23092e16f1a1f313d3147" category="sidebar">E2800 维护驱动器</block>
-  <block id="0a0338503c8de53bdfebef5b2d7cc7f7" category="sidebar">驱动器更换要求</block>
   <block id="5ee5097b71b0657d7279a81c788216c2" category="sidebar">更换驱动器（ 12 个或 24 个驱动器）</block>
   <block id="45e5b95f027a05014cb568fd518ffccb" category="sidebar">更换驱动器（ 60 个驱动器）</block>
   <block id="174a20bb5d925507cfb49bc15d89639f" category="sidebar">更换驱动器抽盒（ 60 个驱动器）</block>
   <block id="8b0389482da8a34dfa2fd7d612428f19" category="sidebar">E2800 可维护 HIC</block>
-  <block id="7fa1e190a095db7bd749074512cb3ffc" category="sidebar">HIC 更换要求</block>
   <block id="f8f636622390b1e0f605b81f0353b02d" category="sidebar">更换主机接口卡</block>
   <block id="40234e2675994dfbdf06dbbc35002dae" category="sidebar">E2800 转换主机协议</block>
-  <block id="1db1e36e7849178e07ef65643e7b332f" category="sidebar">转换要求</block>
   <block id="176e516e8cae45764073b4a9b3674666" category="sidebar">E5700</block>
   <block id="4fcc5dd0ed72afd3d9122de43013c918" category="sidebar">E5700 维护系统</block>
   <block id="418d964fbc943b1c7d7d1e1e76b278b4" category="sidebar">E5700 可维护电池</block>
@@ -7266,4 +7253,13 @@
   <block id="39a9002fa4dcf0afc27b1355c1567969" category="cell">介绍如何配置访问管理，包括基于角色的访问控制（ Role-Based Access Control ， RBAC ），轻型目录访问协议（ Lightweight Directory Access Protocol ， LDAP ）和安全断言标记语言（ Security Assertion Markup Language ， SAML ）。</block>
   <block id="82e361f392a68c54a4e7d72ceec97843" category="sidebar">配置网络连接— ​SRP 基于 Infiniband</block>
   <block id="b71e2b4d6a1e1e3ddb1014777fc5a53c" category="doc">SANtricity OS 中的新增功能</block>
+  <block id="e9983c2bf51c9aa8f38dce44157b9a2a" category="paragraph">此 操作步骤 适用场景 IOM12 和 IOM12B 驱动器架。</block>
+  <block id="2af3ffb0914986412fbce97033362ada" category="admonition">此操作步骤 适用于同类磁盘架 IOM 热插拔或更换。这意味着，您只能将 IOM12 模块更换为另一个 IOM12 模块，或者将 IOM12B 模块更换为另一个 IOM12B 模块。（您的磁盘架可以有两个 IOM12 模块，也可以有两个 IOM12B 模块。）</block>
+  <block id="2dbe08d5683f7868502b2ae7bf0efe28" category="paragraph">此 操作步骤 适用场景 IOM12 和 IOM12B 驱动器架以及数据中心和数据中心 2 驱动器架。</block>
+  <block id="6dc10b003bcb8e0cbbcf076e7dbcdf2f" category="paragraph">此任务将包含适用场景 数据中心管理平台和 DCM2 驱动器架。</block>
+  <block id="acd1dcb9f4c3f9c9b28f9c1a4d234d1b" category="admonition">电源更换操作步骤 适用于更换 IOM 。要更换 IOM ，请执行电源更换操作步骤 。</block>
+  <block id="f20b4bef1c485b65027bb64c40283577" category="paragraph"><block ref="f20b4bef1c485b65027bb64c40283577" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ebc31fad1cf84954196a7706294df684" category="paragraph">此 操作步骤 适用场景 数据中心管理平台和 DCM2 驱动器架。</block>
+  <block id="9fab40c340a50dc566e1060dd32e768d" category="admonition">要检索客户端和服务器证书，存储阵列必须处于最佳状态。如果证书无法检索，则必须创建一个新的 CSR 并对其进行签名，然后从 EKMS 下载服务器证书。</block>
+  <block id="86e856206affbccd36d96e0932a14510" category="paragraph">要验证是否已加载 `NVMe-RDMA` 内核模块，请运行以下命令：</block>
 </blocks>
