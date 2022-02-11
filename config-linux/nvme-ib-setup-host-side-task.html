@@ -2881,7 +2881,7 @@
         <div class="na-navbar-padding"> 电池</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/e-series/maintenance-e2800/batteries-overview-requirements-concept.html">
-        电池更换要求
+        概述和要求
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/e-series/maintenance-e2800/batteries-prepare-replace-task.html">
         准备更换电池
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/e-series/maintenance-e2800/batteries-remove-controller-canister-task.html">
@@ -2898,7 +2898,7 @@
         <div class="na-navbar-padding"> 控制器</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/e-series/maintenance-e2800/controllers-overview-supertask-concept.html">
-        控制器更换要求
+        概述和要求
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/e-series/maintenance-e2800/controllers-second-add-task.html">
         添加第二个控制器箱
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/e-series/maintenance-e2800/controllers-duplex-supertask-task.html">
@@ -2909,7 +2909,7 @@
         <div class="na-navbar-padding"> 箱</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/e-series/maintenance-e2800/canisters-overview-supertask-concept.html">
-        更换箱的要求
+        概述和要求
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/e-series/maintenance-e2800/canisters-supply-supertask-task.html">
         更换电源（ 12 个或 24 个驱动器）
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/e-series/maintenance-e2800/canisters-60-replace-power-task.html">
@@ -2920,7 +2920,7 @@
         <div class="na-navbar-padding"> 驱动器</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/e-series/maintenance-e2800/drives-overview-supertask-concept.html">
-        驱动器更换要求
+        概述和要求
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/e-series/maintenance-e2800/drives-12-24-supertask-task.html">
         更换驱动器（ 12 个或 24 个驱动器）
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/e-series/maintenance-e2800/drives-60-replace-task.html">
@@ -2931,7 +2931,7 @@
         <div class="na-navbar-padding"> 主机接口卡</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/e-series/maintenance-e2800/hics-overview-supertask-concept.html">
-        HIC 更换要求
+        概述和要求
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/e-series/maintenance-e2800/hics-add-supertask-task.html">
         添加主机接口卡
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/e-series/maintenance-e2800/hics-upgrade-supertask-task.html">
@@ -2942,7 +2942,7 @@
         <div class="na-navbar-padding"> 主机端口协议转换</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/e-series/maintenance-e2800/hpp-overview-supertask-concept.html">
-        转换要求
+        概述和要求
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/e-series/maintenance-e2800/hpp-change-host-protocol-task.html">
         更改主机协议
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/e-series/maintenance-e2800/hpp-complete-protocol-conversion-task.html">
@@ -3189,7 +3189,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-02-10 14:59:38 +0000">02/10/2022</time>
+    <time datetime="2022-02-11 18:46:52 +0000">02/11/2022</time>
     
   
 
@@ -3207,6 +3207,14 @@
           alt="netapp-jolieg"
           width="20" height="20"
           src="https://avatars.githubusercontent.com/u/78750754?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+  <a target="_blank" href="https://github.com/netapp-jsnyder">
+    <img  class="avatar avatar-small"
+          alt="netapp-jsnyder"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/69054128?v=4"
           style="border-radius: 50%;"/>
   </a>
   
@@ -3440,6 +3448,20 @@
 <div class="content">
 <pre># cat /etc/modules-load.d/nvme-rdma.conf
   nvme-rdma</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>要验证是否已加载 <code>NVMe-RDMA</code> 内核模块，请运行以下命令：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre># lsmod | grep nvme
+nvme_rdma              36864  0
+nvme_fabrics           24576  1 nvme_rdma
+nvme_core             114688  5 nvme_rdma,nvme_fabrics
+rdma_cm               114688  7 rpcrdma,ib_srpt,ib_srp,nvme_rdma,ib_iser,ib_isert,rdma_ucm
+ib_core               393216  15 rdma_cm,ib_ipoib,rpcrdma,ib_srpt,ib_srp,nvme_rdma,iw_cm,ib_iser,ib_umad,ib_isert,rdma_ucm,ib_uverbs,mlx5_ib,qedr,ib_cm
+t10_pi                 16384  2 sd_mod,nvme_core</pre>
 </div>
 </div>
 </li>
