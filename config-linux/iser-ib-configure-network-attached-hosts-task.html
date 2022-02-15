@@ -3189,7 +3189,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-02-14 18:23:17 +0000">02/14/2022</time>
+    <time datetime="2022-02-15 23:07:14 +0000">02/15/2022</time>
     
   
 
@@ -3207,6 +3207,14 @@
           alt="netapp-jolieg"
           width="20" height="20"
           src="https://avatars.githubusercontent.com/u/78750754?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+  <a target="_blank" href="https://github.com/netapp-jsnyder">
+    <img  class="avatar avatar-small"
+          alt="netapp-jsnyder"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/69054128?v=4"
           style="border-radius: 50%;"/>
   </a>
   
@@ -3292,7 +3300,8 @@
 <p>在 /etc/iscsi/iscsid.conf 中编辑 iSCSI 设置。</p>
 <div class="listingblock">
 <div class="content">
-<pre>node.startup = automatic replacement_timeout = 20</pre>
+<pre>node.startup = automatic
+replacement_timeout = 20</pre>
 </div>
 </div>
 </li>
@@ -3402,13 +3411,13 @@ iscsiadm -m iface -I iser &gt; /var/lib/iscsi/ifaces/iface-ib1</pre>
 <div class="listingblock">
 <div class="content">
 <pre># Controller A Port 1
-iscsiadm -m node -target &lt;Target IQN\&gt; -I iface-ib0 -p &lt;Target Port IP\&gt; -l -o new
+iscsiadm -m node --target &lt;Target IQN\&gt; -I iface-ib0 -p &lt;Target Port IP\&gt; -l -o new
 # Controller B Port 1
-iscsiadm -m node -target &lt;Target IQN\&gt; -I iface-ib0 -p &lt;Target Port IP\&gt; -l -o new
+iscsiadm -m node --target &lt;Target IQN\&gt; -I iface-ib0 -p &lt;Target Port IP\&gt; -l -o new
 # Controller A Port 2
-iscsiadm -m node -target &lt;Target IQN\&gt; -I iface-ib1 -p &lt;Target Port IP\&gt; -l -o new
+iscsiadm -m node --target &lt;Target IQN\&gt; -I iface-ib1 -p &lt;Target Port IP\&gt; -l -o new
 # Controller B Port 2
-iscsiadm -m node -target &lt;Target IQN\&gt; -I iface-ib1 -p &lt;Target Port IP\&gt; -l -o new</pre>
+iscsiadm -m node --target &lt;Target IQN\&gt; -I iface-ib1 -p &lt;Target Port IP\&gt; -l -o new</pre>
 </div>
 </div>
 </li>
@@ -3420,13 +3429,13 @@ iscsiadm -m node -target &lt;Target IQN\&gt; -I iface-ib1 -p &lt;Target Port IP\
 <div class="listingblock">
 <div class="content">
 <pre># Controller A Port 1
-iscsiadm -m node -target &lt;Target IQN\&gt; -I iface-ib0 -p &lt;Target Port IP\&gt; -l
+iscsiadm -m node --target &lt;Target IQN\&gt; -I iface-ib0 -p &lt;Target Port IP\&gt; -l
 # Controller B Port 1
-iscsiadm -m node -target &lt;Target IQN\&gt; -I iface-ib0 -p &lt;Target Port IP\&gt; -l
+iscsiadm -m node --target &lt;Target IQN\&gt; -I iface-ib0 -p &lt;Target Port IP\&gt; -l
 # Controller A Port 2
-iscsiadm -m node -target &lt;Target IQN\&gt; -I iface-ib1 -p &lt;Target Port IP\&gt; -l
+iscsiadm -m node --target &lt;Target IQN\&gt; -I iface-ib1 -p &lt;Target Port IP\&gt; -l
 # Controller B Port 2
-iscsiadm -m node -target &lt;Target IQN\&gt; -I iface-ib1 -p &lt;Target Port IP\&gt; -l</pre>
+iscsiadm -m node --target &lt;Target IQN\&gt; -I iface-ib1 -p &lt;Target Port IP\&gt; -l</pre>
 </div>
 </div>
 </li>
