@@ -62,7 +62,8 @@ systemctl restart network
 +
 [listing]
 ----
-node.startup = automatic replacement_timeout = 20
+node.startup = automatic
+replacement_timeout = 20
 ----
 . 创建 iSCSI 会话配置：
 +
@@ -125,13 +126,13 @@ iscsiadm -m discovery -t st -p 192.168.130.101 -I iser
 [listing]
 ----
 # Controller A Port 1
-iscsiadm -m node -target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l -o new
+iscsiadm -m node --target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l -o new
 # Controller B Port 1
-iscsiadm -m node -target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l -o new
+iscsiadm -m node --target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l -o new
 # Controller A Port 2
-iscsiadm -m node -target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l -o new
+iscsiadm -m node --target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l -o new
 # Controller B Port 2
-iscsiadm -m node -target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l -o new
+iscsiadm -m node --target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l -o new
 ----
 . 登录到 iSCSI 会话。
 +
@@ -141,13 +142,13 @@ iscsiadm -m node -target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l -o n
 [listing]
 ----
 # Controller A Port 1
-iscsiadm -m node -target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l
+iscsiadm -m node --target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l
 # Controller B Port 1
-iscsiadm -m node -target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l
+iscsiadm -m node --target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l
 # Controller A Port 2
-iscsiadm -m node -target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l
+iscsiadm -m node --target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l
 # Controller B Port 2
-iscsiadm -m node -target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l
+iscsiadm -m node --target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l
 ----
 . 验证 iSE1/iSCSI 会话。
 +
