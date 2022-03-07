@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: san-spvc-ic-storage-array-discovery.html 
+permalink: vcenter-plugin/san-spvc-ic-storage-array-discovery.html 
 keywords: discover arrays vCenter plugin, discover storage resources Plugin for vCenter, resolve certificates vCenter plugin 
 summary: 使用适用于 vCenter 的插件界面发现网络中阵列的 IP 地址。 
 ---

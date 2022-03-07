@@ -1534,7 +1534,6 @@
   <block id="d60c0bc605d3ea38eff56a862b5a189c" category="paragraph">由于此操作步骤的复杂性，建议执行以下操作：</block>
   <block id="8322d8f6737b683258acd6d9233af80a" category="list-text">开始操作步骤之前，请阅读所有步骤。</block>
   <block id="8567550b0509793441808f6c97ce695d" category="list-text">确保热添加驱动器架是您所需的操作步骤。</block>
-  <block id="f4895416b905bb96e49cad6cea70b73a" category="paragraph">此操作步骤适用场景会将 DE212C ， DE224C 或 DE460C 驱动器架热添加到 E5700 ， EF570 ， E2800 ， EF280 或 EF300 控制器架。</block>
   <block id="5a1179aaa65f35de522ce2a2ea82749a" category="inline-link">将 IOM 驱动器架添加到现有 E27XX ， E56XX 或 EF560 控制器架</block>
   <block id="a6f3f1b5a23e23fffe14cffdfdd4e3e6" category="paragraph">如果要使用缆线将旧控制器架连接到 DE212C ， DE224C 或 DE460 ，请参见<block ref="0198df91334a412ebbcbbf86e387ec1b" category="inline-link-rx"></block>。</block>
   <block id="160e453c42b3cffabeeb1eac7a869cc4" category="admonition">要保持系统完整性，您必须严格按照显示的顺序执行操作步骤。</block>
@@ -1624,7 +1623,6 @@
   <block id="24d1db435624223ea3fcfe34e7480965" category="doc">驱动器架布线</block>
   <block id="23c9c1d703a67af9b3d48c36aebc7730" category="paragraph">您必须将控制器架中的每个控制器连接到驱动器架中的 I/O 模块（ IOM ）。</block>
   <block id="ae7a26030f4b035778f68ea33d2444dc" category="section-title">为 E2800 和 E5700 布线</block>
-  <block id="114ecf49e92ab17f5f1e33e40c278a8d" category="paragraph">以下信息适用场景使用缆线将 E5700 ， EF570 ， E2800 或 EF280 控制器架连接到 DE212C ， DE224C 或 DE460 驱动器架。</block>
   <block id="6541fff12d201f839eebf251a3ed5689" category="section-title">为 12 驱动器或 24 驱动器磁盘架布线</block>
   <block id="b1a8455c6973aaf461d1caf3201674d7" category="paragraph">您可以使用缆线将控制器架连接到一个或多个 12 驱动器或 24 驱动器磁盘架。</block>
   <block id="39629fad2cdbfe0923082e37fa9dd684" category="paragraph">下图显示了控制器架和驱动器架的表示形式。要查找您的型号上的端口，请参见<block ref="5d49ffd87c57001d2b40191486fafc6a" category="inline-link-rx"></block>。</block>
@@ -7262,4 +7260,6 @@
   <block id="ebc31fad1cf84954196a7706294df684" category="paragraph">此 操作步骤 适用场景 数据中心管理平台和 DCM2 驱动器架。</block>
   <block id="9fab40c340a50dc566e1060dd32e768d" category="admonition">要检索客户端和服务器证书，存储阵列必须处于最佳状态。如果证书无法检索，则必须创建一个新的 CSR 并对其进行签名，然后从 EKMS 下载服务器证书。</block>
   <block id="86e856206affbccd36d96e0932a14510" category="paragraph">要验证是否已加载 `NVMe-RDMA` 内核模块，请运行以下命令：</block>
+  <block id="dbf42093a0041931999943f18d3f0986" category="paragraph">以下信息适用场景 为 E2800 ， E2800B ， EF280 ， E5700 ， EF5700B 布线， 或 EF570 控制器架连接到 DE212C ， DE224C 或 DE460 驱动器架。</block>
+  <block id="67b64abed949ae2b1a2626ebe211fd47" category="paragraph">此 操作步骤 适用场景 会将 DE212C ， DE224C 或 DE460C 驱动器架热添加到 E2800 ， E2800B ， EF280 ， E5700 ， E5700B ， EF570 或 EF300 控制器架。</block>
 </blocks>

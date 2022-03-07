@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: san-spvc-ic-login-and-navigation.html 
+permalink: vcenter-plugin/san-spvc-ic-login-and-navigation.html 
 keywords: log in vCenter plugin, login Plugin for vCenter, browsers vCenter plugin user interface, vCenter GUI, 
 summary: 登录并导航适用于 vCenter 的插件。 
 ---

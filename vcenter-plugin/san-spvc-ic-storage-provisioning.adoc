@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: san-spvc-ic-storage-provisioning.html 
+permalink: vcenter-plugin/san-spvc-ic-storage-provisioning.html 
 keywords: create volumes vCenter plugin, provision Plugin for vCenter, vCenter plugin storage provisioning, vCenter plugin host 
 summary: 使用适用于 vCenter 的插件创建卷，将卷分配给主机，然后将卷分配给数据存储库。 
 ---
