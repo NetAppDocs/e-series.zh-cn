@@ -733,19 +733,19 @@ sidebar:
     - title: 适用于 vCenter 的存储插件
       entries:
       - title: 概述
-        url: "/san-spvc-ic-overview.html"
+        url: "/vcenter-plugin/san-spvc-ic-overview.html"
       - title: 安装插件
-        url: "/san-spvc-ic-installation.html"
+        url: "/vcenter-plugin/san-spvc-ic-installation.html"
       - title: 配置访问权限
-        url: "/san-spvc-ic-user-access.html"
+        url: "/vcenter-plugin/san-spvc-ic-user-access.html"
       - title: 登录并导航
-        url: "/san-spvc-ic-login-and-navigation.html"
+        url: "/vcenter-plugin/san-spvc-ic-login-and-navigation.html"
       - title: 发现存储阵列
-        url: "/san-spvc-ic-storage-array-discovery.html"
+        url: "/vcenter-plugin/san-spvc-ic-storage-array-discovery.html"
       - title: 配置存储
-        url: "/san-spvc-ic-storage-provisioning.html"
+        url: "/vcenter-plugin/san-spvc-ic-storage-provisioning.html"
       - title: 删除插件
-        url: "/san-spvc-ic-plugin-removal.html"
+        url: "/vcenter-plugin/san-spvc-ic-plugin-removal.html"
     - title: 传统解决方案
       entries:
       - title: 云连接器
