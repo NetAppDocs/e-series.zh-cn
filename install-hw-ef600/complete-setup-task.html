@@ -50,10 +50,10 @@
   
   <link rel="stylesheet" href="/zh-cn/e-series/css/landing-page.css" type="text/css">
   <link rel="stylesheet" href="/zh-cn/e-series/css/tabbed-blocks.css" type="text/css">
-  <link rel="stylesheet" href='/zh-cn/e-series/css/product-family.css' type="text/css">
   <link rel='stylesheet' href='/zh-cn/e-series/css/na-feature.css' type='text/css'><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-  <!-- Used to import Promise for IE. Required for SearchKit -->
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/zh-cn/e-series/js/na-search.js'></script><script src='/zh-cn/e-series/js/na-pagenav.js'></script><link rel='stylesheet' href='/zh-cn/e-series/css/prism.css' type='text/css'>
   <link rel='stylesheet' href='/zh-cn/e-series/css/prism-netapp.css' type='text/css'>
 
@@ -131,7 +131,6 @@
   }
   </script>
   <script src='/zh-cn/e-series/js/version-dropdown.js'></script>
-  <script src='/zh-cn/e-series/js/product-family.js'></script>
   <script src='/zh-cn/e-series/js/FileSaver.min.js'></script>
   <script src='/zh-cn/e-series/js/jszip-utils.min.js'></script>
   <script src='/zh-cn/e-series/js/jszip.min.js'></script>
@@ -144,6 +143,25 @@
       <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
       <div class="n-off-canvas-menu__content-wrap">
         <header class="site-header" id="banner">
+  
+  <!-- Start Page Toolbar -->
+  <div class="page-nav-toolbar">
+    <div id="version-dropdown"></div>
+    <div class="page-nav-contribute"  >
+      <a target="_blank" href="https://github.com/NetAppDocs/e-series/issues/new?body=Page%3A%20[完成存储系统设置和配置](https://docs.netapp.com/zh-cn/e-series/install-hw-ef600/complete-setup-task.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/e-series/images/discuss-sm.svg" class="github-icon" />请求文档变更</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/e-series/blob/main/install-hw-ef600/complete-setup-task.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/e-series/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a>
+      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-cn/e-series/images/article-sm.svg" class="github-icon" />提供者指南</a>
+    </div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">在此页面上</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
   <!-- Start top_hat -->
   <div class="n-top-hat">
     <div class="n-container">
@@ -3045,19 +3063,19 @@
       </a></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> 适用于 vCenter 的存储插件</div>
       </a>
-      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/e-series/san-spvc-ic-overview.html">
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/e-series/vcenter-plugin/san-spvc-ic-overview.html">
         概述
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/e-series/san-spvc-ic-installation.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/e-series/vcenter-plugin/san-spvc-ic-installation.html">
         安装插件
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/e-series/san-spvc-ic-user-access.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/e-series/vcenter-plugin/san-spvc-ic-user-access.html">
         配置访问权限
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/e-series/san-spvc-ic-login-and-navigation.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/e-series/vcenter-plugin/san-spvc-ic-login-and-navigation.html">
         登录并导航
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/e-series/san-spvc-ic-storage-array-discovery.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/e-series/vcenter-plugin/san-spvc-ic-storage-array-discovery.html">
         发现存储阵列
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/e-series/san-spvc-ic-storage-provisioning.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/e-series/vcenter-plugin/san-spvc-ic-storage-provisioning.html">
         配置存储
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/e-series/san-spvc-ic-plugin-removal.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/e-series/vcenter-plugin/san-spvc-ic-plugin-removal.html">
         删除插件
       </a></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> 传统解决方案</div>
@@ -3120,19 +3138,16 @@
     <div class="n-breadcrumb">
       <ul class="n-breadcrumb__list">
         <li class="n-breadcrumb__list-item">
-          <a href="https://www.netapp.com">主页</a>
+          <a href="https://docs.netapp.com">docs.netapp.com</a>
         </li>
-        <li class="n-breadcrumb__list-item">
-          <a href="https://docs.netapp.com">文档</a>
-        </li>
+        
+
         
 
         <li class="n-breadcrumb__list-item">
           <a href="/zh-cn/e-series/">e-series</a>
         </li>
-        <li class="n-breadcrumb__list-item">
-          完成存储系统设置和配置
-        </li>
+
       </ul>
     </div>
     <div style="clear: both"></div><!-- Main needs to have height -->
@@ -3161,7 +3176,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-03-08 19:59:46 +0000">03/08/2022</time>
+    <time datetime="2022-03-11 18:17:09 +0000">03/11/2022</time>
     
   
 
@@ -3186,7 +3201,6 @@
 
 
 </p>
-
 
 <div id="preamble">
 <div class="sectionbody">
@@ -3537,25 +3551,6 @@
     <!-- Page Container -->
   </div>
 
-  
-  <!-- Start Page Toolbar -->
-  <div class="page-nav-toolbar">
-    <div id="version-dropdown"></div>
-    <div class="page-nav-contribute"  >
-      <a target="_blank" href="https://github.com/NetAppDocs/e-series/issues/new?body=Page%3A%20[完成存储系统设置和配置](https://docs.netapp.com/zh-cn/e-series/install-hw-ef600/complete-setup-task.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/e-series/images/discuss-sm.svg" class="github-icon" />请求文档变更</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/e-series/blob/main/install-hw-ef600/complete-setup-task.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/e-series/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a>
-      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-cn/e-series/images/article-sm.svg" class="github-icon" />提供者指南</a>
-    </div>
-    <div class="page-nav-container">
-      <nav class="page-nav-fixed">
-        <div class="page-nav-title">在此页面上</div>
-        <div class="page-nav-links">
-          <ul class="page-nav-inner" id="page-menu"></ul>
-        </div>
-      </nav>
-    </div>
-  </div>
-  
   <div style="clear: both"></div><!-- Main needs to have height --></div>
 
         </main>
