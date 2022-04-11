@@ -45,9 +45,9 @@ NOTE: 图中显示了控制器箱示例；控制器箱上的主机端口可能�
 * 与当前安装的控制器箱中的 HIC 相同的新 HIC （仅当当前安装的控制器箱包含主机接口卡时才需要）。
 * 连接新控制器端口所需的所有缆线，收发器，交换机和主机总线适配器（ HBA ）。
 +
-有关兼容硬件的信息，请参见 https://mysupport.netapp.com/NOW/products/interoperability["NetApp 互操作性表"^] 或。
+有关兼容硬件的信息，请参见 https://mysupport.netapp.com/NOW/products/interoperability["NetApp 互操作性表"^] 或 http://hwu.netapp.com/home.aspx["NetApp Hardware Universe"^]。
 
-* 主机上安装了多路径驱动程序，以便您可以同时使用这两个控制器。请参见 link:../config-linux/index.html["Linux 快速配置"]， 或  有关说明，请参见。
+* 主机上安装了多路径驱动程序，以便您可以同时使用这两个控制器。请参见 link:../config-linux/index.html["Linux 快速配置"]， link:../config-windows/index.html["Windows 快速配置"]或 link:../config-vmware/index.html["VMware 快速配置"] 有关说明，请参见。
 * ESD 腕带，或者您已采取其他防静电预防措施。
 * 1 号十字螺丝刀。
 * 用于标识新缆线的标签。

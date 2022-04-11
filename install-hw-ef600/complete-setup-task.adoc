@@ -193,4 +193,4 @@ image:../media/management_station_inst-hw-ef600_g2285.png[""]
 |===
 
 
-如果要为 EF300 布线以进行 SAS 扩展，请参见 link:../maintenance-ef600/index.html["维护 EF600 硬件"] 用于安装 SAS 扩展卡和  用于 SAS 扩展布线。
+如果要为 EF300 布线以进行 SAS 扩展，请参见 link:../maintenance-ef600/index.html["维护 EF600 硬件"] 用于安装 SAS 扩展卡和 link:../install-hw-cabling/index.html["为 E 系列硬件布线"] 用于 SAS 扩展布线。

@@ -49,9 +49,9 @@ SANtricity 操作系统升级过程包括以下组件：
 
 * * 控制器 NVSRA* - 控制器 NVSRAM 是一个控制器文件，用于指定控制器的默认设置。有关升级 NVSRAM 的说明随控制器的升级说明一起提供。
 * * 驱动器固件 * —请参见 link:upgrade-drive-firmware-task.html["升级驱动器固件"] 以获取单独的说明。
-* * 多路径 / 故障转移驱动程序 * —在升级过程中，可能还需要升级主机的多路径 / 故障转移驱动程序，以便主机可以与控制器正确交互。如果运行 Microsoft Windows 以外的操作系统的主机与存储系统具有 I/O 连接，请升级这些主机的多路径驱动程序。有关兼容性信息，请参见 https://mysupport.netapp.com/NOW/products/interoperability["NetApp 互操作性表"^]。有关升级说明，请参见 link:../config-linux/index.html["Linux 快速配置"]， 或 。
+* * 多路径 / 故障转移驱动程序 * —在升级过程中，可能还需要升级主机的多路径 / 故障转移驱动程序，以便主机可以与控制器正确交互。如果运行 Microsoft Windows 以外的操作系统的主机与存储系统具有 I/O 连接，请升级这些主机的多路径驱动程序。有关兼容性信息，请参见 https://mysupport.netapp.com/NOW/products/interoperability["NetApp 互操作性表"^]。有关升级说明，请参见 link:../config-linux/index.html["Linux 快速配置"]， link:../config-windows/index.html["Windows 快速配置"]或 link:../config-vmware/index.html["VMware 快速配置"]。
 * * SANtricity 统一管理器 * — Unified Manager 软件用于管理多个存储系统，包括 E2800 ， E5700 ， EF300 和 EF600 型号。Unified Manager 是 SANtricity Web 服务代理的一部分，该代理是单独安装在主机系统上的 RESTful API 服务器，用于管理数百个新旧的 NetApp E 系列存储系统。有关详细信息，请参见 link:../web-services-proxy/index.html["SANtricity Web 服务代理概述"]。
-* * 实用程序 * —其他管理实用程序需要单独升级，例如 SANtricity Windows 主机实用程序， SANtricity Linux 主机实用程序和 SANtricity Windows DSM 。有关这些实用程序的详细信息，请参见 link:../config-linux/index.html["Linux 快速配置"]， 或 。
+* * 实用程序 * —其他管理实用程序需要单独升级，例如 SANtricity Windows 主机实用程序， SANtricity Linux 主机实用程序和 SANtricity Windows DSM 。有关这些实用程序的详细信息，请参见 link:../config-linux/index.html["Linux 快速配置"]， link:../config-windows/index.html["Windows 快速配置"]或 link:../config-vmware/index.html["VMware 快速配置"]。
 * * 旧版系统 * —如果存储系统属于包含旧版存储系统的存储网络，则可能需要使用旧版 SANtricity Storage Manager 企业管理窗口（ EMW ）提供所有存储系统的企业级视图。在这种情况下，请检查是否存在较新的 SANtricity 存储管理器维护版本。
 
 

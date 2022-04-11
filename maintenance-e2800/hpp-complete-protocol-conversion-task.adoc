@@ -116,7 +116,7 @@ image::../media/sam1130_ss_host_settings_dialog_ports_tab_maint-e2800.gif[sam113
 . 将任何 FC 主机从新的 iSCSI 端口移至保留 FC 的端口。
 . 如果尚未使用双协议 SFP ，请删除任何 FC SFP 。
 . 直接或使用交换机将新的 iSCSI 主机连接到这些端口。
-. 为新主机和端口配置 iSCSI 网络。有关说明，请参见 link:../config-linux/index.html["Linux 快速配置"]， 或 。
+. 为新主机和端口配置 iSCSI 网络。有关说明，请参见 link:../config-linux/index.html["Linux 快速配置"]， link:../config-windows/index.html["Windows 快速配置"]或 link:../config-vmware/index.html["VMware 快速配置"]。
 
 
 
@@ -153,7 +153,7 @@ image::../media/sam1130_ss_host_settings_dialog_ports_tab_maint-e2800.gif[sam113
 . 将所有 iSCSI 主机从新 FC 端口移至保留 iSCSI 的端口。
 . 如果尚未使用双协议 SFP ，请删除任何 FC SFP 。
 . 直接或使用交换机将新的 FC 主机连接到这些端口。
-. 为新主机和端口配置 FC 网络。有关说明，请参见 link:../config-windows/index.html["Linux 快速配置"]， 或 。
+. 为新主机和端口配置 FC 网络。有关说明，请参见 link:../config-windows/index.html["Linux 快速配置"]， link:../config-windows/index.html["Windows 快速配置"]或 link:../config-vmware/index.html["VMware 快速配置"]。
 
 
 
@@ -190,7 +190,7 @@ image::../media/sam1130_ss_host_settings_dialog_ports_tab_maint-e2800.gif[sam113
 . 如果您尚未使用双协议 SFP ，请卸下所有 iSCSI SFP ，并将其更换为 FC SFP 或双协议 SFP 。
 . 如果尚未使用双协议 SFP ，请删除任何 FC SFP 。
 . 直接或使用交换机将新的 FC 主机连接到这些端口
-. 为新主机和端口配置 FC 网络。有关说明，请参见 link:../config-linux/index.html["Linux 快速配置"]， 或 。
+. 为新主机和端口配置 FC 网络。有关说明，请参见 link:../config-linux/index.html["Linux 快速配置"]， link:../config-windows/index.html["Windows 快速配置"]或 link:../config-vmware/index.html["VMware 快速配置"]。
 
 
 
@@ -226,7 +226,7 @@ image::../media/sam1130_ss_host_settings_dialog_ports_tab_maint-e2800.gif[sam113
 
 . 如果您尚未使用双协议 SFP ，请卸下所有 FC SFP ，并将其更换为 iSCSI SFP 或双协议 SFP 。
 . 直接或使用交换机将新的 iSCSI 主机连接到这些端口。
-. 为新主机和端口配置 iSCSI 网络。有关说明，请参见 link:../config-linux/index.html["Linux 快速配置"]， 或 。
+. 为新主机和端口配置 iSCSI 网络。有关说明，请参见 link:../config-linux/index.html["Linux 快速配置"]， link:../config-windows/index.html["Windows 快速配置"]或 link:../config-vmware/index.html["VMware 快速配置"]。
 
 
 

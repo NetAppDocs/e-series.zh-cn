@@ -142,7 +142,7 @@ NOTE: 在使用内部密钥管理对混合安全驱动器执行控制器更换�
 
 
 +
-有关兼容硬件的信息，请参见 https://mysupport.netapp.com/NOW/products/interoperability["NetApp 互操作性表"^] 和。
+有关兼容硬件的信息，请参见 https://mysupport.netapp.com/NOW/products/interoperability["NetApp 互操作性表"^] 和 http://hwu.netapp.com/home.aspx["NetApp Hardware Universe"^]。
 
 . 如果在准备机头交换时为所有精简卷禁用了回写缓存，请重新启用回写缓存。
 +

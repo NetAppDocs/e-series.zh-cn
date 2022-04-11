@@ -44,7 +44,7 @@ image::../media/web_services_proxy_overview.gif[Web 服务代理概述]
  a| 
 安装
  a| 
-需要主机系统（ Linux 或 Windows ）。此代理可从下载 http://mysupport.netapp.com/NOW/cgi-bin/software/?product=E-Series+SANtricity+Web+Services+%28REST+API%29&platform=WebServices["NetApp 支持站点"^] 或。
+需要主机系统（ Linux 或 Windows ）。此代理可从下载 http://mysupport.netapp.com/NOW/cgi-bin/software/?product=E-Series+SANtricity+Web+Services+%28REST+API%29&platform=WebServices["NetApp 支持站点"^] 或 https://hub.docker.com/r/netapp/eseries-webservices/["DockerHub"^]。
  a| 
 无需安装或启用。
 

@@ -7262,4 +7262,6 @@
   <block id="86e856206affbccd36d96e0932a14510" category="paragraph">要验证是否已加载 `NVMe-RDMA` 内核模块，请运行以下命令：</block>
   <block id="dbf42093a0041931999943f18d3f0986" category="paragraph">以下信息适用场景 为 E2800 ， E2800B ， EF280 ， E5700 ， EF5700B 布线， 或 EF570 控制器架连接到 DE212C ， DE224C 或 DE460 驱动器架。</block>
   <block id="67b64abed949ae2b1a2626ebe211fd47" category="paragraph">此 操作步骤 适用场景 会将 DE212C ， DE224C 或 DE460C 驱动器架热添加到 E2800 ， E2800B ， EF280 ， E5700 ， E5700B ， EF570 或 EF300 控制器架。</block>
+  <block id="f2c505979298b93cfd8e71dc78ddd1b0" category="admonition">请勿混合使用不同电压类型的 PSU 。请始终像这样替换。</block>
+  <block id="b7b26f8fd8107cf68f2bc572008d19a7" category="admonition">替代控制器预安装了 16 GB 内存。如果您的控制器需要 64 GB 配置，请在安装替代控制器之前使用随附的升级套件。</block>
 </blocks>

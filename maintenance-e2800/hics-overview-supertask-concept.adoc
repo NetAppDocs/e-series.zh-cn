@@ -60,7 +60,7 @@ summary: 查看更换 E2800 HIC 的要求。
 
 * 您拥有连接新主机端口所需的所有缆线，收发器，交换机和主机总线适配器（ HBA ）。
 +
-有关兼容硬件的信息，请参见 https://mysupport.netapp.com/NOW/products/interoperability["NetApp 互操作性表"^] 或。
+有关兼容硬件的信息，请参见 https://mysupport.netapp.com/NOW/products/interoperability["NetApp 互操作性表"^] 或 http://hwu.netapp.com/home.aspx["NetApp Hardware Universe"^]。
 
 * 您已安装 ESD 腕带，或者已采取其他防静电预防措施。
 * 您有一个 1 号十字螺丝刀。

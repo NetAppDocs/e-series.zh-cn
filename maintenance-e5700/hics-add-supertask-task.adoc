@@ -25,7 +25,7 @@ summary: 在 E5700 中添加 HIC 。
 * 为新主机端口安装了新的主机硬件，例如交换机或主机总线适配器（ HBA ）。
 * 连接新主机端口所需的所有缆线，收发器，交换机和主机总线适配器（ HBA ）。
 +
-有关兼容硬件的信息，请参见 https://mysupport.netapp.com/NOW/products/interoperability["NetApp 互操作性表"^] 和。
+有关兼容硬件的信息，请参见 https://mysupport.netapp.com/NOW/products/interoperability["NetApp 互操作性表"^] 和 http://hwu.netapp.com/home.aspx["NetApp Hardware Universe"^]。
 
 * 用于标识连接到控制器箱的每个缆线的标签。
 * ESD 腕带，或者您已采取其他防静电预防措施。
@@ -338,7 +338,7 @@ NOTE: 如果无法解决此问题，请联系技术支持。
 
 . 使用缆线将控制器的主机端口连接到数据主机。
 +
-如果您需要有关配置和使用新主机协议的说明，请参见 link:../config-linux/index.html["Linux 快速配置"]， 或 。
+如果您需要有关配置和使用新主机协议的说明，请参见 link:../config-linux/index.html["Linux 快速配置"]， link:../config-windows/index.html["Windows 快速配置"]或 link:../config-vmware/index.html["VMware 快速配置"]。
 
 
 

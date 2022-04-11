@@ -34,7 +34,7 @@ NOTE: 此操作步骤 适用于同类磁盘架 IOM 热插拔或更换。这意�
 image::../media/28_dwg_e2824_de224c_drive_numbering_maint-e5700.gif[28 dwg e2824 de224c 驱动器编号 maint e5700]
 
 
-NOTE: E5724 存储阵列可能包含一个或多个 SAS-2 原有扩展驱动器托盘，包括 DE5600 24 驱动器托盘或 DE6600 60 驱动器托盘有关更换其中一个驱动器托盘中的驱动器的说明，请参见 link:https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2577975["更换 E2660 ， E2760 ， E5460 ， E5560 或 E5660 驱动器托盘中的驱动器"] 和 。
+NOTE: E5724 存储阵列可能包含一个或多个 SAS-2 原有扩展驱动器托盘，包括 DE5600 24 驱动器托盘或 DE6600 60 驱动器托盘有关更换其中一个驱动器托盘中的驱动器的说明，请参见 link:https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2577975["更换 E2660 ， E2760 ， E5460 ， E5560 或 E5660 驱动器托盘中的驱动器"] 和 link:https://library.netapp.com/ecmdocs/ECMLP2577971/html/GUID-E9157E41-F4BF-4237-9454-F1C9145247F0.html["更换 E2600 ， E2700 ， E5400 ， E5500 和 E5600 12 驱动器或 24 驱动器托盘中的驱动器"]。
 
 
 
@@ -49,7 +49,7 @@ image::../media/28_dwg_e2860_de460c_front_no_callouts_maint-e5700.gif[28 dwg e28
 image::../media/dwg_trafford_drawer_with_hdds_callouts_maint-e5700.gif[带 HDD 标注的 ｛ \f219 DWG Trafford ｝ 抽盒 maint e5700]
 
 
-NOTE: E5760 存储阵列可能包含一个或多个 SAS-2 原有扩展驱动器托盘，包括 DE1600 12 驱动器托盘， DE5600 24 驱动器托盘或 DE6600 60 驱动器托盘有关更换其中一个驱动器托盘中的驱动器的说明，请参见 link:https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2577975["更换 E2660 ， E2760 ， E5460 ， E5560 或 E5660 驱动器托盘中的驱动器"] 和 。
+NOTE: E5760 存储阵列可能包含一个或多个 SAS-2 原有扩展驱动器托盘，包括 DE1600 12 驱动器托盘， DE5600 24 驱动器托盘或 DE6600 60 驱动器托盘有关更换其中一个驱动器托盘中的驱动器的说明，请参见 link:https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2577975["更换 E2660 ， E2760 ， E5460 ， E5560 或 E5660 驱动器托盘中的驱动器"] 和 link:https://library.netapp.com/ecmdocs/ECMLP2577971/html/GUID-E9157E41-F4BF-4237-9454-F1C9145247F0.html["更换 E2600 ， E2700 ， E5400 ， E5500 和 E5600 12 驱动器或 24 驱动器托盘中的驱动器"]。
 
 
 

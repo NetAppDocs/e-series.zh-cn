@@ -15,7 +15,7 @@ summary: 在更换 EF300 或 EF600 HIC 之前，请查看要求和注意事项�
 * 您已为此操作步骤计划停机维护时段。在成功完成此操作步骤之前，您无法访问存储阵列上的数据。由于两个控制器在启动时必须具有相同的 HIC 配置，因此在更改 HIC 配置时必须关闭电源。如果存在不匹配的 HIC ，则会导致具有替代 HIC 的控制器在联机时锁定。
 * 您拥有连接新主机端口所需的所有缆线，收发器，交换机和主机总线适配器（ HBA ）。
 +
-有关兼容硬件的信息，请参见 https://mysupport.netapp.com/NOW/products/interoperability["NetApp 互操作性表"^] 或。
+有关兼容硬件的信息，请参见 https://mysupport.netapp.com/NOW/products/interoperability["NetApp 互操作性表"^] 或 http://hwu.netapp.com/home.aspx["NetApp Hardware Universe"^]。
 
 * 您已安装 ESD 腕带，或者已采取其他防静电预防措施。
 * 您有一个 1 号十字螺丝刀。
