@@ -5,6 +5,7 @@ keywords: installation, download, install proxy,
 summary: 安装涉及下载文件，然后在 Linux 或 Windows 服务器上安装代理软件包。 
 ---
 = 下载并安装 Web 服务代理文件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

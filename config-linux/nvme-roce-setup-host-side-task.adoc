@@ -5,6 +5,7 @@ keywords: express linux configuration, software configuration, linux host, E2800
 summary: RoCE 环境中的 NVMe 启动程序配置包括安装和配置 RDMA-core 和 NVMe-CLI 软件包，配置启动程序 IP 地址以及在主机上设置 NVMe-oF 层。 
 ---
 = 在主机端设置基于 RoCE 的 NVMe
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: Nvme over FC, express vmware configuration, software configuration, vm
 summary: 对于基于光纤通道的 NVMe 协议，您可以配置交换机并确定主机端口标识符。 
 ---
 = 执行基于 FC 的 NVMe 专用任务
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

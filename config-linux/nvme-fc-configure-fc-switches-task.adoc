@@ -5,6 +5,7 @@ keywords: FC switch, zoning, express linux configuration, software configuration
 summary: 通过配置光纤通道 \ （分区 \ ）交换机，主机可以连接到存储阵列并限制路径数。您可以使用交换机的管理界面对交换机进行分区。 
 ---
 = 配置 FC 交换机
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

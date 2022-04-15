@@ -5,6 +5,7 @@ keywords: Switches, zoning, express linux configuration, software configuration,
 summary: 根据供应商针对 iSCSI 的建议配置交换机。 
 ---
 = 配置交换机
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

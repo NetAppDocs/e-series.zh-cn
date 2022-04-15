@@ -5,6 +5,7 @@ keywords: power, supply, redundant, source, controller, shelf, supplies
 summary: 电源可在控制器架中提供冗余电源。 
 ---
 = 电源
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

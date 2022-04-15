@@ -616,7 +616,6 @@
   <block id="e82ba360b90b9dc8c3512d90f81adae2" category="admonition">此插件不能直接替代 SANtricity System Manager 软件。在单个阵列上执行某些存储管理任务仍需要 System Manager 。</block>
   <block id="05ed80d1233d90c62b52eb88f5b39c76" category="paragraph">要安装和运行插件 Web 服务器，插件需要在 VMware 环境中部署一个 VMware vCenter Server 设备以及一个应用程序主机。</block>
   <block id="48d764802fe6e980e3b6bd8569912134" category="paragraph">有关 vCenter 环境中通信的详细信息，请参见下图。</block>
-  <block id="3bf4c5ae23f12f4212cf98bf1595f373" category="image-alt">vCenter 通信</block>
   <block id="282155126a94a0702cfd80daf38d4362" category="section-title">配置概述</block>
   <block id="4c325e0efa9d7efb489577d6f330275e" category="inline-link-macro">安装并注册插件</block>
   <block id="9670be495e136856463c7e5aa230b55e" category="list-text"><block ref="086335fac0a72f6b7709b869613c6621" category="inline-link-macro-rx"></block>。</block>
@@ -1728,7 +1727,6 @@
   <block id="a320ceabc99151b468bbfc423c22bfdf" category="list-text">在 SANtricity 系统管理器的恢复 Guru 中，选择 * 重新检查 * 以确保问题已解决。</block>
   <block id="c01085e6cd0606ebdc3939310bd696ac" category="list-text">如果仍报告出现故障的电源，请重复中的步骤 <block ref="ea8874311efff004f4ccf043a598fb2e" category="inline-xref-macro-rx"></block> 和中的 <block ref="1b7a0d310d8da3d5c98eb62f6d26c34f" category="inline-xref-macro-rx"></block>。如果问题仍然存在，请联系技术支持。</block>
   <block id="8d50e29d2dbe5c9bd78247f7b1bdb86f" category="list-text">删除防静电保护。</block>
-  <block id="a8280a793d4f574a1e8ec9fdeff29427" category="list-text">按照套件随附的 RMA 说明将故障部件退回 NetApp 。</block>
   <block id="3dbc4b1fda3f7e5b612f7b6c5b1c62db" category="paragraph">电源更换已完成。您可以恢复正常操作。</block>
   <block id="1cceb37762649e12d403d1def85f4c21" category="summary">查看 E5700 驱动器要求。</block>
   <block id="f606b288add440526eb541bfdfeaba20" category="doc">更换 E5700 驱动器的要求</block>
@@ -2148,7 +2146,6 @@
   <block id="bfe0056c6787fe62d52c9480cc0c3591" category="paragraph">* （ 2 ） * _ 警示 LED （琥珀色） _</block>
   <block id="141788fd9fbcd786d76f541540756dc4" category="list-text">或者，您也可以使用以下命令行界面命令：</block>
   <block id="5811caab16d9ae3e7df8465579187dda" category="list-text">* Oe* ， * 第 6 页 * ， * 空白 _* （不受支持的 HIC ） * 注意： * * 可能丢失数据访问 * - 如果您刚刚安装的控制器显示其中一个代码，而另一个控制器由于任何原因而重置，则第二个控制器也可能锁定。</block>
-  <block id="738a8c736dcf0a5ae4920a6448ab8da7" category="paragraph">请通过联系技术支持<block ref="2ff36e7792a0e0257d19a11dce8cade8" category="inline-link-rx"></block>, 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific) if you need the RMA number.</block>
   <block id="2af7d274631cea316011b977d54e2eaf" category="paragraph">您的 HIC 更换已完成。您可以恢复正常操作。</block>
   <block id="11fdd43137cfc836a71e2c84f0134b65" category="summary">You can help us to improve the quality of our documentation by sending us your feedback.首次发布生产级 \ （ GA/FCS\ ）文档或对现有生产级文档进行重要更改时，您可以收到自动通知。</block>
   <block id="6ab85e747e0c76cd7c95b5eb2dd03018" category="doc">How to send comments about documentation and receive update notifications</block>
@@ -6305,8 +6302,6 @@
   <block id="dcd56d80ecc0d78aefb3259c4aa4270b" category="summary">对于 SLES 15 ，您可以在原生 NVMe 设备上创建文件系统并挂载该文件系统。</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">法律声明提供对版权声明、商标、专利等的访问。</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律声明</block>
-  <block id="c59ae8d7beeb519a23478ab048af482c" category="paragraph"><block ref="c59ae8d7beeb519a23478ab048af482c" category="inline-link-macro-rx"></block></block>
-  <block id="6f2ac1cf1da8ec34232c651d4bba0149" category="paragraph"><block ref="6f2ac1cf1da8ec34232c651d4bba0149" category="inline-link-macro-rx"></block></block>
   <block id="cc1ba14f8dc9bd7ba20e2aa654cde10b" category="inline-link">E 系列 /EF 系列 SANtricity 操作系统注意事项</block>
   <block id="2dae7f81af3097152530b0bc519d7eb1" category="paragraph"><block ref="2dae7f81af3097152530b0bc519d7eb1" category="inline-link-rx"></block></block>
   <block id="f54101aa6702c025c4f74ec5ada7bae3" category="summary">管理存储</block>
@@ -7264,4 +7259,19 @@
   <block id="67b64abed949ae2b1a2626ebe211fd47" category="paragraph">此 操作步骤 适用场景 会将 DE212C ， DE224C 或 DE460C 驱动器架热添加到 E2800 ， E2800B ， EF280 ， E5700 ， E5700B ， EF570 或 EF300 控制器架。</block>
   <block id="f2c505979298b93cfd8e71dc78ddd1b0" category="admonition">请勿混合使用不同电压类型的 PSU 。请始终像这样替换。</block>
   <block id="b7b26f8fd8107cf68f2bc572008d19a7" category="admonition">替代控制器预安装了 16 GB 内存。如果您的控制器需要 64 GB 配置，请在安装替代控制器之前使用随附的升级套件。</block>
+  <block id="103c35d06a9326cb406be18b9f01dd19" category="paragraph"><block ref="103c35d06a9326cb406be18b9f01dd19" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="de12f8e20bb08c1655c9e9ec9fcdf669" category="inline-link">部件退回和放大器；更换页面</block>
+  <block id="b513e4fc1080a3f36d587a4f3f169ecd" category="list-text">按照套件随附的 RMA 说明将故障部件退回 NetApp 。请参见<block ref="e0e4d885bf8f1687472b6fca77c9b03b" category="inline-link-rx"></block> 了解更多信息。</block>
+  <block id="6016a2b341113bf496b719905398ecd2" category="section-title">版权</block>
+  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
+  <block id="126a02652da6de02962cf1b654fd6376" category="section-title">商标</block>
+  <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp 、 NetApp 徽标和 NetApp 商标页面上列出的标记是 NetApp 、 Inc. 的商标。其他公司和产品名称可能是其各自所有者的商标。</block>
+  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
+  <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">专利</block>
+  <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">有关 NetApp 拥有的专利的最新列表，请访问：</block>
+  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
+  <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">隐私政策</block>
+  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
+  <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">开放源代码</block>
+  <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知文件提供有关 NetApp 软件中使用的第三方版权和许可证的信息。</block>
 </blocks>

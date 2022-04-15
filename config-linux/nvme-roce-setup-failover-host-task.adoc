@@ -5,6 +5,7 @@ keywords: failover, express linux configuration, software configuration, linux h
 summary: 将主机配置为运行故障转移。 
 ---
 = 在主机上设置故障转移
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

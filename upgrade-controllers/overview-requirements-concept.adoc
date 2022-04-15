@@ -5,6 +5,7 @@ keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upg
 summary: 查看升级和更换 E 系列控制器的要求。 
 ---
 = 升级注意事项
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

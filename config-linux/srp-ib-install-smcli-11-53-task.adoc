@@ -5,6 +5,7 @@ keywords: Storage Manager, cli, command line interface, express linux configurat
 summary: 在管理工作站上安装 SANtricity 存储管理器软件时，默认情况下会安装图形用户界面（ gui ）和命令行界面（ cli\ ）。以下说明假定您将在管理工作站上安装 SANtricity 存储管理器图形用户界面，而不是在 I/O 主机上安装。 
 ---
 = 安装适用于 SMCLI 的 SANtricity 存储管理器（ SANtricity 软件 11.53 或更早版本）
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

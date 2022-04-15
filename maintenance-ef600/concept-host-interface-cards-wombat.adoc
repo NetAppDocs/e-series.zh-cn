@@ -5,6 +5,7 @@ keywords: host, interface, card, hic, install, controller, canister, ef600, port
 summary: 必须在控制器箱中安装主机接口卡（ HIC\ ）。EF600 控制器在可选 HIC 上包含主机端口。HIC 中内置的主机端口称为 HIC 端口。 
 ---
 = 主机接口卡
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

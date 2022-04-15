@@ -5,6 +5,7 @@ keywords: define Linux host, express linux configuration, linux host,
 summary: 您可以使用 SANtricity 系统管理器定义向存储阵列发送数据的主机。定义主机是让存储阵列知道连接了哪些主机并允许对卷进行 I/O 访问所需的步骤之一。 
 ---
 = 定义主机
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

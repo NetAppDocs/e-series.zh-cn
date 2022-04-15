@@ -5,6 +5,7 @@ keywords: LUNs, discover LUNs, express Windows configuration, software configura
 summary: 发现适用于 Windows 的存储快速方法。 
 ---
 = 发现主机上的存储
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

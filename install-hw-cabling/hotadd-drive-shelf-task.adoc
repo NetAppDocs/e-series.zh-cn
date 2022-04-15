@@ -5,6 +5,7 @@ keywords: cabling, cables, hot add, hot add drive shelf, E-Series, eseries, E280
 summary: 在其他组件仍通电的情况下添加新驱动器架。 
 ---
 = 热添加驱动器架
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

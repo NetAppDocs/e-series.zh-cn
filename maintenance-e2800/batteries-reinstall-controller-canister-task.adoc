@@ -5,6 +5,7 @@ keywords: E2800 battery fail, E2800 battery, E2800 battery replacement, replace 
 summary: 安装新电池后，将控制器箱重新安装到控制器架中。 
 ---
 = 重新安装 E2800 控制器箱
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

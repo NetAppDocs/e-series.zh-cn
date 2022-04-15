@@ -5,6 +5,7 @@ keywords: volumes, host volume, express linux configuration, software configurat
 summary: 您可以将 NVMe 与光纤通道协议结合使用。 
 ---
 = 基于光纤通道的 NVMe 快速设置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

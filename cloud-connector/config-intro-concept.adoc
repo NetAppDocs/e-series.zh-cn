@@ -5,6 +5,7 @@ keywords: Cloud Connector configuration
 summary: 成功安装后，您可以通过配置向导设置 SANtricity 云连接器应用程序。首次登录到 SANtricity 云连接器后，将显示配置向导。 
 ---
 = 首次配置 SANtricity 云连接器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

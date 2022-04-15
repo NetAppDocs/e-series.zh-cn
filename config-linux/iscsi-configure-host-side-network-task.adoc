@@ -5,6 +5,7 @@ keywords: configure iSCSI networking, express linux configuration, software conf
 summary: 在主机端配置 iSCSI 网络。 
 ---
 = 配置主机端网络
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

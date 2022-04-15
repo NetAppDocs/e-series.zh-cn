@@ -6,10 +6,11 @@ summary: 适用于 vCenter 的 SANtricity 存储插件可在 VMware vSphere 客�
 ---
 = 适用于 vCenter 的存储插件概述
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
@@ -32,7 +33,7 @@ NOTE: 此插件不能直接替代 SANtricity System Manager 软件。在单个�
 
 有关 vCenter 环境中通信的详细信息，请参见下图。
 
-image::../media/vcenter_communication.png[vCenter 通信]
+image:../media/vcenter_communication.png[""]
 
 
 

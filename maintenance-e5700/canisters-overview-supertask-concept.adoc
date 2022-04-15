@@ -5,6 +5,7 @@ keywords: E5700 canister, E5700 power supply, repair E5700 power supply, replace
 summary: 查看 E5700 箱类型和要求。 
 ---
 = 更换 E5700 箱的要求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

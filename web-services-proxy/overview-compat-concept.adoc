@@ -5,6 +5,7 @@ keywords: Web Services, WSP, SANtricity API,
 summary: WSP 的兼容性和限制。 
 ---
 = 兼容性和限制
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

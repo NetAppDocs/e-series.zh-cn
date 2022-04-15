@@ -6,6 +6,7 @@ summary: 登录并导航适用于 vCenter 的插件。
 ---
 = 登录并导航适用于 vCenter 的存储插件
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

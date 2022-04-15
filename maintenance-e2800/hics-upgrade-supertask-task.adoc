@@ -5,6 +5,7 @@ keywords: upgrading E2800 HIC, upgrade E2800 HIC, upgrade host interface card, E
 summary: 升级 E2800 阵列中的主机接口卡（ HIC ）。 
 ---
 = 升级 E2800 主机接口卡（ HIC ）
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

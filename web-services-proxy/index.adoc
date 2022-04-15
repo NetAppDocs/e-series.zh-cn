@@ -5,6 +5,7 @@ keywords: Web Services Proxy, WSP,
 summary: SANtricity ® Web 服务代理， Web 服务 API ， REST API 概述 
 ---
 = SANtricity Web 服务代理概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

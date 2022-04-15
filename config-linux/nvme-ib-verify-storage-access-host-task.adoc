@@ -5,6 +5,7 @@ keywords: express linux configuration, software configuration, linux host, E2800
 summary: 在使用命名空间之前，您需要验证主机是否可以将数据写入命名空间并将其读回。 
 ---
 = 验证主机上的存储访问
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

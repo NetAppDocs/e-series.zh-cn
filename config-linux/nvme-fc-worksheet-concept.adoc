@@ -5,6 +5,7 @@ keywords: NVMe over FC worksheet Linux, express linux configuration, software co
 summary: 使用此工作表记录基于光纤通道的 NVMe 存储配置信息。 
 ---
 = 记录您的基于 FC 的 NVMe 配置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

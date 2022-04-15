@@ -5,6 +5,7 @@ keywords: NVMe over Fibre Channel, host side, express linux configuration, softw
 summary: 光纤通道环境中的 NVMe 启动程序配置包括安装和配置 NVMe-CLI 软件包，以及在主机上启用 NVMe/FC 启动程序。 
 ---
 = 在主机端设置基于光纤通道的 NVMe
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

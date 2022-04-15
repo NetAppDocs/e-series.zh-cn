@@ -5,6 +5,7 @@ keywords: express linux configuration, software configuration, linux host, E2800
 summary: 使用 NVMe-CLI 软件包中的 SMdevices 工具查看主机上当前可见的卷。这是 NVMe list 命令的替代方案。 
 ---
 = 显示主机可见的卷
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upg
 summary: 启动控制器架并验证控制器软件版本，以完成控制器升级。然后，您可以收集支持数据并恢复操作。 
 ---
 = 完成控制器升级
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

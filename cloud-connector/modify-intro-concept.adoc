@@ -5,6 +5,7 @@ keywords: Cloud Connector settings
 summary: 您可以访问 SANtricity 云连接器应用程序左侧导航面板中的设置选项。通过设置选项，您可以修改应用程序的 S3 帐户，受管存储阵列和主机以及 Web 服务代理凭据的当前配置。您还可以通过设置选项更改 SANtricity 云连接器应用程序的密码。 
 ---
 = 修改 SANtricity 云连接器设置
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

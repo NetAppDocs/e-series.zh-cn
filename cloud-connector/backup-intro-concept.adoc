@@ -5,6 +5,7 @@ keywords: Cloud Connector backup
 summary: 您可以访问 SANtricity 云连接器应用程序左侧导航面板中的备份选项。备份选项将显示备份页面，在此可以创建新的基于映像或基于文件的备份作业。 
 ---
 = 备份
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

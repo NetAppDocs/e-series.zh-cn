@@ -5,6 +5,7 @@ keywords: replace EF300 HIC, replace EF600 HIC, host interface card failed, HIC 
 summary: 更换发生故障的 EF300 或 EF600 主机接口卡（ HIC ）。 
 ---
 = 更换 EF300 或 EF600 中发生故障的主机接口卡（ HIC ）
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

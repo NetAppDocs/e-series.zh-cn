@@ -5,6 +5,7 @@ keywords: configure network connection, express linux configuration, software co
 summary: 如果您的配置使用基于 Infiniband 的 iSER 协议，请执行本节中的步骤。 
 ---
 = 配置网络连接
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

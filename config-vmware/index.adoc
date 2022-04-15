@@ -5,6 +5,7 @@ keywords: express vmware configuration, software configuration, vmware host, E28
 summary: 对采用 E 系列系统的 VMware 主机使用快速配置。 
 ---
 = VMware 快速配置概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

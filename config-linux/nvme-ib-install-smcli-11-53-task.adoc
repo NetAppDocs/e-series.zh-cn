@@ -5,6 +5,7 @@ keywords: install Storage Manager Linux, install CLI Windows, install command li
 summary: 使用 Linux 快速方法安装适用于 CLI 和 HCA 的 Storage Manager 。 
 ---
 = 安装适用于 SMCLI 的 SANtricity 存储管理器（ SANtricity 软件 11.53 或更早版本）
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

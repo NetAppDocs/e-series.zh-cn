@@ -5,6 +5,7 @@ keywords: sas, express, setup
 summary: SAS 快速设置 
 ---
 = SAS 快速设置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

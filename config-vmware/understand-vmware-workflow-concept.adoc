@@ -5,6 +5,7 @@ keywords: workflow, guide, express, method, configuring, configure, storage, arr
 summary: 使用 WVMware 快速配置工作流。 
 ---
 = 了解 VMware 工作流
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

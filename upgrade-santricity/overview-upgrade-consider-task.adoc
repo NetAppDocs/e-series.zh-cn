@@ -5,6 +5,7 @@ keywords: E-Series, eseries, E2800, E5700, EF300, EF600, SANtricity, drive firmw
 summary: 查看存储阵列的 SANtricity 操作系统控制器软件和固件及其驱动器固件的升级注意事项。 
 ---
 = 升级注意事项
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

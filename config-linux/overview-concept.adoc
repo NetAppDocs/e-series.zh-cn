@@ -5,6 +5,7 @@ keywords: express linux configuration, software configuration, linux host, E2800
 summary: 查看使用快速方法设置 E 系列阵列和 Linux 主机的要求。 
 ---
 = 假设
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

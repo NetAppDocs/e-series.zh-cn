@@ -5,6 +5,7 @@ keywords: solution technical reports, e-series, hardware, santricity, os
 summary: E 系列技术报告 
 ---
 = 浏览解决方案技术报告
+:allow-uri-read: 
 
 
 

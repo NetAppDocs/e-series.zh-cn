@@ -5,6 +5,7 @@ keywords: EF300, EF600, installation
 summary: 安装并设置 EF300 和 EF600 阵列。 
 ---
 = 安装和设置 EF300 和 EF600 存储系统
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 :pdfdir: ../pdf/

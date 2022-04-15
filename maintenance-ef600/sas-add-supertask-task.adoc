@@ -5,6 +5,7 @@ keywords: replace EF300 SAS expansion card, replacing SAS card, drive tray expan
 summary: 向 EF300 控制器添加 SAS 扩展卡，以允许驱动器托盘扩展。 
 ---
 = 将 SAS 扩展卡添加到 EF300
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

@@ -5,6 +5,7 @@ keywords: express linux configuration, software configuration, linux host, E2800
 summary: 对于 SAS 协议，您可以使用 HBA 实用程序查找 SAS 地址，然后使用 HBA BIOS 进行相应的配置设置。 
 ---
 = 确定 SAS 主机标识符— Linux
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

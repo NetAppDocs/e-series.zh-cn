@@ -5,6 +5,7 @@ keywords: Fibre Channel protocol, switches, zone switches, zoning, host port ide
 summary: 对于光纤通道协议，您可以配置交换机并确定主机端口标识符。 
 ---
 = 执行特定于 FC 的任务
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

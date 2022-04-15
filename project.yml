@@ -2,7 +2,7 @@
 settings:
   name: e-series
   internal:
-    pdf_enabled: true
+    pdf_enabled: false
   prod:
     pdf_enabled: true
     harmony_enabled: false
@@ -809,7 +809,7 @@ homepage:
     - title: Web 服务
       url: "/web-services-proxy/index.html"
     - title: 适用于 vCenter 的插件
-      url: "/san-spvc-ic-overview.html"
+      url: "/vcenter-plugin/san-spvc-ic-overview.html"
     - title: SMI-S 提供程序
       url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62208
   - title: 性能应用程序附加组件

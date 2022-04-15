@@ -5,6 +5,7 @@ keywords: express vmware configuration, software configuration, vmware host, E28
 summary: 验证是否支持 VMware 配置。 
 ---
 = 验证是否支持 VMware 配置
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

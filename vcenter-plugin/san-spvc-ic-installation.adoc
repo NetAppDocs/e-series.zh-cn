@@ -6,6 +6,7 @@ summary: 安装适用于 vCenter 的 SANtricity 存储插件。
 ---
 = 安装适用于 vCenter 的存储插件
 :hardbreaks:
+:allow-uri-read: 
 :experimental: 
 :nofooter: 
 :icons: font

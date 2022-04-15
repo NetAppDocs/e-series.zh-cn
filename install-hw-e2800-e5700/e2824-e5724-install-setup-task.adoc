@@ -5,6 +5,7 @@ keywords: instruction, describe, install, storage, system, provide, link, additi
 summary: 这些说明介绍如何安装和设置新存储系统，并提供指向其他内容的链接。 
 ---
 = E5724 ， EF570 ， EF280 ， E2812 ， E2824 的安装和设置说明 DE212C 和 DE224C
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

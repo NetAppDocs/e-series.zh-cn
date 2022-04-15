@@ -5,6 +5,7 @@ keywords: SRP over Infiniband worksheet Linux, express linux configuration, soft
 summary: 使用此工作表记录基于 Infiniband 的 SRP 存储配置信息。 
 ---
 = 记录基于 IB 的 SRP 配置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: FC worksheet Linux, express linux configuration, software configuratio
 summary: 使用此工作表记录 FC 存储配置信息。 
 ---
 = 记录 FC 配置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

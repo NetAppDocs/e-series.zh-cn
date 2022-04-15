@@ -5,6 +5,7 @@ keywords: E5700 change host protocol, E5700 baseboard ports, convert E5700 proto
 summary: 完成 E5700 主机协议转换。 
 ---
 = 完成 E5700 主机协议转换
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

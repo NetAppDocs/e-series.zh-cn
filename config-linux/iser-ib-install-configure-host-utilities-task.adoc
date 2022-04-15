@@ -5,6 +5,7 @@ keywords: Linux Unified Host Utilities, express linux configuration, software co
 summary: LInstall Linux Unified Host Utilities When Using iSER 。 
 ---
 = 安装和配置 Linux Unified Host Utilities
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

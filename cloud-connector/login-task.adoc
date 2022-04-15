@@ -5,6 +5,7 @@ keywords: Cloud Connector login, log in Cloud Connector
 summary: 您可以在支持的浏览器中通过配置的服务器访问 SANtricity 云连接器应用程序的图形用户界面。确保您已建立 SANtricity Cloud Connector 帐户。 
 ---
 = 登录到 SANtricity 云连接器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

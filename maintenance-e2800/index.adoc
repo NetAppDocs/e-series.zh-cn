@@ -5,6 +5,7 @@ keywords: E2800 maintenance, E2800 repair, replace E2800 components, replacing E
 summary: 对 E2800 组件执行维护。 
 ---
 = 维护 E2800 硬件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

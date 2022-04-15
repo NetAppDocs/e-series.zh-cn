@@ -5,6 +5,7 @@ keywords: 'E2800 convert host port protocol, convert E2800 FC iSCSI, Fibre Chann
 summary: 完成 E2800 阵列的主机端口协议转换。 
 ---
 = 完成 E2800 的主机协议转换
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

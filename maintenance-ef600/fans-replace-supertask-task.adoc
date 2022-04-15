@@ -5,6 +5,7 @@ keywords: replace EF300 fan, replace EF600 fan, fan fail
 summary: 更换 EF300 或 EF600 中的风扇。 
 ---
 = 更换 EF300 或 EF600 风扇
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

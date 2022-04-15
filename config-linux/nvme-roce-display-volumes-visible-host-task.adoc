@@ -5,6 +5,7 @@ keywords: display volumes host, express linux configuration, software configurat
 summary: SMdevices 工具是 NVMe-CLI 软件包的一部分，可用于查看主机上当前可见的卷。此工具可替代 NVMe list 命令。 
 ---
 = 显示主机可见的卷
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

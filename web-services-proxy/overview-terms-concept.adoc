@@ -5,6 +5,7 @@ keywords: Web Services terms, WSP concepts
 summary: 了解 Web 服务 API 
 ---
 = 术语和概念
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

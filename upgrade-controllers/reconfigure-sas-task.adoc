@@ -5,6 +5,7 @@ keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upg
 summary: 您可以将批准的 SAS-2 阵列（ E2700 ， E550/EF5500 ， E5600/EF560 ）中的控制器架转换为驱动器架，然后将该架以及任何关联的批准的 SAS-2 驱动器架（ DE1600 ， DE5600 ， DE6600 ）放置在新批准的 SAS-3 阵列（ E2800 ， E5700/EF570 ）和批准的 SAS-3 驱动器架（ DE224C ， DEC ）后面 不保留数据。 
 ---
 = 在新的 SAS-3 控制器架后面重新配置 SAS-2 系统
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upg
 summary: 准备通过保存驱动器安全密钥，收集支持数据以及使控制器脱机来升级控制器。 
 ---
 = 准备升级控制器
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

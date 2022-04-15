@@ -6,6 +6,7 @@ summary: 使用适用于 vCenter 的插件界面发现网络中阵列的 IP 地�
 ---
 = 在插件中发现存储阵列
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

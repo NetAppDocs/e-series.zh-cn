@@ -5,6 +5,7 @@ keywords: Web Services, WSP, roles WSP, user access WSP
 summary: 出于安全考虑，您可以管理用户对 Web 服务 API 和 Unified Manager 的访问。 
 ---
 = 在 Web 服务代理中管理用户访问
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

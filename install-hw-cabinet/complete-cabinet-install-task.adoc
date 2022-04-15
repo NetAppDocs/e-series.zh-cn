@@ -5,6 +5,7 @@ keywords: 3040 40U cabinet, cabinet installation, drive tray installation, contr
 summary: 完成机柜安装。 
 ---
 = 完成机柜安装
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

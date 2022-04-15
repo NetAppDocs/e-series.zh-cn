@@ -5,6 +5,7 @@ keywords: E2800 replace 12-drive power supply, E2800 replace 24-drive power supp
 summary: 更换 E2800 12 驱动器或 24 驱动器控制器架或驱动器架，其中包括两个具有集成风扇的电源。 
 ---
 = 更换 E2800 电源（ 12 驱动器或 24 驱动器）
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/
@@ -167,7 +168,7 @@ CAUTION: 将电源滑入系统时，请勿用力过大；否则可能会损坏�
 
 
 
-. 按照套件随附的 RMA 说明将故障部件退回 NetApp 。
+. 按照套件随附的 RMA 说明将故障部件退回 NetApp 。请参见 https://mysupport.netapp.com/site/info/rma["部件退回和放大器；更换页面"] 了解更多信息。
 
 
 电源更换已完成。您可以恢复正常操作。

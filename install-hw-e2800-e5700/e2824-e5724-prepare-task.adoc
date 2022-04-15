@@ -5,6 +5,7 @@ keywords: e5724, ef570, ef280, e2812, e2824, de212c, de224c, installation
 summary: 安装 E5724 ， EF570 ， EF280 ， E2812 ， E2824 DE212C 或 DE224C ，创建帐户并注册硬件。 
 ---
 = 准备安装
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

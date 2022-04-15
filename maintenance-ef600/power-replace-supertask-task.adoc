@@ -5,6 +5,7 @@ keywords: replace EF300 power supply, replace EF600 power supply,
 summary: 当 EF300 或 EF600 控制器出现故障时，请更换电源。 
 ---
 = 更换 EF300 或 EF600 电源
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

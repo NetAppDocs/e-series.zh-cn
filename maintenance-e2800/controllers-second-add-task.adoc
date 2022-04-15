@@ -5,6 +5,7 @@ keywords: add E2800 controller, adding E2800 controller, simplex to duplex, conv
 summary: 向仅包含一个控制器箱的控制器架添加另一个控制器，或者向单工版添加另一个控制器箱。 
 ---
 = 在 E2800 中添加第二个控制器箱
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

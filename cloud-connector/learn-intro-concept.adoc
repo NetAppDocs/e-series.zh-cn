@@ -5,6 +5,7 @@ keywords: Cloud Connector requirements
 summary: 与 SANtricity 云连接器应用程序关联的系统要求，设置，安装，配置和作业。 
 ---
 = Cloud Connector 的系统要求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

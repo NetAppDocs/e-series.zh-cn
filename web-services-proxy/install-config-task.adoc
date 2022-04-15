@@ -5,6 +5,7 @@ keywords: configure Web Services Proxy, WSP configuration, start stop Webserver,
 summary: 您可以修改 Web 服务代理设置，以满足环境的独特操作和性能要求。 
 ---
 = 配置 Web 服务代理
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

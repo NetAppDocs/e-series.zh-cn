@@ -5,6 +5,7 @@ keywords: express linux configuration, software configuration, linux host, E2800
 summary: 使用动态主机配置协议（ dhcp ）提供 IP 地址。 
 ---
 = 使用 DHCP 配置 IP 地址
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

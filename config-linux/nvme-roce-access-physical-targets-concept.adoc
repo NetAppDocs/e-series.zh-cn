@@ -5,6 +5,7 @@ keywords: NVMe volume physical, express linux configuration, software configurat
 summary: 您可以根据 Linux 版本配置定向到设备目标的 I/O 。 
 ---
 = 访问 NVMe 卷以实现物理 NVMe 设备目标
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

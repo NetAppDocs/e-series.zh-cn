@@ -5,6 +5,7 @@ keywords: configure network Linux, configure hosts linux, express linux configur
 summary: InfiniBand OFED 驱动程序堆栈支持在相同端口上同时运行 iSER 和 SRP ，因此不需要额外的硬件。 
 ---
 = 为存储连接的主机配置网络连接
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

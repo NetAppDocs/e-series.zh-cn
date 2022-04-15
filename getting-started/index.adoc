@@ -5,6 +5,7 @@ keywords: E-Series, eseries, E2800, E5700, EF300, EF600,
 summary: 此站点包含有关特定 E 系列版本，型号和组件的信息。 
 ---
 = 此站点包含的内容
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

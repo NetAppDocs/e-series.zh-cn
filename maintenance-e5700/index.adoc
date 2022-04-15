@@ -5,6 +5,7 @@ keywords: E5700 maintenance, repair E5700, replace E5700 components, E5724, EF57
 summary: 维护 E5700 硬件 
 ---
 = 维护 E5700 硬件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

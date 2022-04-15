@@ -5,6 +5,7 @@ keywords: 3040 40U cabinet specs, cabinet installation, drive tray installation,
 summary: 查看机柜安装概述和规格。 
 ---
 = 机柜规格
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: drive, device, physical, storage, media, data
 summary: 驱动器是为数据提供物理存储介质的设备。 
 ---
 = 驱动器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

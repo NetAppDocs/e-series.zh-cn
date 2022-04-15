@@ -5,6 +5,7 @@ keywords: multipath software for vmware, express vmware configuration, software 
 summary: 配置 m 软件，以便在其中一个物理路径中断时提供指向存储阵列的冗余路径。 
 ---
 = 配置多路径软件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

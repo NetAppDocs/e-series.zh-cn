@@ -5,6 +5,7 @@ keywords: LUNs, configure LUNs, express Windows configuration, software configur
 summary: 在主机上为 Windows 快速方法配置存储。 
 ---
 = 在主机上配置存储
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

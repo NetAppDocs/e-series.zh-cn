@@ -5,6 +5,7 @@ keywords: multipath.conf, express linux configuration, software configuration, l
 summary: 使用 multipath.conf 文件是多路径守护进程 multipathd 的配置文件。 
 ---
 = 设置 multipath.conf 文件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

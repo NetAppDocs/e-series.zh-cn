@@ -5,6 +5,7 @@ keywords: replace EF300 controller, replace EF600 controller, replace EF300 cani
 summary: 更换 EF300 或 EF600 控制器架中的单个控制器。 
 ---
 = 更换 EF300 或 EF600 控制器
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

@@ -5,6 +5,7 @@ keywords: SAS worksheet Linux, express linux configuration, software configurati
 summary: 使用此工作表记录 SAS 存储配置信息。 
 ---
 = 记录您的 SAS 配置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

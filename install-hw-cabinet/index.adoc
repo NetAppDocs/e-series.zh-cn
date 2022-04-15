@@ -5,6 +5,7 @@ keywords: 3040 40U cabinet, cabinet installation, drive tray installation, contr
 summary: 在 E 系列 3040 40U 机柜中安装驱动器托盘概述 
 ---
 = 在 3040 40U 机柜中安装托盘
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

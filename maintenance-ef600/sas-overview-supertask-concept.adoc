@@ -5,6 +5,7 @@ keywords: replace EF300 SAS expansion card, replacing SAS card, drive tray expan
 summary: 在更换 EF300 SAS 扩展卡之前，请查看要求和注意事项。 
 ---
 = 更换 EF300 SAS 扩展卡的要求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

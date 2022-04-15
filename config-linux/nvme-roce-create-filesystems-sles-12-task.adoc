@@ -5,6 +5,7 @@ keywords: file systems, express linux configuration, software configuration, lin
 summary: 对于 RHEL 7 和 SLES 12 ，您可以在命名空间上创建文件系统并挂载文件系统。 
 ---
 = 创建文件系统（ RHEL 7 和 SLES 12 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

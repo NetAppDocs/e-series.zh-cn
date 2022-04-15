@@ -5,6 +5,7 @@ keywords: convert EF300 host protocol, convert EF600 host protocol,
 summary: 在转换 EF300 或 EF600 主机协议之前，请查看要求和注意事项。 
 ---
 = EF300 或 EF600 主机协议转换的要求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

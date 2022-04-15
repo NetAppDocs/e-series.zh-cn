@@ -5,6 +5,7 @@ keywords: E2800, E5700, connect power cables
 summary: 连接电源线并打开驱动器架的电源。 
 ---
 = 连接缆线
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: multipath software for Windows, express Windows configuration, softwar
 summary: 安装 DSM 软件包，其中包含适用于 Windows 的多路径软件。 
 ---
 = 配置多路径软件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

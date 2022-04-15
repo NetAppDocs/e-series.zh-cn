@@ -5,6 +5,7 @@ keywords: configure storage ESXi, express vmware configuration, software configu
 summary: 您可以将分配给 ESXi 主机的存储用作虚拟机文件系统（ VMFS\ ）数据存储库或原始设备映射（ RDM ）。基于光纤通道的 NVMe 协议不支持 RDM 。 
 ---
 = 在主机上配置存储
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

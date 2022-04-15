@@ -5,6 +5,7 @@ keywords: E5700 battery, repair E5700 battery, replace E5700 battery, failed E57
 summary: 查看 E5700 电池更换要求和注意事项。 
 ---
 = 更换 E5700 电池的要求
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

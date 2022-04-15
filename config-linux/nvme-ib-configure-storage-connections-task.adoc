@@ -5,6 +5,7 @@ keywords: express linux configuration, software configuration, linux host, E2800
 summary: 如果控制器包含基于 InfiniBand 的 NVMe 端口，则可以使用 SANtricity 系统管理器配置每个端口的 IP 地址。 
 ---
 = 配置存储阵列基于 InfiniBand 的 NVMe 连接
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

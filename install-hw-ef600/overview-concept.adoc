@@ -5,6 +5,7 @@ keywords: EF300, EF600, installation process overview
 summary: 查看安装和设置 EF300 或 EF600 的过程。 
 ---
 = 安装过程
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

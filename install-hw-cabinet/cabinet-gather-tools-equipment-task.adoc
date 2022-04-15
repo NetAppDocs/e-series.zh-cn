@@ -5,6 +5,7 @@ keywords: 3040 40U cabinet, cabinet installation, drive tray installation, contr
 summary: 安装 3040 40U 机柜之前，请收集所需的工具和设备。 
 ---
 = 收集所需的工具和设备
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

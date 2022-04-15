@@ -5,6 +5,7 @@ keywords: E5700 host interface card, E5700 HIC, replace E5700 HIC, failed E5700 
 summary: 在 E5700 中添加 HIC 。 
 ---
 = 添加 E5700 主机接口卡（ HIC ）
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

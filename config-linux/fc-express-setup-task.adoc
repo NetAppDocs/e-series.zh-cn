@@ -5,6 +5,7 @@ keywords:
 summary:  
 ---
 = 光纤通道快速设置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

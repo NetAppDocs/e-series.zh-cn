@@ -5,6 +5,7 @@ keywords: sas, express vmware configuration, software configuration, vmware host
 summary: 对于 SAS 协议，您可以确定主机端口地址并进行建议的设置。 
 ---
 = 执行 SAS 专用任务
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

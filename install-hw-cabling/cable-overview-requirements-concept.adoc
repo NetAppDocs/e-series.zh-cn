@@ -5,6 +5,7 @@ keywords: cabling, cabling requirements, drive shelf cabling, controller cabling
 summary: 为 E 系列磁盘架布线需要多个组件。 
 ---
 = 要求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: replacing E2800 HIC, replace E2800 HIC, replace host interface card, E
 summary: 更换出现故障的主机接口卡（ HIC ）。 
 ---
 = 更换 E2800 主机接口卡（ HIC ）
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/
@@ -428,10 +429,7 @@ NOTE: 如果无法解决此问题，请联系技术支持。
 
 
 
-. 按照套件随附的 RMA 说明将故障部件退回 NetApp 。
-+
-请通过联系技术支持 http://mysupport.netapp.com["NetApp 支持"^], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific) if you need the RMA number.
-
+. 按照套件随附的 RMA 说明将故障部件退回 NetApp 。请参见 https://mysupport.netapp.com/site/info/rma["部件退回和放大器；更换页面"] 了解更多信息。
 
 
 
@@ -491,10 +489,7 @@ NOTE: 如果无法解决此问题，请联系技术支持。
 
 
 
-. 按照套件随附的 RMA 说明将故障部件退回 NetApp 。
-+
-请通过联系技术支持 http://mysupport.netapp.com["NetApp 支持"^], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific) if you need the RMA number.
-
+. 按照套件随附的 RMA 说明将故障部件退回 NetApp 。请参见 https://mysupport.netapp.com/site/info/rma["部件退回和放大器；更换页面"] 了解更多信息。
 
 
 您的 HIC 更换已完成。您可以恢复正常操作。

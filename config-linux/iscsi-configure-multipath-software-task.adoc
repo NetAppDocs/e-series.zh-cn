@@ -5,6 +5,7 @@ keywords: multipath software for Linux, express linux configuration, software co
 summary: 配置多路径软件，以便在其中一个物理路径中断时为存储阵列提供冗余路径。 
 ---
 = 配置多路径软件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

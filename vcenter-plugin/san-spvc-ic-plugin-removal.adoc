@@ -6,6 +6,7 @@ summary: 删除 vCenter 插件。
 ---
 = 删除适用于 vCenter 的存储插件
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

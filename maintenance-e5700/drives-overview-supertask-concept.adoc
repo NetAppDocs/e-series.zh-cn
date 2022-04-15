@@ -5,6 +5,7 @@ keywords: E5700 drive, replace E5700 drive, failed E5700 drive
 summary: 查看 E5700 驱动器要求。 
 ---
 = 更换 E5700 驱动器的要求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

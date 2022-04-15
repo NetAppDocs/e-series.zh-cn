@@ -6,6 +6,7 @@ summary: 使用适用于 vCenter 的插件创建卷，将卷分配给主机，�
 ---
 = 在插件中配置存储
 :hardbreaks:
+:allow-uri-read: 
 :experimental: 
 :nofooter: 
 :icons: font

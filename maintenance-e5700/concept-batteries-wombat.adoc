@@ -5,6 +5,7 @@ keywords: battery, controller, canister, preserve, cache, data, ac, power, fail,
 summary: 控制器箱附带电池，如果交流电源发生故障，则会保留缓存的数据。 
 ---
 = 电池
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

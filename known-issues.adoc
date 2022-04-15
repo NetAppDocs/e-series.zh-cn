@@ -5,6 +5,7 @@ keywords: known, issues, santricity, os
 summary: 已知问题 
 ---
 = 发行说明
+:allow-uri-read: 
 
 
 [role="lead"]

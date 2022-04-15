@@ -5,6 +5,7 @@ keywords: NVMe over RoCE, express linux configuration, software configuration, l
 summary: '如果您的控制器包括通过 RoCE 连接 NVMe （基于融合以太网的 RDMA ），则可以从 SANtricity 系统管理器的 " 硬件 " 页面或 " 系统 " 页面配置 NVMe 端口设置。' 
 ---
 = 配置存储阵列 NVMe over RoCE 连接
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

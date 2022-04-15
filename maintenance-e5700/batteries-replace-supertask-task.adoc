@@ -5,6 +5,7 @@ keywords: E5700 battery, repair E5700 battery, replace E5700 battery, failed E57
 summary: 更换 E5700 存储系统中发生故障的电池。 
 ---
 = 更换 E5700 电池
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

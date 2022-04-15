@@ -5,6 +5,7 @@ keywords: rackmount, rack-mount, install in rack, rails
 summary: 机架式安装硬件。 
 ---
 = 机架式硬件
+:allow-uri-read: 
 
 
 [role="lead"]

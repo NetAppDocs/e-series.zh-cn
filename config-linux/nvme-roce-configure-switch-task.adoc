@@ -5,6 +5,7 @@ keywords: configure switch, express linux configuration, software configuration,
 summary: 您可以根据供应商针对 NVMe over RoCE 的建议配置交换机。这些建议可能包括配置指令以及代码更新。 
 ---
 = 配置交换机
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

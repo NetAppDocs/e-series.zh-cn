@@ -5,6 +5,7 @@ keywords: replace EF300 fan, replace EF600 fan,
 summary: 在更换 EF300 或 EF600 风扇之前，请查看要求和注意事项。 
 ---
 = 更换 EF300 或 EF600 风扇的要求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

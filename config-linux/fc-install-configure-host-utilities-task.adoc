@@ -5,6 +5,7 @@ keywords: Linux Unified Host Utilities, express linux configuration, software co
 summary: 使用 FC 时安装 Linux Unified Host Utilities 。 
 ---
 = 安装和配置 Linux Unified Host Utilities
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

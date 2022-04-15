@@ -5,6 +5,7 @@ keywords: E2800 battery fail, E2800 battery, E2800 battery replacement, replace 
 summary: 要取出电池，请先从控制器架中取出控制器箱。 
 ---
 = 拆下 E2800 控制器箱
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: controller, board, firmware, software, control, drive, implement, syst
 summary: 控制器由主板，固件和软件组成。它控制驱动器并实施 System Manager 功能。本节介绍如何通过添加第二个控制器转换为双工配置，以及如何更换单工配置和双工配置中的控制器。 
 ---
 = 控制器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

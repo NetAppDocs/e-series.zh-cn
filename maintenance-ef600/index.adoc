@@ -5,6 +5,7 @@ keywords: EF300 maintenance, EF600 maintenance, repairing EF300, repairing EF600
 summary: 维护 EF300 和 EF600 硬件 
 ---
 = 维护 EF300 和 EF600 硬件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

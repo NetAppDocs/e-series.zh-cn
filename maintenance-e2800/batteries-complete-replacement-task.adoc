@@ -5,6 +5,7 @@ keywords: E2800 battery fail, E2800 battery, E2800 battery replacement, replace 
 summary: 完成电池更换。 
 ---
 = 完成 E2800 电池更换
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

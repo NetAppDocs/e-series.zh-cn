@@ -5,6 +5,7 @@ keywords: upgrade EF300 HIC, upgrade EF600 HIC, increase host ports, change host
 summary: 您可以升级主机接口卡（ HIC ）以增加主机端口数或更改主机协议。 
 ---
 = 升级 EF300 或 EF600 主机接口卡（ HIC ）
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

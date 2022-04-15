@@ -5,6 +5,7 @@ keywords: install Storage Manager Windows, install CLI Windows, install command 
 summary: 在 Windows 快速方法中安装适用于 CLI 和 HCA 的 Storage Manager 。 
 ---
 = 安装适用于 SMCLI 的 SANtricity 存储管理器和主机上下文代理（ HCA ）
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

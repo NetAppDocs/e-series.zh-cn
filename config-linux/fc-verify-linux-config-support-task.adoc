@@ -5,6 +5,7 @@ keywords: express linux configuration, software configuration, linux host,
 summary: 验证是否支持 Linux 配置。 
 ---
 = 验证是否支持 Linux 配置
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

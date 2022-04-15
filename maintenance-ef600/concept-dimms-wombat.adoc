@@ -5,6 +5,7 @@ keywords: replace, dimm, memory, mismatch, fail
 summary: 如果存在内存不匹配或 DIMM 出现故障，则必须更换 DIMM 。 
 ---
 = DIMM
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

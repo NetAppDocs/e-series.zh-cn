@@ -5,6 +5,7 @@ keywords: express Windows configuration, software configuration, Windows host, E
 summary: 使用 Windows 快速配置工作流。 
 ---
 = 了解 Windows 工作流
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

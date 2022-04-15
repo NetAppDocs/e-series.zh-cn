@@ -5,6 +5,7 @@ keywords:
 summary:  
 ---
 = iSER over InfiniBand 快速设置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

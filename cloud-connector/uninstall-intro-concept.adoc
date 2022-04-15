@@ -5,6 +5,7 @@ keywords: Cloud Connector uninstall, remove Cloud Connector
 summary: 您可以通过图形卸载程序或控制台卸载 SANtricity 云连接器。 
 ---
 = 卸载 SANtricity 云连接器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

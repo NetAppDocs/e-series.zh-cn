@@ -5,6 +5,7 @@ keywords: convert, protocol, host, compatibility, communication, establish, port
 summary: 您可以将主机的协议转换为其他协议，以便建立兼容性和通信。 
 ---
 = 主机端口协议
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

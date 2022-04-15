@@ -5,6 +5,7 @@ keywords: express Windows configuration, software configuration, Windows host, E
 summary: 验证是否支持 Windows 配置。 
 ---
 = 验证是否支持 Windows 配置
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

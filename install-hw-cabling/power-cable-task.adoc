@@ -5,6 +5,7 @@ keywords: cabling, cables, power cable, power cabling, power supply cabling, E-S
 summary: 将每个组件的电源连接到单独的电路。 
 ---
 = 电源布线
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

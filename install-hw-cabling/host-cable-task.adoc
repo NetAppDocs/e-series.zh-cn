@@ -5,6 +5,7 @@ keywords: cabling, cables, host cabling, direct-attached topology, switch topolo
 summary: 您可以使用缆线将主机直接连接到控制器或使用交换机。 
 ---
 = 主机布线
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

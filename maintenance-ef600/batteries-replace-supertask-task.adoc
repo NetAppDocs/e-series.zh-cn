@@ -5,6 +5,7 @@ keywords: replace EF300 battery, replace EF600 battery, EF300 battery fail, EF60
 summary: 更换 EF300 或 EF600 阵列中的电池。 
 ---
 = 更换 EF300 或 EF600 电池
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

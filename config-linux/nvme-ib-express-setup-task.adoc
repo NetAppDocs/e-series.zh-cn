@@ -5,6 +5,7 @@ keywords: nvme, infiniband, network, protocol, express, setup
 summary: 您可以将 NVMe 与 InfiniBand 网络协议结合使用。 
 ---
 = 基于 InfiniBand 的 NVMe 快速设置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

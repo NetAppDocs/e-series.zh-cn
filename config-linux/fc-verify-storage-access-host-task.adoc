@@ -5,6 +5,7 @@ keywords: express linux configuration, software configuration, linux host,
 summary: 在使用卷之前，您需要验证主机是否可以将数据写入卷并将其读回。 
 ---
 = 验证主机上的存储访问
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

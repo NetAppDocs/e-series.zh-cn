@@ -5,6 +5,7 @@ keywords: replace EF300 controller, replace EF600 controller,
 summary: 更换 EF300 或 EF600 控制器的要求和注意事项 
 ---
 = 更换 EF300 或 EF600 控制器的要求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

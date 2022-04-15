@@ -5,6 +5,7 @@ keywords: E5700 drive drawer, DE460C drive shelf, replace E5700 drive drawer, fa
 summary: 更换 E5700 中的驱动器抽盒。 
 ---
 = 更换 E5700 驱动器抽屉（ 60 个驱动器）
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

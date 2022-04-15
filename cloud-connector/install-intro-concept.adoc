@@ -5,6 +5,7 @@ keywords: Cloud Connector installation, install Cloud Connector
 summary: SANtricity 云连接器软件包解决方案（ .bin 文件）仅适用于 RedHat 和 SUSE Linux 平台。 
 ---
 = 安装 SANtricity 云连接器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

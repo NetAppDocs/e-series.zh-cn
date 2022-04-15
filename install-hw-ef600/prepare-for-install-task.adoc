@@ -5,6 +5,7 @@ keywords: EF300, EF600, installation, create account, register hardware
 summary: 要安装 EF300 或 EF600 ，请创建一个帐户并注册硬件。 
 ---
 = 准备安装
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

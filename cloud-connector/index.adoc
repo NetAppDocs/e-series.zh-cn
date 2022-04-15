@@ -5,6 +5,7 @@ keywords: Cloud Connector
 summary: SANtricity 云连接器 
 ---
 = SANtricity ® Cloud Connector 概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: host port GUIDs, express linux configuration, software configuration, 
 summary: 确定主机端口 GUID 。 
 ---
 = 确定主机端口 GUID 并进行建议的设置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: partitions, file systems, express linux configuration, software config
 summary: 您可以在多路径设备上创建分区，也可以在命名空间上创建文件系统并挂载分区。 
 ---
 = 创建文件系统
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

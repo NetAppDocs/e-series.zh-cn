@@ -5,6 +5,7 @@ keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upg
 summary: 如果控制器升级导致将供应商 ID 从 LSI 更改为 NetApp ，则需要重新挂载卷。 
 ---
 = 将供应商从 LSI 更改为 NetApp 后重新挂载卷
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

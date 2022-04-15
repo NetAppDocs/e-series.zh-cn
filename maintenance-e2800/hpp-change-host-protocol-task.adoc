@@ -5,6 +5,7 @@ keywords: 'E2800 convert host port protocol, convert E2800 FC iSCSI, Fibre Chann
 summary: 将主机端口协议从光纤通道（ Fibre Channel ， FC ）更改为 iSCSI 或从 iSCSI 更改为 FC 。 
 ---
 = 更改 E2800 的主机协议
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

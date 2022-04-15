@@ -5,6 +5,7 @@ keywords: Certificates Web Services Proxy, WSP certificates,
 summary: 使用 Web 服务代理配置文件， API 命令或 Unified Manager 界面管理证书。 
 ---
 = 在 Web 服务代理中管理安全性和证书
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

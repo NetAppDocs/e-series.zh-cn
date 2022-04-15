@@ -5,6 +5,7 @@ keywords: E-Series, eseries, E2800, E5700, EF300, EF600, SANtricity, E-Series so
 summary: E 系列系统包括用于存储配置和其他任务的 SANtricity 软件。 
 ---
 = SANtricity 软件概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

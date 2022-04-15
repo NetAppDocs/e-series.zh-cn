@@ -5,6 +5,7 @@ keywords: E-Series, eseries, E2800, E5700, EF300, EF600, SANtricity, upgrade SAN
 summary: 升级单个 E 系列控制器的软件和固件。 
 ---
 = 升级单个控制器的软件和固件
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

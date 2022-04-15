@@ -5,6 +5,7 @@ keywords: configure Remote Storage Volumes, set up RTV, configure remote volumes
 summary: 要使 E 系列系统能够通过支持的 iSCSI 协议连接到远程存储，需要进行初始设置。 
 ---
 = 为远程存储卷配置硬件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

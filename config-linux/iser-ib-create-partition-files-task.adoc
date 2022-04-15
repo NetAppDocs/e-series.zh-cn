@@ -5,6 +5,7 @@ keywords: configure partitions Linux, configure filesystems linux, express linux
 summary: 新 LUN 在 Linux 主机首次发现时没有分区或文件系统。必须先格式化 LUN ，然后才能使用它。 
 ---
 = 创建分区和文件系统
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

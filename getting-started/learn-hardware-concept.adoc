@@ -5,6 +5,7 @@ keywords: E-Series, eseries, E2800, E5700, EF300, EF600, hardware, all flash arr
 summary: E 系列存储阵列提供多种配置和型号。 
 ---
 = E 系列硬件概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

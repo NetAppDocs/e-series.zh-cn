@@ -5,6 +5,7 @@ keywords: controller, board, firmware, software, control, drive, implement, syst
 summary: 控制器由主板，固件和软件组成。它控制驱动器并实施 System Manager 功能。本节介绍如何更换 EF300 或 EF600 控制器架中的一个或两个控制器。 
 ---
 = 控制器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

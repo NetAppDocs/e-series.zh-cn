@@ -5,6 +5,7 @@ keywords: file systems, express linux configuration, software configuration, lin
 summary: 对于 RHEL 8 和 SLES 15 ，您可以在原生 NVMe 设备上创建文件系统并挂载文件系统。 
 ---
 = 创建文件系统（ RHEL 8 和 SLES 15 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

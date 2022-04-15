@@ -5,6 +5,7 @@ keywords: Remote Storage Volumes, RTV, remote volumes, remote storage E-Series
 summary: 您可以从 SANtricity 系统管理器的远程存储屏幕的结果列表部分查看每个远程存储导入的状态。 
 ---
 = 管理导入进度
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

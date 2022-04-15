@@ -5,6 +5,7 @@ keywords: express Windows configuration, software configuration, Windows host, E
 summary: 验证主机是否可以将数据写入 LUN 并将其读回。 
 ---
 = 验证主机上的存储访问
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

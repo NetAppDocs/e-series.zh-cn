@@ -5,6 +5,7 @@ keywords: add EF600 HIC, host interface card, increase HIC ports, new HIC
 summary: 向 EF600 控制器添加主机接口卡（ HIC ）以增加存储阵列中的主机端口数量。 
 ---
 = 将主机接口卡（ HIC ）添加到 EF600
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

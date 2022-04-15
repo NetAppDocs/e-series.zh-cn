@@ -5,6 +5,7 @@ keywords: security technical reports, e-series, hardware, santricity, os
 summary: E 系列技术报告 
 ---
 = 浏览安全技术报告
+:allow-uri-read: 
 
 
 

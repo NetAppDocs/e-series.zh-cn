@@ -5,6 +5,7 @@ keywords: log in API, log in Unified Manager
 summary: 访问并登录到 Web 服务 API 和 Unified Manager 。 
 ---
 = 登录到 API 和 Unified Manager
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

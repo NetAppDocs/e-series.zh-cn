@@ -5,6 +5,7 @@ keywords: express Windows configuration, software configuration, Windows host, E
 summary: 对具有 E 系列系统的 Windows 主机使用快速配置。 
 ---
 = Windows 快速配置概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

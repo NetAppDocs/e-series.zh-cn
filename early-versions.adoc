@@ -5,6 +5,7 @@ keywords: early versions, e-series, hardware, santricity, os
 summary: 文档的早期版本 
 ---
 = 早期版本
+:allow-uri-read: 
 
 
 [role="lead"]

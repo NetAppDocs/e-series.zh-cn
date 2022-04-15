@@ -5,6 +5,7 @@ keywords: E2800, E5700, connect power cables
 summary: 连接电源线并打开驱动器架的电源。 
 ---
 = 为磁盘架布线
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

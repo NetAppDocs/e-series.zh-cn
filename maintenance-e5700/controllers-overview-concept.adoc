@@ -5,6 +5,7 @@ keywords: E5700 controller, repair E5700 controller, replace E5700 controller, f
 summary: 查看 E5700 控制器类型和要求。 
 ---
 = 更换 E5700 控制器的要求
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

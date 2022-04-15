@@ -5,6 +5,7 @@ keywords: Remote Storage Volumes requirements, RTV requirements, RTV restriction
 summary: 您的系统必须满足远程存储卷的兼容性要求。 
 ---
 = 远程存储的要求和限制
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

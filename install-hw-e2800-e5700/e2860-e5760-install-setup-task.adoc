@@ -5,6 +5,7 @@ keywords: instruction, describe, install, storage, system, link, additional, con
 summary: 这些说明介绍如何安装和设置新存储系统，并提供指向其他内容的链接。 
 ---
 = 《 E2860 ， E5760 和 DE460C 安装和设置说明》
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

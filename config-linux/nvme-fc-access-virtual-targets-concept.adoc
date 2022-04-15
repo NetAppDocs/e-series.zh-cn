@@ -5,6 +5,7 @@ keywords: NVMe volumes virtual, express linux configuration, software configurat
 summary: 您可以根据 Linux 版本配置定向到设备目标的 I/O 。DM-MP 负责管理这些虚拟目标的物理路径。 
 ---
 = 访问虚拟设备目标的 NVMe 卷
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

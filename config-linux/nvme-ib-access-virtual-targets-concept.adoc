@@ -5,6 +5,7 @@ keywords: NVMe volume virtual, express linux configuration, software configurati
 summary: 根据您的 SLES 版本（ SUSE Linux 版本）配置指向设备目标的 I/O 。 
 ---
 = 访问虚拟设备目标的 NVMe 卷
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

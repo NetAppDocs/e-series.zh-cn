@@ -5,6 +5,7 @@ keywords: express linux configuration, software configuration, linux host, E2800
 summary: 使用 InfiniBand 交换机运行子网管理器可能会在高负载期间发生原因意外丢失路径。为避免路径丢失，请使用 opensm 在一台或多台主机上配置子网管理器。 
 ---
 = 配置子网管理器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

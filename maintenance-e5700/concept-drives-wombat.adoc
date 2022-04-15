@@ -5,6 +5,7 @@ keywords: drive, electromagnetic, mechanical, device, physical, storage, media, 
 summary: 驱动器是一种为数据提供物理存储介质的机械设备。 
 ---
 = 驱动器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

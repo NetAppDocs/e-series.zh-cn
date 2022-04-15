@@ -5,6 +5,7 @@ keywords: Windows Unified Host Utilities, express Windows configuration, softwar
 summary: 安装适用于 Windows 的 Windows Unified Host Utilities 快速方法。 
 ---
 = 安装和配置 Windows Unified Host Utilities
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

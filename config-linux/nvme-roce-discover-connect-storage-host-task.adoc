@@ -5,6 +5,7 @@ keywords: discover storage, host, express linux configuration, software configur
 summary: 在 SANtricity System Manager 中定义每个主机之前，您必须先从主机发现目标控制器端口，然后建立 NVMe 连接。 
 ---
 = 发现并从主机连接到存储
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
