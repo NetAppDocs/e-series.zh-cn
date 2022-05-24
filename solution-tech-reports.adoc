@@ -59,6 +59,12 @@ summary: E 系列技术报告
 
 
 | 介绍将 E 系列阵列部署到视频监控环境中的最佳实践。 | 介绍如何使用 NetApp E 系列存储设计和部署视频管理系统。 | 介绍视频监控解决方案架构，并详细介绍组件和存储最佳实践。 
+
+
+| https://www.netapp.com/pdf.html?item=/media/19427-tr-4838.pdf&v=2020106216["* TR-4838：《具有Milestone XProtect VMS认证报告的E2800和E5700》*"^] | https://www.netapp.com/media/17106-tr4771design.pdf["* TR-4771设计：NetApp E系列和Genetec视频管理软件*"^] |  
+
+
+| 介绍对NetApp E2800和E5700混合存储阵列执行的认证测试结果。 | 介绍了在NetApp E2800和E5700混合存储阵列上使用Genetec安全中心视频管理软件(Video Management Software、VMS)的认证结果。 |  
 |===
 
 

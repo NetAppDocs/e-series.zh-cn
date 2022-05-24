@@ -32,7 +32,7 @@ NOTE: 如果您使用的是 AIX ® ，则必须先在主机上安装 E 系列多
 
 
  a| 
-image:../media/trafford_direct.png[""]
+image:../media/2U_DirectTopology.png[""]
  a| 
 . 将每个主机适配器直接连接到控制器上的主机端口。
 
@@ -48,7 +48,7 @@ image:../media/trafford_direct.png[""]
 
 
  a| 
-image:../media/trafford_direct.png[""]
+image:../media/2U_FabricTopology.png[""]
  a| 
 . 将每个主机适配器直接连接到交换机。
 . 将每个交换机直接连接到控制器上的主机端口。

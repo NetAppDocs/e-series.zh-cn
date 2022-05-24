@@ -1,0 +1,17 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-why-would-i-need-to-create-a-host-cluster.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 如果要使两个或更多主机共享对同一组卷的访问、则需要创建主机集群。 
+---
+= 为什么需要创建主机集群？
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果要使两个或更多主机共享对同一组卷的访问、则需要创建主机集群。通常、各个主机都安装了集群软件来协调卷访问。

@@ -39,18 +39,7 @@ summary: 为了确保操作可靠，您需要创建一个实施计划，然后�
 
 == 验证基于 RoCE 的 NVMe 限制
 
-在使用基于 RoCE 的 NVMe 之前，请查看控制器，交换机，主机和恢复限制。有关所有限制的最新列表，请参见 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]。
-
-
-
-=== 控制器限制
-
-* 可以为 EF300 （仅限 100 GB 控制器）， EF600 ， EF570 和 E5700 控制器配置基于 RoCE 的 NVMe 。控制器必须具有 100 GB 或 200 GB 主机端口。
-* 此协议只能用于 EF300 ， EF600 ， EF570 和 E5700 控制器。要在 EF600 ， EF570 和 E5700 控制器上使用协议，至少需要 32 GB 的物理内存。对于 EF300 ，至少需要 16 GB 的物理内存。如果在每天开始操作期间不满足控制器的最低内存要求，则会显示一条消息，帮助您诊断问题。
-* 不支持单工（单控制器）配置。
-* 唯一支持的主机接口卡（ HIC ）是 100G 或 200G EDR HIC ，它还支持基于 InfiniBand 的 NVMe ， iSER 和 SRP 。
-* 不支持将基于 RoCE 的 NVMe 与基于 InfiniBand 的 NVMe 或 SCSI 主机接口混合使用。
-
+在使用基于RoCE的NVMe之前、请参见 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^] 查看最新的控制器、主机和恢复限制。
 
 
 
@@ -58,12 +47,6 @@ summary: 为了确保操作可靠，您需要创建一个实施计划，然后�
 
 
 NOTE: * 数据丢失风险。 * 您必须在交换机上启用优先级流量控制或全局暂停控制，以消除基于 RoCE 的 NVMe 环境中的数据丢失风险。
-
-
-
-=== 主机，主机协议和主机操作系统限制
-
-有关完整的要求列表，请参见 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]。
 
 
 

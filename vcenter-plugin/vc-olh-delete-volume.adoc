@@ -1,0 +1,54 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-delete-volume.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 删除一个或多个卷以增加池或卷组的可用容量。 
+---
+= 删除卷
+:hardbreaks:
+:allow-uri-read: 
+:experimental: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以删除一个或多个卷以增加池或卷组的可用容量。
+
+在计划删除的卷上、确保：
+
+* 备份所有数据。
+* 所有输入/输出(I/O)均已停止。
+* 所有设备和文件系统均已卸载。
+
+
+通常、如果创建的卷的参数或容量不正确、或者不再满足存储配置需求、则可以删除这些卷。删除卷会增加池或卷组中的可用容量。
+
+
+CAUTION: 删除卷会导致这些卷上的所有数据丢失。
+
+请注意、您*无法*删除具有以下条件之一的卷：
+
+* 卷正在初始化。
+* 卷正在重建。
+* 此卷属于某个卷组、该卷组包含正在执行回写操作的驱动器。
+* 卷正在进行修改操作、例如更改区块大小、除非卷现在处于故障状态。
+* 卷持有任何类型的永久性预留。
+* 此卷是复制卷中的源卷或目标卷、其状态为"Pending"、"In Progress"或"Failed"。
+
+
+
+NOTE: 当卷超过给定大小(当前为128 TB)时、将在后台执行删除操作、释放的空间可能不会立即可用。
+
+.步骤
+. 从*管理*页面中、选择包含要删除的卷的存储阵列。
+. 选择菜单：配置 [ 管理卷 ] 。
+. 单击 * 删除 * 。
++
+此时将显示删除卷对话框。
+
+. 选择要删除的一个或多个卷、然后确认要执行此操作。
+. 单击 * 删除 * 。
+

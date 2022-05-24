@@ -1,0 +1,39 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-how-do-i-view-and-interpret-all-ssd-cache-statistics.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 您可以查看SSD缓存的标称统计信息和详细统计信息。 
+---
+= 如何查看和解释所有SSD缓存统计信息？
+:hardbreaks:
+:allow-uri-read: 
+:experimental: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以查看SSD缓存的标称统计信息和详细统计信息。
+
+标称统计信息是详细统计信息的一部分。只有在将所有SSD统计信息导出到.csv文件时、才能查看详细统计信息。在查看和解释统计信息时、请记住、某些解释是通过结合统计信息得出的。
+
+
+
+=== 标称统计信息
+
+要查看SSD缓存统计信息、请转到*管理*页面。选择菜单：配置[配置池和卷组]。选择要查看统计信息的SSD缓存、然后选择菜单：更多(查看统计信息)。标称统计信息显示在"查看SSD缓存统计信息"对话框中。
+
+
+NOTE: EF600或EF300存储系统不支持此功能。
+
+此列表包含标称统计信息、这些统计信息是详细统计信息的一部分。
+
+
+
+=== 详细统计信息
+
+详细统计信息包括名义统计信息和其他统计信息。这些附加统计信息会与标称统计信息一起保存、但与标称统计信息不同、它们不会显示在"查看SSD缓存统计信息"对话框中。只有在将统计信息导出到.csv文件后、才能查看详细统计信息。
+
+详细统计信息列在标称统计信息之后。

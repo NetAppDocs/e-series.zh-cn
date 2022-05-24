@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-delete-storage-array-group.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 删除不再需要的一个或多个存储阵列组。 
+---
+= 删除存储阵列组
+:hardbreaks:
+:allow-uri-read: 
+:experimental: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以删除不再需要的一个或多个存储阵列组。
+
+此操作仅删除存储阵列组。与已删除组关联的存储阵列仍可通过全部管理视图或与其关联的任何其他组进行访问。
+
+.步骤
+. 从管理页面中、选择菜单：管理组[删除存储阵列组]。
+. 选择要删除的一个或多个存储阵列组。
+. 单击 * 删除 * 。
+

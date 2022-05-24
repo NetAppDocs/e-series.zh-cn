@@ -1,0 +1,36 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-perform-pre-upgrade-health-check.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 运行状况检查会在升级过程中运行，但您也可以在开始之前单独运行运行运行运行状况检查。 
+---
+= 执行升级前运行状况检查
+:hardbreaks:
+:allow-uri-read: 
+:experimental: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+运行状况检查会在升级过程中运行，但您也可以在开始之前单独运行运行运行运行状况检查。运行状况检查会评估存储阵列的组件，以确保升级可以继续进行。
+
+* 步骤 *
+
+. 在主视图中，选择 * 管理 * ，然后选择菜单：升级中心 [ 升级前运行状况检查 ] 。
++
+此时将打开升级前运行状况检查对话框，其中列出了所有已发现的存储系统。
+
+. 如果需要，可对列表中的存储系统进行筛选或排序，以便您可以查看当前未处于最佳状态的所有系统。
+. 选中要通过运行状况检查运行的存储系统对应的复选框。
+. 单击 * 开始 * 。
++
+执行运行状况检查时，此进度将显示在对话框中。
+
+. 运行状况检查完成后，您可以单击每行右侧的省略号（ ... ）以查看更多信息并执行其他任务。
+
+
+
+NOTE: 如果任何阵列未通过运行状况检查，您可以跳过该特定阵列并继续对其他阵列进行升级，也可以停止整个过程并对未通过的阵列进行故障排除。

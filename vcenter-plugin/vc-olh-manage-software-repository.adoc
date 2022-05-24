@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-manage-software-repository.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 您可以查看和管理软件存储库、其中列出了与适用于vCenter的存储插件关联的所有软件文件。 
+---
+= 管理软件存储库
+:hardbreaks:
+:allow-uri-read: 
+:experimental: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以查看和管理软件存储库、其中列出了与适用于vCenter的存储插件关联的所有软件文件。
+
+如果使用存储库添加SANtricity OS文件、请确保操作系统文件在本地系统上可用。
+
+您可以使用管理SANtricity 操作系统软件存储库选项将一个或多个操作系统文件导入到运行此插件的主机系统中。您还可以选择删除软件存储库中的一个或多个可用操作系统文件。
+
+.步骤
+. 在主视图中、选择*管理*、然后选择菜单：升级中心[管理SANtricity 软件存储库]。
++
+此时将显示管理SANtricity 操作系统软件存储库对话框。
+
+. 执行以下操作之一：
++
+** *导入：*
++
+... 单击 * 导入 * 。
+... 单击*浏览*、然后导航到要添加的操作系统文件所在的位置。操作系统文件的文件名类似于`N2800-830000-000.DLP`。
+... 选择要添加的一个或多个操作系统文件、然后单击*导入*。
+
+
+** *删除：*
++
+... 选择要从软件存储库中删除的一个或多个操作系统文件。
+... 单击 * 删除 * 。
+
+
+
+
+
+
+如果选择导入、则会上传并验证文件。如果选择了delete、则这些文件将从软件存储库中删除。

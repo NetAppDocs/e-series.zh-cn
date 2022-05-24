@@ -1,0 +1,17 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-why-are-these-volumes-not-associated-with-a-workload.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: '如果卷是使用命令行界面(CLI)创建的、或者已从其他存储阵列迁移(导入/导出)、则卷不会与工作负载关联。' 
+---
+= 为什么这些卷不与工作负载关联？
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果卷是使用命令行界面(CLI)创建的、或者已从其他存储阵列迁移(导入/导出)、则卷不会与工作负载关联。

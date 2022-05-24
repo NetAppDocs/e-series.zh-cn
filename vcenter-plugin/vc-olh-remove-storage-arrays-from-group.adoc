@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-remove-storage-arrays-from-group.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 如果您不想再从特定存储组管理一个或多个受管存储阵列、请从组中删除该存储阵列。 
+---
+= 从组中删除存储阵列
+:hardbreaks:
+:allow-uri-read: 
+:experimental: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果不再需要从特定存储组管理一个或多个受管存储阵列、则可以从组中删除该存储阵列。
+
+从组中删除存储阵列不会以任何方式影响存储阵列或其数据。如果您的存储阵列由System Manager管理、则仍可使用浏览器对其进行管理。如果意外从组中删除了存储阵列、则可以重新添加该存储阵列。
+
+.步骤
+. 从管理页面中、选择菜单：管理组[从组中删除存储阵列]。
+. 从下拉列表中、选择包含要删除的存储阵列的组、然后单击要从组中删除的每个存储阵列旁边的复选框。
+. 单击 * 删除 * 。
+

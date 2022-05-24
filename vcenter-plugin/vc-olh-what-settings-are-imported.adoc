@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-what-settings-are-imported.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 导入设置功能是一个批处理操作、可将配置从一个存储阵列加载到多个存储阵列。在此操作期间导入的设置取决于源存储阵列在System Manager中的配置方式。 
+---
+= 导入了哪些设置？
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+导入设置功能是一个批处理操作、可将配置从一个存储阵列加载到多个存储阵列。
+
+在此操作期间导入的设置取决于源存储阵列在System Manager中的配置方式。可以将以下设置导入到多个存储阵列：
+
+* *电子邮件警报*-设置包括邮件服务器地址和警报收件人的电子邮件地址。
+* *系统日志警报*-设置包括系统日志服务器地址和UDP端口。
+* * SNMP警报*-设置包括SNMP服务器的社区名称和IP地址。
+* * AutoSupport *—设置包括不同的功能(基本AutoSupport 、AutoSupport OnDemand和远程诊断)、维护窗口、交付方法、 和派单计划。
+* *目录服务*—配置包括LDAP (轻型目录访问协议)服务器的域名和URL、以及LDAP服务器用户组与存储阵列预定义角色的映射。
+* *存储配置*—配置包括卷(仅厚卷和非存储库卷)、卷组、池和热备用驱动器分配。
+* *系统设置*-配置包括卷的介质扫描设置、控制器的SSD缓存以及自动负载平衡(不包括主机连接报告)。
+

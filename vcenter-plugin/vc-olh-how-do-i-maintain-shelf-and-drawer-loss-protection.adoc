@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-how-do-i-maintain-shelf-and-drawer-loss-protection.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 为池或卷组维护磁盘架和抽屉丢失保护 
+---
+= 如何维护磁盘架和抽屉丢失保护？
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+要为池或卷组维护磁盘架和抽屉丢失保护、请使用下表中指定的标准。
+
+|===
+| 级别 | 磁盘架/抽屉丢失保护的标准 | 所需的最小磁盘架/抽屉数 
+
+
+| 池 | 对于磁盘架、池中一个磁盘架中的驱动器不能超过两个。对于抽盒、池中每个抽盒中必须包含相同数量的驱动器。 | 6个用于磁盘架5个用于抽屉 
+
+
+| RAID 6 | 卷组在一个磁盘架或抽屉中包含的驱动器不超过两个。 | 3. 
+
+
+| RAID 3或RAID 5 | 卷组中的每个驱动器都位于一个单独的磁盘架或抽屉中。 | 3. 
+
+
+| RAID 1 | 镜像对中的每个驱动器都必须位于单独的磁盘架或抽屉中。 | 2. 
+
+
+| RAID 0 | 无法实现磁盘架/抽屉丢失保护。 | 不适用 
+|===
+
+NOTE: 如果池或卷组中的驱动器已发生故障、则不会保持磁盘架/抽屉丢失保护。在这种情况下、如果无法访问某个驱动器架或抽盒、进而无法访问池或卷组中的另一个驱动器、则会导致数据丢失。

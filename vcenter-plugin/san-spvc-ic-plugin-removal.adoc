@@ -24,13 +24,13 @@ summary: 删除 vCenter 插件。
 
 要从 vCenter Server 设备取消注册插件，请选择以下方法之一：
 
-* 方法 1 ：执行注册脚本
-* 方法 2 ：使用 vCenter Server 移动页面
+* <<Method 1: Execute the registration script>>
+* <<Method 2: Use the vCenter Server Mob pages>>
 
 
 
 
-=== 方法 1 ：执行注册脚本
+=== 方法1：执行注册脚本
 
 . 通过命令行打开提示符并导航到以下目录：
 +
@@ -57,7 +57,7 @@ summary: 删除 vCenter 插件。
 
 
 
-=== 方法 2 ：使用 vCenter Server 移动页面
+=== 方法2：使用vCenter Server移动页面
 
 . 打开 Web 浏览器并输入以下 URL ：
 +
@@ -74,11 +74,7 @@ summary: 删除 vCenter 插件。
 
 
 
-NOTE: 此操作步骤会从 vCenter Server 设备中取消注册此插件，但不会从服务器中删除插件软件包文件。要删除软件包文件，请使用 SSH 访问 vCenter Server 设备并导航到以下目录：
-
-`etc/vmware/vsphere-ui/vc-packages/vsphere-client-sereni/`
-
-然后删除与此插件关联的目录。
+NOTE: 此操作步骤会从 vCenter Server 设备中取消注册此插件，但不会从服务器中删除插件软件包文件。要删除软件包文件、请使用SSH访问vCenter Server设备并导航到以下目录：`` etc/vmware/vsphere-ui/vc-packages/vsphere-client-serenace/vsphere-serenity。然后删除与此插件关联的目录。
 
 
 

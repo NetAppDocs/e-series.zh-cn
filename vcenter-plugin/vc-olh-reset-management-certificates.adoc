@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-reset-management-certificates.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 将管理证书还原到原始出厂自签名状态。 
+---
+= 重置管理证书
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+对于托管适用于vCenter的存储插件的管理系统、您可以将管理证书还原到原始出厂自签名状态。
+
+此任务将从运行适用于vCenter的存储插件的主机系统中删除当前管理证书。重置证书后、主机系统将恢复为使用自签名证书。
+
+.步骤
+. 选择*证书管理*。
+. 从*管理*选项卡中、选择*重置*。
++
+此时将打开确认重置管理证书对话框。
+
+. 在字段中键入reset、然后单击*重置*。
++
+浏览器刷新后、浏览器可能会阻止对目标站点的访问并报告此站点正在使用HTTP严格传输安全性。切换回自签名证书时会出现此情况。要清除阻止访问目标的条件、您必须从浏览器中清除浏览数据。
+
+
+
+系统将恢复为使用服务器中的自签名证书。因此、系统会提示用户为其会话手动接受自签名证书。

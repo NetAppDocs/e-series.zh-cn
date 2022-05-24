@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-launch-system-manager.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 要管理单个阵列、请使用Launch选项在新浏览器窗口中打开System Manager。 
+---
+= 启动 System Manager
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+要管理单个阵列、请使用启动选项在新浏览器窗口中打开SANtricity 系统管理器。
+
+System Manager是存储阵列控制器上的嵌入式应用程序、它通过以太网管理端口连接到网络。System Manager包括所有基于阵列的功能。要访问System Manager、您必须使用Web浏览器与网络管理客户端建立带外连接。
+
+.步骤
+. 从*管理*页面中、选择要管理的一个或多个存储阵列。
+. 单击 * 启动 * 。
++
+系统将在浏览器中打开一个新选项卡、然后显示System Manager登录页面。
+
+. 输入用户名和密码、然后单击*登录*。
+

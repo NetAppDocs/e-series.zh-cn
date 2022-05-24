@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-array-groups-overview.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 通过对一组存储阵列进行分组来管理物理和虚拟化基础架构。 
+---
+= 阵列组概述
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以通过对一组存储阵列进行分组来在适用于vCenter的存储插件中管理物理和虚拟化基础架构。您可能希望对存储阵列进行分组、以便更轻松地运行监控或报告作业。
+
+存储阵列组的类型：
+
+* *所有组*-所有组是默认组、其中包括在您的组织中发现的所有存储阵列。可以从主视图访问所有组。
+* *用户创建的组*-用户创建的组包含您手动选择添加到该组的存储阵列。可以从主视图访问用户创建的组。
+

@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-rename-storage-array-group.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 如果当前名称不再有意义或适用、请更改存储阵列组的名称。 
+---
+= 重命名存储阵列组
+:hardbreaks:
+:allow-uri-read: 
+:experimental: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果当前名称不再有意义或适用、您可以更改存储阵列组的名称。
+
+请牢记这些准则。
+
+* 名称可以由字母、数字和特殊字符下划线(_)、连字符(-)和井号(#)组成。如果选择任何其他字符、则会显示一条错误消息。系统将提示您选择其他名称。
+* 名称限制为30个字符。名称中的任何前导空格和尾随空格将被删除。
+* 请使用一个易于理解和记住的唯一有意义的名称。
+* 避免将来会很快失去意义的任意名称或名称。
+
+
+.步骤
+. 在主视图中、选择*管理*、然后选择要重命名的存储阵列组。
+. 选择菜单：Manage Groups[重命名存储阵列组]。
+. 在*组名称*字段中、键入组的新名称。
+. 单击 * 重命名 * 。
+

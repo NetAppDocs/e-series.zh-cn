@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-how-does-my-selected-workload-impact-volume-creation.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 在创建卷期间、系统会提示您提供有关工作负载使用情况的信息。 
+---
+= 选定工作负载对卷创建有何影响？
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+在创建卷期间、系统会提示您提供有关工作负载使用情况的信息。系统会使用此信息为您创建最佳卷配置、您可以根据需要对其进行编辑。或者、您也可以在卷创建序列中跳过此步骤。
+
+工作负载是指支持应用程序的存储对象。您可以为每个应用程序定义一个或多个工作负载或实例。对于某些应用程序、系统会将工作负载配置为包含具有类似底层卷特征的卷。这些卷特征会根据工作负载支持的应用程序类型进行优化。例如、如果您创建了一个支持Microsoft SQL Server应用程序的工作负载、然后为该工作负载创建了卷、则底层卷特征将进行优化以支持Microsoft SQL Server。
+
+* *应用程序专用*—当您使用应用程序专用工作负载创建卷时、系统可能会建议优化卷配置、以最大程度地减少应用程序工作负载I/O与应用程序实例中的其他流量之间的争用。对于为以下应用程序类型创建的工作负载、系统会自动建议并优化卷特征、例如I/O类型、区块大小、控制器所有权以及读写缓存。
++
+** Microsoft SQL Server
+** Microsoft Exchange Server
+** 视频监控应用程序
+** VMware ESXi (适用于要与虚拟机文件系统结合使用的卷)
++
+您可以使用添加/编辑卷对话框查看建议的卷配置以及编辑、添加或删除系统建议的卷和特征。
+
+
+
+* *其他(或不支持特定卷创建的应用程序)*- 其他工作负载使用的卷配置、您必须在创建与特定应用程序无关的工作负载时手动指定、或者如果您要在存储阵列上使用的应用程序没有内置优化功能、则必须手动指定。您必须使用添加/编辑卷对话框手动指定卷配置。
+

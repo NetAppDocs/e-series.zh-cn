@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-remove-storage-arrays.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 如果您不想再从适用于vCenter的存储插件管理一个或多个存储阵列、请将其删除。 
+---
+= 删除存储阵列
+:hardbreaks:
+:allow-uri-read: 
+:experimental: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果您不想再从适用于vCenter的存储插件管理一个或多个存储阵列、可以将其删除。
+
+您无法访问所删除的任何存储阵列。但是、您可以通过将浏览器直接指向已删除的任何存储阵列的IP地址或主机名来建立与此阵列的连接。
+
+删除存储阵列不会以任何方式影响存储阵列或其数据。如果意外删除了存储阵列、则可以重新添加该存储阵列。
+
+.步骤
+. 从*管理*页面中、选择要删除的一个或多个存储阵列。
+. 选择菜单：不常见任务[删除存储阵列]。
++
+存储阵列将从插件界面的所有视图中删除。
+
+

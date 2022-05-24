@@ -60,7 +60,7 @@ rdma_cms:    rdma-cm
 rdma_pkey: 0x0000
 ----
 . 对任何其他连接重复步骤 1 。
-. 使用以下命令连接到第一条路径上发现的子系统： `nvme connect -t rdma -n discovered_sub_nqn-a target_ip_address -Q queue_depth_setting-l controller_los_timeout_period`
+. 使用命令 `nvme connect -t rdma -n discovered_sub_nqn -a target_ip_address -Q queue_depth_setting -l controller_los_timeout_period` 连接到第一个路径上发现的子系统
 +
 
 NOTE: 上述命令在重新启动后不会持续存在。每次重新启动后，都需要执行 `nvme connect` 命令以重新建立 NVMe 连接。

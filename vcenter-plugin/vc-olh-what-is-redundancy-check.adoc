@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-what-is-redundancy-check.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 冗余检查可确定池或卷组中卷上的数据是否一致。 
+---
+= 什么是冗余检查？
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+冗余检查可确定池或卷组中卷上的数据是否一致。如果池或卷组中的某个驱动器发生故障、则可以使用冗余数据快速重建替代驱动器上的信息。
+
+一次只能对一个池或卷组执行此检查。卷冗余检查将执行以下操作：
+
+* 扫描RAID 3卷、RAID 5卷或RAID 6卷中的数据块、然后检查每个块的冗余信息。(只能使用命令行界面将RAID 3分配给卷组。)
+* 比较RAID 1镜像驱动器上的数据块。
+* 如果控制器固件确定数据不一致、则返回冗余错误。
+
+
+
+NOTE: 立即对同一个池或卷组运行冗余检查可能会出现发生原因 错误。要避免此问题、请等待一到两分钟、然后再对同一个池或卷组运行另一个冗余检查。

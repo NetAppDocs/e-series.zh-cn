@@ -1,0 +1,24 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-how-do-i-match-the-host-ports-to-a-host.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: '如果要手动创建主机、则必须首先使用主机上可用的相应主机总线适配器(HBA)实用程序来确定与主机中安装的每个HBA关联的主机端口标识符。' 
+---
+= 如何将主机端口与主机匹配？
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果要手动创建主机、则必须首先使用主机上可用的相应主机总线适配器(HBA)实用程序来确定与主机中安装的每个HBA关联的主机端口标识符。
+
+获得此信息后、请从创建主机对话框中提供的列表中选择已登录到存储阵列的主机端口标识符。
+
+
+CAUTION: 确保为要创建的主机选择适当的主机端口标识符。如果关联的主机端口标识符不正确、则可能会发生原因 从另一台主机意外访问此数据。
+
+如果您使用安装在每个主机上的主机上下文代理(Host Context Agent、HCA)自动创建主机、则HCA应自动将主机端口标识符与每个主机关联并对其进行适当配置。

@@ -13,19 +13,9 @@ summary: 使用 multipath.conf 文件是多路径守护进程 multipathd 的配�
 [role="lead"]
 multipath.conf 文件是多路径守护进程 multipathd 的配置文件。
 
-multipath.conf 文件会覆盖 multipathd 的内置配置表。文件中第一个非空格字符 # 的任何行均视为注释行。
+multipath.conf 文件会覆盖 multipathd 的内置配置表。
 
 
 NOTE: 对于 SANtricity 操作系统 8.30 及更高版本， NetApp 建议使用提供的默认设置。
 
-multipath.conf 文件位于以下位置：
-
-* 对于 SLES ：
-+
-` usr/share/doc/packages/multipath-ttools/multipath.conf 合成`
-
-* 对于 RHEL ：
-+
-` usr/share/doc/device-mapper-multipath-0.4.9/multipath.conf`
-
-
+不需要对/etc/multipath.conf进行任何更改。

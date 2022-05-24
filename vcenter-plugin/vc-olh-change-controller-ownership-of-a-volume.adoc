@@ -1,0 +1,39 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-change-controller-ownership-of-a-volume.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 更改卷的首选控制器所有权、以便通过新路径定向主机应用程序的I/O。 
+---
+= 更改卷的控制器所有权
+:hardbreaks:
+:allow-uri-read: 
+:experimental: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以更改卷的首选控制器所有权、以便通过新路径定向主机应用程序的I/O。
+
+如果不使用多路径驱动程序、则必须关闭当前正在使用此卷的任何主机应用程序。此操作可防止在I/O路径发生更改时出现应用程序错误。
+
+您可以更改池或卷组中一个或多个卷的控制器所有权。
+
+.步骤
+. 从管理页面中、选择包含要更改其控制器所有权的卷的存储阵列。
+. 选择菜单：配置 [ 管理卷 ] 。
+. 选择任何卷、然后选择菜单：更多[更改所有权]。
++
+此时将显示更改卷所有权对话框。存储阵列上的所有卷都会显示在此对话框中。
+
+. 使用*首选所有者*下拉列表更改要更改的每个卷的首选控制器、并确认要执行此操作。
+
+
+.结果
+* 系统将更改卷的控制器所有权。现在、卷的I/O将通过此I/O路径定向。
+* 在多路径驱动程序重新配置以识别新路径之前、卷可能不会使用新的I/O路径。
+
+
+此操作通常需要不到五分钟的时间。

@@ -30,6 +30,6 @@ SANtricity 系统管理器可对选定子型号 ID 使用远程存储卷功能�
 
 == 了解更多信息
 
-* 联机帮助，可从 System Manager 用户界面或中获取 https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-117/home.html?cp=5_0["文档中心"^]。
+* 联机帮助，可从 System Manager 用户界面或中获取 https://docs.netapp.com/us-en/e-series-santricity/index.html["SANtricity 软件文档站点"^]。
 * 有关远程存储卷功能的其他技术信息，请参见 https://www.netapp.com/pdf.html?item=/media/28697-tr-4893-deploy.pdf["远程存储卷技术报告"^]。
 

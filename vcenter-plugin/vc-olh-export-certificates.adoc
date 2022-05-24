@@ -1,0 +1,32 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-export-certificates.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 导出证书以查看其完整详细信息。 
+---
+= 导出证书
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以导出证书以查看其完整详细信息。
+
+要打开导出的文件、您必须具有证书查看器应用程序。
+
+.步骤
+. 选择*证书管理*。
+. 选择以下选项卡之一：
++
+** *管理*-显示托管插件的系统的证书。管理证书可以是自签名证书、也可以由证书颁发机构(CA)批准。它允许安全访问插件。
+** *可信*-显示插件可访问的存储阵列和其他远程服务器(例如LDAP服务器)的证书。证书可以从证书颁发机构(CA)颁发、也可以是自签名证书。
+
+
+. 从页面中选择一个证书、然后单击行末尾的省略号。
+. 单击*导出*、然后保存证书文件。
+. 在证书查看器应用程序中打开文件。
+

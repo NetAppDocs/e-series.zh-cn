@@ -1,0 +1,50 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-import-directory-services-settings.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 将目录服务配置从一个存储阵列导入到其他存储阵列。 
+---
+= 导入目录服务设置
+:hardbreaks:
+:allow-uri-read: 
+:experimental: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以将目录服务配置从一个存储阵列导入到其他存储阵列。当您需要在网络中配置多个阵列时、此批处理操作可以节省时间。
+
+请确保：
+
+* 目录服务在System Manager (菜单：设置[访问管理])中为要用作源的存储阵列配置。
+* 目标存储阵列的现有配置会在System Manager中进行备份(菜单：设置[系统>保存存储阵列配置])。
+* 您已在中查看了复制存储配置的要求 link:vc-olh-import-settings-overview.html["导入设置概述"]。
+
+
+导入的设置包括LDAP (轻型目录访问协议)服务器的域名和URL、以及LDAP服务器用户组与存储阵列预定义角色的映射。
+
+.步骤
+. 在管理页面中、单击菜单：操作[导入设置]。
++
+此时将打开导入设置向导。
+
+. 在选择设置对话框中、选择*目录服务*、然后单击*下一步*。
++
+此时将打开一个对话框、用于选择源阵列。
+
+. 在选择源对话框中、选择包含要导入的设置的阵列、然后单击*下一步*。
+. 在选择目标对话框中、选择一个或多个阵列以接收新设置。
++
+
+NOTE: 固件低于8.50的存储阵列不可供选择。此外、如果插件无法与该阵列进行通信(例如、阵列脱机或存在证书、密码或网络问题)、则阵列不会显示在此对话框中。
+
+. 单击 * 完成 * 。
++
+操作页面将显示导入操作的结果。如果操作失败、您可以单击其行以查看更多信息。
+
+
+
+现在、目标存储阵列配置了与源阵列相同的目录服务。

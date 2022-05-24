@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-import-certificates-for-arrays.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 导入存储阵列的证书、以便它们可以在托管适用于vCenter的存储插件的系统中进行身份验证。 
+---
+= 导入阵列的证书
+:hardbreaks:
+:allow-uri-read: 
+:experimental: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如有必要、您可以导入存储阵列的证书、以便这些阵列可以在托管适用于vCenter的Storage Plugin的系统上进行身份验证。证书可以由证书颁发机构(CA)签名、也可以是自签名证书。
+
+如果要导入可信证书、则必须使用System Manager为存储阵列控制器导入这些证书。
+
+.步骤
+. 选择*证书管理*。
+. 选择*可信*选项卡。
++
+此页面显示为存储阵列报告的所有证书。
+
+. 选择菜单：Import[证书]以导入CA证书、选择菜单：Import[自签名存储阵列证书]以导入自签名证书。
+. 要限制此视图、您可以使用*显示证书...*筛选字段、也可以单击列标题之一对证书行进行排序。
+. 在对话框中、选择证书、然后单击*导入*。
++
+已上传并验证此证书。
+
+

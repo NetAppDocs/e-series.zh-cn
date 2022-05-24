@@ -1,0 +1,46 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-add-volumes-to-workload.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 将未分配的卷添加到现有工作负载或新工作负载。 
+---
+= 将卷添加到工作负载
+:hardbreaks:
+:allow-uri-read: 
+:experimental: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以将未分配的卷添加到现有工作负载或新工作负载。
+
+如果卷是使用命令行界面(CLI)创建的、或者已从其他存储阵列迁移(导入/导出)、则卷不会与工作负载关联。
+
+.步骤
+. 从管理页面中、选择包含要添加的卷的存储阵列。
+. 选择菜单：配置 [ 管理卷 ] 。
+. 选择*应用程序和工作负载*选项卡。
++
+此时将显示"Applications & Workloads View"。
+
+. 选择*添加到工作负载*。
++
+此时将显示选择工作负载对话框。
+
+. 执行以下操作之一：
++
+** *将卷添加到现有工作负载*-选择此选项可将卷添加到现有工作负载。使用下拉列表选择工作负载。此工作负载的关联应用程序类型将分配给您添加到此工作负载的卷。
+** *将卷添加到新工作负载*-选择此选项可为应用程序类型定义新工作负载并将卷添加到新工作负载。
+
+
+. 选择*下一步*继续添加到工作负载序列。
++
+此时将显示选择卷对话框。
+
+. 选择要添加到工作负载的卷。
+. 查看要添加到选定工作负载的卷。
+. 对工作负载配置感到满意后、单击*完成*。
+

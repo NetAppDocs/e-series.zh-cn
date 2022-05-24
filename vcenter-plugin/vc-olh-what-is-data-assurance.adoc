@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-what-is-data-assurance.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: '数据保证(Data Assurance、DA)实施了T10保护信息(Protection Information、PI)标准、该标准可通过检查并更正在I/O路径上传输数据时可能发生的错误来提高数据完整性。' 
+---
+= 什么是数据保证？
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+数据保证(Data Assurance、DA)实施了T10保护信息(Protection Information、PI)标准、该标准可通过检查并更正在I/O路径上传输数据时可能发生的错误来提高数据完整性。
+
+通常情况下、使用数据保证功能将检查控制器和驱动器之间I/O路径的部分。DA 功能在池和卷组级别提供。
+
+启用此功能后、存储阵列会向卷中的每个数据块附加错误检查代码(也称为循环冗余检查或CRC)。移动数据块后、存储阵列会使用这些CRC代码来确定传输期间是否发生任何错误。可能损坏的数据既不会写入磁盘、也不会返回到主机。如果要使用DA功能、请在创建新卷时选择一个支持DA的池或卷组(在Pool and volume group candidates表中的* DA*旁边查找*是*)。
+
+请确保使用支持DA的I/O接口将这些启用了DA的卷分配给主机。支持DA的I/O接口包括光纤通道、SAS、基于TCP/IP的iSCSI、NVMe/FC、NVMe/IB、 基于InfiniBand的NVMe/RoCE和iSER (适用于RDMA/IB的iSCSI扩展)。基于InfiniBand的SRP不支持DA。

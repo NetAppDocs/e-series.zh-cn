@@ -1,0 +1,21 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-what-is-preservation-capacity.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: '保留容量是指池中为支持潜在驱动器故障而预留的容量(驱动器数量)。' 
+---
+= 什么是保留容量？
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+保留容量是指池中为支持潜在驱动器故障而预留的容量(驱动器数量)。
+
+创建池时、系统会根据池中的驱动器数量自动预留默认保留容量。
+
+池会在重建期间使用保留容量、而卷组则会出于相同目的使用热备用驱动器。与热备用驱动器相比、保留容量方法有所改进、因为它可以更快地进行重建。对于热备用驱动器、保留容量会分布在池中的多个驱动器上、而不是分布在一个驱动器上、因此您不会受到一个驱动器的速度或可用性的限制。

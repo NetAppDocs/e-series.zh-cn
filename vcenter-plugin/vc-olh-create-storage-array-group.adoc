@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-create-storage-array-group.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 存储组定义了哪些驱动器提供构成卷的存储。 
+---
+= 创建存储阵列组
+:hardbreaks:
+:allow-uri-read: 
+:experimental: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以创建存储组、然后将存储阵列添加到这些组中。存储组定义了哪些驱动器提供构成卷的存储。
+
+* 步骤 *
+
+. 从管理页面中、选择菜单：管理组[创建存储阵列组]。
+. 在*名称*字段中、键入新组的名称。
+. 选择要添加到新组的存储阵列。
+. 单击 * 创建 * 。
+

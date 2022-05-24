@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-what-do-i-need-to-do-to-recognize-the-expanded-capacity.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 如果增加卷的容量、则主机可能无法立即识别卷容量的增加。 
+---
+= 要识别扩展的容量、我需要执行哪些操作？
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果增加卷的容量、则主机可能无法立即识别卷容量的增加。
+
+大多数操作系统都会识别扩展后的卷容量、并在启动卷扩展后自动进行扩展。但是、有些可能不会。如果操作系统无法自动识别扩展的卷容量、则可能需要执行磁盘重新扫描或重新启动。
+
+扩展卷容量后、必须手动增加文件系统大小以匹配。如何执行此操作取决于所使用的文件系统。
+
+有关更多详细信息、请参见主机操作系统文档。

@@ -1,0 +1,45 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-delete-pool-or-volume-group.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 删除池或卷组以创建更多未分配容量、您可以根据应用程序存储需求重新配置这些容量 
+---
+= 删除池或卷组
+:hardbreaks:
+:allow-uri-read: 
+:experimental: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以删除池或卷组以创建更多未分配容量、您可以根据应用程序存储需求对其进行重新配置。
+
+.开始之前
+* 您必须已备份池或卷组中所有卷上的数据。
+* 您必须已停止所有输入/输出(I/O)。
+* 您必须卸载卷上的所有文件系统。
+* 您必须已删除池或卷组中的任何镜像关系。
+* 您必须已停止正在对池或卷组执行的任何卷复制操作。
+* 池或卷组不得参与异步镜像操作。
+* 卷组中的驱动器不能具有永久性预留。
+
+
+.步骤
+. 从管理页面中、选择具有池或卷组的存储阵列。
+. 选择菜单：配置[配置池和卷组]。
+. 从列表中选择一个池或卷组。
++
+一次只能选择一个池或卷组。向下滚动列表以查看其他池或卷组。
+
+. 选择菜单：uncommon Tasks[Delete]并确认。
+
+
+系统将执行以下操作：
+
+* 删除池或卷组中的所有数据。
+* 删除与池或卷组关联的所有驱动器。
+* 取消分配关联的驱动器、以便在新的或现有的池或卷组中重复使用这些驱动器。
+

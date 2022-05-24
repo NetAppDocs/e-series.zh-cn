@@ -77,6 +77,6 @@ image::../media/doccenterworkflow.gif[文档中心工作流]
 
 选择要使用的接口：
 
-* https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-117/home.html["适用于 11.7x 的 SANtricity System Manager 联机帮助"]
-* https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-116/home.html["适用于 11.6x 的 SANtricity System Manager 联机帮助"]
+* https://docs.netapp.com/us-en/e-series-santricity/system-manager/index.html["适用于 11.7x 的 SANtricity System Manager 联机帮助"]
+* https://docs.netapp.com/us-en/e-series-santricity-116/system-manager/index.html["适用于 11.6x 的 SANtricity System Manager 联机帮助"]
 

@@ -16,7 +16,11 @@ summary: 适用于 vCenter 的 SANtricity 存储插件可在 VMware vSphere 客�
 [role="lead"]
 适用于 vCenter 的 SANtricity 存储插件可在 VMware vSphere 客户端会话中对 E 系列存储阵列进行集成管理。
 
-适用于 vCenter 的插件提供了以下功能：
+
+
+== 可用任务
+
+您可以使用插件执行以下任务：
 
 * 查看和管理网络中发现的存储阵列。
 * 对包含多个存储阵列的组执行批处理操作。
@@ -27,7 +31,7 @@ summary: 适用于 vCenter 的 SANtricity 存储插件可在 VMware vSphere 客�
 
 
 
-NOTE: 此插件不能直接替代 SANtricity System Manager 软件。在单个阵列上执行某些存储管理任务仍需要 System Manager 。
+NOTE: 此插件不能直接替代System Manager界面、而是嵌入在存储阵列的每个控制器上。System Manager提供了其他管理功能；如果需要、您可以通过在插件的主视图中选择存储阵列、然后单击*启动*来打开System Manager。
 
 要安装和运行插件 Web 服务器，插件需要在 VMware 环境中部署一个 VMware vCenter Server 设备以及一个应用程序主机。
 
@@ -37,7 +41,49 @@ image:../media/vcenter_communication.png[""]
 
 
 
+== 接口概述
+
+登录到插件后、主页将打开*管理-全部*。在此页面中、您可以查看和管理网络中发现的所有存储阵列。
+
+
+
+=== 导航边栏
+
+导航边栏显示以下内容：
+
+* *管理*—发现网络中的存储阵列、启动阵列的System Manager、将设置从一个阵列导入到多个阵列、管理阵列组、升级SANtricity 操作系统以及配置存储。
+* *证书管理*—管理用于在浏览器和客户端之间进行身份验证的证书。
+* *操作*-查看批处理操作的进度、例如将设置从一个阵列导入到另一个阵列。
+
+
+
+NOTE: 当存储阵列处于非最佳状态时、某些操作不可用。
+
+* *支持*—查看技术支持选项、资源和联系人。
+
+
+
+
+=== 支持的浏览器
+
+适用于vCenter的存储插件可通过多种类型的浏览器进行访问。支持以下浏览器和版本。
+
+* Google Chrome 79 或更高版本
+* Mozilla Firefox 70 或更高版本
+* Microsoft Edge 79 或更高版本
+
+
+
+
+=== 用户角色和权限
+
+要访问适用于vCenter的存储插件中的任务、用户必须具有读写权限。默认情况下、所有已定义的VMware vCenter用户ID均无权在此插件中执行任务。
+
+
+
 == 配置概述
+
+配置包括以下步骤：
 
 . link:san-spvc-ic-installation.html["安装并注册插件"]。
 . link:san-spvc-ic-user-access.html["配置插件访问权限"]。
@@ -50,6 +96,4 @@ image:../media/vcenter_communication.png[""]
 
 == 了解更多信息
 
-* 有关联机帮助，请参见适用于 vCenter 的存储插件的用户界面。
-* 有关在 vSphere Client 中管理数据存储库的详细信息，请参见 https://docs.vmware.com/en/VMware-vSphere/index.html["VMware vSphere 文档"^]。
-
+有关在 vSphere Client 中管理数据存储库的详细信息，请参见 https://docs.vmware.com/en/VMware-vSphere/index.html["VMware vSphere 文档"^]。

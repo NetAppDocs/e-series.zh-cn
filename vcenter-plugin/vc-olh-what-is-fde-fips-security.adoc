@@ -1,0 +1,22 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-what-is-fde-fips-security.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: FDE/Fips安全性是指在写入期间对数据进行加密的安全驱动器、以及在读取期间使用唯一加密密钥对数据进行解密的驱动器。 
+---
+= 什么是FDE/Fips安全性？
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+FDE/Fips安全性是指在写入期间对数据进行加密的安全驱动器、以及在读取期间使用唯一加密密钥对数据进行解密的驱动器。
+
+这些支持安全的驱动器可防止未经授权访问从存储阵列中物理删除的驱动器上的数据。支持安全的驱动器可以是全磁盘加密(Full Disk Encryption、FDE)驱动器、也可以是联邦信息处理标准(Federal Information Processing Standard、FIPS)驱动器。FIPS驱动器已通过认证测试。
+
+
+NOTE: 对于需要FIPS支持的卷、请仅使用FIPS驱动器。在卷组或池中混用FIPS和FDE驱动器将导致所有驱动器被视为FDE驱动器。此外、FDE驱动器不能添加到纯FIPS卷组或池中或用作备用磁盘。

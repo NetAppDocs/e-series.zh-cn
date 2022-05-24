@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-view-certificates.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: '查看证书的摘要信息、其中包括使用证书的组织、颁发证书的机构、有效期和指纹(唯一标识符)' 
+---
+= 查看证书
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以查看证书的摘要信息、其中包括使用证书的组织、颁发证书的机构、有效期以及指纹(唯一标识符)。
+
+.步骤
+. 选择*证书管理*。
+. 选择以下选项卡之一：
++
+** *管理*-显示托管插件的系统的证书。管理证书可以是自签名证书、也可以由证书颁发机构(CA)批准。它允许安全访问插件。
+** *可信*-显示插件可访问的存储阵列和其他远程服务器(例如LDAP服务器)的证书。证书可以从证书颁发机构(CA)颁发、也可以是自签名证书。
+
+
+. 要查看有关证书的详细信息、请选择其行、选择行末尾的省略号、然后单击*查看*或*导出*。
+

@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-rename-storage-array.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 更改管理页面上显示的存储阵列名称。 
+---
+= 重命名存储阵列
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以更改vCenter存储插件的管理页面上显示的存储阵列名称。
+
+.步骤
+. 在*管理*页面中、选中存储阵列名称左侧的复选框。
+. 选择行最右侧的省略号、然后从弹出菜单中选择*重命名存储阵列*。
+. 输入新名称并单击*保存*。
+
