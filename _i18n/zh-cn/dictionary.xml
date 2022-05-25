@@ -6344,8 +6344,6 @@
   <block id="c6941703005adb7144c53a6fa1e9031b" category="section-title">第 6 步：配置存储</block>
   <block id="9bc4dbdc4b0ba32e879477f6d380d1f2" category="paragraph">要配置存储，您可以通过将浏览器指向控制器的 IP 地址来访问基于 Web 的界面 System Manager 。设置向导可帮助您开始进行系统配置。此外，您还可以使用命令行界面（ CLI ）。</block>
   <block id="dc319fa18c0e449181d9af17b46cb41d" category="paragraph">选择要使用的接口：</block>
-  <block id="e310bf04394efde500bf9f4c81acb37c" category="inline-link">适用于 11.7x 的 SANtricity System Manager 联机帮助</block>
-  <block id="cf7b3313bd605518202463f0e3fe1b45" category="inline-link">适用于 11.6x 的 SANtricity System Manager 联机帮助</block>
   <block id="b099e1af7ef72f35c180ddc664299373" category="summary">访问视频演示，了解有关 E 系列系统的更多信息。</block>
   <block id="55a719e89f77dd4327ce93ddce72d2b3" category="doc">E 系列视频</block>
   <block id="8519014ad5d86d252a65a30b42df0919" category="section-title">E 系列：快速，简单，可靠的存储</block>
@@ -7126,8 +7124,6 @@
   <block id="738a8c736dcf0a5ae4920a6448ab8da7" category="paragraph">请通过联系技术支持<block ref="2ff36e7792a0e0257d19a11dce8cade8" category="inline-link-rx"></block>, 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific) if you need the RMA number.</block>
   <block id="edb3c50e1624e1c64455cc9c6b567531" category="inline-link">SANtricity 软件文档站点</block>
   <block id="b4f5988f99b045705684a7692efed8d6" category="list-text">联机帮助，可从 System Manager 用户界面或中获取<block ref="173d089ddf996dbd066dc04ffeb10dca" category="inline-link-rx"></block>。</block>
-  <block id="5c78b830f7bd834501154848ce310440" category="list-text"><block ref="5c78b830f7bd834501154848ce310440" category="inline-link-rx"></block></block>
-  <block id="553343f1040951376da0b5928b9f5ce6" category="list-text"><block ref="553343f1040951376da0b5928b9f5ce6" category="inline-link-rx"></block></block>
   <block id="829fea797e3072814f3b223d66b72f1a" category="inline-link">* TR-4838：《具有Milestone XProtect VMS认证报告的E2800和E5700》*</block>
   <block id="bda3fde6fc7c495545a73026a8a05e44" category="cell"><block ref="af8284118427afcf1ac4e1e4465162e1" category="inline-link-rx"></block></block>
   <block id="10cd7a5a5e5e238ed0a260ca5ca1f4af" category="inline-link">* TR-4771设计：NetApp E系列和Genetec视频管理软件*</block>
@@ -8802,4 +8798,8 @@
   <block id="239a8d1ddfc1ceae19ee25fea039a278" category="sidebar">E2800产品规格</block>
   <block id="eecdfe99dab1ba77ed2b7b1d9b86256b" category="sidebar">SANtricity 软件</block>
   <block id="b9d208fcce9c26f3aacf7b49c9cdbaef" category="paragraph">如果出于性能原因在 IP SAN 中使用巨型帧，请确保将阵列，交换机和主机配置为使用巨型帧。有关如何在主机和交换机上启用巨型帧的信息，请参见操作系统和交换机文档。要在阵列上启用巨型帧，请完成中的步骤 <block ref="16d4528e3823d381a97af6e1811e489a" category="inline-link-macro-rx"></block>。</block>
+  <block id="82c87a954533f4f73c4568a90d45d795" category="inline-link">适用于11.7x的SANtricity System Manager帮助</block>
+  <block id="b6adf77a8fd2cb1ee566051ed64b7bbb" category="list-text"><block ref="b6adf77a8fd2cb1ee566051ed64b7bbb" category="inline-link-rx"></block></block>
+  <block id="73ea8f8143966cdb241af48e230354bb" category="inline-link">适用于11.6x的SANtricity System Manager帮助</block>
+  <block id="00f0cc59eb519b0e3ccef23f32fc3242" category="list-text"><block ref="00f0cc59eb519b0e3ccef23f32fc3242" category="inline-link-rx"></block></block>
 </blocks>
