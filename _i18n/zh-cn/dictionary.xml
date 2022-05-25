@@ -5655,7 +5655,6 @@
   <block id="e5dcf520a1b25b17e87573413fb7bb6c" category="paragraph">要为 iSCSI 网络配置基本冗余，请将每个主机端口以及每个控制器中的一个端口连接到不同的交换机，并对不同网段或 VLAN 上的每组主机端口和控制器端口进行分区。</block>
   <block id="1374ba4a3b800b667c2d22bc12c95878" category="paragraph">您必须启用发送和接收硬件流量控制 * 端到端 * 。您必须禁用优先级流量控制。</block>
   <block id="7e37f4cc4c72af636a462f4562f809e5" category="inline-link-macro">配置阵列端网络</block>
-  <block id="bfd77f2e9284c82bb0898c1fc8ee96a2" category="paragraph">如果出于性能原因在 IP SAN 中使用巨型帧，请确保将阵列，交换机和主机配置为使用巨型帧。有关如何在主机和交换机上启用巨型帧的信息，请参见操作系统和交换机文档。要在阵列上启用巨型帧，请完成中的步骤 <block ref="2ed754c1ecdb6cf89d6f4fd9390a16d0" category="inline-link-macro-rx"></block>。</block>
   <block id="544de7ba1dbbebfb99a713dc8014fa98" category="admonition">许多网络交换机必须配置为超过 9 ， 000 字节，才能实现 IP 开销。有关详细信息，请参见交换机文档。</block>
   <block id="2b430348ddae524592cd1c4207d8f170" category="summary">根据您的 SLES 版本（ SUSE Linux 版本）配置指向设备目标的 I/O 。</block>
   <block id="2760a5173fe84d55b4dfd0df17083b60" category="doc">访问虚拟设备目标的 NVMe 卷</block>
@@ -8802,4 +8801,5 @@
   <block id="ecc348240fe0031a456c147f13126f0c" category="sidebar">E5700产品规格</block>
   <block id="239a8d1ddfc1ceae19ee25fea039a278" category="sidebar">E2800产品规格</block>
   <block id="eecdfe99dab1ba77ed2b7b1d9b86256b" category="sidebar">SANtricity 软件</block>
+  <block id="b9d208fcce9c26f3aacf7b49c9cdbaef" category="paragraph">如果出于性能原因在 IP SAN 中使用巨型帧，请确保将阵列，交换机和主机配置为使用巨型帧。有关如何在主机和交换机上启用巨型帧的信息，请参见操作系统和交换机文档。要在阵列上启用巨型帧，请完成中的步骤 <block ref="16d4528e3823d381a97af6e1811e489a" category="inline-link-macro-rx"></block>。</block>
 </blocks>
