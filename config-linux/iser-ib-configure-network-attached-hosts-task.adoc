@@ -41,11 +41,11 @@ InfiniBand OFED 驱动程序堆栈支持在相同端口上同时运行 iSER 和 
 # systemctl start iscsid.service
 # systemctl enable iscsid.service
 ----
-. 配置 IPoIB 网络接口：
+. 配置InfiniBand卡网络接口：
 +
 .. 确定要使用的 InfiniBand 端口。记录每个端口的硬件地址（ MAC 地址）。
 .. 配置 InfiniBand 网络接口设备的持久名称。
-.. 为标识的 IPoIB 接口配置 IP 地址和网络信息。
+.. 为标识的InfiniBand接口配置IP地址和网络信息。
 +
 所需的特定接口配置可能因所使用的操作系统而异。有关具体实施信息，请参见供应商的操作系统文档。
 

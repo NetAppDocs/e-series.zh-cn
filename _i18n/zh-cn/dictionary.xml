@@ -5822,10 +5822,8 @@
   <block id="7f02faf8a07269a5ab98e244f089148d" category="list-text">在主机上启用并启动 iSCSI 服务：</block>
   <block id="4578709b544309c3c129ddd77e647202" category="paragraph">* Red Hat Enterprise Linux 7 和 8 （ RHEL 7 和 RHEL 8 ） *</block>
   <block id="03255405207be9e847f2d898e05048a4" category="paragraph">* SUSE Linux Enterprise Server 12 和 15 （ SLES 12 和 SLES 15 ） *</block>
-  <block id="9f20bfce60dbc91ad764d37dadffc227" category="list-text">配置 IPoIB 网络接口：</block>
   <block id="49688998ea00bb073d084abbb307e708" category="list-text">确定要使用的 InfiniBand 端口。记录每个端口的硬件地址（ MAC 地址）。</block>
   <block id="6b4ef7dc778070c5ee2f7456ae2e252c" category="list-text">配置 InfiniBand 网络接口设备的持久名称。</block>
-  <block id="713824554266fc9376f3db256933c6af" category="list-text">为标识的 IPoIB 接口配置 IP 地址和网络信息。</block>
   <block id="4ecefee9b1283cd8f82d4b55f24122c7" category="paragraph">所需的特定接口配置可能因所使用的操作系统而异。有关具体实施信息，请参见供应商的操作系统文档。</block>
   <block id="61c924231a8595eeee332cc71a80361b" category="list-text">通过重新启动网络服务或手动重新启动每个接口来启动 IB 网络接口。例如：</block>
   <block id="ac1bbea8797a5c18374a7eb5a191169e" category="list-text">验证与目标端口的连接。从主机对配置网络连接时配置的 IP 地址执行 ping 操作。</block>
@@ -8802,4 +8800,6 @@
   <block id="b6adf77a8fd2cb1ee566051ed64b7bbb" category="list-text"><block ref="b6adf77a8fd2cb1ee566051ed64b7bbb" category="inline-link-rx"></block></block>
   <block id="73ea8f8143966cdb241af48e230354bb" category="inline-link">适用于11.6x的SANtricity System Manager帮助</block>
   <block id="00f0cc59eb519b0e3ccef23f32fc3242" category="list-text"><block ref="00f0cc59eb519b0e3ccef23f32fc3242" category="inline-link-rx"></block></block>
+  <block id="3bf3cbc109a52d0d37f5d3c9ecf3e14a" category="list-text">配置InfiniBand卡网络接口：</block>
+  <block id="0360bd7f0d62ff5323000d0f25742cf3" category="list-text">为标识的InfiniBand接口配置IP地址和网络信息。</block>
 </blocks>
