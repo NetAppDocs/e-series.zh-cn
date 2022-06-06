@@ -65,7 +65,7 @@ devices {
 
 
 
-== 为 RHEL 8 设置原生 NMVe 多路径
+== 为RHEL 8设置原生 NMVe多路径
 
 默认情况下，原生 NVMe 多路径在 RHEL 8 中处于禁用状态，必须使用以下步骤启用。
 

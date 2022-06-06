@@ -6119,7 +6119,6 @@
   <block id="b4c0052af465e60e515dd89ce3a30501" category="list-text">记录 IQN 。</block>
   <block id="2a9360c5f25e96ff91adcbc48896848d" category="paragraph">如果您从不支持发送目标发现的操作系统创建 iSER 会话，则可能需要此信息。在中输入此信息 <block ref="0a1a4238c86ce603a2c352fabafb1abf" category="inline-xref-macro-rx"></block>。</block>
   <block id="4d8c7109afb8533630e6b060d83f938e" category="paragraph">在使用基于光纤通道的 NVMe 时， RHEL 7 和 SLES 12 会使用设备映射程序多路径（ DMMP ）进行多路径。RHEL 8 和 SLES 15 使用内置的原生 NVMe 故障转移。根据您正在运行的操作系统，需要对多路径进行一些额外配置才能使其正常运行。</block>
-  <block id="2c04a3e0f45855d5ed2cbdb6c291967d" category="section-title">为 RHEL 8 设置原生 NMVe 多路径</block>
   <block id="ce787f5529e569c07191ad09975c4a3f" category="list-text">使用新的 modprobe 参数 remake `initramfs` 。</block>
   <block id="0e550c6e0d7b33fb6681b0cab3069f86" category="list-text">重新启动服务器以在启用原生 NVMe 多路径的情况下启动它</block>
   <block id="dcb07d8ae16ab2bd4fcf3f16bb1e166b" category="summary">光纤通道环境中的 NVMe 启动程序配置包括安装和配置 NVMe-CLI 软件包，以及在主机上启用 NVMe/FC 启动程序。</block>
@@ -8802,4 +8801,5 @@
   <block id="00f0cc59eb519b0e3ccef23f32fc3242" category="list-text"><block ref="00f0cc59eb519b0e3ccef23f32fc3242" category="inline-link-rx"></block></block>
   <block id="3bf3cbc109a52d0d37f5d3c9ecf3e14a" category="list-text">配置InfiniBand卡网络接口：</block>
   <block id="0360bd7f0d62ff5323000d0f25742cf3" category="list-text">为标识的InfiniBand接口配置IP地址和网络信息。</block>
+  <block id="076b3ed1d1bebd5a14f9e01695f62e5b" category="section-title">为RHEL 8设置原生 NMVe多路径</block>
 </blocks>
