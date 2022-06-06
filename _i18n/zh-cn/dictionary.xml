@@ -8801,5 +8801,5 @@
   <block id="00f0cc59eb519b0e3ccef23f32fc3242" category="list-text"><block ref="00f0cc59eb519b0e3ccef23f32fc3242" category="inline-link-rx"></block></block>
   <block id="3bf3cbc109a52d0d37f5d3c9ecf3e14a" category="list-text">配置InfiniBand卡网络接口：</block>
   <block id="0360bd7f0d62ff5323000d0f25742cf3" category="list-text">为标识的InfiniBand接口配置IP地址和网络信息。</block>
-  <block id="076b3ed1d1bebd5a14f9e01695f62e5b" category="section-title">为RHEL 8设置原生 NMVe多路径</block>
+  <block id="4df6b1c48c33c3735ab315bb52db5933" category="section-title">为RHEL 8设置原生 NVMe多路径</block>
 </blocks>
