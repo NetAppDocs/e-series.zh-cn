@@ -5887,7 +5887,6 @@
   <block id="49f4b63b5d0e1684071ab38b5ca7b164" category="section-title">目标 NQN</block>
   <block id="0545a1085926975a9b258d98185e4bdd" category="paragraph">记录阵列端口要使用的 NQN 。</block>
   <block id="c3458af35a87b205befdafb97cfb818c" category="list-text">使用命令 `nvme connect -t rdma -n discovered_sub_nqn -a target_ip_address -Q queue_depth_setting -l controller_los_timeout_period` 连接到第一个路径上发现的子系统</block>
-  <block id="deb62e4f060ee587d63b8541c57636c6" category="admonition">上述命令在重新启动后不会持续存在。每次重新启动后，都需要执行 `nvme connect` 命令以重新建立 NVMe 连接。</block>
   <block id="ecee470708b06c136afc8296235d59d1" category="admonition">系统重新启动或控制器长时间不可用时， NVMe 连接不会持久。</block>
   <block id="e11d5f2201c0be606810cbfc93d96891" category="admonition">建议的控制器丢失超时期限（以秒为单位）为 60 分钟（ 3600 秒）。使用 ` -l 3600` 命令行选项将 600 秒的默认设置覆盖为 3600 秒，如以下示例所示：</block>
   <block id="f8110983d42b31fcea81a67a2d155ebd" category="list-text">使用 `nvme list` 命令查看当前连接的 NVMe 设备列表。在以下示例中，它为 `nvme0n1` 。</block>
@@ -8804,4 +8803,5 @@
   <block id="d43f0c1ac820c0cdc6a73e7a6f943df2" category="paragraph">添加：</block>
   <block id="65c76cf8b4c172d7378f288e8af8a08c" category="list-text">使用ifaces时、通过创建两个iSCSI iface绑定来配置iSCSI接口。</block>
   <block id="d601c251b180e2832efe894c46092431" category="list-text">在iSCSI启动程序和iSCSI目标之间创建连接。</block>
+  <block id="f53443405a6562d0b3e4c7cf9bc15b23" category="admonition">上述命令在重新启动后不会持续存在。每次重新启动后、都需要执行`nvme connect`命令以重新建立NVMe连接。</block>
 </blocks>

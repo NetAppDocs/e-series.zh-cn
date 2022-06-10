@@ -30,7 +30,7 @@ NOTE: `nvme discover` 命令可发现子系统中的所有控制器端口，而�
 +
 [listing]
 ----
-# nvme discover  -t rdma -a 10.10.10.100
+# nvme discover -t rdma -a 10.10.10.100
  Discovery Log Number of Records 2, Generation counter 0
  =====Discovery Log Entry 0======
  trtype:  rdma
@@ -63,7 +63,7 @@ NOTE: `nvme discover` 命令可发现子系统中的所有控制器端口，而�
 . 使用命令 `nvme connect -t rdma -n discovered_sub_nqn -a target_ip_address -Q queue_depth_setting -l controller_los_timeout_period` 连接到第一个路径上发现的子系统
 +
 
-NOTE: 上述命令在重新启动后不会持续存在。每次重新启动后，都需要执行 `nvme connect` 命令以重新建立 NVMe 连接。
+NOTE: 上述命令在重新启动后不会持续存在。每次重新启动后、都需要执行`nvme connect`命令以重新建立NVMe连接。
 
 +
 
@@ -88,7 +88,7 @@ NOTE: 建议的控制器丢失超时期限（以秒为单位）为 60 分钟（ 
 +
 [listing]
 ----
-# nvme connect -t rdma -a 10.10.10.100 -n  nqn.1992-08.com.netapp:5700.600a098000af41580000000058ed54be -Q 1024 -l 3600
+# nvme connect -t rdma -a 10.10.10.100 -n nqn.1992-08.com.netapp:5700.600a098000af41580000000058ed54be -Q 1024 -l 3600
 ----
 . 使用 `nvme list` 命令查看当前连接的 NVMe 设备列表。在以下示例中，它为 `nvme0n1` 。
 +
@@ -111,7 +111,7 @@ Usage                 Format           FW Rev
 +
 [listing]
 ----
-  # nvme connect -t rdma -a 11.11.11.100 -n  nqn.1992-08.com.netapp:5700.600a098000af41580000000058ed54be -Q 1024 -l 3600
+  # nvme connect -t rdma -a 11.11.11.100 -n nqn.1992-08.com.netapp:5700.600a098000af41580000000058ed54be -Q 1024 -l 3600
 ----
 . 使用 Linux `lsblk` 和 `grep` 命令显示有关每个块设备的追加信息：
 +
