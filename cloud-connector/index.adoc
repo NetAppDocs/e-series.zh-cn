@@ -16,6 +16,9 @@ SANtricity 云连接器是一款基于主机的 Linux 应用程序，可用于�
 SANtricity 云连接器可安装在 RedHat 和 SUSE Linux 平台上，它是一个打包的解决方案（ .bin 文件）。安装 SANtricity 云连接器后，您可以对应用程序进行配置，以便将 E 系列卷的备份和还原作业备份到 AltaVault 设备或现有 Amazon S3 或 StorageGRID 帐户。通过 SANtricity 云连接器执行的所有作业都使用基于 REST 的 API 。
 
 
+NOTE: SANtricity 云连接器工具已弃用、不再可供下载。
+
+
 
 == 注意事项
 

@@ -8804,4 +8804,5 @@
   <block id="d601c251b180e2832efe894c46092431" category="list-text">在iSCSI启动程序和iSCSI目标之间创建连接。</block>
   <block id="f53443405a6562d0b3e4c7cf9bc15b23" category="admonition">上述命令在重新启动后不会持续存在。每次重新启动后、都需要执行`nvme connect`命令以重新建立NVMe连接。</block>
   <block id="67abfdf061a5203871b27c16ec885ea9" category="list-text">请查看 <block ref="75c4b5f7794c0531679941f5aad7b091" category="inline-link-macro-rx"></block>。</block>
+  <block id="d29230a83d49c7722d815a3203b64bef" category="admonition">SANtricity 云连接器工具已弃用、不再可供下载。</block>
 </blocks>
