@@ -5719,7 +5719,6 @@
   <block id="e180dcda700b7114bbf7cbdb821df4a6" category="list-text">检查两个 IB 端口链路是否均已启动且状态 = 活动：</block>
   <block id="22b4a25f95365479298f378bbf161e6f" category="list-text">在 IB 端口上设置 IPv4 IP 地址。</block>
   <block id="08fa0114b0d6dc928f4c7ac5eb67c374" category="paragraph">使用以下内容创建文件 /etc/sysconfig/network/ifcfg-ib0 。</block>
-  <block id="033848f8e5f29b66fa491a6133c35ab8" category="paragraph">然后，创建文件 /etc/sysconfig/network/ifcfg-ib1 。</block>
   <block id="736d155a06721b3c243a2d11dd71cf06" category="paragraph">使用以下内容创建文件 /etc/sysconfig/network-scripts/ifcfg-ib0 。</block>
   <block id="2ec96b50b65cad4cbdf3961da2c339d2" category="paragraph">然后，创建文件 /etc/sysconfig/network-scripts/ifcfg-ib1 ：</block>
   <block id="9830a61f8841b6d0b5bd803cf5c60d44" category="list-text">启用 `IB` 接口：</block>
@@ -8802,4 +8801,5 @@
   <block id="f1d1c2a7d2a912bc6a5aa04e31b25d26" category="paragraph">使用以下内容创建示例文件`/etc/sysconfig/network-scripts/ifcfg-eth4`。</block>
   <block id="51be39b7e050efbe3d29b5d8c0430aa5" category="paragraph">然后、创建示例文件`/etc/sysconfig/network-scripts/ifcfg-eth5`：</block>
   <block id="ffbb9e9bc4bfe3481683088489b9c286" category="list-text">在主机上设置 NVMe-oF 层。在 ` /etc/moduls-load.d/` 下创建以下文件，以加载 `NVMe-RDMA` 内核模块，并确保内核模块始终处于打开状态，即使在重新启动后也是如此：</block>
+  <block id="ba5d5a8fa23f831ccd6827dc3b611469" category="paragraph">然后、创建文件/etc/sysconfig/network/ifcfg-ib1：</block>
 </blocks>

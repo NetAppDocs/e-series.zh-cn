@@ -45,11 +45,17 @@ summary: 在 InfiniBand 环境中配置 NVMe 启动程序包括安装和配置 I
 ----
 IPOIB_LOAD=yes
 ----
+. 获取主机NQN、该主机将用于为阵列配置主机。
++
+[listing]
+----
+# cat /etc/nvme/hostnqn
+----
 . 检查两个 IB 端口链路是否均已启动且状态 = 活动：
 +
 [listing]
 ----
- # ibstat
+# ibstat
 ----
 +
 [listing]
@@ -93,34 +99,34 @@ CA 'mlx4_0'
 [listing]
 ----
 
-  BOOTPROTO='static'
-  BROADCAST=
-  ETHTOOL_OPTIONS=
-  IPADDR='10.10.10.100/24'
-  IPOIB_MODE='connected'
-  MTU='65520'
-  NAME=
-  NETWORK=
-  REMOTE_IPADDR=
-  STARTMODE='auto'
+BOOTPROTO='static'
+BROADCAST=
+ETHTOOL_OPTIONS=
+IPADDR='10.10.10.100/24'
+IPOIB_MODE='connected'
+MTU='65520'
+NAME=
+NETWORK=
+REMOTE_IPADDR=
+STARTMODE='auto'
 ----
 +
-然后，创建文件 /etc/sysconfig/network/ifcfg-ib1 。
+然后、创建文件/etc/sysconfig/network/ifcfg-ib1：
 
 +
 [listing]
 ----
 
-  BOOTPROTO='static'
-  BROADCAST=
-  ETHTOOL_OPTIONS=
-  IPADDR='11.11.11.100/24'
-  IPOIB_MODE='connected'
-  MTU='65520'
-  NAME=
-  NETWORK=
-  REMOTE_IPADDR=
-  STARTMODE='auto'
+BOOTPROTO='static'
+BROADCAST=
+ETHTOOL_OPTIONS=
+IPADDR='11.11.11.100/24'
+IPOIB_MODE='connected'
+MTU='65520'
+NAME=
+NETWORK=
+REMOTE_IPADDR=
+STARTMODE='auto'
 ----
 +
 * RHEL 7 或 RHEL 8*
@@ -132,17 +138,17 @@ CA 'mlx4_0'
 [listing]
 ----
 
-  CONNECTED_MODE=no
-  TYPE=InfiniBand
-  PROXY_METHOD=none
-  BROWSER_ONLY=no
-  BOOTPROTO=static
-  IPADDR='10.10.10.100/24'
-  DEFROUTE=no
-  IPV4=FAILURE_FATAL=yes
-  IPV6INIT=no
-  NAME=ib0
-  ONBOOT=yes
+CONNECTED_MODE=no
+TYPE=InfiniBand
+PROXY_METHOD=none
+BROWSER_ONLY=no
+BOOTPROTO=static
+IPADDR='10.10.10.100/24'
+DEFROUTE=no
+IPV4=FAILURE_FATAL=yes
+IPV6INIT=no
+NAME=ib0
+ONBOOT=yes
 ----
 +
 然后，创建文件 /etc/sysconfig/network-scripts/ifcfg-ib1 ：
@@ -151,17 +157,17 @@ CA 'mlx4_0'
 [listing]
 ----
 
-  CONNECTED_MODE=no
-  TYPE=InfiniBand
-  PROXY_METHOD=none
-  BROWSER_ONLY=no
-  BOOTPROTO=static
-  IPADDR='11.11.11.100/24'
-  DEFROUTE=no
-  IPV4=FAILURE_FATAL=yes
-  IPV6INIT=no
-  NAME=ib1
-  ONBOOT=yes
+CONNECTED_MODE=no
+TYPE=InfiniBand
+PROXY_METHOD=none
+BROWSER_ONLY=no
+BOOTPROTO=static
+IPADDR='11.11.11.100/24'
+DEFROUTE=no
+IPV4=FAILURE_FATAL=yes
+IPV6INIT=no
+NAME=ib1
+ONBOOT=yes
 ----
 . 启用 `IB` 接口：
 +
