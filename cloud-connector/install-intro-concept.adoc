@@ -15,6 +15,9 @@ SANtricity 云连接器软件包解决方案（ .bin 文件）仅适用于 RedHa
 
 您可以通过图形模式或控制台模式在兼容的 Linux 操作系统上安装 SANtricity 云连接器应用程序。在安装过程中，您必须为 SANtricity 云连接器指定非 SSL 和 SSL 端口号。安装后， SANtricity 云连接器将作为守护进程运行。
 
+
+NOTE: SANtricity 云连接器工具已弃用、不再可供下载。
+
 查看以下注释：
 
 * 如果 SANtricity Web 服务代理已安装在与 SANtricity 云连接器相同的服务器上，则非 SSL 端口号和 SSL 端口号之间将发生冲突。在这种情况下，请在 SANtricity 云连接器安装期间为非 SSL 端口和 SSL 端口选择适当的数字。
