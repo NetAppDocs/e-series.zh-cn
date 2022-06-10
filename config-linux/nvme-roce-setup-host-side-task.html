@@ -4051,7 +4051,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-15 15:59:24 +0000">04/15/2022</time>
+    <time datetime="2022-06-10 13:38:13 +0000">06/10/2022</time>
     
   
 
@@ -4093,6 +4093,14 @@
 </div>
 </li>
 <li>
+<p>获取主机NQN、该主机将用于为阵列配置主机。</p>
+<div class="listingblock">
+<div class="content">
+<pre># cat /etc/nvme/hostnqn</pre>
+</div>
+</div>
+</li>
+<li>
 <p>在用于通过 RoCE 连接 NVMe 的以太网端口上设置 IPv4 IP 地址。对于每个网络接口，创建一个配置脚本，其中包含该接口的不同变量。</p>
 <div class="paragraph">
 <p>此步骤中使用的变量基于服务器硬件和网络环境。这些变量包括 <code>IPADDR</code> 和 <code>网关</code> 。以下是适用于 SLES 和 RHEL 的示例说明：</p>
@@ -4101,87 +4109,79 @@
 <ul>
 <li>
 <p>SLES 12 和 SLES 15*</p>
-<div class="ulist">
-<ul>
-<li>
-<p>按如下所示创建示例文件 ` /etc/sysconfig/network/ifcfg-eth4` ：</p>
+<div class="paragraph">
+<p>使用以下内容创建示例文件`/etc/sysconfig/network/ifcfg-eth4`。</p>
+</div>
 <div class="listingblock">
 <div class="content">
 <pre>BOOTPROTO='static'
-   BROADCAST=
-   ETHTOOL_OPTIONS=
-   IPADDR='192.168.1.87/24'
-   GATEWAY='192.168.1.1'
-   MTU=
-   NAME='MT27800 Family [ConnectX-5]'
-   NETWORK=
-   REMOTE_IPADDR=
-   STARTMODE='auto'</pre>
+BROADCAST=
+ETHTOOL_OPTIONS=
+IPADDR='192.168.1.87/24'
+GATEWAY='192.168.1.1'
+MTU=
+NAME='MT27800 Family [ConnectX-5]'
+NETWORK=
+REMOTE_IPADDR=
+STARTMODE='auto'</pre>
 </div>
 </div>
-</li>
-<li>
-<p>按如下所示创建文件 ` /etc/sysconfig/network/ifcfg-eth5` ：</p>
+<div class="paragraph">
+<p>然后、创建示例文件`/etc/sysconfig/network/ifcfg-eth5`：</p>
+</div>
 <div class="listingblock">
 <div class="content">
 <pre>BOOTPROTO='static'
-   BROADCAST=
-   ETHTOOL_OPTIONS=
-   IPADDR='192.168.2.87/24'
-   GATEWAY='192.168.2.1'
-   MTU=
-   NAME='MT27800 Family [ConnectX-5]'
-   NETWORK=
-   REMOTE_IPADDR=
-   STARTMODE='auto'</pre>
+BROADCAST=
+ETHTOOL_OPTIONS=
+IPADDR='192.168.2.87/24'
+GATEWAY='192.168.2.1'
+MTU=
+NAME='MT27800 Family [ConnectX-5]'
+NETWORK=
+REMOTE_IPADDR=
+STARTMODE='auto'</pre>
 </div>
-</div>
-</li>
-</ul>
 </div>
 </li>
 <li>
 <p>RHEL 7 和 RHEL 8*</p>
-<div class="ulist">
-<ul>
-<li>
-<p>按如下所示创建示例文件 ` /etc/sysconfig/network-scripts/ifcfg-eth4` ：</p>
+<div class="paragraph">
+<p>使用以下内容创建示例文件`/etc/sysconfig/network-scripts/ifcfg-eth4`。</p>
+</div>
 <div class="listingblock">
 <div class="content">
 <pre>BOOTPROTO='static'
-  BROADCAST=
-  ETHTOOL_OPTIONS=
-  IPADDR='192.168.1.87/24’
-  GATEWAY='192.168.1.1'
-  MTU=
-  NAME='MT27800 Family [ConnectX-5]'
-  NETWORK=
-  REMOTE_IPADDR=
-  STARTMODE='auto'</pre>
+BROADCAST=
+ETHTOOL_OPTIONS=
+IPADDR='192.168.1.87/24’
+GATEWAY='192.168.1.1'
+MTU=
+NAME='MT27800 Family [ConnectX-5]'
+NETWORK=
+REMOTE_IPADDR=
+STARTMODE='auto'</pre>
 </div>
 </div>
-</li>
-<li>
-<p>按如下所示创建文件 ` /etc/sysconfig/network-scripts/ifcfg-eth5` ：</p>
-<div class="listingblock">
-<div class="content">
-<pre>BOOTPROTO='static'
-   BROADCAST=
-   ETHTOOL_OPTIONS=
-   IPADDR='192.168.2.87/24'
-   GATEWAY='192.168.2.1'
-   MTU=
-   NAME='MT27800 Family [ConnectX-5]'
-   NETWORK=
-   REMOTE_IPADDR=
-   STARTMODE='auto'</pre>
-</div>
+<div class="paragraph">
+<p>然后、创建示例文件`/etc/sysconfig/network-scripts/ifcfg-eth5`：</p>
 </div>
 </li>
 </ul>
 </div>
-</li>
-</ul>
+<div class="listingblock">
+<div class="content">
+<pre>BOOTPROTO='static'
+BROADCAST=
+ETHTOOL_OPTIONS=
+IPADDR='192.168.2.87/24'
+GATEWAY='192.168.2.1'
+MTU=
+NAME='MT27800 Family [ConnectX-5]'
+NETWORK=
+REMOTE_IPADDR=
+STARTMODE='auto'</pre>
+</div>
 </div>
 </li>
 <li>
@@ -4194,11 +4194,7 @@
 </div>
 </li>
 <li>
-<p>在主机上设置 NVMe-oF 层。</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>在 ` /etc/moduls-load.d/` 下创建以下文件，以加载 <code>NVMe-RDMA</code> 内核模块，并确保内核模块始终处于打开状态，即使在重新启动后也是如此：</p>
+<p>在主机上设置 NVMe-oF 层。在 ` /etc/moduls-load.d/` 下创建以下文件，以加载 <code>NVMe-RDMA</code> 内核模块，并确保内核模块始终处于打开状态，即使在重新启动后也是如此：</p>
 <div class="listingblock">
 <div class="content">
 <pre># cat /etc/modules-load.d/nvme-rdma.conf
@@ -4207,9 +4203,6 @@
 </div>
 <div class="paragraph">
 <p>要验证是否已加载 <code>NVMe-RDMA</code> 内核模块，请运行以下命令：</p>
-</div>
-</li>
-</ol>
 </div>
 <div class="listingblock">
 <div class="content">
