@@ -4051,7 +4051,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-15 15:59:24 +0000">04/15/2022</time>
+    <time datetime="2022-06-10 14:18:35 +0000">06/10/2022</time>
     
   
 
@@ -4088,7 +4088,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre># nvme discover  -t rdma -a 10.10.10.100
+<pre># nvme discover -t rdma -a 10.10.10.100
  Discovery Log Number of Records 2, Generation counter 0
  =====Discovery Log Entry 0======
  trtype:  rdma
@@ -4131,7 +4131,7 @@
 <img src="/us-en/e-series/images/note.svg" alt="注">
 </td>
 <td class="content">
-上述命令在重新启动后不会持续存在。每次重新启动后，都需要执行 <code>nvme connect</code> 命令以重新建立 NVMe 连接。
+上述命令在重新启动后不会持续存在。每次重新启动后、都需要执行`nvme connect`命令以重新建立NVMe连接。
 </td>
 </tr>
 </table>
@@ -4198,7 +4198,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre># nvme connect -t rdma -a 10.10.10.100 -n  nqn.1992-08.com.netapp:5700.600a098000af41580000000058ed54be -Q 1024 -l 3600</pre>
+<pre># nvme connect -t rdma -a 10.10.10.100 -n nqn.1992-08.com.netapp:5700.600a098000af41580000000058ed54be -Q 1024 -l 3600</pre>
 </div>
 </div>
 </li>
@@ -4225,7 +4225,7 @@
 <p>连接到第二条路径上发现的子系统：</p>
 <div class="listingblock">
 <div class="content">
-<pre>  # nvme connect -t rdma -a 11.11.11.100 -n  nqn.1992-08.com.netapp:5700.600a098000af41580000000058ed54be -Q 1024 -l 3600</pre>
+<pre>  # nvme connect -t rdma -a 11.11.11.100 -n nqn.1992-08.com.netapp:5700.600a098000af41580000000058ed54be -Q 1024 -l 3600</pre>
 </div>
 </div>
 </li>
