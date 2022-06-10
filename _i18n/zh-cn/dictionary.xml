@@ -3275,7 +3275,6 @@
   <block id="fbcedc805afedbeaf7664976b732371b" category="paragraph">您可以使用基板主机端口将主机接口卡（ HIC ）添加到 E2800 控制器箱中。此功能增加了 E2800 存储阵列中的主机端口数量，并提供了其他主机协议。</block>
   <block id="bae6747b03b066c55bb70405c284861b" category="paragraph">在此操作步骤期间，您必须关闭存储阵列，安装 HIC 并重新加电。</block>
   <block id="070240a094393a3e57b978aa2f566cb4" category="inline-link-macro">更换 E2800 HIC 的要求</block>
-  <block id="648ab45c7c16024229384da8a07faf88" category="list-text">请查看 <block ref="8b9a37c372cb06d9e349e5fcd6c7e362" category="inline-link-macro-rx"></block>。</block>
   <block id="8c5454e59d2a11219e2ce80369161ec1" category="list-text">为新主机端口安装的任何所需主机硬件，例如交换机或主机总线适配器（ HBA ）。</block>
   <block id="df3446e765e5aa88b2f1ff570bce3220" category="paragraph">准备添加 HIC ，方法是备份存储阵列的配置数据库，收集支持数据并停止主机 I/O 操作。然后，您可以关闭控制器架。</block>
   <block id="4a2f4579802cd4b78e234f0a8b277904" category="paragraph">卸下控制器箱，以便添加新的主机接口卡。</block>
@@ -8804,4 +8803,5 @@
   <block id="65c76cf8b4c172d7378f288e8af8a08c" category="list-text">使用ifaces时、通过创建两个iSCSI iface绑定来配置iSCSI接口。</block>
   <block id="d601c251b180e2832efe894c46092431" category="list-text">在iSCSI启动程序和iSCSI目标之间创建连接。</block>
   <block id="f53443405a6562d0b3e4c7cf9bc15b23" category="admonition">上述命令在重新启动后不会持续存在。每次重新启动后、都需要执行`nvme connect`命令以重新建立NVMe连接。</block>
+  <block id="67abfdf061a5203871b27c16ec885ea9" category="list-text">请查看 <block ref="75c4b5f7794c0531679941f5aad7b091" category="inline-link-macro-rx"></block>。</block>
 </blocks>
