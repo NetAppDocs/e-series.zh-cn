@@ -8803,6 +8803,8 @@
   <block id="65c76cf8b4c172d7378f288e8af8a08c" category="list-text">使用ifaces时、通过创建两个iSCSI iface绑定来配置iSCSI接口。</block>
   <block id="d601c251b180e2832efe894c46092431" category="list-text">在iSCSI启动程序和iSCSI目标之间创建连接。</block>
   <block id="f53443405a6562d0b3e4c7cf9bc15b23" category="admonition">上述命令在重新启动后不会持续存在。每次重新启动后、都需要执行`nvme connect`命令以重新建立NVMe连接。</block>
-  <block id="67abfdf061a5203871b27c16ec885ea9" category="list-text">请查看 <block ref="75c4b5f7794c0531679941f5aad7b091" category="inline-link-macro-rx"></block>。</block>
   <block id="d29230a83d49c7722d815a3203b64bef" category="admonition">SANtricity 云连接器工具已弃用、不再可供下载。</block>
+  <block id="273dcb16af41ba30a29aa8335c08a790" category="inline-link">* TR-4930：EF600与Splunk Enterprise*</block>
+  <block id="d037693956f399ee3ef1299cb9175342" category="cell"><block ref="d037693956f399ee3ef1299cb9175342" category="inline-link-rx"></block></block>
+  <block id="709b2345a804dd3959ae288cc98408cf" category="cell">介绍EF600全闪存阵列和Splunk设计的集成架构。本文档还总结了从 Splunk 计算机日志事件模拟工具获得的性能测试结果。</block>
 </blocks>

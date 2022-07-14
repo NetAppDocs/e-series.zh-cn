@@ -12,14 +12,14 @@ summary: E 系列技术报告
 
 == Splunk
 
-[cols="9,1,9,1,9"]
+[cols="9,9,9"]
 |===
 
 
-| https://www.netapp.com/pdf.html?item=/media/16851-tr-4623pdf.pdf["* TR-4623 ：采用 Splunk Enterprise* 的 E5700"^] |  | https://www.netapp.com/media/57104-tr-4903.pdf["* TR-4903 ： EF300 与 Splunk Enterprise*"^] |  |  
+| https://www.netapp.com/pdf.html?item=/media/16851-tr-4623pdf.pdf["* TR-4623 ：采用 Splunk Enterprise* 的 E5700"^] | https://www.netapp.com/media/57104-tr-4903.pdf["* TR-4903 ： EF300 与 Splunk Enterprise*"^] | https://www.netapp.com/pdf.html?item=/media/72003-tr-4930.pdf["* TR-4930：EF600与Splunk Enterprise*"^] 
 
 
-| 介绍 E5700 系统和 Splunk 设计的集成架构。本文档还总结了从 Splunk 计算机日志事件模拟工具获得的性能测试结果。 |  | 介绍 EF300 全闪存阵列和 Splunk 设计的集成架构。本文档还总结了从 Splunk 计算机日志事件模拟工具获得的性能测试结果。 |  |  
+| 介绍 E5700 系统和 Splunk 设计的集成架构。本文档还总结了从 Splunk 计算机日志事件模拟工具获得的性能测试结果。 | 介绍 EF300 全闪存阵列和 Splunk 设计的集成架构。本文档还总结了从 Splunk 计算机日志事件模拟工具获得的性能测试结果。 | 介绍EF600全闪存阵列和Splunk设计的集成架构。本文档还总结了从 Splunk 计算机日志事件模拟工具获得的性能测试结果。 
 |===
 
 
