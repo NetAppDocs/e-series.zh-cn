@@ -7081,8 +7081,6 @@
   <block id="b71e2b4d6a1e1e3ddb1014777fc5a53c" category="doc">SANtricity OS 中的新增功能</block>
   <block id="e9983c2bf51c9aa8f38dce44157b9a2a" category="paragraph">此 操作步骤 适用场景 IOM12 和 IOM12B 驱动器架。</block>
   <block id="2af3ffb0914986412fbce97033362ada" category="admonition">此操作步骤 适用于同类磁盘架 IOM 热插拔或更换。这意味着，您只能将 IOM12 模块更换为另一个 IOM12 模块，或者将 IOM12B 模块更换为另一个 IOM12B 模块。（您的磁盘架可以有两个 IOM12 模块，也可以有两个 IOM12B 模块。）</block>
-  <block id="2dbe08d5683f7868502b2ae7bf0efe28" category="paragraph">此 操作步骤 适用场景 IOM12 和 IOM12B 驱动器架以及数据中心和数据中心 2 驱动器架。</block>
-  <block id="6dc10b003bcb8e0cbbcf076e7dbcdf2f" category="paragraph">此任务将包含适用场景 数据中心管理平台和 DCM2 驱动器架。</block>
   <block id="acd1dcb9f4c3f9c9b28f9c1a4d234d1b" category="admonition">电源更换操作步骤 适用于更换 IOM 。要更换 IOM ，请执行电源更换操作步骤 。</block>
   <block id="f20b4bef1c485b65027bb64c40283577" category="paragraph"><block ref="f20b4bef1c485b65027bb64c40283577" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ebc31fad1cf84954196a7706294df684" category="paragraph">此 操作步骤 适用场景 数据中心管理平台和 DCM2 驱动器架。</block>
@@ -8807,4 +8805,7 @@
   <block id="273dcb16af41ba30a29aa8335c08a790" category="inline-link">* TR-4930：EF600与Splunk Enterprise*</block>
   <block id="d037693956f399ee3ef1299cb9175342" category="cell"><block ref="d037693956f399ee3ef1299cb9175342" category="inline-link-rx"></block></block>
   <block id="709b2345a804dd3959ae288cc98408cf" category="cell">介绍EF600全闪存阵列和Splunk设计的集成架构。本文档还总结了从 Splunk 计算机日志事件模拟工具获得的性能测试结果。</block>
+  <block id="61f60d8a815e8676572295c4ba06ca47" category="admonition">只有SANtricity OS 11.07.02及更高版本才支持IOM12B模块。在安装或升级到IOM12B之前、请确保已更新控制器的固件。</block>
+  <block id="b8de54c02bf690e0071da3924487271e" category="admonition">只能转换E5700控制器上的光纤基本端口。</block>
+  <block id="59f90aba4c7b3944a7e31f23bff5d8a2" category="admonition">只能转换E2800控制器上的16 Gb FC/10 Gb iSCSI HIC和光纤基础端口。</block>
 </blocks>

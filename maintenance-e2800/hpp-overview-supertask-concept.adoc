@@ -17,6 +17,9 @@ summary: 查看 E2800 上的主机端口协议转换要求。
 
 == 可以更改的主机端口
 
+
+NOTE: 只能转换E2800控制器上的16 Gb FC/10 Gb iSCSI HIC和光纤基础端口。
+
 下图显示了一个 E2800 控制器的背面，该控制器具有两个 SFP+ （光纤）基板主机端口 * （ 1 ） * 和四个 SFP+ （光纤） HIC 端口 * （ 2 ） * 。
 
 image::../media/28_dwg_e2800_optical_base_quad_sfp_hic.gif[28 dwg e2800 光纤基座四个 SFP hic]
