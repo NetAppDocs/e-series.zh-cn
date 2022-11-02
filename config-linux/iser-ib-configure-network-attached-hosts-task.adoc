@@ -20,7 +20,7 @@ InfiniBand OFED 驱动程序堆栈支持在相同端口上同时运行 iSER 和 
 .步骤
 . 在主机上启用并启动 iSCSI 服务：
 +
-* Red Hat Enterprise Linux 7 和 8 （ RHEL 7 和 RHEL 8 ） *
+* Red Hat Enterprise Linux 7、8和9 (RHEL 7、RHEL 8和RHEL 9)*
 
 +
 [listing]
@@ -127,13 +127,13 @@ iscsiadm -m discovery -t st -p 192.168.130.101 -I iser
 [listing]
 ----
 # Controller A Port 1
-iscsiadm -m node --target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l -o new
+iscsiadm -m node --target <Target IQN> -I iface-ib0 -p <Target Port IP\> -l -o new
 # Controller B Port 1
-iscsiadm -m node --target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l -o new
+iscsiadm -m node --target <Target IQN> -I iface-ib0 -p <Target Port IP\> -l -o new
 # Controller A Port 2
-iscsiadm -m node --target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l -o new
+iscsiadm -m node --target <Target IQN> -I iface-ib1 -p <Target Port IP\> -l -o new
 # Controller B Port 2
-iscsiadm -m node --target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l -o new
+iscsiadm -m node --target <Target IQN> -I iface-ib1 -p <Target Port IP\> -l -o new
 ----
 . 登录到 iSCSI 会话。
 +
@@ -143,13 +143,13 @@ iscsiadm -m node --target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l -o 
 [listing]
 ----
 # Controller A Port 1
-iscsiadm -m node --target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l
+iscsiadm -m node --target <Target IQN> -I iface-ib0 -p <Target Port IP\> -l
 # Controller B Port 1
-iscsiadm -m node --target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l
+iscsiadm -m node --target <Target IQN> -I iface-ib0 -p <Target Port IP\> -l
 # Controller A Port 2
-iscsiadm -m node --target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l
+iscsiadm -m node --target <Target IQN> -I iface-ib1 -p <Target Port IP\> -l
 # Controller B Port 2
-iscsiadm -m node --target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l
+iscsiadm -m node --target <Target IQN> -I iface-ib1 -p <Target Port IP\> -l
 ----
 . 验证 iSE1/iSCSI 会话。
 +

@@ -32,7 +32,7 @@ node.session.timeo.replacement_timeout=20
 ----
 . 确保 `iscsid` 和 ` （ open-） iSCSI` 服务已打开并启用，可用于启动。
 +
-* Red Hat Enterprise Linux 7 和 8 （ RHEL 7 和 RHEL 8 ） *
+* Red Hat Enterprise Linux 7、8和9 (RHEL 7、RHEL 8和RHEL9)*
 
 +
 [listing]
@@ -69,7 +69,7 @@ NOTE: 除了公有网络端口之外， iSCSI 启动程序还应在单独的私�
 .. 使用`ifconfig -a`命令确定iSCSI端口名称。
 .. 设置 iSCSI 启动程序端口的 IP 地址。启动程序端口应与 iSCSI 目标端口位于同一子网中。
 +
-* Red Hat Enterprise Linux 7 和 8 （ RHEL 7 和 RHEL 8 ） *
+* Red Hat Enterprise Linux 7、8和9 (RHEL 7、RHEL 8和RHEL9)*
 
 +
 [listing]

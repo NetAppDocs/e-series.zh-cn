@@ -11,12 +11,12 @@ summary: 如果要升级 E2800 和 E5700 控制器且已启用驱动器安全功
 
 
 [role="lead"]
-如果要升级 E2800 和 E5700 控制器，这些控制器的驱动器安全功能会导致驱动器锁定，无论是部分锁定，外部锁定还是内部锁定。如果启用了驱动器安全功能，则必须手动解锁这些驱动器。
+如果您要升级E2800和E5700控制器、这些控制器的驱动器安全功能将在驱动器外部或内部部分锁定这些驱动器。如果启用了驱动器安全功能，则必须手动解锁这些驱动器。
 
 按照相应的操作步骤执行以下操作：
 
-* <<Internal key management>>
-* <<External key management>>
+*  key management
+*  key management
 
 
 
@@ -25,17 +25,24 @@ summary: 如果要升级 E2800 和 E5700 控制器且已启用驱动器安全功
 
 当所有驱动器均已锁定时，请按照以下步骤进行内部密钥管理。
 
-新交换的控制器将锁定，并显示七段代码 L5 。如果存储阵列中的任何驱动器都无法执行自动模式同步（ ACS ），则会发生此锁定。导入安全密钥后， ACS 将恢复并更新新控制器。
+新交换的控制器将锁定、并显示七段代码*。L5*。如果没有驱动器可以执行自动模式同步(ACS)、则会发生此锁定。导入安全密钥后、ACS将恢复并更新新控制器。
 
 
 NOTE: 如果您不使用管理端口 1 ，请尝试使用其他默认 IP 地址： + Ctrl A port 1 ： 192.168.128.101 + Ctrl A port 2 ： 192.168.128.102 + Ctrl B port 1 ： 192.168.129.101 + Ctrl B port 2 ： 192.168.129.102
 
 .步骤
-. 将 SANtricity 客户端安装到要在第 2 步中使用的笔记本电脑或 PC ，以便直接连接到阵列控制器。
-. 直接通过 RJ45 以太网缆线将笔记本电脑或 PC 连接到控制器 A 管理端口 1 。此步骤可能还要求将笔记本电脑 IP 地址设置为同一子网。
-. 使用用户名为 * 管理员 * 且密码为空的 IP 地址 192.168.128.101 ，使用 `import storageArray securityKey file` CLI 命令导入内部密钥，并从保存安全密钥 link:prepare-upgrade-controllers-task.html["准备升级控制器"]。有关使用此命令的信息，请参见 _Command Line Referse_ 。
+. 在存储阵列与SANtricity 客户端的笔记本电脑或PC之间建立直接的专用以太网连接。为此、请执行以下操作：
++
+.. 使用RJ45以太网缆线将笔记本电脑连接到控制器A上的管理端口1
+.. 要完成连接、您可能需要将笔记本电脑分配给与控制器A位于同一子网中的IP地址在控制器锁定期间、控制器A默认为管理地址192.168.128.101。因此、您可以将笔记本电脑分配给子网、例如"192.168.128.201"。
+
+
+. 使用用户名为*管理员*且密码为空的IP地址192.168.128.101、使用导入内部密钥 `import storageArray securityKey file` CLI命令、并从保存安全密钥 link:prepare-upgrade-controllers-task.html["准备升级控制器"]。有关使用此命令的信息、请参见 https://docs.netapp.com/us-en/e-series-cli/index.html["命令行界面参考"]。
 +
 * 示例： * `SMcli 192.168.128.101 -u admin -c "import storageArray securityKey file="Directory&filename\" passphraseString="" ； "`
+
++
+或者、您也可以通过以下调用通过REST API导入内部密钥： `/storage-systems/{system-id}/security-key/import`
 
 
 
@@ -47,28 +54,41 @@ NOTE: 如果您不使用管理端口 1 ，请尝试使用其他默认 IP 地址�
 
 当所有驱动器均已锁定时，请按照以下步骤进行外部密钥管理。
 
-新交换的控制器将锁定，并显示七段代码 L5 。如果存储阵列中的任何驱动器都无法执行自动模式同步（ ACS ），则会发生此锁定。导入安全密钥后， ACS 将恢复并更新新控制器。
+新交换的控制器将锁定、并显示七段代码*。L5*。如果没有驱动器可以执行自动模式同步(ACS)、则会发生此锁定。导入安全密钥后、ACS将恢复并更新新控制器。
 
 
-NOTE: 要检索客户端和服务器证书，存储阵列必须处于最佳状态。如果证书无法检索，则必须创建一个新的 CSR 并对其进行签名，然后从 EKMS 下载服务器证书。
+NOTE: 要检索客户端和服务器证书，存储阵列必须处于最佳状态。如果证书无法检索、则必须创建新的证书签名请求(CSR)、然后从外部密钥管理服务器导入服务器证书。
 
 .步骤
-. 将 SANtricity 客户端安装到要在第 2 步中使用的笔记本电脑或 PC ，以便直接连接到阵列控制器。
-. 直接通过 RJ45 以太网缆线将笔记本电脑或 PC 连接到控制器 A 管理端口 1 。您可能还需要将笔记本电脑 IP 地址设置为同一子网。
-. 使用用户名为 * 管理员 * 且密码为空的默认 IP 地址 192.168.128.101 ，使用 `set storageArray externalKeyManagement` CLI 命令设置外部密钥管理服务器，并提供 `serverAddress` 和 `serverPort` saved from link:prepare-upgrade-controllers-task.html["准备升级控制器"]。有关使用此命令的信息，请参见 _Command Line Referse_ 。
+. 在存储阵列与SANtricity 客户端的笔记本电脑或PC之间建立直接的专用以太网连接。为此、请执行以下操作：
++
+.. 使用RJ45以太网缆线将笔记本电脑连接到控制器A上的管理端口1
+.. 要完成连接、您可能需要将笔记本电脑分配给与控制器A位于同一子网中的IP地址在控制器锁定期间、控制器A默认为管理地址192.168.128.101。因此、您可以将笔记本电脑分配给子网、例如"192.168.128.201"。
+
+
+. 使用用户名为*管理员*且密码为空的默认IP地址192.168.128.101、使用设置外部密钥管理服务器 `set storageArray externalKeyManagement` CLI命令并提供 `serverAddress` 和 `serverPort` 已从保存 link:prepare-upgrade-controllers-task.html["准备升级控制器"]。有关使用此命令的信息、请参见 https://docs.netapp.com/us-en/e-series-cli/index.html["命令行界面参考"]。
 +
 * 示例： * `SMcli 192.168.128.101 -u admin -c "set storageArray externalKeyManagement serverAddress=<ServerIPAddress> serverPort=<serverPort> ； "`
 
-. 使用用户名为 * 管理员 * 且密码为空的默认 IP 地址 192.168.128.101 ，使用 `storageArray keyManagementCertificate` CLI 命令下载证书：一次用于客户端证书，第二次用于服务器证书。有关使用此命令的信息，请参见 _Command Line Referse_ 。
++
+或者、您也可以通过以下调用通过REST API设置外部密钥管理服务器： `/storage-systems/{system-id}/external-key-server`
+
+. 使用用户名为*管理员*且密码为空的默认IP地址192.168.128.101导入证书 `storageArray keyManagementCertificate` CLI命令：一次用于客户端证书、另一次用于服务器证书。
 +
 * 示例 A ： * `SMcli 192.168.128.101 -u admin -c " 下载 storageArray keyManagementCertificate certificateType=client file="Directory&filename" ； "`
 
 +
 * 示例 B ： * `SMcli 192.168.128.101 -u admin -c " 下载 storageArray keyManagementCertificate certificateType=server file="Directory&filename" ； "`
 
-. 使用从保存的安全密钥 link:prepare-upgrade-controllers-task.html["准备升级控制器"]下，将外部密钥导入到 IP 地址 192.168.128.101 中，用户名为 * 管理员 * ，密码为空。有关使用此命令的信息，请参见 _Command Line Referse_ 。
++
+或者、您也可以通过以下调用通过REST API导入密钥服务器证书： `/storage-systems/{system-id}/external-key-server/certificate`
+
+. 使用从保存的安全密钥 link:prepare-upgrade-controllers-task.html["准备升级控制器"]下，将外部密钥导入到 IP 地址 192.168.128.101 中，用户名为 * 管理员 * ，密码为空。
 +
 * 示例： * `SMcli 192.168.128.101 -u admin -c "import storageArray securityKey file="Directory&filename\" passphraseString="" ； "`
+
++
+或者、您也可以通过以下调用通过REST API导入外部密钥： `/storage-systems/{system-id}/security-key/import`
 
 
 

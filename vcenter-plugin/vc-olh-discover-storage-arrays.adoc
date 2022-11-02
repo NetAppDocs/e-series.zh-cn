@@ -24,9 +24,9 @@ summary: 要在适用于vCenter的存储插件中显示和管理存储资源、�
 
 阵列发现是一种多步骤操作步骤 ：
 
-* <<Step 1: Enter network addresses for discovery>>
-* <<Step 2: Resolve untrusted certificates during discovery>>
-* <<Step 3: Provide passwords>>
+*  1: Enter network addresses for discovery
+*  2: Resolve untrusted certificates during discovery
+*  3: Provide passwords
 
 
 
@@ -59,7 +59,7 @@ NOTE: 如果未发现任何可管理的阵列，请验证这些存储阵列是�
 系统会对要添加到管理域的每个阵列执行凭据检查。在继续操作之前，您可能需要解决不可信证书的任何问题。
 
 . 单击 * 下一步 * 继续执行向导中的下一步。
-. 如果存储阵列具有有效证书，请转至 <<Step 3: Provide passwords>>。如果任何存储阵列没有有效证书、则会显示解析自签名证书对话框；请转到 <<Step 2: Resolve untrusted certificates during discovery>>。如果要导入CA签名的证书、请取消发现对话框并转到 link:vc-olh-import-certificates-for-arrays.html["导入阵列的证书"]。
+. 如果存储阵列具有有效证书，请转至  3: Provide passwords。如果任何存储阵列没有有效证书、则会显示解析自签名证书对话框；请转到  2: Resolve untrusted certificates during discovery。如果要导入CA签名的证书、请取消发现对话框并转到 link:vc-olh-import-certificates-for-arrays.html["导入阵列的证书"]。
 
 
 

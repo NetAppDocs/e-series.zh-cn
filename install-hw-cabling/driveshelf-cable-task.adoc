@@ -16,7 +16,7 @@ summary: 将控制器架中的每个控制器连接到驱动器架中的 I/O 模
 此 操作步骤 适用场景 IOM12 和 IOM12B 驱动器架。
 
 
-NOTE: 只有SANtricity OS 11.07.02及更高版本才支持IOM12B模块。在安装或升级到IOM12B之前、请确保已更新控制器的固件。
+NOTE: 只有SANtricity OS 11.07.2及更高版本才支持IOM12B模块。在安装或升级到IOM12B之前、请确保已更新控制器的固件。
 
 
 NOTE: 此操作步骤 适用于同类磁盘架 IOM 热插拔或更换。这意味着，您只能将 IOM12 模块更换为另一个 IOM12 模块，或者将 IOM12B 模块更换为另一个 IOM12B 模块。（您的磁盘架可以有两个 IOM12 模块，也可以有两个 IOM12B 模块。）
@@ -59,11 +59,11 @@ image::../media/60_cabling.png[60 个布线]
 
 
 
-== 为 EF300 布线
+== 为EF300和EF600布线
 
-以下信息是通过适用场景将 EF300 控制器架连接到 DE212C ， DE224C 或 DE460 驱动器架的信息。
+以下信息是适用场景 使用缆线将EF300或EF600控制器架连接到DE212C、DE224C或DE460驱动器架的信息。
 
-在为 EF300 布线之前，请确保固件已更新到最新版本。要更新固件，请按照中的说明进行操作 link:../upgrade-santricity/index.html["升级 SANtricity OS"^]。
+在为EF300或EF600布线之前、请确保固件已更新到最新版本。要更新固件，请按照中的说明进行操作 link:../upgrade-santricity/index.html["升级 SANtricity OS"^]。
 
 
 

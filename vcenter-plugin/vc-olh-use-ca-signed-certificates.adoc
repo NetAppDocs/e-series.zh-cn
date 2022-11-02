@@ -19,16 +19,16 @@ summary: 获取并导入CA签名证书、以安全访问托管适用于vCenter�
 
 使用CA签名证书分为三步操作步骤 ：
 
-* <<Step 1: Complete a CSR file>>。
-* <<Step 2: Submit CSR file>>。
-* <<Step 3: Import management certificates>>。
+*  1: Complete a CSR file。
+*  2: Submit CSR file。
+*  3: Import management certificates。
 
 
 
 
 == 第1步：完成CSR文件
 
-您必须先生成证书签名请求(CSR)文件、用于标识您的组织以及运行插件的主机系统。或者、您也可以使用OpenSSL等工具生成CSR文件、然后跳至 <<Step 2: Submit CSR file>>。
+您必须先生成证书签名请求(CSR)文件、用于标识您的组织以及运行插件的主机系统。或者、您也可以使用OpenSSL等工具生成CSR文件、然后跳至  2: Submit CSR file。
 
 .步骤
 . 选择*证书管理*。

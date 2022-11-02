@@ -13,9 +13,9 @@ summary: 如果控制器升级导致将供应商 ID 从 LSI 更改为 NetApp ，
 [role="lead"]
 如果您的控制器升级导致供应商 ID 从 LSI 更改为 NetApp ，请根据您的主机类型遵循相应的操作步骤：
 
-* <<Remount volumes on an AIX host>>
-* <<Remount volumes on a VMware host>>
-* <<Remount volumes on a Windows host>>
+*  volumes on an AIX host
+*  volumes on a VMware host
+*  volumes on a Windows host
 
 
 

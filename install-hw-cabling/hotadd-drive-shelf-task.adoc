@@ -24,7 +24,7 @@ summary: 在其他组件仍通电的情况下添加新驱动器架。
 此 操作步骤 适用场景 IOM12 和 IOM12B 驱动器架。
 
 
-NOTE: 只有SANtricity OS 11.07.02及更高版本才支持IOM12B模块。在安装或升级到IOM12B之前、请确保已更新控制器的固件。
+NOTE: 只有SANtricity OS 11.07.2及更高版本才支持IOM12B模块。在安装或升级到IOM12B之前、请确保已更新控制器的固件。
 
 
 NOTE: 此操作步骤 适用于同类磁盘架 IOM 热插拔或更换。这意味着，您只能将 IOM12 模块更换为另一个 IOM12 模块，或者将 IOM12B 模块更换为另一个 IOM12B 模块。（您的磁盘架可以有两个 IOM12 模块，也可以有两个 IOM12B 模块。）
@@ -109,8 +109,8 @@ NOTE: 有关物理安装和电源布线的完整操作步骤，请参见适用�
 
 根据您使用缆线连接的是 E2800 和 E5700 存储系统还是 EF300 存储系统，选择以下选项之一。
 
-* <<Option 1: Connect the drive shelf for E2800 and E5700>>
-* <<Option 2: Connect the drive shelf for EF300>>
+*  1: Connect the drive shelf for E2800 and E5700
+*  2: Connect the drive shelf for EF300
 
 
 如果要使用缆线将旧控制器架连接到 DE212C ， DE224C 或 DE460 ，请参见 https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057["将 IOM 驱动器架添加到现有 E27XX ， E56XX 或 EF560 控制器架"^]。

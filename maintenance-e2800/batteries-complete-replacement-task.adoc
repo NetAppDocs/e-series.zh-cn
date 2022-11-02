@@ -14,8 +14,8 @@ summary: 完成电池更换。
 [role="lead"]
 完成电池更换的步骤取决于您使用的是双工配置（两个控制器）还是单工配置（一个控制器）。
 
-* 有关双工配置，请参见 <<Place controller online (duplex)>>。
-* 有关单工配置，请参见 <<Power up controller (simplex)>>。
+* 有关双工配置，请参见  controller online (duplex)。
+* 有关单工配置，请参见  up controller (simplex)。
 
 
 

@@ -18,9 +18,9 @@ summary: 登录并导航适用于 vCenter 的插件。
 
 . 登录到插件之前，请确保使用的是以下浏览器之一：
 +
-** Google Chrome 79 或更高版本
-** Mozilla Firefox 70 或更高版本
-** Microsoft Edge 79 或更高版本
+** Google Chrome 89或更高版本
+** Mozilla Firefox 80或更高版本
+** Microsoft Edge 90或更高版本
 
 
 . 使用对插件具有读 / 写权限的用户帐户登录到 vSphere Client 。

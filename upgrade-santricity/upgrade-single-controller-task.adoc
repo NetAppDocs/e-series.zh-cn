@@ -105,7 +105,7 @@ CAUTION: * 数据丢失或存储阵列损坏的风险 * —升级期间请勿更
 
 
 
-如果您已激活软件文件，请转至 <<Step 4: Complete software and firmware upgrade>>；否则，请转到 <<Step 3: Activate software files>>。
+如果您已激活软件文件，请转至  4: Complete software and firmware upgrade；否则，请转到  3: Activate software files。
 
 
 

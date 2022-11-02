@@ -13,26 +13,20 @@ summary: 根据 Linux 版本配置定向到设备目标的 I/O 。
 [role="lead"]
 您可以根据所使用的操作系统（以及扩展多路径方法）配置定向到设备目标的 I/O 。
 
-对于 RHEL 8 和 SLES 15 ， Linux 主机会将 I/O 定向到物理 NVMe 设备目标。原生 NVMe 多路径解决方案用于管理主机显示的单个表面上物理设备的底层物理路径。
+对于RHEL 8、RHEL 9和SLES 15、Linux主机会将I/O定向到物理NVMe设备目标。原生 NVMe 多路径解决方案用于管理主机显示的单个表面上物理设备的底层物理路径。
 
-最好使用 /dev/disk/by-id/ 中的链接，而不是 /dev/nvme0n1 。例如：
-
-[listing]
-----
-# ls /dev/disk/by-id/ -l lrwxrwxrwx 1 root root 13 Oct 18 15:14
-nvme-eui.0000320f5cad32cf00a0980000af4112 -> ../../nvme0n1
-----
 
 
 == 物理 NVMe 设备是 I/O 目标
 
-对物理 NVMe 设备路径运行 I/O 。对于使用以下格式的每个命名空间，只能存在以下一个设备：
+最佳做法是对中的链路运行I/O `/dev/disk/by-id/nvme-eui.[uuid#]` 而不是直接连接到物理NVMe设备路径 `/dev/nvme[subsys#]n[id#]`。可以使用以下命令找到这两个位置之间的链接：
 
 [listing]
 ----
-/dev/nvme[subsys#]n[id#]
+# ls /dev/disk/by-id/ -l
+lrwxrwxrwx 1 root root 13 Oct 18 15:14 nvme-eui.0000320f5cad32cf00a0980000af4112 -> ../../nvme0n1
 ----
-所有路径均使用此设备下的原生多路径解决方案进行虚拟化。
+I/O运行到 `/dev/disk/by-id/nvme-eui.[uuid#]` 将直接通过 `/dev/nvme[subsys#]n[id#]` 它使用原生 NVMe多路径解决方案 对其下的所有路径进行虚拟化。
 
 您可以运行以下命令来查看路径：
 

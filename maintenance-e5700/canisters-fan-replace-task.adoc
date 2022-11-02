@@ -133,7 +133,7 @@ image::../media/28_dwg_e2860_de460c_fan_canister_handle_with_callout_maint-e5700
 NOTE: 更换风扇箱后，警示 LED 将保持亮起状态（稳定琥珀色），而固件将检查风扇箱是否安装正确。The LED goes off after this process is complete.
 
 . 在 SANtricity 系统管理器的恢复 Guru 中，选择 * 重新检查 * 以确保问题已解决。
-. 如果仍报告出现故障的风扇箱，请重复中的步骤 <<Step 2: Remove failed fan canister and install new one>>。如果问题仍然存在，请联系技术支持。
+. 如果仍报告出现故障的风扇箱，请重复中的步骤  2: Remove failed fan canister and install new one。如果问题仍然存在，请联系技术支持。
 . 删除防静电保护。
 . 使用 SANtricity 系统管理器收集存储阵列的支持数据。
 +

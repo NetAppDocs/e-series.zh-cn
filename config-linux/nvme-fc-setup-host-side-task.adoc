@@ -13,7 +13,7 @@ summary: 光纤通道环境中的 NVMe 启动程序配置包括安装和配置 N
 [role="lead"]
 光纤通道环境中的 NVMe 启动程序配置包括安装和配置 NVMe-CLI 软件包以及在主机上启用 NVMe/FC 启动程序。
 
-以下操作步骤适用于使用支持 Broadcom Emulex 或 QLogic NVMe/FC 的 FC HBA 的 RHEL 7 ， RHEL 8 ， SLES 12 和 SLES 15 。有关支持这些操作系统或 HBA 的版本的详细信息，请参见 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]。
+以下操作步骤 适用于使用Broadcom Emulex或QLogic NVMe/FC功能FC HBA的RHEL 7、RHEL 8、RHEL 9、SLES 12和SLES 15。有关支持这些操作系统或 HBA 的版本的详细信息，请参见 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]。
 
 .步骤
 . 安装 `NVMe-CLI` 软件包：
@@ -27,7 +27,7 @@ summary: 光纤通道环境中的 NVMe 启动程序配置包括安装和配置 N
 # zypper install nvme-cli
 ----
 +
-* RHEL 7 或 RHEL 8*
+* RHEL 7、RHEL 8或RHEL 9*
 
 +
 [listing]

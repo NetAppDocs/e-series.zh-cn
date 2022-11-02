@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: replace EF300 SAS expansion card, replacing SAS card, drive tray expansion, expansion card 
 summary: 向 EF300 控制器添加 SAS 扩展卡，以允许驱动器托盘扩展。 
 ---
-= 将 SAS 扩展卡添加到 EF300
+= 将SAS扩展卡添加到EF300和EF600
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -12,12 +12,12 @@ summary: 向 EF300 控制器添加 SAS 扩展卡，以允许驱动器托盘扩�
 
 
 [role="lead"]
-您可以将 SAS 扩展卡添加到 EF300 控制器，以允许驱动器托盘扩展。
+您可以向EF300或EF600控制器添加SAS扩展卡、以允许驱动器托盘扩展。
 
 添加 SAS 扩展卡时，必须关闭存储阵列电源，安装新的 SAS 扩展卡并重新加电。
 
 .开始之前
-* 请查看 link:sas-overview-supertask-concept.html["更换 EF300 SAS 扩展卡的要求"]。
+* 请查看 link:sas-overview-supertask-concept.html["更换EF300和EF600 SAS扩展卡的要求"]。
 * 您必须为此操作步骤计划停机维护窗口。在成功完成此操作步骤之前，您无法访问存储阵列上的数据。
 
 

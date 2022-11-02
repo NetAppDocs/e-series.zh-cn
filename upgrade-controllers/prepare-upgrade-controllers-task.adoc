@@ -23,10 +23,10 @@ NOTE: 收集支持数据可能会暂时影响存储阵列的性能。
 
 NOTE: 如果要升级到支持 SANtricity OS 8.50 版的控制器，则必须在安装并启动新控制器后安装最新版本的 SANtricity OS 和最新的 NVSRAM 。如果不执行此升级，则可能无法为存储阵列配置自动负载平衡（ ALB ）。
 
-. 如果您要执行完整的控制器更换并同时使用驱动器安全功能，请针对您的安全类型（内部或外部）和驱动器状态完成下表中相应的步骤。
+. 如果您安装了启用了安全保护的驱动器、并且计划执行完整的控制器更换、请参见下表、根据您的安全类型(内部或外部)和驱动器状态完成相应的步骤。如果您*未*安装已启用安全的驱动器、则可以跳过此步骤并转至表下方的步骤3。
 +
 
-NOTE: 驱动器安全性是一种存储阵列功能，可通过全磁盘加密（ Full Disk Encryption ， FDE ）驱动器或联邦信息处理标准（ Federal Information Processing Standard ， FIPS ）驱动器提供额外的安全层。如果将这些驱动器与驱动器安全功能结合使用，则需要使用安全密钥才能访问其数据。
+NOTE: 表中的某些步骤需要命令行界面(CLI)命令。有关使用这些命令的信息、请参见 https://docs.netapp.com/us-en/e-series-cli/index.html["命令行界面参考"]。
 
 +
 |===
@@ -36,9 +36,7 @@ NOTE: 驱动器安全性是一种存储阵列功能，可通过全磁盘加密�
  a| 
 内部密钥管理，一个或多个驱动器已锁定
  a| 
-.. 将内部安全密钥文件导出到管理客户端上的已知位置（使用浏览器访问 System Manager 的系统）。使用 `export storageArray securityKey` CLI 命令。您必须提供与安全密钥关联的密码短语，并指定要保存命令的位置。有关使用此命令的信息，请参见 _Command Line Referse_ 。
-.. 了解与内部安全密钥关联的密码短语。
-
+将内部安全密钥文件导出到管理客户端上的已知位置（使用浏览器访问 System Manager 的系统）。使用 `export storageArray securityKey` CLI命令。您必须提供与安全密钥关联的密码短语、并指定要保存密钥的位置。
 
 
 
@@ -48,21 +46,21 @@ NOTE: 驱动器安全性是一种存储阵列功能，可通过全磁盘加密�
 按顺序执行以下步骤：
 
 .. 记录外部 KMS 服务器地址和端口号。从 System Manager 中，转到菜单：设置 [ 系统 > 安全密钥管理 > 查看 / 编辑密钥管理服务器设置 ] 。
-.. 确保本地主机上提供了客户端和服务器证书，以便存储阵列和密钥管理服务器可以在控制器更换完成后相互进行身份验证。使用 `save storageArray keyManagementCertificate` CLI 命令保存证书。请务必运行此命令两次，一次是在将 `certificateType` 参数设置为 `client` 的情况下运行，另一次是在将参数设置为 `server` 的情况下运行。有关使用此命令的信息，请参见 _Command Line Referse_ 。
+.. 确保本地主机上提供了客户端和服务器证书，以便存储阵列和密钥管理服务器可以在控制器更换完成后相互进行身份验证。使用 `save storageArray keyManagementCertificate` 用于保存证书的CLI命令。请务必运行命令两次、一次使用 `certificateType` 参数设置为 `client`和参数设置为的另一个 `server`。
 .. 运行 `disable storageArray externalKeyManagement` CLI 命令，过渡到内部密钥管理。
-.. 将内部安全密钥文件导出到管理客户端上的已知位置（使用浏览器访问 System Manager 的系统）。使用 `export storageArray securityKey` CLI 命令。您必须提供与安全密钥关联的密码短语，并指定要保存命令的位置。有关使用此命令的信息，请参见 _Command Line Referse_ 。
-.. 了解与内部安全密钥关联的密码短语。
+.. 将内部安全密钥文件导出到管理客户端上的已知位置（使用浏览器访问 System Manager 的系统）。使用 `export storageArray securityKey` CLI命令。您必须提供与安全密钥关联的密码短语、并指定要保存密钥的位置。
 
 
 
 
  a| 
-外部密钥管理，所有驱动器均已锁定，您无法临时过渡到内部密钥管理以更换控制器。
+外部密钥管理、所有驱动器均已锁定、您*无法*临时过渡到内部密钥管理以更换控制器。
  a| 
 按顺序执行以下步骤：
 
 .. 记录外部 KMS 服务器地址和端口号。从 System Manager 中，转到菜单：设置 [ 系统 > 安全密钥管理 > 查看 / 编辑密钥管理服务器设置 ] 。
-.. 确保本地主机上提供了客户端和服务器证书，以便存储阵列和密钥管理服务器可以在控制器更换完成后相互进行身份验证。使用 `save storageArray keyManagementCertificate` CLI 命令保存证书。请务必运行此命令两次，一次是在将 `certificateType` 参数设置为 `client` 的情况下运行，另一次是在将参数设置为 `server` 的情况下运行。有关使用此命令的信息，请参见 _Command Line Referse_ 。
+.. 确保本地主机上提供了客户端和服务器证书，以便存储阵列和密钥管理服务器可以在控制器更换完成后相互进行身份验证。使用 `save storageArray keyManagementCertificate` 用于保存证书的CLI命令。请务必运行命令两次、一次使用 `certificateType` 参数设置为 `client`和参数设置为的另一个 `server`。
+.. 将内部安全密钥文件导出到管理客户端上的已知位置（使用浏览器访问 System Manager 的系统）。使用 `export storageArray securityKey` CLI命令。您必须提供与安全密钥关联的密码短语、并指定要保存密钥的位置。
 
 
 
@@ -73,10 +71,9 @@ NOTE: 驱动器安全性是一种存储阵列功能，可通过全磁盘加密�
 无需执行其他步骤。
 
 |===
++
 
-
-
-NOTE: 要检索客户端和服务器证书，存储阵列必须处于最佳状态。如果证书无法检索，则必须创建一个新的 CSR 并对其进行签名，然后从 EKMS 下载服务器证书。
+NOTE: 要检索客户端和服务器证书，存储阵列必须处于最佳状态。如果证书无法检索、则必须创建新的CSR、获得CSR签名、然后从外部密钥管理服务器(EKMS)下载服务器证书。
 
 . 记录存储阵列的序列号：
 +

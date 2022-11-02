@@ -23,7 +23,7 @@ NOTE: 请参见  https://mysupport.netapp.com/matrix["NetApp 互操作性表工�
 
 
 
-在使用基于 Infiniband 的 NVMe 时， RHEL 7 和 SLES 12 会使用设备映射程序多路径（ DMMP ）进行多路径。RHEL 8 和 SLES 15 使用内置的原生 NVMe 故障转移。根据您正在运行的操作系统，需要对多路径进行一些额外配置才能使其正常运行。
+在使用基于 Infiniband 的 NVMe 时， RHEL 7 和 SLES 12 会使用设备映射程序多路径（ DMMP ）进行多路径。RHEL 8、RHEL9和SLES 15使用内置的原生 NVMe故障转移。根据您正在运行的操作系统，需要对多路径进行一些额外配置才能使其正常运行。
 
 
 
@@ -105,4 +105,4 @@ devices {
 
 
 
-NOTE: 对于 SLES 15 ，原生 NVMe 多路径默认处于启用状态，不需要进行其他配置。
+NOTE: 对于SLES 15和RHEL 9、原生 NVMe多路径默认处于启用状态、不需要其他配置。

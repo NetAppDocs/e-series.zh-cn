@@ -379,7 +379,7 @@ NOTE: 只有某些操作系统才支持增加卷的容量。如果在不支持 L
 
 === 通过添加卷来增加现有数据存储库的容量
 
-. 您可以通过添加卷来增加数据存储库的容量。按照中的步骤进行操作 <<Step 1: Create volumes>>。
+. 您可以通过添加卷来增加数据存储库的容量。按照中的步骤进行操作  1: Create volumes。
 . 接下来，将卷分配给所需主机以增加数据存储库的容量。请参见以下主题：
 +
 ** https://docs.vmware.com/en/VMware-vSphere/6.0/com.vmware.vsphere.hostclient.doc/GUID-B0D89816-02E5-4C42-AAFC-19751800A284.html["增加 vSphere Client 中的 VMFS 数据存储库容量"^]

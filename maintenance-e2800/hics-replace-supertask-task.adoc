@@ -36,8 +36,8 @@ summary: 更换出现故障的主机接口卡（ HIC ）。
 
 使控制器脱机的步骤取决于您使用的是一个控制器（单工）还是两个控制器（双工）。转至相应的说明：
 
-* <<Duplex: Place controller offline>>
-* <<Simplex: Power down the controller shelf>>
+*  Place controller offline
+*  Power down the controller shelf
 
 
 

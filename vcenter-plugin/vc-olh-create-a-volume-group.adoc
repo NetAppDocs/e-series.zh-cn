@@ -66,4 +66,4 @@ CAUTION: 除非您是了解驱动器冗余和最佳驱动器配置的专家、�
 . 根据显示的驱动器特征、选择要在卷组中使用的驱动器、然后单击*创建*。
 
 
-显示的驱动器特征取决于您选择的是自动方法还是手动方法。
+显示的驱动器特征取决于您选择的是自动方法还是手动方法。有关详细信息、请参见SANtricity System Manager文档、 https://docs.netapp.com/us-en/e-series-santricity/sm-storage/create-volume-group.html["创建卷组"^]。

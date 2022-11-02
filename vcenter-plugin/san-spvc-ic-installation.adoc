@@ -23,12 +23,12 @@ summary: 安装适用于 vCenter 的 SANtricity 存储插件。
 
 确保您的系统满足以下要求：
 
-* VMware vCenter Server Appliance 支持的版本： 6.7U3J ， 7.0U1 或 7 。0U2
+* VMware vCenter Server Appliance支持的版本：6.7U3J、7.0U1、7.0U2、7.0U3和8.0。
 * NetApp SANtricity OS 版本： 11.60.2 或更高版本
-* 支持的应用程序主机版本： Windows 2016 或 Windows 2019
+* 支持的应用程序主机版本：Windows 2016、Windows 2019、Windows 2022。
 * 主机系统的 CPU 要求：
 +
-** 系统内存： 1.5 GB
+** 系统内存：512 MB
 ** 存储空间： 275 MB + 200 MB （日志记录）
 
 

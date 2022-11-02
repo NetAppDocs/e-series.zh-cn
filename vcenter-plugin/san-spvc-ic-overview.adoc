@@ -37,7 +37,7 @@ NOTE: 此插件不能直接替代System Manager界面、而是嵌入在存储阵
 
 有关 vCenter 环境中通信的详细信息，请参见下图。
 
-image:../media/vcenter_communication.png[""]
+image:../media/vcenter_communication2.png[""]
 
 
 
@@ -68,9 +68,9 @@ NOTE: 当存储阵列处于非最佳状态时、某些操作不可用。
 
 适用于vCenter的存储插件可通过多种类型的浏览器进行访问。支持以下浏览器和版本。
 
-* Google Chrome 79 或更高版本
-* Mozilla Firefox 70 或更高版本
-* Microsoft Edge 79 或更高版本
+* Google Chrome 89或更高版本
+* Mozilla Firefox 80或更高版本
+* Microsoft Edge 90或更高版本
 
 
 
