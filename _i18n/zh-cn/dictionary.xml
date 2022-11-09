@@ -8832,4 +8832,6 @@
   <block id="e2acb831b00c32f1c83710aa634a7625" category="admonition">只有SANtricity OS 11.07.2及更高版本才支持IOM12B模块。在安装或升级到IOM12B之前、请确保已更新控制器的固件。</block>
   <block id="5dd94bd0b7c84a6ccc9fc7c3a1fa82e6" category="paragraph">InfiniBand diags软件包包含用于显示每个InfiniBand (IB)端口的全局唯一ID (GUID)的命令。通过附带的软件包支持的大多数具有OFED/RDMA的Linux分发版也具有InfiniBand diags软件包、其中包含用于显示有关HCA的信息的命令。</block>
   <block id="dfcfc178d6edc54d8706c59b747948d5" category="list-text">安装<block ref="3b13fc847651d5be5c89aeab4722c099" prefix=" " category="inline-code"></block> 使用操作系统的软件包管理命令进行软件包管理。</block>
+  <block id="79c617afe97932f20f52d1217736d403" category="list-text">创建名为的systemd服务单元文件<block ref="6bddfc9da80e7ef0195a324214877004" prefix=" " category="inline-code"></block>。</block>
+  <block id="d40e479d6bc1cf9824be2cfa7e837140" category="list-text">启用并启动<block ref="6b64648adbe124ad96531f7f0dd977a4" prefix=" " category="inline-code"></block> 服务</block>
 </blocks>
