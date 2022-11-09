@@ -23,8 +23,8 @@ NOTE: 在配置子网管理器之前、您必须安装InfiniBand diags软件包�
 [listing]
 ----
 # ibstat -p
- 0x248a070300a80a80
- 0x248a070300a80a81
+0x248a070300a80a80
+0x248a070300a80a81
 ----
 . 创建在启动过程中运行一次的子网管理器脚本。
 +
@@ -52,7 +52,7 @@ opensm -B -g <GUID1> -p <P1> -f /var/log/opensm-ib1.log
 opensm -B -g 0x248a070300a80a80 -p 15 -f /var/log/opensm-ib0.log
 opensm -B -g 0x248a070300a80a81 -p 1 -f /var/log/opensm-ib1.log
 ----
-. 创建名为的systemd服务单元文件 `subnet-manager service`。
+. 创建名为的systemd服务单元文件 `subnet-manager.service`。
 +
 [listing]
 ----
@@ -78,7 +78,7 @@ WantedBy=multi-user.target
 ----
 # systemctl daemon-reload
 ----
-. 启用并启动 `subnet manager service`。
+. 启用并启动 `subnet-manager` 服务
 +
 [listing]
 ----
