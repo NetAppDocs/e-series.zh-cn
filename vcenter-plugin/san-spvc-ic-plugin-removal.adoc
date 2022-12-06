@@ -24,8 +24,8 @@ summary: 删除 vCenter 插件。
 
 要从 vCenter Server 设备取消注册插件，请选择以下方法之一：
 
-*  1: Execute the registration script
-*  2: Use the vCenter Server Mob pages
+* <<方法1：执行注册脚本>>
+* <<方法2：使用vCenter Server移动页面>>
 
 
 

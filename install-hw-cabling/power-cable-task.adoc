@@ -18,6 +18,7 @@ summary: 将每个组件的电源连接到单独的电路。
 * 必须关闭两个磁盘架电源上的两个电源开关。
 
 
+.关于此任务
 存储系统的电源必须能够满足新驱动器架的电源要求。有关存储系统的功耗信息，请参见 https://hwu.netapp.com/Controller/Index?platformTypeId=2357027["Hardware Universe"^]。
 
 .步骤

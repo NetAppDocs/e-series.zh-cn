@@ -63,6 +63,7 @@ image::../media/60_cabling.png[60 个布线]
 
 以下信息是适用场景 使用缆线将EF300或EF600控制器架连接到DE212C、DE224C或DE460驱动器架的信息。
 
+.开始之前
 在为EF300或EF600布线之前、请确保固件已更新到最新版本。要更新固件，请按照中的说明进行操作 link:../upgrade-santricity/index.html["升级 SANtricity OS"^]。
 
 

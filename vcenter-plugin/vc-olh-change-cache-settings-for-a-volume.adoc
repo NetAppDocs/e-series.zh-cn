@@ -17,6 +17,7 @@ keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 [role="lead"]
 您可以更改读取缓存和写入缓存设置、以影响卷的整体I/O性能。
 
+.关于此任务
 更改卷的缓存设置时、请记住以下准则：
 
 * 打开更改缓存设置对话框后、您可能会看到选定缓存属性旁边显示的图标。此图标表示控制器已暂时暂停缓存操作。如果新电池正在充电、已删除控制器或控制器检测到缓存大小不匹配、则可能会发生此操作。清除此条件后、在对话框中选择的缓存属性将变为活动状态。如果选定缓存属性未处于活动状态、请联系技术支持。
@@ -33,6 +34,7 @@ keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 . 选择*基本*选项卡可更改读取缓存和写入缓存的设置。
 +
 .字段详细信息
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -48,6 +50,7 @@ keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 . 选择*高级*选项卡可更改厚卷的高级设置。高级缓存设置仅适用于厚卷。
 +
 .字段详细信息
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

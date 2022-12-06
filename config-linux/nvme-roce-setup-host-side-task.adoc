@@ -13,6 +13,7 @@ summary: RoCE 环境中的 NVMe 启动程序配置包括安装和配置 RDMA-cor
 [role="lead"]
 RoCE 环境中的 NVMe 启动程序配置包括安装和配置 RDMA-core 和 NVMe-CLI 软件包，配置启动程序 IP 地址以及在主机上设置 NVMe-oF 层。
 
+.您需要的内容
 您必须运行最新兼容的RHEL 7、RHEL 8和RHEL 9 SUSE Linux Enterprise Server 12和15 Service Pack操作系统。请参见 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^] 有关最新要求的完整列表。
 
 .步骤

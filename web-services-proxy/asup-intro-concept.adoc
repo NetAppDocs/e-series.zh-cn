@@ -106,7 +106,7 @@ WebServices-profile.json
 您可以通过 ASUPConfig.xml 文件启用或禁用 AutoSupport ，如以下步骤所述。或者，您也可以使用 * 配置 * 和 * 后 / 上 * 通过 API 启用或禁用此功能，然后输入 "true" 或 "false" 。
 
 . 打开工作目录中的 ASUPConfig.xml 文件。
-. 找到 ` <asupdata enabled=" （布尔值） " timestamp=>` 的行
+. 找到<asupdata enable="Boolean_value" timestamp="timestamp"> 对应的行
 . 输入 `true` （ enable ）或 `false` （ disable ）。例如：
 +
 [listing]

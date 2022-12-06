@@ -1,0 +1,73 @@
+---
+permalink: vcenter-plugin/san-spvc-ic-reqs.html 
+sidebar: sidebar 
+keywords: upgrade vCenter 
+summary: vCenter插件的安装和升级要求以及注意事项。 
+---
+= 查看安装和升级要求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在安装或升级适用于vCenter的SANtricity 存储插件之前、请查看安装要求和升级注意事项。
+
+
+
+== 安装要求
+
+您可以在Windows主机系统上安装和配置适用于vCenter的存储插件。插件安装包括以下要求。
+
+[cols="35h,~"]
+|===
+| 要求 | Description 
+
+
+ a| 
+支持的版本
+ a| 
+* VMware vCenter Server Appliance支持的版本：6.7U3J、7.0U1、7.0U2、7.0U3和8.0。
+* NetApp SANtricity OS 版本： 11.60.2 或更高版本
+* 支持的应用程序主机版本：Windows 2016、Windows 2019、Windows 2022。
+
+
+有关兼容性的详细信息、请参见 http://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]。
+
+
+
+ a| 
+多个实例
+ a| 
+您只能在Windows主机上安装一个适用于vCenter的Storage Plugin实例、并且只能将其注册到一个vCSA。
+
+
+
+ a| 
+容量规划
+ a| 
+适用于vCenter的存储插件需要足够的空间来执行和日志记录。确保您的系统满足以下可用磁盘空间要求：
+
+* 所需安装空间—275 MB
+* 存储空间—275 MB + 200 MB (日志记录)
+* 系统内存—512 MB
+
+
+
+
+ a| 
+许可证
+ a| 
+适用于vCenter的存储插件是一款免费的独立产品、不需要许可证密钥。但是，适用的版权和服务条款仍适用。
+
+|===
+
+
+== 升级注意事项
+
+如果要从先前版本升级、请注意、必须在升级之前从vCSA中取消注册此插件。
+
+* 升级期间、插件先前的大多数配置设置都会保留下来。这些设置包括用户密码，所有已发现的存储系统，服务器证书，可信证书和服务器运行时配置。
+* 升级过程不会保留*。vcenter.properties*文件、因此您必须在升级之前取消注册此插件。升级成功后、您可以将此插件重新注册到vCSA。
+* 先前加载在存储库中的所有SANtricity OS文件都会在升级期间被删除。
+

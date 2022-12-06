@@ -45,6 +45,7 @@ image:../media/sas_cable.png[""]
 
 |===
 +
+.示例A：E5700控制器架、在标准SAS配置中具有三个DE212C/DE224磁盘架。
 image:../media/example_a_28_57.png[""]
 
 +
@@ -57,6 +58,7 @@ image:../media/example_a_28_57.png[""]
 
 
 +
+.示例B：一个E5700控制器架、在标准SAS配置中具有一个DE212C/DE224磁盘架。
 image:../media/example_b_57_28.png[""]
 
 +

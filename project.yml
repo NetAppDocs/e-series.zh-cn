@@ -741,6 +741,8 @@ sidebar:
         url: "/vcenter-plugin/san-spvc-ic-overview.html"
       - title: 入门
         entries:
+        - title: 查看要求
+          url: "/vcenter-plugin/san-spvc-ic-reqs.html"
         - title: 安装插件
           url: "/vcenter-plugin/san-spvc-ic-installation.html"
         - title: 配置访问权限

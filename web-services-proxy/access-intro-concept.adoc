@@ -102,14 +102,14 @@ storage
 
 
  a| 
-rw
+rw (旧阵列的旧阵列)
  a| 
 RW （读 / 写）用户包括以下角色： storage.admin ， support.admin 和 storage.monitor 。在设置密码之前，此帐户将被禁用。
 
 
 
  a| 
-执行
+RO (旧阵列的原有)
  a| 
 ro （只读）用户仅包含 storage.monitor 角色。在设置密码之前，此帐户将被禁用。
 

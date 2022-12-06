@@ -1166,4 +1166,5 @@ image::../media/sam1130_ss_system_change_feature_pack_maint-e5700.gif[sam1130 ss
 
 
 
+.下一步是什么？
 转至 link:hpp-complete-protocol-conversion-task.html["完成主机协议转换"]。

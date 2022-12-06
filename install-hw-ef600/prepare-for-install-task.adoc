@@ -13,6 +13,7 @@ summary: 要安装 EF300 或 EF600 ，请创建一个帐户并注册硬件。
 [role="lead"]
 了解如何为 EF300 或 EF600 系列存储系统的安装做好准备。
 
+.开始之前
 如果要为 EF300 布线以进行 SAS 扩展，请查看以下信息：
 
 * link:../maintenance-ef600/sas-add-supertask-task.html["添加 SAS 扩展卡"^] 用于安装 SAS 扩展卡。

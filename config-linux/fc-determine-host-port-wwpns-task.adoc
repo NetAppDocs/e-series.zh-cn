@@ -15,6 +15,7 @@ summary: '您可以安装 FC HBA 实用程序，以便查看每个主机端口�
 
 此外，您还可以使用 HBA 实用程序更改的 "Notes" 列中建议的任何设置 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^] 支持的配置。
 
+.关于此任务
 查看 HBA 实用程序的以下准则：
 
 * 大多数 HBA 供应商都提供 HBA 实用程序。您需要为主机操作系统和 CPU 提供正确版本的 HBA 。FC HBA 实用程序的示例包括：

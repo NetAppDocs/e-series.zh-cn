@@ -13,6 +13,7 @@ summary: 在主机端配置 iSCSI 网络。
 [role="lead"]
 要配置主机端网络，必须执行几个步骤。
 
+.关于此任务
 您可以通过以下方式在主机端配置 iSCSI 网络：设置每个物理路径的节点会话数，打开相应的 iSCSI 服务，为 iSCSI 端口配置网络，创建 iSCSI 端绑定以及在启动程序和目标之间建立 iSCSI 会话。
 
 大多数情况下，您可以使用适用于 iSCSI CNA/NIC 的收件箱软件启动程序。您无需下载最新的驱动程序，固件和 BIOS 。请参见 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^] 以确定代码要求。

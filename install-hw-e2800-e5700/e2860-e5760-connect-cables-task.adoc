@@ -45,6 +45,7 @@ image:../media/sas_cable.png[""]
 
 |===
 +
+.示例A：一个E2860控制器架、在标准SAS配置中具有两个DE460C磁盘架。
 image:../media/example_a_2860.png[""]
 
 +
@@ -55,6 +56,7 @@ image:../media/example_a_2860.png[""]
 
 
 +
+.示例B：一个E2860控制器架、其中一个DE460C磁盘架采用标准SAS配置。
 image:../media/example_b_2860.png[""]
 
 +

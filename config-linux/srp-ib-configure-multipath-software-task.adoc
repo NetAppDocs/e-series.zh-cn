@@ -13,6 +13,7 @@ summary: 配置多路径软件，以便在其中一个物理路径中断时提�
 [role="lead"]
 要为存储阵列提供冗余路径，您可以配置多路径软件。
 
+.您需要的内容
 您必须在系统上安装所需的软件包。
 
 * 对于 Red Hat （ RHEL ）主机，运行 `rpm -q device-mapper-multipath` 验证软件包是否已安装。
@@ -21,6 +22,7 @@ summary: 配置多路径软件，以便在其中一个物理路径中断时提�
 
 如果尚未安装操作系统，请使用操作系统供应商提供的介质。
 
+.关于此任务
 如果某个物理路径中断，多路径软件可提供指向存储阵列的冗余路径。多路径软件为操作系统提供一个虚拟设备，该虚拟设备表示存储的活动物理路径。多路径软件还可管理更新虚拟设备的故障转移过程。
 
 您可以在 Linux 安装中使用设备映射程序多路径（ DM-MP ）工具。默认情况下，在 RHEL 和 SLES 中禁用 DM-MP 。要在主机上启用 DM-MP 组件，请完成以下步骤。
@@ -60,7 +62,7 @@ dracut --force --add multipath
 +
 例如，对于 grub ，它为 ` /boot/grub/menu.lst` ；对于 grub2 ，它为 ` /boot/grub2/menu.cfg` 。
 
-. 使用 https://docs.netapp.com/us-en/e-series-santricity/sm-storage/create-host-manually.html["手动创建主机"] 在联机帮助中使用操作步骤 检查是否已定义主机。验证每个主机类型设置是否基于中收集的内核信息 ,第4步。
+. 使用 https://docs.netapp.com/us-en/e-series-santricity/sm-storage/create-host-manually.html["手动创建主机"] 在联机帮助中使用操作步骤 检查是否已定义主机。验证每个主机类型设置是否基于中收集的内核信息 <<step4,第4步>>。
 
 
 

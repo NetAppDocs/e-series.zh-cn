@@ -19,7 +19,7 @@ SANtricity 存储管理器包括用于执行其他管理任务的命令行界面
 
 NOTE: 如果您使用的是 SANtricity 软件 11.60 及更高版本，则无需执行以下步骤。SANtricity 安全命令行界面（ SMcli ）包含在 SANtricity 操作系统中，可通过 SANtricity 系统管理器下载。有关如何通过 SANtricity 系统管理器下载 SMCLI 的详细信息，请参阅 SANtricity 系统管理器联机帮助下的 _Download 命令行界面（ CLI ） _ 主题。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * SANtricity 软件 11.53 或更早版本。
 * 正确的管理员或超级用户权限。
 * SANtricity 存储管理器客户端的系统，最低要求如下：
@@ -31,6 +31,7 @@ NOTE: 如果您使用的是 SANtricity 软件 11.60 及更高版本，则无需�
 
 
 
+.关于此任务
 此任务介绍如何在 Windows 和 Linux 操作系统平台上安装 SANtricity 存储管理器，因为在数据主机使用 Linux 时， Windows 和 Linux 都是通用的管理工作站平台。
 
 .步骤

@@ -13,6 +13,7 @@ summary: 如果您的配置使用基于 Infiniband 的 SRP 协议，请按照本
 [role="lead"]
 如果您的配置使用基于 Infiniband 的 SRP 协议，请按照本节中的步骤进行操作。
 
+.您需要的内容
 要将 Linux 主机连接到存储阵列，必须使用相应的选项启用 InfiniBand 驱动程序堆栈。不同 Linux 分发版的特定设置可能会有所不同。检查 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^] 有关特定于您的解决方案的具体说明和其他建议设置，请参见。
 
 .步骤

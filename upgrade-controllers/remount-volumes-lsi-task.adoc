@@ -13,9 +13,9 @@ summary: 如果控制器升级导致将供应商 ID 从 LSI 更改为 NetApp ，
 [role="lead"]
 如果您的控制器升级导致供应商 ID 从 LSI 更改为 NetApp ，请根据您的主机类型遵循相应的操作步骤：
 
-*  volumes on an AIX host
-*  volumes on a VMware host
-*  volumes on a Windows host
+* <<在 AIX 主机上重新挂载卷>>
+* <<在 VMware 主机上重新挂载卷>>
+* <<在 Windows 主机上重新挂载卷>>
 
 
 
@@ -24,6 +24,7 @@ summary: 如果控制器升级导致将供应商 ID 从 LSI 更改为 NetApp ，
 
 更换控制器后，您可能会发现主机显示存储阵列上的新卷，但也会显示原始卷出现故障。
 
+.步骤
 如果出现故障卷，请运行 `cfgmgr` 命令。
 
 

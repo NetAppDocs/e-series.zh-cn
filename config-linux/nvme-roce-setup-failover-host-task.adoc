@@ -13,6 +13,7 @@ summary: 将主机配置为运行故障转移。
 [role="lead"]
 要为存储阵列提供冗余路径，您可以将主机配置为运行故障转移。
 
+.您需要的内容
 您必须在系统上安装所需的软件包。
 
 * 对于 Red Hat （ RHEL ）主机，运行 `rpm -q device-mapper-multipath` 验证软件包是否已安装
@@ -22,6 +23,7 @@ summary: 将主机配置为运行故障转移。
 
 NOTE: 请参见 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^] 为了确保安装了所需的任何更新，因为多路径可能无法在 GA 版本的 SLES 或 RHEL 中正常工作。
 
+.关于此任务
 RHEL 7 和 SLES 12 使用设备映射程序多路径（ DMMP ）为基于 RoCE 的 NVMe 提供多路径功能。RHEL 8、RHEL 9和SLES 15使用内置的原生 NVMe故障转移。根据您正在运行的操作系统，需要对多路径进行一些额外配置才能使其正常运行。
 
 

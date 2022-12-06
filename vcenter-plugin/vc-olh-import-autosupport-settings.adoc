@@ -17,6 +17,7 @@ summary: 将AutoSupport 配置从一个存储阵列导入到其他存储阵列�
 [role="lead"]
 您可以将AutoSupport 配置从一个存储阵列导入到其他存储阵列。当您需要在网络中配置多个阵列时、此批处理操作可以节省时间。
 
+.开始之前
 请确保：
 
 * 已在System Manager (菜单：Support[支持中心])中为要用作源的存储阵列配置AutoSupport。
@@ -24,6 +25,7 @@ summary: 将AutoSupport 配置从一个存储阵列导入到其他存储阵列�
 * 您已在中查看了复制存储配置的要求 link:vc-olh-import-settings-overview.html["导入设置概述"]。
 
 
+.关于此任务
 导入的设置包括不同的功能(基本AutoSupport 、AutoSupport OnDemand和远程诊断)、维护窗口、交付方法、 和派单计划。
 
 .步骤
@@ -47,4 +49,5 @@ NOTE: 固件低于8.50的存储阵列不可供选择。此外、如果插件无�
 
 
 
+.结果
 现在、目标存储阵列配置了与源阵列相同的AutoSupport 设置。

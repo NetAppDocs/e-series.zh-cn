@@ -200,4 +200,5 @@ NOTE: 收集支持数据可能会暂时影响存储阵列的性能。
 
 
 
+.下一步是什么？
 如果您的控制器升级导致将供应商 ID 从 LSI 更改为 NetApp ，请转至 link:remount-volumes-lsi-task.html["将供应商从 LSI 更改为 NetApp 后重新挂载卷"]；否则，控制器升级将完成，您可以恢复正常操作。

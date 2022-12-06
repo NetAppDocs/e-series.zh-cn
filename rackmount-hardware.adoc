@@ -24,18 +24,18 @@ summary: 机架式安装硬件。
 
 
 
-== 两柱机架— 2U
+== 两柱机架—2U
 
 访问 https://mysupport.netapp.com/ecm/ecm_download_file/ECMM1280302["将 2U 设备安装到两柱机架中"^]。
 
 
 
-== 四柱机架或机柜— 2U
+== 四柱机架或机柜—2U
 
 访问 https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2484194["在四柱机架或机柜中安装 2U 12 驱动器机箱"^]。
 
 
 
-== 四柱机架— SuperRail
+== 四柱机架—SuperRail
 
 访问 https://docs.netapp.com/us-en/ontap-systems/platform-supplemental/superrail-install.html["将 SuperRail 安装到四柱机架中（ DE224C/DE460C 磁盘架）"^]。
