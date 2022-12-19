@@ -502,9 +502,9 @@ sidebar:
         - title: 概述和要求
           url: "/maintenance-ef600/drives-overview-supertask-concept.html"
         - title: 更换 EF300 驱动器
-          url: "/maintenance-ef600/drives-replace-EF300-task.html"
+          url: "/maintenance-ef600/drives-replace-EF300-supertask-task.html"
         - title: 更换 EF600 驱动器
-          url: "/maintenance-ef600/drives-replace-supertask-task.html"
+          url: "/maintenance-ef600/drives-replace-EF600-supertask-task.html"
         - title: 热添加驱动器架
           url: "/maintenance-ef600/drives-hotadd-drive-shelf-task.html"
       - title: 风扇
