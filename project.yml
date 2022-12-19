@@ -505,6 +505,8 @@ sidebar:
           url: "/maintenance-ef600/drives-replace-EF300-task.html"
         - title: 更换 EF600 驱动器
           url: "/maintenance-ef600/drives-replace-supertask-task.html"
+        - title: 热添加驱动器架
+          url: "/maintenance-ef600/drives-hotadd-drive-shelf-task.html"
       - title: 风扇
         pdf-filename: EF300-EF600 可保持风扇正常运行
         entries:
@@ -598,6 +600,8 @@ sidebar:
           url: "/maintenance-e2800/drives-60-replace-task.html"
         - title: 更换驱动器抽盒（ 60 个驱动器）
           url: "/maintenance-e2800/drives-60-supertask-task.html"
+        - title: 热添加驱动器架
+          url: "/maintenance-e2800/drives-hotadd-drive-shelf-task.html"
       - title: 主机接口卡
         pdf-filename: E2800 可维护 HIC
         entries:
@@ -659,6 +663,8 @@ sidebar:
           url: "/maintenance-e5700/drives-60-replace-task.html"
         - title: 更换驱动器抽盒（ 60 个驱动器）
           url: "/maintenance-e5700/drives-drawer-supertask-task.html"
+        - title: 热添加驱动器架
+          url: "/maintenance-e5700/drives-hotadd-drive-shelf-task.html"
       - title: 主机接口卡
         pdf-filename: E5700 可维护 HIC
         entries:

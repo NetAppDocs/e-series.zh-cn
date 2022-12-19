@@ -1,5 +1,5 @@
 ---
-permalink: maintenance-ef600/drives-replace-supertask-task.html 
+permalink: maintenance-ef600/drives-replaceEF600-supertask-task.html 
 sidebar: sidebar 
 keywords: replace EF300 DIMM, replace EF600 DIMM, drive failure 
 summary: 更换 EF600 阵列中的驱动器。 

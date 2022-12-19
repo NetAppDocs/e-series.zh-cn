@@ -8681,7 +8681,6 @@
   <block id="59f90aba4c7b3944a7e31f23bff5d8a2" category="admonition">只能转换E2800控制器上的16 Gb FC/10 Gb iSCSI HIC和光纤基础端口。</block>
   <block id="f212760efdd1ee6ecc6a822f380627cd" category="paragraph">EF300、EF600</block>
   <block id="a49b136089a95385ac24b13d585982b3" category="paragraph">DE212C、DE224C、DE460</block>
-  <block id="c5d218090776dbcf38627065b13e6caa" category="admonition">只有SANtricity OS 11.07.2及更高版本才支持IOM12B模块。在安装或升级到IOM12B之前、请确保已更新控制器的固件。</block>
   <block id="add241dc5ececee27088b6736250072e" category="section-title">为EF300和EF600布线</block>
   <block id="aa7f7f642f0f31272aec24455af2999f" category="paragraph">以下信息是适用场景 使用缆线将EF300或EF600控制器架连接到DE212C、DE224C或DE460驱动器架的信息。</block>
   <block id="e20bd51b5e818feb7ae7162ff2a5040b" category="paragraph">在为EF300或EF600布线之前、请确保固件已更新到最新版本。要更新固件，请按照中的说明进行操作 <block ref="2834c74834ca1d1cb0e165f8c6e2c750" category="inline-link-macro-rx"></block>。</block>
@@ -8774,7 +8773,6 @@
   <block id="ebf132debe07a5cd0bc888dd5078033d" category="paragraph">或者、您也可以通过以下调用通过REST API导入密钥服务器证书：<block ref="640677ffae20a0401b505d0de933e391" prefix=" " category="inline-code"></block></block>
   <block id="bc2848514b39d7125ea7f1e0192ff80f" category="list-text">使用从保存的安全密钥 <block ref="370683b601e29cfe5ec51edd9d49be09" category="inline-link-macro-rx"></block>下，将外部密钥导入到 IP 地址 192.168.128.101 中，用户名为 * 管理员 * ，密码为空。</block>
   <block id="4097f6992eb560447325a703f31e2270" category="paragraph">或者、您也可以通过以下调用通过REST API导入外部密钥：<block ref="758036d11568492285b8504fb55d4d9f" prefix=" " category="inline-code"></block></block>
-  <block id="e2acb831b00c32f1c83710aa634a7625" category="admonition">只有SANtricity OS 11.07.2及更高版本才支持IOM12B模块。在安装或升级到IOM12B之前、请确保已更新控制器的固件。</block>
   <block id="5dd94bd0b7c84a6ccc9fc7c3a1fa82e6" category="paragraph">InfiniBand diags软件包包含用于显示每个InfiniBand (IB)端口的全局唯一ID (GUID)的命令。通过附带的软件包支持的大多数具有OFED/RDMA的Linux分发版也具有InfiniBand diags软件包、其中包含用于显示有关HCA的信息的命令。</block>
   <block id="dfcfc178d6edc54d8706c59b747948d5" category="list-text">安装<block ref="3b13fc847651d5be5c89aeab4722c099" prefix=" " category="inline-code"></block> 使用操作系统的软件包管理命令进行软件包管理。</block>
   <block id="79c617afe97932f20f52d1217736d403" category="list-text">创建名为的systemd服务单元文件<block ref="6bddfc9da80e7ef0195a324214877004" prefix=" " category="inline-code"></block>。</block>
@@ -8848,4 +8846,7 @@
   <block id="294b3397fedca884072c918fc613f61d" category="list-text"><block ref="b1d2c45bc75ed5d4a6faa0261f1569e8" category="inline-xref-macro-rx"></block></block>
   <block id="04c5c6e14f0bbd925f3877a16bc2c6a5" category="section-title">选项1：连接E2800或E5700的驱动器架</block>
   <block id="3519a93182c0883a5ee2951208ede7c9" category="section-title">选项2：连接EF300或EF600的驱动器架</block>
+  <block id="f2ad0f8f286ab81e3d2722fa3c383e9b" category="admonition">只有SANtricity OS 11.70.2及更高版本才支持IOM12B模块。在安装或升级到IOM12B之前、请确保已更新控制器的固件。</block>
+  <block id="562b06bc197dd94e4462675caa7022b0" category="admonition">只有SANtricity OS 11.70.2及更高版本才支持IOM12B模块。在安装或升级到IOM12B之前、请确保已更新控制器的固件。</block>
+  <block id="fe52478447b1fa9a4c7ec89de67fdf4d" category="sidebar">热添加驱动器架</block>
 </blocks>
