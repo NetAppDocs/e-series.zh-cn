@@ -29,12 +29,10 @@ node.session.nr_sessions = 1
 +
 [listing]
 ----
-node.session.timeo.replacement_timeout=20
+node.session.timeo.replacement_timeout = 20
 ----
+. 您也可以设置 `node.startup = automatic` 在/etc/iscsi/iscsid.conf中运行any之前 `iscsiadm` 重新启动后使会话持续存在的命令。
 . 确保 `iscsid` 和 ` （ open-） iSCSI` 服务已打开并启用，可用于启动。
-+
-* Red Hat Enterprise Linux 7、8和9 (RHEL 7、RHEL 8和RHEL9)*
-
 +
 [listing]
 ----
@@ -43,25 +41,13 @@ node.session.timeo.replacement_timeout=20
 # systemctl enable iscsi
 # systemctl enable iscsid
 ----
-+
-* SUSE Linux Enterprise Server 12 和 15 （ SLES 12 和 SLES 15 ） *
-
-+
-[listing]
-----
-# systemctl start iscsid.service
-# systemctl enable iscsid.service
-----
-+
-或者，您也可以在 /etc/iscsi/iscsid.conf 中设置 `node.star启动 = automatic` ，然后再运行任何 `iscsiadm` 命令，以便在重新启动后持久保留会话。
-
 . 获取主机 IQN 启动程序名称，该名称将用于将主机配置到阵列。
 +
 [listing]
 ----
 # cat /etc/iscsi/initiatorname.iscsi
 ----
-. 为 iSCSI 端口配置网络：
+. 为iSCSI端口配置网络。以下是适用于RHEL和SLES的示例说明：
 +
 
 NOTE: 除了公有网络端口之外， iSCSI 启动程序还应在单独的私有分段或 VLAN 上使用两个或更多 NIC 。
@@ -70,39 +56,69 @@ NOTE: 除了公有网络端口之外， iSCSI 启动程序还应在单独的私�
 .. 使用`ifconfig -a`命令确定iSCSI端口名称。
 .. 设置 iSCSI 启动程序端口的 IP 地址。启动程序端口应与 iSCSI 目标端口位于同一子网中。
 +
-* Red Hat Enterprise Linux 7、8和9 (RHEL 7、RHEL 8和RHEL9)*
+* Red Hat Enterprise Linux 7 和 8 （ RHEL 7 和 RHEL 8 ） *
+
++
+创建示例文件 `/etc/sysconfig/network-scripts/ifcfg-<NIC port>` 包含以下内容。
 
 +
 [listing]
 ----
-# vim /etc/sysconfig/network-scripts/ifcfg-<NIC port>
+TYPE=Ethernet
+PROXY_METHOD=none
+BROWSER_ONLY=no
+BOOTPROTO=static
+DEFROUTE=yes
+IPV4_FAILURE_FATAL=no
+NAME=<NIC port>
+UUID=<unique UUID>
+DEVICE=<NIC port>
+ONBOOT=yes
+IPADDR=192.168.xxx.xxx
+PREFIX=24
+NETMASK=255.255.255.0
+NM_CONTROLLED=no
+MTU=
 ----
++
+有关IPv6的可选附加项：
+
++
+[listing]
+----
+IPV6INIT=yes
+IPV6_AUTOCONF=no
+IPV6ADDR=fdxx::192:168:xxxx:xxxx/32
+IPV6_DEFROUTE=yes
+IPV6_FAILURE_FATAL=no
+IPV6_ADDR_GEN_MODE=eui64
+----
++
+* Red Hat Enterprise Linux 9 (RHEL 9)*
+
++
+使用 `nmtui` 用于激活和编辑连接的工具。该工具将生成 `<NIC port>.nmconnection` 文件 `/etc/NetworkManager/system-connections/`。
+
 +
 * SUSE Linux Enterprise Server 12 和 15 （ SLES 12 和 SLES 15 ） *
 
 +
-[listing]
-----
-# vim /etc/sysconfig/network/ifcfg-<NIC port>
-----
-+
-编辑：
+创建示例文件 `/etc/sysconfig/network/ifcfg-<NIC port>` 包含以下内容。
 
 +
 [listing]
 ----
-BOOTPROTO=none
-ONBOOT=yes
-NM_CONTROLLED=no
+IPADDR='192.168.xxx.xxx/24'
+BOOTPROTO='static'
+STARTMODE='auto'
 ----
 +
-添加：
+可选添加IPv6：
 
 +
 [listing]
 ----
-IPADDR=192.168.xxx.xxx
-NETMASK=255.255.255.0
+IPADDR_0='fdxx::192:168:xxxx:xxxx/32'
 ----
 +
 
@@ -117,9 +133,9 @@ NOTE: 请务必为两个 iSCSI 启动程序端口设置地址。
 .. 确保 Linux 服务器可以对 iSCSI 目标端口执行 ping 操作。
 
 
-. 在启动程序和目标之间建立 iSCSI 会话（共四个）。
+. 通过以下两种方法之一在启动程序和目标之间建立iSCSI会话(共四个)。
 +
-.. 使用ifaces时、通过创建两个iSCSI iface绑定来配置iSCSI接口。
+.. (可选)使用ifaces时、通过创建两个iSCSI iface绑定来配置iSCSI接口。
 +
 [listing]
 ----
@@ -138,16 +154,21 @@ NOTE: 要列出这些接口，请使用 `iscsiadm -m iface` 。
 
 .. 发现 iSCSI 目标。在工作表中保存 IQN （与每次发现相同），以供下一步使用。
 +
-[listing]
-----
-# iscsiadm -m discovery -t sendtargets -p 192.168.0.1:3260 -I iface0 -P 1
-----
-+
-或
+*方法1 (使用ifaces)*
 
 +
 [listing]
 ----
+# iscsiadm -m discovery -t sendtargets -p <target_ip_address>:<target_tcp_listening_port> -I iface0
+# iscsiadm -m discovery -t sendtargets -p 192.168.0.1:3260 -I iface0
+----
++
+*方法2 (无ifaces)*
+
++
+[listing]
+----
+# iscsiadm -m discovery -t sendtargets -p <target_ip_address>:<target_tcp_listening_port>
 # iscsiadm -m discovery -t sendtargets -p 192.168.0.1:3260
 ----
 +
@@ -161,13 +182,16 @@ iqn.1992-01.com.netapp:2365.60080e50001bf1600000000531d7be3
 ----
 .. 在iSCSI启动程序和iSCSI目标之间创建连接。
 +
+*方法1 (使用ifaces)*
+
++
 [listing]
 ----
-# iscsiadm -m node -T iqn.1992-01.com.netapp:2365.60080e50001bf1600000000531d7be3
--p 192.168.0.1:3260 -I iface0 -l
+# iscsiadm -m node -T <target_iqn> -p <target_ip_address>:<target_tcp_listening_port> -I iface0 -l
+# iscsiadm -m node -T iqn.1992-01.com.netapp:2365.60080e50001bf1600000000531d7be3 -p 192.168.0.1:3260 -I iface0 -l
 ----
 +
-或
+*方法2 (无ifaces)*
 
 +
 [listing]
