@@ -6169,10 +6169,6 @@
   <block id="e04137252fedc7e9af87dd09f9516981" category="doc">了解 E 系列系统</block>
   <block id="a30c4e694d7edde326fee8d00122908f" category="paragraph">了解 E 系列系统，其中包括可满足企业数据存储需求的集成硬件和软件。</block>
   <block id="5c4cc7b84f5f2341e2a7255a66b90d60" category="summary">要启动并运行 E 系列系统，您需要安装硬件组件，配置主机系统以及配置存储。</block>
-  <block id="7d06152e11d3715485775daa661d47f6" category="doc">启动并运行 E 系列</block>
-  <block id="031bfee2f1c4f298136ad7bcd1b9ea1a" category="paragraph">部署存储阵列涉及以下工作流：</block>
-  <block id="9318ff5121c310f798199b6c56b5a9c4" category="image-alt">文档中心工作流</block>
-  <block id="1fff4021acf4fcd93978a47efc6e737c" category="section-title">第 1 步：安装硬件</block>
   <block id="a852a041cd4afe33464b03fee2e3f120" category="paragraph">要安装 E 系列硬件，请访问适用于您的存储阵列和磁盘架类型的安装和设置说明：</block>
   <block id="9543914d3a895a3a83f2774c1ca09f7b" category="inline-link-macro">EF600 或 EF300 系列，带 24 个驱动器架</block>
   <block id="c15bb09da6c6817f5e7058dc3ca1fd7b" category="list-text"><block ref="c15bb09da6c6817f5e7058dc3ca1fd7b" category="inline-link-macro-rx"></block></block>
@@ -6180,11 +6176,9 @@
   <block id="c3d1d156d4dbd70c551cff2905300409" category="list-text"><block ref="c3d1d156d4dbd70c551cff2905300409" category="inline-link-rx"></block></block>
   <block id="bca0cc8bf6cde2b926b4bc5ddb9dfe16" category="inline-link">E2800 或 E5700 系列，含 60 个驱动器的磁盘架</block>
   <block id="f136dfbfa9ce6b1a1c29edcfbbe219b6" category="list-text"><block ref="f136dfbfa9ce6b1a1c29edcfbbe219b6" category="inline-link-rx"></block></block>
-  <block id="a13a4178ab5e4b05c282ff590c70c82b" category="section-title">第 2 步：设置机柜</block>
   <block id="010995c1126e613ec753172b4aeda9ea" category="paragraph">如果要为存储阵列设置新的机柜，则需要将机柜移至其永久位置，安装硬件并将其连接到电源。要设置机柜，请按照以下说明进行操作：</block>
   <block id="3fda1fb84ebc0d83b010f65d29ddebf8" category="inline-link-macro">安装 3040 40U 机柜</block>
   <block id="6c8b262cd2e010b887c12a7453d67c7b" category="list-text"><block ref="6c8b262cd2e010b887c12a7453d67c7b" category="inline-link-macro-rx"></block></block>
-  <block id="cca5a1eba3bea6ffb836d5e0bbc06fa5" category="section-title">第 3 步：安装导轨</block>
   <block id="c6722d1bce46a6ccc1d517a0cafa4262" category="paragraph">发货时，每个磁盘架都包含机架安装硬件。有关安装导轨的详细说明，请选择您的导轨类型：</block>
   <block id="428b742833ca03c0931dac593db43629" category="inline-link">安装可调整的支撑导轨</block>
   <block id="c475eb7168fd82fa14848180a2d67233" category="list-text"><block ref="c475eb7168fd82fa14848180a2d67233" category="inline-link-rx"></block></block>
@@ -6193,13 +6187,10 @@
   <block id="445af0d521639412848f157b0a0aefe4" category="inline-link">将 DE224C 磁盘架安装到两柱机架中</block>
   <block id="382ea592d3e7c4318a61cdeb1088795e" category="list-text"><block ref="382ea592d3e7c4318a61cdeb1088795e" category="inline-link-rx"></block></block>
   <block id="141fde4ba7cde941e1590d0f5d6d1580" category="list-text"><block ref="141fde4ba7cde941e1590d0f5d6d1580" category="inline-link-rx"></block></block>
-  <block id="6622ce32e6779e8ffd7dc7a716304207" category="section-title">第 4 步：连接缆线</block>
   <block id="85e9bf543d76b21d1d000a334e3359db" category="paragraph">安装和设置说明（步骤 1 ）包括有关连接缆线的说明。但是，如果您需要列出支持的缆线和收发器，布线最佳实践以及有关控制器主机端口的详细信息，请访问以下说明：</block>
   <block id="e716b652b3e3b8c2ecc764925c3d152b" category="inline-link-macro">为 E 系列硬件布线</block>
   <block id="61ebb23dfb23d5322222d22abfb363a7" category="list-text"><block ref="61ebb23dfb23d5322222d22abfb363a7" category="inline-link-macro-rx"></block></block>
-  <block id="97428e48ea73150f600183e80dc5d7e1" category="section-title">第 5 步：配置主机</block>
   <block id="23f5c5a2cb4745a537bec1d583b5d6cc" category="paragraph">要使存储可供主机使用，请为主机的操作系统类型选择一个指南：</block>
-  <block id="c6941703005adb7144c53a6fa1e9031b" category="section-title">第 6 步：配置存储</block>
   <block id="9bc4dbdc4b0ba32e879477f6d380d1f2" category="paragraph">要配置存储，您可以通过将浏览器指向控制器的 IP 地址来访问基于 Web 的界面 System Manager 。设置向导可帮助您开始进行系统配置。此外，您还可以使用命令行界面（ CLI ）。</block>
   <block id="dc319fa18c0e449181d9af17b46cb41d" category="paragraph">选择要使用的接口：</block>
   <block id="b099e1af7ef72f35c180ddc664299373" category="summary">访问视频演示，了解有关 E 系列系统的更多信息。</block>
@@ -8863,4 +8854,17 @@
   <block id="629d95b23c4787247cb60bd0d79ce58b" category="list-text">(可选)使用ifaces时、通过创建两个iSCSI iface绑定来配置iSCSI接口。</block>
   <block id="c40ee4712318216da52bf38dda83bd0b" category="paragraph">*方法1 (使用ifaces)*</block>
   <block id="340e742b206cd41d5a3527d53de73cf7" category="paragraph">*方法2 (无ifaces)*</block>
+  <block id="7f2df89a415d0c6323d035e4176f6db4" category="doc">E系列快速入门</block>
+  <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">一个</block>
+  <block id="46ca93f6b3313c2a9ac729aa38017955" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 安装硬件</block>
+  <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">两个</block>
+  <block id="d6cf7fe5046bf9923e6ad1b20473f529" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 设置机柜</block>
+  <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">三个</block>
+  <block id="de54967238ec91f0993b94c6e90c8cae" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 安装导轨</block>
+  <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">四个</block>
+  <block id="b5c57792c88e99b9c90f4866b01361c8" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 连接缆线</block>
+  <block id="e5d9de39f7ca1ba2637e5640af3ae8aa" category="inline-image-macro">五个</block>
+  <block id="4d34b8dd475537b31eded726b5f109a4" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> 配置主机</block>
+  <block id="e6fbc0b9673f8c86726688d7607fc8f5" category="inline-image-macro">六个</block>
+  <block id="8cb633130263590fcb215001ddbab715" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block> 配置存储</block>
 </blocks>
