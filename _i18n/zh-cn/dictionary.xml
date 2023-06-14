@@ -8868,6 +8868,5 @@
   <block id="e6fbc0b9673f8c86726688d7607fc8f5" category="inline-image-macro">六个</block>
   <block id="8cb633130263590fcb215001ddbab715" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block> 配置存储</block>
   <block id="17fbe20fbbd5b537dbcef5b0ec0d1dea" category="section-title">11.75版中的新增功能</block>
-  <block id="a4b7d4d589fe2fdcc52596432d9392ed" category="paragraph">允许升级到11.80.x</block>
-  <block id="7c2f19d039e9dc3e3394a748e8ac016e" category="paragraph">要升级到11.80.x或更高版本、系统必须运行11.70.5。现在、对于基于SAS和NVMe的SSD、某些驱动器均支持FIPS 140-3。FIPS 140-3级SSD驱动器可以与FIPS 140-2级SSD驱动器共存、但前提是这些驱动器要么全部基于NVMe、要么全部基于SAS。在卷组和磁盘池中混合使用这些级别时、请注意组或池将在较低的安全级别(140-2)下运行。</block>
+  <block id="fc663b28a8d6054c2d97e0b897d7291f" category="paragraph">要升级到11.80.x或更高版本、系统必须运行11.70.5。</block>
 </blocks>
