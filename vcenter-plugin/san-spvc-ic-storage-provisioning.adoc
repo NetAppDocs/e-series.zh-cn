@@ -330,10 +330,7 @@ Name
 
 == 第3步：在vSphere Client中创建数据存储库
 
-要在 vSphere Client 中创建数据存储库，请参见 VMware 文档中心中的以下主题：
-
-* https://docs.vmware.com/en/VMware-vSphere/6.0/com.vmware.vsphere.hostclient.doc/GUID-7EB0CE06-02DD-4B31-85C7-E54993CC06DC.html["在 vSphere Client 中创建 VMFS 数据存储库"^]
-
+要在vSphere Client中创建数据存储库、请参见 https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-5AC611E0-7CEB-4604-A03C-F600B1BA2D23.html["在 vSphere Client 中创建 VMFS 数据存储库"^] 主题。
 
 
 
@@ -370,11 +367,7 @@ NOTE: 只有某些操作系统才支持增加卷的容量。如果在不支持 L
 . 使用 * 通过添加增加报告容量 ...* 框向当前可用报告容量添加容量。您可以将容量值更改为以兆字节（ MiB ），吉字节（ GiB ）或太字节（ TiB ）为单位显示。
 . 单击 * 增加 * 。
 . 查看近期任务窗格，了解当前正在对选定卷运行的增加容量操作的进度。此操作可能会很长，并且可能会影响系统性能。
-. 卷容量完成后，您必须手动增加 VMFS 大小，使其与以下主题中所述的大小一致：
-+
-** https://docs.vmware.com/en/VMware-vSphere/6.0/com.vmware.vsphere.hostclient.doc/GUID-B0D89816-02E5-4C42-AAFC-19751800A284.html["增加 vSphere Client 中的 VMFS 数据存储库容量"^]
-
-
+. 卷容量完成后、您必须手动增加VMFS大小、以便与中所述的匹配 https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-D57FEF5D-75F1-433D-B337-E760732282FC.html["增加 vSphere Client 中的 VMFS 数据存储库容量"^] 主题。
 
 
 
@@ -382,9 +375,8 @@ NOTE: 只有某些操作系统才支持增加卷的容量。如果在不支持 L
 === 通过添加卷来增加现有数据存储库的容量
 
 . 您可以通过添加卷来增加数据存储库的容量。按照中的步骤进行操作 <<第1步：创建卷>>。
-. 接下来，将卷分配给所需主机以增加数据存储库的容量。请参见以下主题：
+. 接下来，将卷分配给所需主机以增加数据存储库的容量。
 +
-** https://docs.vmware.com/en/VMware-vSphere/6.0/com.vmware.vsphere.hostclient.doc/GUID-B0D89816-02E5-4C42-AAFC-19751800A284.html["增加 vSphere Client 中的 VMFS 数据存储库容量"^]
-
+请参见 https://docs.vmware.com/en/VMware-vSphere/6.0/com.vmware.vsphere.hostclient.doc/GUID-B0D89816-02E5-4C42-AAFC-19751800A284.html["增加 vSphere Client 中的 VMFS 数据存储库容量"^] 主题、了解更多信息。
 
 

@@ -14,9 +14,9 @@ summary: 将 EF300 或 EF600 安装在两柱机架或 NetApp 系统机柜中。
 您可以在两柱机架或 NetApp 系统机柜中安装 EF300 或 EF600 存储系统。
 
 .开始之前
-在安装 EF300 或 EF600 存储系统之前，请确保执行以下操作：
+请确保执行以下操作：
 
-* 在注册硬件 http://mysupport.netapp.com/["mysupport.netapp.com"^]。
+* 在注册硬件 http://mysupport.netapp.com/["NetApp 支持"^]。
 * 准备一个无静电的平面工作区。
 * 采取防静电预防措施。
 

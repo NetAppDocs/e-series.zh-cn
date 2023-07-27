@@ -21,7 +21,7 @@ summary: 要安装 EF300 或 EF600 ，请创建一个帐户并注册硬件。
 
 
 .步骤
-. 在中创建帐户并注册硬件 http://mysupport.netapp.com/["mysupport.netapp.com"^]。
+. 在中创建帐户并注册硬件 http://mysupport.netapp.com/["NetApp 支持"^]。
 . 确保收到的包装盒中包含以下物品。
 +
 |===
@@ -125,11 +125,10 @@ image:../media/management_station_inst-hw-ef600_g60b3.png[""]
  a| 
 管理软件支持的浏览器：
 
-** Google Chrome （ 78 及更高版本）
-** Microsoft Internet Explorer （ 11 及更高版本）
-** Microsoft Edge （ 88 及更高版本）
-** Mozilla Firefox （版本 70 及更高版本）
-** Safari （版本 12 及更高版本）
+** Google Chrome (89及更高版本)
+** Microsoft Edge (90及更高版本)
+** Mozilla Firefox (80及更高版本)
+** Safari (版本14及更高版本)
 
 
 |===

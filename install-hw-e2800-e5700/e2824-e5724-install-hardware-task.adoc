@@ -14,9 +14,9 @@ summary: 将 E2800 或 E5700 安装在两柱机架或 NetApp 系统机柜中。
 了解如何安装 E5724 ， EF570 ， EF280 ， E2812 ， E2824 ， DE212C 或 DE224C 存储系统位于两柱机架或 NetApp 系统机柜中。
 
 .开始之前
-安装硬件之前，请确保执行以下操作：
+请确保执行以下操作：
 
-* 在注册硬件 http://mysupport.netapp.com/["mysupport.netapp.com"^]。
+* 在注册硬件 http://mysupport.netapp.com/["NetApp 支持"^]。
 * 准备一个无静电的平面工作区。
 * 获取 ESD 腕带并采取防静电预防措施。
 

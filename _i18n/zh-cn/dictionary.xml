@@ -341,7 +341,6 @@
   <block id="7664fe7044214c4315cb67d769e21a1a" category="summary">连接电源线并打开驱动器架的电源。</block>
   <block id="6113d267d99dfbff350dce7d26009671" category="doc">为控制器架供电</block>
   <block id="d2bc0d64dd760b202ec2907fd44810aa" category="paragraph">了解如何连接电源线并打开驱动器架的电源。</block>
-  <block id="be957f4123963c8a3a4d8d8b36e8dc9e" category="paragraph">在为控制器架通电之前，请确保执行以下操作：</block>
   <block id="5ceb28979bbe59f9cfcee59ae10968dd" category="list-text">安装硬件。</block>
   <block id="672881f5c2cd0335072eb2cb47e8f2e5" category="list-text">采取防静电预防措施。</block>
   <block id="c61d7b3418bd253d4dcd746096fe1266" category="list-text">插入电源线，每个控制器一根（下图为 EF600 ）。</block>
@@ -370,9 +369,6 @@
   <block id="602581c7f4fef4e0ffc7c312b3efa341" category="summary">将 EF300 或 EF600 安装在两柱机架或 NetApp 系统机柜中。</block>
   <block id="923a86c9f908f09f61d33d7831905371" category="doc">Install the hardware</block>
   <block id="d751bcfe66df83ffc12435f4dd821d73" category="paragraph">您可以在两柱机架或 NetApp 系统机柜中安装 EF300 或 EF600 存储系统。</block>
-  <block id="a8c48c071808ad2651b915b013b97fef" category="paragraph">在安装 EF300 或 EF600 存储系统之前，请确保执行以下操作：</block>
-  <block id="0373910e51252c7b97dcbea9f4942604" category="inline-link">mysupport.netapp.com</block>
-  <block id="9d7ace3094547dba44a6a710e588173b" category="list-text">在注册硬件<block ref="28649c93049a329043d206ec7fa0c6f8" category="inline-link-rx"></block>。</block>
   <block id="2d25dc407855f99aa2a0fe96d3aaffc7" category="list-text">准备一个无静电的平面工作区。</block>
   <block id="9ad20405ed7442681aff80b87cb2dba2" category="list-text">打开硬件包装。</block>
   <block id="ddaca6e351d1a3c9ab3d82db4c028ff5" category="list-text">打开包装箱内物品的包装，并根据装箱单清点所含硬件。</block>
@@ -400,7 +396,6 @@
   <block id="ed340a74210414952184f18bdea46abb" category="list-text"><block ref="59592944f1499a5ed0c513d73204b10a" category="inline-link-macro-rx"></block> 用于安装 SAS 扩展卡。</block>
   <block id="3b1d6e6330ca5bf54a0c22beaa407de9" category="inline-link-macro">布线概述</block>
   <block id="03d8927d2b1d15f40bf2f3ed72e44a9e" category="list-text"><block ref="cd760802de300bde5638960df8d1f993" category="inline-link-macro-rx"></block> 用于 SAS 扩展布线。</block>
-  <block id="9a1088df44acd632befae6a589d43474" category="list-text">在中创建帐户并注册硬件<block ref="28649c93049a329043d206ec7fa0c6f8" category="inline-link-rx"></block>。</block>
   <block id="eac0c4bdb6359eb499e188351f5a9f2d" category="list-text">确保收到的包装盒中包含以下物品。</block>
   <block id="f63066afb77d7c003e18251ee221aefc" category="paragraph"><block ref="f63066afb77d7c003e18251ee221aefc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d6b6a1b586f8ed315e7d110da72191a0" category="paragraph">已安装驱动器的磁盘架（挡板和端盖单独包装）</block>
@@ -436,11 +431,6 @@
   <block id="900e4c394955e0720a8b42172aa18c8f" category="admonition">使用第三方机柜可能会对电源线进行发生原因，以限制对控制器的访问。</block>
   <block id="49fc51b075dc8edf1412b9c9514e429f" category="paragraph"><block ref="49fc51b075dc8edf1412b9c9514e429f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dcc887df0958a24f414c58b89298bc9b" category="paragraph">管理软件支持的浏览器：</block>
-  <block id="4aed86ee8496175fd7faafa5c35fd6a1" category="list-text">Google Chrome （ 78 及更高版本）</block>
-  <block id="9471ea9488231b3eec10e1195279e441" category="list-text">Microsoft Internet Explorer （ 11 及更高版本）</block>
-  <block id="c3767efdeacb446b6fa6f38fb0ebcc8e" category="list-text">Microsoft Edge （ 88 及更高版本）</block>
-  <block id="97cd5d08f3ac321127d6b56ff35b6274" category="list-text">Mozilla Firefox （版本 70 及更高版本）</block>
-  <block id="412c6f332067d9b9f2a99e4bf825afdf" category="list-text">Safari （版本 12 及更高版本）</block>
   <block id="4d3d862716fe69a21fb74abfd0035b2c" category="summary">使用缆线将控制器连接到网络以完成存储系统设置和配置。</block>
   <block id="6be903907d4a6ed0342253dd37020027" category="doc">完成存储系统设置和配置</block>
   <block id="f1cb9cd9d8d75df1988e53e41e4dff92" category="paragraph">了解如何将控制器缆线连接到网络，然后完成设置和配置。</block>
@@ -510,33 +500,7 @@
   <block id="e278e6437347ba1b8b43475dafb1ed84" category="inline-link">11.50 发行说明</block>
   <block id="7d69ef318412295725664b5711e60b81" category="list-text"><block ref="7d69ef318412295725664b5711e60b81" category="inline-link-rx"></block></block>
   <block id="7bf44c1a455e947396fedd5ddf411974" category="summary">SANtricity OS 中的新增功能。</block>
-  <block id="1a75366a6d4c821ee7e455bce4cffa25" category="section-title">11.72 版中的新增功能</block>
   <block id="824a3a83a007a97494ec5981cebf67a5" category="cell">新增功能</block>
-  <block id="28b46397fb020adcaf0b119cbfa693b5" category="cell">SNMPv3 支持</block>
-  <block id="c2e4a04d91c5a3b8fe7446de157eb681" category="cell">支持将密钥复制到多个密钥服务器</block>
-  <block id="292510d91cd4366627aba2eec79ec942" category="cell">对于自加密驱动器的外部密钥管理，创建外部密钥管理对话框提供了一个用于添加多个密钥服务器的新选项。</block>
-  <block id="68a7548c04bd5ae4d9d965b924cc722e" category="cell">已更新浏览器版本</block>
-  <block id="2d7d47101a0ad5c71e2101ebb7e5f475" category="cell">已更新 System Manager 的最低浏览器版本。</block>
-  <block id="3c7e7b17dae4906b0da9248a0e7f39e2" category="section-title">11.71 版中的新增功能</block>
-  <block id="9f498a936b91eb825293b845ab4c4a34" category="cell">EF300 扩展</block>
-  <block id="e26cc7c9038cf4d3175e8bf30d816d86" category="cell">iSCSI 配置中的 FEC 模式选项</block>
-  <block id="ea9c177239be0bc55bf551920e73ec9e" category="cell">远程存储卷</block>
-  <block id="ae376d8e855c99ce33d3f6e542edc956" category="cell">为非 FDE 驱动器添加了清理（擦除）功能</block>
-  <block id="e85e5cd7a142a229a3e8752a4502bb6a" category="cell">电子邮件警报的安全连接</block>
-  <block id="a98e92b119d04e5ca0c2e3a8c6cc6159" category="cell">AutoSupport 新增功能</block>
-  <block id="5994d3724fb50db3bc66184d3f47b830" category="cell">系统日志警报格式更改</block>
-  <block id="c91b20af8c08d49b519596d358be5e0f" category="section-title">11.70 版中的新增功能</block>
-  <block id="fd6d564757d9bebb4afdcbc6e49ae663" category="cell">新存储系统型号— EF300</block>
-  <block id="c3164ba2335231fad0057dbe03d6e8dc" category="cell">新的资源配置功能（仅限 EF300 和 EF600 ）</block>
-  <block id="86fffc443dc49ef49131fe738b172a29" category="cell">添加 512e 块大小选项（仅限 EF300 和 EF600 ）</block>
-  <block id="97815730af7a32b4bee2bd50133bcc3b" category="cell">用于按需发送 AutoSupport 派单的新选项</block>
-  <block id="7648787a2f72ca73c563621d8f772039" category="cell">外部密钥管理服务器增强功能</block>
-  <block id="5ce158a574155a1dbf2c52d1112ea5c9" category="list-text">绕过创建备份密钥的功能。</block>
-  <block id="a83cf593b4f7f5cb340b9eb8c9b13daa" category="list-text">除了客户端和服务器证书之外，还为密钥管理服务器选择一个中间证书。</block>
-  <block id="a41ead92ad6d32095eee6328103a4c8f" category="cell">证书增强功能</block>
-  <block id="0d3d43e6247ef530e5466168527ca61c" category="cell">为卷组提供了新的脱机初始化功能</block>
-  <block id="0587e4aa2345855c1a604c02193816de" category="cell">新增了收集配置数据功能</block>
-  <block id="fa255949f43078f9547e0b38d42d3df0" category="cell">在 12 个驱动器的情况下更改磁盘池的默认保留容量</block>
   <block id="93abfbfe31ac8cb67502c94e622ee8a8" category="cell">SANtricity 统一管理器</block>
   <block id="98d8050fe87ace4e377bf1699943169c" category="summary">适用于 vCenter 的 SANtricity 存储插件可在 VMware vSphere 客户端会话中对 E 系列存储阵列进行集成管理。</block>
   <block id="0ea7e9962e3c0f9be7ab95c366381ed7" category="doc">适用于 vCenter 的存储插件概述</block>
@@ -727,9 +691,7 @@
   <block id="958b076f7e1539852bedf91e5fe7a516" category="paragraph">系统将执行以下操作：</block>
   <block id="00c9f8995e9e372b1b21f15fc0c9001b" category="list-text">分配的卷将收到下一个可用的 LUN 编号。主机使用此 LUN 编号来访问此卷。</block>
   <block id="4faf06e0466760e50f45759abdf2041c" category="list-text">用户提供的卷名称将显示在与主机关联的卷列表中。如果适用，出厂配置的访问卷也会显示在与主机关联的卷列表中。</block>
-  <block id="03fea832838d48ebb15f527aa6abd2cd" category="paragraph">要在 vSphere Client 中创建数据存储库，请参见 VMware 文档中心中的以下主题：</block>
   <block id="7c7e75114a8c9222d975bdcf65b6e447" category="inline-link">在 vSphere Client 中创建 VMFS 数据存储库</block>
-  <block id="23665d1daa8ffb139110bacef48d674f" category="list-text"><block ref="23665d1daa8ffb139110bacef48d674f" category="inline-link-rx"></block></block>
   <block id="3f6b953b35e3c46b4c78f3358ab087c5" category="section-title">通过增加卷容量来增加现有数据存储库的容量</block>
   <block id="9656b5c122337f9fc73cb071b360a0e6" category="paragraph">请确保：</block>
   <block id="7cf61abe29c59213c314036c21f30dcc" category="list-text">卷的关联池或卷组具有足够的可用容量。</block>
@@ -747,11 +709,8 @@
   <block id="8ebea0904dbbd79829b4e8e18700fe35" category="list-text">使用 * 通过添加增加报告容量 ...* 框向当前可用报告容量添加容量。您可以将容量值更改为以兆字节（ MiB ），吉字节（ GiB ）或太字节（ TiB ）为单位显示。</block>
   <block id="47e3d95a3adbde336a43e0c9f80a08f6" category="list-text">单击 * 增加 * 。</block>
   <block id="8eced8651ea7da59ed5fb12085b185c0" category="list-text">查看近期任务窗格，了解当前正在对选定卷运行的增加容量操作的进度。此操作可能会很长，并且可能会影响系统性能。</block>
-  <block id="0315ca638646397d429dc910d02c61c1" category="list-text">卷容量完成后，您必须手动增加 VMFS 大小，使其与以下主题中所述的大小一致：</block>
   <block id="9577a4dae7ff56da7f4a9a7339b5aeba" category="inline-link">增加 vSphere Client 中的 VMFS 数据存储库容量</block>
-  <block id="6732b2858e611126190f8b1ce8d187c4" category="list-text"><block ref="6732b2858e611126190f8b1ce8d187c4" category="inline-link-rx"></block></block>
   <block id="17771615949b8b68fe1647ab628a8c8b" category="section-title">通过添加卷来增加现有数据存储库的容量</block>
-  <block id="69e5b3af9cd470d8eb1ebb0fc532f6df" category="list-text">接下来，将卷分配给所需主机以增加数据存储库的容量。请参见以下主题：</block>
   <block id="b049a5a0784d0991375ef0cb4b388bca" category="summary">使用适用于 vCenter 的插件界面发现网络中阵列的 IP 地址。</block>
   <block id="862879ef91eb9af9fb07069c01d3803b" category="doc">在插件中发现存储阵列</block>
   <block id="b4b29380bfb019afc0cd434b20d39182" category="paragraph">要显示和管理存储资源，您必须使用适用于 vCenter 的存储插件界面发现网络中阵列的 IP 地址。</block>
@@ -1334,7 +1293,6 @@
   <block id="0a4fc9925721d0c06f330966916abde5" category="paragraph">您可能需要安装开箱即用的驱动程序，以确保正常运行和可支持性。</block>
   <block id="278e7f4c390be32a319172d8f461e1dd" category="paragraph">每个 HBA 供应商都有特定的方法来更新启动代码和固件。请参阅供应商网站的支持部分，获取更新 HBA 启动代码和固件所需的说明和软件。</block>
   <block id="267104c52d87eddcb4c3575796c3dba9" category="paragraph">网络接口卡（ Network Interface Card ， NIC ）驱动程序，固件和启动代码。</block>
-  <block id="89751b656ecdf8b63b8070935b0ff14a" category="paragraph">Microsoft Internet Explorer （ MSE ）</block>
   <block id="5a138d4de967691cc64add5999aa9ced" category="list-text">未检测到池或卷组。</block>
   <block id="0c3f79a0168a623515b2c693becc646f" category="paragraph">有关详细信息，请参见 SANtricity System Manager 的联机帮助。</block>
   <block id="cee6cea4420d7db9e86ff3dee8a886b3" category="summary">使用 Windows 快速配置工作流。</block>
@@ -2580,8 +2538,6 @@
   <block id="110591307a30fe38d9a123895392650e" category="list-text">如果电源已关闭，您必须手动确定要断开五个缆线链中的哪一个。此图显示了已卸下风扇箱的驱动器架右侧。卸下风扇箱后，您可以看到五个缆线链以及每个抽盒的垂直和水平连接器。</block>
   <block id="45cf6cdbf3770c81ac201cb107e00eaf" category="paragraph">The top cable chain is attached to drive drawer 1.The bottom cable chain is attached to drive drawer 5.The callouts for drive drawer 1 are provided.</block>
   <block id="893f37fd9fe04c8eed04d6e7e810b584" category="image-alt">TRafford 缆线导轨 1 维护 e5700</block>
-  <block id="ddb7e82d39051012ec7c4fa3f231186f" category="paragraph">* （ 1 ） * _ 垂直连接器（连接到中板） _</block>
-  <block id="6e0b9db3328f962af7c2596bee521640" category="paragraph">* （ 2 ） * _Cable chain_</block>
   <block id="e66a45e25286ebd6f89b037f813d2d97" category="paragraph">* （ 3 ） * _ 水平连接器（已连接到抽盒） _</block>
   <block id="d85c0e4b7f943005f1d369e2e79a43e5" category="list-text">为了便于访问，请用您的手指将右侧的缆线链移至左侧。</block>
   <block id="7a80980e0ab3c4a96cc4d5b19f3f93ff" category="list-text">从相应的垂直导轨断开任何右侧缆线链。</block>
@@ -4116,9 +4072,6 @@
   <block id="8165b3d8e6f4f4389b4387aad3bbe320" category="image-alt">存储阵列配置文件 2 维护 ef600</block>
   <block id="9fbea7ff3b1d63ccc2388bf9de3b06eb" category="list-text">使用功能包子型号 ID ，找到起始配置对应的控制器子型号 ID ，并在下表中找到所需结束配置的功能激活代码。然后，将该功能激活代码复制到文本文件。</block>
   <block id="13f3cf8c531952d72e5847c4183e6910" category="paragraph">443.</block>
-  <block id="26bcb9f1cb6f391f4b2c18e676bb458d" category="paragraph">NVMe/FC</block>
-  <block id="e81c4e4f2b7b93b481e13a8553c2ae1b" category="paragraph">或</block>
-  <block id="bb0b9e255a3bf215a4f994ef912a5fd7" category="paragraph">NVMe/RoCE</block>
   <block id="550a141f12de6341fba65b0ad0433500" category="paragraph">444.</block>
   <block id="ec81c0ed52c5a94736046090d59f4c39" category="paragraph">DH5-HB4-ZK9QH</block>
   <block id="9b70e8fe62e40c570a322f1b0b659098" category="paragraph">448</block>
@@ -4137,7 +4090,6 @@
   <block id="a0b1bce25bf7a94aa21101339f6a3843" category="paragraph">LHS-RB4-ZDV29</block>
   <block id="e44d6de45bb7cb73e6a01a992336541f" category="paragraph">FH6-975-Z7Q7H</block>
   <block id="4d1e8fc0882f290c9e2561465e9e6c69" category="paragraph">0HI-Z75-ZE4L5</block>
-  <block id="d7e5cfec25fe3fb66317ebf2e558a317" category="paragraph">NVMe/FC 或 NVMe/RoCE</block>
   <block id="8187d1a072ddc99fdb2f9f038025d4ad" category="paragraph">总部 M85-ZIJNT</block>
   <block id="706be4b242185f32a6c7d7a71d9fd4cb" category="paragraph">NVMe/FC 或 NVMe/IB</block>
   <block id="35b790bc7550e5221bca9853a4fb14f9" category="paragraph">4HS-683-ZJZ1U</block>
@@ -4170,7 +4122,6 @@
   <block id="666af42e109021e79993186039164ef0" category="paragraph">8HX-U95-Z5K6F</block>
   <block id="791acc53567cc150ccd705f42e68fd49" category="paragraph">UHZ-E95-Z71 左侧</block>
   <block id="dcc777a7b03231f109065e1444bb7a84" category="paragraph">SH2-X95-Z8IVS</block>
-  <block id="2a16fa59791f84533ec66e92db634cf7" category="paragraph">NVMe/FC 或</block>
   <block id="7343cf71ac168e95ba7a9736d35e848d" category="paragraph">UH5-H95-Z9Z58</block>
   <block id="dd767b9b76063bd2d8539c97aba6c64e" category="paragraph">XH7-195-ZBGJC</block>
   <block id="b99d53e698fc9df4219b55fbbfda1a25" category="paragraph">FHA-K95-ZCXX0</block>
@@ -5505,7 +5456,6 @@
   <block id="aaff32263a368283058bd594add43c3a" category="doc">设置 multipath.conf 文件</block>
   <block id="c97b364c883793adf3d2520124580bcf" category="paragraph">multipath.conf 文件是多路径守护进程 multipathd 的配置文件。</block>
   <block id="775309dc7f91ef62dc8e507c61e9ea84" category="admonition">对于 SANtricity 操作系统 8.30 及更高版本， NetApp 建议使用提供的默认设置。</block>
-  <block id="ad4806aee44ec3656193fc16283c1d1b" category="summary">为了确保操作可靠，您需要创建一个实施计划，然后使用 NetApp 互操作性表工具（ IMT ）验证是否支持整个配置。</block>
   <block id="658a1cfb9f949bb607568daa62dab461" category="doc">验证是否支持 Linux 配置</block>
   <block id="4da3965cf19b955b2ac32d45d1702ddf" category="list-text">转至<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block>。</block>
   <block id="f18c526fc5aa083d159dc96f771fc3ca" category="list-text">单击 * 解决方案 Search* 图块。</block>
@@ -5628,7 +5578,6 @@
   <block id="40efdf97c6552799245c0bb9c7156cae" category="list-text">验证要用于连接到阵列的 IP 地址。对 `ib0` 和 `ib1` 运行以下命令：</block>
   <block id="7895a100cce2fb9f671116c88a243a18" category="paragraph">如以下示例所示， `ib0` 的 IP 地址为 `10.10.10.255` 。</block>
   <block id="0693aaa7965eda2507b31a871e54b133" category="paragraph">如以下示例所示， `ib1` 的 IP 地址为 `11.11.11.255` 。</block>
-  <block id="1eab8c276623416692f2ab15fbfca861" category="list-text">在主机上设置 NVMe-oF 层。在 /etc/moduls-load.d/ 下创建以下文件，以加载 `NVMe-RDMA` 内核模块，并确保内核模块始终处于打开状态，即使重新启动后也是如此：</block>
   <block id="99954c29eb7aa9fda9be035a1b2f592d" category="summary">在使用卷之前，您需要验证主机是否可以将数据写入卷并将其读回。</block>
   <block id="e2231e7db2c3293db0e8d72e2fcfe246" category="paragraph">使用文件系统格式化的初始化卷。</block>
   <block id="6aa830600d297bbba2e711c0e55b6609" category="list-text">在主机上，将一个或多个文件复制到磁盘的挂载点。</block>
@@ -5776,7 +5725,6 @@
   <block id="c3458af35a87b205befdafb97cfb818c" category="list-text">使用命令 `nvme connect -t rdma -n discovered_sub_nqn -a target_ip_address -Q queue_depth_setting -l controller_los_timeout_period` 连接到第一个路径上发现的子系统</block>
   <block id="ecee470708b06c136afc8296235d59d1" category="admonition">系统重新启动或控制器长时间不可用时， NVMe 连接不会持久。</block>
   <block id="e11d5f2201c0be606810cbfc93d96891" category="admonition">建议的控制器丢失超时期限（以秒为单位）为 60 分钟（ 3600 秒）。使用 ` -l 3600` 命令行选项将 600 秒的默认设置覆盖为 3600 秒，如以下示例所示：</block>
-  <block id="f8110983d42b31fcea81a67a2d155ebd" category="list-text">使用 `nvme list` 命令查看当前连接的 NVMe 设备列表。在以下示例中，它为 `nvme0n1` 。</block>
   <block id="74d1b12d5ed308f971911d78804f8e6e" category="list-text">连接到第二条路径上发现的子系统：</block>
   <block id="f4aa860cb7f0d6983de8527030da8ac6" category="list-text">使用 Linux `lsblk` 和 `grep` 命令显示有关每个块设备的追加信息：</block>
   <block id="dd5b930833e0c8dd64b64e8f609f510e" category="list-text">使用 `nvme list` 命令查看当前连接的 NVMe 设备的新列表。在以下示例中，它为 `nvme0n1` 和 `nvme0n1` 。</block>
@@ -6260,7 +6208,6 @@
   <block id="a879ee66e249fbeee1ae138438d18fe8" category="list-text">单控制器—包括升级存储阵列软件以及（可选） IOM 固件和非易失性静态随机存取存储器（ NVSRAM ）的过程。</block>
   <block id="46bc8576a7815e8eb9a10ff5d59cac56" category="list-text">多个控制器—包括在多个相同类型的存储阵列上升级 SANtricity OS 软件的过程。</block>
   <block id="48c1ca5defe26b3e0c4d1e2e7368d701" category="list-text">drive —提供有关升级驱动器固件的说明。</block>
-  <block id="296e602ec8cd8c899029840a49ce97ab" category="paragraph">开始升级之前，请务必查看 <block ref="397a7b6697218a46323b6c580312f9dd" category="inline-link-macro-rx"></block>。</block>
   <block id="7c4a5891b1542263f11222fc188d8959" category="summary">升级单个 E 系列控制器的软件和固件。</block>
   <block id="d52a70488885ce444c9bb351cf8460ee" category="doc">升级单个控制器的软件和固件</block>
   <block id="fe284bcb126cdc7c6fd4a4151870094d" category="paragraph">您可以升级单个控制器，以确保您拥有所有最新的功能和修复程序。</block>
@@ -6530,7 +6477,6 @@
   <block id="cc54f468d2ac18e796e79f84a331074c" category="section-title">SANtricity 版本 11.4</block>
   <block id="bd2cfcab24475001dd81207ac244c8a1" category="summary">将 E2800 或 E5700 安装在两柱机架或 NetApp 系统机柜中。</block>
   <block id="448a97577ce7b342ad9a761abecb2e5e" category="paragraph">了解如何安装 E5724 ， EF570 ， EF280 ， E2812 ， E2824 ， DE212C 或 DE224C 存储系统位于两柱机架或 NetApp 系统机柜中。</block>
-  <block id="84d3553cd5edfee96bc4530427b049ec" category="paragraph">安装硬件之前，请确保执行以下操作：</block>
   <block id="18d75254ebc527a2c996bf35fc9ae101" category="list-text">获取 ESD 腕带并采取防静电预防措施。</block>
   <block id="802c4074203ba6ba97e2567d8b2e74c1" category="paragraph">请通读所有说明，然后继续执行以下步骤。</block>
   <block id="58483c487a48bff0ff470ac64f6bb18c" category="list-text">拆开硬件内容的包装，然后根据装箱单清点包含的硬件。</block>
@@ -6581,10 +6527,6 @@
   <block id="ee469072217f458e10d64df6379eca0a" category="paragraph">* 高度 * ： 6.87 英寸（ 17.46 厘米）</block>
   <block id="de886572d93cfb540958bcd9e52245d8" category="paragraph">* 最大重量 * ： 113 千克（ 250 磅）</block>
   <block id="9505009e6f019f71841892b4d68ccc72" category="paragraph"><block ref="9505009e6f019f71841892b4d68ccc72" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="781e38e727b5ccea6637b8f5ad2e7e6c" category="list-text">Google Chrome （ 47 及更高版本）</block>
-  <block id="d69d70a03d263bd459a54e45ce547a58" category="list-text">Microsoft Edge （ EdgeHTML 12 及更高版本）</block>
-  <block id="ae6f094417120830192cad13d1b6c8cd" category="list-text">Mozilla Firefox （ 31 及更高版本）</block>
-  <block id="fc54174a9d1e55650ad7538d8b9506a0" category="list-text">Safari （版本 9 及更高版本）</block>
   <block id="df943bc934853a93db409f62f2948398" category="summary">安装和设置 E2800 或 E5700 阵列。</block>
   <block id="c681e7dbbe1edec51b0f69b903121fe2" category="doc">安装和设置 E2800 和 E5700 存储系统</block>
   <block id="5aa28b320260eb4f07464fe5ce083acc" category="paragraph">了解如何安装和设置 E2800 或 E5700 存储系统。</block>
@@ -6948,7 +6890,6 @@
   <block id="acd1dcb9f4c3f9c9b28f9c1a4d234d1b" category="admonition">电源更换操作步骤 适用于更换 IOM 。要更换 IOM ，请执行电源更换操作步骤 。</block>
   <block id="f20b4bef1c485b65027bb64c40283577" category="paragraph"><block ref="f20b4bef1c485b65027bb64c40283577" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ebc31fad1cf84954196a7706294df684" category="paragraph">此 操作步骤 适用场景 数据中心管理平台和 DCM2 驱动器架。</block>
-  <block id="86e856206affbccd36d96e0932a14510" category="paragraph">要验证是否已加载 `NVMe-RDMA` 内核模块，请运行以下命令：</block>
   <block id="dbf42093a0041931999943f18d3f0986" category="paragraph">以下信息适用场景 为 E2800 ， E2800B ， EF280 ， E5700 ， EF5700B 布线， 或 EF570 控制器架连接到 DE212C ， DE224C 或 DE460 驱动器架。</block>
   <block id="f2c505979298b93cfd8e71dc78ddd1b0" category="admonition">请勿混合使用不同电压类型的 PSU 。请始终像这样替换。</block>
   <block id="b7b26f8fd8107cf68f2bc572008d19a7" category="admonition">替代控制器预安装了 16 GB 内存。如果您的控制器需要 64 GB 配置，请在安装替代控制器之前使用随附的升级套件。</block>
@@ -6974,37 +6915,6 @@
   <block id="228099d750c1289b9bfa62e7687ee971" category="cell"><block ref="228099d750c1289b9bfa62e7687ee971" category="inline-link-rx"></block></block>
   <block id="279a877b44d5476b61408bc38e5178f7" category="cell">介绍对NetApp E2800和E5700混合存储阵列执行的认证测试结果。</block>
   <block id="bf37ab4daa569311ecb03e0f71cfe44e" category="cell">介绍了在NetApp E2800和E5700混合存储阵列上使用Genetec安全中心视频管理软件(Video Management Software、VMS)的认证结果。</block>
-  <block id="09f15da1ede715dd9ce4f8fc402f6aa5" category="paragraph">下表介绍了SANtricity OS 11.7中用于嵌入式管理EF300、EF600、E2800/EF280和E5700/EF570控制器的新功能。</block>
-  <block id="09ebea90b63074ba83d2ad844e89d70c" category="section-title">11.73版中的新增功能</block>
-  <block id="36349de7ac0eb86303bed03895c1dcc2" category="paragraph">资源配置和DULBE"支持</block>
-  <block id="16fb65d0cddfe2d4c247fdab06b8cc43" category="paragraph">此版本现在完全支持资源配置功能和DULBE-驱动器功能。这种支持包括使资源配置卷上的主机定向UNMAP更广泛地可用。</block>
-  <block id="e3b2852f4ef13c9d9eb1a41a50d744b5" category="paragraph">EF600 SAS (512e)扩展</block>
-  <block id="299fb5bbb23387835d58bf5165cddeba" category="paragraph">此版本支持将EF600存储系统的SAS-3机箱扩展为SAS。通过此扩展， 4KiB 块 NVMe SSD 可以与 512e SAS SSD 和 HDD 共存。但是，块大小不同的驱动器不能配置在同一个池或卷组中。</block>
-  <block id="c73d7f2c67532a6b036251cdeb908f76" category="paragraph">qlc SSD支持</block>
-  <block id="e7049769f502b79dadcc8c63383bd373" category="paragraph">此版本支持在驱动器固件中设置了ONTAP 功能但未设置完整E系列专用功能的新一代QLC SSD。qlc驱动器(仅限NVMe)的成本较低、但写入性能较低、持久性等级较低、因此不应用于写入密集型工作负载。</block>
-  <block id="854da640a0760b1616bb0284c5ac42aa" category="paragraph">支持TLS 1.3</block>
-  <block id="a1ebc729e73cec123d0c98336b6e1c01" category="paragraph">现在、嵌入式管理支持TLS 1.3。这样可以支持适用场景 System Manager和嵌入式Web服务、并可以启用或禁用它。(在先前版本中为Web服务代理和Unified Manager增加了TLS 1.3支持。)</block>
-  <block id="f1f2fd644d915b365b5abb8c91c74bfa" category="paragraph">RAID 1 DDP、最少8个驱动器</block>
-  <block id="7b17410dd494661b52f2ac79eab0c721" category="paragraph">在此版本中、RAID 1 DDP不再要求池中至少有11个SSD。现在、如果在池中仅创建RAID 1卷、则最小值允许使用8驱动器SSD池。</block>
-  <block id="8b4b67bab63907548f025722a3d981e6" category="paragraph">删除EKMS密钥</block>
-  <block id="7aaef9b529c633049aca22e386a95abc" category="paragraph">现在、存储管理员可以请求外部密钥管理服务器(EKMS)删除旧密钥。只有在已安装驱动器具有新密钥后、才会在重新设置密钥过程中删除此密钥。</block>
-  <block id="a9ed1ee525d0d08488f9de3235270743" category="paragraph">现在、警报通知支持SNMPv3、可在菜单：设置[警报]中进行配置。SNMPv3 可通过强大的身份验证和数据加密提供安全性。</block>
-  <block id="4cd824b82861a81d3a34355af5534978" category="cell">此版本支持将 EF300 存储系统的 SAS-3 机箱扩展为 SAS 。通过此扩展， 4KiB 块 NVMe SSD 可以与 512e SAS SSD 和 HDD 共存。但是，块大小不同的驱动器不能配置在同一个池或卷组中。</block>
-  <block id="96d538d953209d533cee6c90da4de1a1" category="paragraph">对于使用 25 Gb iSCSI 主机接口卡的存储阵列，可以使用一个新选项在配置 iSCSI 端口时设置正向错误更正（ FEC ）模式。</block>
-  <block id="4c46d61572ef34b4dbdbc7690d745c3d" category="paragraph">通过可选的远程存储卷功能，您可以使用 iSCSI 连接将卷从远程存储系统导入到本地 E 系列存储系统。远程存储可以与您的 E 系列系统具有相同的品牌，也可以来自其他存储供应商，只要可以通过 iSCSI 进行访问即可。</block>
-  <block id="7113199ede26393de60c4e8d5222d08d" category="paragraph">驱动器清理功能现在在操作步骤中包括非 FDE 驱动器。在硬件页面中，您可以打开驱动器的上下文菜单并选择 " 擦除 " （以前，此选项为 " 安全擦除 " ）。</block>
-  <block id="50c890918fa832fcbdebb84798840bcc" category="paragraph">要启用加密电子邮件通知，您可以选择配置传出电子邮件（警报， ASUP 派单）以提供身份验证凭据。加密类型包括 SMTPS 和 STARTTLS 。</block>
-  <block id="31d5de0104fd289863adccff1475589e" category="paragraph">现在，如果未启用 AutoSupport ，则通知区域将显示一条警报。</block>
-  <block id="6972891f094c169717c1d2cc01a9c332" category="paragraph">系统日志警报格式现在支持 RFC 5424 。</block>
-  <block id="1d9b013014a7b904368939502c5b6aad" category="paragraph">此版本引入了 EF300 低成本纯 NVMe 闪存存储系统。EF300 包括 24 个 NVMe SSD 驱动器和每个控制器一个主机接口卡（ HIC ）。支持的基于网络结构的 NVMe 主机接口包括基于 IB 的 NVMe ，基于 RoCE 的 NVMe 和基于 FC 的 NVMe 。支持的 SCSI 接口包括 FC ， iSER 上的 IB 和 SRP 上的 IB 。可以在 Unified Manager 中查看和管理多个 EF300 存储系统和其他 E 系列存储系统。</block>
-  <block id="43fc15888e6c15a34af56dfc2d49240a" category="paragraph">资源配置功能是 EF300 和 EF600 存储系统的新增功能。资源配置的卷可以立即投入使用，而无需后台初始化过程。</block>
-  <block id="34e8ca8f8da7ea96f1b8450def8131aa" category="paragraph">对于 EF300 和 EF600 存储系统，可以将卷设置为支持 512 字节或 4KiB 块大小。添加了 512e 功能，以支持 iSCSI 主机接口和 VMware 操作系统。如果可能， System Manager 会建议适当的默认值。</block>
-  <block id="caf318d779d33bdcaf1cb8e5ddefea9d" category="paragraph">通过新的发送 AutoSupport 派遣功能，您无需等待计划的派单，即可向技术支持发送数据。此选项可在支持中心的 AutoSupport 选项卡中找到。</block>
-  <block id="d71804131a489a34d629405530d25a01" category="paragraph">用于连接到外部密钥管理服务器的功能包括以下增强功能：</block>
-  <block id="734830643da23e9370e728f64d10f308" category="paragraph">此版本允许使用 OpenSSL 等外部工具生成证书签名请求（ Certificate Signing Request ， CSR ），同时还要求您导入私钥文件以及签名证书。</block>
-  <block id="428d905bdf1b0c959591111aad19309d" category="paragraph">在创建卷时， System Manager 提供了一种跳过主机分配步骤的方法，以便新创建的卷脱机初始化。此功能仅适用于SAS驱动器上的RAID卷组(即、不适用于动态磁盘池或EF300和EF600存储系统中包含的NVMe SSD)。此功能适用于在使用开始时需要使卷处于完全性能状态的工作负载，而不是在后台运行初始化。</block>
-  <block id="3caef3194845d0349b1fde3b790187bf" category="paragraph">这一新功能可从控制器保存RAID配置数据、其中包括卷组和磁盘池的所有数据(与用于`s存储量阵列dbmDatabase`的CLI命令的信息相同)。此功能已添加到支持中心的 "Diagnostics （诊断） " 选项卡中，以协助技术支持。</block>
-  <block id="5a4dc582c4bbb046fe16599fb3458522" category="paragraph">以前，创建了一个具有足够保留（备用）容量的 12 驱动器磁盘池，以容纳两个驱动器。现在，默认值已更改，可处理单个驱动器故障，从而提供更经济高效的小型池默认值。</block>
   <block id="3570beeead25c3023d709f9c9ee19c83" category="paragraph"><block ref="3570beeead25c3023d709f9c9ee19c83" category="inline-image-macro-rx" type="image"></block></block>
   <block id="594d2774cd1596c3aabeb365f5c0efb5" category="paragraph"><block ref="594d2774cd1596c3aabeb365f5c0efb5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1c59d0d383e44f01e66e32a395b91289" category="paragraph"><block ref="1c59d0d383e44f01e66e32a395b91289" category="inline-image-macro-rx" type="image"></block></block>
@@ -8651,7 +8561,6 @@
   <block id="27a81685959fe491960811c61481c35d" category="paragraph">然后、创建示例文件`/etc/sysconfig/network/ifcfg-eth5`：</block>
   <block id="f1d1c2a7d2a912bc6a5aa04e31b25d26" category="paragraph">使用以下内容创建示例文件`/etc/sysconfig/network-scripts/ifcfg-eth4`。</block>
   <block id="51be39b7e050efbe3d29b5d8c0430aa5" category="paragraph">然后、创建示例文件`/etc/sysconfig/network-scripts/ifcfg-eth5`：</block>
-  <block id="ffbb9e9bc4bfe3481683088489b9c286" category="list-text">在主机上设置 NVMe-oF 层。在 ` /etc/moduls-load.d/` 下创建以下文件，以加载 `NVMe-RDMA` 内核模块，并确保内核模块始终处于打开状态，即使在重新启动后也是如此：</block>
   <block id="ba5d5a8fa23f831ccd6827dc3b611469" category="paragraph">然后、创建文件/etc/sysconfig/network/ifcfg-ib1：</block>
   <block id="ca77b43383ee68c3baec39cef81b151e" category="list-text">使用`ifconfig -a`命令确定iSCSI端口名称。</block>
   <block id="d601c251b180e2832efe894c46092431" category="list-text">在iSCSI启动程序和iSCSI目标之间创建连接。</block>
@@ -8725,13 +8634,6 @@
   <block id="35372cbcff3be2cc25be5129c31c81c6" category="list-text">支持的应用程序主机版本：Windows 2016、Windows 2019、Windows 2022。</block>
   <block id="e3cf47c6cb2c608927e7de97ecbf20d2" category="list-text">支持安全的驱动器可以是全磁盘加密(Full Disk Encryption、FDE)驱动器、也可以是联邦信息处理标准(Federal Information Processing Standard、FIPS)驱动器。FIPS驱动器可以是级别140-2或140-3、而级别140-3则是更高的安全性级别。如果选择140-2和140-3级别的混合驱动器、则池或卷组将以较低的安全级别(140-2)运行。</block>
   <block id="1974aafa112f63127faafcfced06eda0" category="list-text">如果要创建仅FDE池、请在安全功能列中查找*是- FDE*。如果要创建仅FIPS的池、请查找*是- Fips*或*是- FIPS (混合)*。"混合"表示140-2和140-3级驱动器的混合。如果混合使用这些级别、请注意、池将在较低的安全级别(140-2)下运行。</block>
-  <block id="b2d3e7c610f3962f9a7e3b9baa02c363" category="section-title">11.74版中的新增功能</block>
-  <block id="158083b77acf87778347dd8cf3138b12" category="paragraph">支持FIPS 140-3</block>
-  <block id="93752d0e76882be98725c8b860259db3" category="paragraph">现在、对于基于SAS和NVMe的SSD、某些驱动器均支持FIPS 140-3。FIPS 140-3级SSD驱动器可以与FIPS 140-2级SSD驱动器共存、但前提是这些驱动器要么全部基于NVMe、要么全部基于SAS。在卷组和磁盘池中混合使用这些级别时、请注意组或池将在较低的安全级别(140-2)下运行。</block>
-  <block id="3f470942a1817eaa19da47ff83fd59ca" category="paragraph">MFA和SSH支持</block>
-  <block id="272f8c73e52dc0fe2c42cfc42fdbefc9" category="paragraph">对于SANtricity 11.74及更高版本、远程登录功能允许您通过要求用户输入SSH密钥和/或SSH密码来配置多因素授权(Multifactor Authorization、MFA)。硬件部分中的菜单选项已从*更改远程登录*更改为*配置远程登录(SSH)*。</block>
-  <block id="3b5b5feef66adc0768f35b724a334827" category="paragraph">访问令牌</block>
-  <block id="e91c1fbb7ef80926929c6a0e87d2cea2" category="paragraph">此版本包含一项用于创建访问令牌的新功能。通过这些令牌、您可以使用REST API或命令行界面(CLI)进行身份验证、而不会公开用户名和密码。访问管理部分提供了此功能。</block>
   <block id="a2eca216cb41a80426c839353357173b" category="list-text">如果您安装了启用了安全保护的驱动器、并且计划执行完整的控制器更换、请参见下表、根据您的安全类型(内部或外部)和驱动器状态完成相应的步骤。如果您*未*安装已启用安全的驱动器、则可以跳过此步骤并转至表下方的步骤3。</block>
   <block id="58d3a1b91b20c93e431800a59ecffea8" category="inline-link">命令行界面参考</block>
   <block id="7ee6d87fe161d4b56a5ae818d36005c2" category="admonition">表中的某些步骤需要命令行界面(CLI)命令。有关使用这些命令的信息、请参见<block ref="26a74644087a8cc4596955787ae55f1d" category="inline-link-rx"></block>。</block>
@@ -8757,7 +8659,6 @@
   <block id="dfcfc178d6edc54d8706c59b747948d5" category="list-text">安装<block ref="3b13fc847651d5be5c89aeab4722c099" prefix=" " category="inline-code"></block> 使用操作系统的软件包管理命令进行软件包管理。</block>
   <block id="79c617afe97932f20f52d1217736d403" category="list-text">创建名为的systemd服务单元文件<block ref="6bddfc9da80e7ef0195a324214877004" prefix=" " category="inline-code"></block>。</block>
   <block id="d40e479d6bc1cf9824be2cfa7e837140" category="list-text">启用并启动<block ref="6b64648adbe124ad96531f7f0dd977a4" prefix=" " category="inline-code"></block> 服务</block>
-  <block id="d59db7846bd10b6d60d21543df9faa9e" category="list-title">您需要的内容</block>
   <block id="6e45870f8629b562b79da969a290951f" category="section-title">第2步：确定主机端口WWPNs-NVMe/FC VMware</block>
   <block id="2f5a12ce7256b2085ffbd47c6ada5cab" category="section-title">第1步：配置FC交换机—VMware</block>
   <block id="8177490e8cadc7f4b772200e86180fb2" category="section-title">第2步：确定主机端口WWPNs-FC</block>
@@ -8785,7 +8686,6 @@
   <block id="11b02af429676c3e4ef0b14f72c58b44" category="paragraph">适用于vCenter的存储插件需要足够的空间来执行和日志记录。确保您的系统满足以下可用磁盘空间要求：</block>
   <block id="5f5fc15545b1dee5b3f1c2ee92f47de0" category="list-text">所需安装空间—275 MB</block>
   <block id="9bcf5bd8266f8eea99112a520f67ad79" category="list-text">存储空间—275 MB + 200 MB (日志记录)</block>
-  <block id="4cdb1974fd7f08cb281a8396b499d8f7" category="list-text">系统内存—512 MB</block>
   <block id="206c0580c23a54528ad2d285e97454b4" category="paragraph">适用于vCenter的存储插件是一款免费的独立产品、不需要许可证密钥。但是，适用的版权和服务条款仍适用。</block>
   <block id="cdd47ce62ae0283ba81fbbfac98aa0be" category="paragraph">如果要从先前版本升级、请注意、必须在升级之前从vCSA中取消注册此插件。</block>
   <block id="167e9fb1b11b78bdc503cae6390a6818" category="list-text">升级期间、插件先前的大多数配置设置都会保留下来。这些设置包括用户密码，所有已发现的存储系统，服务器证书，可信证书和服务器运行时配置。</block>
@@ -8812,7 +8712,6 @@
   <block id="99017918290ad98fceaa8544139404ea" category="list-text">具有扩展架的NL-SAS驱动器：DE212C和DE460C磁盘架的任何混合物不得超过240个NL-SAS驱动器插槽和4个扩展架、除非仅使用DE212C磁盘架、否则允许使用8个DE212C磁盘架。例如、4个DE460C磁盘架、8个DE212C磁盘架、2个DE460C磁盘架加上2个DE212磁盘架。</block>
   <block id="f7bdca5a10b1a8a32a0410aa51cc3658" category="list-text">带有扩展架的SAS SSD驱动器：任何混合使用DE212C、DE224C和DE460C磁盘架的SAS SSD驱动器插槽总数不得超过96个、扩展架不得超过4个、除非仅使用DE212C磁盘架、否则允许使用8个DE212C磁盘架。例如、1个DE460C磁盘架加上1个DE224C磁盘架加上1个DE212C磁盘架、4个DE224C磁盘架或8个DE212C磁盘架。</block>
   <block id="d4f4328db6f2e4f903874bc046fd613f" category="list-text">具有扩展架的NL-SAS驱动器：任何DE212C和DE460C磁盘架的混合物不得超过总共420个NL-SAS驱动器插槽和7个扩展架、除非仅使用DE212C磁盘架、否则允许使用8个DE212C磁盘架。例如、7个DE460C磁盘架、8个DE212C磁盘架、5个DE460C磁盘架加上2个DE212磁盘架。</block>
-  <block id="538ff1eff5fd361d6f0b2adf6bbf0ed4" category="list-text">带有扩展架的SAS SSD驱动器：任何混合使用DE212C、DE224C和DE460C磁盘架的SAS SSD驱动器插槽和扩展架总数不得超过96个、除非仅使用DE212C磁盘架、否则允许使用8个DE212C磁盘架。例如、1个DE460C磁盘架加上1个DE224C磁盘架加上1个DE212C磁盘架、4个DE224C磁盘架或8个DE212C磁盘架。</block>
   <block id="731e4c243221cff11b35e735d54a097c" category="section-title">两柱机架—2U</block>
   <block id="08e15a26eb1bed02ff476c90993bb81d" category="section-title">四柱机架或机柜—2U</block>
   <block id="f7e582702fa43947010600df41688562" category="section-title">四柱机架—SuperRail</block>
@@ -8867,6 +8766,74 @@
   <block id="4d34b8dd475537b31eded726b5f109a4" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> 配置主机</block>
   <block id="e6fbc0b9673f8c86726688d7607fc8f5" category="inline-image-macro">六个</block>
   <block id="8cb633130263590fcb215001ddbab715" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block> 配置存储</block>
-  <block id="17fbe20fbbd5b537dbcef5b0ec0d1dea" category="section-title">11.75版中的新增功能</block>
-  <block id="fc663b28a8d6054c2d97e0b897d7291f" category="paragraph">要升级到11.80.x或更高版本、系统必须运行11.70.5。</block>
+  <block id="ddd0020a0684c14dbd50622f84d8917a" category="paragraph">确保您已具备以下条件：</block>
+  <block id="7647966b7343c29048673252e490f736" category="paragraph">81.</block>
+  <block id="8613985ec49eb8f757ae6439e879bb2a" category="paragraph">90</block>
+  <block id="f033ab37c30201f73f142449d037028d" category="paragraph">80</block>
+  <block id="aab3238922bcc25a6f606eb525ffdc56" category="paragraph">14.</block>
+  <block id="48302d2fba01b598c24ef8cb5486c530" category="list-text">在主机上设置 NVMe-oF 层。在/etc/mods-load.d/下创建以下文件以加载<block ref="84210bdbe25e211d594fd7255d9817df" prefix=" " category="inline-code"></block> 内核模块并确保内核模块始终处于打开状态、即使在重新启动后也是如此：</block>
+  <block id="bb648e7fc0d366deef63d637e0a76377" category="paragraph">以验证<block ref="84210bdbe25e211d594fd7255d9817df" prefix=" " category="inline-code"></block> 内核模块已加载、请运行以下命令：</block>
+  <block id="070e96bf6a4ddc9c8e8882425927de45" category="list-text">使用<block ref="f3d48156832e70ac41335c007fa76798" prefix=" " category="inline-code"></block> 命令以查看当前已连接的NVMe设备列表。</block>
+  <block id="3421354e6a9adde19a7c53b4efb8cb05" category="list-text">在主机上设置 NVMe-oF 层。在下创建以下文件<block ref="5b084c473f7842460c228cc4f4e08f98" prefix=" " category="inline-code"></block> 以加载<block ref="84210bdbe25e211d594fd7255d9817df" prefix=" " category="inline-code"></block> 内核模块并确保内核模块始终处于打开状态、即使在重新启动后也是如此：</block>
+  <block id="9fe35a3f27c999e8d5bccf07e605e703" category="paragraph">确保您已具备以下条件：
+*在与存储管理端口相同的子网上安装和配置的DHCP服务器。</block>
+  <block id="1bdb35aa1d3b8abd63ef262600e1c9d9" category="list-text">系统内存—1.5 GB</block>
+  <block id="45c4e24bcbb96005a9f6413a6d3e8d61" category="paragraph">要在vSphere Client中创建数据存储库、请参见<block ref="1935085257ca6f59c3fa99634c576530" category="inline-link-rx"></block> 主题。</block>
+  <block id="e1b44e87bdbcd1ae906703fecba966cf" category="list-text">卷容量完成后、您必须手动增加VMFS大小、以便与中所述的匹配<block ref="736c08ebbc8283f30abdffe8a802b25a" category="inline-link-rx"></block> 主题。</block>
+  <block id="3e51eb8a98e37cd2bee48affec6b3f02" category="list-text">接下来，将卷分配给所需主机以增加数据存储库的容量。</block>
+  <block id="d295d58115f15821d21734fad82dce5c" category="paragraph">请参见<block ref="05fc437e4ce8c739576db569ed487331" category="inline-link-rx"></block> 主题、了解更多信息。</block>
+  <block id="8def14e5183fbb5677794536682b7d45" category="admonition">"submodel"也可以写为"sub-model"。</block>
+  <block id="b4c31a3654f7f34af7d451e582bf910c" category="paragraph">*(1)*_Cable chain_</block>
+  <block id="4591a73cfd3cb0cf1a08402845480b71" category="list-text">运行smclient命令、<block ref="66131a22d885314a8385d34d18407d77" prefix=" " category="inline-code"></block>。</block>
+  <block id="ed6ef0e289dde2b4b0d96e83a84886ed" category="list-text">等待两个控制器重新启动。</block>
+  <block id="7b7a6e706bdcec884d822bcb95a94ff6" category="list-text">在注册硬件<block ref="1a36b59ecae7684863b79a0f690b6840" category="inline-link-rx"></block>。</block>
+  <block id="9e03f2920bb645354640e8c3351f138b" category="list-text">在中创建帐户并注册硬件<block ref="1a36b59ecae7684863b79a0f690b6840" category="inline-link-rx"></block>。</block>
+  <block id="1592b862f4a1becd28d412c41f36cb11" category="list-text">Google Chrome (89及更高版本)</block>
+  <block id="c7d212f9925e21aba22cc40abf3a28b1" category="list-text">Microsoft Edge (90及更高版本)</block>
+  <block id="c6d379ca14207b822732863fc2d321b4" category="list-text">Mozilla Firefox (80及更高版本)</block>
+  <block id="0e2cf8121bf46167d098bd693e028a06" category="list-text">Safari (版本14及更高版本)</block>
+  <block id="ece376b7acc25f86ff2e09f80d38755c" category="paragraph">请确保执行以下操作：</block>
+  <block id="9be4f8ee760eeaa38f44e28753bb0c03" category="paragraph">下表介绍了SANtricity OS 11.8中用于嵌入式管理EF300、EF600、E2800/EF280和E5700/EF570控制器的新增功能。</block>
+  <block id="b88fbe45e9e75bdd6c5127ce8a22abe1" category="section-title">11.80版中的新增功能</block>
+  <block id="8f407366493ebfbb4a6dec746e7c89f5" category="paragraph">增强型卷奇偶校验扫描</block>
+  <block id="07c3c6708618172f589685373ed71a5d" category="paragraph">现在、可以通过REST API或CLI在后台启动卷奇偶校验扫描。只要完成扫描操作需要、生成的奇偶校验扫描就会在后台运行。扫描操作将在控制器重新启动和故障转移操作后继续运行。</block>
+  <block id="b9a173a4a6a7b368e4cd4fde15879372" category="paragraph">Unified Manager的SAML支持</block>
+  <block id="dc505118a542aefe283668ff60bf1633" category="paragraph">Unified Manager现在支持SAML (安全断言标记语言)。为Unified Manager启用SAML后、用户必须对身份提供程序使用多因素身份验证、才能与用户界面进行交互。请注意、在Unified Manager上启用SAML后、如果不通过Idp对请求进行身份验证、则无法使用REST API。</block>
+  <block id="43a12a9165de329d02388e8e878f20ca" category="paragraph">自动配置功能</block>
+  <block id="ef6a29a31f9fb810c02278975cd6cd39" category="paragraph">现在支持设置卷块大小参数、以便在初始阵列设置时与自动配置功能结合使用。此功能在CLI中仅作为"blocksize"参数提供。</block>
+  <block id="017965dda869643c4d632c18853208a2" category="paragraph">控制器固件加密签名</block>
+  <block id="f9b1cc083f0890b8fff17a83a0360f47" category="paragraph">控制器固件已进行加密签名。签名会在初始下载期间和每次控制器启动时进行检查。预期不会对最终用户造成影响。签名由CA颁发的扩展验证证书提供支持。</block>
+  <block id="637780f8b22fe474ce198ef516dd7d6f" category="paragraph">驱动器固件加密签名</block>
+  <block id="a8c2ab0b22d074faf460a15d6648a3e7" category="paragraph">驱动器固件已进行加密签名。签名会在初始下载期间进行检查、并由CA颁发的扩展验证证书提供支持。驱动器固件内容现在以ZIP文件的形式提供、其中包含旧的未签名固件以及新的已签名固件。用户必须根据目标系统上运行的代码版本选择适当的文件。</block>
+  <block id="3c65e3636111523111e45a49a80face3" category="paragraph">外部密钥服务器管理-证书密钥大小</block>
+  <block id="406774a2d5f641d5566318ef7eb88033" category="paragraph">新的默认证书密钥大小为3072位(2048位)。支持高达4096位的密钥大小。要支持非默认密钥大小、必须更改NVSRAM位。</block>
+  <block id="710e42f1cedbf3e670aace3815d6e451" category="paragraph">支持使用块大小为512b的驱动器更大的动态磁盘池大小</block>
+  <block id="7a4f6b11e091466663e9c7d3c9480717" category="paragraph">使用版本1池版本类型的客户现在可以拥有48 TB的最大磁盘池大小。旧版最多支持24 TB磁盘池大小。如果要将现有磁盘池转换为较大的大小、则必须先删除所有卷。如果存在版本1磁盘池、则降级操作会受到限制。</block>
+  <block id="9a1c6a24950fba4eade84dc9952a77dd" category="paragraph">除非满足最低浏览器要求、否则System Manager和Unified Manager将无法启动</block>
+  <block id="09a616fc9241625ec6003f2da3c0cff9" category="paragraph">要启动System Manager或Unified Manager、必须安装最低版本的浏览器。以下是支持的最低版本：</block>
+  <block id="6cdb1f943282038a6441359c5c88f812" category="list-text">Firefox最低版本80</block>
+  <block id="773389fc57f11b52dbe4c622adc51a3b" category="list-text">Chrome最低版本89</block>
+  <block id="2ac44b1b15c0ea01cbb812f5c6cf9b1e" category="list-text">Edge最小版本90</block>
+  <block id="3534d42485ecd595e87248bbb2c6fb1b" category="list-text">Safari最低版本14</block>
+  <block id="bb4e0c918ecc32e775e010bc9f6eff59" category="paragraph">支持FIPS 140-2 NVMe SSD驱动器</block>
+  <block id="eca8285b82a553e8fbe1803bfdeced3e" category="paragraph">现在支持经NetApp认证的FIPS 140-2 NVMe SSD驱动器。它们将在存储阵列配置文件和System Manager中正确标识。</block>
+  <block id="fb8aaa0a635cb460bcf41d9303fca571" category="paragraph">支持EF300和EF600上的SSD读取缓存</block>
+  <block id="14d2cdc88c041d0313b6c691ee27338f" category="paragraph">现在、使用HDD和SAS扩展的EF300和EF600控制器支持SSD读取缓存。</block>
+  <block id="8a00db0b101a6946d9caffef7979d8c4" category="paragraph">支持EF300和EF600上的iSCSI和光纤通道异步远程镜像</block>
+  <block id="8ea61c04007ddc1b703be50a63a1b3ee" category="paragraph">现在、使用基于NVMe和SAS的卷的EF300和EF600控制器支持异步远程镜像(ARVM)。</block>
+  <block id="d99731ca7d5c671cea9d584100385335" category="paragraph">支持基本托架上没有驱动器的EF300和EF600</block>
+  <block id="65c8d39e2e73985a77ff0c8a61c30608" category="paragraph">现在支持在基座托盘上不使用NVMe驱动器的EF300和EF600控制器配置。</block>
+  <block id="248bd33e5007bccdca76e9d0459df99c" category="paragraph">已为所有平台禁用USB端口</block>
+  <block id="3ea3899fea5b85d0cc4b9b3bf6291d51" category="paragraph">现在、所有平台均已禁用USB端口。</block>
+  <block id="9a64b980fbe41aeaf8ecb2f99c2385a9" category="paragraph">NVMe/FC、NVMe/RoCE或iSCSI</block>
+  <block id="64f514f53e9a2ebedc121c63efdf12c0" category="paragraph">NVMe/FC或NVMe/IB</block>
+  <block id="41bdfc03cf6a112f92ffe96cc4938a68" category="paragraph">NVMe/IB或NVMe/FC</block>
+  <block id="6d7b18f9c306b8578ca261d6f6b6adee" category="paragraph">开始升级之前，请务必查看  <block ref="dc69c58b5cd4f4fb6b0ef459d59315bd" category="inline-link-macro-rx"></block>。</block>
+  <block id="a5ff5d8396bab4e857d616fc9fa06b26" category="list-title">您需要什么</block>
+  <block id="75014b540a900a20abf83a06a6f23acc" category="paragraph">请确保执行以下操作：</block>
+  <block id="d51a879a95a1f1b04438a7e672254378" category="list-text">Microsoft Edge (90及更高版本)</block>
+  <block id="055c49f32e97721509c3ba8e800b7d0e" category="admonition">E2800、EF280、E5700、EF570、EF600、 和EF300阵列。</block>
+  <block id="9fed5991090e027f2348c873d605f4d6" category="admonition">EF300支持基本托盘中没有驱动器的扩展架配置使用此配置时、请确保驱动器已填充到扩展架中、并正确连接到基座托盘、然后再打开系统电源。</block>
+  <block id="dae6baa86f1f6e4135f2552862c8b191" category="list-text">带有扩展架的SAS SSD驱动器：任何混合使用DE212C、DE224C和DE460C磁盘架的SAS SSD驱动器插槽和扩展架总数不得超过96个、除非仅使用DE212C磁盘架、否则允许使用8个DE212C磁盘架。例如、1个DE460C磁盘架加1个DE224C磁盘架加1个DE212C磁盘架、4个DE224C磁盘架或8个DE212C磁盘架</block>
+  <block id="e1602ccaec81c1829eb2a83bd391bfb8" category="admonition">EF600支持基本托盘中没有驱动器的扩展架配置使用此配置时、请确保驱动器已填充到扩展架中、并正确连接到基座托盘、然后再打开系统电源。</block>
 </blocks>

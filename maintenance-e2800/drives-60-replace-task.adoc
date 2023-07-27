@@ -20,12 +20,13 @@ SANtricity System Manager 中的恢复 Guru 可监控存储阵列中的驱动器
 
 .开始之前
 * 查看中的驱动器处理要求 link:drives-overview-supertask-concept.html["更换 E2800 驱动器的要求"]。
+* 确保您已具备以下条件：
++
+** NetApp 为您的控制器架或驱动器架支持的替代驱动器。
+** ESD 腕带，或者您已采取其他防静电预防措施。
+** 一个管理工作站，其浏览器可访问控制器的 SANtricity 系统管理器。（要打开 System Manager 界面，请将浏览器指向控制器的域名或 IP 地址。）
 
 
-.您需要的内容
-* NetApp 为您的控制器架或驱动器架支持的替代驱动器。
-* ESD 腕带，或者您已采取其他防静电预防措施。
-* 一个管理工作站，其浏览器可访问控制器的 SANtricity 系统管理器。（要打开 System Manager 界面，请将浏览器指向控制器的域名或 IP 地址。）
 
 
 

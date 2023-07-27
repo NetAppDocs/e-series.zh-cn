@@ -14,7 +14,9 @@ summary: 在阵列端配置 iSCSI 网络。
 [role="lead"]
 您可以使用 SANtricity 系统管理器图形用户界面在阵列端配置 iSCSI 网络。
 
-.您需要的内容
+.开始之前
+确保您已具备以下条件：
+
 * 一个存储阵列控制器的 IP 地址或域名。
 * System Manager GUI ，基于角色的访问控制（ Role-Based Access Control ， RBAC ）或 LDAP 以及为对存储阵列进行适当安全访问而配置的目录服务的密码。有关访问管理的详细信息，请参见 SANtricity System Manager 联机帮助。
 

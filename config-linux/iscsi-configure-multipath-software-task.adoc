@@ -13,7 +13,7 @@ summary: 配置多路径软件，以便在其中一个物理路径中断时为�
 [role="lead"]
 要为存储阵列提供冗余路径，您可以配置多路径软件。
 
-.您需要的内容
+.开始之前
 您必须在系统上安装所需的软件包。
 
 * 对于 Red Hat （ RHEL ）主机，运行 `rpm -q device-mapper-multipath` 验证软件包是否已安装。
@@ -59,8 +59,7 @@ systemctl enable multipathd
 dracut --force --add multipath
 ----
 . 使用 https://docs.netapp.com/us-en/e-series-santricity/sm-storage/create-host-manually.html["手动创建主机"] 在联机帮助中使用操作步骤 检查是否已定义主机。验证每个主机类型设置是否基于中收集的内核信息 <<step4,第4步>>。
-
-
++
 
 NOTE: 对于映射到运行内核3.9或更早版本的主机的任何卷、将禁用自动负载平衡。
 

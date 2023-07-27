@@ -21,6 +21,7 @@ AutoSupport （ ASUP ）功能会根据手动和基于计划的标准自动向 N
 
 每个 AutoSupport 消息都是一组日志文件，配置数据，状态数据和性能指标。默认情况下， AutoSupport 每周向 NetApp 支持团队传输一次下表中列出的文件。
 
+[cols="35h,~"]
 |===
 | 文件名 | Description 
 
@@ -129,6 +130,7 @@ NOTE: 时间戳条目是多余的。
 . 访问工作目录中的 ASUPConfig.xml 文件。
 . 在字符串 ` <delivery type="n">` 中，按表中所述输入 1 ， 2 或 3 ：
 +
+[cols="25h,~"]
 |===
 | 价值 | Description 
 

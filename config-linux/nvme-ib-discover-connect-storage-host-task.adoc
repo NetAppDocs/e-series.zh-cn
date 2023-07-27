@@ -30,7 +30,7 @@ NOTE: `nvme discover` 命令可发现子系统中的所有控制器端口，而�
 +
 [listing]
 ----
-# nvme discover -t rdma -a 10.10.10.100
+# nvme discover -t rdma -a 10.10.10.200
  Discovery Log Number of Records 2, Generation counter 0
  =====Discovery Log Entry 0======
  trtype:  rdma
@@ -40,7 +40,7 @@ NOTE: `nvme discover` 命令可发现子系统中的所有控制器端口，而�
  portid:  0
  trsvcid: 4420
  subnqn:  nqn.1992-08.com.netapp:5700.600a098000af41580000000058ed54be
- traddr: 10.10.10.100
+ traddr: 10.10.10.200
  rdma_prtype: infiniband
  rdma_qptype: connected
  rdma_cms:    rdma-cm
@@ -88,25 +88,9 @@ NOTE: 建议的控制器丢失超时期限（以秒为单位）为 60 分钟（ 
 +
 [listing]
 ----
-# nvme connect -t rdma -a 10.10.10.100 -n nqn.1992-08.com.netapp:5700.600a098000af41580000000058ed54be -Q 1024 -l 3600
+# nvme connect -t rdma -a 10.10.10.200 -n nqn.1992-08.com.netapp:5700.600a098000af41580000000058ed54be -Q 1024 -l 3600
 ----
-. 使用 `nvme list` 命令查看当前连接的 NVMe 设备列表。在以下示例中，它为 `nvme0n1` 。
-+
-[listing]
-----
- # nvme list
-
- Node          SN            Model             Namespace
- -------------------------------------------------------
- /dev/nvme0n1  021648023161  NetApp E-Series      1
-----
-+
-[listing]
-----
-Usage                 Format           FW Rev
---------------------------------------------------------------
-5.37 GB /5.37 GB      512 B + 0 B      0842XXXX
-----
+. 使用 `nvme list-subsys` 命令以查看当前已连接的NVMe设备列表。
 . 连接到第二条路径上发现的子系统：
 +
 [listing]

@@ -20,4 +20,4 @@ summary: 升级 SANtricity ® 操作系统概述
 * drive —提供有关升级驱动器固件的说明。
 
 
-开始升级之前，请务必查看 link:overview-upgrade-consider-task.html["升级注意事项"]。
+开始升级之前，请务必查看  link:overview-upgrade-consider-task.html["升级注意事项"^]。

@@ -14,7 +14,9 @@ summary: '如果您的控制器包括通过 RoCE 连接 NVMe （基于融合以�
 [role="lead"]
 如果您的控制器包括通过 RoCE 连接 NVMe （基于融合以太网的 RDMA ），则可以从 SANtricity 系统管理器的硬件页面或系统页面配置 NVMe 端口设置。
 
-.您需要的内容
+.开始之前
+确保您已具备以下条件：
+
 * 控制器上的基于 RoCE 的 NVMe 主机端口；否则， System Manager 中不提供基于 RoCE 的 NVMe 设置。
 * 主机连接的 IP 地址。
 

@@ -27,6 +27,7 @@ summary: 出于安全考虑，您可以管理用户对 Web 服务 API 和 Unifie
 
 下表介绍了每个角色。
 
+[cols="35h,~"]
 |===
 | Role | Description 
 
@@ -62,6 +63,7 @@ support.admin
 
 下表列出了可用于 Web 服务代理的用户登录。
 
+[cols="35h,~"]
 |===
 | 预定义的用户登录 | Description 
 

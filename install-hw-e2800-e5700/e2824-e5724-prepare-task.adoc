@@ -14,7 +14,7 @@ summary: 安装 E5724 ， EF570 ， EF280 ， E2812 ， E2824 DE212C 或 DE224C 
 了解如何准备安装 E5724 ， EF570 ， EF280 ， E2812 ， E2824 ， DE212C 或 DE224C 系列存储系统。
 
 .步骤
-. 在中创建帐户并注册硬件 http://mysupport.netapp.com/["mysupport.netapp.com"^]。
+. 在中创建帐户并注册硬件 http://mysupport.netapp.com/["NetApp 支持"^]。
 . 确保收到的包装盒中包含以下物品。
 +
 |===
@@ -130,11 +130,10 @@ image:../media/management_station_inst-hw-e2800-e5700_g60b3.png[""]
  a| 
 管理软件支持的浏览器：
 
-** Google Chrome （ 78 及更高版本）
-** Microsoft Internet Explorer （ 11 及更高版本）
-** Microsoft Edge （ 88 及更高版本）
-** Mozilla Firefox （版本 70 及更高版本）
-** Safari （版本 12 及更高版本）
+** Google Chrome (89及更高版本)
+** Microsoft Edge (90及更高版本)
+** Mozilla Firefox (80及更高版本)
+** Safari (版本14及更高版本)
 
 
 |===

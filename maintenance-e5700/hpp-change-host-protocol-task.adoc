@@ -112,6 +112,10 @@ image::../media/sam1130_ss_e2800_storage_array_profile_sn_smid_copy_maint-e5700.
 .. 选择 * 支持中心 * 图块。
 .. 在支持资源选项卡上，找到并选择 * 存储阵列配置文件 * 链接。
 .. 在文本框中键入 * 功能包子型号 ID* ，然后单击 * 查找 * 。
++
+
+NOTE: "submodel"也可以写为"sub-model"。
+
 .. 找到起始配置的功能包子型号 ID 。
 +
 image::../media/storage_array_profile2_maint-e5700.gif[存储阵列 profile2 维护 e5700]

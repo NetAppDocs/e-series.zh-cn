@@ -15,8 +15,11 @@ summary: InfiniBand OFED 驱动程序堆栈支持在相同端口上同时运行 
 
 InfiniBand OFED 驱动程序堆栈支持在相同端口上同时运行 iSER 和 SRP ，因此不需要额外的硬件。
 
-.您需要的内容
-系统上安装了 NetApp 建议的 OFED 。有关详细信息，请参见 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]。
+.开始之前
+确保您已具备以下条件：
+
+* 系统上安装了 NetApp 建议的 OFED 。有关详细信息，请参见 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]。
+
 
 .步骤
 . 在主机上启用并启动 iSCSI 服务：
