@@ -6137,7 +6137,6 @@
   <block id="141fde4ba7cde941e1590d0f5d6d1580" category="list-text"><block ref="141fde4ba7cde941e1590d0f5d6d1580" category="inline-link-rx"></block></block>
   <block id="85e9bf543d76b21d1d000a334e3359db" category="paragraph">安装和设置说明（步骤 1 ）包括有关连接缆线的说明。但是，如果您需要列出支持的缆线和收发器，布线最佳实践以及有关控制器主机端口的详细信息，请访问以下说明：</block>
   <block id="e716b652b3e3b8c2ecc764925c3d152b" category="inline-link-macro">为 E 系列硬件布线</block>
-  <block id="61ebb23dfb23d5322222d22abfb363a7" category="list-text"><block ref="61ebb23dfb23d5322222d22abfb363a7" category="inline-link-macro-rx"></block></block>
   <block id="23f5c5a2cb4745a537bec1d583b5d6cc" category="paragraph">要使存储可供主机使用，请为主机的操作系统类型选择一个指南：</block>
   <block id="9bc4dbdc4b0ba32e879477f6d380d1f2" category="paragraph">要配置存储，您可以通过将浏览器指向控制器的 IP 地址来访问基于 Web 的界面 System Manager 。设置向导可帮助您开始进行系统配置。此外，您还可以使用命令行界面（ CLI ）。</block>
   <block id="dc319fa18c0e449181d9af17b46cb41d" category="paragraph">选择要使用的接口：</block>
@@ -8549,10 +8548,6 @@
   <block id="239a8d1ddfc1ceae19ee25fea039a278" category="sidebar">E2800产品规格</block>
   <block id="eecdfe99dab1ba77ed2b7b1d9b86256b" category="sidebar">SANtricity 软件</block>
   <block id="b9d208fcce9c26f3aacf7b49c9cdbaef" category="paragraph">如果出于性能原因在 IP SAN 中使用巨型帧，请确保将阵列，交换机和主机配置为使用巨型帧。有关如何在主机和交换机上启用巨型帧的信息，请参见操作系统和交换机文档。要在阵列上启用巨型帧，请完成中的步骤 <block ref="16d4528e3823d381a97af6e1811e489a" category="inline-link-macro-rx"></block>。</block>
-  <block id="82c87a954533f4f73c4568a90d45d795" category="inline-link">适用于11.7x的SANtricity System Manager帮助</block>
-  <block id="b6adf77a8fd2cb1ee566051ed64b7bbb" category="list-text"><block ref="b6adf77a8fd2cb1ee566051ed64b7bbb" category="inline-link-rx"></block></block>
-  <block id="73ea8f8143966cdb241af48e230354bb" category="inline-link">适用于11.6x的SANtricity System Manager帮助</block>
-  <block id="00f0cc59eb519b0e3ccef23f32fc3242" category="list-text"><block ref="00f0cc59eb519b0e3ccef23f32fc3242" category="inline-link-rx"></block></block>
   <block id="3bf3cbc109a52d0d37f5d3c9ecf3e14a" category="list-text">配置InfiniBand卡网络接口：</block>
   <block id="0360bd7f0d62ff5323000d0f25742cf3" category="list-text">为标识的InfiniBand接口配置IP地址和网络信息。</block>
   <block id="4df6b1c48c33c3735ab315bb52db5933" category="section-title">为RHEL 8设置原生 NVMe多路径</block>
@@ -8836,4 +8831,19 @@
   <block id="9fed5991090e027f2348c873d605f4d6" category="admonition">EF300支持基本托盘中没有驱动器的扩展架配置使用此配置时、请确保驱动器已填充到扩展架中、并正确连接到基座托盘、然后再打开系统电源。</block>
   <block id="dae6baa86f1f6e4135f2552862c8b191" category="list-text">带有扩展架的SAS SSD驱动器：任何混合使用DE212C、DE224C和DE460C磁盘架的SAS SSD驱动器插槽和扩展架总数不得超过96个、除非仅使用DE212C磁盘架、否则允许使用8个DE212C磁盘架。例如、1个DE460C磁盘架加1个DE224C磁盘架加1个DE212C磁盘架、4个DE224C磁盘架或8个DE212C磁盘架</block>
   <block id="e1602ccaec81c1829eb2a83bd391bfb8" category="admonition">EF600支持基本托盘中没有驱动器的扩展架配置使用此配置时、请确保驱动器已填充到扩展架中、并正确连接到基座托盘、然后再打开系统电源。</block>
+  <block id="70a5ac954926edc08c5f6fc4c248a4a6" category="section-title">SANtricity 11.7版</block>
+  <block id="f7b52729af7c7aa177e09390f0afd194" category="list-text"><block ref="f7b52729af7c7aa177e09390f0afd194" category="inline-link-rx"></block></block>
+  <block id="797222f106ff986b71e9f972dd342bc3" category="list-text"><block ref="797222f106ff986b71e9f972dd342bc3" category="inline-link-rx"></block></block>
+  <block id="3effdbd16c4bb389ee66095c1d8d2ee9" category="inline-link">11.80发行说明</block>
+  <block id="b1aa5c2649b826498df008931f57355f" category="list-text"><block ref="b1aa5c2649b826498df008931f57355f" category="inline-link-rx"></block></block>
+  <block id="c190aac6a3d3fb7d9f71ca0ce7ca264f" category="list-text"><block ref="c190aac6a3d3fb7d9f71ca0ce7ca264f" category="inline-link-macro-rx"></block></block>
+  <block id="f923e6588ebbb58f38eadd7304100a8f" category="list-text"><block ref="f923e6588ebbb58f38eadd7304100a8f" category="inline-link-macro-rx"></block></block>
+  <block id="2000cb1e7de82e823717ad308e491d64" category="list-text"><block ref="2000cb1e7de82e823717ad308e491d64" category="inline-link-macro-rx"></block></block>
+  <block id="872316f2e40e5f7164acd94c4ac49c16" category="list-text"><block ref="872316f2e40e5f7164acd94c4ac49c16" category="inline-link-macro-rx"></block></block>
+  <block id="7cac9f30e199e7ecb1c7454e8193ea25" category="inline-link">11.8x的SANtricity System Manager联机帮助</block>
+  <block id="f96ffc1296cfb22e1010ea2a5c153c7d" category="list-text"><block ref="f96ffc1296cfb22e1010ea2a5c153c7d" category="inline-link-rx"></block></block>
+  <block id="e310bf04394efde500bf9f4c81acb37c" category="inline-link">适用于 11.7x 的 SANtricity System Manager 联机帮助</block>
+  <block id="57ceabd1bd2acd18e97acd2a27a09688" category="list-text"><block ref="57ceabd1bd2acd18e97acd2a27a09688" category="inline-link-rx"></block></block>
+  <block id="cf7b3313bd605518202463f0e3fe1b45" category="inline-link">适用于11.6x的SANtricity System Manager联机帮助</block>
+  <block id="8200e232e26f3c94f328c9f6cf840844" category="list-text"><block ref="8200e232e26f3c94f328c9f6cf840844" category="inline-link-rx"></block></block>
 </blocks>
