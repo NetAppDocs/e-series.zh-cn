@@ -5981,7 +5981,6 @@
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">法律声明提供对版权声明、商标、专利等的访问。</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律声明</block>
   <block id="cc1ba14f8dc9bd7ba20e2aa654cde10b" category="inline-link">E 系列 /EF 系列 SANtricity 操作系统注意事项</block>
-  <block id="2dae7f81af3097152530b0bc519d7eb1" category="paragraph"><block ref="2dae7f81af3097152530b0bc519d7eb1" category="inline-link-rx"></block></block>
   <block id="f54101aa6702c025c4f74ec5ada7bae3" category="summary">管理存储</block>
   <block id="14ad3096f7edeb7d23e22e3ab3539e0f" category="paragraph">使用以下链接访问介绍如何配置，管理和监控存储对象和 E 系列存储系统的文档。通过这些链接，您可以访问其他文档站点。</block>
   <block id="55b9698df8d5ce238fd672cacb45db33" category="section-title">System Manager 11.7 的联机帮助</block>
@@ -6770,8 +6769,6 @@
   <block id="f0ae8428fd74264a94f600a1c4368142" category="sidebar">修改设置</block>
   <block id="366e14c874cb1b9ff284a94d9531b73a" category="sidebar">卸载 Cloud Connector</block>
   <block id="06ad314b340900d226b1196e1fe289e9" category="sidebar">快速入门</block>
-  <block id="e35d3866f0babedb61a0f1ba9102cafd" category="sidebar">SANtricity System Manager 11.7</block>
-  <block id="0ce99b430e0880d9c5b01d46d038d4dd" category="sidebar">SANtricity 统一管理器 5.</block>
   <block id="06e7eb701ce804d46bd8c25ab5b395f0" category="sidebar">命令行界面（ CLI ）参考</block>
   <block id="8a47162648ffc3ff0cf630036d36f2d6" category="sidebar">SANtricity API</block>
   <block id="92850b78bdc20bc1df259e9c026d1744" category="sidebar">Web 服务</block>
@@ -8846,4 +8843,7 @@
   <block id="57ceabd1bd2acd18e97acd2a27a09688" category="list-text"><block ref="57ceabd1bd2acd18e97acd2a27a09688" category="inline-link-rx"></block></block>
   <block id="cf7b3313bd605518202463f0e3fe1b45" category="inline-link">适用于11.6x的SANtricity System Manager联机帮助</block>
   <block id="8200e232e26f3c94f328c9f6cf840844" category="list-text"><block ref="8200e232e26f3c94f328c9f6cf840844" category="inline-link-rx"></block></block>
+  <block id="df9168fd1981b1464f7c0d38b2207c30" category="paragraph"><block ref="df9168fd1981b1464f7c0d38b2207c30" category="inline-link-rx"></block></block>
+  <block id="050910c569f1cb9044086ceee795e2f8" category="sidebar">SANtricity系统管理器11.8.</block>
+  <block id="1cf9153cf0b1bfe4b703e41b4509763e" category="sidebar">SANtricity统一管理器6.</block>
 </blocks>

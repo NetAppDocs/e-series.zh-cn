@@ -1029,9 +1029,9 @@ homepage:
       url: https://www.netapp.com/pdf.html?item=/media/7573-ds-3805.pdf
   - title: SANtricity 软件
     links:
-    - title: SANtricity System Manager 11.7
+    - title: SANtricity系统管理器11.8.
       url: https://docs.netapp.com/us-en/e-series-santricity/system-manager/index.html
-    - title: SANtricity 统一管理器 5.
+    - title: SANtricity统一管理器6.
       url: https://docs.netapp.com/us-en/e-series-santricity/unified-manager/index.html
     - title: 命令行界面（ CLI ）参考
       url: https://docs.netapp.com/us-en/e-series-cli/index.html

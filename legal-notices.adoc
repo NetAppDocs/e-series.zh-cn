@@ -50,4 +50,4 @@ https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
 
 通知文件提供有关 NetApp 软件中使用的第三方版权和许可证的信息。
 
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874738["E 系列 /EF 系列 SANtricity 操作系统注意事项"]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2885978["E 系列 /EF 系列 SANtricity 操作系统注意事项"]
