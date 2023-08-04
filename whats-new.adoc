@@ -63,12 +63,31 @@ Unified Manager现在支持SAML (安全断言标记语言)。为Unified Manager�
  a| 
 新的默认证书密钥大小为3072位(2048位)。支持高达4096位的密钥大小。要支持非默认密钥大小、必须更改NVSRAM位。
 
+密钥大小选择值如下：
+
+* 默认值为0
+* 长度2048 = 1
+* 长度3072 = 2
+* 长度4096 = 3
+
+
+要通过SMCli,将密钥大小更改为4096：
+
+`set controller[b] globalnvsrambyte[0xc0]=3;`
+`set controller[a] globalnvsrambyte[0xc0]=3;`
+
+查询密钥大小：
+
+`show allcontrollers globalnvsrambyte[0xc0];`
+
 
 
  a| 
-支持使用块大小为512b的驱动器更大的动态磁盘池大小
+改进了磁盘池
  a| 
-使用版本1池版本类型的客户现在可以拥有48 TB的最大磁盘池大小。旧版最多支持24 TB磁盘池大小。如果要将现有磁盘池转换为较大的大小、则必须先删除所有卷。如果存在版本1磁盘池、则降级操作会受到限制。
+使用运行11.80或更高版本的控制器创建的磁盘池将为_Version 1_ Pool、而不是_Version 0_ Pool。如果存在_Version 1_磁盘池、则降级操作会受到限制。
+
+可以在存储阵列配置文件中确定磁盘池的版本。
 
 
 

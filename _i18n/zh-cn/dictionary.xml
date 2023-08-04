@@ -6890,15 +6890,11 @@
   <block id="f2c505979298b93cfd8e71dc78ddd1b0" category="admonition">请勿混合使用不同电压类型的 PSU 。请始终像这样替换。</block>
   <block id="b7b26f8fd8107cf68f2bc572008d19a7" category="admonition">替代控制器预安装了 16 GB 内存。如果您的控制器需要 64 GB 配置，请在安装替代控制器之前使用随附的升级套件。</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">版权</block>
-  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
   <block id="126a02652da6de02962cf1b654fd6376" category="section-title">商标</block>
   <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp 、 NetApp 徽标和 NetApp 商标页面上列出的标记是 NetApp 、 Inc. 的商标。其他公司和产品名称可能是其各自所有者的商标。</block>
-  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
   <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">专利</block>
   <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">有关 NetApp 拥有的专利的最新列表，请访问：</block>
-  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">隐私政策</block>
-  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">开放源代码</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知文件提供有关 NetApp 软件中使用的第三方版权和许可证的信息。</block>
   <block id="a8280a793d4f574a1e8ec9fdeff29427" category="list-text">按照套件随附的 RMA 说明将故障部件退回 NetApp 。</block>
@@ -8799,8 +8795,6 @@
   <block id="a8c2ab0b22d074faf460a15d6648a3e7" category="paragraph">驱动器固件已进行加密签名。签名会在初始下载期间进行检查、并由CA颁发的扩展验证证书提供支持。驱动器固件内容现在以ZIP文件的形式提供、其中包含旧的未签名固件以及新的已签名固件。用户必须根据目标系统上运行的代码版本选择适当的文件。</block>
   <block id="3c65e3636111523111e45a49a80face3" category="paragraph">外部密钥服务器管理-证书密钥大小</block>
   <block id="406774a2d5f641d5566318ef7eb88033" category="paragraph">新的默认证书密钥大小为3072位(2048位)。支持高达4096位的密钥大小。要支持非默认密钥大小、必须更改NVSRAM位。</block>
-  <block id="710e42f1cedbf3e670aace3815d6e451" category="paragraph">支持使用块大小为512b的驱动器更大的动态磁盘池大小</block>
-  <block id="7a4f6b11e091466663e9c7d3c9480717" category="paragraph">使用版本1池版本类型的客户现在可以拥有48 TB的最大磁盘池大小。旧版最多支持24 TB磁盘池大小。如果要将现有磁盘池转换为较大的大小、则必须先删除所有卷。如果存在版本1磁盘池、则降级操作会受到限制。</block>
   <block id="9a1c6a24950fba4eade84dc9952a77dd" category="paragraph">除非满足最低浏览器要求、否则System Manager和Unified Manager将无法启动</block>
   <block id="09a616fc9241625ec6003f2da3c0cff9" category="paragraph">要启动System Manager或Unified Manager、必须安装最低版本的浏览器。以下是支持的最低版本：</block>
   <block id="6cdb1f943282038a6441359c5c88f812" category="list-text">Firefox最低版本80</block>
@@ -8846,4 +8840,24 @@
   <block id="df9168fd1981b1464f7c0d38b2207c30" category="paragraph"><block ref="df9168fd1981b1464f7c0d38b2207c30" category="inline-link-rx"></block></block>
   <block id="050910c569f1cb9044086ceee795e2f8" category="sidebar">SANtricity系统管理器11.8.</block>
   <block id="1cf9153cf0b1bfe4b703e41b4509763e" category="sidebar">SANtricity统一管理器6.</block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="deab0ae4ee87e153ce15a1182bf91617" category="paragraph">密钥大小选择值如下：</block>
+  <block id="92c9cd6ce879c70c929395d49566fca3" category="list-text">默认值为0</block>
+  <block id="91d66be9b353d488558a2fc87f866263" category="list-text">长度2048 = 1</block>
+  <block id="60f95b27118522aa50716737cc578a39" category="list-text">长度3072 = 2</block>
+  <block id="46b1448aca55d48c198834955f8e6b6a" category="list-text">长度4096 = 3</block>
+  <block id="80b104f769b8bbef5d4b39ffe2efd816" category="paragraph">要通过SMCli,将密钥大小更改为4096：</block>
+  <block id="7f1a49e026d5afc827c5a0184af45fe0" category="paragraph"><block ref="53d52ccae7296ad3c52a5cc86881da22" prefix="" category="inline-code"></block><block ref="52baead6a42dd6532784cc33f69d8d94" prefix=" " category="inline-code"></block></block>
+  <block id="ad7ca0ac2dce92cb837bf072818ce860" category="paragraph">查询密钥大小：</block>
+  <block id="dc8f09004148c8853414b2fe2f19c503" category="paragraph"><block ref="5dfae352b2be729a121ea8024c5dc604" prefix="" category="inline-code"></block></block>
+  <block id="32e0b12538b4abe36e648446dbb8723b" category="paragraph">改进了磁盘池</block>
+  <block id="82faf4161a36aa8a69bd4c363e6b57cc" category="paragraph">使用运行11.80或更高版本的控制器创建的磁盘池将为_Version 1_ Pool、而不是_Version 0_ Pool。如果存在_Version 1_磁盘池、则降级操作会受到限制。</block>
+  <block id="45e56b98136f4292dd8c522edf38b3b2" category="paragraph">可以在存储阵列配置文件中确定磁盘池的版本。</block>
 </blocks>
