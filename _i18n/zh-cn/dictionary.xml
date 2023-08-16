@@ -8860,4 +8860,6 @@
   <block id="32e0b12538b4abe36e648446dbb8723b" category="paragraph">改进了磁盘池</block>
   <block id="82faf4161a36aa8a69bd4c363e6b57cc" category="paragraph">使用运行11.80或更高版本的控制器创建的磁盘池将为_Version 1_ Pool、而不是_Version 0_ Pool。如果存在_Version 1_磁盘池、则降级操作会受到限制。</block>
   <block id="45e56b98136f4292dd8c522edf38b3b2" category="paragraph">可以在存储阵列配置文件中确定磁盘池的版本。</block>
+  <block id="82bf7451a207cfbac427edc3bb60fced" category="paragraph">这是一个可打印的 PDF 分步说明，其中包含指向其他内容的实时链接。</block>
+  <block id="a2f0a23d015da77ff81697442b8f6aad" category="paragraph">以下是此站点上介绍的设置说明。</block>
 </blocks>
