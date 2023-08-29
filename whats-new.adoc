@@ -94,7 +94,9 @@ Unified Manager现在支持SAML (安全断言标记语言)。为Unified Manager�
  a| 
 除非满足最低浏览器要求、否则System Manager和Unified Manager将无法启动
  a| 
-要启动System Manager或Unified Manager、必须安装最低版本的浏览器。以下是支持的最低版本：
+要启动System Manager或Unified Manager、必须安装最低版本的浏览器。
+
+以下是支持的最低版本：
 
 * Firefox最低版本80
 * Chrome最低版本89
@@ -136,5 +138,101 @@ Unified Manager现在支持SAML (安全断言标记语言)。为Unified Manager�
 已为所有平台禁用USB端口
  a| 
 现在、所有平台均已禁用USB端口。
+
+
+
+ a| 
+增加了SSD读取缓存最大值
+ a| 
+SSD读取缓存最大值从5 TB增加到8 TB。
+
+
+
+ a| 
+为双工配置中的单个卷分配全闪存读取缓存
+ a| 
+现在、只要一个卷使用整个SSD缓存、就可以将所有SSD读取缓存分配给双工系统上的同一个卷。
+
+
+
+ a| 
+已将驱动器序列号添加到存储阵列配置文件的驱动器摘要表中
+ a| 
+驱动器序列号已添加到存储阵列配置文件的驱动器摘要表中。
+
+
+
+ a| 
+已将dom0-MiSC日志添加到每日ASUP
+ a| 
+控制器A和B的dom0-MiSC日志已添加到每日ASUP中。
+
+
+
+ a| 
+默认情况下、端口443用于应用程序与嵌入式Web服务进行通信
+ a| 
+现在、默认情况下、在与嵌入式Web服务器通信时会使用端口443。。  `-useLegacyTransferPort` 已为改用旧版8443传输端口的用户添加了命令行界面命令。有关新的-usealeTransferPort CLI命令的详细信息、请参见 https://docs.netapp.com/us-en/e-series-cli/whats-new.html["SANtricity命令行界面新增功能"]。
+
+
+
+ a| 
+扫描卷奇偶校验进度功能
+ a| 
+已实施以下命令行界面命令来支持基于作业的卷奇偶校验扫描操作：
+
+* 启动检查卷奇偶校验
+* 保存检查卷奇偶校验作业错误
+* 停止检查卷奇偶校验作业
+* 显示检查卷奇偶校验作业
+
+
+有关新的基于作业的卷奇偶校验扫描命令行界面命令的详细信息、请参见 https://docs.netapp.com/us-en/e-series-cli/whats-new.html["SANtricity命令行界面新增功能"]。
+
+
+
+ a| 
+Unified Manager的MFA支持
+ a| 
+现在、Unified Manager支持多因素身份验证(MFA)。
+
+
+
+ a| 
+切换图标可显示前背硬件视图
+ a| 
+在System Manager/Unified Manager的硬件视图中、现在可以使用以下两个选项卡来控制正面视图和背面视图：
+
+* 驱动器选项卡
+* 控制器和组件选项卡
+
+
+
+
+ a| 
+vCenter存储插件
+ a| 
+vCenter存储插件已更新、可与E系列11.80版本兼容。
+
+
+
+ a| 
+Web服务代理6.0
+ a| 
+Web服务代理已更新到6.0版、以便与E系列11.80版本兼容。
+
+
+
+ a| 
+删除了E系列额定和最大温度已超过事件的ASUP案例创建标志
+ a| 
+现在、对于不需要采取任何操作的标称和最大温度已超过事件、案例创建标志已禁用。
+
+
+
+ a| 
+为0x1209 Mel事件启用优先级案例创建标志
+ a| 
+现在、将为创建案例创建标志 `MEL_EV_DEGRADE_CHANNEL 0x1209` MEL事件。
 
 |===
