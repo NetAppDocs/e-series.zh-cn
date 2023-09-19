@@ -8817,10 +8817,7 @@
   <block id="a5ff5d8396bab4e857d616fc9fa06b26" category="list-title">您需要什么</block>
   <block id="75014b540a900a20abf83a06a6f23acc" category="paragraph">请确保执行以下操作：</block>
   <block id="d51a879a95a1f1b04438a7e672254378" category="list-text">Microsoft Edge (90及更高版本)</block>
-  <block id="055c49f32e97721509c3ba8e800b7d0e" category="admonition">E2800、EF280、E5700、EF570、EF600、 和EF300阵列。</block>
-  <block id="9fed5991090e027f2348c873d605f4d6" category="admonition">EF300支持基本托盘中没有驱动器的扩展架配置使用此配置时、请确保驱动器已填充到扩展架中、并正确连接到基座托盘、然后再打开系统电源。</block>
   <block id="dae6baa86f1f6e4135f2552862c8b191" category="list-text">带有扩展架的SAS SSD驱动器：任何混合使用DE212C、DE224C和DE460C磁盘架的SAS SSD驱动器插槽和扩展架总数不得超过96个、除非仅使用DE212C磁盘架、否则允许使用8个DE212C磁盘架。例如、1个DE460C磁盘架加1个DE224C磁盘架加1个DE212C磁盘架、4个DE224C磁盘架或8个DE212C磁盘架</block>
-  <block id="e1602ccaec81c1829eb2a83bd391bfb8" category="admonition">EF600支持基本托盘中没有驱动器的扩展架配置使用此配置时、请确保驱动器已填充到扩展架中、并正确连接到基座托盘、然后再打开系统电源。</block>
   <block id="70a5ac954926edc08c5f6fc4c248a4a6" category="section-title">SANtricity 11.7版</block>
   <block id="f7b52729af7c7aa177e09390f0afd194" category="list-text"><block ref="f7b52729af7c7aa177e09390f0afd194" category="inline-link-rx"></block></block>
   <block id="797222f106ff986b71e9f972dd342bc3" category="list-text"><block ref="797222f106ff986b71e9f972dd342bc3" category="inline-link-rx"></block></block>
@@ -8895,4 +8892,7 @@
   <block id="d7ffc2406b2b1f56267e389dcea17d16" category="paragraph">现在、对于不需要采取任何操作的标称和最大温度已超过事件、案例创建标志已禁用。</block>
   <block id="746cf185d12f5492055c99b5dda9119d" category="paragraph">为0x1209 Mel事件启用优先级案例创建标志</block>
   <block id="09c222edb73c49afd2e9ec9f75a2cd53" category="paragraph">现在、将为创建案例创建标志<block ref="768a075a6d4dc734e5397ee50957d8d8" prefix=" " category="inline-code"></block> MEL事件。</block>
+  <block id="11f16f90266e9e59b05bab98913c351d" category="admonition">对于SANtricity OS 11.80GA及更高版本、E2800、EF280、E5700、EF570、EF600、 和EF300阵列。</block>
+  <block id="fad6f3761e69d291ccde3b2351a1c961" category="admonition">对于SANtricity OS 11.80GA及更高版本、EF300支持基本托盘中不含驱动器的扩展架配置使用此配置时、请确保驱动器已填充到扩展架中、并正确连接到基座托盘、然后再打开系统电源。</block>
+  <block id="cc1b53336ed5c926305dd7ad876ab1d2" category="admonition">对于SANtricity OS 11.80GA及更高版本、EF600支持基本托盘中不含驱动器的扩展架配置使用此配置时、请确保驱动器已填充到扩展架中、并正确连接到基座托盘、然后再打开系统电源。</block>
 </blocks>
