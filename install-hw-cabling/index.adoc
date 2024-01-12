@@ -70,6 +70,4 @@ E2760 ， E5660
 DE460C
 
 |===
-有关其他布线选项的信息，请参见 https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2773533["《 E 系列硬件布线指南》"^] 对于较旧的系统。
-
 有关为支持镜像功能而布线的信息，请参见 https://www.netapp.com/us/media/tr-4656.pdf["《同步和异步镜像功能说明和部署指南》"^]。
