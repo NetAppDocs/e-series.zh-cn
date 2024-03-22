@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>e-series | NetApp Documentation</title>
+    <atom:link href="https://docs.netapp.com/zh-cn/e-series/feed.xml" rel="self" type="application/rss+xml"/>
+    <link>https://docs.netapp.com/zh-cn/e-series</link>
+    <description>The latest updates from NetApp Documentation</description>
+    <language>zh-cn</language>
+    <ttl>60</ttl>
+    <pubDate>Fri, 22 Mar 2024 06:46:51 +0000</pubDate>
+    <lastBuildDate>Fri, 22 Mar 2024 06:46:51 +0000</lastBuildDate>
+    
+    
+    
+    <item>
+      <title>SANtricity OS 中的新增功能 (29 Aug 2023)</title>
+      <pubDate>Tue, 29 Aug 2023 23:44:58 +0000</pubDate>
+      <link>https://docs.netapp.com/zh-cn/e-series/whats-new.html?time=1693352698</link>
+      <guid isPermaLink="false">Tue, 29 Aug 2023 23:44:58 +0000</guid>
+      <description><![CDATA[ SANtricity OS 中的新增功能。 ]]></description>
+    </item>
+    
+    
+  </channel>
+</rss>
