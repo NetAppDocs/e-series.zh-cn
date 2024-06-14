@@ -506,6 +506,23 @@ passPhrase="passPhrase";
 .. 如果状态不是最佳状态，请突出显示控制器，然后选择 * 置于联机状态 * 。
 
 
+. 当控制器恢复联机时、检查Recovery Guru中是否报告NV挽 不匹配。
++
+.. 如果报告NVSametmismatch、请使用以下SMcli命令升级NVSametm:
++
+[listing]
+----
+SMcli <controller A IP> <controller B IP> -u admin -p <password> -k -c "download storageArray NVSRAM file=\"C:\Users\testuser\Downloads\NVSRAM .dlp file>\" forceDownload=TRUE;"
+----
++
+。 `-k` 如果阵列不是https安全、则需要参数。
+
+
+
++
+
+NOTE: 如果无法完成SMcli命令、请联系 https://www.netapp.com/company/contact-us/support/["NetApp技术支持"^] 或登录到 https://mysupport.netapp.com["NetApp 支持站点"^] 创建案例。
+
 . 使用 SANtricity 系统管理器收集存储阵列的支持数据。
 +
 .. 选择菜单： Support[ 支持中心 > * 诊断 ] 。

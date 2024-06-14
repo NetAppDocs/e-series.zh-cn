@@ -16,7 +16,6 @@
   <block id="ecb3eae36555245dd97b57edf925b519" category="paragraph">默认情况下，如果不使用 iSCSI 端口绑定， VMware iSCSI 软件启动程序会为每个 iSCSI 目标创建一个会话。</block>
   <block id="84b339ef337149fb55dc73165dd441d4" category="inline-link">VMware 知识库</block>
   <block id="bcf2befa67a21b602de7c9607a256fdd" category="admonition">VMware iSCSI 端口绑定功能可强制所有绑定的 VMkernel 端口登录到可在已配置网段上访问的所有目标端口。它用于为 iSCSI 目标提供单个网络地址的阵列。NetApp 建议不要使用 iSCSI 端口绑定。对于追加信息，请参见<block ref="f51a555352ce97fa9606c6453ba145eb" category="inline-link-rx"></block> 有关在 ESX/ESXi 中使用软件 iSCSI 端口绑定的注意事项的文章。如果 ESXi 主机已连接到另一供应商的存储， NetApp 建议您使用单独的 iSCSI vmkernel 端口，以避免与端口绑定发生任何冲突。</block>
-  <block id="0995e93f2d32176a9594170326076188" category="paragraph">为了获得最佳实践，您不应在 E 系列存储阵列上使用端口绑定。</block>
   <block id="4d58b104819df733df379625cb1928bb" category="paragraph">要确保多路径配置良好，请对 iSCSI 网络使用多个网段。在一个网段上至少放置一个主机端端口和每个阵列控制器的至少一个端口，在另一网段上放置一组相同的主机端端口和阵列端端口。尽可能使用多个以太网交换机提供额外冗余。</block>
   <block id="f15f906f7bea6ec29e2979d8f1f2fcfb" category="admonition">许多网络交换机必须配置为超过 9 ， 000 字节的 IP 开销。有关详细信息，请参见交换机文档。</block>
   <block id="e416e1de0c9f752b24a207ee8a149921" category="paragraph">您可以使用 SANtricity 系统管理器图形用户界面在阵列端配置 iSCSI 网络。</block>
@@ -124,7 +123,6 @@
   <block id="e987e7fa5c9abc75335a066329ba6eaa" category="paragraph">使用 HBA 实用程序查找 SAS 地址，然后使用 HBA BIOS 进行相应的配置设置。</block>
   <block id="b769f2f457baf26b76c0285eaf26cac1" category="paragraph">查看 HBA 实用程序的准则：</block>
   <block id="4191e9e13f8a201f560ff4eb7e03a2b8" category="list-text">大多数 HBA 供应商都提供 HBA 实用程序。</block>
-  <block id="8e23f53043423e6715229ae35c668a80" category="list-text">如果安装了主机上下文代理，则主机 I/O 端口可能会自动注册。</block>
   <block id="f839e1b7c3a21e269ed4802e2a8f478a" category="list-text">从 HBA 供应商的网站下载 HBA 实用程序。</block>
   <block id="32e3cf2b76364e5780ea7c673b668437" category="list-text">安装实用程序。</block>
   <block id="87e85b9ea37f21226023282c05abc3b0" category="list-text">使用 HBA BIOS 为您的配置选择适当的设置。</block>
@@ -640,24 +638,12 @@
   <block id="36a6c85baeb45ad7d6b182928148783d" category="cell">只有当池或卷组中的驱动器支持数据保证（ Data Assurance ， DA ）时， "DA" 旁边才会显示 * 是 * 。DA 可提高整个存储系统的数据完整性。通过 DA ，存储阵列可以检查在数据通过控制器向下传输到驱动器时可能发生的错误。对新卷使用 DA 可确保检测到任何错误。</block>
   <block id="ad2bbf8f4eaa2e5c1f2dc065812618ee" category="list-text">要继续对选定应用程序执行卷创建序列，请单击 * 下一步 * 。</block>
   <block id="05ac61cded1d64877319e6fc3303a304" category="list-text">在最后一步中，查看要创建的卷的摘要，并进行任何必要的更改。要进行更改，请单击 * 返回 * 。对卷配置感到满意后，单击 * 完成 * 。</block>
-  <block id="6ce56c3d2a347e8eec31ca9a5f266cb2" category="paragraph">可以自动或手动创建主机：</block>
-  <block id="3f6aae0d6b07b0c0c3753a29f5ea7bbb" category="list-text">* 自动 * —主机上下文代理（ HCA ）会为基于 SCSI （而不是 NVMe-oF ）的主机启动自动主机创建。HCA 是一个实用程序，您可以在连接到存储阵列的每个主机上安装该实用程序。安装了 HCA 的每个主机都会通过 I/O 路径将其配置信息推送到存储阵列控制器。根据主机信息，控制器会自动创建主机以及关联的主机端口并设置主机类型。如果需要，您可以对主机配置进行任何其他更改。HCA 执行自动检测后，主机将自动配置以下属性：</block>
-  <block id="f83da56133b643da9e77e51cd6c5bb60" category="list-text">从主机的系统名称派生的主机名。</block>
-  <block id="ff355485c71c980dad7d2bcc738031e3" category="list-text">与主机关联的主机标识符端口。</block>
-  <block id="9216f53a8757b69a9763476f633bafcd" category="list-text">主机的主机操作系统类型。</block>
   <block id="8b261088a6c6ed749f082d5672940ffb" category="inline-link">NetApp 支持—下载</block>
-  <block id="4954a64a167635ad19317842780fc1e2" category="admonition">可从获取适用于 Linux 和 Windows 的 Host Context Agent 软件<block ref="d4d0bd08778a1eda2e214061987877dd" category="inline-link-rx"></block>。</block>
-  <block id="ce20270f9f59c29940789eed21ca0ad1" category="admonition">主机作为独立主机创建； HCA 不会自动创建或添加到主机集群。</block>
   <block id="b4f69aa1a7313b31e977a8c463cdf13b" category="list-text">* 手动 * —在手动创建主机期间，您可以通过从列表中选择主机端口标识符或手动输入这些标识符来关联主机端口标识符。创建主机后，如果您计划共享对卷的访问，则可以为其分配卷或将其添加到主机集群。</block>
-  <block id="97af09f89abd52bc4528726a62f75580" category="section-title">使用 HCA 自动发现主机</block>
-  <block id="5f96931891fdfe6d097d700182501d44" category="paragraph">您可以允许主机上下文代理（ Host Context Agent ， HCA ）自动检测主机，然后验证信息是否正确。</block>
   <block id="2f3d16ae594f1458b2df0f43ad9132a5" category="list-text">从管理页面中，选择具有主机连接的存储阵列。</block>
   <block id="47369607937ea8b62ad0a5349cee6fb8" category="list-text">选择菜单：配置 [ 配置主机 ] 。</block>
   <block id="41dbd6041fd556f06750dc1495be7b10" category="paragraph">此时将打开配置主机页面。</block>
   <block id="0924796085f7df98cb7ab62924c6e73c" category="list-text">选择菜单： Storage[Hosts] 。</block>
-  <block id="33c6b73b3842ba3a2a3c555bf1ce0cd6" category="paragraph">此表列出了自动创建的主机。</block>
-  <block id="4519f1c84733049cbbfffe94fa4d88d1" category="list-text">验证 HCA 提供的信息是否正确（名称，主机类型，主机端口标识符）。</block>
-  <block id="b36dd028d4cc9fd23358d580eca639f1" category="list-text">如果需要更改任何信息，请选择主机，然后单击 * 查看 / 编辑设置 * 。</block>
   <block id="390c57ab50f691d4eb0f2ff4e5c42c23" category="section-title">手动创建主机</block>
   <block id="882cb68e5d863b419d0d4d5f61d4f0bf" category="paragraph">请阅读以下准则：</block>
   <block id="6ed30639f30e0f37f0053ee840f7df42" category="list-text">您必须已在环境中添加或发现存储阵列。</block>
@@ -1222,7 +1208,6 @@
   <block id="09ea0908fbfc4cde85bf416e35dc55c8" category="inline-link">NetApp 支持</block>
   <block id="f64d5867fd911e2b14d8680010121759" category="list-text">从下载 Unified Host Utilities<block ref="2ff36e7792a0e0257d19a11dce8cade8" category="inline-link-rx"></block>。</block>
   <block id="59fbc26a1831942cb6ebf2d627aa2db8" category="admonition">无法使用 SANtricity 存储管理器安装程序安装此实用程序包。</block>
-  <block id="fe2b572228681d85876f1c2ffc7023a9" category="admonition">或者，您也可以使用 SANtricity SMdevices 实用程序执行与统一主机实用程序工具相同的功能。SMdevices 实用程序包含在 SMutils 软件包中。SMutils 软件包是一组实用程序，用于验证主机从存储阵列中看到的内容。它作为 SANtricity 软件安装的一部分提供。</block>
   <block id="135d30ad6d2da4597cfa1d9690fba47a" category="summary">对于 SAS 协议，您可以确定主机端口地址并进行建议的设置。</block>
   <block id="d723a375133225f8e40ad6de1d56e805" category="paragraph">对于 SAS 协议，您可以确定主机端口地址并进行相应的设置。</block>
   <block id="bfcd4b5a45e2121dd605c54a4da4bd65" category="paragraph">使用 HBA 实用程序查找 SAS 地址，然后使用 HBA BIOS 进行相应的配置设置。</block>
@@ -1274,10 +1259,8 @@
   <block id="a8342f05171838958a785b1d2d1db93b" category="paragraph">图中显示了在两个分区中连接到 E 系列存储阵列的主机。一个分区用蓝线表示，另一个分区用红线表示。任何一个端口都有两条通往存储的路径（每个控制器一条）。</block>
   <block id="c110df1be6e0c274e5b6190b197bcabe" category="image-alt">端口标识符 host 和 target conf win</block>
   <block id="7baddc80f2f90c28721d910489b197cb" category="summary">在 Windows 快速方法中安装适用于 CLI 和 HCA 的 Storage Manager 。</block>
-  <block id="dc3fbfd52a78c903e6de09d05ddfc27d" category="doc">安装适用于 SMCLI 的 SANtricity 存储管理器和主机上下文代理（ HCA ）</block>
   <block id="ef71c4d60b721871a9a1acefb72e13e4" category="paragraph">如果您使用的是 SANtricity 软件 11.53 或更早版本，则可以在管理工作站上安装 SANtricity 存储管理器软件，以帮助管理阵列。</block>
   <block id="501a2ad13300e0aa28ebe2f8b5f896f5" category="paragraph">SANtricity 存储管理器包括用于执行其他管理任务的命令行界面（ CLI ）以及用于通过 I/O 路径将主机配置信息推送到存储阵列控制器的主机上下文代理。</block>
-  <block id="5d2dd026d83ed1ae31b7c46f98cd9d34" category="admonition">如果您使用的是 SANtricity 软件 11.60 及更高版本，则无需执行以下步骤。SANtricity 安全命令行界面（ SMcli ）包含在 SANtricity 操作系统中，可通过 SANtricity 系统管理器下载。有关如何通过 SANtricity 系统管理器下载 SMCLI 的详细信息，请参阅 SANtricity 系统管理器联机帮助下的 _Download 命令行界面（ CLI ） _ 主题。</block>
   <block id="333a1ae397172ffa7f074eb82c021e4e" category="list-text">SANtricity 软件 11.53 或更早版本。</block>
   <block id="2f42837cf7042dcd613c4776cd821f9b" category="list-text">适用于 SANtricity Storage Manager 客户端的系统，具有以下最低要求：</block>
   <block id="f8dc05e90027ef9e4b77e8ab41d012c6" category="list-text">* RAM * ： 2 GB 用于 Java Runtime Engine</block>
@@ -1349,7 +1332,6 @@
   <block id="de79e6b334ef3f5c38431ae360ff09f6" category="paragraph">E2712 ， E2724 ， E5612 ， E5624 ， EF560</block>
   <block id="f2a12ad5f52528054619d431dc7c3054" category="paragraph">E2760 ， E5660</block>
   <block id="15ced0ef88b79c27417b95cc4a6474e1" category="inline-link">《 E 系列硬件布线指南》</block>
-  <block id="588ea625981b26f278d5da4ff8ceb15d" category="paragraph">有关其他布线选项的信息，请参见<block ref="b81b0da72978e2b90766cbfae5ed2466" category="inline-link-rx"></block> 对于较旧的系统。</block>
   <block id="5c8edef9c398c6792341850977901070" category="inline-link">《同步和异步镜像功能说明和部署指南》</block>
   <block id="9696fa6d39ba9aab453fe1ba80da0669" category="paragraph">有关为支持镜像功能而布线的信息，请参见<block ref="ecbdbcda2695048a35af4e9c40e978db" category="inline-link-rx"></block>。</block>
   <block id="f9bcb67d08f727c5a322f1f2c7b1e5c5" category="summary">将存储系统连接到以太网网络以进行带外管理。</block>
@@ -1937,10 +1919,8 @@
   <block id="e93d2afef215287e7ea403b7d93a1042" category="admonition">* 可能会丢失数据访问 * - 如果您刚刚安装的控制器显示一个此类代码，而另一个控制器因任何原因被重置，则第二个控制器也可能会锁定。</block>
   <block id="81511c16ac1c696901257fc0136ae1d1" category="list-text">控制器恢复联机后，确认其状态为最佳，并检查控制器架的警示 LED 。</block>
   <block id="e11265286d3acc7518f4d458373d21d2" category="paragraph">如果状态不是最佳状态，或者任何警示 LED 均亮起，请确认所有缆线均已正确就位，并且控制器箱已正确安装。如有必要，请拆下并重新安装控制器箱。</block>
-  <block id="79985a6d5d752cdcbb9bbb8340fa510f" category="list-text">如果需要，请将所有卷重新分配给其首选所有者。</block>
   <block id="bbf46f9beb7cca84a6bd9b9ad7a9d701" category="list-text">选择菜单： Storage[Volumes] 。</block>
   <block id="cd836d5607a72e58c28486ef83128f85" category="list-text">选择菜单：更多 [ 重新分配卷 ] 。</block>
-  <block id="09a5aa9209154ff3bed809e609a7760d" category="list-text">单击菜单： Hardware[ 支持 &gt; 升级中心 ] 以确保已安装最新版本的 SANtricity OS 软件（控制器固件）。</block>
   <block id="c65491c8c7503c1a6db7cfd16113b72a" category="paragraph">根据需要安装最新版本。</block>
   <block id="f64ac56cef1f5e4f7896043e6750dc53" category="paragraph">控制器更换已完成。您可以恢复正常操作。</block>
   <block id="6fcb8b9672441ca691f4d85d1836833b" category="summary">维护 E5700 硬件</block>
@@ -3415,7 +3395,6 @@
   <block id="28c74601cab51ec0f572b112f7aee948" category="list-text">使用<block ref="a3e2ed1651134ba8d782e5dc8287cbc1" category="inline-link-rx"></block> 用于配置 iSCSI 主机的工具。</block>
   <block id="84a0100270817ab949ead0850e5c7934" category="list-text">编辑主机分区以添加 iSCSI 主机端口 ID 并删除 FC 主机端口 ID 。</block>
   <block id="e13345f5a8fed2baefb676e54c837f9b" category="list-text">iSCSI 主机重新启动后，请按照主机上的相应过程注册卷并使其可供操作系统使用。</block>
-  <block id="dc11132834c12745a593ada748aa2908" category="list-text">根据您的操作系统，存储管理软件附带了两个实用程序（ hot_add 和 SMdevices ）。这些实用程序有助于将卷注册到主机中，并显示卷的适用设备名称。</block>
   <block id="1ee6a2654832926bb18e15e40f4d7110" category="list-text">您可能需要使用操作系统随附的特定工具和选项来使卷可用（即分配驱动器号，创建挂载点等）。有关详细信息，请参见主机操作系统文档。</block>
   <block id="9728e1a98137d35970e4f40061b6f1b6" category="section-title">完成 iSCSI 到 FC/iSCSI 的转换</block>
   <block id="016bce178ce0362a322d720a4763b0cd" category="paragraph">如果您之前已拥有所有 iSCSI 主机端口，并且已将其中一些端口转换为 FC ，则可能需要修改现有配置以支持 FC 。</block>
@@ -5316,13 +5295,9 @@
   <block id="df8c85065effb5093bcc1889495b92f7" category="section-title">内部密钥管理</block>
   <block id="8f0439a6f042ce457ec5d5faf91c28ea" category="paragraph">当所有驱动器均已锁定时，请按照以下步骤进行内部密钥管理。</block>
   <block id="e55e81df495444ffb2639e3a7f9ef86e" category="admonition">如果您不使用管理端口 1 ，请尝试使用其他默认 IP 地址： + Ctrl A port 1 ： 192.168.128.101 + Ctrl A port 2 ： 192.168.128.102 + Ctrl B port 1 ： 192.168.129.101 + Ctrl B port 2 ： 192.168.129.102</block>
-  <block id="451adf9dc612afcfa43e2c0797313ea1" category="paragraph">* 示例： * `SMcli 192.168.128.101 -u admin -c "import storageArray securityKey file="Directory&amp;filename\" passphraseString="" ； "`</block>
   <block id="02626834a548b28e809c79cc3246fbf9" category="paragraph">控制器将继续从驱动器执行自动节点同步过程，然后重新启动。重新启动后，可以通过原始 IP 配置访问控制器。</block>
   <block id="370c6dde461cc5827c330619a80ca24b" category="section-title">外部密钥管理</block>
   <block id="9208cd3893f8fbd0715f391ac0195354" category="paragraph">当所有驱动器均已锁定时，请按照以下步骤进行外部密钥管理。</block>
-  <block id="203b2e157336601775297d64e8b01713" category="paragraph">* 示例： * `SMcli 192.168.128.101 -u admin -c "set storageArray externalKeyManagement serverAddress=&lt;ServerIPAddress&gt; serverPort=&lt;serverPort&gt; ； "`</block>
-  <block id="ff8ee4661fbac57cdf8a71747f69e4ed" category="paragraph">* 示例 A ： * `SMcli 192.168.128.101 -u admin -c " 下载 storageArray keyManagementCertificate certificateType=client file="Directory&amp;filename" ； "`</block>
-  <block id="0558f36aa79582296ec1f39019ce4f53" category="paragraph">* 示例 B ： * `SMcli 192.168.128.101 -u admin -c " 下载 storageArray keyManagementCertificate certificateType=server file="Directory&amp;filename" ； "`</block>
   <block id="854750d89bde7b9006e843874058e608" category="summary">查看升级和更换 E 系列控制器的要求。</block>
   <block id="520dc026db4e88668c8c301bd1d52f89" category="paragraph">升级控制器之前，请查看以下注意事项。</block>
   <block id="42eef425d97514d2a9e42ae0abebfde1" category="section-title">硬件和固件要求</block>
@@ -6466,7 +6441,6 @@
   <block id="b54e5effb0684297a425f4b4d27a0901" category="inline-link">向 E2600 和 E2700 添加第二个控制器</block>
   <block id="8873c4daaa79b4f2a0a76d2d60e0f4d2" category="list-text"><block ref="8873c4daaa79b4f2a0a76d2d60e0f4d2" category="inline-link-rx"></block></block>
   <block id="cc2c4e05a565a41e24830b8e20a407fa" category="inline-link">更改或添加主机协议</block>
-  <block id="6ef4b2f0ae71e9e178116859d849d637" category="list-text"><block ref="6ef4b2f0ae71e9e178116859d849d637" category="inline-link-rx"></block></block>
   <block id="4a24ac39c4082dcb978a418e7c412751" category="inline-link">将交流电源转换为直流电源</block>
   <block id="60d69132ac18e209751d2055249f9499" category="list-text"><block ref="60d69132ac18e209751d2055249f9499" category="inline-link-rx"></block></block>
   <block id="8538359cd0d88b60011df2ea127fcda4" category="section-title">早期版本的软件文档</block>
@@ -7206,8 +7180,6 @@
   <block id="bd965e38a0c9cf27aa1bde099308e23f" category="list-title">完成后</block>
   <block id="9c9c42da70924dff53917fd5752cd0a9" category="list-text">在vSphere Client中、为卷创建数据存储库。</block>
   <block id="27288924eb00279da6258f216a826ce6" category="list-text">在应用程序主机上执行任何必要的操作系统修改、以便应用程序可以使用卷。</block>
-  <block id="f4c48f2383ce25f158cf33df12dc65ee" category="list-text">运行基于主机的`hot_add`实用程序或操作系统专用实用程序(可从第三方供应商获得)、然后运行`SMdevices`实用程序将卷名称与主机存储阵列名称关联起来。</block>
-  <block id="fc689e3fec7436f0795ba215ddaea02c" category="paragraph">`hot_add`实用程序和`SMdevices`实用程序作为`SMutils`软件包的一部分提供。`SMutils`软件包是一组实用程序、用于验证主机从存储阵列中看到的内容。它作为 SANtricity 软件安装的一部分提供。</block>
   <block id="4db4ceee2891d65f714f908305bf69f5" category="summary">获取并导入CA签名证书、以安全访问托管适用于vCenter的存储插件的管理系统。</block>
   <block id="07d971b4a5a654450d917b608d4ec4f8" category="doc">使用CA签名的证书</block>
   <block id="020e8003add330567e5f0d10609d0973" category="paragraph">您可以获取并导入CA签名的证书、以安全访问托管适用于vCenter的存储插件的管理系统。</block>
@@ -7269,14 +7241,12 @@
   <block id="6f77c9c07c72d4718892ec422f4427bc" category="doc">如何将主机端口与主机匹配？</block>
   <block id="e3603ec100f890e2ef8684fc0f32d90c" category="paragraph">获得此信息后、请从创建主机对话框中提供的列表中选择已登录到存储阵列的主机端口标识符。</block>
   <block id="2bba3e0602cd7a130a9a940ee66aefad" category="admonition">确保为要创建的主机选择适当的主机端口标识符。如果关联的主机端口标识符不正确、则可能会发生原因 从另一台主机意外访问此数据。</block>
-  <block id="805b5a8d335604839f980870f92238c2" category="paragraph">如果您使用安装在每个主机上的主机上下文代理(Host Context Agent、HCA)自动创建主机、则HCA应自动将主机端口标识符与每个主机关联并对其进行适当配置。</block>
   <block id="490911223ced9bd35d325330312a99b5" category="summary">密码短语用于对存储在本地管理客户端上的安全密钥文件进行加密和解密。</block>
   <block id="7e2fd80391cbb19f61be6028669d1143" category="doc">为什么需要定义密码短语？</block>
   <block id="2f42cd01026066a070aa52e53e4d963f" category="paragraph">密码短语用于对存储在本地管理客户端上的安全密钥文件进行加密和解密。如果没有密码短语、则无法对安全密钥进行解密、并使用此安全密钥从启用了安全功能的驱动器中解锁数据、如果此驱动器重新安装在另一个存储阵列中。</block>
   <block id="2da87ae0f783e9cc7ac8f36a7af697e4" category="summary">默认集群是一个系统定义的实体、它允许登录到存储阵列的任何未关联主机端口标识符访问分配给默认集群的卷。</block>
   <block id="b8d724212008baee7a5c6030da8fa5bc" category="doc">默认集群是什么？</block>
   <block id="9624dccf17eb4cce07a5a0013616c0f9" category="paragraph">未关联的主机端口标识符是指与特定主机没有逻辑关联、但实际安装在主机中并登录到存储阵列的主机端口。</block>
-  <block id="b4c67a8296dafaccaed924668fa901da" category="admonition">如果您希望主机对存储阵列中的某些卷具有特定访问权限、则不能使用默认集群。而是必须将主机端口标识符与其对应的主机相关联。可以在创建主机操作期间手动执行此任务、也可以使用安装在每个主机上的主机上下文代理(Host Context Agent、HCA)自动执行此任务。然后、将卷分配给单个主机或主机集群。</block>
   <block id="854135f279202e145fddcf81f6d69dab" category="paragraph">只有在外部存储环境有利于允许所有主机以及连接到存储阵列的所有已登录主机端口标识符都能够访问所有卷的特殊情况下、才应使用默认集群(完全访问模式) 而不是专门使存储阵列或用户界面知道这些主机。</block>
   <block id="c167b87ad97a717ca19e8302324a61d6" category="paragraph">最初、您只能通过命令行界面(CLI)将卷分配给默认集群。但是、在将至少一个卷分配给默认集群后、此实体(称为默认集群)将显示在用户界面中、您可以在此界面中管理此实体。</block>
   <block id="369faeb4aa443a86445a9cdfb023bb83" category="summary">使用"添加/发现"功能查找并添加要在组织网络中管理的存储阵列。</block>
@@ -7445,7 +7415,6 @@
   <block id="2f405cc1b427d24720c2cc7d7dda7e2c" category="list-text">在主视图中、选择*管理*、然后选择要将存储阵列添加到的组。</block>
   <block id="78d46085734b1546832159391eb2b467" category="list-text">选择菜单：管理组[将存储阵列添加到组]。</block>
   <block id="875510c22480d2f647cff890742474ab" category="list-text">选择要添加到组中的存储阵列。</block>
-  <block id="158015df88d990434f1a9d713f772baa" category="summary">主机操作系统类型字段包含主机的操作系统。您可以从下拉列表中选择建议的主机类型、也可以允许主机上下文代理(Host Context Agent、HCA)配置主机和相应的主机操作系统类型。</block>
   <block id="c99be05276e49867c3c82a7022f31b32" category="doc">如何知道哪种主机操作系统类型正确？</block>
   <block id="e13be85800aed175412a62f5b2b23406" category="paragraph">下拉列表中显示的主机类型取决于存储阵列型号和固件版本。最新版本会首先显示最常见的选项、最有可能是最合适的选项。此列表中的显示并不表示完全支持此选项。</block>
   <block id="d11b94f400203a9104d040cb12cd7ca1" category="admonition">有关主机支持的详细信息、请参见<block ref="49d81d143d5c8b402603532056154481" category="inline-link-rx"></block>。</block>
@@ -7478,8 +7447,6 @@
   <block id="02677c9d7a9295a0b7ff23da80ed17c2" category="cell">支持使用具有3.9或更早内核的设备映射程序多路径故障转移解决方案 的Linux操作系统。</block>
   <block id="e9745a54dc083bc4c6e7adb0ba4a88bf" category="cell">窗口集群(已弃用)</block>
   <block id="ee99f98925e229fb230a1fca830d5dd4" category="cell">如果主机操作系统类型设置为此值、请改用Windows (集群或非集群)设置。</block>
-  <block id="c4a63ba39b5ca841704abea6cb2fb44a" category="paragraph">安装HCA并将存储连接到主机后、HCA会通过I/O路径将主机拓扑发送到存储控制器。根据主机拓扑、存储控制器会自动定义主机和关联的主机端口、然后设置主机类型。</block>
-  <block id="1ddb6810aa8c1c6572287f48e53a765f" category="admonition">如果HCA未选择建议的主机类型、则必须手动设置主机类型。</block>
   <block id="e28ca758b5b6384ff2daa36accced63c" category="summary">在创建卷期间、系统会提示您提供有关工作负载使用情况的信息。</block>
   <block id="b5a3b95a88ff3f89275ca18c4736d4b8" category="doc">选定工作负载对卷创建有何影响？</block>
   <block id="0c6710fd70e8f6dfb7dc7c5ef665fd39" category="paragraph">在创建卷期间、系统会提示您提供有关工作负载使用情况的信息。系统会使用此信息为您创建最佳卷配置、您可以根据需要对其进行编辑。或者、您也可以在卷创建序列中跳过此步骤。</block>
@@ -8097,8 +8064,6 @@
   <block id="2c7bb5c0c4cf1c8a98580db96306828f" category="summary">要使用适用于vCenter的存储插件管理存储、您必须发现或定义网络中的每个主机。</block>
   <block id="3377964f846f087c85bfa55b8e435603" category="doc">主机创建概述</block>
   <block id="dd4be5e22b2713a377fc88babf216418" category="paragraph">要使用适用于vCenter的存储插件管理存储、您必须发现或定义网络中的每个主机。主机是指向存储阵列上的卷发送I/O的服务器。</block>
-  <block id="14e74c56c083745010899e49908977f0" category="section-title">自动创建与手动创建主机</block>
-  <block id="ae1c3c63ab898ce42b5595fdbc2e91fc" category="paragraph">创建主机是向存储阵列告知连接了哪些主机并允许对卷进行I/O访问所需的步骤之一。可以自动或手动创建主机。</block>
   <block id="ed871627754400dea09f1a125da2eff2" category="list-text">*手动*—在手动创建主机期间、您可以通过从列表中选择主机端口标识符或手动输入这些标识符来关联主机端口标识符。创建主机后，如果您计划共享对卷的访问，则可以为其分配卷或将其添加到主机集群。</block>
   <block id="cf9a49f1bff1d19decdde49cdbdae169" category="section-title">如何分配卷</block>
   <block id="e82214f920b58da315913ddaf6ee6c4a" category="paragraph">要使主机向卷发送I/O、您必须为其分配卷。您可以在创建卷时选择主机或主机集群、也可以稍后将卷分配给主机或主机集群。主机集群是一组主机。您可以创建一个主机集群、以便轻松地将相同的卷分配给多个主机。</block>
@@ -8302,7 +8267,6 @@
   <block id="4b5189c89fc982fea1db0f47f6bca6ac" category="list-text">4 k—4、096字节。</block>
   <block id="9df105cfb95359552740abf1d9863ac1" category="doc">创建主机访问</block>
   <block id="3c6c09b90537af17f7537af5bcbf33f8" category="paragraph">通过创建主机、您可以定义主机参数以提供与存储阵列的连接以及对卷的I/O访问。</block>
-  <block id="69517bdc763a3da40b243d4bb6b4875c" category="paragraph">您可以允许主机上下文代理(Host Context Agent、HCA)自动检测主机、然后从配置主机页面中选择*查看/编辑设置*以验证此信息是否正确。但是、HCA并非在所有受支持的操作系统上都可用、您必须手动创建主机。</block>
   <block id="e2fb84e873c35950636aa48dbab40f62" category="paragraph">创建主机时、请牢记以下准则：</block>
   <block id="5d79fe33f11555546005cfbd02dcc6b8" category="list-text">*手动添加*-如果列表中未显示主机端口标识符、则表示主机端口尚未登录。可以使用 HBA 实用程序或 iSCSI 启动程序实用程序来查找主机端口标识符并将其与主机关联。您可以手动输入主机端口标识符，也可以将它们从实用程序（一次一个）复制 / 粘贴到主机端口字段中。您必须一次选择一个主机端口标识符才能将其与主机关联，但您可以继续选择与主机关联的任意数量的标识符。每个标识符都会显示在主机端口字段中。如有必要，您还可以通过选择标识符旁边的 * X * 来删除该标识符。</block>
   <block id="a7a6bda88008827c24afa07e951218a9" category="paragraph">(可选)如果您选择或手动输入具有iSCSI IQN的主机端口、并且希望要求尝试访问存储阵列的主机使用质询握手身份验证协议(CHAP)进行身份验证、请选中"设置CHAP启动程序密钥"复选框。对于您选择或手动输入的每个 iSCSI 主机端口，请执行以下操作：</block>
@@ -8643,7 +8607,6 @@
   <block id="ebf132debe07a5cd0bc888dd5078033d" category="paragraph">或者、您也可以通过以下调用通过REST API导入密钥服务器证书：<block ref="640677ffae20a0401b505d0de933e391" prefix=" " category="inline-code"></block></block>
   <block id="bc2848514b39d7125ea7f1e0192ff80f" category="list-text">使用从保存的安全密钥 <block ref="370683b601e29cfe5ec51edd9d49be09" category="inline-link-macro-rx"></block>下，将外部密钥导入到 IP 地址 192.168.128.101 中，用户名为 * 管理员 * ，密码为空。</block>
   <block id="4097f6992eb560447325a703f31e2270" category="paragraph">或者、您也可以通过以下调用通过REST API导入外部密钥：<block ref="758036d11568492285b8504fb55d4d9f" prefix=" " category="inline-code"></block></block>
-  <block id="5dd94bd0b7c84a6ccc9fc7c3a1fa82e6" category="paragraph">InfiniBand diags软件包包含用于显示每个InfiniBand (IB)端口的全局唯一ID (GUID)的命令。通过附带的软件包支持的大多数具有OFED/RDMA的Linux分发版也具有InfiniBand diags软件包、其中包含用于显示有关HCA的信息的命令。</block>
   <block id="dfcfc178d6edc54d8706c59b747948d5" category="list-text">安装<block ref="3b13fc847651d5be5c89aeab4722c099" prefix=" " category="inline-code"></block> 使用操作系统的软件包管理命令进行软件包管理。</block>
   <block id="79c617afe97932f20f52d1217736d403" category="list-text">创建名为的systemd服务单元文件<block ref="6bddfc9da80e7ef0195a324214877004" prefix=" " category="inline-code"></block>。</block>
   <block id="d40e479d6bc1cf9824be2cfa7e837140" category="list-text">启用并启动<block ref="6b64648adbe124ad96531f7f0dd977a4" prefix=" " category="inline-code"></block> 服务</block>
@@ -8895,4 +8858,53 @@
   <block id="11f16f90266e9e59b05bab98913c351d" category="admonition">对于SANtricity OS 11.80GA及更高版本、E2800、EF280、E5700、EF570、EF600、 和EF300阵列。</block>
   <block id="fad6f3761e69d291ccde3b2351a1c961" category="admonition">对于SANtricity OS 11.80GA及更高版本、EF300支持基本托盘中不含驱动器的扩展架配置使用此配置时、请确保驱动器已填充到扩展架中、并正确连接到基座托盘、然后再打开系统电源。</block>
   <block id="cc1b53336ed5c926305dd7ad876ab1d2" category="admonition">对于SANtricity OS 11.80GA及更高版本、EF600支持基本托盘中不含驱动器的扩展架配置使用此配置时、请确保驱动器已填充到扩展架中、并正确连接到基座托盘、然后再打开系统电源。</block>
+  <block id="f9c81137922296691747f3cff9a92105" category="list-text"><block ref="f9c81137922296691747f3cff9a92105" category="inline-link-rx"></block></block>
+  <block id="c68dfa9143daa0b2c3c80d2545e2410c" category="inline-link">下载SANtricity系统管理器联机帮助下的命令行界面(CLI)主题</block>
+  <block id="0c229260a68aeca566d73a23ad233dcd" category="admonition">或者、您也可以使用smcli命令<block ref="14993f95e0d6fc04f9966b0c368a7ed6" prefix=" " category="inline-code"></block> 以执行与Unified Host Utility工具相同的功能。SMCli,包括在SANtricity操作系统中，并可通过SANtricity系统管理器下载。有关如何通过SANtricity系统管理器下载SMcli的详细信息、请参阅<block ref="a9fe8fbe4d692fa7e3dc0b66710307cd" category="inline-link-rx"></block>。</block>
+  <block id="ffc3de562db3aaacf94180bc367bf157" category="admonition">如果您使用的是 SANtricity 软件 11.60 及更高版本，则无需执行以下步骤。SANtricity 安全命令行界面（ SMcli ）包含在 SANtricity 操作系统中，可通过 SANtricity 系统管理器下载。有关如何通过SANtricity系统管理器下载SMcli的详细信息、请参阅 <block ref="07ba191255ffe5607ddf4202e3c76da7" category="inline-link-macro-rx"></block></block>
+  <block id="fc4f413bbdc13c9d07bb87f1f0e4b5bc" category="admonition">从SANtricity软件11.80.1版开始、不再支持主机上下文代理。</block>
+  <block id="5f0e6cffb0f871fd63ee412b0867faa5" category="admonition">对于运行SANtricity 11.60及更高版本的平台、默认子网掩码为255.255.0.0。</block>
+  <block id="b62cb85461ac6e99d68c9332f3dcd4fc" category="paragraph">InfiniBand diags软件包包含用于显示每个InfiniBand (IB)端口的全局唯一ID (GUID)的命令。通过附带的软件包支持的大多数具有OFED/RDMA的Linux分发版也具有InfiniBand-diags软件包、其中包括用于显示主机通道适配器(Host Channel Adapter、HCA)信息的命令。</block>
+  <block id="e2c48d6f7dc54c69caaee62695c56d1b" category="paragraph">InfiniBand diags软件包包含用于显示每个InfiniBand (IB)端口的全局唯一ID (GUID)的命令。通过附带的软件包支持的大多数具有OFED/RDMA的Linux分发版也具有InfiniBand-diags软件包、其中包括用于显示主机通道适配器(Host Channel Adapter、HCA)信息的命令。</block>
+  <block id="4fef884c45e5beb8a0176970f056d2b1" category="admonition">或者、您也可以通过检索这些结果<block ref="3d80983fc82ff72fd51e5d1f7e90c56d" prefix=" " category="inline-code"></block> 命令：</block>
+  <block id="38be852a7469b47a9544ad44f92c4a87" category="list-text">当控制器恢复联机时、检查Recovery Guru中是否报告NV挽 不匹配。</block>
+  <block id="835e1e289164a83cd62a957064a6d333" category="list-text">如果报告NVSametmismatch、请使用以下SMcli命令升级NVSametm:</block>
+  <block id="188409731f46449038b85e358a882871" category="paragraph">。<block ref="ff2bddd61609f26dc3255408781890ad" prefix=" " category="inline-code"></block> 如果阵列不是https安全、则需要参数。</block>
+  <block id="898884f576d3c785b2b6fb9b78fc56d8" category="inline-link">NetApp技术支持</block>
+  <block id="be078623b1a43475081fe909e7280f94" category="admonition">如果无法完成SMcli命令、请联系<block ref="0116d50fc8feadbb0d1b3f97da5f8144" category="inline-link-rx"></block> 或登录到<block ref="fcc52edac3ce57829c48ee35d97a295d" category="inline-link-rx"></block> 创建案例。</block>
+  <block id="29ff5c5c99e35fef2700d4d5f0f036de" category="list-text">确认系统状态为"Optimal"(最佳)、并检查控制器架的警示LED。</block>
+  <block id="447181afc701fd84c26bf3596e763049" category="list-text">单击菜单：硬件[支持&gt;升级中心]以确保系统上的固件和NVSAN2版本处于所需级别。</block>
+  <block id="815fe3ef7733928259b45b99a5ecfc49" category="admonition">只要出现以下更换情况、控制器的琥珀色警示LED就会熄灭：</block>
+  <block id="d6a28a344ee78ec0d5fd738bc338db3f" category="list-text">备用驱动器路径失败</block>
+  <block id="2f9cb3ec0fe7cfbcedfda207100269a8" category="list-text">药屉已打开/缺失</block>
+  <block id="c33de3a09d49fe0c9f425a18bc68b004" category="list-text">风扇出现故障/缺失</block>
+  <block id="cbf7b24ce0d93efff84abb6dca91dc9e" category="list-text">缺少电源</block>
+  <block id="07ed085acfb4f203e63427ca4494f863" category="section-title">11.80.1版中的新增功能</block>
+  <block id="65e6e49c7d0840983a93edfc482a4650" category="paragraph"><block ref="14993f95e0d6fc04f9966b0c368a7ed6" prefix="" category="inline-code"></block> 参数</block>
+  <block id="f853f0f729e70cf8d4d12c4bb6b0dbfc" category="paragraph">新的<block ref="14993f95e0d6fc04f9966b0c368a7ed6" prefix=" " category="inline-code"></block> 参数现在可在SMCli,使用此新参数可以查找与存储阵列关联的所有SCSI本机块设备。有关详细信息、请参见链接：https://docs.netapp.com/us-en/e-series-cli/get-started/downloadable-smcli-parameters.html#identify-Devices[Downloadable smcli command line parameters^。</block>
+  <block id="907ce89001794064fd8d544a753cf6cf" category="paragraph">以太网内核统计信息</block>
+  <block id="d1c09bea07e8eb52df56a18fb41d1ba1" category="paragraph">现在、System Manager中的查看iSCSI统计信息包页面提供了一个新的以太网内核统计信息选项。通过此新选项、您可以查看iSCSI设备的平台内核驱动程序的统计信息。有关详细信息、请参见链接：https://docs.netapp.com/us-en/e-series-santricity/sm-support/view-iscsi-statistics-packages-support.html[View iSCSI统计信息包^。</block>
+  <block id="bf4fed8d63aecfc1a30be488a115892c" category="paragraph">改进了System Manager中未分配和已启用安全保护的驱动器的筛选功能</block>
+  <block id="22d3d7b49042c93caf0303e50dd503e1" category="paragraph">现在、在选择手动驱动器时、System Manager会筛选出未分配的驱动器和已启用安全保护的驱动器。因此、System Manager驱动器选择计数现在与命令行界面和REST API下的自动驱动器选择候选项列表匹配。现在、System Manager中的Unassigned和Secure Enabled驱动器也会应用一个唯一图标和悬停文本。</block>
+  <block id="8aa767f8b92cfb3b4eab1f415d112646" category="paragraph">增加了通过REST API端点阻止IP地址的功能</block>
+  <block id="676be4f62b5637bef1c26018afa904d4" category="paragraph">现在、用户可以通过设置端点阻止特定IP地址 <block ref="4b697cabc8d99483a2ddfc38c4cb6766" prefix="(" category="inline-code"></block>）。通过设置端点配置后、只有通过白列表指定的IP地址才能与存储设备进行通信。此新功能支持IPv4和IPv6地址列表。</block>
+  <block id="c55dbb17c221990804802e322335dc65" category="paragraph">vCenter存储插件已更新、可与E系列11.80.1版兼容。</block>
+  <block id="e536634a787591dd23dbc618cd207ba6" category="paragraph">Web服务代理</block>
+  <block id="b2fe36d045fcd0262e37faca678d17c8" category="paragraph">Web服务代理已更新到6.1版、以便与E系列11.80.1版兼容。</block>
+  <block id="c89b00da7202a9a153f3761208e9c04b" category="inline-link">TR-4789：《E系列SANtricity iSCSI与ESXi 6.x和7.x集成的VMware配置指南》</block>
+  <block id="d449697e3f0e2e82550c5b9a353fbb21" category="paragraph">为了获得最佳实践，您不应在 E 系列存储阵列上使用端口绑定。请参见<block ref="b18137069ebac12afacac28918c3703b" category="inline-link-rx"></block> 有关详细信息 ...</block>
+  <block id="d94b2476c52b9269fb71e09f2c273b3f" category="paragraph">* 示例： *<block ref="55629997c44d8d81fce2f6296c8a341d" prefix=" " category="inline-code"></block></block>
+  <block id="ecac0776d163be45b9926de55b835ec4" category="paragraph">* 示例： *<block ref="2c35a6e97cb5b6b552dd737031188e4c" prefix=" " category="inline-code"></block></block>
+  <block id="8afb7a80484f4a0c97a4ca2b1dd4f7a9" category="paragraph">*示例A:*<block ref="5f6fe0e54ad0da0581f1c921b9d0d2ce" prefix=" " category="inline-code"></block></block>
+  <block id="1f30cbc7228c9c1478541fac65592fdd" category="paragraph">*示例B:*<block ref="ce9fafaa9a800b6d0168143573308013" prefix=" " category="inline-code"></block></block>
+  <block id="a3cd72e3a5590e7769cb2590ecd015eb" category="section-title">手动创建主机</block>
+  <block id="9a3eb00d2d24e24125d1dfecb99a47e1" category="paragraph">创建主机是向存储阵列告知连接了哪些主机并允许对卷进行I/O访问所需的步骤之一。可以手动创建主机。</block>
+  <block id="8cb031b774a78de2f6be4db3058da109" category="list-text">运行特定于操作系统的实用程序(可从第三方供应商处获得)、然后运行SMcli命令<block ref="14993f95e0d6fc04f9966b0c368a7ed6" prefix=" " category="inline-code"></block> 将卷名称与主机存储阵列名称相关联。</block>
+  <block id="4f939d909de82f0b6db329c93f1bf479" category="paragraph">SMCli,包括在SANtricity操作系统中，并可通过SANtricity系统管理器下载。有关如何通过SANtricity系统管理器下载SMcli的详细信息、请参阅<block ref="a9fe8fbe4d692fa7e3dc0b66710307cd" category="inline-link-rx"></block>。</block>
+  <block id="a543598a03d2f4a4c65c995fe07c12e1" category="summary">主机操作系统类型字段包含主机的操作系统。您可以从下拉列表中选择建议的主机类型。</block>
+  <block id="e93513455b64fd664d3f89e3161de3ae" category="paragraph">可以手动创建主机：</block>
+  <block id="2ff8f9ab0a5cf81ee962ea6fda131b40" category="admonition">如果您希望主机对存储阵列中的某些卷具有特定访问权限、则不能使用默认集群。而是必须将主机端口标识符与其对应的主机相关联。此任务可以在创建主机操作期间手动完成。然后、将卷分配给单个主机或主机集群。</block>
+  <block id="e5a4a8069ad5713adce4d473829f3108" category="admonition">只要出现以下更换情况、控制器的琥珀色警示LED就会熄灭：</block>
+  <block id="a425ad1782379ad30aed42d2cca2a9de" category="list-text">备用电源出现故障</block>
+  <block id="197afe3e4b0fdccae7f0384e342bb289" category="list-text">您可以使用smcli命令<block ref="14993f95e0d6fc04f9966b0c368a7ed6" prefix=" " category="inline-code"></block> 以显示卷的适用设备名称。SMCli,包括在SANtricity操作系统中，并可通过SANtricity系统管理器下载。有关如何通过SANtricity系统管理器下载SMcli的详细信息、请参阅<block ref="a9fe8fbe4d692fa7e3dc0b66710307cd" category="inline-link-rx"></block>。</block>
 </blocks>

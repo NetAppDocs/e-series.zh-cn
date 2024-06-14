@@ -1,7 +1,7 @@
 ---
 permalink: config-linux/nvme-ib-display-devices-visible-host-task.html 
 sidebar: sidebar 
-keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries, SMcli, SMdevices 
 summary: 使用 NVMe-CLI 软件包中的 SMdevices 工具查看主机上当前可见的卷。这是 NVMe list 命令的替代方案。 
 ---
 = 显示主机可见的卷

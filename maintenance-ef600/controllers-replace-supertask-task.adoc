@@ -23,6 +23,20 @@ summary: 更换 EF300 或 EF600 控制器架中的单个控制器。
 +
 ** SANtricity System Manager 中的恢复 Guru 可指示您更换控制器箱。
 ** 控制器箱上的琥珀色警示 LED 亮起，表示控制器出现故障。
++
+[]
+====
+
+NOTE: 只要出现以下更换情况、控制器的琥珀色警示LED就会熄灭：
+
+*** 备用电源出现故障
+*** 备用驱动器路径失败
+*** 药屉已打开/缺失
+*** 风扇出现故障/缺失
+*** 缺少电源
+
+
+====
 
 
 * 确保您已具备以下条件：
@@ -129,7 +143,6 @@ CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on 
 +
 由于必须从故障控制器箱中卸下 HIC ，因此必须从 HIC 端口中卸下所有 SFP 。重新连接缆线后，您可以将这些 SFP 移至新控制器箱。
 
-. 确认控制器背面的缓存活动 LED 是否熄灭。
 . 按压控制器两侧的手柄，然后向后拉，直到其从磁盘架中释放为止。
 +
 image::../media/remove_controller_5.png[删除控制器 5]
@@ -454,7 +467,24 @@ NOTE: 如果原始控制器未使用 DHCP 作为 IP 地址，则新控制器将�
 ** 主机链路 LED 可能亮起，闪烁或熄灭，具体取决于主机接口。
 
 
-. 控制器恢复联机后，确认其状态为最佳，并检查控制器架的警示 LED 。
+. 当控制器恢复联机时、检查Recovery Guru中是否报告NV挽 不匹配。
++
+.. 如果报告NVSametmismatch、请使用以下SMcli命令升级NVSametm:
++
+[listing]
+----
+SMcli <controller A IP> <controller B IP> -u admin -p <password> -k -c "download storageArray NVSRAM file=\"C:\Users\testuser\Downloads\NVSRAM .dlp file>\" forceDownload=TRUE;"
+----
++
+。 `-k` 如果阵列不是https安全、则需要参数。
+
+
+
++
+
+NOTE: 如果无法完成SMcli命令、请联系 https://www.netapp.com/company/contact-us/support/["NetApp技术支持"^] 或登录到 https://mysupport.netapp.com["NetApp 支持站点"^] 创建案例。
+
+. 确认系统状态为"Optimal"(最佳)、并检查控制器架的警示LED。
 +
 如果状态不是最佳状态，或者任何警示 LED 均亮起，请确认所有缆线均已正确就位，并且控制器箱已正确安装。如有必要，请拆下并重新安装控制器箱。
 
@@ -462,7 +492,7 @@ NOTE: 如果原始控制器未使用 DHCP 作为 IP 地址，则新控制器将�
 
 NOTE: 如果无法解决此问题，请联系技术支持。
 
-. 单击菜单： Hardware[ 支持 > 升级中心 ] 以确保已安装最新版本的 SANtricity OS 。
+. 单击菜单：硬件[支持>升级中心]以确保系统上的固件和NVSAN2版本处于所需级别。
 +
 根据需要安装最新版本。
 

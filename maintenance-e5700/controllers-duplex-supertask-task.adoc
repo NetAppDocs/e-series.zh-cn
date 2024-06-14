@@ -422,7 +422,24 @@ CAUTION: * 可能会丢失数据访问 * - 如果您刚刚安装的控制器显�
 
 
 
-. 控制器恢复联机后，确认其状态为最佳，并检查控制器架的警示 LED 。
+. 当控制器恢复联机时、检查Recovery Guru中是否报告NV挽 不匹配。
++
+.. 如果报告NVSametmismatch、请使用以下SMcli命令升级NVSametm:
++
+[listing]
+----
+SMcli <controller A IP> <controller B IP> -u admin -p <password> -k -c "download storageArray NVSRAM file=\"C:\Users\testuser\Downloads\NVSRAM .dlp file>\" forceDownload=TRUE;"
+----
++
+。 `-k` 如果阵列不是https安全、则需要参数。
+
+
+
++
+
+NOTE: 如果无法完成SMcli命令、请联系 https://www.netapp.com/company/contact-us/support/["NetApp技术支持"^] 或登录到 https://mysupport.netapp.com["NetApp 支持站点"^] 创建案例。
+
+. 确认系统状态为"Optimal"(最佳)、并检查控制器架的警示LED。
 +
 如果状态不是最佳状态，或者任何警示 LED 均亮起，请确认所有缆线均已正确就位，并且控制器箱已正确安装。如有必要，请拆下并重新安装控制器箱。
 
@@ -430,13 +447,13 @@ CAUTION: * 可能会丢失数据访问 * - 如果您刚刚安装的控制器显�
 
 NOTE: 如果无法解决此问题，请联系技术支持。
 
-. 如果需要，请将所有卷重新分配给其首选所有者。
+. 如果需要，请使用 SANtricity 系统管理器将所有卷重新分配给其首选所有者。
 +
 .. 选择菜单： Storage[Volumes] 。
 .. 选择菜单：更多 [ 重新分配卷 ] 。
 
 
-. 单击菜单： Hardware[ 支持 > 升级中心 ] 以确保已安装最新版本的 SANtricity OS 软件（控制器固件）。
+. 单击菜单：硬件[支持>升级中心]以确保系统上的固件和NVSAN2版本处于所需级别。
 +
 根据需要安装最新版本。
 

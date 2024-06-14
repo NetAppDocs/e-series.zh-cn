@@ -11,7 +11,7 @@ summary: 确定主机端口 GUID 。
 
 
 [role="lead"]
-InfiniBand diags软件包包含用于显示每个InfiniBand (IB)端口的全局唯一ID (GUID)的命令。通过附带的软件包支持的大多数具有OFED/RDMA的Linux分发版也具有InfiniBand diags软件包、其中包含用于显示有关HCA的信息的命令。
+InfiniBand diags软件包包含用于显示每个InfiniBand (IB)端口的全局唯一ID (GUID)的命令。通过附带的软件包支持的大多数具有OFED/RDMA的Linux分发版也具有InfiniBand-diags软件包、其中包括用于显示主机通道适配器(Host Channel Adapter、HCA)信息的命令。
 
 .步骤
 . 安装 `infiniband-diags` 使用操作系统的软件包管理命令进行软件包管理。

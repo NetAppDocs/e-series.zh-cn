@@ -16,6 +16,56 @@ summary: SANtricity OS 中的新增功能。
 
 
 
+== 11.80.1版中的新增功能
+
+[cols="35h,~"]
+|===
+| 新增功能 | Description 
+
+
+ a| 
+`-identifyDevices` 参数
+ a| 
+新的 `-identifyDevices` 参数现在可在SMCli,使用此新参数可以查找与存储阵列关联的所有SCSI本机块设备。有关详细信息、请参见链接：https://docs.netapp.com/us-en/e-series-cli/get-started/downloadable-smcli-parameters.html#identify-Devices[Downloadable smcli command line parameters^。
+
+
+
+ a| 
+以太网内核统计信息
+ a| 
+现在、System Manager中的查看iSCSI统计信息包页面提供了一个新的以太网内核统计信息选项。通过此新选项、您可以查看iSCSI设备的平台内核驱动程序的统计信息。有关详细信息、请参见链接：https://docs.netapp.com/us-en/e-series-santricity/sm-support/view-iscsi-statistics-packages-support.html[View iSCSI统计信息包^。
+
+
+
+ a| 
+改进了System Manager中未分配和已启用安全保护的驱动器的筛选功能
+ a| 
+现在、在选择手动驱动器时、System Manager会筛选出未分配的驱动器和已启用安全保护的驱动器。因此、System Manager驱动器选择计数现在与命令行界面和REST API下的自动驱动器选择候选项列表匹配。现在、System Manager中的Unassigned和Secure Enabled驱动器也会应用一个唯一图标和悬停文本。
+
+
+
+ a| 
+增加了通过REST API端点阻止IP地址的功能
+ a| 
+现在、用户可以通过设置端点阻止特定IP地址 (`/devmgr/v2/settings`）。通过设置端点配置后、只有通过白列表指定的IP地址才能与存储设备进行通信。此新功能支持IPv4和IPv6地址列表。
+
+
+
+ a| 
+vCenter存储插件
+ a| 
+vCenter存储插件已更新、可与E系列11.80.1版兼容。
+
+
+
+ a| 
+Web服务代理
+ a| 
+Web服务代理已更新到6.1版、以便与E系列11.80.1版兼容。
+
+|===
+
+
 == 11.80版中的新增功能
 
 [cols="35h,~"]

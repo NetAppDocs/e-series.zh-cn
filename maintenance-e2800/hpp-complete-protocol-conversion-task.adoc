@@ -133,7 +133,7 @@ image::../media/sam1130_ss_host_settings_dialog_ports_tab_maint-e2800.gif[sam113
 . 编辑主机分区以添加 iSCSI 主机端口 ID 并删除 FC 主机端口 ID 。
 . iSCSI 主机重新启动后，请按照主机上的相应过程注册卷并使其可供操作系统使用。
 +
-** 根据您的操作系统，存储管理软件附带了两个实用程序（ hot_add 和 SMdevices ）。这些实用程序有助于将卷注册到主机中，并显示卷的适用设备名称。
+** 您可以使用smcli命令 `-identifyDevices` 以显示卷的适用设备名称。SMCli,包括在SANtricity操作系统中，并可通过SANtricity系统管理器下载。有关如何通过SANtricity系统管理器下载SMcli的详细信息、请参阅 https://docs.netapp.com/us-en/e-series-santricity/sm-settings/download-cli.html["下载SANtricity系统管理器联机帮助下的命令行界面(CLI)主题"^]。
 ** 您可能需要使用操作系统随附的特定工具和选项来使卷可用（即分配驱动器号，创建挂载点等）。有关详细信息，请参见主机操作系统文档。
 
 
@@ -170,7 +170,7 @@ image::../media/sam1130_ss_host_settings_dialog_ports_tab_maint-e2800.gif[sam113
 . 编辑主机分区以添加 FC 主机端口 ID 并删除 iSCSI 主机端口 ID 。
 . 重新启动新 FC 主机后，请按照主机上的相应过程注册卷并使其可供操作系统使用。
 +
-** 根据您的操作系统，存储管理软件附带了两个实用程序（ hot_add 和 SMdevices ）。这些实用程序有助于将卷注册到主机中，并显示卷的适用设备名称。
+** 您可以使用smcli命令 `-identifyDevices` 以显示卷的适用设备名称。SMCli,包括在SANtricity操作系统中，并可通过SANtricity系统管理器下载。有关如何通过SANtricity系统管理器下载SMcli的详细信息、请参阅 https://docs.netapp.com/us-en/e-series-santricity/sm-settings/download-cli.html["下载SANtricity系统管理器联机帮助下的命令行界面(CLI)主题"^]。
 ** 您可能需要使用操作系统随附的特定工具和选项来使卷可用（即分配驱动器号，创建挂载点等）。有关详细信息，请参见主机操作系统文档。
 
 
@@ -207,7 +207,7 @@ image::../media/sam1130_ss_host_settings_dialog_ports_tab_maint-e2800.gif[sam113
 . 编辑主机分区以添加 FC 主机端口 ID 并删除 iSCSI 主机端口 ID 。
 . 重新启动新 FC 主机后，请按照主机上的相应过程注册卷并使其可供操作系统使用。
 +
-** 根据您的操作系统，存储管理软件附带了两个实用程序（ hot_add 和 SMdevices ）。这些实用程序有助于将卷注册到主机中，并显示卷的适用设备名称。
+** 您可以使用smcli命令 `-identifyDevices` 以显示卷的适用设备名称。SMCli,包括在SANtricity操作系统中，并可通过SANtricity系统管理器下载。有关如何通过SANtricity系统管理器下载SMcli的详细信息、请参阅 https://docs.netapp.com/us-en/e-series-santricity/sm-settings/download-cli.html["下载SANtricity系统管理器联机帮助下的命令行界面(CLI)主题"^]。
 ** 您可能需要使用操作系统随附的特定工具和选项来使卷可用（即分配驱动器号，创建挂载点等）。有关详细信息，请参见主机操作系统文档。
 
 
@@ -243,7 +243,7 @@ image::../media/sam1130_ss_host_settings_dialog_ports_tab_maint-e2800.gif[sam113
 . 编辑主机分区以添加 iSCSI 主机端口 ID 并删除 FC 主机端口 ID 。
 . 重新启动新的 iSCSI 主机后，请按照主机上的相应过程注册卷并使其可供操作系统使用。
 +
-** 根据您的操作系统，存储管理软件附带了两个实用程序（ hot_add 和 SMdevices ）。这些实用程序有助于将卷注册到主机中，并显示卷的适用设备名称。
+** 您可以使用smcli命令 `-identifyDevices` 以显示卷的适用设备名称。SMCli,包括在SANtricity操作系统中，并可通过SANtricity系统管理器下载。有关如何通过SANtricity系统管理器下载SMcli的详细信息、请参阅 https://docs.netapp.com/us-en/e-series-santricity/sm-settings/download-cli.html["下载SANtricity系统管理器联机帮助下的命令行界面(CLI)主题"^]。
 ** 您可能需要使用操作系统随附的特定工具和选项来使卷可用（即分配驱动器号，创建挂载点等）。有关详细信息，请参见主机操作系统文档。
 
 

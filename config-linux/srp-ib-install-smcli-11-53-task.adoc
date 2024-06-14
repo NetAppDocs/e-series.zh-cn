@@ -17,7 +17,10 @@ summary: 在管理工作站上安装 SANtricity 存储管理器软件时，默�
 SANtricity 存储管理器包括用于执行其他管理任务的命令行界面（ CLI ）以及用于通过 I/O 路径将主机配置信息推送到存储阵列控制器的主机上下文代理。
 
 
-NOTE: 如果您使用的是 SANtricity 软件 11.60 及更高版本，则无需执行以下步骤。SANtricity 安全命令行界面（ SMcli ）包含在 SANtricity 操作系统中，可通过 SANtricity 系统管理器下载。有关如何通过 SANtricity 系统管理器下载 SMCLI 的详细信息，请参阅 SANtricity 系统管理器联机帮助下的 _Download 命令行界面（ CLI ） _ 主题。
+NOTE: 如果您使用的是 SANtricity 软件 11.60 及更高版本，则无需执行以下步骤。SANtricity 安全命令行界面（ SMcli ）包含在 SANtricity 操作系统中，可通过 SANtricity 系统管理器下载。有关如何通过SANtricity系统管理器下载SMcli的详细信息、请参阅 link:https://docs.netapp.com/us-en/e-series-santricity/sm-settings/download-cli.html["下载SANtricity系统管理器联机帮助下的命令行界面(CLI)主题"^]
+
+
+NOTE: 从SANtricity软件11.80.1版开始、不再支持主机上下文代理。
 
 .开始之前
 确保您已具备以下条件：

@@ -21,7 +21,7 @@ summary: 文档的早期版本
 * https://mysupport.netapp.com/info/web/ECMP11392380.html["安装旧系统"^]
 * https://mysupport.netapp.com/info/web/ECMP11751516.html["维护旧系统"^]
 * https://mysupport.netapp.com/ecm/ecm_download_file/ECMP1394872["向 E2600 和 E2700 添加第二个控制器"^]
-* https://mysupport.netapp.com/info/web/ECMP11750309.html["更改或添加主机协议"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2353447["更改或添加主机协议"^]
 * https://mysupport.netapp.com/ecm/ecm_download_file/ECMP1656638["将交流电源转换为直流电源"^]
 
 

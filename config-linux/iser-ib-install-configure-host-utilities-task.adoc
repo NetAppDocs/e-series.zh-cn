@@ -1,7 +1,7 @@
 ---
 permalink: config-linux/iser-ib-install-configure-host-utilities-task.html 
 sidebar: sidebar 
-keywords: Linux Unified Host Utilities, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+keywords: Linux Unified Host Utilities, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries, SMcli, SMdevices 
 summary: LInstall Linux Unified Host Utilities When Using iSER 。 
 ---
 = 安装和配置 Linux Unified Host Utilities
@@ -21,6 +21,6 @@ Linux Unified Host Utilities 工具可帮助您管理 NetApp 存储，包括故�
 . 从下载 Unified Host Utilities https://mysupport.netapp.com/site/["NetApp 支持"^]。
 +
 
-NOTE: 或者，您也可以使用 SANtricity SMdevices 实用程序执行与统一主机实用程序工具相同的功能。SMdevices 实用程序包含在 SMutils 软件包中。SMutils 软件包是一组实用程序，用于验证主机从存储阵列中看到的内容。它作为 SANtricity 软件安装的一部分提供。
+NOTE: 或者、您也可以使用smcli命令 `-identifyDevices` 以执行与Unified Host Utility工具相同的功能。SMCli,包括在SANtricity操作系统中，并可通过SANtricity系统管理器下载。有关如何通过SANtricity系统管理器下载SMcli的详细信息、请参阅 https://docs.netapp.com/us-en/e-series-santricity/sm-settings/download-cli.html["下载SANtricity系统管理器联机帮助下的命令行界面(CLI)主题"^]。
 
 

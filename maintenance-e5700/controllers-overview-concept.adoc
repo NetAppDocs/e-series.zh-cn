@@ -26,6 +26,19 @@ summary: 查看 E5700 控制器类型和要求。
 
 * SANtricity System Manager 中的恢复 Guru 可指示您更换控制器箱。
 * 控制器箱上的琥珀色警示 LED 亮起，表示控制器出现故障。
++
+[]
+====
+
+NOTE: 只要出现以下更换情况、控制器的琥珀色警示LED就会熄灭：
+
+** 备用驱动器路径失败
+** 药屉已打开/缺失
+** 风扇出现故障/缺失
+** 缺少电源
+
+
+====
 
 
 image::../media/e5700_attention_led_callout.png[e5700 警示 LED 标注]

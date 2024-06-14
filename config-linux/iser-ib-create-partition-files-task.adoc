@@ -28,6 +28,10 @@ summary: 新 LUN 在 Linux 主机首次发现时没有分区或文件系统。�
 .步骤
 . 发出 `sanlun lun show -p` 命令，以检索映射磁盘的 SCSI ID 。
 +
+
+NOTE: 或者、您也可以通过检索这些结果 `multipath -ll` 命令：
+
++
 SCSI ID 是一个 33 个字符的十六进制数字字符串，从数字 3 开始。如果启用了用户友好名称，则设备映射程序会将磁盘报告为 mpath ，而不是 SCSI ID 。
 
 +

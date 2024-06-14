@@ -24,7 +24,6 @@ summary: '您可以安装 FC HBA 实用程序，以便查看每个主机端口�
 ** 适用于 QLogic HBA 的 QLogic QConverge 控制台
 
 
-* 如果安装了主机上下文代理，则主机 I/O 端口可能会自动注册。
 
 
 .步骤

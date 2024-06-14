@@ -341,8 +341,8 @@ da.
 .完成后
 * 在vSphere Client中、为卷创建数据存储库。
 * 在应用程序主机上执行任何必要的操作系统修改、以便应用程序可以使用卷。
-* 运行基于主机的`hot_add`实用程序或操作系统专用实用程序(可从第三方供应商获得)、然后运行`SMdevices`实用程序将卷名称与主机存储阵列名称关联起来。
+* 运行特定于操作系统的实用程序(可从第三方供应商处获得)、然后运行SMcli命令 `-identifyDevices` 将卷名称与主机存储阵列名称相关联。
 +
-`hot_add`实用程序和`SMdevices`实用程序作为`SMutils`软件包的一部分提供。`SMutils`软件包是一组实用程序、用于验证主机从存储阵列中看到的内容。它作为 SANtricity 软件安装的一部分提供。
+SMCli,包括在SANtricity操作系统中，并可通过SANtricity系统管理器下载。有关如何通过SANtricity系统管理器下载SMcli的详细信息、请参阅 https://docs.netapp.com/us-en/e-series-santricity/sm-settings/download-cli.html["下载SANtricity系统管理器联机帮助下的命令行界面(CLI)主题"^]。
 
 
