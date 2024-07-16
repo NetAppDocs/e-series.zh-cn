@@ -38,13 +38,6 @@ summary: SANtricity OS 中的新增功能。
 
 
  a| 
-改进了System Manager中未分配和已启用安全保护的驱动器的筛选功能
- a| 
-现在、在选择手动驱动器时、System Manager会筛选出未分配的驱动器和已启用安全保护的驱动器。因此、System Manager驱动器选择计数现在与命令行界面和REST API下的自动驱动器选择候选项列表匹配。现在、System Manager中的Unassigned和Secure Enabled驱动器也会应用一个唯一图标和悬停文本。
-
-
-
- a| 
 增加了通过REST API端点阻止IP地址的功能
  a| 
 现在、用户可以通过设置端点阻止特定IP地址 (`/devmgr/v2/settings`）。通过设置端点配置后、只有通过白列表指定的IP地址才能与存储设备进行通信。此新功能支持IPv4和IPv6地址列表。
