@@ -38,7 +38,7 @@ summary: 对采用 E 系列系统的 VMware 主机使用快速配置。
 * 联机帮助—介绍如何使用 SANtricity System Manager 完成配置和存储管理任务。可从产品中获取。
 * https://kb.netapp.com/["NetApp 知识库"^] （文章数据库）—提供各种 NetApp 产品和技术的故障排除信息，常见问题解答和说明。
 * http://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^] —用于搜索符合 NetApp 指定标准和要求的 NetApp 产品和组件的配置。
-* https://www.netapp.com/us/media/tr-4789.pdf["《 VMware E 系列 SANtricity iSCSI 与 ESXi 6.X 集成配置指南》"^] —提供有关 iSCSI 与 VMware 集成的技术详细信息。
+* https://www.netapp.com/pdf.html?item=/media/17017-tr4789pdf.pdf["《 VMware E 系列 SANtricity iSCSI 与 ESXi 6.X 集成配置指南》"^] --提供有关iSCSI与VMware集成的技术详细信息。
 * https://configmax.vmware.com/home["VMware 配置最大值"^] —介绍如何配置虚拟和物理存储，使其保持在 ESX/ESXi 支持的允许上限范围内。
 * https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-9AEE5F4D-0CB8-4355-BF89-BB61C5F30C70.html["VMware NVMe 存储的要求和限制"^]。
 * https://docs.vmware.com/en/VMware-vSphere/index.html["VMware vSphere 文档"^] —提供了 ESXi vCenter Server 文档。

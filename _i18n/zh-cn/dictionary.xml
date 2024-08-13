@@ -23,7 +23,6 @@
   <block id="7da05d75fd1c28b0ff4d04d30f85aa5b" category="list-text">已为 System Manager GUI ，基于角色的访问控制（ Role-Based Access Control ， RBAC ）或 LDAP 和目录服务配置密码，以便对存储阵列进行适当的安全访问。有关访问管理的详细信息，请参见 SANtricity System Manager 联机帮助。</block>
   <block id="21075a2c147c20a9ef54f587da0a2a84" category="paragraph">此任务介绍如何从硬件页面访问 iSCSI 端口配置。您也可以从菜单： System[ 设置 &gt; 配置 iSCSI 端口 ] 访问配置。</block>
   <block id="d112a4595d7d618458e0e407fe3798c1" category="inline-link">《 VMware E 系列 SANtricity iSCSI 与 ESXi 6.x 和 7.x 集成配置指南》</block>
-  <block id="afc25a4106d05ed660ffe38cacd9e41e" category="admonition">有关追加信息如何在 VMware 配置上设置阵列端网络的信息，请参见以下技术报告：<block ref="2b0010fda48675021938d8a7e0b75245" category="inline-link-rx"></block>。</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">步骤</block>
   <block id="9a2245d556f7fae3850b428531a32296" category="list-text">在浏览器中，输入以下 URL ： ` +https://&lt;DomainNameOrIPAddress&gt;+`</block>
   <block id="7bed2562bdc586ec3d67d6662e168cc9" category="paragraph">`IPAddress` 是一个存储阵列控制器的地址。</block>
@@ -167,7 +166,6 @@
   <block id="aebb270a0f1270c10fb5b2e56830535a" category="list-text"><block ref="18f041f08534fbeb53ae160ad78cfbc4" category="inline-link-rx"></block> （文章数据库）—提供各种 NetApp 产品和技术的故障排除信息，常见问题解答和说明。</block>
   <block id="fc4773230b262d26eed69c2a96bd9708" category="list-text"><block ref="b1540a3ec25c7d8277b499a1cc1d920b" category="inline-link-rx"></block> —用于搜索符合 NetApp 指定标准和要求的 NetApp 产品和组件的配置。</block>
   <block id="8bdb84c095cd42085dcbf03a378418f7" category="inline-link">《 VMware E 系列 SANtricity iSCSI 与 ESXi 6.X 集成配置指南》</block>
-  <block id="c2b7fa28fa5830785c2ed3fa9e67be04" category="list-text"><block ref="bb9afc94d0b3b2b5568ddea4b546dd05" category="inline-link-rx"></block> —提供有关 iSCSI 与 VMware 集成的技术详细信息。</block>
   <block id="5ec68760b690fe27d275d8ef065433df" category="list-text"><block ref="3efd8448d2410829795078709782a7da" category="inline-link-rx"></block> —介绍如何配置虚拟和物理存储，使其保持在 ESX/ESXi 支持的允许上限范围内。</block>
   <block id="094bf2c199fb9ef7ac29e64a12fd7cad" category="inline-link">VMware NVMe 存储的要求和限制</block>
   <block id="8f853bc18ffad192705726f50eff4144" category="list-text"><block ref="6e8a1449bb92590a7f42c1a30534b1da" category="inline-link-rx"></block>。</block>
@@ -239,7 +237,6 @@
   <block id="2dddc6f893b2d0c22af5f5423687c250" category="paragraph">协议： SAS</block>
   <block id="b71a491626b4be2e99095b6d50cd89e7" category="list-text">您正在使用 NetApp 支持的 SAS HBA 。</block>
   <block id="f0d1919c36085f0e1fce2bd2aada33c1" category="list-text">您正在使用中列出的 SAS HBA 驱动程序和固件版本<block ref="49d81d143d5c8b402603532056154481" category="inline-link-rx"></block>。</block>
-  <block id="ec54e109d36fc34cc1f95037261f7c35" category="paragraph">如果这些假设对于您的安装不正确，或者您需要更多概念背景信息，请参见以下技术报告：<block ref="97a9530bee58cb7f1763d204f6462208" category="inline-link-rx"></block></block>
   <block id="f5f8e7008656ffec252c4e530c9ff205" category="summary">对于基于光纤通道的 NVMe 协议，您可以配置交换机并确定主机端口标识符。</block>
   <block id="13b5a4ce04bdd18c6dbe66e0aff43c56" category="doc">执行基于 FC 的 NVMe 专用任务</block>
   <block id="cf8e74e7bc142ae49e8ffacaa17daf8f" category="paragraph">对于基于光纤通道的 NVMe 协议，您可以配置交换机并确定主机端口标识符。</block>
@@ -1333,7 +1330,6 @@
   <block id="f2a12ad5f52528054619d431dc7c3054" category="paragraph">E2760 ， E5660</block>
   <block id="15ced0ef88b79c27417b95cc4a6474e1" category="inline-link">《 E 系列硬件布线指南》</block>
   <block id="5c8edef9c398c6792341850977901070" category="inline-link">《同步和异步镜像功能说明和部署指南》</block>
-  <block id="9696fa6d39ba9aab453fe1ba80da0669" category="paragraph">有关为支持镜像功能而布线的信息，请参见<block ref="ecbdbcda2695048a35af4e9c40e978db" category="inline-link-rx"></block>。</block>
   <block id="f9bcb67d08f727c5a322f1f2c7b1e5c5" category="summary">将存储系统连接到以太网网络以进行带外管理。</block>
   <block id="87b0d15661ae00d3361b6ec13b87b677" category="doc">管理工作站的以太网布线</block>
   <block id="495468945a56ea18576b443a1af23463" category="paragraph">您可以将存储系统连接到以太网网络，以便进行带外存储阵列管理。所有存储阵列管理连接都必须使用以太网缆线。</block>
@@ -8888,7 +8884,6 @@
   <block id="e536634a787591dd23dbc618cd207ba6" category="paragraph">Web服务代理</block>
   <block id="b2fe36d045fcd0262e37faca678d17c8" category="paragraph">Web服务代理已更新到6.1版、以便与E系列11.80.1版兼容。</block>
   <block id="c89b00da7202a9a153f3761208e9c04b" category="inline-link">TR-4789：《E系列SANtricity iSCSI与ESXi 6.x和7.x集成的VMware配置指南》</block>
-  <block id="d449697e3f0e2e82550c5b9a353fbb21" category="paragraph">为了获得最佳实践，您不应在 E 系列存储阵列上使用端口绑定。请参见<block ref="b18137069ebac12afacac28918c3703b" category="inline-link-rx"></block> 有关详细信息 ...</block>
   <block id="d94b2476c52b9269fb71e09f2c273b3f" category="paragraph">* 示例： *<block ref="55629997c44d8d81fce2f6296c8a341d" prefix=" " category="inline-code"></block></block>
   <block id="ecac0776d163be45b9926de55b835ec4" category="paragraph">* 示例： *<block ref="2c35a6e97cb5b6b552dd737031188e4c" prefix=" " category="inline-code"></block></block>
   <block id="8afb7a80484f4a0c97a4ca2b1dd4f7a9" category="paragraph">*示例A:*<block ref="5f6fe0e54ad0da0581f1c921b9d0d2ce" prefix=" " category="inline-code"></block></block>
@@ -8908,4 +8903,9 @@
   <block id="28af2c239fc893bd1a2013f2e8b4b941" category="section-title">11.80.1R1中的新增功能</block>
   <block id="5769aac2d83733db3bf7507b56dd86e9" category="paragraph">增加了新的自签名和CA签名管理证书的密钥大小长度。</block>
   <block id="8545f755b4f7a99afe330df57699f365" category="paragraph">SANtricity系统管理器和Unified Manager应用程序自签名证书的管理证书密钥大小长度已从2048位修改为3072位。此更改将应用于SANtricity应用程序中新生成的自签名证书和CA签名证书。密钥长度是固定的、不受NV遭受NV遭受 中默认密钥大小定义的影响。</block>
+  <block id="eb72855c2604e5d3f7f36945024d001c" category="list-text"><block ref="b742d0734e0a1b1acd85c7093d734f44" category="inline-link-rx"></block> --提供有关iSCSI与VMware集成的技术详细信息。</block>
+  <block id="721f229c077c5af73351dcbd1a2235d2" category="paragraph">为了获得最佳实践，您不应在 E 系列存储阵列上使用端口绑定。有关详细信息、请参见<block ref="4d4a4533fd2b79dc8951aa3f53f56e3f" category="inline-link-rx"></block> 。</block>
+  <block id="5821a61234ba1fdfba2e6ba9b392cafa" category="admonition">有关如何在VMware配置上设置阵列端网络的其他信息，请参见以下技术报告：<block ref="4c256e5f3e11bff89d951ec9e05da858" category="inline-link-rx"></block>。</block>
+  <block id="f7a1f25c147fdef63a935b6fc10cf5a0" category="paragraph">如果这些假设与您的安装不符、或者您需要更多概念背景信息、请参见以下技术报告：<block ref="691af5827a322478f9c39bcb9ec0d331" category="inline-link-rx"></block></block>
+  <block id="c08a9596d55b45e7eb8325bd878b47d5" category="paragraph">有关通过布线支持镜像功能的信息，请参见<block ref="4c6cd7be794e0089961c4cc00b012a2c" category="inline-link-rx"></block>。</block>
 </blocks>

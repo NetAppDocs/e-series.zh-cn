@@ -70,4 +70,4 @@ E2760 ， E5660
 DE460C
 
 |===
-有关为支持镜像功能而布线的信息，请参见 https://www.netapp.com/us/media/tr-4656.pdf["《同步和异步镜像功能说明和部署指南》"^]。
+有关通过布线支持镜像功能的信息，请参见 https://www.netapp.com/pdf.html?item=/media/17133-tr4656pdf.pdf["《同步和异步镜像功能说明和部署指南》"^]。

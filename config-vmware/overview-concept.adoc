@@ -105,4 +105,4 @@ IP 地址
 
 
 |===
-如果这些假设对于您的安装不正确，或者您需要更多概念背景信息，请参见以下技术报告： https://www.netapp.com/us/media/tr-4789.pdf["《 VMware E 系列 SANtricity iSCSI 与 ESXi 6.X 集成配置指南》"^]
+如果这些假设与您的安装不符、或者您需要更多概念背景信息、请参见以下技术报告： https://www.netapp.com/pdf.html?item=/media/17017-tr4789pdf.pdf["《 VMware E 系列 SANtricity iSCSI 与 ESXi 6.X 集成配置指南》"^]
