@@ -8908,4 +8908,6 @@
   <block id="5821a61234ba1fdfba2e6ba9b392cafa" category="admonition">有关如何在VMware配置上设置阵列端网络的其他信息，请参见以下技术报告：<block ref="4c256e5f3e11bff89d951ec9e05da858" category="inline-link-rx"></block>。</block>
   <block id="f7a1f25c147fdef63a935b6fc10cf5a0" category="paragraph">如果这些假设与您的安装不符、或者您需要更多概念背景信息、请参见以下技术报告：<block ref="691af5827a322478f9c39bcb9ec0d331" category="inline-link-rx"></block></block>
   <block id="c08a9596d55b45e7eb8325bd878b47d5" category="paragraph">有关通过布线支持镜像功能的信息，请参见<block ref="4c6cd7be794e0089961c4cc00b012a2c" category="inline-link-rx"></block>。</block>
+  <block id="3885d6d9f5a5030ec46ec3ce038af96c" category="inline-link">NetApp知识库</block>
+  <block id="780fe86b24958c45b0b8792fad1e9b3c" category="admonition">如果需要有关如何更换E系列DE460c扩展架的信息，请参阅<block ref="b46c4d97d6f1694e2cd029493cdb5475" category="inline-link-rx"></block>。</block>
 </blocks>

@@ -48,6 +48,9 @@ CAUTION: * 可能丢失数据访问 * - 如果卷已处于 " 已降级 " 状态�
 
 
 
+NOTE: 如果需要有关如何更换E系列DE460c扩展架的信息，请参阅 https://kb.netapp.com/on-prem/E-Series/Hardware-KBs/How_to_replace_an_E_Series_DE460c_controller_expansion_shelf["NetApp知识库"^]。
+
+
 
 == 第 1 步：准备更换驱动器抽盒
 
