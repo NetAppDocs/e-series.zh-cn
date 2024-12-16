@@ -47,7 +47,7 @@ Save all packing materials for use when returning the failed power supply.
 
 . 找到电源右侧的卡舌，然后将其推向电源设备。
 +
-image::../media/psup_2.png[PSUP 2.]
+image::../media/psup_2.png[按下电源旁边的卡舌]
 
 . 找到电源正面的手柄。
 . 使用把手将电源直接滑出系统。
@@ -56,7 +56,7 @@ image::../media/psup_2.png[PSUP 2.]
 CAUTION: When removing a power supply, always use two hands to support its weight.
 
 +
-image::../media/psup_3.png[PSUP 3.]
+image::../media/psup_3.png[将电源滑出]
 
 
 
@@ -76,7 +76,7 @@ The power supplies are keyed and can only be installed one way.
 CAUTION: 将电源滑入系统时，请勿用力过大；否则可能会损坏连接器。
 
 +
-image::../media/psup_4.png[PSUP 4.]
+image::../media/psup_4.png[将电源安装到控制器中]
 
 . 确认其状态为最佳并检查控制器架的警示 LED 。
 +

@@ -11,7 +11,7 @@ summary: 存储组定义了哪些驱动器提供构成卷的存储。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

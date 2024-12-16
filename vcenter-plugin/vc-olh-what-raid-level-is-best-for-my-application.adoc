@@ -10,7 +10,7 @@ summary: 要最大程度地提高卷组的性能、必须选择适当的RAID级�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

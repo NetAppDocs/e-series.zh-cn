@@ -61,7 +61,7 @@ summary: 更换 E2800 12 驱动器或 24 驱动器控制器架或驱动器架，
 
 +
 .. 选择 * 硬件 * 。
-.. 查看强大功能 image:../media/sam1130_ss_hardware_power_icon_maint-e2800.gif[""] 和风扇 image:../media/sam1130_ss_hardware_fan_icon_maint-e2800.gif[""] * 磁盘架 * 下拉列表右侧的图标，用于确定哪个磁盘架的电源出现故障。
+.. 查看*Shelf*下拉列表右侧的电源image:../media/sam1130_ss_hardware_power_icon_maint-e2800.gif["电源图标"]和风扇image:../media/sam1130_ss_hardware_fan_icon_maint-e2800.gif["'风扇图标\""]图标，确定哪个磁盘架的电源出现故障。
 +
 如果组件出现故障，其中一个或两个图标将显示为红色。
 
@@ -82,7 +82,7 @@ CAUTION: 如果磁盘架中的第二个电源箱没有 * 最佳 * 状态，请�
 您必须更换警示 LED 亮起的电源。
 
 +
-image::../media/28_dwg_913w_power_supply_back_view_maint-e2800.gif[28 dwg 913w 电源背面图 maint e2800]
+image::../media/28_dwg_913w_power_supply_back_view_maint-e2800.gif[Power supply LEDs]
 
 +
 ** 电源 LED ：如果呈 * 稳定绿色 * ，则表示电源运行正常。如果为 * 关 * ，则表示电源出现故障，交流电源开关已关闭，交流电源线安装不正确或交流电源线输入电压不在边界内（交流电源线源端存在问题）。
@@ -111,7 +111,7 @@ Save all packing materials for use when returning the failed power supply.
 
 . Squeeze the latch on the power supply cam handle, and then open the cam handle to fully release the power supply from the mid plane.
 +
-image::../media/drw_2600_psu_maint-e2800.gif[DRW 2600 PSU 维护 e2800]
+image::../media/drw_2600_psu_maint-e2800.gif[拉动凸轮把手以从中间板释放电源]
 
 . Use the cam handle to slide the power supply out of the system.
 +

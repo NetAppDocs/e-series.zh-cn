@@ -10,7 +10,7 @@ summary: '要配置存储、请创建一个池或卷组、其中包含要在存�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

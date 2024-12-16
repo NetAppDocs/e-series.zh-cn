@@ -11,7 +11,7 @@ summary: 使用整合可用容量选项整合选定卷组上的现有可用块�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

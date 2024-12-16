@@ -27,7 +27,7 @@ summary: 更改 EF300 或 EF600 阵列的主机端口协议。
 .. 选择 * 支持资源 * 选项卡后，滚动到 * 查看存储阵列顶部属性 * 部分。
 .. 找到 * 机箱序列号 * ，并将此值复制到文本文件。
 +
-image::../media/sam1130_ss_e2800_storage_array_profile_sn_smid_copy_maint-ef600.gif[sam1130 ss e2800 存储阵列配置文件 SN SMID copy maint ef600]
+image::../media/sam1130_ss_e2800_storage_array_profile_sn_smid_copy_maint-ef600.gif[机箱序列号]
 
 
 
@@ -39,7 +39,7 @@ image::../media/sam1130_ss_e2800_storage_array_profile_sn_smid_copy_maint-ef600.
 .. 在文本框中键入 * 功能包子型号 ID* ，然后单击 * 查找 * 。
 .. 找到起始配置的功能包子型号 ID 。
 +
-image::../media/storage_array_profile2_maint-ef600.gif[存储阵列配置文件 2 维护 ef600]
+image::../media/storage_array_profile2_maint-ef600.gif[存储阵列配置文件]
 
 
 
@@ -596,7 +596,7 @@ NOTE: 如果未列出您的控制器子型号 ID ，请联系 https://mysupport.
 .. 在 * 更改功能包 * 下，找到 * 功能启用标识符 * 。
 .. 将此 32 位数字复制并粘贴到文本文件中。
 +
-image::../media/sam1130_ss_e2800_change_feature_pack_feature_enable_identifier_copy_maint-ef600.gif[sam1130 ss e2800 change feature pack 功能启用了标识符副本 maint ef600]
+image::../media/sam1130_ss_e2800_change_feature_pack_feature_enable_identifier_copy_maint-ef600.gif[更改Feature Pack对话框]
 
 
 
@@ -652,7 +652,7 @@ CAUTION: * 可能的数据丢失 * - 如果在执行 I/O 操作时继续执行�
 . 在 SANtricity 系统管理器中，选择菜单：设置 [ 系统 ] 。
 . 在 * 加载项 * 下，选择 * 更改功能包 * 。
 +
-image::../media/sam1130_ss_system_change_feature_pack_maint-ef600.gif[sam1130 ss system change feature pack maint ef600]
+image::../media/sam1130_ss_system_change_feature_pack_maint-ef600.gif[更改功能包]
 
 . 单击 * 浏览 * ，然后选择要应用的功能包。
 . 在字段中键入 * 更改 * 。

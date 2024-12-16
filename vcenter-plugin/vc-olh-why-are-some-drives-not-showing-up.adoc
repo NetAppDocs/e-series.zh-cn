@@ -10,7 +10,7 @@ summary: 在添加容量对话框中、并非所有驱动器都可用于向现�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

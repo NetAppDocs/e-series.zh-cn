@@ -39,14 +39,14 @@ NOTE: 此操作步骤 适用于同类磁盘架 IOM 热插拔或更换。这意�
 
 
  a| 
-image:../media/sas_cable.png[""]
+image:../media/sas_cable.png["SAS电缆"]
  a| 
 * SAS 缆线 *
 
 |===
 +
 .示例A：E5700控制器架、在标准SAS配置中具有三个DE212C/DE224磁盘架。
-image:../media/example_a_28_57.png[""]
+image:../media/example_a_28_57.png["SAS配置中的E5700控制器"]
 
 +
 .. 使用缆线将控制器 A 连接到第一个驱动器架的 IOM A 。
@@ -59,7 +59,7 @@ image:../media/example_a_28_57.png[""]
 
 +
 .示例B：一个E5700控制器架、在标准SAS配置中具有一个DE212C/DE224磁盘架。
-image:../media/example_b_57_28.png[""]
+image:../media/example_b_57_28.png["SAS配置中的E5700控制器"]
 
 +
 .. 使用缆线将控制器 A 连接到 IOM A
@@ -75,7 +75,7 @@ image:../media/example_b_57_28.png[""]
 
 
  a| 
-image:../media/power_cable_inst-hw-e2800-e5700.png[""]
+image:../media/power_cable_inst-hw-e2800-e5700.png["Power cables"]
  a| 
 * 电源线 *
 
@@ -99,7 +99,7 @@ CAUTION: 确认驱动器架电源开关已关闭。
 
 
  a| 
-* 示例：电源连接位于磁盘架背面。 *image:../media/trafford_power.png[""]
+*示例：电源连接位于磁盘架背面。*image:../media/trafford_power.png["电源架连接"]
 
 |===
 

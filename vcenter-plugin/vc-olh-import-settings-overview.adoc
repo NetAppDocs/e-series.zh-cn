@@ -10,7 +10,7 @@ summary: '导入设置功能是一个批处理操作、可用于将单个存储�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

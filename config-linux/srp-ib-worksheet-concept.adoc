@@ -13,7 +13,7 @@ summary: 使用此工作表记录基于 Infiniband 的 SRP 存储配置信息。
 [role="lead"]
 您可以生成并打印此页面的 PDF ，然后使用以下工作表记录基于 InfiniBand 的 SRP 存储配置信息。要执行配置任务，您需要此信息。
 
-image::../media/port_identifiers_ib_srp.gif[端口标识符 IB SRP]
+image::../media/port_identifiers_ib_srp.gif[基于IB的SRB端口标识符]
 
 
 

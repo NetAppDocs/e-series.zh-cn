@@ -11,7 +11,7 @@ summary: 您可以更改主机或主机集群的名称、主机操作系统类�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

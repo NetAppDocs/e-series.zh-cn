@@ -15,7 +15,7 @@ summary: 使用此工作表记录 FC 存储配置信息。
 
 图中显示了在两个分区中连接到 E 系列存储阵列的主机。一个分区用蓝线表示，另一个分区用红线表示。任何一个端口都有两条通往存储的路径（每个控制器一条）。
 
-image::../media/port_identifiers_host_and_target_conf-lin.gif[端口标识符主机和目标配置 LIN]
+image::../media/port_identifiers_host_and_target_conf-lin.gif[FC 网络配置]
 
 
 

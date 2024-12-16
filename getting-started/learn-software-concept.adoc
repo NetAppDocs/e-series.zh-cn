@@ -1,7 +1,7 @@
 ---
 permalink: getting-started/learn-software-concept.html 
 sidebar: sidebar 
-keywords: E-Series, eseries, E2800, E5700, EF300, EF600, SANtricity, E-Series software, E-Series user interface 
+keywords: E-Series, eseries, E4000, E2800, E5700, EF300, EF600, SANtricity, E-Series software, E-Series user interface 
 summary: E 系列系统包括用于存储配置和其他任务的 SANtricity 软件。 
 ---
 = SANtricity 软件概述
@@ -36,56 +36,56 @@ System Manager 提供了多种管理功能，包括：
 
 
  a| 
-image:../media/sam1130_icon_performance.gif[""] * 性能 *
+image:../media/sam1130_icon_performance.gif["性能"]*性能*
  a| 
 查看长达 30 天的性能数据，包括 I/O 延迟， IOPS ， CPU 利用率和吞吐量。
 
 
 
  a| 
-image:../media/sam1130_icon_volumes.gif[""] * 存储 *
+image:../media/sam1130_icon_volumes.gif["存储"]*存储*
  a| 
 使用池或卷组配置存储，并创建应用程序工作负载。
 
 
 
  a| 
-image:../media/sam1130_icon_async_mirroring.gif[""] * 数据保护 *
+image:../media/sam1130_icon_async_mirroring.gif["数据保护"]*数据保护*
  a| 
 使用快照，卷副本和远程镜像执行备份和灾难恢复。
 
 
 
  a| 
-image:../media/sam1130_icon_controllers.gif[""] * 硬件 *
+image:../media/sam1130_icon_controllers.gif["硬件"]*硬件*
  a| 
 检查组件状态并执行与这些组件相关的某些功能，例如分配热备用驱动器。
 
 
 
  a| 
-image:../media/sam1130_icon_alerts.gif[""] * 警报 *
+image:../media/sam1130_icon_alerts.gif["警报"]*警报*
  a| 
 向管理员通知存储阵列上发生的重要事件。可以通过电子邮件， SNMP 陷阱和系统日志发送警报。
 
 
 
  a| 
-image:../media/sam1140_icon_active_directory.gif[""] * 访问管理 *
+image:../media/sam1140_icon_active_directory.gif["'访问管理\""]*访问管理*
  a| 
 配置用户身份验证，以要求用户使用分配的凭据登录到系统。
 
 
 
  a| 
-image:../media/sam1130_icon_settings.gif[""] * 系统设置 *
+image:../media/sam1130_icon_settings.gif["系统设置"]*系统设置*
  a| 
 配置其他系统性能功能，例如 SSD 缓存和自动加载平衡。
 
 
 
  a| 
-image:../media/sam1130_icon_support.gif[""] * 支持 *
+image:../media/sam1130_icon_support.gif["支持"]*支持*
  a| 
 查看诊断数据，管理升级和配置 AutoSupport ，此功能可监控存储阵列的运行状况并将自动派单发送给技术支持。
 
@@ -94,7 +94,7 @@ image:../media/sam1130_icon_support.gif[""] * 支持 *
 
 == SANtricity 统一管理器
 
-Unified Manager 是一款基于 Web 的软件，用于管理整个域。从中央视图中，您可以查看所有较新的 E 系列和 EF 系列阵列的状态，例如 E2800 ， EF280 ， EF300 ， E5700 ， EF570 ， 和 EF600 。您还可以对选定存储阵列执行批处理操作。
+Unified Manager 是一款基于 Web 的软件，用于管理整个域。在中央视图中、您可以查看所有较新的E系列和EF系列阵列的状态、例如E4000、E2800、EF280、EF300、E5700、EF570和EF600。您还可以对选定存储阵列执行批处理操作。
 
 Unified Manager 与 Web 服务代理一起安装在管理服务器上。要访问 Unified Manager ，请打开浏览器并输入指向安装了 Web 服务代理的服务器的 URL 。
 
@@ -104,56 +104,56 @@ Unified Manager 提供了多种管理功能，包括：
 
 
  a| 
-image:../media/artboard_9.png[""] * 发现存储阵列 *
+image:../media/artboard_9.png["发现存储阵列"]*发现存储阵列*
  a| 
 找到并添加要在组织网络中管理的存储阵列。然后，您可以从一个页面查看所有存储阵列的状态。
 
 
 
  a| 
-image:../media/artboard_11.png[""] * 启动 *
+image:../media/artboard_11.png["启动"]*发布*
  a| 
 打开 System Manager 实例，对特定存储阵列执行单独的管理操作。
 
 
 
  a| 
-image:../media/sam1130_icon_system.gif[""] * 导入设置 *
+image:../media/sam1130_icon_system.gif["导入设置"]*导入设置*
  a| 
 执行从一个存储阵列到多个阵列的批量导入，包括警报， AutoSupport 和目录服务的设置。
 
 
 
  a| 
-image:../media/sam1130_icon_async_mirroring.gif[""] * 镜像 *
+image:../media/sam1130_icon_async_mirroring.gif["镜像"]*镜像*
  a| 
 在两个存储阵列之间配置异步或同步镜像对。
 
 
 
  a| 
-image:../media/artboard_10.png[""] * 管理组 *
+image:../media/artboard_10.png["管理组"]*管理组*
  a| 
 将存储阵列组织成组，以便于管理。
 
 
 
  a| 
-image:../media/sam1130_icon_upgrade_center.gif[""] * 升级中心 *
+image:../media/sam1130_icon_upgrade_center.gif["升级中心"]*升级中心*
  a| 
 升级多个存储阵列上的 SANtricity OS 软件。
 
 
 
  a| 
-image:../media/sam1140_icon_certs.gif[""] * 证书 *
+image:../media/sam1140_icon_certs.gif["证书"]*证书*
  a| 
 为多个存储阵列创建证书签名请求（ CSR ），导入证书以及管理现有证书。
 
 
 
  a| 
-image:../media/sam1140_icon_active_directory.gif[""] * 访问管理 *
+image:../media/sam1140_icon_active_directory.gif["访问管理"]*访问管理*
  a| 
 配置用户身份验证，以要求用户使用分配的凭据登录到 Unified Manager 。
 

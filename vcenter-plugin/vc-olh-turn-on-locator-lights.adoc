@@ -11,7 +11,7 @@ summary: 您可以找到驱动器、以物理方式识别构成选定池、卷�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

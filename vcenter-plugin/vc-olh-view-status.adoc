@@ -10,7 +10,7 @@ summary: 从适用于vCenter的存储插件或vSphere Client查看系统状态
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

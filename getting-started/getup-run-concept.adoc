@@ -1,7 +1,7 @@
 ---
 permalink: getting-started/getup-run-concept.html 
 sidebar: sidebar 
-keywords: E-Series, eseries, E2800, E5700, EF300, EF600, 
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, E4000 
 summary: 要启动并运行 E 系列系统，您需要安装硬件组件，配置主机系统以及配置存储。 
 ---
 = E系列快速入门
@@ -21,6 +21,7 @@ summary: 要启动并运行 E 系列系统，您需要安装硬件组件，配�
 * link:../install-hw-ef600/index.html["EF600 或 EF300 系列，带 24 个驱动器架"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2842063["E2800/EF280 或 E5700/EF570 系列，配有 12 个或 24 个驱动器的磁盘架"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2842061["E2800 或 E5700 系列，含 60 个驱动器的磁盘架"^]
+* link:../install-hw-e4000/index.html["具有12个或60个驱动器的磁盘架的E4000系列"^]
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] 设置机柜

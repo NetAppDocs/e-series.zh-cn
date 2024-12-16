@@ -56,7 +56,7 @@ SANtricity System Manager 中的恢复 Guru 可监控存储阵列中的驱动器
 The drive drawer's Attention LED (amber) blinks so you can open the correct drive drawer to identify which drive to replace.
 
 +
-image::../media/2860_dwg_attn_led_on_drawer_maint-e2800.gif[2860 dwg 已在抽盒维护 e2800 上启动]
+image::../media/2860_dwg_attn_led_on_drawer_maint-e2800.gif[E2800驱动器抽屉上的警示LED]
 
 +
 * （ 1 ） * _ 警示 LED_
@@ -65,7 +65,7 @@ image::../media/2860_dwg_attn_led_on_drawer_maint-e2800.gif[2860 dwg 已在抽�
 .. Using the extended levers, carefully pull the drive drawer out until it stops.
 .. 查看驱动器抽屉的顶部，找到每个驱动器前面的警示 LED 。
 +
-image::../media/2860_dwg_amber_on_drive_maint-e2800.gif[2860 dwg 琥珀色驱动器维护 e2800]
+image::../media/2860_dwg_amber_on_drive_maint-e2800.gif[E2800驱动器抽屉上的警示LED]
 
 
 
@@ -75,7 +75,7 @@ image::../media/2860_dwg_amber_on_drive_maint-e2800.gif[2860 dwg 琥珀色驱动
 
 驱动器抽屉警示 LED 位于每个驱动器前面的左侧，驱动器把手上的警示图标位于 LED 后面。
 
-image::../media/28_dwg_e2860_de460c_attention_led_drive_maint-e2800.gif[28 dwg e2860 de460c 警示 LED 驱动器维护 e2800]
+image::../media/28_dwg_e2860_de460c_attention_led_drive_maint-e2800.gif[驱动器盘位上的警示图标和LED]
 
 * （ 1 ） * _ 注意图标 _
 
@@ -99,22 +99,22 @@ image::../media/28_dwg_e2860_de460c_attention_led_drive_maint-e2800.gif[28 dwg e
 驱动器弹簧上的凸轮把手部分打开，驱动器将从抽盒中释放。
 
 +
-image::../media/trafford_drive_rel_button_maint-e2800.gif[Trafford 驱动器重新启动按钮维护 e2800]
+image::../media/trafford_drive_rel_button_maint-e2800.gif[驱动器抽屉上的橙色释放闩锁]
 
 +
 * （ 1 ） * _橙色 释放闩锁 _
 
 . Open the cam handle, and lift out the drive slightly.
-. Wait 30 seconds.
+. Wait 60 seconds.
 . Use the cam handle to lift the drive from the shelf.
 +
-image::../media/92_dwg_de6600_install_or_remove_drive_maint-e2800.gif[92 dwg de6600 安装或删除驱动器维护 e2800]
+image::../media/92_dwg_de6600_install_or_remove_drive_maint-e2800.gif[使用凸轮把手从磁盘架上提起驱动器]
 
 . Place the drive on an antistatic, cushioned surface away from magnetic fields.
-. 等待 30 秒，使软件识别出驱动器已被删除。
+. 等待 60 秒，使软件识别出驱动器已被删除。
 +
 
-NOTE: 如果您意外删除了活动驱动器，请至少等待 30 秒，然后重新安装它。有关恢复操作步骤，请参阅存储管理软件。
+NOTE: 如果您意外删除了活动驱动器，请至少等待 60 秒，然后重新安装它。有关恢复操作步骤，请参阅存储管理软件。
 
 
 
@@ -134,7 +134,7 @@ CAUTION: * 可能丢失数据访问 * - 将驱动器抽盒推回机箱时，切�
 . Raise the cam handle on the new drive to vertical.
 . Align the two raised buttons on each side of the drive carrier with the matching gap in the drive channel on the drive drawer.
 +
-image::../media/28_dwg_e2860_de460c_drive_cru_maint-e2800.gif[28 dwg e2860 de460c 驱动器 cru maint e2800]
+image::../media/28_dwg_e2860_de460c_drive_cru_maint-e2800.gif[驱动器托盘上的凸起按钮必须与驱动器抽盒上的驱动器通道匹配]
 
 +
 驱动器托架右侧的 * （ 1 ） * _raised 按钮
@@ -160,7 +160,7 @@ The green Activity LED for the replaced drive on the front of the drive drawer c
 . 检查您更换的驱动器上的电源 LED 和警示 LED 。（首次插入驱动器时，其警示 LED 可能会亮起。但是， LED 应在一分钟内熄灭。）
 +
 ** 电源 LED 亮起或闪烁，警示 LED 熄灭：表示新驱动器正常工作。
-** 电源 LED 熄灭：表示驱动器可能安装不正确。Remove the drive, wait 30 seconds, and then reinstall it.
+** 电源 LED 熄灭：表示驱动器可能安装不正确。Remove the drive, wait 60 seconds, and then reinstall it.
 ** 警示 LED 亮起：表示新驱动器可能出现故障。Replace it with another new drive.
 
 

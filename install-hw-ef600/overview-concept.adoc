@@ -13,4 +13,4 @@ summary: 查看安装和设置 EF300 或 EF600 的过程。
 [role="lead"]
 在安装和设置新存储系统之前，请熟悉安装过程：
 
-image::../media/ef600_isi_workflow_v_2_inst-hw-ef600.bmp[ef600 ISI 工作流 v 2 inst HW ef600]
+image::../media/ef600_isi_workflow_v_2_inst-hw-ef600.bmp[EF600和和EF300安装流程工作流]

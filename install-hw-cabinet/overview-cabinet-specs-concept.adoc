@@ -23,7 +23,7 @@ summary: 查看机柜安装概述和规格。
 
 下图显示了机柜的正面视图（左侧）和背面视图（右侧）。
 
-image::../media/83000_07_dwg_3040_cabinet_with_callouts.gif[83000 07 dwg 3040 机柜，带标注]
+image::../media/83000_07_dwg_3040_cabinet_with_callouts.gif[3040机柜概述]
 
 |===
 

@@ -2,7 +2,7 @@
 permalink: config-linux/fc-express-setup-task.html 
 sidebar: sidebar 
 keywords:  
-summary:  
+summary: 您可以在E系列系统上的Linux主机上使用光纤通道协议。 
 ---
 = 光纤通道快速设置
 :allow-uri-read: 
@@ -10,3 +10,5 @@ summary:
 :imagesdir: ../media/
 
 
+[role="lead"]
+您可以在E系列系统上的Linux主机上使用光纤通道协议。

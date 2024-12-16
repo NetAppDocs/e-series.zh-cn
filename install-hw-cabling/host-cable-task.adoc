@@ -22,9 +22,12 @@ summary: 您可以使用缆线将主机直接连接到控制器或使用交换�
 下图显示了一个连接示例。为了帮助确保最佳性能，请使用所有可用的主机适配器端口。
 
 .两个主机和两个控制器
-image::../media/topology_host_direct_generic_web_low.png[拓扑主机直接通用 Web 低]
+image::../media/topology_host_direct_generic_web_low.png[两台主机和两个控制器布线]
 
 * （ 1 ） * _ 将每个主机适配器端口直接连接到控制器上的主机端口。 _
+
+
+NOTE: 对于E4000、连接到主机端口e0a和e0b。
 
 
 
@@ -35,8 +38,11 @@ image::../media/topology_host_direct_generic_web_low.png[拓扑主机直接通�
 下图显示了一个连接示例。对于提供配置功能的交换机，您应隔离每个启动程序和目标对。
 
 .两台主机和两台交换机
-image::../media/topology_host_fabric_generic.png[拓扑主机网络结构通用]
+image::../media/topology_host_fabric_generic.png[两台主机和两台交换机的布线]
 
 * （ 1 ） * _ 将每个主机适配器直接连接到交换机。 _
 
 * （ 2 ） * _ 将每个交换机直接连接到控制器上的主机端口。要帮助确保最佳性能，请使用所有可用的主机适配器端口。 _
+
+
+NOTE: 对于E4000、连接到主机端口e0a和e0b。

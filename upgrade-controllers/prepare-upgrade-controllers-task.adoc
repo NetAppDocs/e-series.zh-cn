@@ -1,7 +1,7 @@
 ---
 permalink: upgrade-controllers/prepare-upgrade-controllers-task.html 
 sidebar: sidebar 
-keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, upgrade controller requirements, upgrade controller key management, prepare upgrade controller, upgrade controller preparation, preparing controller upgrade 
+keywords: E-Series, eseries, E4000, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, upgrade controller requirements, upgrade controller key management, prepare upgrade controller, upgrade controller preparation, preparing controller upgrade 
 summary: 准备通过保存驱动器安全密钥，收集支持数据以及使控制器脱机来升级控制器。 
 ---
 = 准备升级控制器
@@ -94,10 +94,9 @@ NOTE: 要检索客户端和服务器证书，存储阵列必须处于最佳状�
 
 . 使用 GUI 或 CLI 收集有关存储阵列的支持数据：
 +
-** 使用 System Manager 或 Storage Manager 中的阵列管理窗口收集并保存存储阵列的支持包。
+** 使用System Manager收集并保存存储阵列的支持包。
 +
 *** 在 System Manager 中，选择菜单： Support[ 支持中心 > 诊断选项卡 ] 。然后选择 * 收集支持数据 * 并单击 * 收集 * 。
-*** 从阵列管理窗口工具栏中，选择菜单： Monitor[ 运行状况 > 手动收集支持数据 ] 。然后，输入一个名称并指定系统上要存储支持包的位置。
 +
 此文件将保存在浏览器的 "Downloads" 文件夹中，名为 `support-data.7z` 。
 
@@ -133,7 +132,7 @@ CAUTION: * 可能的数据丢失 * - 如果在执行 I/O 操作时继续执行�
 +
 此时将显示更改缓存设置对话框。存储阵列上的所有卷都会显示在此对话框中。
 
-.. 选择 * 基本 * 选项卡并更改读取缓存和写入缓存的设置。
+.. 选择*Basic*选项卡并禁用读取缓存和写入缓存设置。
 .. 单击 * 保存 * 。
 .. 等待五分钟，以便将缓存中的所有数据转储到磁盘。
 

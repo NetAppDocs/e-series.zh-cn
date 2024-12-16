@@ -6,6 +6,8 @@ summary: 管理存储
 ---
 = 管理存储
 :allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
 
 
 [role="lead"]

@@ -230,9 +230,6 @@ NOTE: 此选项仅在 iSCSI 环境中可用。它在基于 RoCE 的 NVMe 环境�
 . 保留其余复选框的默认值，然后选择 * 确定 * 。
 . 返回到 * 连接到目标 * 对话框后，再次选择 * 确定 * 。
 . 对要建立的存储阵列的每个启动程序端口和会话（逻辑路径）重复此操作步骤。
-+
-image::../media/82012_00.gif[82012 00]
-
 
 
 
@@ -293,7 +290,7 @@ NOTE: 如果命令失败（例如， returns `Packet needs to be fragmented but 
 
 建议的配置包括两个启动程序端口和四个目标端口以及一个或多个 VLAN 。
 
-image::../media/50001_01_conf-win.gif[50001 会议成功]
+image::../media/50001_01_conf-win.gif[iSCSI端口标识符]
 
 
 

@@ -6,11 +6,14 @@ summary: 已知问题
 ---
 = 发行说明
 :allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
 
 
 [role="lead"]
 此站点以外的站点提供了发行说明。系统将提示您使用 NetApp 支持站点凭据登录。
 
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP3334464["11.90发行说明"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2885976["11.80发行说明"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2874254["11.70 发行说明"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2857931["11.60 发行说明"^]

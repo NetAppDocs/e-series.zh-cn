@@ -39,7 +39,7 @@ NOTE: 电源更换操作步骤 适用于更换 IOM 。要更换 IOM ，请执行
 
 下图显示了一个示例 E2812 控制器架， E2824 控制器架以及带有两个电源（电源风扇箱）的 EF280 闪存阵列。DE212C 和 DE224C 驱动器架是相同的，但它们包含 I/O 模块（ IOM ），而不是控制器箱。
 
-image::../media/28_dwg_e2812_power_fan_canisters.gif[28 个 dwg e2812 电源风扇箱]
+image::../media/28_dwg_e2812_power_fan_canisters.gif[带有电源风扇箱的E2800]
 
 * （ 1 ） * _Controller shelf with two power supplies （ power-fan canbos ） below the controller canbos_
 
@@ -85,11 +85,11 @@ NOTE: 如果磁盘架中的第二个电源（电源风扇箱）未处于最佳�
 
 下图显示了具有两个电源箱的 DE460C 驱动器架的背面：
 
-image::../media/28_dwg_de460c_rear_no_callouts_maint-e2800.gif[28 dwg de460c 背面无标注 maint e2800]
+image::../media/28_dwg_de460c_rear_no_callouts_maint-e2800.gif[DE460C、带电源罐]
 
 下图显示了一个电源箱：
 
-image::../media/28_dwg_e2860_de460c_psu_maint-e2800.gif[28 dwg e2860 de460c PSU 维护 e2800]
+image::../media/28_dwg_e2860_de460c_psu_maint-e2800.gif[电源罐]
 
 
 
@@ -136,11 +136,11 @@ NOTE: 如果磁盘架中的第二个电源箱状态不是最佳，或者 Recover
 
 下图显示了一个风扇箱：
 
-image::../media/28_dwg_e2860_de460c_single_fan_canister_no_callouts_maint-e2800.gif[28 dwg e2860 de460c 单风扇箱，无标注 maint e2800]
+image::../media/28_dwg_e2860_de460c_single_fan_canister_no_callouts_maint-e2800.gif[风扇箱]
 
 下图显示了具有两个风扇箱的 DE460C 磁盘架的背面：
 
-image::../media/28_dwg_de460c_rear_no_callouts_maint-e2800.gif[28 dwg de460c 背面无标注 maint e2800]
+image::../media/28_dwg_de460c_rear_no_callouts_maint-e2800.gif[DE460c、带两个风扇箱]
 
 
 CAUTION: * 可能的设备损坏 * - 如果在通电的情况下更换风扇箱，则必须在 30 分钟内完成更换操作步骤，以防止设备过热。

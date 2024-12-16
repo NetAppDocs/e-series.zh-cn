@@ -96,7 +96,7 @@ serviceAllowedIndicator=forceOnWarning;"
 ** 如果命令成功，则无需停止主机 I/O 活动。抽盒中的所有驱动器均位于具有抽盒丢失保护的池或卷组中。转至 <<第 2 步：拆下缆线链>>。
 +
 
-CAUTION: * 可能对驱动器造成的损坏 * —在命令完成后等待 30 秒，然后再打开驱动器抽盒。等待 30 秒后，驱动器将发生转速下降，从而防止可能对硬件造成的损坏。
+CAUTION: * 可能对驱动器造成的损坏 * —在命令完成后等待 60 秒，然后再打开驱动器抽盒。等待 60 秒后，驱动器将发生转速下降，从而防止可能对硬件造成的损坏。
 
 ** 如果显示警告，指出此命令无法完成，则必须先停止主机 I/O 活动，然后再删除此抽盒。显示此警告的原因是，受影响抽盒中的一个或多个驱动器位于不具有抽盒丢失保护的池或卷组中。为了避免丢失数据，您必须完成以下步骤以停止主机 I/O 活动并关闭驱动器架和控制器架的电源。
 
@@ -122,7 +122,7 @@ CAUTION: * 可能的数据丢失 * - 如果在执行 I/O 操作时继续执行�
 当需要将缓存数据写入驱动器时，每个控制器背面的绿色缓存活动 LED 亮起。您必须等待此 LED 关闭。
 
 +
-image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[28 个 dwg 2800 控制器已连接到主维护 2800]
+image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[E2800控制器上的缓存活动LED]
 
 +
 * （ 1 ） * _Cache 活动 LED
@@ -177,7 +177,7 @@ CAUTION: * 可能的硬件损坏 * - 如果驱动器托架已打开电源，则�
 此图显示了从左侧橙色卡舌中伸出并释放的风扇箱手柄。
 
 +
-image::../media/28_dwg_e2860_de460c_fan_canister_handle_with_callout_maint-e2800.gif[28 dwg e2860 de460c 风扇箱手柄，带标注 maint e2800]
+image::../media/28_dwg_e2860_de460c_fan_canister_handle_with_callout_maint-e2800.gif[风扇罐手柄]
 
 +
 * （ 1 ） * _ 风扇箱把手 _
@@ -198,7 +198,7 @@ CAUTION: * 由于过热可能导致设备损坏 * - 如果托盘已打开电源�
 The top cable chain is attached to drive drawer 1.The bottom cable chain is attached to drive drawer 5.The callouts for drive drawer 1 are provided.
 
 +
-image::../media/trafford_cable_rail_1_maint-e2800.gif[Trafford 缆线导轨 1 维护 e2800]
+image::../media/trafford_cable_rail_1_maint-e2800.gif[驱动器抽屉的电缆链和连接器]
 
 +
 * （ 1 ） * _Cable chain_
@@ -216,7 +216,7 @@ image::../media/trafford_cable_rail_1_maint-e2800.gif[Trafford 缆线导轨 1 �
 +
 .. 使用手电筒找到连接到机箱中垂直导轨的缆线链末端的橙色环。
 +
-image::../media/trafford_cable_rail_3_maint-e2800.gif[Trafford 缆线导轨 3 维护 e2800]
+image::../media/trafford_cable_rail_3_maint-e2800.gif[用于驱动器抽屉的垂直导轨和电缆链的橙色环]
 
 +
 * （ 1 ） * 垂直导轨上的橙色环 _
@@ -235,7 +235,7 @@ image::../media/trafford_cable_rail_3_maint-e2800.gif[Trafford 缆线导轨 3 �
 The figure shows the horizontal connector on the right and the cable chain disconnected and partially pulled out on the left side.
 
 +
-image::../media/trafford_cable_rail_2_maint-e2800.gif[Trafford 缆线导轨 2 维护 e2800]
+image::../media/trafford_cable_rail_2_maint-e2800.gif[用于水平导轨的橙色环和用于驱动器抽屉的电缆链]
 
 +
 * （ 1 ） * 水平导轨上的橙色环 _
@@ -312,7 +312,7 @@ CAUTION: * 可能丢失数据访问 * - 磁场可能会破坏驱动器上的所�
 . Using the extended levers, carefully pull the drive drawer out until it stops.Do not completely remove the drive drawer from the drive shelf.
 . 如果已创建并分配卷，请使用永久标记来记下每个驱动器的确切位置。For example, using the following drawing as a reference, write the appropriate slot number on the top of each drive.
 +
-image::../media/dwg_trafford_drawer_with_hdds_callouts_maint-e2800.gif[带 HDD 标注的 ｛ \f2 DWG Trafford ｝ 抽盒维护 e2800]
+image::../media/dwg_trafford_drawer_with_hdds_callouts_maint-e2800.gif[驱动器插槽编号]
 
 +
 
@@ -324,7 +324,7 @@ CAUTION: * 可能会丢失数据访问权限 * - 请务必在删除每个驱动�
 .. Raise the drive handle to vertical.
 .. Use the handle to lift the drive from the drive drawer.
 +
-image::../media/92_dwg_de6600_install_or_remove_drive_maint-e2800.gif[92 dwg de6600 安装或删除驱动器维护 e2800]
+image::../media/92_dwg_de6600_install_or_remove_drive_maint-e2800.gif[使用凸轮把手将驱动器从抽盒中提起]
 
 .. Place the drive on a flat, static-free surface and away from magnetic devices.
 
@@ -333,7 +333,7 @@ image::../media/92_dwg_de6600_install_or_remove_drive_maint-e2800.gif[92 dwg de6
 +
 .. Locate the plastic release lever on each side of the drive drawer.
 +
-image::../media/92_pht_de6600_drive_drawer_release_lever_maint-e2800.gif[92 PHT de6600 驱动器抽盒释放杆维护 e2800]
+image::../media/92_pht_de6600_drive_drawer_release_lever_maint-e2800.gif[释放拉杆以卸下抽盒]
 
 +
 * （ 1 ） * 驱动器抽盒释放杆 _
@@ -357,7 +357,7 @@ image::../media/92_pht_de6600_drive_drawer_release_lever_maint-e2800.gif[92 PHT 
 The lock-out tumbler assembly is a safety feature that prevents you from being able to open more than one drive drawer at one time.
 
 +
-image::../media/92_pht_de6600_lock_out_tumbler_detail_maint-e2800.gif[92 个 PHT de6600 锁定了 umbler detail maint e2800]
+image::../media/92_pht_de6600_lock_out_tumbler_detail_maint-e2800.gif[锁定翻转器和抽屉导轨]
 
 +
 * （ 1 ） * _Lock-out tumbler_
@@ -419,7 +419,7 @@ CAUTION: * 设备故障风险 * —确保将连接器滑入导轨。If the conne
 此图显示了机箱中第二个驱动器抽盒的水平和垂直导轨。
 
 +
-image::../media/2860_dwg_both_guide_rails_maint-e2800.gif[2860 dwg 两个导轨 maint e2800]
+image::../media/2860_dwg_both_guide_rails_maint-e2800.gif[水平和垂直导轨]
 
 +
 * （ 1 ） * _ 水平导轨 _
@@ -491,7 +491,7 @@ CAUTION: * 可能丢失数据访问 * - 您必须将每个驱动器安装在驱�
 .. Using the extended levers, carefully pull the drive drawer out until it stops.Do not completely remove the drive drawer from the drive shelf.
 .. Determine which drive to install in each slot by using the notes you made when removing the drives.
 +
-image::../media/dwg_trafford_drawer_with_hdds_callouts_maint-e2800.gif[带 HDD 标注的 ｛ \f2 DWG Trafford ｝ 抽盒维护 e2800]
+image::../media/dwg_trafford_drawer_with_hdds_callouts_maint-e2800.gif[驱动器插槽编号]
 
 .. Raise the handle on the drive to vertical.
 .. Align the two raised buttons on each side of the drive with the notches on the drawer.
@@ -499,14 +499,14 @@ image::../media/dwg_trafford_drawer_with_hdds_callouts_maint-e2800.gif[带 HDD �
 The figure shows the right side view of a drive, showing the location of the raised buttons.
 
 +
-image::../media/28_dwg_e2860_de460c_drive_cru_maint-e2800.gif[28 dwg e2860 de460c 驱动器 cru maint e2800]
+image::../media/28_dwg_e2860_de460c_drive_cru_maint-e2800.gif[驱动器托盘上的凸起按钮必须与驱动器抽盒上的驱动器通道匹配]
 
 +
 驱动器右侧的 * （ 1 ） * _raised 按钮
 
 .. 竖直向下放下驱动器，确保驱动器一直向下按到托架中，然后向下旋转驱动器把手，直到驱动器卡入到位。
 +
-image::../media/92_dwg_de6600_install_or_remove_drive_maint-e2800.gif[92 dwg de6600 安装或删除驱动器维护 e2800]
+image::../media/92_dwg_de6600_install_or_remove_drive_maint-e2800.gif[使用手柄将驱动器降到抽盒上]
 
 .. 重复上述步骤以安装所有驱动器。
 

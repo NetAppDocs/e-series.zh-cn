@@ -28,14 +28,14 @@ summary: 要安装 EF300 或 EF600 ，请创建一个帐户并注册硬件。
 
 
  a| 
-image:../media/ef600_w_faceplate.png[""]
+image:../media/ef600_w_faceplate.png["已安装驱动器和挡板的磁盘架"]
  a| 
 已安装驱动器的磁盘架（挡板和端盖单独包装）
 
 
 
  a| 
-image:../media/superrails_inst-hw-ef600.png[""]
+image:../media/superrails_inst-hw-ef600.png["机架式硬件"]
  a| 
 机架式硬件
 
@@ -49,7 +49,7 @@ The following table identifies the types of cables you might receive.如果您�
 
 
  a| 
-image:../media/cable_ethernet_inst-hw-ef600.png[""]
+image:../media/cable_ethernet_inst-hw-ef600.png["RJ-45以太网电缆"]
  a| 
 RJ-45 以太网缆线（如果已订购）
  a| 
@@ -58,7 +58,7 @@ RJ-45 以太网缆线（如果已订购）
 
 
  a| 
-image:../media/cable_io_inst-hw-ef600.png[""]
+image:../media/cable_io_inst-hw-ef600.png["I/O电缆"]
  a| 
 I/O 缆线（如果已订购）
  a| 
@@ -67,7 +67,7 @@ I/O 缆线（如果已订购）
 
 
  a| 
-image:../media/cable_power_inst-hw-ef600.png[""]
+image:../media/cable_power_inst-hw-ef600.png["Power cables"]
  a| 
 电源线（如果订购）
  a| 
@@ -80,28 +80,28 @@ image:../media/cable_power_inst-hw-ef600.png[""]
 
 
  a| 
-image:../media/screwdriver_inst-hw-ef600.png[""]
+image:../media/screwdriver_inst-hw-ef600.png["Phillips #2 screwdriver"]
  a| 
 Phillips #2 screwdriver
 
 
 
  a| 
-image:../media/flashlight_inst-hw-ef600.png[""]
+image:../media/flashlight_inst-hw-ef600.png["Flashlight"]
  a| 
 Flashlight
 
 
 
  a| 
-image:../media/wrist_strap_inst-hw-ef600.png[""]
+image:../media/wrist_strap_inst-hw-ef600.png["ESD 腕带"]
  a| 
 ESD 腕带
 
 
 
  a| 
-image:../media/2u_rackspace_inst-hw-ef600.png[""]
+image:../media/2u_rackspace_inst-hw-ef600.png["2U机架"]
  a| 
 2U 机架空间：标准 19 英寸（ 48.30 厘米）机架，用于安装以下尺寸的 2U 磁盘架。
 
@@ -121,7 +121,7 @@ NOTE: 使用第三方机柜可能会对电源线进行发生原因，以限制�
 
 
  a| 
-image:../media/management_station_inst-hw-ef600_g60b3.png[""]
+image:../media/management_station_inst-hw-ef600_g60b3.png["管理工作站、支持使用浏览器安装管理软件"]
  a| 
 管理软件支持的浏览器：
 

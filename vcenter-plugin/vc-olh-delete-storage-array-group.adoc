@@ -11,7 +11,7 @@ summary: 删除不再需要的一个或多个存储阵列组。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

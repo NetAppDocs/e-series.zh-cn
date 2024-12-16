@@ -129,3 +129,16 @@ NOTE: 请勿再次调用 * POST ： /certificates * 或 * POST ： /certifics/re
 通过使用匿名或非公开浏览会话，您可以打开与服务器的连接，而无需使用先前浏览会话中保存的任何数据。
 
 
+
+
+
+== 登录锁定功能
+
+只能通过REST API进行配置、您可以限制嵌入式Web服务和代理Web服务的登录尝试次数。根据您的设置、一旦超过Web服务的登录尝试次数、锁定功能将启用。
+
+.步骤
+. 登录到 link:install-login-task.html["交互式 API 文档"]。
+. 转到右上角的下拉菜单，然后选择 * 。 v2* 。
+. 单击*get:/settings /lockout*端点以检索锁定设置。
+. 单击*POST：/SETTINGS/LOCD*端点，然后单击*TURE IT OUT *以配置锁定设置。
+

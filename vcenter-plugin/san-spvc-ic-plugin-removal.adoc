@@ -10,7 +10,7 @@ summary: 删除 vCenter 插件。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

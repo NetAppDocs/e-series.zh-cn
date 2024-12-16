@@ -37,7 +37,7 @@ NOTE: 此插件不能直接替代System Manager界面、而是嵌入在存储阵
 
 有关 vCenter 环境中通信的详细信息，请参见下图。
 
-image:../media/vcenter_communication2.png[""]
+image:../media/vcenter_communication2.png["vCenter通信环境"]
 
 
 

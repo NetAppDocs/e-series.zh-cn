@@ -10,7 +10,7 @@ summary: '数据保证(Data Assurance、DA)实施了T10保护信息(Protection I
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

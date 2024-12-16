@@ -125,7 +125,7 @@ NOTE: 时间戳条目是多余的。
 
 === 配置 AutoSupport 交付方法
 
-您可以将 AutoSupport 功能配置为使用 HTTPS ， HTTP 或 SMTP 交付方法。HTTPS 是默认传送方法。
+您可以将AutoSupport功能配置为使用HTTPS或SMTP传输方法。HTTPS 是默认传送方法。
 
 . 访问工作目录中的 ASUPConfig.xml 文件。
 . 在字符串 ` <delivery type="n">` 中，按表中所述输入 1 ， 2 或 3 ：
@@ -146,15 +146,6 @@ NOTE: 时间戳条目是多余的。
 
  a| 
 2.
- a| 
-* HTTP *
-
-<delivery type="2">
-
-
-
- a| 
-3.
  a| 
 * SMTP * —要将 AutoSupport 传送类型正确配置为 SMTP ，必须包括 SMTP 邮件服务器地址以及发件人和收件人用户电子邮件，如下例所示：
 

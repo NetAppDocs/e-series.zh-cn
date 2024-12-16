@@ -11,7 +11,7 @@ summary: 您可以查看SSD缓存的标称统计信息和详细统计信息。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -1,0 +1,81 @@
+---
+permalink: maintenance-e4000/replace-controller-requirements-e4000.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= 更换 E4000 控制器的要求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在更换或添加 E4000 控制器之前，请查看要求和注意事项。
+
+每个控制器箱都包含一个控制器卡和一个电池。您可以将另一个控制器添加到单工配置中，也可以更换出现故障的控制器。
+
+
+
+== 添加第二个控制器的要求
+
+您可以向E4000控制器架的单工版本添加第二个控制器箱。在添加第二个控制器之前，您必须：
+
+* 与当前安装的控制器箱部件号相同的新控制器箱。
++
+
+NOTE: 这不适用于StorageGRID设备。
+
+* 连接新控制器端口所需的所有缆线，收发器，交换机和主机总线适配器（ HBA ）。
++
+有关兼容硬件的信息，请参阅 https://mysupport.netapp.com/NOW/products/interoperability["NetApp 互操作性表"]或 http://hwu.netapp.com/home.aspx["NetApp Hardware Universe"]。
+
+* 主机上安装了多路径驱动程序，以便您可以同时使用这两个控制器。有关说明，请参阅 https://docs.netapp.com/us-en/e-series/config-linux/index.html["Linux 快速配置"]、 https://docs.netapp.com/us-en/e-series/config-windows/index.html["Windows 快速配置"]或 https://docs.netapp.com/us-en/e-series/config-vmware/index.html["VMware 快速配置"]。
+* ESD 腕带，或者您已采取其他防静电预防措施。
+* 1 号十字螺丝刀。
+* 用于标识新缆线的标签。
+* 一个管理工作站，其浏览器可访问控制器的 SANtricity 系统管理器。(要打开System Manager界面、请将浏览器指向控制器的域名或IP地址。)
++
+您也可以使用命令行界面（ CLI ）执行某些过程。对于SANtricity系统管理器(11.60及更高版本)、您可以从系统管理器下载命令行界面软件包(zip文件)。为此，请进入System Manager中的*设置>系统>加载项>命令行界面*。然后，您可以从操作系统提示符处执行问题描述命令行界面命令，例如 DOS C ：提示符。
+
+
+
+
+
+== 更换控制器的要求
+
+更换发生故障的控制器箱时、您必须从原始控制器箱中取出电池、HIC和DIMM、然后将其安装到更换用的控制器箱中。
+
+您可以通过以下两种方式确定控制器箱是否发生故障：
+
+* SANtricity System Manager 中的恢复 Guru 可指示您更换控制器箱。
+* 控制器箱上的琥珀色警示 LED 亮起，表示控制器出现故障。
+
+
+在更换控制器之前，您必须具备以下条件：
+
+* 与要更换的控制器箱部件号相同的替代控制器箱。
+* ESD 腕带，或者您已采取其他防静电预防措施。
+* 用于标识连接到控制器箱的每个缆线的标签。
+* 1 号十字螺丝刀。
+* 一个管理工作站，其浏览器可访问控制器的 SANtricity 系统管理器。(要打开System Manager界面、请将浏览器指向控制器的域名或IP地址。)
++
+您也可以使用命令行界面（ CLI ）执行某些过程。对于SANtricity系统管理器(11.60及更高版本)、您可以从系统管理器下载命令行界面软件包(zip文件)。为此，请进入System Manager中的*设置>系统>加载项>命令行界面*。然后，您可以从操作系统提示符处执行问题描述命令行界面命令，例如 DOS C ：提示符。
+
+
+
+
+
+=== 双工配置要求
+
+如果控制器架具有两个控制器（双工配置），则只要满足以下条件，您就可以在存储阵列启动并执行主机 I/O 操作时更换控制器箱：
+
+* 磁盘架中的第二个控制器箱处于最佳状态。
+* SANtricity 系统管理器中恢复 Guru 的详细信息区域中的 * 确定删除 * 字段显示 * 是 * ，表示删除此组件是安全的。
+
+
+
+
+=== 单工配置要求
+
+如果您只有一个控制器箱（单工配置），则在更换控制器箱之前，无法访问存储阵列上的数据。您必须停止主机 I/O 操作并关闭存储阵列。

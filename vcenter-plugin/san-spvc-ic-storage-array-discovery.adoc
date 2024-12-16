@@ -10,7 +10,7 @@ summary: 使用适用于 vCenter 的插件界面发现网络中阵列的 IP 地�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

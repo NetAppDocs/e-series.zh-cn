@@ -1,0 +1,49 @@
+---
+permalink: install-hw-e4000/index.html 
+sidebar: sidebar 
+keywords:  
+summary: 按照以下步骤安装和设置E4000存储系统。 
+---
+= 安装和设置E4000系统
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+按照以下步骤安装和设置E4000存储系统。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"]准备安装
+[role="quick-margin-para"]
+您必须对站点进行准备、以满足E4000系列存储系统的规格要求。
+
+[role="quick-margin-list"]
+* link:../install-hw-e4000/prepare-installation.html["准备安装"^]
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"]安装硬件
+[role="quick-margin-para"]
+了解如何在机架或NetApp系统机柜中安装E4012、E4060、DE212C或DE460C存储系统。
+
+[role="quick-margin-list"]
+* link:../install-hw-e4000/install-hardware-12.html["安装E4012硬件"^]
+* link:../install-hw-e4000/install-hardware-60.html["安装E4060硬件"^]
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三个"]为硬件架布线
+[role="quick-margin-para"]
+了解如何连接E4000存储系统的电源线并打开驱动器架的电源。
+
+[role="quick-margin-list"]
+* link:../install-hw-e4000/connect-cables-12.html["为E4012硬件布线"^]
+* link:../install-hw-e4000/connect-cables-60.html["为E4060硬件布线"^]
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["四个"]完成存储系统设置
+[role="quick-margin-para"]
+了解如何使用缆线将控制器连接到您的网络并完成存储系统设置和配置。
+
+[role="quick-margin-list"]
+* link:../install-hw-e4000/complete-setup-12.html["完成E4012设置"^]
+* link:../install-hw-e4000/complete-setup-60.html["完成E4060设置"^]
+

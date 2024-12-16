@@ -20,7 +20,7 @@ summary: 从控制器架中取出控制器箱后，您可以取出电池。
 如果此绿色 LED 亮起，则表示控制器仍在使用电池电源。您必须等待此 LED 熄灭，然后才能卸下任何组件。
 
 +
-image::../media/28_dwg_e2800_internal_cache_active_led_maint-e2800.gif[28 dwg e2800 内部缓存活动 LED 维护 e2800]
+image::../media/28_dwg_e2800_internal_cache_active_led_maint-e2800.gif[内部缓存活动LED]
 
 +
 * （ 1 ） * _Internal Cache Active_
@@ -31,7 +31,7 @@ image::../media/28_dwg_e2800_internal_cache_active_led_maint-e2800.gif[28 dwg e2
 . 找到电池的蓝色释放闩锁。
 . 向下推动释放闩锁并将其从控制器箱中移出，以解锁电池。
 +
-image::../media/28_dwg_e2800_remove_battery_maint-e2800.gif[28 dwg e2800 取出电池维护 e2800]
+image::../media/28_dwg_e2800_remove_battery_maint-e2800.gif[从控制器中取出电池]
 
 +
 * （ 1 ） * 电池释放闩锁 _

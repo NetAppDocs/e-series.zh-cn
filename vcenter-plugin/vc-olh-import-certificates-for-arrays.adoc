@@ -11,7 +11,7 @@ summary: 导入存储阵列的证书、以便它们可以在托管适用于vCent
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

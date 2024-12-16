@@ -11,7 +11,7 @@ summary: 删除池或卷组以创建更多未分配容量、您可以根据应�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

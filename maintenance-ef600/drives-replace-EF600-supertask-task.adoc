@@ -73,16 +73,16 @@ NOTE: 如果要更换具有挡板的磁盘架中的驱动器，则必须卸下�
 驱动器弹出装置上的闩锁部分打开，然后驱动器从控制器中释放。
 
 . 打开凸轮把手，然后轻轻滑出驱动器。
-. Wait 30 seconds.
+. Wait 60 seconds.
 . 用双手将驱动器从磁盘架中取出。
 +
-image::../media/ef624_2.png[ef624 2.]
+image::../media/ef624_2.png[从磁盘架中卸下驱动器]
 
 . Place the drive on an antistatic, cushioned surface away from magnetic fields.
-. 等待 30 秒，使软件识别出驱动器已被删除。
+. 等待 60 秒，使软件识别出驱动器已被删除。
 +
 
-NOTE: 如果您意外删除了活动驱动器，请至少等待 30 秒，然后重新安装它。有关恢复操作步骤，请参阅存储管理软件。
+NOTE: 如果您意外删除了活动驱动器，请至少等待 60 秒，然后重新安装它。有关恢复操作步骤，请参阅存储管理软件。
 
 
 
@@ -115,7 +115,7 @@ NOTE: 根据您的配置，控制器可能会自动将数据重建到新驱动�
 . 检查您更换的驱动器上的电源 LED 和警示 LED 。（首次插入驱动器时，其警示 LED 可能会亮起。但是， LED 应在一分钟内熄灭。）
 +
 ** 电源 LED 亮起或闪烁，警示 LED 熄灭：表示新驱动器正常工作。
-** 电源 LED 熄灭：表示驱动器可能安装不正确。Remove the drive, wait 30 seconds, and then reinstall it.
+** 电源 LED 熄灭：表示驱动器可能安装不正确。Remove the drive, wait 60 seconds, and then reinstall it.
 ** 警示 LED 亮起：表示新驱动器可能出现故障。Replace it with another new drive.
 
 

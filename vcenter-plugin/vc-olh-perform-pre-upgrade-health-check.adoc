@@ -11,7 +11,7 @@ summary: 运行状况检查会在升级过程中运行，但您也可以在开�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

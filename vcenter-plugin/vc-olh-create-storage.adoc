@@ -11,7 +11,7 @@ summary: 通过首先为特定应用程序类型创建工作负载来创建存�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

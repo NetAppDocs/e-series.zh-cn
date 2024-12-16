@@ -37,7 +37,7 @@ CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on 
 下图是 E2812 控制器架， E2824 控制器架或 EF280 闪存阵列的示例：
 
 +
-image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[28 dwg e2824 卸下控制器箱维护 e2800]
+image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[重新安装24个驱动器控制器]
 
 +
 * （ 1 ） * _ 控制器箱 _
@@ -49,7 +49,7 @@ image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[28 dwg e
 下图是 E2860 控制器架的示例：
 
 +
-image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[28 dwg e2860 添加控制器箱维护 e2800]
+image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[重新安装60个驱动器控制器]
 
 +
 * （ 1 ） * _ 控制器箱 _

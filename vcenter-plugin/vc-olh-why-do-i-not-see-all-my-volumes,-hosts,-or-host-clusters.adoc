@@ -10,7 +10,7 @@ summary: '具有已启用DA的基础卷的Snapshot卷不能分配给不支持数
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

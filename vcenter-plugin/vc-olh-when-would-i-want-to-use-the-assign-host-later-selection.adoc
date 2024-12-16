@@ -10,7 +10,7 @@ summary: 如果要加快创建卷的过程、可以跳过主机分配步骤、�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

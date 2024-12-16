@@ -50,7 +50,7 @@ NOTE: 如果您需要有关添加主机或主机集群的说明，请参阅 SANt
 
 .. 单击 * 主机端口 * 选项卡。
 +
-image::../media/sam1130_ss_host_settings_dialog_ports_tab_maint-e5700.gif[sam1130 s host settings 对话框端口选项卡 maint e5700]
+image::../media/sam1130_ss_host_settings_dialog_ports_tab_maint-e5700.gif[主机设置对话框]
 
 .. 单击 * 添加 * ，然后使用 * 添加主机端口 * 对话框将新的主机端口标识符与主机关联。
 +
@@ -96,7 +96,7 @@ image::../media/sam1130_ss_host_settings_dialog_ports_tab_maint-e5700.gif[sam113
 
 .. 单击 * 主机端口 * 选项卡。
 +
-image::../media/sam1130_ss_host_settings_dialog_ports_tab_maint-e5700.gif[sam1130 s host settings 对话框端口选项卡 maint e5700]
+image::../media/sam1130_ss_host_settings_dialog_ports_tab_maint-e5700.gif[主机设置对话框]
 
 .. 单击 * 添加 * ，然后使用 * 添加主机端口 * 对话框将新的主机端口标识符与主机关联。
 +

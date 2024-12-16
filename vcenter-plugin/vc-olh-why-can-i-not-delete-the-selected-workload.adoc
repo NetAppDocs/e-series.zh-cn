@@ -10,7 +10,7 @@ summary: 此工作负载中的卷不与应用程序特定的工作负载关联�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

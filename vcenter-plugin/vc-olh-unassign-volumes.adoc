@@ -11,7 +11,7 @@ summary: 如果您不再需要对卷进行I/O访问、则可以从主机或主�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

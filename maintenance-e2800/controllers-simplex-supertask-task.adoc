@@ -151,14 +151,14 @@ CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on 
 NOTE: 此图显示了一个控制器箱示例。您的控制器可能具有不同数量和类型的主机端口。
 
 +
-image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[28 个 dwg 2800 控制器已连接到主维护 2800]
+image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[E2800缓存活动LED]
 
 +
 * （ 1 ） * _Cache 活动 LED
 
 . 按压凸轮把手上的闩锁，直到其释放为止，然后打开右侧的凸轮把手，以从中板释放控制器箱。
 +
-image::../media/28_dwg_e2824_remove_controller_canister_simplex_maint-e2800.gif[28 dwg e2824 删除控制器箱单工维护 e2800]
+image::../media/28_dwg_e2824_remove_controller_canister_simplex_maint-e2800.gif[拆下控制器箱]
 
 +
 * （ 1 ） * _ 控制器箱 _
@@ -191,7 +191,7 @@ CAUTION: 始终用双手支撑控制器箱的重量。
 如果此绿色 LED 亮起，则表示控制器仍在使用电池电源。您必须等待此 LED 熄灭，然后才能卸下任何组件。
 
 +
-image::../media/28_dwg_e2800_internal_cache_active_led_maint-e2800.gif[28 dwg e2800 内部缓存活动 LED 维护 e2800]
+image::../media/28_dwg_e2800_internal_cache_active_led_maint-e2800.gif[内部缓存活动LED]
 
 +
 * （ 1 ） * _Internal Cache Active_
@@ -202,7 +202,7 @@ image::../media/28_dwg_e2800_internal_cache_active_led_maint-e2800.gif[28 dwg e2
 . 找到电池的蓝色释放闩锁。
 . 向下推动释放闩锁并将其从控制器箱中移出，以解锁电池。
 +
-image::../media/28_dwg_e2800_remove_battery_maint-e2800.gif[28 dwg e2800 取出电池维护 e2800]
+image::../media/28_dwg_e2800_remove_battery_maint-e2800.gif[从控制器箱中取出电池]
 
 +
 * （ 1 ） * 电池释放闩锁 _
@@ -225,7 +225,7 @@ image::../media/28_dwg_e2800_remove_battery_maint-e2800.gif[28 dwg e2800 取出�
 有四个螺钉：一个在顶部，一个在侧面，两个在正面。
 
 +
-image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[28 个 dwg e2800 hic faceplace 螺钉 maint e2800]
+image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[从控制器箱上卸下控制器箱的控制器]
 
 . 卸下 HIC 面板。
 . 使用您的手指或十字螺丝刀松开将 HIC 固定到控制器卡的三个翼形螺钉。
@@ -235,7 +235,7 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[28 个 dwg e28
 CAUTION: 请注意，不要擦除或撞击 HIC 底部或控制器卡顶部的组件。
 
 +
-image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[28 个 dwg e2800 hic 翼形螺钉 maint e2800]
+image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[从控制器卡上卸下HIC]
 
 +
 * （ 1 ） * _ 主机接口卡 _
@@ -274,7 +274,7 @@ image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[28 个 dwg e2800 hi
 当闩锁卡入到位时，闩锁的底部会挂到机箱上的金属插槽中。
 
 +
-image::../media/28_dwg_e2800_insert_battery_maint-e2800.gif[28 dwg e2800 插入电池维护 e2800]
+image::../media/28_dwg_e2800_insert_battery_maint-e2800.gif['将蓄电池重新安装到控制器箱上']
 
 +
 * （ 1 ） * 电池释放闩锁 _
@@ -290,11 +290,11 @@ CAUTION: * 可能的硬件损坏 * —电池前部的金属法兰必须完全插
 +
 ** * 正确 * —电池的金属法兰已完全插入控制器上的插槽：
 +
-image:../media/28_dwg_e2800_battery_flange_ok_maint-e2800.gif[""]
+image:../media/28_dwg_e2800_battery_flange_ok_maint-e2800.gif["正确的金属法兰"]
 
 ** * 不正确 * —电池的金属法兰未插入控制器上的插槽：
 +
-image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e2800.gif[""]
+image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e2800.gif["金属法兰不正确"]
 
 
 
@@ -318,7 +318,7 @@ image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e2800.gif[""]
 CAUTION: * 可能的设备损坏 * —请务必小心，不要挤压 HIC 和翼形螺钉之间控制器 LED 的金带连接器。
 
 +
-image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[28 个 dwg e2800 hic 翼形螺钉 maint e2800]
+image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[将HIC重新安装到控制器上]
 
 +
 * （ 1 ） * _ 主机接口卡 _
@@ -332,7 +332,7 @@ image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[28 个 dwg e2800 hi
 
 . 使用 1 号十字螺丝刀，使用四个螺钉将从原始控制器箱中卸下的 HIC 面板连接到新控制器箱。
 +
-image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[28 个 dwg e2800 hic faceplace 螺钉 maint e2800]
+image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[重新安装控制器上的控制器"]
 
 
 
@@ -347,7 +347,7 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[28 个 dwg e28
 . 将控制器箱翻转，使可拆卸盖朝下。
 . 在凸轮把手处于打开位置的情况下，将控制器箱完全滑入控制器架。
 +
-image::../media/28_dwg_e2824_remove_controller_canister_simplex_maint-e2800.gif[28 dwg e2824 删除控制器箱单工维护 e2800]
+image::../media/28_dwg_e2824_remove_controller_canister_simplex_maint-e2800.gif[将控制器箱重新安装到控制器架中]
 
 +
 * （ 1 ） * _ 控制器箱 _
@@ -426,7 +426,7 @@ image::../media/28_dwg_e2824_remove_controller_canister_simplex_maint-e2800.gif[
 NOTE: 此图显示了一个控制器箱示例。您的控制器可能具有不同数量和类型的主机端口。
 
 +
-image::../media/28_dwg_attn_led_7s_display_maint-e2800.gif[28 dwg Attn led 7s 显示 maint e2800]
+image::../media/28_dwg_attn_led_7s_display_maint-e2800.gif[E2800控制器LED]
 
 +
 * （ 1 ） * _ 警示 LED （琥珀色） _

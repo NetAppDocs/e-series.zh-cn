@@ -27,7 +27,7 @@ summary: 连接电源线并打开驱动器架的电源。
 
 
  a| 
-image:../media/power_cable_inst-hw-ef600.png[""]
+image:../media/power_cable_inst-hw-ef600.png["Power cables"]
  a| 
 * 电源线 *
 
@@ -37,7 +37,7 @@ image:../media/power_cable_inst-hw-ef600.png[""]
 
 
  a| 
-image:../media/cabling_power.png[""]
+image:../media/cabling_power.png["EF600/EF300电源布线"]
 
 |===
 . 将两根电源线（每个控制器一根）连接到机柜或机架中两个单独的配电单元（ PDU ）。

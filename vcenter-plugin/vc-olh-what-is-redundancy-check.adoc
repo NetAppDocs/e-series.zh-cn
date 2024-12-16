@@ -10,7 +10,7 @@ summary: 冗余检查可确定池或卷组中卷上的数据是否一致。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

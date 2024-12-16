@@ -11,7 +11,7 @@ summary: 您可以选择在更方便的时间激活软件文件。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

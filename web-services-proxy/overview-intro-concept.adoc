@@ -28,13 +28,13 @@ Web 服务是一种应用程序编程接口（ Application Programming Interface
 
 Web 服务有两种实施方式：
 
-* * 嵌入式 * — RESTful API 服务器嵌入在运行 NetApp SANtricity 11.30 或更高版本的 E2800/EF280 存储系统，运行 SANtricity 11.40 或更高版本的 E5700/EF570 以及运行 SANtricity 11.60 或更高版本的 EF300 或 EF600 的每个控制器上。无需安装。
+* *嵌入式*—运行NetApp SANtricity 11.30或更高版本的E2800/EF280存储系统、运行SANtricity 11.40或更高版本的E5700/EF570、运行SANtricity 11.60或更高版本的EF300或EF600以及运行SANtricity 11.90或更高版本的E4000的每个控制器上均嵌入了一个ESTful API服务器。无需安装。
 * * 代理 * — SANtricity Web 服务代理是一种 RESTful API 服务器，单独安装在 Windows 或 Linux 服务器上。这款基于主机的应用程序可以管理数百个新旧 NetApp E 系列存储系统。通常，对于具有 10 个以上存储系统的网络，应使用代理。与嵌入式 API 相比，代理可以更高效地处理大量请求。
 
 
 API 的核心可用于这两种实施方式。
 
-image::../media/web_services_proxy_overview.gif[Web 服务代理概述]
+image::../media/web_services_proxy_overview.gif[Web服务代理概述]
 
 下表对代理和嵌入式版本进行了比较。
 

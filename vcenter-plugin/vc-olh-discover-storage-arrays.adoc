@@ -10,7 +10,7 @@ summary: 要在适用于vCenter的存储插件中显示和管理存储资源、�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

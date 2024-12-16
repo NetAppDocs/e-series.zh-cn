@@ -11,7 +11,7 @@ summary: '通过从存储阵列导入自签名证书或导入可信第三方颁�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -19,5 +19,5 @@ summary: 将卷分配给主机后，您可以执行重新扫描，以便主机�
 . 创建一个或多个卷并将其分配给 ESXi 主机。
 . 如果使用的是 vCenter Server ，请将此主机添加到服务器的清单中。
 . 使用 vSphere Client 或 vSphere Web Client 直接连接到 vCenter Server 或 ESXi 主机。
-. 有关如何在 ESXi 主机上重新扫描存储的说明，请搜索 https://kb.vmware.com/s/["VMware 知识库"^] 有关此主题的文章。
+. 有关如何在ESXi主机上重新扫描存储的说明、请搜索有关此主题的文章。 https://support.broadcom.com/["VMware 知识库"^]
 

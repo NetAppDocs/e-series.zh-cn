@@ -11,7 +11,7 @@ summary: 您可以检查池或卷组中某个卷的冗余性、以确定该卷�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

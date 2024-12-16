@@ -10,7 +10,7 @@ summary: 资源配置是EF300和EF600存储阵列中提供的一项功能、可�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

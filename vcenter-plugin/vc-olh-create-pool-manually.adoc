@@ -11,7 +11,7 @@ summary: 如果设置不符合自动池配置的要求、则可以手动创建�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -10,7 +10,7 @@ summary: 您可以为多个相同类型的存储阵列管理SANtricity 软件和
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

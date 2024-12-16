@@ -13,4 +13,4 @@ summary: 使用 Windows 快速配置工作流。
 [role="lead"]
 此工作流将指导您完成配置存储阵列和 SANtricity 系统管理器以使存储可供 Windows 主机使用的快速方法。
 
-image::../media/1130_flw_sys_mgr_windows_express_guide_all_protocols.png[1130 FLW sys mgr windows 快速指南所有协议]
+image::../media/1130_flw_sys_mgr_windows_express_guide_all_protocols.png[Windows快速指南工作流]

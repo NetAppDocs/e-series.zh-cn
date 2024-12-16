@@ -21,14 +21,14 @@ summary: 要安装 E2860 ， E5760 或 DE460 ，请创建一个帐户并注册�
 
 
  a| 
-image:../media/trafford_overview.png[""]
+image:../media/trafford_overview.png["已安装驱动器和挡板的磁盘架"]
  a| 
 磁盘架，挡板和机架硬件
 
 
 
  a| 
-image:../media/handles_counted.png[""]
+image:../media/handles_counted.png["磁盘架手柄"]
  a| 
 磁盘架可处理 4 个磁盘架
 
@@ -42,7 +42,7 @@ The following table identifies the types of cables you might receive.如果您�
 
 
  a| 
-image:../media/cable_ethernet_inst-hw-e2800-e5700.png[""]
+image:../media/cable_ethernet_inst-hw-e2800-e5700.png["以太网缆线"]
  a| 
 以太网缆线
 
@@ -53,7 +53,7 @@ image:../media/cable_ethernet_inst-hw-e2800-e5700.png[""]
 
 
  a| 
-image:../media/cable_io_inst-hw-e2800-e5700.png[""]
+image:../media/cable_io_inst-hw-e2800-e5700.png["I/O 缆线"]
  a| 
 I/O 缆线
 
@@ -64,7 +64,7 @@ I/O 缆线
 
 
  a| 
-image:../media/cable_power_inst-hw-e2800-e5700.png[""]
+image:../media/cable_power_inst-hw-e2800-e5700.png["Power cables"]
  a| 
 Power cables
 
@@ -77,7 +77,7 @@ Power cables
 
 
  a| 
-image:../media/sas_cable.png[""]
+image:../media/sas_cable.png["SAS 缆线"]
  a| 
 SAS 缆线（仅随驱动器架提供）
  a| 
@@ -90,28 +90,28 @@ SAS 缆线（仅随驱动器架提供）
 
 
  a| 
-image:../media/screwdriver_inst-hw-e2800-e5700.png[""]
+image:../media/screwdriver_inst-hw-e2800-e5700.png["Phillips #2 screwdriver"]
  a| 
 Phillips #2 screwdriver
 
 
 
  a| 
-image:../media/flashlight_inst-hw-e2800-e5700.png[""]
+image:../media/flashlight_inst-hw-e2800-e5700.png["Flashlight"]
  a| 
 Flashlight
 
 
 
  a| 
-image:../media/wrist_strap_inst-hw-e2800-e5700.png[""]
+image:../media/wrist_strap_inst-hw-e2800-e5700.png["ESD 腕带"]
  a| 
 ESD 腕带
 
 
 
  a| 
-image:../media/4u_dummy.png[""]
+image:../media/4u_dummy.png["4U机架\""]
  a| 
 4U 机架空间：标准 19 英寸（ 48.30 厘米）机架，用于安装以下尺寸的 4U 磁盘架。
 
@@ -126,7 +126,7 @@ image:../media/4u_dummy.png[""]
 
 
  a| 
-image:../media/management_station_inst-hw-e2800-e5700_g60b3.png[""]
+image:../media/management_station_inst-hw-e2800-e5700_g60b3.png["管理工作站、支持使用浏览器安装管理软件"]
  a| 
 管理软件支持的浏览器：
 

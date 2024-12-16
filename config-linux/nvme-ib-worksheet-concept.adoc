@@ -67,7 +67,7 @@ NOTE: 软件启动程序 NQN 在任务期间确定。
 
 在直连拓扑中，一个或多个主机直接连接到子系统。在 SANtricity OS 11.50 版本中，我们支持从每个主机到子系统控制器的单个连接，如下所示。在此配置中，每个主机的一个 HCA （主机通道适配器）端口应与所连接的 E 系列控制器端口位于同一子网中，但与另一个 HCA 端口位于不同的子网中。
 
-image::../media/nvmeof_direct_connect.gif[nvmeof 直接连接]
+image::../media/nvmeof_direct_connect.gif[基于Infiniband直接连接的NVMe示例]
 
 
 

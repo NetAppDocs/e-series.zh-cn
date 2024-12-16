@@ -7,7 +7,7 @@ summary: 对于 RHEL 8 和 SLES 15 ，您可以在原生 NVMe 设备上创建文
 = 创建文件系统(RHEL 8、RHEL 9、SLES 15)
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media
+:imagesdir: ../media/
 
 
 [role="lead"]

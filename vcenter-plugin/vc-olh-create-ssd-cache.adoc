@@ -11,7 +11,7 @@ summary: '要动态提高系统性能、您可以使用SSD缓存功能将最常�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

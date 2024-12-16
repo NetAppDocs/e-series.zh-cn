@@ -6,7 +6,12 @@ summary: E 系列技术报告
 ---
 = 浏览平台技术报告
 :allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
 
+
+[role="lead"]
+请查看以下链接、以访问与E系列平台相关的技术报告。通过这些链接，您可以访问其他文档站点。
 
 
 
@@ -28,8 +33,8 @@ summary: E 系列技术报告
 |  |  |  
 
 
-| https://www.netapp.com/pdf.html?item=/media/17009-tr4800pdf.pdf["* TR-4800 ： EF600 阵列功能概述 *"] |  |  
+| https://www.netapp.com/pdf.html?item=/media/17009-tr4800pdf.pdf["* TR-4800 ： EF600 阵列功能概述 *"] | https://www.netapp.com/pdf.html?item=/media/116236-tr-5001-intro-to-netapp-e4000-arrays-with-santricity.pdf["* TR-5001 ： E4000 阵列功能概述 *"^] |  
 
 
-| 介绍 EF600 全闪存阵列的硬件和软件功能以及新的 SANtricity OS 功能。 |  |  
+| 介绍 EF600 全闪存阵列的硬件和软件功能以及新的 SANtricity OS 功能。 | 介绍 E4000 混合阵列的硬件和软件功能以及最新的 SANtricity 操作系统功能。 |  
 |===

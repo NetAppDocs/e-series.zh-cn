@@ -10,7 +10,7 @@ summary: '通过证书管理、您可以创建证书签名请求(CSR)、导入�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

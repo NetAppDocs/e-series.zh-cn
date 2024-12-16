@@ -6,7 +6,12 @@ summary: E 系列技术报告
 ---
 = 浏览安全技术报告
 :allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
 
+
+[role="lead"]
+请查看以下链接、以访问与E系列硬件和SANtricity软件相关的安全技术报告。通过这些链接，您可以访问其他文档站点。
 
 
 

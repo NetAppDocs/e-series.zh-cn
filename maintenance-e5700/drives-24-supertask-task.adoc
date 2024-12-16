@@ -70,20 +70,20 @@ NOTE: 如果要更换具有挡板的磁盘架中的驱动器，则必须卸下�
 
 . 按下故障驱动器上的释放按钮。
 +
-image::../media/drw_drive_latch_maint-e5700.gif[DRW 驱动器闩锁维护 e5700]
+image::../media/drw_drive_latch_maint-e5700.gif[按下释放按钮以卸下故障驱动器]
 
 +
 ** 对于 E5724 控制器架或 DE224C 驱动器架中的驱动器，释放按钮位于驱动器顶部。驱动器弹簧上的凸轮把手部分打开，驱动器从中板释放。
 
 
 . 打开凸轮把手，然后轻轻滑出驱动器。
-. Wait 30 seconds.
+. Wait 60 seconds.
 . 用双手将驱动器从磁盘架中取出。
 . Place the drive on an antistatic, cushioned surface away from magnetic fields.
-. 等待 30 秒，使软件识别出驱动器已被删除。
+. 等待 60 秒，使软件识别出驱动器已被删除。
 +
 
-NOTE: 如果您意外删除了活动驱动器，请至少等待 30 秒，然后重新安装它。有关恢复操作步骤，请参阅存储管理软件。
+NOTE: 如果您意外删除了活动驱动器，请至少等待 60 秒，然后重新安装它。有关恢复操作步骤，请参阅存储管理软件。
 
 
 
@@ -119,7 +119,7 @@ When you first insert a drive, its Attention LED might be on.However, the LED sh
 
 +
 ** 电源 LED 亮起或闪烁，警示 LED 熄灭：表示新驱动器正常工作。
-** 电源 LED 熄灭：表示驱动器可能安装不正确。Remove the drive, wait 30 seconds, and then reinstall it.
+** 电源 LED 熄灭：表示驱动器可能安装不正确。Remove the drive, wait 60 seconds, and then reinstall it.
 ** 警示 LED 亮起：表示新驱动器可能出现故障。Replace it with another new drive.
 
 

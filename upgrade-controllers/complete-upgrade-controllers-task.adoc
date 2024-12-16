@@ -1,7 +1,7 @@
 ---
 permalink: upgrade-controllers/complete-upgrade-controllers-task.html 
 sidebar: sidebar 
-keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, vendor ID, upgrade status, upgrade validate 
+keywords: E-Series, eseries, E4000, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, vendor ID, upgrade status, upgrade validate 
 summary: 启动控制器架并验证控制器软件版本，以完成控制器升级。然后，您可以收集支持数据并恢复操作。 
 ---
 = 完成控制器升级
@@ -88,7 +88,7 @@ NOTE: 在使用内部密钥管理对混合安全驱动器执行控制器更换�
  a| 
 所有安全驱动器，外部密钥管理，您尚未临时切换到内部密钥管理来更换控制器操作步骤
  a| 
-使用外部密钥管理和所有驱动器进行控制器交换
+使用外部密钥管理和所有驱动器进行控制器交换。有关详细说明、请参见 https://docs.netapp.com/us-en/e-series/upgrade-controllers/upgrade-unlock-drives-task.html#external-key-management["外部密钥管理"^]。
 
 |===
 
@@ -102,10 +102,10 @@ NOTE: 在使用内部密钥管理对混合安全驱动器执行控制器更换�
 .步骤
 . 查看控制器 A 上的 LED ，确保其正确启动。
 +
-重新启动期间，需要执行主机链路服务操作的 LED 将变为绿色。七段式显示屏显示 OS+ SD+ 空白 - 序列，表示控制器正在执行 " 开始日期 " （ SOD ）处理。
+重新启动期间，需要执行主机链路服务操作的 LED 将变为绿色。
 
 +
-控制器成功完成重新启动后，七段显示会显示与第二个控制器上的七段显示内容匹配的托盘 ID 。然后，您可以使用存储管理软件发现新的控制器箱。
+控制器成功完成重新启动后、您可以使用存储管理软件发现新的控制器箱。
 
 . 如果控制器驱动器托盘的任何 "Service Action Required" LED 为 _ON_ ，或者 "Controller Service Action Required LED" 为 _ON_ ：
 +
@@ -124,12 +124,6 @@ NOTE: 在使用内部密钥管理对混合安全驱动器执行控制器更换�
 您必须确保新控制器运行的操作系统（控制器固件）级别和 NVSRAM 正确。
 
 .步骤
-. 执行以下操作之一：
-+
-** 如果要升级到不支持 SANtricity 11.30 和控制器固件 8.30 的控制器，请确保新控制器上运行的版本与原始控制器上最后运行的版本一致。通常，这是旧控制器支持的最新版本。如有必要，请在新控制器上安装相应的版本。
-** 如果要升级到运行 SANtricity 11.30 和控制器固件 8.30 的控制器，请在打开新控制器的电源后下载并安装最新的 NVSRAM 。
-
-
 . 如果控制器升级涉及协议更改（例如，光纤通道到 iSCSI ），并且您已为存储阵列定义了主机，请将新主机端口与主机关联：
 +
 .. 在 System Manager 中，选择菜单： Storage[Hosts] 。
@@ -156,7 +150,7 @@ NOTE: 在使用内部密钥管理对混合安全驱动器执行控制器更换�
 +
 此时将显示更改缓存设置对话框。存储阵列上的所有卷都会显示在此对话框中。
 
-.. 选择 * 基本 * 选项卡并更改读取缓存和写入缓存的设置。
+.. 选择*Basic*选项卡并启用读取缓存和写入缓存设置。
 .. 单击 * 保存 * 。
 
 
@@ -168,10 +162,9 @@ NOTE: 在使用内部密钥管理对混合安全驱动器执行控制器更换�
 
 . 使用 GUI 或 CLI 收集有关存储阵列的支持数据：
 +
-** 使用 System Manager 或 Storage Manager 的阵列管理窗口收集并保存存储阵列的支持包。
+** 使用System Manager收集并保存存储阵列的支持包。
 +
 *** 在 System Manager 中，选择菜单： Support[ 支持中心 > 诊断选项卡 ] 。然后选择 * 收集支持数据 * 并单击 * 收集 * 。
-*** 从阵列管理窗口工具栏中，选择菜单： Monitor[ 运行状况 > 手动收集支持数据 ] 。然后，输入一个名称并指定系统上要存储支持包的位置。
 +
 此文件将保存在浏览器的 "Downloads" 文件夹中，名为 `support-data.7z` 。
 
@@ -205,4 +198,4 @@ NOTE: 收集支持数据可能会暂时影响存储阵列的性能。
 
 
 .下一步是什么？
-如果您的控制器升级导致将供应商 ID 从 LSI 更改为 NetApp ，请转至 link:remount-volumes-lsi-task.html["将供应商从 LSI 更改为 NetApp 后重新挂载卷"]；否则，控制器升级将完成，您可以恢复正常操作。
+您的控制器升级已完成、您可以恢复正常操作。

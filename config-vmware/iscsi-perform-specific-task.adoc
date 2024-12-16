@@ -53,12 +53,12 @@ NOTE: 控制器的交换机端口不支持端口通道 /LACP 。不建议使用�
 
 
 .关于此任务
-在规划 iSCSI 网络时，请记住 https://configmax.vmware.com/home["VMware 配置最大值"^] 指南指出，支持的最大 iSCSI 存储路径数为 8 。您必须考虑此要求，以避免配置过多的路径。
+在规划iSCSI网络时、请记住、本 https://configmax.broadcom.com/home["VMware 配置最大值"^]指南规定支持的最大iSCSI存储路径数为8。您必须考虑此要求，以避免配置过多的路径。
 
 默认情况下，如果不使用 iSCSI 端口绑定， VMware iSCSI 软件启动程序会为每个 iSCSI 目标创建一个会话。
 
 
-NOTE: VMware iSCSI 端口绑定功能可强制所有绑定的 VMkernel 端口登录到可在已配置网段上访问的所有目标端口。它用于为 iSCSI 目标提供单个网络地址的阵列。NetApp 建议不要使用 iSCSI 端口绑定。对于追加信息，请参见 http://kb.vmware.com/["VMware 知识库"] 有关在 ESX/ESXi 中使用软件 iSCSI 端口绑定的注意事项的文章。如果 ESXi 主机已连接到另一供应商的存储， NetApp 建议您使用单独的 iSCSI vmkernel 端口，以避免与端口绑定发生任何冲突。
+NOTE: VMware iSCSI 端口绑定功能可强制所有绑定的 VMkernel 端口登录到可在已配置网段上访问的所有目标端口。它用于为 iSCSI 目标提供单个网络地址的阵列。NetApp 建议不要使用 iSCSI 端口绑定。有关其他信息、请参见 https://support.broadcom.com/["VMware 知识库"]、了解有关在ESS/ESXi中使用软件iSCSI端口绑定的注意事项的文章。如果 ESXi 主机已连接到另一供应商的存储， NetApp 建议您使用单独的 iSCSI vmkernel 端口，以避免与端口绑定发生任何冲突。
 
 为了获得最佳实践，您不应在 E 系列存储阵列上使用端口绑定。有关详细信息、请参见 https://www.netapp.com/media/17017-tr4789.pdf["TR-4789：《E系列SANtricity iSCSI与ESXi 6.x和7.x集成的VMware配置指南》"^] 。
 
@@ -280,7 +280,7 @@ NOTE: 如果命令失败并显示消息 `sendto （） failed （ Message too lo
 
 建议的配置包括两个启动程序端口和四个目标端口以及一个或多个 VLAN 。
 
-image::../media/50001_01_conf-vmw.gif[50001 01 配置 VMW]
+image::../media/50001_01_conf-vmw.gif[iSCSI端口标识符]
 
 
 

@@ -10,7 +10,7 @@ summary: 在创建卷期间、系统会提示您提供有关工作负载使用�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

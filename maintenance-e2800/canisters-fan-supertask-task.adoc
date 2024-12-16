@@ -56,7 +56,7 @@ CAUTION: * 可能的设备损坏 * - 如果在打开电源的情况下执行此�
 . 在 SANtricity 系统管理器中，确定哪个风扇箱出现故障。
 +
 .. 选择 * 硬件 * 。
-.. 查看风扇 image:../media/sam1130_ss_hardware_fan_icon_maint-e2800.gif[""] * 磁盘架 * 下拉列表右侧的图标，用于确定哪个磁盘架具有故障风扇箱。
+.. 查看*磁盘架*下拉列表右侧的风扇image:../media/sam1130_ss_hardware_fan_icon_maint-e2800.gif["风扇图标"]图标、确定哪个磁盘架具有故障风扇箱。
 +
 如果组件发生故障，此图标将为红色。
 
@@ -80,7 +80,7 @@ NOTE: 如果磁盘架中的第二个风扇箱没有 * 最佳 * 状态，请勿�
 您必须更换警示 LED 亮起的风扇箱。
 
 +
-image::../media/28_dwg_e2860_de460c_single_fan_canister_with_led_callout_maint-e2800.gif[28 dwg e2860 de460c 单风扇箱，带有 LED 标注 maint e2800]
+image::../media/28_dwg_e2860_de460c_single_fan_canister_with_led_callout_maint-e2800.gif[风扇箱LED]
 
 +
 * （ 1 ） * _ 警示 LED_ 。如果此 LED 显示为 * 稳定琥珀色 * ，则表示风扇出现故障。
@@ -103,14 +103,14 @@ Save all packing material for use when returning the failed fan.
 
 . 按下橙色卡舌以释放风扇箱手柄。
 +
-image::../media/28_dwg_e2860_de460c_single_fan_canister_with_orange_tab_callout_maint-e2800.gif[28 dwg e2860 de460c 单风扇箱，带有橙色凸耳标注 maint e2800]
+image::../media/28_dwg_e2860_de460c_single_fan_canister_with_orange_tab_callout_maint-e2800.gif[]
 
 +
 按下 * （ 1 ） * _tab 以释放风扇箱把手
 
 . 使用风扇箱把手将风扇箱拉出磁盘架。
 +
-image::../media/28_dwg_e2860_de460c_fan_canister_handle_with_callout_maint-e2800.gif[28 dwg e2860 de460c 风扇箱手柄，带标注 maint e2800]
+image::../media/28_dwg_e2860_de460c_fan_canister_handle_with_callout_maint-e2800.gif[风扇罐拉手]
 
 +
 * （ 1 ） * _handle 将风扇箱拉出 _

@@ -127,7 +127,7 @@ CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on 
 下图是 E5724 控制器架的示例：
 
 +
-image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[28 dwg e2824 卸下控制器箱 maint e5700]
+image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[拆下控制器箱]
 
 +
 * （ 1 ） * _ 控制器箱 _
@@ -139,7 +139,7 @@ image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[28 dwg e
 下图是 E5760 控制器架的示例：
 
 +
-image::../media/28_dwg_e2860_add_controller_canister_maint-e5700.gif[28 dwg e2860 添加控制器箱维护 e5700]
+image::../media/28_dwg_e2860_add_controller_canister_maint-e5700.gif[拆下控制器箱]
 
 +
 * （ 1 ） * _ 控制器箱 _
@@ -172,7 +172,7 @@ CAUTION: 始终用双手支撑控制器箱的重量。
 如果此绿色 LED 亮起，则表示控制器仍在使用电池电源。您必须等待此 LED 熄灭，然后才能卸下任何组件。
 
 +
-image::../media/28_dwg_e2800_internal_cache_active_led_maint-e5700.gif[28 dwg e2800 内部缓存活动 LED maint e5700]
+image::../media/28_dwg_e2800_internal_cache_active_led_maint-e5700.gif[内部缓存活动LED]
 
 +
 * （ 1 ） * _Internal Cache Active LED_
@@ -183,7 +183,7 @@ image::../media/28_dwg_e2800_internal_cache_active_led_maint-e5700.gif[28 dwg e2
 . 找到电池的蓝色释放闩锁。
 . 向下推动释放闩锁并将其从控制器箱中移出，以解锁电池。
 +
-image::../media/28_dwg_e2800_remove_battery_maint-e5700.gif[28 dwg e2800 取出电池维护 e5700]
+image::../media/28_dwg_e2800_remove_battery_maint-e5700.gif[取出电池]
 
 +
 * （ 1 ） * 电池释放闩锁 _
@@ -221,7 +221,7 @@ NOTE: 为了安全地遵守 IATA 规定，更换电池在发货时的荷电状�
 当闩锁卡入到位时，闩锁的底部会挂到机箱上的金属插槽中。
 
 +
-image::../media/28_dwg_e2800_insert_battery_maint-e5700.gif[28 dwg e2800 插入电池维护 e5700]
+image::../media/28_dwg_e2800_insert_battery_maint-e5700.gif[安装电池]
 
 +
 * （ 1 ） * 电池释放闩锁 _
@@ -237,11 +237,11 @@ CAUTION: * 可能的硬件损坏 * —电池前部的金属法兰必须完全插
 +
 ** * 正确 * —电池的金属法兰已完全插入控制器上的插槽：
 +
-image:../media/28_dwg_e2800_battery_flange_ok_maint-e5700.gif[""]
+image:../media/28_dwg_e2800_battery_flange_ok_maint-e5700.gif["正确的蓄电池法兰"]
 
 ** * 不正确 * —电池的金属法兰未插入控制器上的插槽：
 +
-image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e5700.gif[""]
+image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e5700.gif["蓄电池法兰不正确"]
 
 
 
@@ -258,7 +258,7 @@ image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e5700.gif[""]
 . 将控制器箱翻转，使可拆卸盖朝下。
 . 在凸轮把手处于打开位置的情况下，将控制器箱完全滑入控制器架。
 +
-image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[28 dwg e2824 卸下控制器箱 maint e5700]
+image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[重新安装控制器箱]
 
 +
 * （ 1 ） * _ 控制器箱 _
@@ -267,7 +267,7 @@ image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[28 dwg e
 * （ 2 ） * _Cam handle
 
 +
-image::../media/28_dwg_e2860_add_controller_canister_maint-e5700.gif[28 dwg e2860 添加控制器箱维护 e5700]
+image::../media/28_dwg_e2860_add_controller_canister_maint-e5700.gif[重新安装控制器箱]
 
 +
 * （ 1 ） * _ 控制器箱 _
@@ -300,7 +300,7 @@ NOTE: 此图显示了一个控制器箱示例。您的控制器可能具有不�
 +
 ** 七段显示将重复显示 * 操作系统 * ， * 其他 * ， * 空白 _* 序列，以指示控制器已脱机。
 ** 琥珀色警示 LED 仍保持亮起状态。
-** 主机链路 LED 可能亮起，闪烁或熄灭，具体取决于主机接口。image:../media/e5700_hic_3_callouts_maint-e5700.gif[""]
+** 主机链路LED可能亮起、闪烁或熄灭、具体取决于主机接口。image:../media/e5700_hic_3_callouts_maint-e5700.gif["E5700控制器LED"]
 +
 * （ 1 ） * _Host Link LED_
 

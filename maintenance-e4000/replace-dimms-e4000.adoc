@@ -1,0 +1,356 @@
+---
+permalink: maintenance-e4000/replace-dimms-e4000.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= 更换E4000中的DIMM
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果存在内存不匹配或DIMM出现故障、您可以更换E4000中的DIMM。
+
+.开始之前
+* 请确保未使用任何卷，或者在使用这些卷的所有主机上安装了多路径驱动程序。
+* 确保您已具备以下条件：
++
+** 更换用的 DIMM 。
+** ESD 腕带，或者您已采取其他防静电预防措施。
+** 一个无静电的平面工作区。
+** 用于标识连接到控制器箱的每个缆线的标签。
+** 一个管理工作站，其浏览器可访问控制器的 SANtricity 系统管理器。(要打开System Manager界面、请将浏览器指向控制器的域名或IP地址。)
+
+
+
+
+
+
+== 第 1 步：确定是否需要更换 DIMM
+
+在更换 DIMM 之前，请验证控制器的缓存大小。
+
+.步骤
+. 访问控制器的存储阵列配置文件。在SANtricity系统管理器中，转到*Support*›*Support Center*。从支持资源页面中，选择 * 存储阵列配置文件 * 。
+. 向下滚动或使用搜索字段查找 * 数据缓存模块 * 信息。
+. 如果存在以下情况之一、请记下DIMM的位置、然后继续执行本节中的其余过程、以更换控制器上的DIMM：
++
+.. 发生故障的 DIMM 或 DIMM 报告 * 数据缓存模块 * 不是最佳模块。
+.. 具有不匹配 * 数据缓存模块 * 容量的 DIMM 。
+
+
+
+
+
+
+== 第2步：准备更换DIMM
+
+通过保存驱动器安全密钥、备份配置和收集支持数据来准备更换DIMM。然后、您可以停止主机I/O操作并将控制器置于脱机状态或关闭。
+
+[role="tabbed-block"]
+====
+.关闭控制器架电源（单工）
+--
+在单工配置中、关闭控制器架电源、以便可以安全地卸下和更换DIMM。
+
+.步骤
+. 使用SANtricity系统管理器备份存储阵列的配置数据库。
++
+如果删除控制器时出现问题，您可以使用保存的文件还原配置。系统将保存 RAID 配置数据库的当前状态，其中包括控制器上卷组和磁盘池的所有数据。
+
++
+** 在 System Manager 中：
++
+... 选择*支持›支持中心›诊断*。
+... 选择 * 收集配置数据 * 。
+... 单击 * 收集 * 。
++
+此文件将保存在浏览器的 "Downloads" 文件夹中，名为 * configurationData-<arrayName>-<DateTime>.7z* 。
+
+
+
+** 或者，您也可以使用以下命令行界面命令备份配置数据库：
++
+`s存取存储阵列 dbmDatabase sourceLocation=Onboard contentType=all file="filename" ；`
+
+
+
+. 使用 SANtricity 系统管理器收集存储阵列的支持数据。
++
+如果删除控制器时出现问题，您可以使用保存的文件对问题描述进行故障排除。系统会将有关存储阵列的清单，状态和性能数据保存在一个文件中。
+
++
+.. 选择*支持›支持中心›诊断*。
+.. 选择 * 收集支持数据 * 。
+.. 单击 * 收集 * 。
++
+此文件将保存在浏览器的 "Downloads" 文件夹中，名为 * support-data.7z* 。
+
+
+
+. 确保存储阵列与所有已连接主机之间未发生任何 I/O 操作。例如，您可以执行以下步骤：
++
+.. 停止涉及从存储映射到主机的 LUN 的所有进程。
+.. 确保没有应用程序向从存储映射到主机的任何 LUN 写入数据。
+.. 卸载与阵列上的卷关联的所有文件系统。
++
+
+NOTE: 停止主机 I/O 操作的确切步骤取决于主机操作系统和配置，这些步骤不在本说明的范围之内。如果您不确定如何停止环境中的主机 I/O 操作，请考虑关闭主机。
+
++
+
+CAUTION: *可能的数据丢失*--如果在执行I/O操作时继续此过程，可能会丢失数据。
+
+
+
+. 等待缓存中的所有数据写入驱动器。
++
+需要将缓存数据写入驱动器时，控制器背面的绿色缓存活动 LED 亮起。您必须等待此 LED 关闭。
+
+. 从 SANtricity 系统管理器的主页中，选择 * 查看正在执行的操作 * 。
+. 确认所有操作均已完成，然后再继续下一步。
+. 关闭控制器架上的两个电源开关。
+. 等待控制器架上的所有 LED 熄灭。
+
+
+--
+.使控制器脱机（双工）
+--
+在双工配置中、将控制器置于脱机状态、以便可以安全地卸下和更换DIMM。
+
+.步骤
+. 在 SANtricity 系统管理器中，查看 Recovery Guru 中的详细信息，确认问题描述中的内存不匹配，并确保不需要先解决任何其他问题。
+. 从 Recovery Guru 的 Details 区域中，确定要更换的 DIMM 。
+. 使用SANtricity系统管理器备份存储阵列的配置数据库。
++
+如果删除控制器时出现问题，您可以使用保存的文件还原配置。系统将保存 RAID 配置数据库的当前状态，其中包括控制器上卷组和磁盘池的所有数据。
+
++
+** 在 System Manager 中：
++
+... 选择*支持›支持中心›诊断*。
+... 选择 * 收集配置数据 * 。
+... 单击 * 收集 * 。
++
+该文件将保存在浏览器的"Downloads"文件夹中，名称为*configurationData-<arrayName>－<dateTime>．7z*。
+
+
+
+
+
+. 如果控制器尚未脱机，请立即使用 SANtricity 系统管理器将其脱机。
++
+.. 选择 * 硬件 * 。
+.. 如果图形显示了驱动器，请选择 * 显示磁盘架背面 * 以显示控制器。
+.. 选择要置于脱机状态的控制器。
+.. 从上下文菜单中，选择 * 置于脱机状态 * ，然后确认要执行此操作。
++
+
+NOTE: 如果您正在使用尝试脱机的控制器访问 SANtricity 系统管理器，则会显示 SANtricity 系统管理器不可用消息。选择 * 连接到备用网络连接 * 以使用另一个控制器自动访问 SANtricity 系统管理器。
+
+
+
+. 等待SANtricity系统管理器将控制器的状态更新为脱机。
++
+
+NOTE: 更新状态之前，请勿开始任何其他操作。
+
+. 从 Recovery Guru 中选择 * 重新检查 * ，然后确认详细信息区域中的确定删除字段显示是，表示可以安全删除此组件。
+
+
+--
+====
+
+
+== 第 3 步：拆下控制器箱
+
+从系统中卸下控制器箱、然后卸下控制器箱盖。
+
+.步骤
+. 如果您尚未接地，请正确接地。
+. 松开将缆线绑在缆线管理设备上的黏扣带、然后从控制器箱中拔下系统缆线和SFP (如果需要)、并记录缆线的连接位置。
++
+Leave the cables in the cable management device so that when you reinstall the cable management device, the cables are organized.
+
+. 从控制器箱的左侧和右侧拆下缆线管理设备并将其放在一旁。
+. 挤压凸轮把手上的闩锁、直到其释放、完全打开凸轮把手以从中板释放控制器箱、然后用两只手将控制器箱拉出机箱。
+. 翻转控制器箱、将其放在平坦、稳定的表面上。
+. 按下控制器箱两侧的蓝色按钮以松开护盖、然后向上旋转护盖、使其脱离控制器箱、从而打开护盖。
++
+image::../media/drw_E4000_open_controller_module_cover_IEOPS-870.png[打开控制器箱盖。]
+
+
+
+
+
+== 步骤4：更换DIMM
+
+找到控制器内的DIMM、将其卸下并更换。
+
+.步骤
+. 如果您尚未接地，请正确接地。
+. 找到控制器箱上的DIMM。
+. 记下DIMM在插槽中的方向和位置、以便可以按正确的方向插入更换用的DIMM。
+. Eject the DIMM from its slot by slowly pushing apart the two DIMM ejector tabs on either side of the DIMM, and then slide the DIMM out of the slot.
++
+DIMM将向上旋转一点。
+
+. 将DIMM旋转到最远位置、然后将DIMM滑出插槽。
++
+
+NOTE: Carefully hold the DIMM by the edges to avoid pressure on the components on the DIMM circuit board.
+
++
+image::../media/drw_E4000_replace_dimms_IEOPS-865.png[取出DIMM。]
+
++
+|===
+
+
+ a| 
+image::../media/legend_icon_01.png[一个图标]
+| DIMM ejector tabs 
+
+
+ a| 
+image::../media/legend_icon_02.png[两个图标]
+| DIMM 
+|===
+. Remove the replacement DIMM from the antistatic shipping bag, hold the DIMM by the corners, and align it to the slot.
++
+The notch among the pins on the DIMM should line up with the tab in the socket.
+
+. Insert the DIMM squarely into the slot.
++
+The DIMM fits tightly in the slot, but should go in easily.If not, realign the DIMM with the slot and reinsert it.
+
++
+
+NOTE: Visually inspect the DIMM to verify that it is evenly aligned and fully inserted into the slot.
+
+. Push carefully, but firmly, on the top edge of the DIMM until the ejector tabs snap into place over the notches at the ends of the DIMM.
+. 重新安装控制器箱盖。
+
+
+
+
+== 步骤5：重新安装控制器箱
+
+将控制器箱重新安装到机箱中。
+
+.步骤
+. 如果您尚未接地，请正确接地。
+. 如果尚未更换控制器箱上的盖子、请进行更换。
+. 翻转控制器箱、并将其端部与机箱中的开口对齐。
+. 将控制器箱轻轻推入系统的一半。将控制器箱的末端与机箱中的开口对齐、然后将控制器箱轻轻推入系统的一半。
++
+
+NOTE: 在系统指示之前、请勿将控制器箱完全插入机箱中。
+
+. Recable the system, as needed.
++
+If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
+
+. 完成控制器箱的重新安装：
++
+.. 使凸轮把手处于打开位置、用力推入控制器箱、直到它与中板接触并完全就位、然后将凸轮把手合上至锁定位置。
++
+
+NOTE: 将控制器箱滑入机箱时、请勿用力过度、以免损坏连接器。
+
++
+The controller begins to boot as soon as it is seated in the chassis.
+
+.. If you have not already done so, reinstall the cable management device.
+.. 使用钩环带将缆线绑定到缆线管理设备。
+
+
+
+
+
+
+== 第6步：完成DIMM更换
+
+[role="tabbed-block"]
+====
+.启动控制器（单工）
+--
+将控制器置于联机状态，收集支持数据并恢复操作。
+
+.步骤
+. 在控制器启动时，检查控制器 LED 。
++
+重新建立与另一控制器的通信时：
+
++
+** 琥珀色警示 LED 仍保持亮起状态。
+** 主机链路 LED 可能亮起，闪烁或熄灭，具体取决于主机接口。
+
+
+. 当控制器恢复联机后、确认其状态为"Optimal"(最佳)并检查控制器架的警示LED。
++
+如果状态不是最佳状态，或者任何警示 LED 均亮起，请确认所有缆线均已正确就位，并且控制器箱已正确安装。如有必要，请拆下并重新安装控制器箱。注：如果无法解决此问题、请联系技术支持。
+
+. 使用 SANtricity 系统管理器收集存储阵列的支持数据。
++
+.. 选择*支持›支持中心›诊断*。
+.. 选择 * 收集支持数据 * 。
+.. 单击 * 收集 * 。
++
+此文件将保存在浏览器的 "Downloads" 文件夹中，名为 * support-data.7z* 。
+
+
+
+
+
+--
+.使控制器联机（双工）
+--
+将控制器置于联机状态，收集支持数据并恢复操作。
+
+.步骤
+. 将控制器置于联机状态。
++
+.. 在 System Manager 中，导航到硬件页面。
+.. 选择*控制器和组件*。
+.. 选择已更换 DIMM 的控制器。
+.. 从下拉列表中选择 * 置于联机状态 * 。
+
+
+. 在控制器启动时，检查控制器 LED 。
++
+重新建立与另一控制器的通信时：
+
++
+** 琥珀色警示 LED 仍保持亮起状态。
+** 主机链路 LED 可能亮起，闪烁或熄灭，具体取决于主机接口。
+
+
+. 当控制器恢复联机后、确认其状态为"Optimal"(最佳)并检查控制器架的警示LED。
++
+如果状态不是最佳状态，或者任何警示 LED 均亮起，请确认所有缆线均已正确就位，并且控制器箱已正确安装。如有必要，请拆下并重新安装控制器箱。注：如果无法解决此问题、请联系技术支持。
+
+. 验证所有卷是否均已返回到首选所有者。
++
+.. 选择*存储›卷*。在 * 所有卷 * 页面中，验证卷是否已分发到其首选所有者。选择*更多›更改所有权*以查看卷所有者。
+.. 如果卷全部归首选所有者所有，请继续执行步骤 6 。
+.. 如果未返回任何卷，则必须手动返回这些卷。转到*更多›重新分发卷*。
+.. 如果不存在 Recovery Guru ，或者按照 Recovery Guru 步骤执行操作，则卷仍不会返回给其首选所有者联系支持部门。
+
+
+. 使用 SANtricity 系统管理器收集存储阵列的支持数据。
++
+.. 选择*支持›支持中心›诊断*。
+.. 选择 * 收集支持数据 * 。
+.. 单击 * 收集 * 。
++
+此文件将保存在浏览器的 "Downloads" 文件夹中，名为 * support-data.7z* 。
+
+
+
+
+
+--
+====

@@ -11,7 +11,7 @@ summary: 如果两个或更多主机需要对相同卷进行I/O访问、则可�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

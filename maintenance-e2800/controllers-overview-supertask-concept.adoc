@@ -36,9 +36,9 @@ NOTE: 这些过程适用于同类磁盘架IOM热插拔或更换。这意味着�
 
 图中显示了添加第二个控制器（一个控制器箱和一个控制器空位）以及添加第二个控制器（两个控制器箱）之前的控制器架示例。
 
-image::../media/28_dwg_2800_controller_simplex.gif[28 dwg 2800 控制器单工]
+image::../media/28_dwg_2800_controller_simplex.gif[E2800单工配置]
 
-image::../media/28_dwg_2800_controller_duplex.gif[28 dwg 2800 控制器双工]
+image::../media/28_dwg_2800_controller_duplex.gif[E2800双工配置]
 
 
 NOTE: 图中显示了控制器箱示例；控制器箱上的主机端口可能有所不同。
@@ -91,7 +91,7 @@ NOTE: 只要出现以下更换情况、控制器的琥珀色警示LED就会熄�
 ====
 
 
-image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[28 个 dwg 2800 控制器已连接到主维护 2800]
+image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[E2800警示LED]
 
 * （ 1 ） * _ 警示 LED_
 

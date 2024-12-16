@@ -11,7 +11,7 @@ summary: 您可以为池或卷组启用驱动器安全性、以防止未经授�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

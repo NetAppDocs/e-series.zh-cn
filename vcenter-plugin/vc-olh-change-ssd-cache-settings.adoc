@@ -11,7 +11,7 @@ summary: 编辑SSD缓存的名称并查看其状态、最大容量和当前容�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

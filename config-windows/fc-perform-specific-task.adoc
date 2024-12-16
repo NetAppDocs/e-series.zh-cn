@@ -70,7 +70,7 @@ summary: 对于光纤通道协议，您可以配置交换机并确定主机端�
 
 图中显示了在两个分区中连接到 E 系列存储阵列的主机。一个分区用蓝线表示，另一个分区用红线表示。任何一个端口都有两条通往存储的路径（每个控制器一条）。
 
-image::../media/port_identifiers_host_and_target_conf-win.gif[端口标识符 host 和 target conf win]
+image::../media/port_identifiers_host_and_target_conf-win.gif[光纤通道端口标识符]
 
 
 

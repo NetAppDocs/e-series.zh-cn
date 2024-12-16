@@ -11,7 +11,7 @@ summary: 获取并导入CA签名证书、以安全访问托管适用于vCenter�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

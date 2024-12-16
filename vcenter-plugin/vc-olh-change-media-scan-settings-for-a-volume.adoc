@@ -11,7 +11,7 @@ summary: 介质扫描是一种后台操作、可扫描卷中的所有数据和�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -19,7 +19,7 @@ summary: 了解 Web 服务 API
 
 无论使用何种编程语言或工具，每次对 Web 服务 API 的调用都具有类似的结构，其中包含 URL ， HTTP 动词和接受标头。
 
-image::../media/web_services_proxy_api.gif[Web 服务代理 API]
+image::../media/web_services_proxy_api.gif[Web服务API调用图]
 
 如以下示例所示，所有请求都包含一个 URL ，并包含表中所述的元素。
 

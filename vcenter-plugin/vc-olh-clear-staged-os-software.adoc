@@ -11,7 +11,7 @@ summary: 您可以删除暂存操作系统软件、以确保稍后不会无意�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

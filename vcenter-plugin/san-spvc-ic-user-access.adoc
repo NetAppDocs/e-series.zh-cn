@@ -11,7 +11,7 @@ summary: 配置适用于 vCenter 的存储插件的访问权限。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -11,7 +11,7 @@ summary: 更改卷的首选控制器所有权、以便通过新路径定向主�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

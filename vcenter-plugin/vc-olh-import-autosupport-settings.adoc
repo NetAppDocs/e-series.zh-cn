@@ -11,7 +11,7 @@ summary: 将AutoSupport 配置从一个存储阵列导入到其他存储阵列�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

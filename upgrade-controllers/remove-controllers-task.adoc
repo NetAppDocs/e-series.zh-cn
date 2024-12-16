@@ -1,7 +1,7 @@
 ---
 permalink: upgrade-controllers/remove-controllers-task.html 
 sidebar: sidebar 
-keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, remove controller, removing controller, remove battery, removing battery 
+keywords: E-Series, eseries, E4000, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, remove controller, removing controller, remove battery, removing battery 
 summary: 升级控制器的第一步是删除旧控制器以及电池。 
 ---
 = 删除控制器
@@ -51,7 +51,7 @@ CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on 
 下图是控制器型号上释放把手的常规位置示例。控制器架和控制器驱动器托盘具有类似的释放把手配置。
 
 +
-image:../media/28_dwg_e2824_remove_controller_canister_upg-hw.gif[""]
+image:../media/28_dwg_e2824_remove_controller_canister_upg-hw.gif["拆下控制器箱"]
 
 +
 * （ 1 ） * _ 控制器箱 _
@@ -75,12 +75,7 @@ image:../media/28_dwg_e2824_remove_controller_canister_upg-hw.gif[""]
 
 .步骤
 . 向下按旧控制器箱上的两个顶盖闩锁按钮，然后将顶盖滑动到箱后部。
-. 根据您的控制器驱动器托盘型号，执行以下选项之一以释放旧电池：
-+
-** 对于 E2600 或 E2700 控制器驱动器托架，拧下将电池固定到控制器箱的翼形螺钉。
-** 对于 E5400 ， EF540 ， E5500 ， EF550 ， E5600 ， 或 EF600 控制器驱动器托架，释放用于将电池固定到控制器箱的卡舌。
-
-
+. 在您的控制器驱动器托盘型号上、松开将电池固定到控制器箱的卡舌以释放旧电池。
 . 将电池滑向旧控制器箱的后部，将其取出。
 
 

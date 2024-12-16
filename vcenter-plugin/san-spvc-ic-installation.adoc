@@ -11,7 +11,7 @@ summary: 安装或升级适用于vCenter的SANtricity 存储插件。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

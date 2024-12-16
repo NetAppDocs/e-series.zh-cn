@@ -11,7 +11,7 @@ summary: 如果当前名称不再有意义或适用、请更改存储阵列组�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

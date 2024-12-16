@@ -11,7 +11,7 @@ summary: 将未分配的卷添加到现有工作负载或新工作负载。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

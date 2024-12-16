@@ -10,7 +10,7 @@ summary: 您可以创建称为卷的数据容器、以便主机可以访问阵�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

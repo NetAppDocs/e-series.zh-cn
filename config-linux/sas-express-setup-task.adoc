@@ -2,7 +2,7 @@
 permalink: config-linux/sas-express-setup-task.html 
 sidebar: sidebar 
 keywords: sas, express, setup 
-summary: SAS 快速设置 
+summary: 您可以在E系列系统上的Linux主机上使用SAS协议。 
 ---
 = SAS 快速设置
 :allow-uri-read: 
@@ -10,3 +10,5 @@ summary: SAS 快速设置
 :imagesdir: ../media/
 
 
+[role="lead"]
+您可以在E系列系统上的Linux主机上使用SAS协议。

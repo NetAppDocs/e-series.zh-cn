@@ -17,5 +17,5 @@ ESXi 的所有 6._x_ 和 7_x_ 版本均支持 VMFS 版本 5 和 6 。
 
 .步骤
 . 确保已正确发现映射到 ESXi 主机的卷。
-. 有关在 vSphere Client 或 vSphere Web Client 中创建 VMFS 数据存储库或使用卷作为 RDM 的说明，请参见 https://www.vmware.com/support/pubs/["VMware 文档网站"^]。
+. 有关使用vSphere Client或vSphere Web Client创建VMFS数据存储库或将卷用作VMM的说明，请参阅。 https://docs.vmware.com/index.html["VMware 文档网站"^]
 

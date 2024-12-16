@@ -36,7 +36,7 @@ NOTE: 为了安全地遵守 IATA 规定，更换电池在发货时的荷电状�
 当闩锁卡入到位时，闩锁的底部会挂到机箱上的金属插槽中。
 
 +
-image::../media/28_dwg_e2800_insert_battery_maint-e2800.gif[28 dwg e2800 插入电池维护 e2800]
+image::../media/28_dwg_e2800_insert_battery_maint-e2800.gif[E2800插入电池]
 
 +
 * （ 1 ） * 电池释放闩锁 _
@@ -54,10 +54,10 @@ CAUTION: * 可能的硬件损坏 * —电池前部的金属法兰必须完全插
 
 
 +
-image:../media/28_dwg_e2800_battery_flange_ok_maint-e2800.gif[""]
+image:../media/28_dwg_e2800_battery_flange_ok_maint-e2800.gif["正确插入蓄电池法兰"]
 
 +
-** * 不正确 * —电池的金属法兰未插入控制器上的插槽： +image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e2800.gif[""]
+** *不正确*--电池的金属法兰未插入控制器上的插槽：+image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e2800.gif["蓄电池法兰插件不正确"]
 
 
 . 转至 link:batteries-reinstall-controller-canister-task.html["重新安装 E2800 控制器箱"]。

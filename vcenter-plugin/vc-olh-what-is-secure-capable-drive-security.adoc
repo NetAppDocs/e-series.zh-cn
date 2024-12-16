@@ -10,7 +10,7 @@ summary: 驱动器安全性是一项功能、可防止在从存储阵列中删�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

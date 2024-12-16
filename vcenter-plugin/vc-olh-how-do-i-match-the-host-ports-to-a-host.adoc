@@ -10,7 +10,7 @@ summary: '如果要手动创建主机、则必须首先使用主机上可用的�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

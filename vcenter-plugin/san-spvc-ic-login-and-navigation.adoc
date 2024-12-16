@@ -10,7 +10,7 @@ summary: 登录并导航适用于 vCenter 的插件。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

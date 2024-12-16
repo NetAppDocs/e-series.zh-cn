@@ -10,7 +10,7 @@ summary: '保留容量是指池中为支持潜在驱动器故障而预留的容�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

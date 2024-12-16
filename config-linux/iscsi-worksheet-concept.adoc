@@ -19,7 +19,7 @@ summary: 使用此工作表记录 iSCSI 存储配置信息。
 
 建议的配置包括两个启动程序端口和四个目标端口以及一个或多个 VLAN 。
 
-image::../media/50001_01_conf-lin.gif[50001 01 配置 LIN]
+image::../media/50001_01_conf-lin.gif[iSCSI网络配置]
 
 
 

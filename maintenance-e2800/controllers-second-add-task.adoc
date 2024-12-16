@@ -39,7 +39,7 @@ summary: 向仅包含一个控制器箱的控制器架添加另一个控制器�
 . 拆开新控制器箱的包装，将其放在无静电的平面上。
 . 找到控制器箱背面的 MAC 地址和 FRU 部件号标签。
 +
-image::../media/28_dwg_e2800_labels_maint-e2800.gif[28 个 dwg e2800 标签 maint e2800]
+image::../media/28_dwg_e2800_labels_maint-e2800.gif[E2800控制器上的MAC地址和FRU部件号]
 
 +
 * （ 1 ） * _MAC 地址： _ 管理端口 1 的 MAC 地址（ "`P1` " ）。如果您使用 DHCP 获取原始控制器的 IP 地址，则需要使用此地址连接到新控制器。
@@ -50,7 +50,7 @@ image::../media/28_dwg_e2800_labels_maint-e2800.gif[28 个 dwg e2800 标签 main
 . 在 SANtricity 系统管理器中，找到已安装控制器箱的更换部件号。
 +
 .. 选择 * 硬件 * 。
-.. 找到标记有控制器图标的控制器架 image:../media/sam1130_ss_hardware_controller_icon_maint-e2800.gif[""]。
+.. 找到标有控制器图标的控制器架image:../media/sam1130_ss_hardware_controller_icon_maint-e2800.gif["控制器图标"]。
 .. 单击控制器图标。
 .. 选择控制器，然后单击 * 下一步 * 。
 .. 在 * 基本 * 选项卡上，记下控制器的 * 更换部件号 * 。
@@ -88,7 +88,7 @@ CAUTION: * 可能丢失数据访问 * - 安装在两个控制器箱中的 HIC �
 CAUTION: * 可能的设备损坏 * —请务必小心，不要挤压 HIC 和翼形螺钉之间控制器 LED 的金带连接器。
 
 +
-image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[28 个 dwg e2800 hic 翼形螺钉 maint e2800]
+image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[将HIC安装到控制器上]
 
 +
 * （ 1 ） * _ 主机接口卡 _
@@ -102,7 +102,7 @@ image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[28 个 dwg e2800 hi
 
 . 使用 1 号十字螺丝刀，使用先前卸下的四个螺钉将新 HIC 面板连接到控制器箱。
 +
-image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[28 个 dwg e2800 hic faceplace 螺钉 maint e2800]
+image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[安装该装置]
 
 . 将控制器箱盖从背面向前滑动，直到按钮卡入到位，从而重新安装控制器箱上的盖。
 . 将控制器箱放在一旁，直到准备好安装为止。
@@ -286,7 +286,7 @@ reset controller [a];
 . 将控制器箱翻转，使可拆卸盖朝下。
 . 在凸轮把手处于打开位置的情况下，将控制器箱完全滑入控制器架。
 +
-image::../media/28_dwg_e2824_add_controller_canister.gif[28 dwg e2824 添加控制器箱]
+image::../media/28_dwg_e2824_add_controller_canister.gif[安装第二个控制器箱]
 
 +
 * （ 1 ） * _ 控制器箱 _
@@ -312,7 +312,7 @@ image::../media/28_dwg_e2824_add_controller_canister.gif[28 dwg e2824 添加控�
 +
 ** 七段显示将重复显示 * 操作系统 * ， * 其他 * ， * 空白 _* 序列，以指示控制器已脱机。
 ** 琥珀色警示 LED 仍保持亮起状态。
-** 主机链路 LED 可能亮起，闪烁或熄灭，具体取决于主机接口。image:../media/28_dwg_attn_led_7s_display_maint-e2800.gif[""]
+** 主机链路LED可能亮起、闪烁或熄灭、具体取决于主机接口。image:../media/28_dwg_attn_led_7s_display_maint-e2800.gif["E2800控制器LED"]
 +
 * （ 1 ） * _ 警示 LED （琥珀色） _
 
@@ -380,7 +380,7 @@ NOTE: 使用 SANtricity 系统管理器安装新的 NVSRAM 文件时，必须安
 
 .. 对于要重新分布的每个卷，从 * 首选所有者 * 列表中选择 * 控制器 B* 。
 +
-image::../media/sam1130_ss_change_volume_ownership.gif[sam1130 ss 更改卷所有权]
+image::../media/sam1130_ss_change_volume_ownership.gif[System Manager屏幕以查看更改卷所有权]
 
 .. 单击 * 更改所有权 * 。
 +

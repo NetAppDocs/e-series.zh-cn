@@ -11,7 +11,7 @@ summary: 更改卷的设置、例如名称、主机分配、区块大小、修�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

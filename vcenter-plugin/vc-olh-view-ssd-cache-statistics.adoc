@@ -11,7 +11,7 @@ summary: 查看SSD缓存的统计信息、例如读取、写入、缓存命中�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

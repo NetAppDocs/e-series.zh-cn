@@ -1,0 +1,44 @@
+---
+section: maintenance-e4000
+title: E4000
+entries:
+- title: 电池
+  url: "/maintenance-e4000/replace-battery-e4000.html"
+- title: 控制器
+  entries:
+  - title: 注意事项和要求
+    url: "/maintenance-e4000/replace-controller-requirements-e4000.html"
+  - title: 添加第二个控制器箱
+    url: "/maintenance-e4000/replace-controller-second-e4000.html"
+  - title: 更换控制器
+    url: "/maintenance-e4000/replace-controller-e4000.html"
+- title: 箱
+  entries:
+  - title: 更换电源(E4012)
+    url: "/maintenance-e4000/replace-power-supply.html"
+  - title: 更换电源箱(E4060)
+    url: "/maintenance-e4000/replace-power-canister.html"
+  - title: 更换风扇箱(E4060)
+    url: "/maintenance-e4000/replace-fan-canister.html"
+- title: DIMM
+  url: "/maintenance-e4000/replace-dimms-e4000.html"
+- title: 驱动器
+  entries:
+  - title: 注意事项和要求
+    url: "/maintenance-e4000/replace-drive-e4000.html"
+  - title: 更换驱动器
+    entries:
+    - title: 12或24个驱动器
+      url: "/maintenance-e4000/replace-drives-12-24.html"
+    - title: 60个驱动器
+      url: "/maintenance-e4000/replace-drives-60.html"
+  - title: 更换驱动器抽屉(4060)
+    url: "/maintenance-e4000/drive-drawer-60.html"
+  - title: 热添加驱动器架
+    url: "/maintenance-e4000/replace-drives-hotadd-drive-shelf.html"
+- title: 主机接口卡
+  entries:
+  - title: 升级HIC
+    url: "/maintenance-e4000/replace-hic-upgrade-e4000.html"
+  - title: 更换发生故障的HIC
+    url: "/maintenance-e4000/replace-hic-e4000.html"

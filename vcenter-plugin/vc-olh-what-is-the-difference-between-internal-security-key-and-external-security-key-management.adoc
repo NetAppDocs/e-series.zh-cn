@@ -10,7 +10,7 @@ summary: 在实施驱动器安全功能时、当从存储阵列中删除启用�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

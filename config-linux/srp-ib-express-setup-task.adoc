@@ -2,7 +2,7 @@
 permalink: config-linux/srp-ib-express-setup-task.html 
 sidebar: sidebar 
 keywords: srp, infiniband, express, setup 
-summary: 基于 InfiniBand 的 SRP 快速设置 
+summary: 您可以在E系列系统的Linux主机上使用基于InfiniBand的SRP协议。 
 ---
 = 基于 InfiniBand 的 SRP 快速设置
 :allow-uri-read: 
@@ -10,3 +10,5 @@ summary: 基于 InfiniBand 的 SRP 快速设置
 :imagesdir: ../media/
 
 
+[role="lead"]
+您可以在E系列系统的Linux主机上使用基于InfiniBand的SRP协议。

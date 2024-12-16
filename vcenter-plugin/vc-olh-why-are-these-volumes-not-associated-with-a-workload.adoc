@@ -10,7 +10,7 @@ summary: '如果卷是使用命令行界面(CLI)创建的、或者已从其他�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

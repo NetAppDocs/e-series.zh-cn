@@ -11,7 +11,7 @@ summary: 您可以删除主机或主机集群、以使卷不再与该主机关�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

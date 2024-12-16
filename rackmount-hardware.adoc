@@ -6,6 +6,8 @@ summary: 机架式安装硬件。
 ---
 = 机架式硬件
 :allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
 
 
 [role="lead"]

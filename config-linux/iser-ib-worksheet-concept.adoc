@@ -67,7 +67,7 @@ NOTE: 软件启动程序 IQN 在任务期间确定， xref:iser-ib-configure-net
 
 建议的配置包括两个主机（启动程序）端口和四个目标端口。
 
-image::../media/port_identifiers_ib_iser.gif[端口标识符 IB iser"]
+image::../media/port_identifiers_ib_iser.gif[iSER over IB网络配置]
 
 
 

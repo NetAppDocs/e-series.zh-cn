@@ -10,7 +10,7 @@ summary: 主机操作系统类型字段包含主机的操作系统。您可以�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

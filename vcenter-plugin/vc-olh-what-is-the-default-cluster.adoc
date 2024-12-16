@@ -10,7 +10,7 @@ summary: 默认集群是一个系统定义的实体、它允许登录到存储�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

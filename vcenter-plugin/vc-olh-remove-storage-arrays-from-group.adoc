@@ -11,7 +11,7 @@ summary: 如果您不想再从特定存储组管理一个或多个受管存储�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

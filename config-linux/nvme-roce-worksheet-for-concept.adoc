@@ -19,7 +19,7 @@ summary: 使用此工作表记录基于 RoCE 的 NVMe 存储配置信息。
 
 在直连拓扑中，一个或多个主机直接连接到子系统。在 SANtricity OS 11.50 版本中，我们支持从每个主机到子系统控制器的单个连接，如下所示。在此配置中，每个主机的一个 HCA （主机通道适配器）端口应与所连接的 E 系列控制器端口位于同一子网中，但与另一个 HCA 端口位于不同的子网中。
 
-image::../media/nvmeof_direct_connect.gif[nvmeof 直接连接]
+image::../media/nvmeof_direct_connect.gif[基于RoCE的NVMe直连示例]
 
 满足这些要求的示例配置包括四个网络子网，如下所示：
 
@@ -35,7 +35,7 @@ image::../media/nvmeof_direct_connect.gif[nvmeof 直接连接]
 
 在网络结构拓扑中，使用一个或多个交换机。请参见 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^] 有关支持的交换机的列表。
 
-image::../media/nvmeof_switch_connect.gif[nvmeof 交换机连接]
+image::../media/nvmeof_switch_connect.gif[基于RoCE的NVMe交换机连接示例]
 
 
 

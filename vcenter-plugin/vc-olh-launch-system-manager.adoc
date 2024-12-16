@@ -10,7 +10,7 @@ summary: 要管理单个阵列、请使用Launch选项在新浏览器窗口中�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

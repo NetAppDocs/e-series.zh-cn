@@ -10,7 +10,7 @@ summary: FDE/Fips安全性是指在写入期间对数据进行加密的安全驱
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

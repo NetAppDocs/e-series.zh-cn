@@ -21,20 +21,20 @@ summary: 安装 3040 40U 机柜之前，请收集所需的工具和设备。
 
 
  a| 
-image:../media/83009_02.gif[""]
+image:../media/83009_02.gif["3/4英寸扳手和内六角扳手"]
  a| 
 * 1/4 英寸扳手 * （在装运箱中提供）—用于在机柜下方升高和降低水平脚。
 
 * 1/4 英寸六角扳手 * —用于提升和降低机柜正面的稳定性支脚。
  a| 
-image:../media/77037_11.gif[""]
+image:../media/77037_11.gif["随机柜一起提供"]
 
 
 
  a| 
 * NEMA L6-30*
 
-image:../media/73121_01_dwg_nema_l6_30_power_cord.gif[""]
+image:../media/73121_01_dwg_nema_l6_30_power_cord.gif["NEMA 6－30电源线"]
  a| 
 * 交流电源线 * —用于将机柜连接到外部电源（墙插）。
 
@@ -45,19 +45,19 @@ image:../media/73121_01_dwg_nema_l6_30_power_cord.gif[""]
 
 NOTE: 每个 PDU 都必须连接到一个独立的电源。
  a| 
-image:../media/77037_11.gif[""]
+image:../media/77037_11.gif["随机柜一起提供"]
 
 
 
  a| 
 "*
 
-image:../media/73122_01_dwg_iec_60309_power_cord.gif[""]
+image:../media/73122_01_dwg_iec_60309_power_cord.gif["IEC-60309电源线"]
 
 
 
  a| 
-image:../media/78038_21.png[""]
+image:../media/78038_21.png["随机柜一起提供"]
  a| 
 "* SAS 缆线 " （可选）—每个驱动器托盘附带两根缆线，而主机端缆线必须单独购买。
 
@@ -69,11 +69,11 @@ image:../media/78038_21.png[""]
 
 
  a| 
-image:../media/77038_06.gif[""]
+image:../media/77038_06.gif["SAS和通信缆线"]
  a| 
 * 可安装缆线卷轴 * —沿垂直配电插座两侧安装，以容纳多余的缆线长度和缆线布线。每个控制器驱动器托盘附带两个缆线卷轴电缆卷轴还随附独立驱动器托盘。
  a| 
-image:../media/77037_11.gif[""]
+image:../media/77037_11.gif["可安装电缆轴"]
 
 
 

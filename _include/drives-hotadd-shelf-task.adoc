@@ -2,9 +2,6 @@
 :allow-uri-read: 
 
 
-[role="lead"]
-您可以在存储系统的其他组件仍通电的情况下添加新驱动器架。您可以配置，重新配置，添加或重新定位存储系统容量，而不会中断用户对数据的访问。
-
 .开始之前
 由于此操作步骤的复杂性，建议执行以下操作：
 
@@ -13,7 +10,7 @@
 
 
 .关于此任务
-此 操作步骤 适用场景 会将DE212C、DE224C或DE460C驱动器架热添加到E2800、E2800B、EF280、E5700、E5700B、EF570、EF300或EF600控制器架。
+此过程适用于将DE212C、DE224C或DE460C驱动器架热添加到E2800、E2800B、EF280、E5700、E5700B、EF570、EF300、EF600或E4000控制器架。
 
 此 操作步骤 适用场景 IOM12 和 IOM12B 驱动器架。
 
@@ -59,21 +56,25 @@ NOTE: 要保持系统完整性，您必须严格按照显示的顺序执行操�
 
 NOTE: 如果在过去两到三周内发生未解决的严重事件，请停止操作步骤并联系技术支持。只有在解决了问题描述后，才能继续操作步骤。
 
-. 选择 * 硬件 * 。
-. 选择 * IOM （ ESM ） * 图标。
+. 如果已将IOM连接到硬件、请完成以下步骤。否则、请转至<<step2_install_drive_shelf,第2步：安装驱动器架并接通电源。>>
 +
-image::../media/sam1130_ss_hardware_iom_icon.gif[sam1130 ss hardware IOM 图标]
+.. 选择 * 硬件 * 。
+.. 选择 * IOM （ ESM ） * 图标。
++
+image::../media/sam1130_ss_hardware_iom_icon.gif[IOM (EMM)图标]
 
 +
 此时将显示磁盘架组件设置对话框，并选择了 * IOM （ ESM ） * 选项卡。
 
-. 确保为每个 IOM/ESM 显示的状态为 _optimal_ 。
-. 单击 * 显示更多设置 * 。
-. 确认存在以下条件：
+.. 确保为每个 IOM/ESM 显示的状态为 _optimal_ 。
+.. 单击 * 显示更多设置 * 。
+.. 确认存在以下条件：
 +
-** 检测到的 ESM/IOM 数量与系统中安装的 ESM/IOM 数量以及每个驱动器架的 ESM/IOM 数量匹配。
-** 两个 ESM/IOM 均显示通信正常。
-** DE212C ， DE224C 和 DE460C 驱动器架的数据速率为 12 Gb/ 秒，其他驱动器托盘的数据速率为 6 Gb/ 秒。
+*** 检测到的 ESM/IOM 数量与系统中安装的 ESM/IOM 数量以及每个驱动器架的 ESM/IOM 数量匹配。
+*** 两个 ESM/IOM 均显示通信正常。
+*** DE212C ， DE224C 和 DE460C 驱动器架的数据速率为 12 Gb/ 秒，其他驱动器托盘的数据速率为 6 Gb/ 秒。
+
+
 
 
 
@@ -101,18 +102,12 @@ NOTE: 有关物理安装和电源布线的完整操作步骤，请参见适用�
 
 == 第 3 步：为系统布线
 
-选择以下选项之一：
-
-* <<选项1：连接E2800或E5700的驱动器架>>
-* <<选项2：连接EF300或EF600的驱动器架>>
-
-
 如果要使用缆线将旧控制器架连接到 DE212C ， DE224C 或 DE460 ，请参见 https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057["将 IOM 驱动器架添加到现有 E27XX ， E56XX 或 EF560 控制器架"^]。
 
-
-
-=== 选项1：连接E2800或E5700的驱动器架
-
+[role="tabbed-block"]
+====
+.连接E2800或E5700的驱动器架
+--
 将驱动器架连接到控制器 A ，确认 IOM 状态，然后将驱动器架连接到控制器 B
 
 .步骤
@@ -121,10 +116,10 @@ NOTE: 有关物理安装和电源布线的完整操作步骤，请参见适用�
 下图显示了一个附加驱动器架与控制器 A 之间的连接示例要查找您的型号上的端口，请参见 https://hwu.netapp.com/Controller/Index?platformTypeId=2357027["Hardware Universe"^]。
 
 +
-image::../media/hot_e5700_0.png[热 e5700 0]
+image::../media/hot_e5700_0.png[将驱动器架连接到控制器]
 
 +
-image::../media/hot_e5700_1.png[热 e5700 1.]
+image::../media/hot_e5700_1.png[将驱动器架连接到控制器]
 
 . 在 SANtricity 系统管理器中，单击 * 硬件 * 。
 +
@@ -134,7 +129,7 @@ NOTE: 此时，在操作步骤中，您只有一条指向控制器架的活动�
 . 根据需要向下滚动以查看新存储系统中的所有驱动器架。如果未显示新驱动器架，请解决连接问题描述。
 . 选择新驱动器架的 * ESM/IOM* 图标。
 +
-image::../media/sam1130_ss_hardware_iom_icon.gif[sam1130 ss hardware IOM 图标]
+image::../media/sam1130_ss_hardware_iom_icon.gif[ESM/IOM图标]
 
 +
 此时将显示 * 磁盘架组件设置 * 对话框。
@@ -153,7 +148,7 @@ image::../media/sam1130_ss_hardware_iom_icon.gif[sam1130 ss hardware IOM 图标]
 下图显示了一个附加驱动器架与控制器 B 之间的连接示例要查找您的型号上的端口，请参见 https://hwu.netapp.com/Controller/Index?platformTypeId=2357027["Hardware Universe"^]。
 
 +
-image::../media/hot_e5700_2.png[热的 e5700 2.]
+image::../media/hot_e5700_2.png[驱动器架连接示例]
 
 . 如果尚未选中此选项，请在 * 磁盘架组件设置 * 对话框中选择 * ESM/IOM* 选项卡，然后选择 * 显示更多选项 * 。验证卡通信是否为 * 是 * 。
 +
@@ -162,10 +157,9 @@ NOTE: 最佳状态表示已解决与新驱动器架相关的冗余丢失错误�
 
 
 
-
-
-=== 选项2：连接EF300或EF600的驱动器架
-
+--
+.连接EF300或EF600的驱动器架
+--
 将驱动器架连接到控制器 A ，确认 IOM 状态，然后将驱动器架连接到控制器 B
 
 .开始之前
@@ -175,17 +169,17 @@ NOTE: 最佳状态表示已解决与新驱动器架相关的冗余丢失错误�
 .步骤
 . 从堆栈中最后一个磁盘架的 IOM12 端口 1 和 2 断开 A 侧控制器缆线，然后将其连接到新磁盘架的 IOM12 端口 1 和 2 。
 +
-image::../media/de224c_sides.png[de224c 面]
+image::../media/de224c_sides.png[断开控制器A的缆线并连接到新磁盘架]
 
 . 将缆线从新磁盘架连接到 A 侧 IOM12 端口 3 和 4 ，再连接到上一个磁盘架的 IOM12 端口 1 和 2 。
 +
 下图显示了附加驱动器架与上一个驱动器架之间的一端连接示例。要查找您的型号上的端口，请参见 https://hwu.netapp.com/Controller/Index?platformTypeId=2357027["Hardware Universe"^]。
 
 +
-image::../media/hot_ef_0.png[热 f 0]
+image::../media/hot_ef_0.png[驱动器架布线示例]
 
 +
-image::../media/hot_ef_1.png[热备份 1]
+image::../media/hot_ef_1.png[驱动器架布线示例]
 
 . 在 SANtricity 系统管理器中，单击 * 硬件 * 。
 +
@@ -195,7 +189,7 @@ NOTE: 此时，在操作步骤中，您只有一条指向控制器架的活动�
 . 根据需要向下滚动以查看新存储系统中的所有驱动器架。如果未显示新驱动器架，请解决连接问题描述。
 . 选择新驱动器架的 * ESM/IOM* 图标。
 +
-image::../media/sam1130_ss_hardware_iom_icon.gif[sam1130 ss hardware IOM 图标]
+image::../media/sam1130_ss_hardware_iom_icon.gif[ESM/IOM图标]
 
 +
 此时将显示 * 磁盘架组件设置 * 对话框。
@@ -214,7 +208,7 @@ image::../media/sam1130_ss_hardware_iom_icon.gif[sam1130 ss hardware IOM 图标]
 下图显示了附加驱动器架与上一个驱动器架之间 B 侧的连接示例。要查找您的型号上的端口，请参见 https://hwu.netapp.com/Controller/Index?platformTypeId=2357027["Hardware Universe"^]。
 
 +
-image::../media/hot_ef_2.png[热 f 2.]
+image::../media/hot_ef_2.png[驱动器架布线示例]
 
 . 如果尚未选中此选项，请在 * 磁盘架组件设置 * 对话框中选择 * ESM/IOM* 选项卡，然后选择 * 显示更多选项 * 。验证卡通信是否为 * 是 * 。
 +
@@ -223,6 +217,51 @@ NOTE: 最佳状态表示已解决与新驱动器架相关的冗余丢失错误�
 
 
 
+--
+.连接E4000的驱动器架
+--
+将驱动器架连接到控制器 A ，确认 IOM 状态，然后将驱动器架连接到控制器 B
+
+.步骤
+. 将驱动器架连接到控制器 A
++
+image::../media/hot_e4000_cabling_1.png[驱动器架布线]
+
+. 在 SANtricity 系统管理器中，单击 * 硬件 * 。
++
+
+NOTE: 此时，在操作步骤中，您只有一条指向控制器架的活动路径。
+
+. 根据需要向下滚动以查看新存储系统中的所有驱动器架。如果未显示新驱动器架，请解决连接问题描述。
+. 选择新驱动器架的 * ESM/IOM* 图标。
++
+image::../media/sam1130_ss_hardware_iom_icon.gif[IOM硬件图标]
+
++
+此时将显示 * 磁盘架组件设置 * 对话框。
+
+. 在 * 磁盘架组件设置 * 对话框中选择 * ESM/IOM* 选项卡。
+. 选择 * 显示更多选项 * ，然后验证以下内容：
++
+** 列出了 IOM/ESM A 。
+** 对于 SAS-3 驱动器架，当前数据速率为 12 Gbps 。
+** 卡通信正常。
+
+
+. 断开控制器 B 的所有扩展缆线
+. 将驱动器架连接到控制器 B
++
+image::../media/hot_e4000_cabling_2.png[驱动器架布线]
+
+. 如果尚未选中此选项，请在 * 磁盘架组件设置 * 对话框中选择 * ESM/IOM* 选项卡，然后选择 * 显示更多选项 * 。验证卡通信是否为 * 是 * 。
++
+
+NOTE: 最佳状态表示已解决与新驱动器架相关的冗余丢失错误，并且存储系统已稳定。
+
+
+
+--
+====
 
 
 == 第 4 步：完成热添加

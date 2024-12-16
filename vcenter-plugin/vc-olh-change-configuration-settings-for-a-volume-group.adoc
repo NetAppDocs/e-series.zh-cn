@@ -11,7 +11,7 @@ summary: 编辑卷组的设置、包括其名称和RAID级别。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

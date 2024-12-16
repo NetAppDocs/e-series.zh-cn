@@ -10,7 +10,7 @@ summary: 如果未分配一部分容量、SSD驱动器的使用寿命将会延�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

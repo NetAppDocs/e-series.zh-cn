@@ -1,7 +1,7 @@
 ---
 permalink: upgrade-controllers/install-controllers-task.html 
 sidebar: sidebar 
-keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, installing new controller, install new controller, install battery, installing battery, install controller canister 
+keywords: E-Series, eseries, E4000, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, installing new controller, install new controller, install battery, installing battery, install controller canister 
 summary: 卸下旧控制器后，您可以在控制器驱动器托盘中安装新控制器 
 ---
 = 安装新控制器
@@ -34,35 +34,20 @@ summary: 卸下旧控制器后，您可以在控制器驱动器托盘中安装�
 . 打开新控制器箱的包装，将其放在无静电的平面上，使可拆卸的盖朝上。
 . 向下按压盖板按钮，然后将盖板滑出。
 . 调整控制器箱的方向，使电池插槽面向您。
-. 根据您的控制器型号，执行以下操作之一：
-+
-** 对于 E2600 或 E2700 控制器型号：
-+
-... 将电池电路板滑向新控制器箱的前部，以插入该电路板。
-... 拧紧翼形螺钉，将电池电路板固定到新控制器箱卡中。
-... 向前滑动新控制器箱上的顶盖，直到顶部闩锁盖卡入到位，从而重新安装顶盖。
-+
-当闩锁卡入到位时，闩锁的底部会挂到机箱上的金属插槽中。
-
-
-
-** 对于其他控制器型号：
-+
-... 将电池插入新控制器箱。
+. 将电池插入新控制器箱。
 +
 将电池滑入箱中，确保其位于新箱墙面的铆钉下方。
 
-... 将锁定把手保持 45 度角，将电池底部的连接器与箱上的连接器对齐。
-... 向下推电池，直到听到卡嗒声，然后向上移动锁定把手，将控制器电池固定到控制器箱上。
++
+.. 将锁定把手保持 45 度角，将电池底部的连接器与箱上的连接器对齐。
+.. 向下推电池，直到听到卡嗒声，然后向上移动锁定把手，将控制器电池固定到控制器箱上。
 +
 
 TIP: 要确保控制器电池正确安装在 E5XX 控制器驱动器托盘中，您可能需要将其滑出并重新插入。当您听到卡入到位时，它是安全的，当您移动锁定把手时，它不会脱离其竖直位置。
 
-... 向前滑动新控制器箱上的顶盖，直到顶部闩锁盖卡入到位，从而重新安装顶盖。
+.. 向前滑动新控制器箱上的顶盖，直到顶部闩锁盖卡入到位，从而重新安装顶盖。
 +
 当闩锁卡入到位时，闩锁的底部会挂到机箱上的金属插槽中。
-
-
 
 
 
@@ -76,7 +61,7 @@ TIP: 要确保控制器电池正确安装在 E5XX 控制器驱动器托盘中，
 将新控制器箱安装到控制器架中。
 
 .步骤
-. 将新控制器箱完全滑入控制器驱动器托盘向控制器箱中心旋转释放杆，将其锁定到位。
+. 将新控制器箱完全滑入控制器驱动器托盘将释放手柄朝控制器箱的中心旋转、以将其锁定到位。
 . 如果新控制器箱具有光纤通道 HIC 或 InfiniBand HIC ，请将 SFP+ 收发器（光纤通道）或 QSF+ 收发器（ InfiniBand ）安装到控制器箱中，然后重新连接主机缆线。
 +
 根据升级所涉及的 HIC ，您可能能够重复使用从旧控制器箱中移除的 SFP+ 收发器或 QSFP + 收发器。
@@ -85,11 +70,7 @@ TIP: 要确保控制器电池正确安装在 E5XX 控制器驱动器托盘中，
 +
 如果驱动器布线配置与旧控制器相同，请使用连接到缆线的标签正确重新连接缆线。
 
-+
-
-NOTE: 如果要从早期型号升级到 E2700 控制器，则驱动器布线配置可能与旧控制器所使用的配置不同。
-
 
 
 .下一步是什么？
-如果要升级 E2800 和 E5700 控制器且已启用驱动器安全功能，请转至 link:upgrade-unlock-drives-task.html["解锁驱动器"]。否则，请转到 link:complete-upgrade-controllers-task.html["完成控制器升级"]。
+如果启用了驱动器安全保护功能，请转至link:upgrade-unlock-drives-task.html["解锁驱动器"]。否则，请转至link:complete-upgrade-controllers-task.html["完成控制器升级"]。

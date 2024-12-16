@@ -10,7 +10,7 @@ summary: 更改管理页面上显示的存储阵列名称。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

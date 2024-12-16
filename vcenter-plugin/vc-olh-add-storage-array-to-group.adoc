@@ -11,7 +11,7 @@ summary: 将一个或多个存储阵列添加到用户创建的组中。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

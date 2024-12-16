@@ -19,7 +19,7 @@ summary: 使用此工作表记录基于光纤通道的 NVMe 存储配置信息�
 
 在直连拓扑中，一个或多个主机直接连接到控制器。
 
-image::../media/nvme_fc_direct_topology.png[NVMe FC Direct 拓扑]
+image::../media/nvme_fc_direct_topology.png[直连拓扑示例]
 
 * 主机 1 HBA 端口 1 和控制器 A 主机端口 1
 * 主机 1 HBA 端口 2 和控制器 B 主机端口 1
@@ -37,7 +37,7 @@ image::../media/nvme_fc_direct_topology.png[NVMe FC Direct 拓扑]
 
 在网络结构拓扑中，使用一个或多个交换机。请参见 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^] 有关支持的交换机的列表。
 
-image::../media/nvme_fc_fabric_topology.png[NVMe FC 网络结构拓扑]
+image::../media/nvme_fc_fabric_topology.png[交换机连接拓扑示例]
 
 
 

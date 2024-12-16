@@ -11,7 +11,7 @@ summary: 您可以为主机可访问的一个或多个卷创建卷组。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

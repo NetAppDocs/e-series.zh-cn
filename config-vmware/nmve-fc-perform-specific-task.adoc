@@ -98,7 +98,7 @@ esxcfg-module -s "ql2xnvmesupport=1" qlnativefc
 
 图中显示了在两个分区中连接到 E 系列存储阵列的主机。一个分区用蓝线表示，另一个分区用红线表示。每个分区包含一个启动程序端口和所有目标端口。
 
-image::../media/port_identifiers_host_and_target_conf-vmw.gif[端口标识符主机和目标配置 VMW]
+image::../media/port_identifiers_host_and_target_conf-vmw.gif[基于光纤通道的NVMe端口标识符"]
 
 
 

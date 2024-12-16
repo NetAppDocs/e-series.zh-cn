@@ -10,7 +10,7 @@ summary: '查看证书的摘要信息、其中包括使用证书的组织、颁�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

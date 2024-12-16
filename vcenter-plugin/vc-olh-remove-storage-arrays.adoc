@@ -11,7 +11,7 @@ summary: 如果您不想再从适用于vCenter的存储插件管理一个或多�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

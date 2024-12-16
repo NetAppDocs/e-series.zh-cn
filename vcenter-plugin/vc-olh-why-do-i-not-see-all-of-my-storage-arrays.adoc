@@ -10,7 +10,7 @@ summary: 在导入设置操作期间、某些存储阵列可能在目标选择�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

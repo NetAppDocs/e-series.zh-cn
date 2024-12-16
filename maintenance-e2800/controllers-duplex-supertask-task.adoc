@@ -46,7 +46,7 @@ summary: 更换双工配置中的控制器箱。
 
 . 找到控制器箱背面的 MAC 地址和 FRU 部件号标签。
 +
-image::../media/28_dwg_e2800_labels_maint-e2800.gif[28 个 dwg e2800 标签 maint e2800]
+image::../media/28_dwg_e2800_labels_maint-e2800.gif[E2800控制器上的MAC地址和FRU部件号]
 
 +
 * （ 1 ） * _MAC 地址： _ 管理端口 1 的 MAC 地址（ "`P1` " ）。如果使用 DHCP 获取原始控制器的 IP 地址，则需要使用此地址连接到新控制器。
@@ -60,7 +60,7 @@ image::../media/28_dwg_e2800_labels_maint-e2800.gif[28 个 dwg e2800 标签 main
 
 +
 .. 选择 * 硬件 * 。
-.. 找到标记有控制器图标的控制器架 image:../media/sam1130_ss_hardware_controller_icon_maint-e2800.gif[""]。
+.. 找到标有控制器图标的控制器架image:../media/sam1130_ss_hardware_controller_icon_maint-e2800.gif["控制器图标"]。
 .. 单击控制器图标。
 .. 选择控制器，然后单击 * 下一步 * 。
 .. 在 * 基本 * 选项卡上，记下控制器的 * 更换部件号 * 。
@@ -166,7 +166,7 @@ CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on 
 下图是 E2812 控制器架， E2824 控制器架或 EF280 闪存阵列的示例：
 
 +
-image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[28 dwg e2824 卸下控制器箱维护 e2800]
+image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[拆下控制器箱]
 
 +
 * （ 1 ） * _ 控制器箱 _
@@ -178,7 +178,7 @@ image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[28 dwg e
 下图是 E2860 控制器架的示例：
 
 +
-image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[28 dwg e2860 添加控制器箱维护 e2800]
+image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[拆下控制器箱]
 
 +
 * （ 1 ） * _ 控制器箱 _
@@ -211,7 +211,7 @@ CAUTION: 始终用双手支撑控制器箱的重量。
 如果此绿色 LED 亮起，则表示控制器仍在使用电池电源。您必须等待此 LED 熄灭，然后才能卸下任何组件。
 
 +
-image::../media/28_dwg_e2800_internal_cache_active_led_maint-e2800.gif[28 dwg e2800 内部缓存活动 LED 维护 e2800]
+image::../media/28_dwg_e2800_internal_cache_active_led_maint-e2800.gif[内部缓存活动 LED]
 
 +
 * （ 1 ） * _Internal Cache Active LED_
@@ -222,7 +222,7 @@ image::../media/28_dwg_e2800_internal_cache_active_led_maint-e2800.gif[28 dwg e2
 . 找到电池的蓝色释放闩锁。
 . 向下推动释放闩锁并将其从控制器箱中移出，以解锁电池。
 +
-image::../media/28_dwg_e2800_remove_battery_maint-e2800.gif[28 dwg e2800 取出电池维护 e2800]
+image::../media/28_dwg_e2800_remove_battery_maint-e2800.gif[从控制器箱中取出电池]
 
 +
 * （ 1 ） * 电池释放闩锁 _
@@ -245,7 +245,7 @@ image::../media/28_dwg_e2800_remove_battery_maint-e2800.gif[28 dwg e2800 取出�
 有四个螺钉：一个在顶部，一个在侧面，两个在正面。
 
 +
-image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[28 个 dwg e2800 hic faceplace 螺钉 maint e2800]
+image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[卸下该纸]
 
 . 卸下 HIC 面板。
 . 使用您的手指或十字螺丝刀松开将 HIC 固定到控制器卡的三个翼形螺钉。
@@ -255,7 +255,7 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[28 个 dwg e28
 CAUTION: 请注意，不要擦除或撞击 HIC 底部或控制器卡顶部的组件。
 
 +
-image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[28 个 dwg e2800 hic 翼形螺钉 maint e2800]
+image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[从控制器卡上卸下HIC]
 
 +
 * （ 1 ） * _ 主机接口卡（ HIC ） _
@@ -291,7 +291,7 @@ image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[28 个 dwg e2800 hi
 当闩锁卡入到位时，闩锁的底部会挂到机箱上的金属插槽中。
 
 +
-image::../media/28_dwg_e2800_insert_battery_maint-e2800.gif[28 dwg e2800 插入电池维护 e2800]
+image::../media/28_dwg_e2800_insert_battery_maint-e2800.gif[重新安装电池]
 
 +
 * （ 1 ） * 电池释放闩锁 _
@@ -309,14 +309,14 @@ CAUTION: * 可能的硬件损坏 * —电池前部的金属法兰必须完全插
 
 
 +
-image:../media/28_dwg_e2800_battery_flange_ok_maint-e2800.gif[""]
+image:../media/28_dwg_e2800_battery_flange_ok_maint-e2800.gif["正确的金属法兰"]
 
 +
 ** * 不正确 * —电池的金属法兰未插入控制器上的插槽：
 
 
 +
-image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e2800.gif[""]
+image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e2800.gif["金属法兰不正确"]
 
 
 
@@ -338,7 +338,7 @@ image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e2800.gif[""]
 CAUTION: * 可能的设备损坏 * —请务必小心，不要挤压 HIC 和翼形螺钉之间控制器 LED 的金带连接器。
 
 +
-image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[28 个 dwg e2800 hic 翼形螺钉 maint e2800]
+image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[在控制器上重新安装HIC]
 
 +
 * （ 1 ） * _ 主机接口卡（ HIC ） _
@@ -352,7 +352,7 @@ image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[28 个 dwg e2800 hi
 
 . 使用 1 号十字螺丝刀，使用四个螺钉将从原始控制器箱中卸下的 HIC 面板连接到新控制器箱。
 +
-image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[28 个 dwg e2800 hic faceplace 螺钉 maint e2800]
+image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[重新安装该安装的]
 
 
 
@@ -367,7 +367,7 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[28 个 dwg e28
 . 将控制器箱翻转，使可拆卸盖朝下。
 . 在凸轮把手处于打开位置的情况下，将控制器箱完全滑入控制器架。
 +
-image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[28 dwg e2824 卸下控制器箱维护 e2800]
+image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[重新安装控制器箱]
 
 +
 * （ 1 ） * _ 控制器箱 _
@@ -376,7 +376,7 @@ image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[28 dwg e
 * （ 2 ） * _Cam handle
 
 +
-image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[28 dwg e2860 添加控制器箱维护 e2800]
+image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[重新安装控制器箱]
 
 +
 * （ 1 ） * _ 控制器箱 _
@@ -410,7 +410,7 @@ NOTE: 如果原始控制器未使用 DHCP 作为 IP 地址，则新控制器将�
 +
 ** 七段显示将重复显示 * 操作系统 * ， * 其他 * ， * 空白 _* 序列，以指示控制器已脱机。
 ** 琥珀色警示 LED 仍保持亮起状态。
-** 主机链路 LED 可能亮起，闪烁或熄灭，具体取决于主机接口。image:../media/28_dwg_attn_led_7s_display_maint-e2800.gif[""]
+** 主机链路LED可能亮起、闪烁或熄灭、具体取决于主机接口。image:../media/28_dwg_attn_led_7s_display_maint-e2800.gif["E2800控制器LED"]
 +
 * （ 1 ） * _ 警示 LED （琥珀色） _
 

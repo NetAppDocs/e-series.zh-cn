@@ -10,7 +10,7 @@ summary: 将管理证书还原到原始出厂自签名状态。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

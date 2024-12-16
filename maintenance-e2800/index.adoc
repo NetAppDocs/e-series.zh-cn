@@ -11,40 +11,58 @@ summary: 对 E2800 组件执行维护。
 
 
 [role="lead"]
+您可能需要对硬件执行维护过程。本节介绍了维护E2800系统组件的具体步骤。
+
+本节中的过程假定E2800系统已部署在E系列环境中。
+
+
+
+== 系统组件
+
 对于 E2800 存储系统，您可以对以下组件执行维护过程。
 
+[cols="25,65"]
+|===
 
 
-== 电池
-
+ a| 
+https://docs.netapp.com/us-en/e-series/maintenance-e2800/batteries-overview-requirements-concept.html["电池"]
+ a| 
 每个控制器箱都包含一个电池，用于在交流电源发生故障时保留缓存的数据。
 
 
 
-== 控制器
-
+ a| 
+https://docs.netapp.com/us-en/e-series/maintenance-e2800/controllers-overview-supertask-concept.html["控制器"]
+ a| 
 控制器由主板，固件和软件组成。它控制驱动器并实施 System Manager 功能。
 
 
 
-== 箱
-
+ a| 
+https://docs.netapp.com/us-en/e-series/maintenance-e2800/canisters-overview-supertask-concept.html["箱"]
+ a| 
 箱由三种不同类型组成：为 12 驱动器或 24 驱动器控制器架或驱动器架提供冗余电源和充分散热的电源风扇箱（电源）；为 60 驱动器控制器架或驱动器架提供电源冗余的电源箱； 和风扇箱，用于冷却 60 驱动器控制器架或驱动器架。
 
 
 
-== 驱动器
-
+ a| 
+https://docs.netapp.com/us-en/e-series/maintenance-e2800/drives-overview-supertask-concept.html["驱动器"]
+ a| 
 驱动器是一种为数据提供物理存储介质的机械设备。
 
 
 
-== 主机接口卡（ HIC ）
-
+ a| 
+https://docs.netapp.com/us-en/e-series/maintenance-e2800/hics-overview-supertask-concept.html["主机接口卡（ HIC ）"]
+ a| 
 可以选择将主机接口卡（ HIC ）安装在控制器箱中。E2800 控制器在控制器卡本身上包含内置主机端口，并在可选 HIC 上包含主机端口。控制器中内置的主机端口称为基板主机端口。HIC 中内置的主机端口称为 HIC 端口。
 
 
 
-== 主机端口协议
-
+ a| 
+https://docs.netapp.com/us-en/e-series/maintenance-e2800/hpp-overview-supertask-concept.html["主机端口协议"]
+ a| 
 您可以将主机的协议转换为其他协议，以便建立兼容性和通信。
+
+|===

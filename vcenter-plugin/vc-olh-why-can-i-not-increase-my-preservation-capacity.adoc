@@ -10,7 +10,7 @@ summary: 如果已在所有可用容量上创建卷、则可能无法增加保�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

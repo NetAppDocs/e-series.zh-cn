@@ -1,19 +1,62 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: whats new, new features, SANtricity 11.73 
+keywords: whats new, new features, SANtricity 11.90 
 summary: SANtricity OS 中的新增功能。 
 ---
 = SANtricity OS 中的新增功能
 :allow-uri-read: 
 :experimental: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]
-下表介绍了SANtricity OS 11.8中用于嵌入式管理EF300、EF600、E2800/EF280和E5700/EF570控制器的新增功能。
+下表介绍了最新版本的SANtricity操作系统中用于嵌入式管理E4000、EF300、EF600、E2800/EF280和E5700/EF570控制器的新增功能。
 
+
+
+== 11.90版中的新增功能
+
+[cols="35h,~"]
+|===
+| 新增功能 | Description 
+
+
+ a| 
+新存储系统型号— E4000
+ a| 
+此版本引入了E4000低成本存储系统。E4000支持12个和60个驱动器以及每个控制器一个主机接口卡(Host Interface Card、HIC)。初始版本支持的主机接口卡包括iSCSI和光纤通道。可以在Unified Manager中查看和管理E4000存储系统和其他E系列存储系统。
+
+
+
+ a| 
+增加了动态磁盘池的容量
+ a| 
+只要动态磁盘池(Dynamic Disk Pool、DDP)中每个驱动器的容量超过23 TB、该容量就会增加到12 PB。如果单个驱动器容量小于23 TB、则DDP容量为6 PB。
+
+
+
+ a| 
+增加了默认介质扫描设置
+ a| 
+默认介质扫描速率已增加到120天。
+
+
+
+ a| 
+专用密钥现在可用于外部密钥管理
+ a| 
+现在、可以通过System Manager导入外部通过私钥和公共密钥对生成的证书签名请求(CSR)文件。
+
+
+
+ a| 
+现在、Web服务可以使用登录锁定功能
+ a| 
+现在、嵌入式Web服务和代理Web服务均可使用新的登录锁定设置、该设置仅可通过REST API进行配置。
+
+|===
 
 
 == 11.80.1R1中的新增功能

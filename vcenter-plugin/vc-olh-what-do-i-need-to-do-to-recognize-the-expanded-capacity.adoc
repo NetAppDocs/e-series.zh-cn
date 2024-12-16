@@ -10,7 +10,7 @@ summary: 如果增加卷的容量、则主机可能无法立即识别卷容量�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

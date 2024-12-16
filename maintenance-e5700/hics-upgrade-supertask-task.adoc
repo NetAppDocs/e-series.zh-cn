@@ -102,7 +102,7 @@ CAUTION: * 可能的数据丢失 * - 如果在执行 I/O 操作时继续执行�
 当需要将缓存数据写入驱动器时，每个控制器背面的绿色缓存活动 LED 亮起。您必须等待此 LED 关闭。
 
 +
-image::../media/e5700_ib_hic_w_cache_led_callouts_maint-e5700.gif[e5700 IB hic w cache led 标注 maint e5700]
+image::../media/e5700_ib_hic_w_cache_led_callouts_maint-e5700.gif[E5700控制器上的缓存活动LED]
 
 +
 * （ 1 ） * _Cache 活动 LED
@@ -138,7 +138,7 @@ CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on 
 需要将缓存数据写入驱动器时，控制器背面的绿色缓存活动 LED 亮起。您必须等待此 LED 熄灭，然后才能卸下控制器箱。
 
 +
-image::../media/e5700_ib_hic_w_cache_led_callouts_maint-e5700.gif[e5700 IB hic w cache led 标注 maint e5700]
+image::../media/e5700_ib_hic_w_cache_led_callouts_maint-e5700.gif[E5700控制器上的缓存活动LED]
 
 +
 * （ 1 ） * _Cache 活动 LED
@@ -148,7 +148,7 @@ image::../media/e5700_ib_hic_w_cache_led_callouts_maint-e5700.gif[e5700 IB hic w
 下图是 E5724 控制器架的示例：
 
 +
-image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[28 dwg e2824 卸下控制器箱 maint e5700]
+image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[拆下控制器箱]
 
 +
 * （ 1 ） * _ 控制器箱 _
@@ -160,7 +160,7 @@ image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[28 dwg e
 下图是 E5760 控制器架的示例：
 
 +
-image::../media/28_dwg_e2860_add_controller_canister_maint-e5700.gif[28 dwg e2860 添加控制器箱维护 e5700]
+image::../media/28_dwg_e2860_add_controller_canister_maint-e5700.gif[拆下控制器箱]
 
 +
 * （ 1 ） * _ 控制器箱 _
@@ -193,7 +193,7 @@ CAUTION: 始终用双手支撑控制器箱的重量。
 如果此绿色 LED 亮起，则表示控制器仍在使用电池电源。您必须等待此 LED 熄灭，然后才能卸下任何组件。
 
 +
-image::../media/28_dwg_e2800_internal_cache_active_led_maint-e5700.gif[28 dwg e2800 内部缓存活动 LED maint e5700]
+image::../media/28_dwg_e2800_internal_cache_active_led_maint-e5700.gif[缓存活动LED]
 
 +
 * （ 1 ） * _Cache 活动 LED
@@ -206,7 +206,7 @@ image::../media/28_dwg_e2800_internal_cache_active_led_maint-e5700.gif[28 dwg e2
 有四个螺钉：一个在顶部，一个在侧面，两个在正面。
 
 +
-image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e5700.gif[28 dwg e2800 hic faceplace 螺丝 maint e5700]
+image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e5700.gif[从控制器上卸下控制器的控制器]
 
 . 卸下 HIC 面板。
 . 使用您的手指或十字螺丝刀松开将 HIC 固定到控制器卡的三个翼形螺钉。
@@ -216,7 +216,7 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e5700.gif[28 dwg e2800 h
 CAUTION: 请注意，不要擦除或撞击 HIC 底部或控制器卡顶部的组件。
 
 +
-image::../media/28_dwg_e2800_hic_thumbscrews_maint-e5700.gif[28 个 dwg e2800 hic 翼形螺钉 maint e5700]
+image::../media/28_dwg_e2800_hic_thumbscrews_maint-e5700.gif[从控制器卡上卸下HIC]
 
 +
 * （ 1 ） * _ 主机接口卡（ HIC ） _
@@ -240,7 +240,7 @@ CAUTION: * 可能丢失数据访问 * —如果 HIC 是为另一个 E 系列控�
 . 打开新 HIC 和新 HIC 面板的包装。
 . 使用 1 号十字螺丝刀，卸下将 HIC 面板连接到控制器箱的四个螺钉，然后卸下面板。
 +
-image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e5700.gif[28 dwg e2800 hic faceplace 螺丝 maint e5700]
+image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e5700.gif[将控制器安装到控制器上]
 
 . 将 HIC 上的三个翼形螺钉与控制器上的相应孔对齐，并将 HIC 底部的连接器与控制器卡上的 HIC 接口连接器对齐。
 +
@@ -252,7 +252,7 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e5700.gif[28 dwg e2800 h
 CAUTION: * 可能的设备损坏 * —请务必小心，不要挤压 HIC 和翼形螺钉之间控制器 LED 的金带连接器。
 
 +
-image::../media/28_dwg_e2800_hic_thumbscrews_maint-e5700.gif[28 个 dwg e2800 hic 翼形螺钉 maint e5700]
+image::../media/28_dwg_e2800_hic_thumbscrews_maint-e5700.gif[将HIC安装到控制器卡上]
 
 +
 * （ 1 ） * _ 主机接口卡（ HIC ） _
@@ -281,7 +281,7 @@ image::../media/28_dwg_e2800_hic_thumbscrews_maint-e5700.gif[28 个 dwg e2800 hi
 下图是 E5724 控制器架的示例：
 
 +
-image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[28 dwg e2824 卸下控制器箱 maint e5700]
+image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[安装控制器箱]
 
 +
 * （ 1 ） * _ 控制器箱 _
@@ -293,7 +293,7 @@ image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[28 dwg e
 下图是 E5760 控制器架的示例：
 
 +
-image::../media/28_dwg_e2860_add_controller_canister_maint-e5700.gif[28 dwg e2860 添加控制器箱维护 e5700]
+image::../media/28_dwg_e2860_add_controller_canister_maint-e5700.gif[安装控制器箱]
 
 +
 * （ 1 ） * _ 控制器箱 _
@@ -333,7 +333,7 @@ NOTE: 此时请勿将数据缆线连接到新 HIC 端口。
 NOTE: 此图显示了一个控制器箱示例。您的控制器可能具有不同数量和类型的主机端口。
 
 +
-image::../media/e5700_hic_3_callouts_maint-e5700.gif[e5700 hic 3 标注 maint e5700]
+image::../media/e5700_hic_3_callouts_maint-e5700.gif[E5700控制器LED指示灯"]
 
 +
 * （ 1 ） * _ 主机链路 LED （琥珀色） _

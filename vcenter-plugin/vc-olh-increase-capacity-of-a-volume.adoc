@@ -11,7 +11,7 @@ summary: 调整卷大小以增加其报告的容量。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

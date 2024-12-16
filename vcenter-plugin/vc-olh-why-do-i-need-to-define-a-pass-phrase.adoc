@@ -10,7 +10,7 @@ summary: 密码短语用于对存储在本地管理客户端上的安全密钥�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

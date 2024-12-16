@@ -1,7 +1,7 @@
 ---
 permalink: getting-started/learn-hardware-concept.html 
 sidebar: sidebar 
-keywords: E-Series, eseries, E2800, E5700, EF300, EF600, hardware, all flash array, E-Series protocols, E-Series rack 
+keywords: E-Series, eseries, E4000, E2800, E5700, EF300, EF600, hardware, all flash array, E-Series protocols, E-Series rack 
 summary: E 系列存储阵列提供多种配置和型号。 
 ---
 = E 系列硬件概述
@@ -20,6 +20,7 @@ E 系列阵列有以下型号：
 * E2800 系列—入门级混合
 * EF280 系列—入门级全闪存
 * EF300 系列—入门级全闪存，全 NVMe
+* E4000 系列—入门级混合
 * E5700 系列—中端混合
 * EF570 系列—中端全闪存
 * EF600 系列—中端全闪存，全 NVMe
@@ -28,34 +29,28 @@ E 系列阵列有以下型号：
 
 NOTE: 对于SANtricity OS 11.80GA及更高版本、E2800、EF280、E5700、EF570、EF600、 和EF300阵列。
 
-
-
-== E2800 型号
-
-[cols="35h,~"]
-|===
-| 组件 | 规格 
-
-
- a| 
-机架大小：
- a| 
+[role="tabbed-block"]
+====
+.E2800 型号
+--
+机架尺寸::
++
+--
 * 2U12 （ 2 个机架单元； 12 个驱动器）
 * 2U24 （ 2 个机架单元； 24 个驱动器）
 +
-image::../media/e2800_2u_front.gif[e2800 2U 正面]
+image::../media/e2800_2u_front.gif[E2800 2U.]
 
 * 4U60 （ 4 个机架单元； 60 个驱动器）
 +
-image::../media/e2860_front.gif[e2860 正面]
+image::../media/e2860_front.gif["E2800 4U"]
 
 
 
-
-
- a| 
-驱动器：
- a| 
+--
+驱动器::
++
+--
 支持以下驱动器类型：
 
 * 3.5 英寸 NL-SAS （最多 180 个）
@@ -63,11 +58,10 @@ image::../media/e2860_front.gif[e2860 正面]
 * 2.5 英寸 SAS HDD （最多 180 个）
 
 
-
-
- a| 
-接口：
- a| 
+--
+接口::
++
+--
 可用于以下接口：
 
 * 12 GB SAS
@@ -75,33 +69,29 @@ image::../media/e2860_front.gif[e2860 正面]
 * 16 Gb 或 32 Gb 光纤通道
 
 
-|===
+--
 
 
-== EF280 型号
+--
+.EF280 型号
+--
+机架尺寸::
++
+--
+2U24 （ 2 个机架单元； 24 个驱动器）
 
-[cols="35h,~"]
-|===
-| 组件 | 规格 
+image:../media/ef570_front.gif["EF280 2U."]
 
-
- a| 
-机架大小：
- a| 
-2U24 （ 2 个机架单元； 24 个驱动器）image:../media/ef570_front.gif[""]
-
-
-
- a| 
-驱动器：
- a| 
+--
+驱动器::
++
+--
 最多支持 96 个 2.5 英寸 SSD 驱动器
 
-
-
- a| 
-接口：
- a| 
+--
+接口::
++
+--
 可用于以下接口：
 
 * 12 GB SAS
@@ -109,26 +99,23 @@ image::../media/e2860_front.gif[e2860 正面]
 * 16 Gb 或 32 Gb 光纤通道
 
 
-|===
+--
 
 
-== EF300 型号
+--
+.EF300 型号
+--
+机架尺寸::
++
+--
+2U24 （ 2 个机架单元； 24 个驱动器）
 
-[cols="35h,~"]
-|===
-| 组件 | 规格 
+image:../media/ef570_front.gif["EF300 2U."]
 
-
- a| 
-机架大小：
- a| 
-2U24 （ 2 个机架单元； 24 个驱动器）image:../media/ef570_front.gif[""]
-
-
-
- a| 
-驱动器和 HIC ：
- a| 
+--
+驱动器和HIC::
++
+--
 支持以下驱动器、每个控制器具有一个主机接口卡(HIC)：
 
 * NVMe SSD驱动器：控制器架中最多24个NVMe SSD驱动器。
@@ -139,11 +126,10 @@ image::../media/e2860_front.gif[e2860 正面]
 
 NOTE: 对于SANtricity OS 11.80GA及更高版本、EF300支持基本托盘中不含驱动器的扩展架配置使用此配置时、请确保驱动器已填充到扩展架中、并正确连接到基座托盘、然后再打开系统电源。
 
-
-
- a| 
-接口：
- a| 
+--
+接口::
++
+--
 可用于以下接口：
 
 * 25 GB iSCSI
@@ -155,34 +141,29 @@ NOTE: 对于SANtricity OS 11.80GA及更高版本、EF300支持基本托盘中不
 * 100 GB NVMe/RoCE
 
 
-|===
+--
 
 
-== E5700 型号
-
-[cols="35h,~"]
-|===
-| 组件 | 规格 
-
-
- a| 
-机架大小：
- a| 
+--
+.E5700 型号
+--
+机架尺寸::
++
+--
 * 2U24 （ 2 个机架单元； 24 个驱动器）
 +
-image::../media/e2800_2u_front.gif[e2800 2U 正面]
+image::../media/e2800_2u_front.gif[E5700 2U.]
 
 * 4U60 （ 4 个机架单元； 60 个驱动器）
 +
-image::../media/e2860_front.gif[e2860 正面]
+image::../media/e2860_front.gif[E5700 4U.]
 
 
 
-
-
- a| 
-驱动器：
- a| 
+--
+驱动器::
++
+--
 最多支持 480 种以下驱动器类型：
 
 * 3.5 英寸 NL-SAS 驱动器
@@ -190,11 +171,10 @@ image::../media/e2860_front.gif[e2860 正面]
 * 2.5 英寸 SAS HDD 驱动器
 
 
-
-
- a| 
-接口：
- a| 
+--
+接口::
++
+--
 可用于以下接口：
 
 * 12 GB SAS
@@ -207,33 +187,29 @@ image::../media/e2860_front.gif[e2860 正面]
 * 100 GB NVMe/RoCE
 
 
-|===
+--
 
 
-== EF570 型号
+--
+.EF570 型号
+--
+机架尺寸::
++
+--
+2U24 （ 2 个机架单元； 24 个驱动器）
 
-[cols="35h,~"]
-|===
-| 组件 | 规格 
+image:../media/ef570_front.gif["EF570 2U."]
 
-
- a| 
-机架大小：
- a| 
-2U24 （ 2 个机架单元； 24 个驱动器）image:../media/ef570_front.gif[""]
-
-
-
- a| 
-驱动器：
- a| 
+--
+驱动器::
++
+--
 最多支持 120 个 2.5 英寸 SSD 驱动器
 
-
-
- a| 
-接口：
- a| 
+--
+接口::
++
+--
 可用于以下接口：
 
 * 12 GB SAS
@@ -246,26 +222,23 @@ image::../media/e2860_front.gif[e2860 正面]
 * 100 GB NVMe/RoCE
 
 
-|===
+--
 
 
-== EF600 型号
+--
+.EF600 型号
+--
+机架尺寸::
++
+--
+2U24 （ 2 个机架单元； 24 个驱动器）
 
-[cols="35h,~"]
-|===
-| 组件 | 规格 
+image:../media/ef570_front.gif["EF600 2U."]
 
-
- a| 
-机架大小：
- a| 
-2U24 （ 2 个机架单元； 24 个驱动器）image:../media/ef570_front.gif[""]
-
-
-
- a| 
-驱动器和 HIC ：
- a| 
+--
+驱动器和HIC::
++
+--
 支持以下驱动器、每个控制器具有一个主机接口卡(HIC)：
 
 * NVMe SSD驱动器：控制器架中最多24个NVMe SSD驱动器。
@@ -276,11 +249,10 @@ image::../media/e2860_front.gif[e2860 正面]
 
 NOTE: 对于SANtricity OS 11.80GA及更高版本、EF600支持基本托盘中不含驱动器的扩展架配置使用此配置时、请确保驱动器已填充到扩展架中、并正确连接到基座托盘、然后再打开系统电源。
 
-
-
- a| 
-接口：
- a| 
+--
+接口::
++
+--
 可用于以下接口：
 
 * 25 GB iSCSI
@@ -295,4 +267,49 @@ NOTE: 对于SANtricity OS 11.80GA及更高版本、EF600支持基本托盘中不
 * 200 GB NVMe/RoCE
 
 
-|===
+--
+
+
+--
+.E4000 型号
+--
+机架尺寸::
++
+--
+* 2U12 （ 2 个机架单元； 12 个驱动器）
++
+image::../media/e4000_2u_front.png[E4000 2U.]
+
+* 4U60 （ 4 个机架单元； 60 个驱动器）
++
+image::../media/e4000_4u_front.png[E4000 4U.]
+
+
+
+--
+驱动器::
++
+--
+支持以下驱动器类型：
+
+* 3.5 英寸 NL-SAS （最多 300 个）
+* 2.5 英寸 SAS SSD （最多 120 个）
+
+
+--
+接口::
++
+--
+可用于以下接口：
+
+* 12 GB SAS
+* 1 Gb或10Gbase-T iSCSI
+* 1 Gb、10 Gb或25 Gb iSCSI
+* 8 GB、16 GB或32 GB FC
+
+
+--
+
+
+--
+====

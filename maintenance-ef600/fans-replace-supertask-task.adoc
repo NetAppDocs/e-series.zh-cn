@@ -90,7 +90,7 @@ CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on 
 . 确认控制器背面的缓存活动 LED 是否熄灭。
 . 按压控制器两侧的手柄，然后向后拉，直到其从磁盘架中释放为止。
 +
-image::../media/remove_controller_5.png[删除控制器 5]
+image::../media/remove_controller_5.png[挤压手柄以卸下控制器]
 
 . 用两只手和把手将控制器箱滑出磁盘架。如果控制器的正面没有机箱，请用两只手将其完全拉出。
 +
@@ -98,7 +98,7 @@ image::../media/remove_controller_5.png[删除控制器 5]
 CAUTION: 始终用双手支撑控制器箱的重量。
 
 +
-image::../media/remove_controller_6.png[删除控制器 6]
+image::../media/remove_controller_6.png[拆下控制器时，用双手支撑控制器的重量]
 
 . 将控制器箱放在无静电的平面上。
 
@@ -117,7 +117,7 @@ image::../media/remove_controller_6.png[删除控制器 6]
 
 . 从控制器中轻轻提起故障风扇。
 +
-image::../media/fan_2.png[风扇 2]
+image::../media/fan_2.png[卸下风扇]
 
 
 
@@ -130,10 +130,10 @@ image::../media/fan_2.png[风扇 2]
 .步骤
 . 将更换用的风扇完全滑入磁盘架。
 +
-image::../media/fan_3.png[风扇 3]
+image::../media/fan_3.png[将风扇安装到控制器中]
 
 +
-image::../media/fan_3_a.png[风扇 3 A]
+image::../media/fan_3_a.png[将风扇安装到控制器中]
 
 
 
@@ -151,7 +151,7 @@ image::../media/fan_3_a.png[风扇 3 A]
 NOTE: 正确安装到磁盘架后，控制器会发出卡嗒声。
 
 +
-image::../media/remove_controller_7.png[卸下控制器 7]
+image::../media/remove_controller_7.png[将控制器安装到磁盘架中]
 
 
 

@@ -36,7 +36,7 @@ NOTE: 电源更换操作步骤 适用于更换 IOM 。要更换 IOM ，请执行
 
 下图显示了一个示例 E5724 控制器架，其中包含两个电源（电源风扇箱）。DE224C 驱动器架是相同的，但它们包括 I/O 模块（ IOM ），而不是控制器箱。
 
-image::../media/e5700_power_supply_callout.png[e5700 电源标注]
+image::../media/e5700_power_supply_callout.png[E5700控制器电源]
 
 * （ 1 ） * _Controller shelf with two power supplies （ power-fan c箱 ） below the controller cboks. _
 
@@ -82,11 +82,11 @@ NOTE: 如果磁盘架中的第二个电源（电源风扇箱）未处于最佳�
 
 下图显示了具有两个电源箱的 DE460C 驱动器架的背面：
 
-image::../media/28_dwg_de460c_rear_no_callouts_maint-e5700.gif[28 dwg de460c 背面无标注 maint e5700]
+image::../media/28_dwg_de460c_rear_no_callouts_maint-e5700.gif[DE460C、带两个电源罐]
 
 下图显示了一个电源箱：
 
-image::../media/28_dwg_e2860_de460c_psu_maint-e5700.gif[28 dwg e2860 de460c PSU 维护 e5700]
+image::../media/28_dwg_e2860_de460c_psu_maint-e5700.gif[动力箱]
 
 
 
@@ -130,11 +130,11 @@ NOTE: 如果磁盘架中的第二个电源箱状态不是最佳，或者 Recover
 
 下图显示了一个风扇箱：
 
-image::../media/28_dwg_e2860_de460c_single_fan_canister_no_callouts_maint-e5700.gif[28 dwg e2860 de460c 单风扇箱，无标注 maint e5700]
+image::../media/28_dwg_e2860_de460c_single_fan_canister_no_callouts_maint-e5700.gif[风扇箱]
 
 下图显示了具有两个风扇箱的 DE460C 磁盘架的背面：
 
-image::../media/28_dwg_de460c_rear_no_callouts_maint-e5700.gif[28 dwg de460c 背面无标注 maint e5700]
+image::../media/28_dwg_de460c_rear_no_callouts_maint-e5700.gif[DE460C、带两个风扇箱]
 
 
 CAUTION: * 可能的设备损坏 * - 如果在通电的情况下更换风扇箱，则必须在 30 分钟内完成更换操作步骤，以防止设备过热。

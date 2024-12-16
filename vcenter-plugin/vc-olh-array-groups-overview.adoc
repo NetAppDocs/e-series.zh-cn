@@ -10,7 +10,7 @@ summary: 通过对一组存储阵列进行分组来管理物理和虚拟化基�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

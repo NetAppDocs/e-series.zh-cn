@@ -17,7 +17,6 @@ summary: 访问视频演示，了解有关 E 系列系统的更多信息。
 
 == E 系列：快速，简单，可靠的存储
 
-[role="lead"]
 此视频重点介绍了使用 NetApp E 系列系统与使用商用服务器进行存储相比的主要优势。
 
 https://www.youtube.com/embed/FjFkU2z_hIo?rel=0["NetApp 视频：与使用商用服务器进行存储相比，使用 NetApp E 系列系统的主要优势"^]
@@ -26,7 +25,6 @@ https://www.youtube.com/embed/FjFkU2z_hIo?rel=0["NetApp 视频：与使用商用
 
 == System Manager ：易于设置和配置
 
-[role="lead"]
 此技术演示展示了基于 Web 的 SANtricity System Manager 界面如何轻松设置和配置 NetApp E2800 。
 
 https://www.youtube.com/embed/I0W0AjKpCO8?rel=0["NetApp 视频： SANtricity System Manager ：轻松设置和配置"^]

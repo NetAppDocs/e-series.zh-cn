@@ -10,7 +10,7 @@ summary: '使用"添加/发现"功能查找并添加要在组织网络中管理�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

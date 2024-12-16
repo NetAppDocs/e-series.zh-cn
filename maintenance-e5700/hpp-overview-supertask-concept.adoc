@@ -22,7 +22,7 @@ NOTE: 只能转换E5700控制器上的光纤基本端口。
 
 下图显示了 E5700 及其 SFP+ （光纤）基板主机端口 * （ 1 ） * 和两个可选 IB HIC 端口 * （ 2 ） * 。
 
-image::../media/e5700_with_2_port_100g_edr_infiniband_hic_w_callouts.gif[带有 2 端口 100g EDR InfiniBand hic 的 e5700 带有标注]
+image::../media/e5700_with_2_port_100g_edr_infiniband_hic_w_callouts.gif[E5700控制器上的主机和HIC端口]
 
 
 

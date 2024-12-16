@@ -10,7 +10,7 @@ summary: 应用程序特定工作负载的卷特征决定了该工作负载如�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

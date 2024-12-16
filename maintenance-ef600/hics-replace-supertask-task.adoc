@@ -102,7 +102,7 @@ CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on 
 . 确认控制器背面的缓存活动 LED 是否熄灭。
 . 按压控制器两侧的手柄，然后向后拉，直到其从磁盘架中释放为止。
 +
-image::../media/remove_controller_5.png[删除控制器 5]
+image::../media/remove_controller_5.png[挤压手柄以卸下控制器]
 
 . 用两只手和把手将控制器箱滑出磁盘架。如果控制器的正面没有机箱，请用两只手将其完全拉出。
 +
@@ -110,7 +110,7 @@ image::../media/remove_controller_5.png[删除控制器 5]
 CAUTION: 始终用双手支撑控制器箱的重量。
 
 +
-image::../media/remove_controller_6.png[删除控制器 6]
+image::../media/remove_controller_6.png[拆下控制器时，用双手支撑控制器的重量]
 
 . 将控制器箱放在无静电的平面上。
 
@@ -129,7 +129,7 @@ image::../media/remove_controller_6.png[删除控制器 6]
 
 . 使用十字螺丝刀卸下将 HIC 面板连接到控制器箱的两个螺钉。
 +
-image::../media/hic_2.png[HIC 2.]
+image::../media/hic_2.png[卸下HIC板]
 
 +
 
@@ -138,7 +138,7 @@ NOTE: 上图为示例； HIC 的外观可能有所不同。
 . 卸下 HIC 面板。
 . 使用您的手指或十字螺丝刀松开将 HIC 固定到控制器卡的单个翼形螺钉。
 +
-image::../media/hic_3.png[HIC 3.]
+image::../media/hic_3.png[松开HIC翼形螺钉]
 
 +
 
@@ -154,7 +154,7 @@ NOTE: 上图为示例； HIC 的外观可能有所不同。
 CAUTION: 请注意，不要擦除或撞击 HIC 底部或控制器卡顶部的组件。
 
 +
-image::../media/hic_4.png[HIC 4.]
+image::../media/hic_4.png[从控制器卡上卸下HIC]
 
 +
 
@@ -184,7 +184,7 @@ CAUTION: * 可能丢失数据访问 * —如果 HIC 是为另一个 E 系列控�
 CAUTION: * 可能的设备损坏 * - 请务必小心，不要挤压 HIC 和翼形螺钉之间控制器 LED 的金带连接器。
 
 +
-image::../media/hic_7.png[HIC 7.]
+image::../media/hic_7.png[安装HIC]
 
 +
 
@@ -211,7 +211,7 @@ NOTE: 上图为示例； HIC 的外观可能有所不同。
 NOTE: 正确安装到磁盘架后，控制器会发出卡嗒声。
 
 +
-image::../media/remove_controller_7.png[卸下控制器 7]
+image::../media/remove_controller_7.png[将控制器安装到磁盘架中]
 
 . 将 SFP 安装到新 HIC 中，然后重新连接所有缆线。
 +

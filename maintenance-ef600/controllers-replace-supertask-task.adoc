@@ -145,7 +145,7 @@ CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on 
 
 . 按压控制器两侧的手柄，然后向后拉，直到其从磁盘架中释放为止。
 +
-image::../media/remove_controller_5.png[删除控制器 5]
+image::../media/remove_controller_5.png[挤压手柄以卸下控制器]
 
 . 用两只手和把手将控制器箱滑出磁盘架。如果控制器的正面没有机箱，请用两只手将其完全拉出。
 +
@@ -153,7 +153,7 @@ image::../media/remove_controller_5.png[删除控制器 5]
 CAUTION: 始终用双手支撑控制器箱的重量。
 
 +
-image::../media/remove_controller_6.png[删除控制器 6]
+image::../media/remove_controller_6.png[拆下控制器时，用双手支撑控制器的重量]
 
 . 将控制器箱放在无静电的平面上。
 
@@ -169,10 +169,10 @@ image::../media/remove_controller_6.png[删除控制器 6]
 . 找到控制器侧面的 " 按下 " 选项卡。
 . 按下卡舌并挤压电池外壳，以解锁电池。
 +
-image::../media/batt_3.png[电池 3]
+image::../media/batt_3.png["按下卡舌以解锁电池]
 
-. 轻轻挤压用于存放电池接线的连接器。向上拉，断开电池与板的连接。image:../media/batt_2.png[""]
-. 将电池从控制器中提出，并放在无静电的平面上。image:../media/batt_4.png[""]
+. 轻轻挤压用于存放电池接线的连接器。向上拉、断开电池与主板的连接。image:../media/batt_2.png["拆下蓄电池接线的接头"]
+. 将电池从控制器中提出、然后放在无静电的平坦表面上。image:../media/batt_4.png["从控制器中取出电池"]
 
 
 
@@ -184,7 +184,7 @@ image::../media/batt_3.png[电池 3]
 .步骤
 . 使用十字螺丝刀卸下将 HIC 面板连接到控制器箱的两个螺钉。
 +
-image::../media/hic_2.png[HIC 2.]
+image::../media/hic_2.png[卸下HIC板]
 
 +
 
@@ -193,7 +193,7 @@ NOTE: 上图为示例， HIC 的外观可能有所不同。
 . 卸下 HIC 面板。
 . 使用您的手指或十字螺丝刀松开将 HIC 固定到控制器卡的单个翼形螺钉。
 +
-image::../media/hic_3.png[HIC 3.]
+image::../media/hic_3.png[松开HIC翼形螺钉]
 
 +
 
@@ -205,7 +205,7 @@ NOTE: HIC 顶部有三个螺钉位置，但仅使用一个螺钉位置进行固�
 CAUTION: 请注意，不要擦除或撞击 HIC 底部或控制器卡顶部的组件。
 
 +
-image::../media/hic_4.png[HIC 4.]
+image::../media/hic_4.png[从控制器卡上卸下HIC]
 
 . 将 HIC 放在无静电的平面上。
 
@@ -225,12 +225,12 @@ image::../media/hic_4.png[HIC 4.]
 
 . 找到电源右侧的卡舌，然后将其推向电源设备。
 +
-image::../media/psup_2.png[PSUP 2.]
+image::../media/psup_2.png[按下电源旁边的卡舌]
 
 . 找到电源正面的手柄。
 . 使用把手将电源直接滑出系统。
 +
-image::../media/psup_3.png[PSUP 3.]
+image::../media/psup_3.png[将电源滑出]
 
 +
 
@@ -257,10 +257,10 @@ NOTE: DIMM 底部的缺口可帮助您在安装期间对齐 DIMM 。
 NOTE: Carefully hold the DIMM by the edges to avoid pressure on the components on the DIMM circuit board.
 
 +
-image::../media/dimm_2.png[DIMM 2]
+image::../media/dimm_2.png[按下DIMM插槽上的弹出卡舌]
 
 +
-image::../media/dimim_3.png[dimim 3.]
+image::../media/dimim_3.png[卸下DIMM]
 
 
 
@@ -273,7 +273,7 @@ image::../media/dimim_3.png[dimim 3.]
 .步骤
 . 从控制器中轻轻提起风扇。
 +
-image::../media/fan_2.png[风扇 2]
+image::../media/fan_2.png[卸下风扇]
 
 . 重复此步骤，直到卸下所有风扇为止。
 
@@ -301,7 +301,7 @@ image::../media/fan_2.png[风扇 2]
 
 . 通过将电池外壳与控制器侧面的金属闩锁对齐，将电池插入控制器。
 +
-image::../media/batt_5.png[电池 5]
+image::../media/batt_5.png[安装电池]
 
 +
 电池卡入到位。
@@ -322,7 +322,7 @@ image::../media/batt_5.png[电池 5]
 请注意，不要擦除或撞击 HIC 底部或控制器卡顶部的组件。
 
 +
-image::../media/hic_7.png[HIC 7.]
+image::../media/hic_7.png[安装HIC]
 
 +
 
@@ -338,7 +338,7 @@ CAUTION: * 可能的设备损坏 * —请务必小心，不要挤压 HIC 和翼�
 请勿使用螺丝刀，否则可能会过度拧紧螺钉。
 
 +
-image::../media/hic_3.png[HIC 3.]
+image::../media/hic_3.png[用手拧紧控制器上的HIC翼形螺钉]
 
 +
 
@@ -363,7 +363,7 @@ The power supplies are keyed and can only be installed one way.
 CAUTION: 将电源滑入系统时，请勿用力过大；否则可能会损坏连接器。
 
 +
-image::../media/psup_4.png[PSUP 4.]
+image::../media/psup_4.png[将电源安装到控制器中]
 
 
 
@@ -380,7 +380,7 @@ The notch among the pins on the DIMM should line up with the tab in the socket.
 
 . Insert the DIMM squarely into the slot.
 +
-image::../media/dimm_4.png[DIMM 4.]
+image::../media/dimm_4.png[将DIMM安装到控制器上的插槽中]
 
 +
 The DIMM fits tightly in the slot, but should go in easily.If not, realign the DIMM with the slot and reinsert it.
@@ -395,7 +395,7 @@ NOTE: Visually inspect the DIMM to verify that it is evenly aligned and fully in
 NOTE: DIMM 紧密贴合。您可能需要一次轻轻按压一侧，并分别固定每个卡舌。
 
 +
-image::../media/dimm_5.png[DIMM 5]
+image::../media/dimm_5.png[向上按DIMM插槽上的闩锁以固定]
 
 
 
@@ -408,10 +408,10 @@ image::../media/dimm_5.png[DIMM 5]
 .步骤
 . 将风扇完全滑入更换用的控制器中。
 +
-image::../media/fan_3.png[风扇 3]
+image::../media/fan_3.png[将风扇安装到控制器中]
 
 +
-image::../media/fan_3_a.png[风扇 3 A]
+image::../media/fan_3_a.png[将风扇安装到控制器中]
 
 . 重复此步骤，直到安装完所有风扇为止。
 
@@ -430,7 +430,7 @@ image::../media/fan_3_a.png[风扇 3 A]
 NOTE: 正确安装到磁盘架后，控制器会发出卡嗒声。
 
 +
-image::../media/remove_controller_7.png[卸下控制器 7]
+image::../media/remove_controller_7.png[将控制器安装到磁盘架中]
 
 . 如果 SFP 安装在原始控制器中，请将其从原始控制器安装在新控制器的主机端口中，然后重新连接所有缆线。
 +

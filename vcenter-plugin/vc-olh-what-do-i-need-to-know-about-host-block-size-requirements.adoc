@@ -10,7 +10,7 @@ summary: '对于EF300和EF600系统、可以将卷设置为支持512字节或4Ki
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

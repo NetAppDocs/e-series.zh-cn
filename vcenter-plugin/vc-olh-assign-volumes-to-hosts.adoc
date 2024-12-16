@@ -11,7 +11,7 @@ summary: 您必须将卷分配给主机或主机集群、以便用于I/O操作�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

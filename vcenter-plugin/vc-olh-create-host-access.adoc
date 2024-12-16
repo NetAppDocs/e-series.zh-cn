@@ -11,7 +11,7 @@ summary: 要使用适用于vCenter的存储插件管理存储、您必须发现�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

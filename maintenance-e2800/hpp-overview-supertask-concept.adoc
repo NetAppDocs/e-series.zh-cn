@@ -22,7 +22,7 @@ NOTE: 只能转换E2800控制器上的16 Gb FC/10 Gb iSCSI HIC和光纤基础端
 
 下图显示了一个 E2800 控制器的背面，该控制器具有两个 SFP+ （光纤）基板主机端口 * （ 1 ） * 和四个 SFP+ （光纤） HIC 端口 * （ 2 ） * 。
 
-image::../media/28_dwg_e2800_optical_base_quad_sfp_hic.gif[28 dwg e2800 光纤基座四个 SFP hic]
+image::../media/28_dwg_e2800_optical_base_quad_sfp_hic.gif[E2800控制器上的主机和HIC端口"]
 
 
 NOTE: 此外，还提供双端口 HIC 。
@@ -275,7 +275,7 @@ CAUTION: * 可能的数据丢失 * - 如果在将端口转换为 FC 之前未删
 应用功能包时，镜像支持将从编号最高的基板主机端口（图中标记为 * 1 * ）移至编号最高的 HIC 端口（图中标记为 * 2 * ）。
 
 +
-image::../media/28_dwg_e2800_fc_iscsi_to_fc.gif[28 dwg e2800 fc iscsi 到 fc]
+image::../media/28_dwg_e2800_fc_iscsi_to_fc.gif[E2800控制器上的端口"]
 
 +
 |===

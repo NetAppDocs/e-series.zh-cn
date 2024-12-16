@@ -10,7 +10,7 @@ summary: 为池或卷组维护磁盘架和抽屉丢失保护
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

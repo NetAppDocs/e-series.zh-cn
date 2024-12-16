@@ -11,7 +11,7 @@ summary: 您可以查看和管理软件存储库、其中列出了与适用于vC
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

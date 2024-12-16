@@ -10,7 +10,7 @@ summary: 如果要使两个或更多主机共享对同一组卷的访问、则�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

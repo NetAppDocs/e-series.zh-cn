@@ -11,7 +11,7 @@ summary: 您可以删除驱动器以减少现有池或SSD缓存的容量。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

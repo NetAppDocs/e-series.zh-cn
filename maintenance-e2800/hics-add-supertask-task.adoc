@@ -102,7 +102,7 @@ CAUTION: * 可能的数据丢失 * - 如果在执行 I/O 操作时继续执行�
 当需要将缓存数据写入驱动器时，每个控制器背面的绿色缓存活动 LED 亮起。您必须等待此 LED 关闭。
 
 +
-image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[28 个 dwg 2800 控制器已连接到主维护 2800]
+image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[E2800控制器上的缓存活动LED]
 
 +
 * （ 1 ） * _Cache 活动 LED
@@ -134,7 +134,7 @@ CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on 
 需要将缓存数据写入驱动器时，控制器背面的绿色缓存活动 LED 亮起。您必须等待此 LED 熄灭，然后才能卸下控制器箱。
 
 +
-image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[28 个 dwg 2800 控制器已连接到主维护 2800]
+image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[E2800控制器上的缓存活动LED]
 
 +
 * （ 1 ） * _Cache 活动 LED
@@ -144,7 +144,7 @@ image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[28 个 dwg 2800 
 下图是 E2812 控制器架， E2824 控制器架或 EF280 闪存阵列的示例：
 
 +
-image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[28 dwg e2824 卸下控制器箱维护 e2800]
+image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[从磁盘架上卸下控制器箱]
 
 +
 * （ 1 ） * _ 控制器箱 _
@@ -156,7 +156,7 @@ image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[28 dwg e
 下图是 E2860 控制器架的示例：
 
 +
-image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[28 dwg e2860 添加控制器箱维护 e2800]
+image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif['从磁盘架中取出控制器箱']
 
 +
 * （ 1 ） * _ 控制器箱 _
@@ -193,7 +193,7 @@ CAUTION: * 可能丢失数据访问 * —如果 HIC 是为另一个 E 系列控�
 如果此绿色 LED 亮起，则表示控制器仍在使用电池电源。您必须等待此 LED 熄灭，然后才能卸下任何组件。
 
 +
-image::../media/28_dwg_e2800_internal_cache_active_led_maint-e2800.gif[28 dwg e2800 内部缓存活动 LED 维护 e2800]
+image::../media/28_dwg_e2800_internal_cache_active_led_maint-e2800.gif[内部缓存活动 LED]
 
 +
 * （ 1 ） * _Internal Cache Active_
@@ -212,7 +212,7 @@ image::../media/28_dwg_e2800_internal_cache_active_led_maint-e2800.gif[28 dwg e2
 CAUTION: * 可能的设备损坏 * —请务必小心，不要挤压 HIC 和翼形螺钉之间控制器 LED 的金带连接器。
 
 +
-image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[28 个 dwg e2800 hic 翼形螺钉 maint e2800]
+image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[将HIC安装到控制器卡上]
 
 +
 * （ 1 ） * _ 主机接口卡（ HIC ） _
@@ -226,7 +226,7 @@ image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[28 个 dwg e2800 hi
 
 . 使用 1 号十字螺丝刀，使用先前卸下的四个螺钉将新 HIC 面板连接到控制器箱。
 +
-image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[28 个 dwg e2800 hic faceplace 螺钉 maint e2800]
+image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[将该控制器安装到控制器上]
 
 
 
@@ -243,7 +243,7 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[28 个 dwg e28
 下图是 E2824 控制器架或 EF280 闪存阵列的示例：
 
 +
-image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[28 dwg e2824 卸下控制器箱维护 e2800]
+image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[重新安装控制器箱]
 
 +
 * （ 1 ） * _ 控制器箱 _
@@ -252,7 +252,7 @@ image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[28 dwg e
 * （ 2 ） * _Cam handle
 
 +
-下图是 E2860 控制器架的示例： image:../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[""]
+下图是一个E2860控制器架示例：image:../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif["重新安装控制器箱"]
 
 +
 * （ 1 ） * _ 控制器箱 _
@@ -292,7 +292,7 @@ NOTE: 此时请勿将数据缆线连接到新 HIC 端口。
 NOTE: 此图显示了一个控制器箱示例。您的控制器可能具有不同数量和类型的主机端口。
 
 +
-image::../media/28_dwg_attn_led_7s_display_maint-e2800.gif[28 dwg Attn led 7s 显示 maint e2800]
+image::../media/28_dwg_attn_led_7s_display_maint-e2800.gif[E2800控制器LED]
 
 +
 * （ 1 ） * _ 警示 LED （琥珀色） _

@@ -94,7 +94,7 @@ CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on 
 . 确认控制器背面的缓存活动 LED 是否熄灭。
 . 按压控制器两侧的手柄，然后向后拉，直到其从磁盘架中释放为止。
 +
-image::../media/remove_controller_5.png[删除控制器 5]
+image::../media/remove_controller_5.png[挤压手柄以卸下控制器]
 
 . 用两只手和把手将控制器箱滑出磁盘架。如果控制器的正面没有机箱，请用两只手将其完全拉出。
 +
@@ -102,7 +102,7 @@ image::../media/remove_controller_5.png[删除控制器 5]
 CAUTION: 始终用双手支撑控制器箱的重量。
 
 +
-image::../media/remove_controller_6.png[删除控制器 6]
+image::../media/remove_controller_6.png[拆下控制器时，用双手支撑控制器的重量]
 
 . 将控制器箱放在无静电的平面上。
 
@@ -122,15 +122,15 @@ image::../media/remove_controller_6.png[删除控制器 6]
 . 找到控制器侧面的 " 按下 " 选项卡。
 . 按下卡舌并挤压电池外壳，以解锁电池。
 +
-image::../media/batt_3.png[电池 3]
+image::../media/batt_3.png["按下卡舌以解锁电池]
 
 . 轻轻挤压用于存放电池接线的连接器。向上拉，断开电池与板的连接。
 +
-image::../media/batt_2.png[电池 2]
+image::../media/batt_2.png[拆下蓄电池接线的接头]
 
 . 将电池从控制器中提出，并放在无静电的平面上。
 +
-image::../media/batt_4.png[电池 4]
+image::../media/batt_4.png[从控制器中取出电池]
 
 . 按照您所在地区的相应过程回收或处置故障电池。
 +
@@ -153,7 +153,7 @@ NOTE: 为了安全地遵守 IATA 规定，更换电池在发货时的荷电状�
 
 . 通过将电池外壳与控制器侧面的金属闩锁对齐，将电池插入控制器。
 +
-image::../media/batt_5.png[电池 5]
+image::../media/batt_5.png[插入电池]
 
 +
 电池卡入到位。
@@ -175,7 +175,7 @@ image::../media/batt_5.png[电池 5]
 NOTE: 正确安装到磁盘架后，控制器会发出卡嗒声。
 
 +
-image::../media/remove_controller_7.png[卸下控制器 7]
+image::../media/remove_controller_7.png[将控制器安装到磁盘架中]
 
 
 

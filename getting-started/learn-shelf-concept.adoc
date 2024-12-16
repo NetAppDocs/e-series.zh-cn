@@ -1,7 +1,7 @@
 ---
 permalink: getting-started/learn-shelf-concept.html 
 sidebar: sidebar 
-keywords: E-Series, eseries, E2800, E5700, EF300, EF600, E-series hardware, E-Series shelf, DE212C, DE224C, DE460C, NE224, 
+keywords: E-Series, eseries, E4000, E2800, E5700, EF300, EF600, E-series hardware, E-Series shelf, DE212C, DE224C, DE460C, NE224, 
 summary: E 系列系统具有多种不同的磁盘架大小。 
 ---
 = E 系列磁盘架类型
@@ -22,10 +22,10 @@ E 系列系统具有多种不同的磁盘架大小。
 
 * 2u12 （ 2 个机架单元； 12 个驱动器）
 * 3.5 英寸 HDD 和 / 或 2.5 英寸 SSD （带适配器）
-* 仅限 E2800 控制器
+* 仅限E4000和E2800控制器
 
  a| 
-image:../media/e2812_front.gif[""]
+image:../media/e2812_front.gif["DE212C"]
 
 
 
@@ -37,7 +37,7 @@ image:../media/e2812_front.gif[""]
 * E2800 ， EF280 ， E5700 和 EF570 控制器
 
  a| 
-image:../media/e2824_front.gif[""]
+image:../media/e2824_front.gif["DE224C"]
 
 
 
@@ -46,10 +46,10 @@ image:../media/e2824_front.gif[""]
 
 * 4u60 （ 4 个机架单元； 60 个驱动器）
 * 3.5 英寸和 2.5 英寸驱动器（ NL-SAS ， SAS 和 SSD ）
-* E2800 和 E5700 控制器
+* E4000、E2800和E5700控制器
 
  a| 
-image:../media/de460c.gif[""]
+image:../media/de460c.gif["DE460C"]
 
 
 
@@ -61,6 +61,6 @@ image:../media/de460c.gif[""]
 * EF300 和 EF600 控制器
 
  a| 
-image:../media/ne224.gif[""]
+image:../media/ne224.gif["NE224"]
 
 |===

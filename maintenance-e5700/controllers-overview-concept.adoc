@@ -41,7 +41,7 @@ NOTE: 只要出现以下更换情况、控制器的琥珀色警示LED就会熄�
 ====
 
 
-image::../media/e5700_attention_led_callout.png[e5700 警示 LED 标注]
+image::../media/e5700_attention_led_callout.png[E5700控制器警示LED]
 
 * （ 1 ） * _ 警示 LED_
 
