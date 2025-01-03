@@ -51,12 +51,9 @@ CAUTION: * 可能的硬件损坏 * —电池前部的金属法兰必须完全插
 
 +
 ** * 正确 * —电池的金属法兰已完全插入控制器上的插槽：
-
-
 +
 image:../media/28_dwg_e2800_battery_flange_ok_maint-e2800.gif["正确插入蓄电池法兰"]
 
-+
 ** *不正确*--电池的金属法兰未插入控制器上的插槽：+image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e2800.gif["蓄电池法兰插件不正确"]
 
 

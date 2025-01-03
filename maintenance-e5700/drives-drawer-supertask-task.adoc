@@ -76,14 +76,14 @@ serviceAllowedIndicator=on;"
 ** `array_password` 是存储阵列的密码。您必须将 array_password 的值用双引号括起来（ "" ）。
 ** `` 磁盘架 ID] 是包含要更换的驱动器抽盒的驱动器架的标识符。驱动器架 ID 值为 0 到 99 。您必须将 `纸托 ID` 的值用方括号括起来。
 ** `` ， rawerID] 是要更换的驱动器抽盒的标识符。抽盒 ID 值为 1 （顶部抽盒）到 5 （底部抽盒）。您必须将 `drawerID` 的值用方括号括起来。此命令可确保您可以卸下驱动器架 10 中最顶部的抽盒：
-
-
 +
 [listing]
 ----
 SMcli <ctlr_IP1\> -p "safety-1" -c "set tray [10] drawer [1]
 serviceAllowedIndicator=forceOnWarning;"
 ----
+
+
 . 确定是否需要停止主机 I/O 活动，如下所示：
 +
 ** 如果命令成功，则无需停止主机 I/O 活动。抽盒中的所有驱动器均位于具有抽盒丢失保护的池或卷组中。转至 <<第 2 步：拆下缆线链>>。

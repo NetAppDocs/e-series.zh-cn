@@ -5612,10 +5612,6 @@
   <block id="cc1ba14f8dc9bd7ba20e2aa654cde10b" category="inline-link">E 系列 /EF 系列 SANtricity 操作系统注意事项</block>
   <block id="f54101aa6702c025c4f74ec5ada7bae3" category="summary">管理存储</block>
   <block id="14ad3096f7edeb7d23e22e3ab3539e0f" category="paragraph">使用以下链接访问介绍如何配置，管理和监控存储对象和 E 系列存储系统的文档。通过这些链接，您可以访问其他文档站点。</block>
-  <block id="55b9698df8d5ce238fd672cacb45db33" category="section-title">System Manager 11.7 的联机帮助</block>
-  <block id="bb0f94cdcadb9a7fe9605a5b5978bc9f" category="inline-link">SANtricity System Manager 11.7 联机帮助</block>
-  <block id="08bdf5ba02a44ea1089a7356e56323d3" category="section-title">Unified Manager 5 的联机帮助</block>
-  <block id="d9b69b9cb75561d821d13badf467853f" category="inline-link">SANtricity Unified Manager 5 联机帮助</block>
   <block id="6e8602d76e9fef34df4842cd3e73e25b" category="section-title">命令参考</block>
   <block id="5d3dd536638d57e3f77ad9bda53a7aec" category="summary">E 系列系统具有多种不同的磁盘架大小。</block>
   <block id="91e4f42398de1c06a3558fe252620636" category="doc">E 系列磁盘架类型</block>
@@ -6420,16 +6416,12 @@
   <block id="075df837bf753b5aee2b8bcb4b81e05c" category="cell">介绍在 NetApp E 系列系统支持的 BeeGFS 架构中实施高可用性以及使用 SUSE Linux Enterprise Server for BeeGFS 存储，元数据和管理服务所需的配置。</block>
   <block id="4fca16c33bb8244a7b60dd7da4eec715" category="doc">浏览平台技术报告</block>
   <block id="a28b8b732f1d7a87c511f615fe886bc4" category="inline-link">* TR-4725 ： E2800 阵列功能概述 *</block>
-  <block id="fac7424958d70cf4f8d849fb90db1f68" category="cell"><block ref="fac7424958d70cf4f8d849fb90db1f68" category="inline-link-rx"></block></block>
   <block id="16ee0112605f5c7f44d31ab4fb0f7c73" category="inline-link">+++TR-4724 ： E5700 阵列功能概述 ++*</block>
-  <block id="cdbe326a711e037f4bddbe4b226edfa6" category="cell"><block ref="cdbe326a711e037f4bddbe4b226edfa6" category="inline-link-rx"></block></block>
   <block id="346bfe6c5f1a40af18c578c446b216aa" category="inline-link">+++TR-4877 ： EF300 阵列功能概述 ++*</block>
-  <block id="ca74b797e6d3bd7c698dff9a991616e6" category="cell"><block ref="ca74b797e6d3bd7c698dff9a991616e6" category="inline-link-rx"></block></block>
   <block id="c3bad4531ac09819ae11c8f1eef46379" category="cell">介绍 E2800 混合阵列的硬件和软件功能以及最新的 SANtricity 操作系统功能。</block>
   <block id="170c5373a5aea2b6d6daa41c328182fc" category="cell">介绍 E5700 产品信息，包括最新版本的 SANtricity 引入的新硬件和软件功能。</block>
   <block id="6bf4f338106e6cad43fd2f2fecfcaafa" category="cell">介绍 EF300 全闪存阵列的硬件和软件功能以及新的 SANtricity OS 功能。</block>
   <block id="f3a3500a11e0c13b98d7092f5af6a6c7" category="inline-link">* TR-4800 ： EF600 阵列功能概述 *</block>
-  <block id="567d596a04a1bf27275d8aa991230778" category="cell"><block ref="567d596a04a1bf27275d8aa991230778" category="inline-link-rx"></block></block>
   <block id="6b4552e99c78bda589322e0594a1d89b" category="cell">介绍 EF600 全闪存阵列的硬件和软件功能以及新的 SANtricity OS 功能。</block>
   <block id="3c3f8e33386d2b91256fb1a3f1ed9389" category="doc">浏览安全技术报告</block>
   <block id="d46165f424a559168595411d0e129de6" category="inline-link">* TR-4474 ：《 SANtricity 驱动器安全功能指南》 *</block>
@@ -6474,8 +6466,6 @@
   <block id="228099d750c1289b9bfa62e7687ee971" category="cell"><block ref="228099d750c1289b9bfa62e7687ee971" category="inline-link-rx"></block></block>
   <block id="279a877b44d5476b61408bc38e5178f7" category="cell">介绍对NetApp E2800和E5700混合存储阵列执行的认证测试结果。</block>
   <block id="bf37ab4daa569311ecb03e0f71cfe44e" category="cell">介绍了在NetApp E2800和E5700混合存储阵列上使用Genetec安全中心视频管理软件(Video Management Software、VMS)的认证结果。</block>
-  <block id="ff584d910a943e131a1a33c07ee376cf" category="paragraph">访问<block ref="4f3037dfe9e12b0599983cd81724b08c" category="inline-link-rx"></block>，您可以在其中找到有关如何规划，配置，管理存储阵列以及对其进行故障排除的信息。</block>
-  <block id="a9a112f936967fe8b7a02587778320ab" category="paragraph">访问<block ref="777f091bde7329e4b8f42b44c5184089" category="inline-link-rx"></block>，您可以在此了解如何在多个网络存储阵列上执行存储管理命令。</block>
   <block id="173fec560797244d437c91da004ea89c" category="paragraph">访问<block ref="60cc209e7041626253d52f9b6ac8557b" category="inline-link-rx"></block>，您可以在此了解如何使用命令行界面（ CLI ）命令配置和监控存储阵列。</block>
   <block id="7e90e7aafc41dd2ae860ea7d075f0a24" category="list-text">Unified Manager —此代理安装包括 SANtricity Unified Manager 。 Unified Manager 是一个基于 Web 的界面，可用于对较新的 E 系列和 EF 系列存储系统进行配置访问。有关详细信息，请参见 Unified Manager 联机帮助，该帮助可从其用户界面或获得<block ref="173d089ddf996dbd066dc04ffeb10dca" category="inline-link-rx"></block>。</block>
   <block id="9de7e29035705b89b9b2cc49130cd5d4" category="summary">您可以更改主机或主机集群的名称、主机操作系统类型以及关联的主机集群。</block>
@@ -9462,4 +9452,15 @@
   <block id="7dca1699f8152d82864de292753389fc" category="sidebar">更换驱动器抽屉(4060)</block>
   <block id="676d3cbad89c6a95fe470771db65cfaa" category="sidebar">升级HIC</block>
   <block id="f1de52c9b2e0108b121235152081f684" category="sidebar">更换发生故障的HIC</block>
+  <block id="54941a8cb8785fb145b01e1bb947b67f" category="section-title">System Manager联机帮助</block>
+  <block id="a4cf386ebe9065ef38c507aa0138fca1" category="inline-link">SANtricity系统管理器联机帮助</block>
+  <block id="022c96b1591a4fe3fe2e854b113c6c33" category="paragraph">访问<block ref="4060ff1e62df840ae8eeaa66b7bc4ef3" category="inline-link-rx"></block>，从中可以找到有关如何规划、配置、管理存储阵列以及对其进行故障排除的信息。</block>
+  <block id="68b5d7bbc938636a6430a66ddd3590d0" category="section-title">Unified Manager联机帮助</block>
+  <block id="703be4c8c3307cd5e44163a39538eb58" category="inline-link">SANtricity Unified Manager联机帮助</block>
+  <block id="4c0bdc96ec6314c064f33faae57a0c02" category="paragraph">访问<block ref="d6978b00f819ec3b99c59933f313d81f" category="inline-link-rx"></block>，您可以在其中了解如何对多个网络存储阵列执行存储管理命令。</block>
+  <block id="5b4f9cf27402df2737b167e7393669c2" category="cell"><block ref="5b4f9cf27402df2737b167e7393669c2" category="inline-link-rx"></block></block>
+  <block id="034410ce2cd58a6a56e6772fadec879b" category="cell"><block ref="034410ce2cd58a6a56e6772fadec879b" category="inline-link-rx"></block></block>
+  <block id="6c33c8a01a7b3f83682789dc2c3e0a6e" category="cell"><block ref="6c33c8a01a7b3f83682789dc2c3e0a6e" category="inline-link-rx"></block></block>
+  <block id="ec476342469d41cbc06b7065ffea021e" category="cell"><block ref="ec476342469d41cbc06b7065ffea021e" category="inline-link-rx"></block></block>
+  <block id="ba463c26bea3a95ca7381fd32b63eb98" category="sidebar">E4000产品规格</block>
 </blocks>
