@@ -186,7 +186,10 @@ NOTE: 如果您正在使用尝试脱机的控制器访问 SANtricity 系统管�
 CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on the cables.
 
 . 如果控制器箱上的主机端口使用 SFP+ 收发器，请保持安装状态。
-. 确认控制器背面的缓存活动 LED 是否熄灭。
+. 确认控制器背面和控制器面板上的“Cache Active (缓存活动)”LED是否熄灭。
++
+如果任一LED亮起、则表示控制器仍在使用电池电源。在继续此过程之前、所有LED都必须熄灭。
+
 . 挤压凸轮把手上的闩锁、直到其释放、完全打开凸轮把手以从中间板释放控制器箱、然后用双手将控制器箱从机箱中拉出一半。
 
 

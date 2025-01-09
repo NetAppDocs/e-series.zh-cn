@@ -160,6 +160,19 @@ save storageArray dbmDatabase sourceLocation=onboard contentType=all file="filen
 ----
 
 
+. 使用 SANtricity 系统管理器收集存储阵列的支持数据。
++
+如果删除控制器时出现问题，您可以使用保存的文件对问题描述进行故障排除。系统会将有关存储阵列的清单，状态和性能数据保存在一个文件中。
+
++
+.. *选择支持›支持中心›诊断*。
+.. 选择 * 收集支持数据 * 。
+.. 单击 * 收集 * 。
++
+此文件将保存在浏览器的 "Downloads" 文件夹中，名为 * support-data.7z* 。
+
+
+
 . 如果控制器尚未脱机，请立即使用 SANtricity 系统管理器将其脱机。
 +
 ** 在 SANtricity 系统管理器中：
