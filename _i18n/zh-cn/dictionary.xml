@@ -9466,4 +9466,7 @@
   <block id="53ec2a2a971455f492adc2f07e6c780d" category="paragraph">如果任一LED亮起、则表示控制器仍在使用电池电源。在继续此过程之前、所有LED都必须熄灭。</block>
   <block id="5509a7e2ae2dbdec2ed18ae433b4cec6" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block>完成存储系统设置</block>
   <block id="492fcae0b90e6f4d11439a1f70e422cf" category="admonition">如果您用手指拧松翼形螺钉、则可能需要按下电池释放卡舌并向上旋转电池、以便更好地接触电池。</block>
+  <block id="fdaf387b2cf2a5e0708730deae924c52" category="section-title">11.80.1R3中的新增功能</block>
+  <block id="a372f5d0e522484d2807c2713feb9e59" category="paragraph">此版本仅包含少量更改、没有任何新功能或限制。有关此版本中更改的详细信息、请参阅自述文件。</block>
+  <block id="cb495aee74d8e4c14850fb4a3882a508" category="section-title">11.80.1R2中的新增功能</block>
 </blocks>
