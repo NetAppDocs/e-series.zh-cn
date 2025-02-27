@@ -1,7 +1,7 @@
 ---
 permalink: getting-started/learn-intro-concept.html 
 sidebar: sidebar 
-keywords: E-Series, eseries, E2800, E5700, EF300, EF600 
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, E4000, EF300C, EF600C 
 summary: 了解 E 系列系统，其中包括可满足企业数据存储需求的集成硬件和软件。 
 ---
 = 了解 E 系列系统

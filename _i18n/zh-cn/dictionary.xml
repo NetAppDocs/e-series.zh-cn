@@ -161,7 +161,6 @@
   <block id="aebb270a0f1270c10fb5b2e56830535a" category="list-text"><block ref="18f041f08534fbeb53ae160ad78cfbc4" category="inline-link-rx"></block> （文章数据库）—提供各种 NetApp 产品和技术的故障排除信息，常见问题解答和说明。</block>
   <block id="fc4773230b262d26eed69c2a96bd9708" category="list-text"><block ref="b1540a3ec25c7d8277b499a1cc1d920b" category="inline-link-rx"></block> —用于搜索符合 NetApp 指定标准和要求的 NetApp 产品和组件的配置。</block>
   <block id="8bdb84c095cd42085dcbf03a378418f7" category="inline-link">《 VMware E 系列 SANtricity iSCSI 与 ESXi 6.X 集成配置指南》</block>
-  <block id="5ec68760b690fe27d275d8ef065433df" category="list-text"><block ref="3efd8448d2410829795078709782a7da" category="inline-link-rx"></block> —介绍如何配置虚拟和物理存储，使其保持在 ESX/ESXi 支持的允许上限范围内。</block>
   <block id="094bf2c199fb9ef7ac29e64a12fd7cad" category="inline-link">VMware NVMe 存储的要求和限制</block>
   <block id="8f853bc18ffad192705726f50eff4144" category="list-text"><block ref="6e8a1449bb92590a7f42c1a30534b1da" category="inline-link-rx"></block>。</block>
   <block id="9779d294487414d92ca919d114654e00" category="list-text"><block ref="29363e1f838b703a5f0d926c5c21352a" category="inline-link-rx"></block> —提供了 ESXi vCenter Server 文档。</block>
@@ -353,7 +352,6 @@
   <block id="d33cb0ffecb4e0867340000f157c8dc9" category="paragraph">在安装和设置新存储系统之前，请熟悉安装过程：</block>
   <block id="602581c7f4fef4e0ffc7c312b3efa341" category="summary">将 EF300 或 EF600 安装在两柱机架或 NetApp 系统机柜中。</block>
   <block id="923a86c9f908f09f61d33d7831905371" category="doc">Install the hardware</block>
-  <block id="d751bcfe66df83ffc12435f4dd821d73" category="paragraph">您可以在两柱机架或 NetApp 系统机柜中安装 EF300 或 EF600 存储系统。</block>
   <block id="2d25dc407855f99aa2a0fe96d3aaffc7" category="list-text">准备一个无静电的平面工作区。</block>
   <block id="9ad20405ed7442681aff80b87cb2dba2" category="list-text">打开硬件包装。</block>
   <block id="ddaca6e351d1a3c9ab3d82db4c028ff5" category="list-text">打开包装箱内物品的包装，并根据装箱单清点所含硬件。</block>
@@ -371,7 +369,6 @@
   <block id="5ccbc2f7332f5e7de78fd3d0ce5f8afa" category="list-text">安装面板。</block>
   <block id="e01dbd05527dbcb01263490dd8e81876" category="list-text">将面板与磁盘架对齐，然后卡入到位。</block>
   <block id="0a5007e0321faf4985d50a7bb7ba0e2e" category="summary">要安装 EF300 或 EF600 ，请创建一个帐户并注册硬件。</block>
-  <block id="d63189d25566dd6ce02071e79b58fa61" category="paragraph">了解如何为 EF300 或 EF600 系列存储系统的安装做好准备。</block>
   <block id="d835a4a9669f275077940ef187446bc5" category="paragraph">如果要为 EF300 布线以进行 SAS 扩展，请查看以下信息：</block>
   <block id="ae4728ced8957babaccab930d6730f18" category="inline-link-macro">添加 SAS 扩展卡</block>
   <block id="ed340a74210414952184f18bdea46abb" category="list-text"><block ref="59592944f1499a5ed0c513d73204b10a" category="inline-link-macro-rx"></block> 用于安装 SAS 扩展卡。</block>
@@ -3761,7 +3758,6 @@
   <block id="e00394e86e0897378bd874e271fcd82c" category="doc">SAS 扩展卡</block>
   <block id="8530051dab9b284655e9ee0a33594d15" category="summary">当 EF300 或 EF600 控制器出现故障时，请更换电源。</block>
   <block id="da0fe5b0a30a5d2ccf0e0f907ffc5a0a" category="doc">更换 EF300 或 EF600 电源</block>
-  <block id="bf0f0f2eda9ccf4d28bab16ee4feba30" category="paragraph">您可以更换 EF300 或 EF600 控制器中出现故障的电源。</block>
   <block id="539a53ce95a48163a8ce44101d02382c" category="paragraph">如果某个电源发生故障，您必须尽快更换它，以使控制器架具有冗余电源。</block>
   <block id="e90d7aeee831e4a2cfd7fbc26b8159ad" category="list-text">检查电源上的琥珀色警示 LED 是否亮起，表示电源或其集成风扇出现故障。</block>
   <block id="002a36010db095bc8f2c5bf6720a3b88" category="list-text">控制器架支持的替代电源。</block>
@@ -3776,8 +3772,6 @@
   <block id="f6dc5868c20eb29c31ee714e66081346" category="list-text">在 SANtricity 系统管理器中，单击菜单：支持 [ 升级中心 ] 以确保已安装最新版本的 SANtricity OS 。</block>
   <block id="b1a61a0b6874805bc03293f8b7b15c87" category="summary">在更换 EF300 或 EF600 DIMM 之前，请查看要求和注意事项。</block>
   <block id="4732b406385a15d1aed763a9717a6553" category="doc">更换 EF300 或 EF600 DIMM 的要求</block>
-  <block id="b41535bd642ffdba4076bba7b4364713" category="paragraph">在更换 EF300 或 EF600 存储阵列中的 DIMM 之前，请查看要求和注意事项。</block>
-  <block id="e63ed0f2769c54f901255268d095c0e5" category="paragraph">如果存在内存不匹配或 DIMM 出现故障，则必须更换 DIMM 。请务必验证 EF300 或 EF600 控制器的配置，以确保更换的 DIMM 大小正确。</block>
   <block id="8a9e4c00db6a24a4fb43dc345c83d072" category="admonition">请注意，存储阵列中的 DIMM 很脆弱；处理不当可能会导致损坏。</block>
   <block id="3a53668c4902beecdd7f5dafc89b8449" category="paragraph">请遵循以下规则，以免损坏存储阵列中的 DIMM ：</block>
   <block id="7ef5d75a53c621bc3a647dc5bf5fa954" category="list-text">请将 DIMM 放在 ESD 袋中，直到准备好安装为止。</block>
@@ -3790,7 +3784,6 @@
   <block id="dd198dc6de0b4192b1ff66f211b2b5cf" category="list-text">避免磁场。使 DIMM 远离磁性设备。</block>
   <block id="9fc2bc5f7d7e9f2a3f0e92f0c5b35a3a" category="summary">在更换 EF300 或 EF600 中的驱动器之前，请查看要求和注意事项。</block>
   <block id="04038f6a7d65b1376ed1393539f5bee8" category="doc">更换 EF300 或 EF600 驱动器的要求</block>
-  <block id="02551e5490f3f4380082de0056ba7479" category="paragraph">在更换 EF300 或 EF600 阵列中的驱动器之前，请查看要求和注意事项。</block>
   <block id="b7f04984f163dce73778dbbca2a8c990" category="admonition">请注意，存储阵列中的驱动器很脆弱；驱动器处理不当是驱动器故障的主要发生原因。</block>
   <block id="c4a87fb79210c9a2631561ef1487b358" category="section-title">驱动器更换要求</block>
   <block id="c46c802b782a2905a2b1d8a3db2fd38d" category="list-text">请始终佩戴 ESD 腕带，该腕带接地至机箱上未上漆的表面。如果没有腕带，请先触摸存储机箱机箱上未上漆的表面，然后再处理驱动器。</block>
@@ -3830,19 +3823,16 @@
   <block id="f15676779c0881e1d4a27ae74206fdc4" category="list-text">如果不存在 Recovery Guru ，或者按照恢复 Guru 步骤执行操作，则卷仍不会返回到其首选所有者联系支持部门。</block>
   <block id="23f3b9e3a2c47bcddba6d10506fc157b" category="summary">在更换 EF300 或 EF600 风扇之前，请查看要求和注意事项。</block>
   <block id="ccccec3135cfde6cfdbeb41f2c09065e" category="doc">更换 EF300 或 EF600 风扇的要求</block>
-  <block id="81e19282d1e4ebf8f62639f9c89c358d" category="paragraph">在更换 EF300 或 EF600 阵列中的故障风扇之前，请查看以下要求。</block>
   <block id="1f0e561212d6f8a00a46e7e96276d4cc" category="list-text">您的控制器架或驱动器架型号支持更换风扇。</block>
   <block id="f0df890160164bf2b2f1dc2577fa1273" category="admonition">如果 Recovery Guru 指示无法卸下风扇，请联系技术支持。</block>
   <block id="5e1f9a9f3fe7461846141cef4f73476d" category="summary">更换 EF300 或 EF600 控制器的要求和注意事项</block>
   <block id="3d1512805f23039d65a3a0867cf2b647" category="doc">更换 EF300 或 EF600 控制器的要求</block>
-  <block id="c50f07ebaae0c1c05f1a49284f9e77c9" category="paragraph">在更换 EF300 或 EF600 控制器之前，请查看要求和注意事项。</block>
   <block id="a6173100761f25e711157a7e4aa07d21" category="paragraph">控制器由主板，固件和软件组成。它控制驱动器并实施 SANtricity 系统管理器功能。</block>
   <block id="bfb064f41224e7af37470eb32a8ab384" category="section-title">控制器更换要求</block>
   <block id="c983c5653c1e6540544cc1b919b655a9" category="section-title">在启动时更换</block>
   <block id="208dc6eb3d237f863dd634effc5f6751" category="paragraph">如果满足以下条件，您可以在存储阵列启动并执行主机 I/O 操作时更换控制器箱：</block>
   <block id="73e73c660285cf0012c92dc423418372" category="summary">更改 EF300 或 EF600 阵列的主机端口协议。</block>
   <block id="1a268c928a90e5edb6e5a5d9cd175266" category="doc">更改 EF300 或 EF600 的主机协议</block>
-  <block id="3143078d1b5def855687d8b871a96006" category="paragraph">按照此操作步骤更改 EF300 或 EF600 阵列中的主机端口协议。此操作步骤仅适用于使用 Infiniband （ IB ）或光纤通道（ FC ）的主机接口卡（ HIC ）。</block>
   <block id="4ad13ed0f8c6dc3b675c1012c53f09d8" category="section-title">第 1 步：获取功能包密钥</block>
   <block id="95e811ea8d7fc10ecb21e53428c11d23" category="paragraph">要获取功能包密钥，您需要控制器架中的序列号，功能激活代码以及存储阵列的功能启用标识符。</block>
   <block id="9fbea7ff3b1d63ccc2388bf9de3b06eb" category="list-text">使用功能包子型号 ID ，找到起始配置对应的控制器子型号 ID ，并在下表中找到所需结束配置的功能激活代码。然后，将该功能激活代码复制到文本文件。</block>
@@ -3929,7 +3919,6 @@
   <block id="4ec1b0ed9e4f78833f020b2b7ed423ce" category="doc">DIMM</block>
   <block id="e9e795fffc66424c5fceeda72cc6702b" category="summary">更换 EF300 或 EF600 控制器架中的单个控制器。</block>
   <block id="317ae44d33c81077bc69598e4bf59e9f" category="doc">更换 EF300 或 EF600 控制器</block>
-  <block id="2188af472c4062f3129d65412671fd19" category="paragraph">您可以更换 EF300 或 EF600 控制器架中的单个控制器。</block>
   <block id="1b6ca6cd4db8e59c76840995016904f5" category="paragraph">更换发生故障的控制器箱时，您必须从原始控制器箱中取出电池，电源， DIMM ，风扇和主机接口卡（ HIC ），然后将其安装到替代控制器箱中。</block>
   <block id="5e28583a8af8a4bc782f82438b0b0a20" category="list-text">请查看 <block ref="e99335e3a347f599f32fcd88a9e4a4a4" category="inline-link-macro-rx"></block>。</block>
   <block id="f7ab8ab1867fb9a7a4b58c3f8ef99d5d" category="list-text">通过以下两种方式之一确定控制器箱是否发生故障：</block>
@@ -4010,7 +3999,6 @@
   <block id="8684e4791c6325ef4823a50280210f99" category="doc">升级 EF300 或 EF600 主机接口卡（ HIC ）</block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="list-title">关于此任务</block>
   <block id="bb0ded29eb0a4b47fbd60d4574760d4d" category="list-text">升级 HIC 时，必须关闭存储阵列电源，升级 HIC 并重新加电。</block>
-  <block id="a7b18eda0422ef0dfb82b129d03ac773" category="list-text">在升级 EF300 或 EF600 控制器中的 HIC 时，请重复所有步骤以删除第二个控制器，升级第二个控制器的 HIC 并重新安装第二个控制器，然后再重新为控制器架供电。</block>
   <block id="2f464f520a55ebb1e78e1ba9ae8fdfc1" category="admonition">* 可能丢失数据访问 * —如果 HIC 是为另一个 E 系列控制器设计的，请勿在 EF300 或 EF600 控制器箱中安装该 HIC 。此外，两个控制器和两个 HIC 必须相同。如果存在不兼容或不匹配的 HIC ，则会在您接通电源时导致控制器锁定。</block>
   <block id="489ddef5f9972cf99f31c03235ac7174" category="paragraph">将控制器架置于脱机状态，以便安全地升级 HIC 。</block>
   <block id="1789e941ddc89113b2341d92a6ef0668" category="section-title">第 3 步：卸下 HIC</block>
@@ -4023,12 +4011,9 @@
   <block id="1246d36bb3ff927bc7271cddd5e4e035" category="list-text">如果已卸下 SFP ，请将其安装到新 HIC 中，然后重新连接所有缆线。如果使用多个主机协议，请确保将 SFP 安装在正确的主机端口中。</block>
   <block id="2e2090d7bf10ea829ed979fce6127fca" category="summary">在更换 EF300 或 EF600 电源之前，请查看要求和注意事项。</block>
   <block id="b4bdfc68a2be9043c46c8629fec0e8fe" category="doc">更换 EF300 或 EF600 电源的要求</block>
-  <block id="d2f1edd900d2d5c61c52c428e56d8c4b" category="paragraph">在更换 EF300 或 EF600 阵列中的电源之前，请查看以下要求。</block>
   <block id="92a8e5a68dee2a2df8de1337cfd37b9c" category="list-text">您必须更换为您的控制器架或驱动器架型号支持的电源。</block>
   <block id="1eca441f881a292b05722ddcd5c7605a" category="summary">更换 EF300 阵列中的驱动器。</block>
   <block id="1b311fbfc664dabdc89169b6d43903d6" category="doc">更换 EF300 阵列中的驱动器</block>
-  <block id="59958ca616aba014e914263121b83c15" category="paragraph">您可以更换 EF300 阵列中的驱动器。</block>
-  <block id="61bc4bd99c5e65055b2b91cdea8b08ea" category="paragraph">EF300 支持使用 24 个驱动器和 60 个驱动器磁盘架进行 SAS 扩展。您关注的操作步骤取决于您使用的是 24 驱动器磁盘架还是 60 驱动器磁盘架：</block>
   <block id="2ca85a3dda1d5669703da1eb7e07b7c2" category="list-text"><block ref="9a51b9a38de70279b358d3c9ff153239" category="inline-xref-macro-rx"></block></block>
   <block id="8073ddd7ebb4e905ea4015f335f42663" category="list-text"><block ref="f8c16ddb5f1fc7bc0310ed900e3efbe6" category="inline-xref-macro-rx"></block></block>
   <block id="d8e732631daed1812191326c689a203e" category="section-title">更换 EF300 中的驱动器（ 24 驱动器磁盘架）</block>
@@ -4040,7 +4025,6 @@
   <block id="77bfec755a5e57d7ef372575d496401b" category="summary">驱动器是为数据提供物理存储介质的设备。</block>
   <block id="0c72a6417d4140802a553e2534452e92" category="summary">更换 EF300 或 EF600 中的风扇。</block>
   <block id="08975a768d5ba6909e25278ac5469941" category="doc">更换 EF300 或 EF600 风扇</block>
-  <block id="b7ad64ed9554dc2f60ac2823757adebd" category="paragraph">您可以更换 EF300 或 EF600 阵列中的风扇。</block>
   <block id="0d72942e30e9c18f566da0461c8288db" category="paragraph">每个 EF300 和 EF600 控制器架或驱动器架都包含五个风扇。如果风扇发生故障，您必须尽快更换风扇，以确保磁盘架具有足够的散热效果。</block>
   <block id="35ad30a0d0cb54f752269652fd523cf3" category="list-text">一个替代风扇。</block>
   <block id="3561aed7d51ffd3f85bdf2b7412b2568" category="paragraph">使控制器箱脱机，以便安全地更换故障风扇。</block>
@@ -4060,13 +4044,11 @@
   <block id="8addc48a633646024884c3c4cdcfc464" category="list-text">选择已更换风扇的控制器。</block>
   <block id="d6475123c80be4addf74127c7fdabcec" category="paragraph">风扇更换已完成。您可以恢复正常操作。</block>
   <block id="3445e7362b27e4ba74cabda5b497847f" category="summary">在更换 EF300 或 EF600 HIC 之前，请查看要求和注意事项。</block>
-  <block id="bce135c4d36e87cac4fa46df29044acd" category="paragraph">在升级或更换 EF300 或 EF600 阵列中的主机接口卡（ HIC ）之前，请查看以下要求。</block>
   <block id="7ff977d3382830f3eff92120544b15ab" category="list-text">您已为此操作步骤计划停机维护时段。在成功完成此操作步骤之前，您无法访问存储阵列上的数据。由于两个控制器在启动时必须具有相同的 HIC 配置，因此在更改 HIC 配置时必须关闭电源。如果存在不匹配的 HIC ，则会导致具有替代 HIC 的控制器在联机时锁定。</block>
   <block id="d2ab7f2f0a5b33496f422f7f99f93b07" category="list-text">某些 HIC 更换或升级可能需要转换主机端口协议。按照中的说明进行操作 <block ref="efdbcf8658d5853e5683d8aef1bb4491" category="inline-xref-macro-rx"></block> 。</block>
   <block id="12d81cfc2d4212cb9a4099e19a0660cb" category="list-text">EF300 控制器必须在 HIC 端口 2 上填充 HIC ，以便进行主机连接。</block>
   <block id="cf161815430bebc8ee6771d30a156397" category="summary">更换 EF300 或 EF600 阵列中的电池。</block>
   <block id="39ada1b1281d103dd18b2f68149694a0" category="doc">更换 EF300 或 EF600 电池</block>
-  <block id="e00dafa45847ab907f34044e9b23920f" category="paragraph">您可以更换 EF300 或 EF600 存储系统中的电池。</block>
   <block id="9edad8491a8585b842f4ac6201b8d622" category="inline-link-macro">更换 EF300 或 EF600 电池的要求</block>
   <block id="2571fd5711bd2998477e5873a52d475c" category="list-text">查看 <block ref="ed1f9654fc9810726f2ffd62a386295a" category="inline-link-macro-rx"></block>。</block>
   <block id="5fe93120de4e7963e6486732f3e58e9c" category="paragraph">备份数据并使受影响的控制器脱机。</block>
@@ -4084,7 +4066,6 @@
   <block id="3aea2395eb1945801b3ad83556c9d15a" category="list-text">单击菜单： Support[ 升级中心 ] 以确保已安装最新版本的 SANtricity OS 。</block>
   <block id="08c0021d60441f8c3dd78eeb49362807" category="summary">维护 EF300 和 EF600 硬件</block>
   <block id="3b22a7c15f94b211436d1caea39710ca" category="doc">维护 EF300 和 EF600 硬件</block>
-  <block id="042bdb0acc6382a72eab016fef01741f" category="paragraph">对于 EF300 和 EF600 存储系统，您可以对以下组件执行维护过程。</block>
   <block id="0e11944ef8baa0cd23d9027846dfb479" category="paragraph">控制器附带电池，如果交流电源发生故障，则会保留缓存的数据。</block>
   <block id="a371cfb6b719fc75b3bfb1eb906d8ada" category="paragraph">如果存在内存不匹配或 DIMM 发生故障，则必须更换 DIMM （双列直插式内存模块）。</block>
   <block id="4604f841b0b16d3013cac1e2078e5b1b" category="section-title">风扇</block>
@@ -4094,7 +4075,6 @@
   <block id="51255c5d39d4b9a43a7f800db3b8a431" category="doc">电源</block>
   <block id="0473e45a7d7f9557ae9f5ca07ab2315a" category="summary">更换发生故障的 EF300 或 EF600 主机接口卡（ HIC ）。</block>
   <block id="821d24c9ba446ee4c7b02961af65c2df" category="doc">更换 EF300 或 EF600 中发生故障的主机接口卡（ HIC ）</block>
-  <block id="1d26fe6e02d3739f6d0eb3a75694ed4e" category="paragraph">按照此操作步骤更换 EF300 或 EF600 阵列中发生故障的主机接口卡（ HIC ）。</block>
   <block id="862acd5892fdfacc876441454483bc88" category="paragraph">更换发生故障的 HIC 时，必须关闭存储阵列电源，更换 HIC 并重新接通电源。</block>
   <block id="a3910b9f5e509531bb5260b4c20c05a2" category="list-text">与控制器兼容的 HIC 。</block>
   <block id="641da5252bd37830e3c9e814b73958c5" category="section-title">第 1 步：使控制器脱机</block>
@@ -4118,7 +4098,6 @@
   <block id="df2839c02c12ce7fb5ee89d23d2cc262" category="paragraph">具体设置可能会有所不同。检查<block ref="ae69c67e09c854d61b64be1ef166878d" category="inline-link-rx"></block> 有关解决方案的具体说明和其他建议设置，请参见。</block>
   <block id="fc94ac1d2bdfb27ac4210c2680f2d5fe" category="summary">在转换 EF300 或 EF600 主机协议之前，请查看要求和注意事项。</block>
   <block id="c901677705b5230445795815d2367528" category="doc">EF300 或 EF600 主机协议转换的要求</block>
-  <block id="9d528dc333e33dbe25bda7c346243c3b" category="paragraph">在转换 EF300 或 EF600 阵列的主机协议之前，请查看以下要求。</block>
   <block id="12b88a904502434a63f50fce060243e4" category="list-text">您已为此操作步骤计划停机维护时段。</block>
   <block id="03e368a22e511c58d3a3dad40e86377f" category="list-text">执行转换时，必须停止主机 I/O 操作。在成功完成转换之前，您无法访问存储阵列上的数据。</block>
   <block id="75e7f67348e4a26031725587e6fbd19c" category="list-text">您正在使用带外管理。（您不能使用带内管理来完成此操作步骤。）</block>
@@ -4127,13 +4106,11 @@
   <block id="5e7a01eefac15f1a88cbf08e764f5398" category="list-text">某些主机端口协议转换可能需要添加或升级主机接口卡。</block>
   <block id="f35307ec092e89906d40c7e7580fd73e" category="summary">控制器由主板，固件和软件组成。它控制驱动器并实施 System Manager 功能。本节介绍如何更换 EF300 或 EF600 控制器架中的一个或两个控制器。</block>
   <block id="571b1ead863e404cb63de04e9e14c21d" category="summary">更换 EF300 或 EF600 电池的要求和注意事项。</block>
-  <block id="33f5fc7c0c7f3df402c75b558ca4f2b8" category="paragraph">在更换 EF300 或 EF600 电池之前，请查看要求和注意事项。</block>
   <block id="e71146224fd64a6c76e83e431678c8ba" category="paragraph">下面概述了更换 EF300 或 EF600 控制器中的电池的步骤：</block>
   <block id="9cfc11d4ef06463002ddc3a0df54fee8" category="list-text">使控制器脱机。</block>
   <block id="d8fdffd0fad371d1972462ffa48981cd" category="paragraph">如果您计划更换电池，则必须具备以下条件：</block>
   <block id="4649f22302dc58915bd0c297f379d683" category="summary">更换 EF300 或 EF600 阵列中的 DIMM 。</block>
   <block id="fc66672be674c1a0d3c77416bba78aaf" category="doc">更换 EF300 或 EF600 中的 DIMM</block>
-  <block id="3b00e6dae1c985bb3451ba742a69d556" category="paragraph">您可以更换 EF300 或 EF600 阵列中的 DIMM 。</block>
   <block id="e8bc418a1334db89f56000cf271db6e1" category="paragraph">要更换 DIMM ，您必须验证控制器的缓存大小，使控制器脱机，卸下控制器，卸下 DIMM 并在控制器中安装新 DIMM 。然后，您可以将控制器恢复联机并验证存储阵列是否正常工作。</block>
   <block id="41be7544de3e0a025756e0b0464afdc9" category="list-text">请查看 <block ref="13c2dbe2bfcf1cade167bfec3b040713" category="inline-link-macro-rx"></block>。</block>
   <block id="156139404f5d55fe216385d591bf007c" category="list-text">更换用的 DIMM 。</block>
@@ -4187,7 +4164,6 @@
   <block id="1814520cf0b22a6f3d8fa7cf48e4ee44" category="paragraph">在存储阵列中添加 SAS 扩展卡的过程已完成。您可以恢复正常操作。</block>
   <block id="fd293cf77acfdd97249a46e8f0f881ef" category="summary">更换 EF600 阵列中的驱动器。</block>
   <block id="c2d869aaa5bfd00a5deb58e0c2033910" category="doc">更换 EF600 阵列中的驱动器</block>
-  <block id="248c1549e6f83551c44f661321efdd2d" category="paragraph">您可以更换 EF600 阵列中的驱动器。</block>
   <block id="090c16503867f8c38598a1963600e1f8" category="list-text">请查看 <block ref="a3053473be5cf3d84a95cd722c986422" category="inline-link-macro-rx"></block>。</block>
   <block id="8a1d026d92ef5e15588a139fbb9c0b7d" category="paragraph">检查 SANtricity System Manager 中的 Recovery Guru 并完成所有前提步骤，为更换驱动器做好准备。然后，您可以找到故障组件。</block>
   <block id="8298fe6a63f14a594d8f2661ca314cfa" category="section-title">第 2 步：删除驱动器</block>
@@ -4258,9 +4234,6 @@
   <block id="3aa8db601a262e6c7ce55106cbfb88cf" category="paragraph">用于在 Web 服务代理中指示请求的存储系统当前不可访问。因此， Web 服务无法满足此请求。</block>
   <block id="858d9ef3cff533a963578b1a8a8d4a62" category="paragraph">429 个请求太多</block>
   <block id="036fbcb66eb52eb94ad85dbcb48f8fce" category="paragraph">表示已超过请求限制，应稍后重试。</block>
-  <block id="fc53c036602508ed6c2afc18e2fbdf51" category="section-title">示例脚本</block>
-  <block id="2fd0d86a248b2472ae69f3f3c21669c9" category="inline-link">NetApp Web 服务示例</block>
-  <block id="c44a76942b050cc49aec1fa7f5570bec" category="paragraph">GitHub 包含一个存储库，用于收集和组织展示 NetApp SANtricity Web 服务 API 使用的示例脚本。要访问存储库，请参见<block ref="0c095e5032a5d0867c1a67924875784d" category="inline-link-rx"></block>。</block>
   <block id="c2818061f0b9c0d7a07cd2cbfc93b16a" category="doc">Web 服务和 Unified Manager 概述</block>
   <block id="c0d25939d469bb628bef1593149aba5c" category="paragraph">在安装和配置 Web 服务代理之前，请阅读 Web 服务和 SANtricity 统一管理器概述。</block>
   <block id="2c10282d2a9ce8be1576d7af8091d09e" category="section-title">Web 服务</block>
@@ -4477,7 +4450,6 @@
   <block id="622af39fc5b017376b0150c6e06400f6" category="inline-link-macro">登录到 API 和 Unified Manager</block>
   <block id="43dbb9d0b510bdb24761cbe9b6e9778c" category="list-text"><block ref="d4091465e5adaecb225f1f55b521fd3d" category="inline-link-macro-rx"></block>。</block>
   <block id="cc4bf58dba772738539b000ef7815fde" category="list-text"><block ref="a5854a34a0c5ab2777626906b175ead4" category="inline-link-macro-rx"></block>。</block>
-  <block id="6dcc47dbb36dc1602e64f7f0d0883dc8" category="list-text">GitHub 存储库— GitHub 包含一个存储库，用于收集和组织展示 NetApp SANtricity Web 服务 API 使用的示例脚本。要访问存储库，请参见<block ref="0c095e5032a5d0867c1a67924875784d" category="inline-link-rx"></block>。</block>
   <block id="32eac081ab8132e42611dc0066282fe9" category="list-text">表述性状态传输（ Representational state transfer ， REST ）— Web 服务是一种 RESTful API ，可用于访问几乎所有 SANtricity 管理功能，因此您应熟悉 REST 概念。有关详细信息，请参见<block ref="f6676be33ff47b799bb2e0366943e72b" category="inline-link-rx"></block>。</block>
   <block id="e26cd645db0153fb417155d12d6936cc" category="list-text">JavaScript 对象表示法（ JSON ）—由于 Web 服务中的数据是通过 JSON 进行编码的，因此您应熟悉 JSON 编程概念。有关详细信息，请参见<block ref="4d69e99d61c7a555a660d740c47af7e5" category="inline-link-rx"></block>。</block>
   <block id="93a7f24cea8d167a80b981802dcfd7a7" category="summary">要删除 Web 服务代理和 Unified Manager ，您可以使用任何模式（图形，控制台，静默或 RPM 文件），而不管使用哪种方法安装代理。</block>
@@ -5629,7 +5601,6 @@
   <block id="33d6fe66d2b404f7c25080e8098edd9c" category="list-text">3.5 英寸和 2.5 英寸驱动器（ NL-SAS ， SAS 和 SSD ）</block>
   <block id="3fcdd0c9c8fbc91f7bb9df81e95c618f" category="paragraph">* NE224 ： *</block>
   <block id="73fe55efcdaa2ad95e010a4bac9165df" category="list-text">2.5 英寸 NVMe SSD 驱动器</block>
-  <block id="ee42e406b098eeee6019f729810f7302" category="list-text">EF300 和 EF600 控制器</block>
   <block id="ae57e705c83e0b20d768cee453b91d4c" category="summary">E 系列存储阵列提供多种配置和型号。</block>
   <block id="d2bf6cf91aae10964c05d43904777ddb" category="doc">E 系列硬件概述</block>
   <block id="d234c0641fc33cad6a6c3c6ea71df215" category="paragraph">存储阵列包括磁盘架，控制器，驱动器，软件和固件。该阵列可以安装在机架或机柜中，并可为一个或两个控制器提供可自定义的硬件，这些硬件位于 12 ， 24 或 60 个驱动器的磁盘架中。您可以将存储阵列从多种接口类型连接到 SAN 以及各种主机操作系统。</block>
@@ -8102,17 +8073,13 @@
   <block id="709b2345a804dd3959ae288cc98408cf" category="cell">介绍EF600全闪存阵列和Splunk设计的集成架构。本文档还总结了从 Splunk 计算机日志事件模拟工具获得的性能测试结果。</block>
   <block id="b8de54c02bf690e0071da3924487271e" category="admonition">只能转换E5700控制器上的光纤基本端口。</block>
   <block id="59f90aba4c7b3944a7e31f23bff5d8a2" category="admonition">只能转换E2800控制器上的16 Gb FC/10 Gb iSCSI HIC和光纤基础端口。</block>
-  <block id="f212760efdd1ee6ecc6a822f380627cd" category="paragraph">EF300、EF600</block>
   <block id="a49b136089a95385ac24b13d585982b3" category="paragraph">DE212C、DE224C、DE460</block>
   <block id="add241dc5ececee27088b6736250072e" category="section-title">为EF300和EF600布线</block>
-  <block id="aa7f7f642f0f31272aec24455af2999f" category="paragraph">以下信息是适用场景 使用缆线将EF300或EF600控制器架连接到DE212C、DE224C或DE460驱动器架的信息。</block>
   <block id="e20bd51b5e818feb7ae7162ff2a5040b" category="paragraph">在为EF300或EF600布线之前、请确保固件已更新到最新版本。要更新固件，请按照中的说明进行操作 <block ref="2834c74834ca1d1cb0e165f8c6e2c750" category="inline-link-macro-rx"></block>。</block>
   <block id="e9fc6b3246246d57c13f601aad6408d6" category="list-text">导入开始前无法映射到主机(但是、可以在导入开始后映射)。</block>
   <block id="cf505540e6b324232d096ecbbeb36457" category="doc">将SAS扩展卡添加到EF300和EF600</block>
-  <block id="a06914d93f698c6a8bb3f09a21efd671" category="paragraph">您可以向EF300或EF600控制器添加SAS扩展卡、以允许驱动器托盘扩展。</block>
   <block id="b18049a57fbb2ec5fd47fae049bd965b" category="inline-link-macro">更换EF300和EF600 SAS扩展卡的要求</block>
   <block id="8cce61d9b8e3a90145210a9516fd4eb4" category="list-text">请查看 <block ref="171e03e043e11d80ccbb4c5420424ae5" category="inline-link-macro-rx"></block>。</block>
-  <block id="9f5dcc5008bfb9c123def7609109a915" category="paragraph">如果您计划向EF300或EF600添加SAS扩展卡、请查看以下要求。</block>
   <block id="9f1734fc5e3e56de56de5feb0b21d81b" category="list-text">在启动时启用multipathd守护进程。</block>
   <block id="f0e0ce722ec3a3c41f0dbc73c527938e" category="inline-link">手动创建主机</block>
   <block id="10f5dacfa6ac3fb3d44d134b3d8aa6b7" category="inline-xref">第4步</block>
@@ -8483,7 +8450,6 @@
   <block id="c08a9596d55b45e7eb8325bd878b47d5" category="paragraph">有关通过布线支持镜像功能的信息，请参见<block ref="4c6cd7be794e0089961c4cc00b012a2c" category="inline-link-rx"></block>。</block>
   <block id="3885d6d9f5a5030ec46ec3ce038af96c" category="inline-link">NetApp知识库</block>
   <block id="780fe86b24958c45b0b8792fad1e9b3c" category="admonition">如果需要有关如何更换E系列DE460c扩展架的信息，请参阅<block ref="b46c4d97d6f1694e2cd029493cdb5475" category="inline-link-rx"></block>。</block>
-  <block id="2db2ab880afe48bd41e6405e510d18a3" category="paragraph">此过程适用于将DE212C、DE224C或DE460C驱动器架热添加到E2800、E2800B、EF280、E5700、E5700B、EF570、EF300、EF600或E4000控制器架。</block>
   <block id="cefb29f3645d6d69acdc85d8770aa08a" category="inline-xref">第2步：安装驱动器架并接通电源。</block>
   <block id="346a8c796c407b91a19c527df6110dbf" category="list-text">如果已将IOM连接到硬件、请完成以下步骤。否则、请转至<block ref="ced5ba5343128d91ca8bbc4aaf5b23cf" category="inline-xref-macro-rx"></block></block>
   <block id="88c9d5369051df6e8e46d78e3d1f7a01" category="image-alt">IOM (EMM)图标</block>
@@ -8528,7 +8494,6 @@
   <block id="2163e0da7fb01e2bb8b011e0bbb5bb9a" category="paragraph">请查看以下链接、以访问与E系列硬件和SANtricity软件相关的技术报告。通过这些链接，您可以访问其他文档站点。</block>
   <block id="231fee8476ab72cb095e76bba043405b" category="inline-link-macro">具有12个或60个驱动器的磁盘架的E4000系列</block>
   <block id="e7898b0cd5dffab6be90aba697d20fbc" category="list-text"><block ref="e7898b0cd5dffab6be90aba697d20fbc" category="inline-link-macro-rx"></block></block>
-  <block id="b1a34a1559f9d1375a007a5b84964084" category="list-text">*控制器类型*--所有E4000、E2800、EF280、EF300、E5700、EF570和EF600型号。</block>
   <block id="ac04abe31dcd141500e5d9732b2ac56b" category="list-text">E4000 系列—入门级混合</block>
   <block id="d8b8562346c10d2efbbb129845379264" category="list-text">机架尺寸</block>
   <block id="1c2bd945de8ed1b6e853b76b3def6a6d" category="image-alt">E2800 2U.</block>
@@ -8538,7 +8503,6 @@
   <block id="db1f17f8825c1b566a696300d91ea1b0" category="paragraph"><block ref="db1f17f8825c1b566a696300d91ea1b0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2aa3181e7a7fa68b8f072afb1fee51cc" category="inline-image-macro">EF300 2U.</block>
   <block id="ca3611d1131613ffa7a890d7f6e42416" category="paragraph"><block ref="ca3611d1131613ffa7a890d7f6e42416" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5f324d184d0af564d12941f12dcae69f" category="list-text">驱动器和HIC</block>
   <block id="9f3c652bfc849caad5b2686a7b942865" category="image-alt">E5700 2U.</block>
   <block id="87d79e15bbf55dbb02286cca22f13ff0" category="image-alt">E5700 4U.</block>
   <block id="3a0386059e2d44c807d709da53f78d9a" category="inline-image-macro">EF570 2U.</block>
@@ -8575,7 +8539,6 @@
   <block id="de8011abde4e4344c82af51912b3ce19" category="paragraph"><block ref="2bce2265bb1e82bb0d0858adf2dafedf" category="inline-image-macro-rx" type="image"></block>*系统设置*</block>
   <block id="db5eb84117d06047c97c9a0191b5fffe" category="inline-image-macro">支持</block>
   <block id="9dcfdd4141be874fb7eb13880a5fd525" category="paragraph"><block ref="1cb7eabea009b4b9cfe98093989eadbf" category="inline-image-macro-rx" type="image"></block>*支持*</block>
-  <block id="0c7e65219517f5881dd4fc4cbac2dbf6" category="paragraph">Unified Manager 是一款基于 Web 的软件，用于管理整个域。在中央视图中、您可以查看所有较新的E系列和EF系列阵列的状态、例如E4000、E2800、EF280、EF300、E5700、EF570和EF600。您还可以对选定存储阵列执行批处理操作。</block>
   <block id="7ac1c3c4fd9181221a17809a9e2420ed" category="paragraph"><block ref="fa1a238df1b067ec5821498fc2b49a78" category="inline-image-macro-rx" type="image"></block>*发现存储阵列*</block>
   <block id="9506f0fd0f7f1b07960b15b4c9e68d1a" category="inline-image-macro">启动</block>
   <block id="dd5912f8cf835c33b2a3b61d5e141ff0" category="paragraph"><block ref="59d02cad0b7ca821298861a148459521" category="inline-image-macro-rx" type="image"></block>*发布*</block>
@@ -9334,7 +9297,6 @@
   <block id="43407d291e0a258a2c0f50fea060ead5" category="image-alt">从磁盘架中卸下驱动器</block>
   <block id="5790149daceb0d5059957b49f27f38bc" category="image-alt">存储阵列配置文件</block>
   <block id="6eb64fbdee0c658692fc6db01e28a15a" category="image-alt">更改Feature Pack对话框</block>
-  <block id="c26d5c551bc45d9cf360b6ebab870ac2" category="paragraph">您可能需要对硬件执行维护过程。本节介绍了维护EF300或EF600系统组件的特定过程。</block>
   <block id="d1ff77c85f0bb81f5e031dab7a099ac2" category="paragraph">本节中的过程假定已在E系列环境中部署EF300或EF600系统。</block>
   <block id="4228df1f41617005f9a6966cc97e2b6d" category="paragraph"><block ref="4228df1f41617005f9a6966cc97e2b6d" category="inline-link-rx"></block></block>
   <block id="2758f7dbcf963c3ec6e9b39bf3319e8f" category="paragraph"><block ref="2758f7dbcf963c3ec6e9b39bf3319e8f" category="inline-link-rx"></block></block>
@@ -9469,4 +9431,51 @@
   <block id="fdaf387b2cf2a5e0708730deae924c52" category="section-title">11.80.1R3中的新增功能</block>
   <block id="a372f5d0e522484d2807c2713feb9e59" category="paragraph">此版本仅包含少量更改、没有任何新功能或限制。有关此版本中更改的详细信息、请参阅自述文件。</block>
   <block id="cb495aee74d8e4c14850fb4a3882a508" category="section-title">11.80.1R2中的新增功能</block>
+  <block id="166d62a1d721192a2058e6d8b4d89c04" category="paragraph">此过程适用于将DE212C、DE224C或DE460C驱动器架热添加到E2800、E2800B、EF280、E5700、E5700B、EF570、EF300、EF600、EF300C、EF600C或E4000控制器架。</block>
+  <block id="8a7e170acd5f2688800925b2b4a8d261" category="list-text"><block ref="537606410175a12a150f722cd71e55fb" category="inline-link-rx"></block>--介绍如何将虚拟和物理存储配置为不超过ESS/ESXi支持的最大值。</block>
+  <block id="d088dea69b1345c1729f1c0d46d8053d" category="list-text">*控制器类型*--所有E4000、E2800、EF280、EF300、E5700、EF570、EF600、EF300、EF600C和EF300C型号。</block>
+  <block id="4720d0b863e013bea6899b10e0989bda" category="list-text">EF600C 系列—中端全闪存，全 NVMe</block>
+  <block id="b9f7cef2dc8f05405c94daa2cb4fa6ae" category="list-text">EF300C 系列—中端全闪存，全 NVMe</block>
+  <block id="5ca6952c7c9ae5d4b8be61e6386f0222" category="open-title">EF300C 型号</block>
+  <block id="595f8cc3ac0c1f12a0f83c3b1dad7c19" category="list-text">支持30 TB和60 TB容量的NVMe SSD驱动器</block>
+  <block id="f8a3ff8be0bd051ecc8c3ec31daa0195" category="admonition">对于SANtricity OS 11.80GA及更高版本、EF300支持基本托盘中不含驱动器的扩展架配置使用此配置时、请确保驱动器已填充到扩展架中、并正确连接到基座托盘、然后再打开系统电源。*</block>
+  <block id="14a2fa7582e1084e3800dde50d8cde03" category="open-title">EF600C 型号</block>
+  <block id="0db8edfb04068c99ae28246efebb6d4d" category="list-text">12gb SAS</block>
+  <block id="689052b8726f00a4623e9ada4d36af90" category="list-text">EF300、EF600。EF300C和EF600C控制器</block>
+  <block id="16736d8feb91d19d335e7acdefc20ef7" category="paragraph">Unified Manager 是一款基于 Web 的软件，用于管理整个域。在中央视图中、您可以查看所有较新的E系列和EF系列阵列的状态、例如E4000、E2800、EF280、EF300、E5700、EF570、EF600、EF300C和EF600C。您还可以对选定存储阵列执行批处理操作。</block>
+  <block id="0fabf178487912291e67bdafbadfe77d" category="paragraph">以下信息适用场景使用缆线将 EF300 ， EF600 ， EF300C 或 EF600C 控制器架连接到 DE212C ， DE224C 或 DE460 驱动器架。</block>
+  <block id="f1c197c528faee0553e4d6ce534048a7" category="paragraph">EF300、EF600、EF300C、EF600C</block>
+  <block id="57274295d5ba7bc8f4d4ebba2d325b92" category="doc">安装和设置EF300、EF600、EF300C和EF600C存储系统</block>
+  <block id="915fd81c3f189c50233446daf085a8f7" category="paragraph">您可以在两柱机架或NetApp系统机柜中安装EF300、EF600、EF300C或EF600C存储系统。</block>
+  <block id="04ec4caf2b80e886c69cd8966d5f5c92" category="paragraph">了解如何准备安装EF300、EF600、EF300C或EF600C系列存储系统。</block>
+  <block id="a466a396cacf21d3516a87d8639c5255" category="paragraph">在更换EF300、EF600、EF300C或EF600C电池之前、请查看要求和注意事项。</block>
+  <block id="0b5565f493a40cc2e5ace8909a568f68" category="paragraph">您可以更换EF300、EF600、EF300C或EF600C存储系统中的电池。</block>
+  <block id="a3ec65b7c9b468046fdbe7dc19f94299" category="paragraph">控制器由主板，固件和软件组成。它控制驱动器并实施 System Manager 功能。本节介绍如何更换EF300、EF600、EF300C或EF600C控制器架中的单个控制器或两个控制器。</block>
+  <block id="89e4ff051c9e9c60c1d21fddb84ec42a" category="paragraph">更换EF300和EF600之前。EF300C或EF600C控制器、请查看相关要求和注意事项。</block>
+  <block id="e0b68b674b62dc6569b4275513ebdb8f" category="paragraph">您可以更换EF300、EF600、EF300C或EF600C控制器架中的单个控制器。</block>
+  <block id="136b14c506b51c3fdb848576b81df5a9" category="paragraph">在更换EF300、EF600、EF600C或EF300C存储阵列中的DIMM之前、请查看要求和注意事项。</block>
+  <block id="4c9ef3b0d9ab6aa77110cf9315115626" category="paragraph">如果存在内存不匹配或 DIMM 出现故障，则必须更换 DIMM 。请务必验证EF300、EF600、EF300C或EF600C控制器的配置、以确保更换的DIMM大小正确。</block>
+  <block id="c7834d39f5a9eddcdd20194da1039c37" category="paragraph">您可以更换EF300、EF600、EF300C或EF600C阵列中的DIMM。</block>
+  <block id="49d1f2fe6e0ad23ead3ed2632a9f74a7" category="paragraph">在更换EF300、EF600、EF300C或EF600C阵列中的驱动器之前、请查看要求和注意事项。</block>
+  <block id="fce247b37d4a827b7ed5a9564626b863" category="paragraph">您可以更换EF300或EF300C阵列中的驱动器。</block>
+  <block id="c2554b135d504cffd8df4d719c7ebb57" category="paragraph">EF300和EF300C支持SAS扩展、可容纳24个驱动器和60个驱动器的磁盘架。您关注的操作步骤取决于您使用的是 24 驱动器磁盘架还是 60 驱动器磁盘架：</block>
+  <block id="857d3299fb961938b057413c5d00a579" category="paragraph">您可以更换EF600或EF600C阵列中的驱动器。</block>
+  <block id="a802c9dd2801c3a0ba58f7be36493829" category="paragraph">在更换EF300、EF600、EF300C或EF600C阵列中的故障风扇之前、请查看以下要求。</block>
+  <block id="7ecbec8e887541f42291f1c5ee0927e8" category="paragraph">您可以更换EF300、EF600、EF300C或EF600C阵列中的风扇。</block>
+  <block id="a318e7b9e1756aadd7beb97eea16e82e" category="paragraph">在升级或更换EF300、EF600、EF300C或EF600C阵列中的主机接口卡(Host Interface Card、HIC)之前、请查看以下要求。</block>
+  <block id="9c440a2b6a047a7287398066cdcd91a2" category="paragraph">按照以下过程更换EF300、EF600、EF300C或EF600C阵列中发生故障的主机接口卡(Host Interface Card、HIC)。</block>
+  <block id="8a72a6ac569b2623ae7ef2e6169d9622" category="list-text">在升级EF300、EF600、EF300C或EF600C控制器中的HIC时、请重复所有步骤以删除第二个控制器、升级第二个控制器的HIC并重新安装第二个控制器、然后再为控制器架重新通电。</block>
+  <block id="df4b87988905a767129e6eea7d20dfb4" category="paragraph">按照以下过程更改EF300、EF600、EF300C或EF600C阵列中的主机端口协议。此操作步骤仅适用于使用 Infiniband （ IB ）或光纤通道（ FC ）的主机接口卡（ HIC ）。</block>
+  <block id="6105255a43d604b71a2db2ed1e1078e5" category="paragraph">在转换EF300、EF600、EF300C或EF600C阵列的主机协议之前、请查看以下要求。</block>
+  <block id="ddfc2f522bfc9f9d65e985188108c273" category="paragraph">您可能需要对硬件执行维护过程。本节介绍了维护EF300、EF600、EF300C或EF600C系统组件的特定过程。</block>
+  <block id="fcde763d3b5acba51777c9f806555e8a" category="paragraph">对于EF300、EF600、EF300C和EF600C存储系统、您可以对以下组件执行维护过程。</block>
+  <block id="202d35201cc74c9968e9a40c7cc30171" category="paragraph">在更换EF300、EF600、EF300C或EF600C阵列中的电源之前、请查看以下要求。</block>
+  <block id="5f8f97ec195542ed337bbddedab32598" category="paragraph">您可以在EF300、EF600、EF300C或EF600C控制器中发生故障的电源设备上进行更换。</block>
+  <block id="64c37d5d57b631b9fb2968c7586932f3" category="paragraph">您可以向EF300、EF600、EF300C、EF600C控制器添加SAS扩展卡、以便扩展驱动器托盘。</block>
+  <block id="0e7081ec1cfc70b91c941e13e9fa52c5" category="paragraph">如果您计划向EF300、EF600、EF300C或EF600C添加SAS扩展卡、请查看以下要求。</block>
+  <block id="0b2035b979e0933fbb24230f41a4faa9" category="section-title">11.90.1版中的新增功能</block>
+  <block id="efe2c9d7be92af10ac48d790dd8ccfed" category="paragraph">新存储系统型号—EF300C和EF600C</block>
+  <block id="7c4ed7bb875e7af6303e23e1e7df86c3" category="paragraph">此版本推出了EF300C和EF600C全闪存NVMe存储系统。EF300C和EF600C均为现有EF300和EF600存储系统的高容量闪存版本。EF300C和EF600C支持30 TB和60 TB大小的高容量NVMe SSD驱动器。</block>
+  <block id="c4c050a1cbe127eb24c705844a070872" category="paragraph">支持EF4000上的12 Gb SAS接口</block>
+  <block id="e8b3561f4b15fa164cdd5717ae511188" category="paragraph">E4000控制器现在支持12 Gb SAS主机接口卡。</block>
 </blocks>

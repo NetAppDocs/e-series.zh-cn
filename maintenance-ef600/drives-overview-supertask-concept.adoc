@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/drives-overview-supertask-concept.html 
 sidebar: sidebar 
-keywords: replace EF300 drive, replace EF600 drive, 
+keywords: EF300, EF600, EF600C, EF300C, replace drive, 
 summary: 在更换 EF300 或 EF600 中的驱动器之前，请查看要求和注意事项。 
 ---
 = 更换 EF300 或 EF600 驱动器的要求
@@ -11,7 +11,7 @@ summary: 在更换 EF300 或 EF600 中的驱动器之前，请查看要求和注
 
 
 [role="lead"]
-在更换 EF300 或 EF600 阵列中的驱动器之前，请查看要求和注意事项。
+在更换EF300、EF600、EF300C或EF600C阵列中的驱动器之前、请查看要求和注意事项。
 
 
 CAUTION: 请注意，存储阵列中的驱动器很脆弱；驱动器处理不当是驱动器故障的主要发生原因。

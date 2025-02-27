@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/fans-replace-supertask-task.html 
 sidebar: sidebar 
-keywords: replace EF300 fan, replace EF600 fan, fan fail 
+keywords: EF600, EF300, EF600C, EF300C, replace fan, fan fail 
 summary: 更换 EF300 或 EF600 中的风扇。 
 ---
 = 更换 EF300 或 EF600 风扇
@@ -12,7 +12,7 @@ summary: 更换 EF300 或 EF600 中的风扇。
 
 
 [role="lead"]
-您可以更换 EF300 或 EF600 阵列中的风扇。
+您可以更换EF300、EF600、EF300C或EF600C阵列中的风扇。
 
 .关于此任务
 每个 EF300 和 EF600 控制器架或驱动器架都包含五个风扇。如果风扇发生故障，您必须尽快更换风扇，以确保磁盘架具有足够的散热效果。

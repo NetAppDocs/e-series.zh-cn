@@ -94,7 +94,7 @@ image:../media/sam1130_icon_support.gif["支持"]*支持*
 
 == SANtricity 统一管理器
 
-Unified Manager 是一款基于 Web 的软件，用于管理整个域。在中央视图中、您可以查看所有较新的E系列和EF系列阵列的状态、例如E4000、E2800、EF280、EF300、E5700、EF570和EF600。您还可以对选定存储阵列执行批处理操作。
+Unified Manager 是一款基于 Web 的软件，用于管理整个域。在中央视图中、您可以查看所有较新的E系列和EF系列阵列的状态、例如E4000、E2800、EF280、EF300、E5700、EF570、EF600、EF300C和EF600C。您还可以对选定存储阵列执行批处理操作。
 
 Unified Manager 与 Web 服务代理一起安装在管理服务器上。要访问 Unified Manager ，请打开浏览器并输入指向安装了 Web 服务代理的服务器的 URL 。
 

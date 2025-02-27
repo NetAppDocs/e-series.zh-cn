@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/drives-hotadd-drive-shelf-task.html 
 sidebar: sidebar 
-keywords: cabling, cables, hot add, hot add drive shelf, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C 
+keywords: cabling, cables, hot add, hot add drive shelf, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C. EF300C, EF600C 
 summary: 在其他组件仍通电的情况下添加新驱动器架。 
 ---
 = 热添加驱动器架
@@ -21,7 +21,7 @@ summary: 在其他组件仍通电的情况下添加新驱动器架。
 
 
 .关于此任务
-此过程适用于将DE212C、DE224C或DE460C驱动器架热添加到E2800、E2800B、EF280、E5700、E5700B、EF570、EF300、EF600或E4000控制器架。
+此过程适用于将DE212C、DE224C或DE460C驱动器架热添加到E2800、E2800B、EF280、E5700、E5700B、EF570、EF300、EF600、EF300C、EF600C或E4000控制器架。
 
 此 操作步骤 适用场景 IOM12 和 IOM12B 驱动器架。
 

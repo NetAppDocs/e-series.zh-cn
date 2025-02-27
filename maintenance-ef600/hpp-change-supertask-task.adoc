@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/hpp-change-supertask-task.html 
 sidebar: sidebar 
-keywords: host protocol change, EF300 host protocol, EF600 host protocol 
+keywords: host protocol change, EF300, EF600, EF600C, EF300C 
 summary: 更改 EF300 或 EF600 阵列的主机端口协议。 
 ---
 = 更改 EF300 或 EF600 的主机协议
@@ -12,7 +12,7 @@ summary: 更改 EF300 或 EF600 阵列的主机端口协议。
 
 
 [role="lead"]
-按照此操作步骤更改 EF300 或 EF600 阵列中的主机端口协议。此操作步骤仅适用于使用 Infiniband （ IB ）或光纤通道（ FC ）的主机接口卡（ HIC ）。
+按照以下过程更改EF300、EF600、EF300C或EF600C阵列中的主机端口协议。此操作步骤仅适用于使用 Infiniband （ IB ）或光纤通道（ FC ）的主机接口卡（ HIC ）。
 
 
 

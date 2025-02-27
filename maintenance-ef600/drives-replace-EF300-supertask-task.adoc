@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/drives-replace-EF300-supertask-task.html 
 sidebar: sidebar 
-keywords: replace EF300 drive, replace EF600 drive, drive failure 
+keywords: EF300, EF300C, replace drive, drive failure 
 summary: 更换 EF300 阵列中的驱动器。 
 ---
 = 更换 EF300 阵列中的驱动器
@@ -11,9 +11,9 @@ summary: 更换 EF300 阵列中的驱动器。
 
 
 [role="lead"]
-您可以更换 EF300 阵列中的驱动器。
+您可以更换EF300或EF300C阵列中的驱动器。
 
-EF300 支持使用 24 个驱动器和 60 个驱动器磁盘架进行 SAS 扩展。您关注的操作步骤取决于您使用的是 24 驱动器磁盘架还是 60 驱动器磁盘架：
+EF300和EF300C支持SAS扩展、可容纳24个驱动器和60个驱动器的磁盘架。您关注的操作步骤取决于您使用的是 24 驱动器磁盘架还是 60 驱动器磁盘架：
 
 * <<更换 EF300 中的驱动器（ 24 驱动器磁盘架）>>
 * <<更换 EF300 中的驱动器（ 60 个驱动器磁盘架）>>

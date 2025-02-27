@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/hics-upgrade-intro.html 
 sidebar: sidebar 
-keywords: upgrade EF300 HIC, upgrade EF600 HIC, increase host ports, change host protocol 
+keywords: EF600, EF300, EF300C, EF600C, upgrade HIC, upgrade HIC, increase host ports, change host protocol 
 summary: 您可以升级主机接口卡（ HIC ）以增加主机端口数或更改主机协议。 
 ---
 = 升级 EF300 或 EF600 主机接口卡（ HIC ）
@@ -16,7 +16,7 @@ summary: 您可以升级主机接口卡（ HIC ）以增加主机端口数或更
 
 .关于此任务
 * 升级 HIC 时，必须关闭存储阵列电源，升级 HIC 并重新加电。
-* 在升级 EF300 或 EF600 控制器中的 HIC 时，请重复所有步骤以删除第二个控制器，升级第二个控制器的 HIC 并重新安装第二个控制器，然后再重新为控制器架供电。
+* 在升级EF300、EF600、EF300C或EF600C控制器中的HIC时、请重复所有步骤以删除第二个控制器、升级第二个控制器的HIC并重新安装第二个控制器、然后再为控制器架重新通电。
 
 
 .开始之前

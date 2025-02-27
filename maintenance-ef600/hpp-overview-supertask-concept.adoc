@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/hpp-overview-supertask-concept.html 
 sidebar: sidebar 
-keywords: convert EF300 host protocol, convert EF600 host protocol, 
+keywords: convert host protocol, EF600, EF300, EF600C, EF300C 
 summary: 在转换 EF300 或 EF600 主机协议之前，请查看要求和注意事项。 
 ---
 = EF300 或 EF600 主机协议转换的要求
@@ -11,7 +11,7 @@ summary: 在转换 EF300 或 EF600 主机协议之前，请查看要求和注意
 
 
 [role="lead"]
-在转换 EF300 或 EF600 阵列的主机协议之前，请查看以下要求。
+在转换EF300、EF600、EF300C或EF600C阵列的主机协议之前、请查看以下要求。
 
 * 您已为此操作步骤计划停机维护时段。
 * 执行转换时，必须停止主机 I/O 操作。在成功完成转换之前，您无法访问存储阵列上的数据。

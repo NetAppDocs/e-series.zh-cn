@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/controllers-replace-supertask-task.html 
 sidebar: sidebar 
-keywords: replace EF300 controller, replace EF600 controller, replace EF300 canister, replace EF600 canister, 
+keywords: replace controller, replace canister, EF300, EF600, EF300C, EF600C 
 summary: 更换 EF300 或 EF600 控制器架中的单个控制器。 
 ---
 = 更换 EF300 或 EF600 控制器
@@ -12,7 +12,7 @@ summary: 更换 EF300 或 EF600 控制器架中的单个控制器。
 
 
 [role="lead"]
-您可以更换 EF300 或 EF600 控制器架中的单个控制器。
+您可以更换EF300、EF600、EF300C或EF600C控制器架中的单个控制器。
 
 .关于此任务
 更换发生故障的控制器箱时，您必须从原始控制器箱中取出电池，电源， DIMM ，风扇和主机接口卡（ HIC ），然后将其安装到替代控制器箱中。

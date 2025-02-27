@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/dimms-replace-supertask-task.html 
 sidebar: sidebar 
-keywords: replace EF300 DIMM, replace EF600 DIMM 
+keywords: EF300, EF600, EF300C, EF600C, replace DIMM 
 summary: 更换 EF300 或 EF600 阵列中的 DIMM 。 
 ---
 = 更换 EF300 或 EF600 中的 DIMM
@@ -12,7 +12,7 @@ summary: 更换 EF300 或 EF600 阵列中的 DIMM 。
 
 
 [role="lead"]
-您可以更换 EF300 或 EF600 阵列中的 DIMM 。
+您可以更换EF300、EF600、EF300C或EF600C阵列中的DIMM。
 
 .关于此任务
 要更换 DIMM ，您必须验证控制器的缓存大小，使控制器脱机，卸下控制器，卸下 DIMM 并在控制器中安装新 DIMM 。然后，您可以将控制器恢复联机并验证存储阵列是否正常工作。

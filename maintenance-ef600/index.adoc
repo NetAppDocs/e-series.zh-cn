@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/index.html 
 sidebar: sidebar 
-keywords: EF300 maintenance, EF600 maintenance, repairing EF300, repairing EF600, replace EF300 components, replace EF600 components 
+keywords: EF300 maintenance, EF600 maintenance, repairing EF300, repairing EF600, EF600C, EF300C replace EF300 components, replace EF600 components 
 summary: 维护 EF300 和 EF600 硬件 
 ---
 = 维护 EF300 和 EF600 硬件
@@ -11,7 +11,7 @@ summary: 维护 EF300 和 EF600 硬件
 
 
 [role="lead"]
-您可能需要对硬件执行维护过程。本节介绍了维护EF300或EF600系统组件的特定过程。
+您可能需要对硬件执行维护过程。本节介绍了维护EF300、EF600、EF300C或EF600C系统组件的特定过程。
 
 本节中的过程假定已在E系列环境中部署EF300或EF600系统。
 
@@ -19,7 +19,7 @@ summary: 维护 EF300 和 EF600 硬件
 
 == 系统组件
 
-对于 EF300 和 EF600 存储系统，您可以对以下组件执行维护过程。
+对于EF300、EF600、EF300C和EF600C存储系统、您可以对以下组件执行维护过程。
 
 [cols="25,65"]
 |===

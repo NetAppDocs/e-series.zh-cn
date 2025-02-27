@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/power-replace-supertask-task.html 
 sidebar: sidebar 
-keywords: replace EF300 power supply, replace EF600 power supply, 
+keywords: replace power supply, EF300, EF600, EF300C, EF600C 
 summary: 当 EF300 或 EF600 控制器出现故障时，请更换电源。 
 ---
 = 更换 EF300 或 EF600 电源
@@ -12,7 +12,7 @@ summary: 当 EF300 或 EF600 控制器出现故障时，请更换电源。
 
 
 [role="lead"]
-您可以更换 EF300 或 EF600 控制器中出现故障的电源。
+您可以在EF300、EF600、EF300C或EF600C控制器中发生故障的电源设备上进行更换。
 
 如果某个电源发生故障，您必须尽快更换它，以使控制器架具有冗余电源。
 

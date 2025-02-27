@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/dimms-overview-supertask-concept.html 
 sidebar: sidebar 
-keywords: replace EF300 DIMM, replace EF600 DIMM, 
+keywords: EF300, EF600, replace DIMM, EF300C, EF600C 
 summary: 在更换 EF300 或 EF600 DIMM 之前，请查看要求和注意事项。 
 ---
 = 更换 EF300 或 EF600 DIMM 的要求
@@ -11,9 +11,9 @@ summary: 在更换 EF300 或 EF600 DIMM 之前，请查看要求和注意事项�
 
 
 [role="lead"]
-在更换 EF300 或 EF600 存储阵列中的 DIMM 之前，请查看要求和注意事项。
+在更换EF300、EF600、EF600C或EF300C存储阵列中的DIMM之前、请查看要求和注意事项。
 
-如果存在内存不匹配或 DIMM 出现故障，则必须更换 DIMM 。请务必验证 EF300 或 EF600 控制器的配置，以确保更换的 DIMM 大小正确。
+如果存在内存不匹配或 DIMM 出现故障，则必须更换 DIMM 。请务必验证EF300、EF600、EF300C或EF600C控制器的配置、以确保更换的DIMM大小正确。
 
 
 CAUTION: 请注意，存储阵列中的 DIMM 很脆弱；处理不当可能会导致损坏。

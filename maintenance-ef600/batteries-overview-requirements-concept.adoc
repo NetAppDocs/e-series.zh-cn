@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/batteries-overview-requirements-concept.html 
 sidebar: sidebar 
-keywords: replace EF300 battery, replace EF600 battery, EF300 battery fail, EF600 battery fail 
+keywords: replace battery,battery fail, EF300C, EF600C, EF300, EF600 
 summary: 更换 EF300 或 EF600 电池的要求和注意事项。 
 ---
 = 更换 EF300 或 EF600 电池的要求
@@ -12,7 +12,7 @@ summary: 更换 EF300 或 EF600 电池的要求和注意事项。
 
 
 [role="lead"]
-在更换 EF300 或 EF600 电池之前，请查看要求和注意事项。
+在更换EF300、EF600、EF300C或EF600C电池之前、请查看要求和注意事项。
 
 控制器附带电池，如果交流电源发生故障，则会保留缓存的数据。
 

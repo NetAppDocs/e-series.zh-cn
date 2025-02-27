@@ -213,8 +213,3 @@ NOTE: 目前， Web 服务 API 不支持 PUT 或修补程序。而是可以使�
 否
 
 |===
-
-
-== 示例脚本
-
-GitHub 包含一个存储库，用于收集和组织展示 NetApp SANtricity Web 服务 API 使用的示例脚本。要访问存储库，请参见 https://github.com/NetApp/webservices-samples["NetApp Web 服务示例"^]。

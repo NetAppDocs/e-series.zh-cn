@@ -30,7 +30,6 @@ SANtricity Web 服务代理是一种 RESTful API 服务器，单独安装在主�
 == 了解更多信息
 
 * Unified Manager —此代理安装包括 SANtricity Unified Manager 。 Unified Manager 是一个基于 Web 的界面，可用于对较新的 E 系列和 EF 系列存储系统进行配置访问。有关详细信息，请参见 Unified Manager 联机帮助，该帮助可从其用户界面或获得 https://docs.netapp.com/us-en/e-series-santricity/index.html["SANtricity 软件文档站点"^]。
-* GitHub 存储库— GitHub 包含一个存储库，用于收集和组织展示 NetApp SANtricity Web 服务 API 使用的示例脚本。要访问存储库，请参见 https://github.com/NetApp/webservices-samples["NetApp Web 服务示例"^]。
 * 表述性状态传输（ Representational state transfer ， REST ）— Web 服务是一种 RESTful API ，可用于访问几乎所有 SANtricity 管理功能，因此您应熟悉 REST 概念。有关详细信息，请参见 http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm["架构模式和基于网络的软件架构设计"^]。
 * JavaScript 对象表示法（ JSON ）—由于 Web 服务中的数据是通过 JSON 进行编码的，因此您应熟悉 JSON 编程概念。有关详细信息，请参见 http://www.json.org["JSON 简介"^]。
 
