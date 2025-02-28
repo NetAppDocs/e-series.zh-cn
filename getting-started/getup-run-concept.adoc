@@ -69,7 +69,8 @@ summary: 要启动并运行 E 系列系统，您需要安装硬件组件，配�
 选择要使用的接口：
 
 [role="quick-margin-list"]
-* https://docs.netapp.com/us-en/e-series-santricity/system-manager/index.html["11.8x的SANtricity System Manager联机帮助"^]
+* https://docs.netapp.com/us-en/e-series-santricity/system-manager/index.html["适用于11.9x的SANtricity System Manager联机帮助"^]
+* https://docs.netapp.com/us-en/e-series-santricity-118/system-manager/index.html["11.8x的SANtricity System Manager联机帮助"^]
 * https://docs.netapp.com/us-en/e-series-santricity-117/system-manager/index.html["适用于 11.7x 的 SANtricity System Manager 联机帮助"^]
 * https://docs.netapp.com/us-en/e-series-santricity-116/index.html["适用于11.6x的SANtricity System Manager联机帮助"^]
 

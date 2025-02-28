@@ -19,6 +19,9 @@ summary: 了解如何使用缆线将控制器连接到您的网络并完成存�
 
 根据您的网络拓扑为系统布线。
 
+
+NOTE: 控制器左下方(e1a、e1b、e1c和e1d)和右上侧(e0a和e0b)的主机端口可用于数据主机布线。
+
 [role="tabbed-block"]
 ====
 .选项 1 ：直连拓扑
@@ -27,8 +30,11 @@ summary: 了解如何使用缆线将控制器连接到您的网络并完成存�
 
 image:../media/drw_e4060_direct_topology_ieops-2048.svg["E4060直接拓扑、宽度= 1000个峰值"]
 
-. 将每个主机适配器直接连接到控制器上的主机端口e0a和e0b。
+. 将每个主机HBA端口连接到控制器上的主机端口(e1a、e1b、e1c和e1d或e0a和e0b)。
 
+
+
+NOTE: 有关其它布线图示例，请参阅 https://docs.netapp.com/us-en/e-series/install-hw-cabling/host-cable-task.html#cabling-for-a-direct-attached-topology["主机布线"^]。
 
 --
 .选项 2 ：网络结构拓扑
@@ -38,7 +44,7 @@ image:../media/drw_e4060_direct_topology_ieops-2048.svg["E4060直接拓扑、宽
 image:../media/drw_e4060_fabric_topology_ieops-2049.svg["E4060网络结构拓扑、宽度=1000个峰值"]
 
 . 将每个主机适配器直接连接到交换机。
-. 将每个交换机直接连接到控制器上的主机端口e0a和e0b。
+. 将每个交换机直接连接到控制器上的主机端口(e1a、e1b、e1c和e1d或e0a和e0b)。
 
 
 --

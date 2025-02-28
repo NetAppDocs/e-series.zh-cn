@@ -29,18 +29,18 @@ summary: 如果要升级 E2800 和 E5700 控制器且已启用驱动器安全功
 新交换的控制器将锁定、并显示七段代码*。L5*。如果没有驱动器可以执行自动模式同步(ACS)、则会发生此锁定。导入安全密钥后、ACS将恢复并更新新控制器。
 
 
-NOTE: 如果您不使用管理端口 1 ，请尝试使用其他默认 IP 地址： + Ctrl A port 1 ： 192.168.128.101 + Ctrl A port 2 ： 192.168.128.102 + Ctrl B port 1 ： 192.168.129.101 + Ctrl B port 2 ： 192.168.129.102
+NOTE: 如果您不使用管理端口 1 ，请尝试使用其他默认 IP 地址： + Ctrl A port 1 ： 169.254.128.101 + Ctrl A port 2 ： 169.254.128.102 + Ctrl B port 1 ： 169.254.128.101 + Ctrl B port 2 ： 169.254.128.102
 
 .步骤
 . 在存储阵列与SANtricity 客户端的笔记本电脑或PC之间建立直接的专用以太网连接。为此、请执行以下操作：
 +
 .. 使用RJ45以太网缆线将笔记本电脑连接到控制器A上的管理端口1
-.. 要完成连接、您可能需要将笔记本电脑分配给与控制器A位于同一子网中的IP地址在控制器锁定期间、控制器A默认为管理地址192.168.128.101。因此、您可以将笔记本电脑分配给子网、例如"192.168.128.201"。
+.. 要完成连接、您可能需要将笔记本电脑分配给与控制器A位于同一子网中的IP地址。在控制器被关闭期间、控制器A的默认管理地址为169.254.128.101。因此、您可以将笔记本电脑分配给子网、例如"169.254.128.201"。
 
 
-. 使用用户名为*管理员*且密码为空的IP地址192.168.128.101、使用导入内部密钥 `import storageArray securityKey file` CLI命令、并从保存安全密钥 link:prepare-upgrade-controllers-task.html["准备升级控制器"]。有关使用此命令的信息、请参见 https://docs.netapp.com/us-en/e-series-cli/index.html["命令行界面参考"]。
+. 使用IP地址169.254.128.101且用户名*admin*和密码为空，使用CLI命令导入内部密钥 `import storageArray securityKey file`，并将安全密钥保存在中link:prepare-upgrade-controllers-task.html["准备升级控制器"]。有关使用此命令的信息，请参见 https://docs.netapp.com/us-en/e-series-cli/index.html["命令行界面参考"]。
 +
-* 示例： * `SMcli 192.168.128.101 -u admin -p "" -c "import storageArray securityKey file=\"Directory&FileName\" passPhrase=\"passPhraseString\";"`
+*示例:* `SMcli 169.254.128.101 -k -u admin -p "" -c "import storageArray securityKey file=\"Directory&FileName\" passPhrase=\"passPhraseString\";"`
 
 +
 或者、您也可以通过以下调用通过REST API导入内部密钥： `/storage-systems/{system-id}/security-key/import`
@@ -58,40 +58,25 @@ NOTE: 如果您不使用管理端口 1 ，请尝试使用其他默认 IP 地址�
 .关于此任务
 新交换的控制器将锁定、并显示七段代码*。L5*。如果没有驱动器可以执行自动模式同步(ACS)、则会发生此锁定。导入安全密钥后、ACS将恢复并更新新控制器。
 
-
-NOTE: 要检索客户端和服务器证书，存储阵列必须处于最佳状态。如果证书无法检索、则必须创建新的证书签名请求(CSR)、然后从外部密钥管理服务器导入服务器证书。
-
 .步骤
 . 在存储阵列与SANtricity 客户端的笔记本电脑或PC之间建立直接的专用以太网连接。为此、请执行以下操作：
 +
 .. 使用RJ45以太网缆线将笔记本电脑连接到控制器A上的管理端口1
-.. 要完成连接、您可能需要将笔记本电脑分配给与控制器A位于同一子网中的IP地址在控制器锁定期间、控制器A默认为管理地址192.168.128.101。因此、您可以将笔记本电脑分配给子网、例如"192.168.128.201"。
+.. 要完成连接、您可能需要将笔记本电脑分配给与控制器A位于同一子网中的IP地址。在控制器被关闭期间、控制器A的默认管理地址为169.254.128.101。因此、您可以将笔记本电脑分配给子网、例如"169.254.128.201"。
 
 
-. 使用用户名为*管理员*且密码为空的默认IP地址192.168.128.101、使用设置外部密钥管理服务器 `set storageArray externalKeyManagement` CLI命令并提供 `serverAddress` 和 `serverPort` 已从保存 link:prepare-upgrade-controllers-task.html["准备升级控制器"]。有关使用此命令的信息、请参见 https://docs.netapp.com/us-en/e-series-cli/index.html["命令行界面参考"]。
+. 使用保存在中的安全密钥link:prepare-upgrade-controllers-task.html["准备升级控制器"]，将外部密钥导入到IP地址169.254.128.101，用户名*admin*和密码留空。
 +
-* 示例： * `SMcli 192.168.128.101 -u admin -p "" -c "set storageArray externalKeyManagement serverAddress=<ServerIPAddress> serverPort=<serverPort>;"`
-
-+
-或者、您也可以通过以下调用通过REST API设置外部密钥管理服务器： `/storage-systems/{system-id}/external-key-server`
-
-. 使用用户名为*管理员*且密码为空的默认IP地址192.168.128.101导入证书 `storageArray keyManagementCertificate` CLI命令：一次用于客户端证书、另一次用于服务器证书。
-+
-*示例A:* `SMcli 192.168.128.101 -u admin -p "" -c "download storageArray keyManagementCertificate certificateType=client file=\"Directory&FileName\";"`
-
-+
-*示例B:* `SMcli 192.168.128.101 -u admin -p "" -c "download storageArray keyManagementCertificate certificateType=server file=\"Directory&FileName\";"`
-
-+
-或者、您也可以通过以下调用通过REST API导入密钥服务器证书： `/storage-systems/{system-id}/external-key-server/certificate`
-
-. 使用从保存的安全密钥 link:prepare-upgrade-controllers-task.html["准备升级控制器"]下，将外部密钥导入到 IP 地址 192.168.128.101 中，用户名为 * 管理员 * ，密码为空。
-+
-* 示例： * `SMcli 192.168.128.101 -u admin -p "" -c "import storageArray securityKey file=\"Directory&FileName\" passPhrase=\"passPhraseString\";"`
+*示例:* `SMcli 169.254.128.101 -k -u admin -p "" -c "import storageArray securityKey file=\"Directory&FileName\" passPhrase=\"passPhraseString\";"`
 
 +
 或者、您也可以通过以下调用通过REST API导入外部密钥： `/storage-systems/{system-id}/security-key/import`
 
-
-
++
 控制器将继续从驱动器执行自动节点同步过程，然后重新启动。重新启动后，可以通过原始 IP 配置访问控制器。
+
+. (可选)如果需要、可以通过执行以下操作来重新设置驱动器的密钥：
++
+*示例:* `SMcli <original_controller _ip> -u admin -p "<original_array_password>" -c "create storageArray securityKey" passPhrase=\"passPhraseString\" file=\"filename\";”`
+
+
