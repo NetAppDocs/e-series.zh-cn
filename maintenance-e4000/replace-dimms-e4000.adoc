@@ -244,30 +244,14 @@ NOTE: Visually inspect the DIMM to verify that it is evenly aligned and fully in
 .步骤
 . 如果您尚未接地，请正确接地。
 . 如果尚未更换控制器箱上的盖子、请进行更换。
-. 翻转控制器箱、并将其端部与机箱中的开口对齐。
-. 将控制器箱轻轻推入系统的一半。将控制器箱的末端与机箱中的开口对齐、然后将控制器箱轻轻推入系统的一半。
+. 将控制器翻转，使可拆卸盖朝下。
+. 在凸轮把手处于打开位置的情况下、将控制器完全滑入磁盘架中。
+. 更换缆线。
 +
 
-NOTE: 在系统指示之前、请勿将控制器箱完全插入机箱中。
+NOTE: If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
 
-. Recable the system, as needed.
-+
-If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
-
-. 完成控制器箱的重新安装：
-+
-.. 使凸轮把手处于打开位置、用力推入控制器箱、直到它与中板接触并完全就位、然后将凸轮把手合上至锁定位置。
-+
-
-NOTE: 将控制器箱滑入机箱时、请勿用力过度、以免损坏连接器。
-
-+
-The controller begins to boot as soon as it is seated in the chassis.
-
-.. If you have not already done so, reinstall the cable management device.
-.. 使用钩环带将缆线绑定到缆线管理设备。
-
-
+. 使用钩环带将缆线绑定到缆线管理设备。
 
 
 

@@ -390,12 +390,17 @@ NOTE: Visually inspect the DIMM to verify that it is evenly aligned and fully in
 .打开控制器架电源(单工)
 --
 .步骤
-. 将替代控制器安装到设备中。
+. 将替代控制器安装到磁盘架中。
 +
+.. 如果您尚未接地，请正确接地。
 .. 将控制器翻转，使可拆卸盖朝下。
-.. 在凸轮把手处于打开位置的情况下，将控制器完全滑入设备中。
-.. 将凸轮把手移至左侧，将控制器锁定到位。
+.. 在凸轮把手处于打开位置的情况下、将控制器完全滑入磁盘架中。
 .. 更换缆线。
++
+
+NOTE: If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
+
+.. 使用钩环带将缆线绑定到缆线管理设备。
 .. 打开控制器架的电源。
 .. 等待E4000控制器重新启动。
 .. 确定如何为替代控制器分配 IP 地址。
@@ -490,12 +495,18 @@ passPhrase="passPhrase";
 .使控制器联机（双工）
 --
 .步骤
-. 将替代控制器安装到设备中。
+. 将替代控制器安装到磁盘架中。
 +
+.. 如果您尚未接地，请正确接地。
+.. 如果尚未更换控制器箱上的盖子、请进行更换。
 .. 将控制器翻转，使可拆卸盖朝下。
-.. 在凸轮把手处于打开位置的情况下，将控制器完全滑入设备中。
-.. 将凸轮把手移至左侧，将控制器锁定到位。
+.. 在凸轮把手处于打开位置的情况下、将控制器完全滑入磁盘架中。
 .. 更换缆线。
++
+
+NOTE: If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
+
+.. 使用钩环带将缆线绑定到缆线管理设备。
 .. 如果原始控制器使用 DHCP 作为 IP 地址，请在替代控制器背面的标签上找到 MAC 地址。请您的网络管理员将您删除的控制器的 DNS/network 和 IP 地址与替代控制器的 MAC 地址相关联。
 +
 

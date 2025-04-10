@@ -1371,7 +1371,6 @@
   <block id="aafac493f2e35b6f1c326279401ced51" category="paragraph">您可以使用缆线将控制器架连接到一个或多个 60 驱动器磁盘架。</block>
   <block id="9829150d11210fb5e6fc62e793db934e" category="section-title">一个控制器架和 60 个驱动器架</block>
   <block id="be194456d89fce8d64ec33f6aacd608e" category="summary">E 系列系统为您提供集成的硬件和软件解决方案，用于需要简单，快速，可靠的 SAN 存储的专用高带宽应用程序，例如数据分析，视频监控和基于磁盘的备份。</block>
-  <block id="d3852022ece859a54c514fe09a6eef63" category="summary">可以选择在控制器箱中安装主机接口卡（ HIC\ ）。E5700 控制器在控制器卡本身上包括内置主机端口，并在可选 HIC 上包括主机端口。控制器中内置的主机端口称为基板主机端口。HIC 中内置的主机端口称为 HIC 端口。</block>
   <block id="bb8c12c938368d891c8a41b75b8dbff5" category="doc">主机接口卡</block>
   <block id="7a4a43ed3b8a4107c8b5916a80b9e5bf" category="paragraph">可以选择将主机接口卡（ HIC ）安装在控制器箱中。E5700 控制器在控制器卡本身上包括内置主机端口，并在可选 HIC 上包括主机端口。控制器中内置的主机端口称为基板主机端口。HIC 中内置的主机端口称为 HIC 端口。</block>
   <block id="b10f1122a2ac0ae08f749f3130b4f503" category="summary">查看 E5700 控制器类型和要求。</block>
@@ -2291,7 +2290,6 @@
   <block id="c4ced9489374169918af91eed3c23af3" category="list-text">查看所示的基板端口和 HIC 端口（标记为 " `slot 1` " ）的详细信息，并确认每种类型的端口都具有您期望的协议。</block>
   <block id="58dc8f8b596835dda6ee537004b83559" category="inline-link-macro">完成主机协议转换</block>
   <block id="7698e6f3e6142fc3c6d002cd43d50079" category="paragraph">转至 <block ref="96616e2404f8fb711fbdc45541d51b7a" category="inline-link-macro-rx"></block>。</block>
-  <block id="e977f6bbcbae61c33920c421cdc41ec2" category="summary">控制器由主板，固件和软件组成。它控制驱动器并实施 System Manager 功能。本节介绍如何更换双工配置中的控制器。</block>
   <block id="d43460ed98dddc7d1125dc3a1388420a" category="summary">查看 E5700 电池更换要求和注意事项。</block>
   <block id="20ae0dc9cc9bf6f23e568a27d2486a04" category="paragraph">在更换 E5700 电池之前，请查看要求和注意事项。</block>
   <block id="c9c7042a9b556f47d31274b878a991fe" category="paragraph">每个控制器箱都包含一个电池，用于在交流电源发生故障时保留缓存的数据。</block>
@@ -2902,7 +2900,6 @@
   <block id="57ec4cf3cc5be7dd648af31f42d44ab6" category="section-title">使用控制台模式卸载</block>
   <block id="f4fa4e2722da41144d590e07aea03e14" category="paragraph">您可以使用控制台模式在 Linux 操作系统上卸载 SANtricity 云连接器。</block>
   <block id="531ec4a162500310fa8d7ec0a705c0ee" category="list-text">在卸载窗口中，按 * 输入 * 继续卸载 SANtricity 云连接器。</block>
-  <block id="00f9ce66241621004c58b2e973a895fd" category="summary">可以选择在控制器箱中安装主机接口卡（ HIC\ ）。E2800 控制器在控制器卡本身上包含内置主机端口，并在可选 HIC 上包含主机端口。控制器中内置的主机端口称为基板主机端口。HIC 中内置的主机端口称为 HIC 端口。</block>
   <block id="fcbb93bbfdd8447e24085518b94cfeb8" category="paragraph">可以选择将主机接口卡（ HIC ）安装在控制器箱中。E2800 控制器在控制器卡本身上包含内置主机端口，并在可选 HIC 上包含主机端口。控制器中内置的主机端口称为基板主机端口。HIC 中内置的主机端口称为 HIC 端口。</block>
   <block id="aa657af1c24d669e18366e849c6f5421" category="summary">您可以在单工配置中更换发生故障的控制器箱。</block>
   <block id="b0e58cde3661a34fc3fe3d6efcd66e08" category="doc">更换 E2800 单工配置中的控制器</block>
@@ -3384,7 +3381,6 @@
   <block id="80a8676f82f84aa12d1fd18325f53c56" category="list-text">E2860 控制器架</block>
   <block id="61b77c506ee4a3b451b35fc8416667c4" category="paragraph">用于更换电源箱的操作步骤不介绍如何更换 DE6600 驱动器托盘中发生故障的电源箱， DE6600 驱动器托盘可能连接到控制器架。</block>
   <block id="d9ebe2785a9ada6fd8f18a154ff332a2" category="paragraph">用于更换风扇箱的操作步骤不介绍如何更换 DE6600 驱动器托盘中发生故障的风扇箱， DE6600 驱动器托盘可能连接到控制器架。</block>
-  <block id="a3c03452327012e5141c33e5726e73c7" category="summary">箱由三种不同类型组成：为 12 驱动器或 24 驱动器控制器架或驱动器架提供冗余电源和充分散热的电源风扇箱（电源）；为 60 驱动器控制器架或驱动器架提供电源冗余的电源箱； 和风扇箱，用于冷却 60 驱动器控制器架或驱动器架。</block>
   <block id="fb4cf09c196596d5c6d69783aa59f055" category="summary">按照适用于双工或单工的步骤准备更换 E2800 电池。</block>
   <block id="f51438f6c07d86b8b1be3ab7591ffd96" category="doc">准备更换 E2800 电池</block>
   <block id="5d7b64427533316f72376413b14cba00" category="paragraph">准备更换电池的步骤取决于您采用的是双工配置（两个控制器）还是单工配置（一个控制器）。</block>
@@ -3499,7 +3495,6 @@
   <block id="989d08712715d693bb0bdb8694f3c7c2" category="cell">主机端口的类型</block>
   <block id="116e44cf6296c08b95202ed848067a08" category="paragraph">缓存活动 LED</block>
   <block id="7487bd6e9c92c62043628395d6a8f517" category="list-text">在字段中键入 `change` 。</block>
-  <block id="98c3987fb58d5d61350074733f52ec4f" category="summary">控制器由主板，固件和软件组成。它控制驱动器并实施 System Manager 功能。本节介绍如何通过添加第二个控制器转换为双工配置，以及如何更换单工配置和双工配置中的控制器。</block>
   <block id="b27b1feddcd0e6980fd142d167ad4000" category="summary">安装新电池。</block>
   <block id="0d9172186f7ee4d9c0f105bc4d0ac733" category="doc">安装新的 E2800 电池</block>
   <block id="19a40e57f7257d4edddda3d9bdc15b5c" category="paragraph">取出故障电池后，您可以安装新电池。</block>
@@ -3749,7 +3744,6 @@
   <block id="ae4141f22c2ed3b7878fa2ff3a1e6cfe" category="inline-link">在四柱机架或机柜中安装 2U 12 驱动器机箱</block>
   <block id="5eba68d12705561c14a5cf782039d9a6" category="paragraph">访问<block ref="790da98275795a97c8f97401754053cf" category="inline-link-rx"></block>。</block>
   <block id="10b221abe33d91a2165eab967641529e" category="inline-link">将 SuperRail 安装到四柱机架中（ DE224C/DE460C 磁盘架）</block>
-  <block id="9ec28cb381dd9edd5e1a4ad5641fba96" category="summary">必须在控制器箱中安装主机接口卡（ HIC\ ）。EF600 控制器在可选 HIC 上包含主机端口。HIC 中内置的主机端口称为 HIC 端口。</block>
   <block id="4340eb550bf9d82ec63ae6c684b4ce19" category="paragraph">必须在控制器箱中安装主机接口卡（ HIC ）。EF600 控制器在可选 HIC 上包含主机端口。HIC 中内置的主机端口称为 HIC 端口。</block>
   <block id="04a3d4071a9450f7356dbc04b8b8747c" category="summary">SAS 扩展卡可以安装在控制器箱中。EF300 控制器支持 SAS 扩展。</block>
   <block id="e00394e86e0897378bd874e271fcd82c" category="doc">SAS 扩展卡</block>
@@ -3911,7 +3905,6 @@
   <block id="a1b7af0f21ad6f7da3f61feb2a734667" category="paragraph">在成功完成转换之前，您无法访问存储阵列上的数据。</block>
   <block id="6ee8ffec654d692808d3c18bb0e2d3b9" category="section-title">第 3 步：更改功能包</block>
   <block id="7e1eb07ee4fa34bdf6f3cff4a27c0ce0" category="paragraph">更改功能包以转换主机端口的主机协议。</block>
-  <block id="9e82bbc678cd60ca1e23c9306295675e" category="summary">如果存在内存不匹配或 DIMM 出现故障，则必须更换 DIMM 。</block>
   <block id="4ec1b0ed9e4f78833f020b2b7ed423ce" category="doc">DIMM</block>
   <block id="e9e795fffc66424c5fceeda72cc6702b" category="summary">更换 EF300 或 EF600 控制器架中的单个控制器。</block>
   <block id="317ae44d33c81077bc69598e4bf59e9f" category="doc">更换 EF300 或 EF600 控制器</block>
@@ -4068,7 +4061,6 @@
   <block id="9ba44d804b4659e108d69ba4db8377f5" category="paragraph">每个 EF300 或 EF600 控制器架或驱动器架都包含五个风扇，用于冷却控制器。</block>
   <block id="620e2edf2db0c3c3cad57aeb246c6bfe" category="section-title">电源</block>
   <block id="963fa086e22d0159155d22af7dbcbb0a" category="paragraph">电源可在控制器架中提供冗余电源。</block>
-  <block id="51255c5d39d4b9a43a7f800db3b8a431" category="doc">电源</block>
   <block id="0473e45a7d7f9557ae9f5ca07ab2315a" category="summary">更换发生故障的 EF300 或 EF600 主机接口卡（ HIC ）。</block>
   <block id="821d24c9ba446ee4c7b02961af65c2df" category="doc">更换 EF300 或 EF600 中发生故障的主机接口卡（ HIC ）</block>
   <block id="862acd5892fdfacc876441454483bc88" category="paragraph">更换发生故障的 HIC 时，必须关闭存储阵列电源，更换 HIC 并重新接通电源。</block>
@@ -4100,7 +4092,6 @@
   <block id="bf6487095e5ecccd756382367b6c5383" category="list-text">您已获得进行转换所需的硬件，其中可能包括一组新的 HIC 和 / 或 SFP 。您的 NetApp 销售代表可以帮助您确定所需的硬件，并帮助您订购正确的部件。</block>
   <block id="b3f772795168df63454dec0c3e4c3e3b" category="list-text">双协议 SFP 收发器支持 16 Gb 和 8 Gb FC 以及 10 Gb iSCSI 。因此，如果您使用双协议，并且只是在 FC 和 iSCSI 之间切换，或者只在 iSCSI 之间切换，则可能不需要更改 SFP 。</block>
   <block id="5e7a01eefac15f1a88cbf08e764f5398" category="list-text">某些主机端口协议转换可能需要添加或升级主机接口卡。</block>
-  <block id="f35307ec092e89906d40c7e7580fd73e" category="summary">控制器由主板，固件和软件组成。它控制驱动器并实施 System Manager 功能。本节介绍如何更换 EF300 或 EF600 控制器架中的一个或两个控制器。</block>
   <block id="571b1ead863e404cb63de04e9e14c21d" category="summary">更换 EF300 或 EF600 电池的要求和注意事项。</block>
   <block id="e71146224fd64a6c76e83e431678c8ba" category="paragraph">下面概述了更换 EF300 或 EF600 控制器中的电池的步骤：</block>
   <block id="9cfc11d4ef06463002ddc3a0df54fee8" category="list-text">使控制器脱机。</block>
@@ -4134,7 +4125,6 @@
   <block id="a5df91b4b8dbc86494c1ea39cec2456d" category="list-text">选择已更换 DIMM 的控制器。</block>
   <block id="d755fb949d94fb21eb05693749f9b364" category="list-text">如果不存在 Recovery Guru ，或者按照 Recovery Guru 步骤执行操作，则卷仍不会返回给其首选所有者联系支持部门。</block>
   <block id="74adca4d72e5e007d2c87aa7750faf32" category="paragraph">DIMM 更换已完成。您可以恢复正常操作。</block>
-  <block id="8efc2bb6da7e629c408a29a1c453f118" category="summary">您可以将主机的协议转换为其他协议以实现兼容性，也可以将主机连接的协议转换为其他协议以满足基础架构需求。</block>
   <block id="4a3c8c03cdcb016f4690174be36a72be" category="summary">在更换 EF300 SAS 扩展卡之前，请查看要求和注意事项。</block>
   <block id="3d52e0419c7f8a010e6fc5f98c25da0f" category="list-text">您必须遵循 <block ref="333b8feab226020b2ee6e03f5e462ace" category="inline-link-macro-rx"></block> 设置控制器。</block>
   <block id="ae1aaca96a065fbfcfe3174c8cf8c2dd" category="list-text">您必须将固件更新到最新版本。要更新固件，请按照中的说明进行操作 <block ref="bf6a098eae1df274d91ef498db89d4bb" category="inline-link-macro-rx"></block>。</block>
@@ -4994,8 +4984,6 @@
   <block id="0a82582b4bba9e052f69c0f2c36eac1a" category="summary">您可以通过更换现有控制器来升级存储阵列。控制器由主板，固件和软件组成。它控制驱动器并实施管理软件功能。</block>
   <block id="e3516c86194201deb982fe92e4fb83a3" category="doc">升级 E 系列控制器</block>
   <block id="9ca4f852cb231d38c7cf2bb9053a2245" category="summary">使用动态主机配置协议（ dhcp ）提供 IP 地址。</block>
-  <block id="041b8a1391f923a8043830be4a716cdd" category="summary">您可以将 NVMe 与 InfiniBand 网络协议结合使用。</block>
-  <block id="97cdaaff2a74763683828420ccda083e" category="doc">基于 InfiniBand 的 NVMe 快速设置</block>
   <block id="e889c393ff8c52f357be63d353ebf65a" category="summary">对于 RHEL 7 和 SLES 12 ，您可以在命名空间上创建文件系统并挂载文件系统。</block>
   <block id="da6e8accbd9a7e86c32239135f1ffed2" category="doc">创建文件系统（ RHEL 7 和 SLES 12 ）</block>
   <block id="facbcb2fa38d6402945c5fd2c6fcf386" category="list-text">运行 `multipath -ll` 命令以获取 ` /dev/mapper/dm` 设备的列表。</block>
@@ -5188,7 +5176,6 @@
   <block id="902bc0f0e4bf7414bb5a92ff0daa7055" category="list-text">运行 `dIFF` 命令将复制的文件与原始文件进行比较。</block>
   <block id="86cd25e1b1566d77f5af83eb0ffcd3f0" category="paragraph">删除复制的文件和文件夹。</block>
   <block id="c60c64d662d0e7a5a446c9f7d86d1e12" category="summary">使用 multipath.conf 文件是多路径守护进程 multipathd 的配置文件。</block>
-  <block id="1914877215ade75b06ba34ce70bb51dd" category="summary">SAS 快速设置</block>
   <block id="3a12d0edc81531758f12c83024fbc77e" category="summary">LInstall Linux Unified Host Utilities When Using iSER 。</block>
   <block id="fb9768f2275e2783037a700050fe8579" category="doc">安装和配置 Linux Unified Host Utilities</block>
   <block id="6cfa91f7028db85237c0770258925d8e" category="paragraph">Linux Unified Host Utilities 工具可帮助您管理 NetApp 存储，包括故障转移策略和物理路径。</block>
@@ -5357,9 +5344,6 @@
   <block id="cb121353aea01717373d69731917df7f" category="paragraph">创建文件系统的方法因所选的文件系统而异。</block>
   <block id="964adc6b43969a5b7141a5a158c2ce8a" category="list-text">创建一个文件夹以挂载新分区。</block>
   <block id="351f29f80415002be3da2130495dbbf2" category="list-text">挂载分区。</block>
-  <block id="7e9eed90ab06645af09e14e4688144a5" category="summary">您可以将 NVMe 与基于融合以太网的 RDMA \ （ RoCE ）网络协议结合使用。</block>
-  <block id="e5acd4f564771f3dbba3bdeb6b6bcfe5" category="doc">基于 RoCE 的 NVMe 快速设置</block>
-  <block id="d94efd3fa425e38d7761fba32eb7bc67" category="paragraph">您可以将 NVMe 与基于融合以太网的 RDMA （ RoCE ）网络协议结合使用。</block>
   <block id="4147efbdc6fd2e6dc90c466022cf7306" category="summary">您可以使用 ping 测试来验证 Internet 协议 \ （ IP\ ）网络连接，以确保主机和阵列能够进行通信。</block>
   <block id="9ef047e8a276866717244a3af9c729b9" category="doc">验证 IP 网络连接</block>
   <block id="0e6bf59e4893d4e4be6dcab27d206e90" category="list-text">如果启用了巨型帧，请使用有效负载大小 8 ， 9772 字节运行 ping 命令。IP 和 ICMP 合并标头为 28 字节，如果添加到有效负载中，则等于 9 ， 000 字节。s 开关设置 `数据包大小` 位。d 开关用于设置调试选项。通过这些选项，可以在 iSCSI 启动程序和目标之间成功传输 9 ， 000 字节的巨型帧。</block>
@@ -5457,7 +5441,6 @@
   <block id="c0e80cdff7e17bef2e455fab906a94bf" category="list-text">立即启动 SRP 守护进程：</block>
   <block id="f954d52b7d356b7898493ef1309b32ba" category="list-text">如果需要修改 SRP 配置，请输入以下命令创建 ` /etc/modprobe.d/IB_SRP.conf` 。</block>
   <block id="64ae2d65559b78b214cb7c6aeb856d9b" category="list-text">在 ` /etc/sSRP 守护进程 .conf` 下，添加以下行。</block>
-  <block id="fe4b136586896fd70617258689052356" category="summary">基于 InfiniBand 的 SRP 快速设置</block>
   <block id="9565db23c5cf63228425a87e81f6ae0d" category="summary">如果您的控制器包括通过 RoCE 连接 NVMe （基于融合以太网的 RDMA ），则可以从 SANtricity 系统管理器的 " 硬件 " 页面或 " 系统 " 页面配置 NVMe 端口设置。</block>
   <block id="f1d9125917e57e2251bb507c05a232c1" category="doc">配置存储阵列 NVMe over RoCE 连接</block>
   <block id="0d31f17993ecf74bf74442f4f7a3f7d0" category="paragraph">如果您的控制器包括通过 RoCE 连接 NVMe （基于融合以太网的 RDMA ），则可以从 SANtricity 系统管理器的硬件页面或系统页面配置 NVMe 端口设置。</block>
@@ -5500,7 +5483,6 @@
   <block id="9fd1ccf35b45152e10c1dcc3a278a357" category="inline-xref-macro">SRP 工作表</block>
   <block id="e8377a168400202c4d751db31f2af66a" category="list-text">在上记录启动程序的 GUID <block ref="637e124a730f0905ce6e480d5b773394" category="inline-xref-macro-rx"></block>。</block>
   <block id="045974d2f2f790a851a04cb91a6f273f" category="doc">访问 SANtricity 系统管理器并使用设置向导</block>
-  <block id="c96c96aa9e9942faabac2551c9847a4a" category="doc">iSER over InfiniBand 快速设置</block>
   <block id="bd97f9e0585f1ab3a70a824e4f5ffe79" category="summary">Linux Unified Host Utilities 7.1 包含用于管理 NetApp 存储的工具，包括故障转移策略和物理路径。</block>
   <block id="b03d32ba1901ea3dd22914caff790143" category="doc">安装和配置 Linux Host Utilities</block>
   <block id="c4a120813372f7f07d6de687ff0fc6a6" category="paragraph">Linux Unified Host Utilities 软件包包含用于管理 NetApp 存储的工具，包括故障转移策略和物理路径。</block>
@@ -5512,9 +5494,6 @@
   <block id="2d59c1932fb82d6e7c73a375ed97221d" category="summary">配置多路径软件，以便在其中一个物理路径中断时提供指向存储阵列的冗余路径。</block>
   <block id="7974a85a6c6d440bbee88b27bf089223" category="summary">使用 NVMe-CLI 软件包中的 SMdevices 工具查看主机上当前可见的卷。这是 NVMe list 命令的替代方案。</block>
   <block id="9ba0e91b9dc1e138e7c9c64d8795890a" category="paragraph">要查看有关 E 系列卷的每个 NVMe 路径的信息，请使用 `nvme netapp smdevices （ -o &lt;format&gt;]` 命令。输出 ` &lt;format&gt;` 可以是 normal （如果不使用 -o ，则为默认值）， column 或 json 。</block>
-  <block id="f849cbf8f2231f3f35d369655c870a3e" category="doc">iSCSI 快速设置</block>
-  <block id="eade6022b2fef6a4e03ff35469374cb0" category="summary">您可以将 NVMe 与光纤通道协议结合使用。</block>
-  <block id="62896be8239b3396f0ed277cf184b062" category="doc">基于光纤通道的 NVMe 快速设置</block>
   <block id="93e3eeaae5f141e57bcdccb6741d6cec" category="paragraph">选择要使用的主机接口类型。如果您配置的阵列只有一个可用的主机接口类型，则可能无法选择此设置。</block>
   <block id="96477deae8322871ba6c5133596fd5b1" category="doc">在主机上设置故障转移</block>
   <block id="816a290577d3afffcfc7b89e8312db70" category="admonition">请参见<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> 为了确保安装了所需的任何更新，因为多路径可能无法在 GA 版本的 SLES 或 RHEL 中正常工作。</block>
@@ -6049,9 +6028,6 @@
   <block id="a5de3e8b40f487e6069eec82667104bd" category="list-text">如果您有可选的驱动器架，请将左端盖放在驱动器架前面，使端盖中的孔与驱动器架左侧的紧固件对齐。</block>
   <block id="70e85bbe4f70fb42276c14a4911a013c" category="list-text">将端盖卡入到位。</block>
   <block id="20743f255dc99f7c25751ab4970cf40b" category="list-text">对右端盖重复上述步骤。</block>
-  <block id="efe6d51a14336eb7344b08061d81c223" category="summary">这些说明介绍如何安装和设置新存储系统，并提供指向其他内容的链接。</block>
-  <block id="01a6b4e59365da6ed554e20bb2ab5362" category="doc">《 E2860 ， E5760 和 DE460C 安装和设置说明》</block>
-  <block id="098f41693365f8de503868e97f04f4c4" category="doc">E5724 ， EF570 ， EF280 ， E2812 ， E2824 的安装和设置说明 DE212C 和 DE224C</block>
   <block id="04b5e92ac5655763e56e78e89fde93c5" category="summary">要安装 E2860 ， E5760 或 DE460 ，请创建一个帐户并注册硬件。</block>
   <block id="ccccb6142ca7603eed3fc0a275176b3a" category="paragraph">了解如何准备安装 E2860 ， E5760 或 DE460 系列存储系统。</block>
   <block id="670969e220ef24008903984f9b57acbd" category="paragraph">磁盘架，挡板和机架硬件</block>
@@ -8336,8 +8312,6 @@
   <block id="32e0b12538b4abe36e648446dbb8723b" category="paragraph">改进了磁盘池</block>
   <block id="82faf4161a36aa8a69bd4c363e6b57cc" category="paragraph">使用运行11.80或更高版本的控制器创建的磁盘池将为_Version 1_ Pool、而不是_Version 0_ Pool。如果存在_Version 1_磁盘池、则降级操作会受到限制。</block>
   <block id="45e56b98136f4292dd8c522edf38b3b2" category="paragraph">可以在存储阵列配置文件中确定磁盘池的版本。</block>
-  <block id="82bf7451a207cfbac427edc3bb60fced" category="paragraph">这是一个可打印的 PDF 分步说明，其中包含指向其他内容的实时链接。</block>
-  <block id="a2f0a23d015da77ff81697442b8f6aad" category="paragraph">以下是此站点上介绍的设置说明。</block>
   <block id="746ff5a72ad1791e39c47dc0abcdffe3" category="paragraph">要启动System Manager或Unified Manager、必须安装最低版本的浏览器。</block>
   <block id="488c35a42ee48966247c5cc643d96708" category="paragraph">以下是支持的最低版本：</block>
   <block id="5f7273b60d2186e7b7a65eb2cee83294" category="paragraph">增加了SSD读取缓存最大值</block>
@@ -8440,19 +8414,14 @@
   <block id="6a177f60e2c78aeead82deed1b7f79bd" category="image-alt">驱动器架布线示例</block>
   <block id="97d8dba52fc751664d17d634de384761" category="open-title">连接E4000的驱动器架</block>
   <block id="5d48bd8c60ef301164497e794ae727ca" category="image-alt">IOM硬件图标</block>
-  <block id="c5f2c8e37ae34577d9aa27dc0a6d9d6a" category="summary">您可以在E系列系统上的Linux主机上使用光纤通道协议。</block>
   <block id="a51352079fbf62de5b216fbcf5f8547f" category="image-alt">FC 网络配置</block>
-  <block id="2c14a3be6c3b57db7707ac6ae99aeb97" category="summary">您可以在E系列系统上的Linux主机上使用iSCSI协议。</block>
   <block id="035b18714bc5d7aa7c3b19a557b2784d" category="image-alt">iSCSI网络配置</block>
-  <block id="279607469d0ed6f0d6a8dfabbc5b63e2" category="summary">您可以在E系列系统上的Linux主机上使用基于Infiniband的iSER协议。</block>
   <block id="f6d2572a98e17f547b50d07bd60a4357" category="image-alt">iSER over IB网络配置</block>
   <block id="e25b62b71db71b440f775e632a958e5e" category="image-alt">直连拓扑示例</block>
   <block id="3d673c4735715944ce52ebdb6281a20d" category="image-alt">交换机连接拓扑示例</block>
   <block id="5a60c0d89257784a23a8dd439204f7f1" category="image-alt">基于Infiniband直接连接的NVMe示例</block>
   <block id="37370b7d172047a016f376cc6b5258c9" category="image-alt">基于RoCE的NVMe直连示例</block>
   <block id="65311bced825a83f85718b09cc4ab673" category="image-alt">基于RoCE的NVMe交换机连接示例</block>
-  <block id="846fb8d171e9dfcce4fd56289d380608" category="summary">您可以在E系列系统上的Linux主机上使用SAS协议。</block>
-  <block id="ecf0c5c7f835375b8d9275312b470c82" category="summary">您可以在E系列系统的Linux主机上使用基于InfiniBand的SRP协议。</block>
   <block id="025f0fcb18e01db2892910a53d657f57" category="image-alt">基于IB的SRB端口标识符</block>
   <block id="a9a8836056eb3cc8d01f51eb5c6e7eec" category="list-text">有关使用vSphere Client或vSphere Web Client创建VMFS数据存储库或将卷用作VMM的说明，请参阅。<block ref="b15a5268225569436f01a761f08cccf7" category="inline-link-rx"></block></block>
   <block id="ebaab7c3245c99578b7dd1e67138cccf" category="list-text">有关如何在ESXi主机上重新扫描存储的说明、请搜索有关此主题的文章。<block ref="151d2130fd8b5e8e7d0d3b596c1bdeb5" category="inline-link-rx"></block></block>
@@ -8889,7 +8858,6 @@
   <block id="2f2564b7bd12fa4c137f3761c14d73a3" category="paragraph">您可以更换 E4060 控制器架或 DE460C 驱动器架中的驱动器抽盒。</block>
   <block id="3748f377726945770a9a282453272357" category="paragraph">更换 E4060 控制器架或 DE460C 驱动器架中发生故障的驱动器抽盒的步骤取决于抽盒中的卷是否受抽盒丢失保护。如果驱动器抽盒中的所有卷都位于具有抽盒丢失保护的磁盘池或卷组中，则可以联机执行此操作步骤。否则，在更换驱动器抽盒之前，您必须停止所有主机 I/O 活动并关闭磁盘架电源。</block>
   <block id="1103b7e629028daaccac02c0a8fc98d2" category="doc">更换E4000中的电池</block>
-  <block id="543025215967bae569d97988a7e97cbc" category="paragraph">如果SANtricity系统管理器中的Recovery Manager指示"电池出现故障"或"需要更换电池"状态、则必须更换E4000设备中受影响的电池。为了保护您的数据、必须尽快更换电池。</block>
   <block id="9af92606abb4b31a8818023a6515b3ec" category="list-text">一个管理工作站，其浏览器可访问控制器的 SANtricity 系统管理器。(要打开System Manager界面、请将浏览器指向控制器的域名或IP地址。)</block>
   <block id="ec6e5e75653734bb428b87afb93f7f41" category="section-title">步骤1：准备更换电池</block>
   <block id="3df752ee7e92a3dba58c1061c5d0a4a6" category="list-text">使用SANtricity系统管理器备份存储阵列的配置数据库。</block>
@@ -8929,15 +8897,7 @@
   <block id="7eed6664ecacefe81e2b660f47a5cfaf" category="list-text">重新安装控制器箱盖并将其锁定到位。</block>
   <block id="aa4ecd2631b0a57f27425bbdf9cc91b7" category="paragraph">更换控制器箱中的组件后、将其重新安装到机箱中。</block>
   <block id="954c99d35fff8ed108602add34a47b93" category="list-text">如果尚未更换控制器箱上的盖子、请进行更换。</block>
-  <block id="9c17c595e56b6b01c7d703a94b943e71" category="list-text">翻转控制器箱、并将其端部与机箱中的开口对齐。</block>
-  <block id="44df050c94969c9c5f783babbd55fb7e" category="list-text">将控制器箱的末端与机箱中的开口对齐、然后将控制器箱轻轻推入系统的一半。</block>
-  <block id="40d0d24050f8aac90dc03655f2738fb3" category="admonition">在系统指示之前、请勿将控制器箱完全插入机箱中。</block>
-  <block id="4e4cd7bd59f82bab02590366f27be3e5" category="list-text">Recable the system, as needed.</block>
   <block id="7bfce735a4505a06fb1c4b7a2d076c1e" category="list-text">If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.</block>
-  <block id="5d971d684708429fbfc1d12fc0823b1c" category="list-text">完成控制器箱的重新安装：</block>
-  <block id="b34c1b37f135bc5b382d7862f82e025c" category="list-text">使凸轮把手处于打开位置、用力推入控制器箱、直到它与中板接触并完全就位、然后将凸轮把手合上至锁定位置。</block>
-  <block id="69008785977983cf8a33f9f78ff2b7c9" category="admonition">将控制器箱滑入机箱时、请勿用力过度、以免损坏连接器。</block>
-  <block id="0332f86520cc7552e1fb152e32977600" category="paragraph">The controller begins to boot as soon as it is seated in the chassis.</block>
   <block id="1245c13fabc810ad6fbb6f05277ad356" category="list-text">If you have not already done so, reinstall the cable management device.</block>
   <block id="82cd534d691845f1af190a9df38d753d" category="list-text">使用钩环带将缆线绑定到缆线管理设备。</block>
   <block id="91418c565341bd8a889226a195dd2fa2" category="section-title">第5步：完成电池更换</block>
@@ -9010,10 +8970,7 @@
   <block id="f4d6345a40a4387a35c3eb6ef8f51b15" category="section-title">第 8 步：完成控制器更换</block>
   <block id="a7c932e7525739cefdfd19d17123207c" category="paragraph">重新建立与控制器架的连接、收集支持数据并恢复操作。</block>
   <block id="62241759bfd404c01951d43ae57f4bbe" category="open-title">打开控制器架电源(单工)</block>
-  <block id="04803538074d9bd9b55f9adc380717f2" category="list-text">将替代控制器安装到设备中。</block>
   <block id="fe69546640a5330ecd9f461f1cdbd1ee" category="list-text">将控制器翻转，使可拆卸盖朝下。</block>
-  <block id="f5b18529473e7fbcbdcf4601ffe30597" category="list-text">在凸轮把手处于打开位置的情况下，将控制器完全滑入设备中。</block>
-  <block id="0dc7aaae2ab89a4fa299f4f2e42c1646" category="list-text">将凸轮把手移至左侧，将控制器锁定到位。</block>
   <block id="85caa39a88f7091fb2db841ad6b83ffd" category="list-text">更换缆线。</block>
   <block id="2afc7927e5f45cc2a3ef83b60ea186cd" category="list-text">打开控制器架的电源。</block>
   <block id="4b55c79852e2203088ca03f4c8fb4b3c" category="list-text">等待E4000控制器重新启动。</block>
@@ -9103,7 +9060,6 @@
   <block id="1ea4267c90825f4bf9c52932b0bd8e1a" category="list-text">重新安装控制器箱盖。</block>
   <block id="48a57bdd7334ad13cd1585ba2a663c46" category="section-title">步骤5：重新安装控制器箱</block>
   <block id="af32241ae4a2afd71e33a8646b775b1f" category="paragraph">将控制器箱重新安装到机箱中。</block>
-  <block id="0a5704c96cc972ac4c49e76417f83282" category="list-text">将控制器箱轻轻推入系统的一半。将控制器箱的末端与机箱中的开口对齐、然后将控制器箱轻轻推入系统的一半。</block>
   <block id="660a0f2c7dddd5ead3b175899a5d429c" category="section-title">第6步：完成DIMM更换</block>
   <block id="315927c4ed1f1d8b1d0b704a5a67026e" category="list-text">当控制器恢复联机后、确认其状态为"Optimal"(最佳)并检查控制器架的警示LED。</block>
   <block id="805863d0c877d6358a86a2607e79ed0d" category="paragraph">如果状态不是最佳状态，或者任何警示 LED 均亮起，请确认所有缆线均已正确就位，并且控制器箱已正确安装。如有必要，请拆下并重新安装控制器箱。注：如果无法解决此问题、请联系技术支持。</block>
@@ -9146,7 +9102,6 @@
   <block id="fe831c9a1ec5f0798f7d995bb682d1af" category="list-text">拧松HIC上的翼形螺钉并将其竖直提起。</block>
   <block id="cb588a37aac0cb396a69cd9c6fa260a7" category="list-text">重新安装HIC：</block>
   <block id="eef513f5198b93971d313eb80e4da6fb" category="list-text">重新安装控制器模块护盖并将其锁定到位。</block>
-  <block id="528b8ab8a2997d60c930f6610d03301f" category="paragraph">如果您使用双工配置、则控制器在安装到机箱中后将立即开始启动。</block>
   <block id="613ffef3aed34fbf482f6ca198dbe765" category="section-title">第 5 步：完成 HIC 更换</block>
   <block id="fd3355f16365c925e530b446f01146af" category="paragraph">启动控制器(单工)或使控制器联机(双工)、收集支持数据并恢复操作。</block>
   <block id="3e741422cd2bc3082e4d5328242d9d60" category="doc">升级E4000中的HIC</block>
@@ -9419,7 +9374,6 @@
   <block id="04ec4caf2b80e886c69cd8966d5f5c92" category="paragraph">了解如何准备安装EF300、EF600、EF300C或EF600C系列存储系统。</block>
   <block id="a466a396cacf21d3516a87d8639c5255" category="paragraph">在更换EF300、EF600、EF300C或EF600C电池之前、请查看要求和注意事项。</block>
   <block id="0b5565f493a40cc2e5ace8909a568f68" category="paragraph">您可以更换EF300、EF600、EF300C或EF600C存储系统中的电池。</block>
-  <block id="a3ec65b7c9b468046fdbe7dc19f94299" category="paragraph">控制器由主板，固件和软件组成。它控制驱动器并实施 System Manager 功能。本节介绍如何更换EF300、EF600、EF300C或EF600C控制器架中的单个控制器或两个控制器。</block>
   <block id="89e4ff051c9e9c60c1d21fddb84ec42a" category="paragraph">更换EF300和EF600之前。EF300C或EF600C控制器、请查看相关要求和注意事项。</block>
   <block id="e0b68b674b62dc6569b4275513ebdb8f" category="paragraph">您可以更换EF300、EF600、EF300C或EF600C控制器架中的单个控制器。</block>
   <block id="136b14c506b51c3fdb848576b81df5a9" category="paragraph">在更换EF300、EF600、EF600C或EF300C存储阵列中的DIMM之前、请查看要求和注意事项。</block>
@@ -9495,4 +9449,7 @@
   <block id="baee5b8c18b240b4edfcc1ae3fe154f0" category="section-title">11.90R1中的新增功能</block>
   <block id="0b2fb9383075b5994701c94b27e4b6ee" category="paragraph">此版本推出了EF300C和EF600C全闪存NVMe存储系统。EF300C和EF600C是现有EF300和EF600存储系统的高容量闪存版本。EF300C和EF600C支持30 TB或60 TB大小的高容量NVMe SSD驱动器。EF300C/EF600C仅兼容动态磁盘池、不支持原有RAID。</block>
   <block id="8af7f744c39ae6285a380b6eb402fcb2" category="paragraph">支持E4000控制器上的12 Gb SAS接口</block>
+  <block id="7a3a71e57296fe130d591f2dd4a7a06c" category="paragraph">如果SANtricity系统管理器中的Recovery Guru指示“电池出现故障”或“需要更换电池”状态，则必须更换E4000中受影响的电池。为了保护您的数据、必须尽快更换电池。</block>
+  <block id="8c34b0fdf9a967369992b78c08820091" category="list-text">在凸轮把手处于打开位置的情况下、将控制器完全滑入磁盘架中。</block>
+  <block id="1b6c46128dc1faef9365a16d700d5e74" category="list-text">将替代控制器安装到磁盘架中。</block>
 </blocks>

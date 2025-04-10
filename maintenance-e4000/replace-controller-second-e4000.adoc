@@ -242,6 +242,7 @@ reset controller [a];
 
 安装另一个控制器箱以将单工配置更改为双工配置。
 
+. 如果您尚未接地，请正确接地。
 . 将控制器箱翻转，使可拆卸盖朝下。
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
 . With the cam handle in the open position, firmly push the controller module in until it meets the midplane and is fully seated, and then close the cam handle to the locked position.
