@@ -9452,4 +9452,7 @@
   <block id="7a3a71e57296fe130d591f2dd4a7a06c" category="paragraph">如果SANtricity系统管理器中的Recovery Guru指示“电池出现故障”或“需要更换电池”状态，则必须更换E4000中受影响的电池。为了保护您的数据、必须尽快更换电池。</block>
   <block id="8c34b0fdf9a967369992b78c08820091" category="list-text">在凸轮把手处于打开位置的情况下、将控制器完全滑入磁盘架中。</block>
   <block id="1b6c46128dc1faef9365a16d700d5e74" category="list-text">将替代控制器安装到磁盘架中。</block>
+  <block id="bd720a6ead0034815d9206b7292e06e5" category="section-title">11.90R2中的新增功能</block>
+  <block id="15829e6cc8b585193d8f6910a672107c" category="inline-link">E系列11.90发行说明</block>
+  <block id="a4c34f83987821dd1d99ef73febdd962" category="paragraph">此版本仅包含少量更改、没有任何新功能。有关此版本中变更的详细信息，请参阅<block ref="1f7d7124974a1c2e3017c1729625e686" category="inline-link-rx"></block>。</block>
 </blocks>
