@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: whats new, new features, SANtricity 11.90 
+keywords: whats new, new features, SANtricity 11.90, SANtricity 11.80 
 summary: SANtricity OS 中的新增功能。 
 ---
 = SANtricity OS 中的新增功能
@@ -85,6 +85,12 @@ E4000控制器现在支持12 Gb SAS主机接口卡。
 现在、嵌入式Web服务和代理Web服务均可使用新的登录锁定设置、该设置仅可通过REST API进行配置。
 
 |===
+
+
+== 11.80.1R4中的新增功能
+
+此版本仅包含少量更改、没有任何新功能或限制。有关此版本中更改的详细信息、请参阅自述文件。
+
 
 
 == 11.80.1R3中的新增功能

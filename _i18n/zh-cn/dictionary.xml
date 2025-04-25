@@ -9396,10 +9396,7 @@
   <block id="5f8f97ec195542ed337bbddedab32598" category="paragraph">您可以在EF300、EF600、EF300C或EF600C控制器中发生故障的电源设备上进行更换。</block>
   <block id="64c37d5d57b631b9fb2968c7586932f3" category="paragraph">您可以向EF300、EF600、EF300C、EF600C控制器添加SAS扩展卡、以便扩展驱动器托盘。</block>
   <block id="0e7081ec1cfc70b91c941e13e9fa52c5" category="paragraph">如果您计划向EF300、EF600、EF300C或EF600C添加SAS扩展卡、请查看以下要求。</block>
-  <block id="0b2035b979e0933fbb24230f41a4faa9" category="section-title">11.90.1版中的新增功能</block>
   <block id="efe2c9d7be92af10ac48d790dd8ccfed" category="paragraph">新存储系统型号—EF300C和EF600C</block>
-  <block id="7c4ed7bb875e7af6303e23e1e7df86c3" category="paragraph">此版本推出了EF300C和EF600C全闪存NVMe存储系统。EF300C和EF600C均为现有EF300和EF600存储系统的高容量闪存版本。EF300C和EF600C支持30 TB和60 TB大小的高容量NVMe SSD驱动器。</block>
-  <block id="c4c050a1cbe127eb24c705844a070872" category="paragraph">支持EF4000上的12 Gb SAS接口</block>
   <block id="e8b3561f4b15fa164cdd5717ae511188" category="paragraph">E4000控制器现在支持12 Gb SAS主机接口卡。</block>
   <block id="892b365a22314b2852ca18025911d1be" category="list-text">如果需要、请运行<block ref="3e0e995eb29f6805a04d4b3ac859bc4b" prefix=" " category="inline-code"></block>命令以验证DSM套件的安装。</block>
   <block id="fb00ee175135cc78e49e873e41c6e6ad" category="admonition">要运行命令、必须在Windows服务器上安装MPIO功能<block ref="3e0e995eb29f6805a04d4b3ac859bc4b" prefix=" " category="inline-code"></block>。</block>
@@ -9455,4 +9452,5 @@
   <block id="bd720a6ead0034815d9206b7292e06e5" category="section-title">11.90R2中的新增功能</block>
   <block id="15829e6cc8b585193d8f6910a672107c" category="inline-link">E系列11.90发行说明</block>
   <block id="a4c34f83987821dd1d99ef73febdd962" category="paragraph">此版本仅包含少量更改、没有任何新功能。有关此版本中变更的详细信息，请参阅<block ref="1f7d7124974a1c2e3017c1729625e686" category="inline-link-rx"></block>。</block>
+  <block id="c3d9022959f5cf3a3d385e7a2bd0bf3a" category="section-title">11.80.1R4中的新增功能</block>
 </blocks>
