@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: NVMe over RoCE worksheet Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 使用此工作表记录基于 RoCE 的 NVMe 存储配置信息。 
 ---
-= 记录您的基于 RoCE 的 NVMe 配置
+= 在E系列- Linux中记录基于RoCE的NVMe配置
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

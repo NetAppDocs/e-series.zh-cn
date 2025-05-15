@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: configure Linux host, express linux configuration, linux host, 
 summary: 在 InfiniBand 环境中配置 NVMe 启动程序包括安装和配置 InfiniBand ， NVMe-CLI 和 RDMA 软件包，配置启动程序 IP 地址以及在主机上设置 NVMe-oF 层。 
 ---
-= 在主机端设置基于 InfiniBand 的 NVMe
+= 在E系列- Linux中的主机上设置基于InfiniBand的NVMe启动程序
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

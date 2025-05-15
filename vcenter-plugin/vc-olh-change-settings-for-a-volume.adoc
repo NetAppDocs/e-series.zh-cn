@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-change-settings-for-a-volume.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 更改卷的设置、例如名称、主机分配、区块大小、修改优先级、缓存、 等等。 
 ---
-= 更改卷的设置
+= 在适用于vCenter的SANtricity存储插件中更改卷的设置
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

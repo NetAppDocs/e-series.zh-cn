@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: discover storage ESXi, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 将卷分配给主机后，您可以执行重新扫描，以便主机检测并配置卷以实现多路径。 
 ---
-= 发现主机上的存储
+= 在主机上发现E系列- VMware中的存储
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

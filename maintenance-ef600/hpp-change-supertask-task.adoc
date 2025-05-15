@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: host protocol change, EF300, EF600, EF600C, EF300C 
 summary: 更改 EF300 或 EF600 阵列的主机端口协议。 
 ---
-= 更改 EF300 或 EF600 的主机协议
+= 更改主机协议—EF300和EF600
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: 'E2800 convert host port protocol, convert E2800 FC iSCSI, Fibre Channel protocol, iSCSI protocol, convert HPP, converting host port protocol, SFP+ (optical) host ports, E2800, E-Series, eseries' 
 summary: 查看 E2800 上的主机端口协议转换要求。 
 ---
-= 更改 E2800 主机端口协议的要求
+= 更改主机端口协议(E2800)的要求
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

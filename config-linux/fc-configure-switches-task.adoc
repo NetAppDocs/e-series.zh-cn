@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: FC switches, zoning, express linux configuration, software configuration, linux host, 
 summary: 配置光纤通道交换机，使主机能够连接到存储阵列并限制路径数。 
 ---
-= 配置 FC 交换机
+= 在E系列- Linux (FC)中配置FC交换机
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: iSCSI worksheet Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 使用此工作表记录 iSCSI 存储配置信息。 
 ---
-= 记录 iSCSI 配置
+= 在E系列- Linux中记录iSCSI配置
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

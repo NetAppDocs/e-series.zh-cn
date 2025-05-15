@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: remove storage object, disconnect remote storage 
 summary: 您可以通过 SANtricity 系统管理器删除任何已配置的远程存储对象。 
 ---
-= 删除远程存储对象
+= 删除SANtricity远程存储卷的远程存储对象
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

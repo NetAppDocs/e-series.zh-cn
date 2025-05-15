@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Web Services, WSP, SANtricity API, discover storage WSP, 
 summary: 要管理网络中的存储系统，您必须先发现它们，然后将其添加到管理列表中。 
 ---
-= 使用 Web 服务代理管理存储系统
+= 使用SANtricity Web服务代理管理存储系统
 :allow-uri-read: 
 :experimental: 
 :icons: font

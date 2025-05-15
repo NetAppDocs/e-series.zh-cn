@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: replace battery,battery fail, EF300C, EF600C, EF300, EF600 
 summary: 更换 EF300 或 EF600 电池的要求和注意事项。 
 ---
-= 更换 EF300 或 EF600 电池的要求
+= 更换电池的要求- EF300或EF600
 :allow-uri-read: 
 :experimental: 
 :icons: font

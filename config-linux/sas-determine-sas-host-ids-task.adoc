@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 对于 SAS 协议，您可以使用 HBA 实用程序查找 SAS 地址，然后使用 HBA BIOS 进行相应的配置设置。 
 ---
-= 确定 SAS 主机标识符— Linux
+= 确定E系列中的SAS主机标识符- Linux (SAS)
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

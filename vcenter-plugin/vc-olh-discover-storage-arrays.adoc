@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-discover-storage-arrays.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 要在适用于vCenter的存储插件中显示和管理存储资源、您必须发现网络中阵列的IP地址。 
 ---
-= 发现存储阵列
+= 在适用于vCenter的SANtricity存储插件中发现存储阵列
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

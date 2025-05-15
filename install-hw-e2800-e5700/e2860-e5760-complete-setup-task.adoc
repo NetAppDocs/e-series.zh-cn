@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2800, E5700, installation, host cabling, direct-attach topology, fabric topology, System Manager connection, management host connection, port configuration, configuring ports, DHCP, static IP 
 summary: 使用缆线将控制器连接到网络以完成存储系统设置和配置。 
 ---
-= 完成存储系统设置和配置
+= 完成存储系统设置和配置—E2860、E5760和DE460
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

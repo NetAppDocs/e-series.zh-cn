@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: cabling, cables, ethernet cabling, ethernet cable, out of band, direct topology, fabric topology, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C 
 summary: 将存储系统连接到以太网网络以进行带外管理。 
 ---
-= 管理工作站的以太网布线
+= 管理工作站的以太网布线(E系列)
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

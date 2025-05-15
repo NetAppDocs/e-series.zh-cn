@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: LUNs, discover LUNs, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 发现适用于 Windows 的存储快速方法。 
 ---
-= 发现主机上的存储
+= 在E系列- Windows中的主机上发现存储
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

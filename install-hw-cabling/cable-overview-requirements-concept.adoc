@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: cabling, cabling requirements, drive shelf cabling, controller cabling, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C 
 summary: 为 E 系列磁盘架布线需要多个组件。 
 ---
-= 要求
+= 存储系统布线要求(E系列)
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

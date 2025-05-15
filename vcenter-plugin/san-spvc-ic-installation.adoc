@@ -4,7 +4,7 @@ permalink: vcenter-plugin/san-spvc-ic-installation.html
 keywords: install vCenter plugin, installing vCenter plugin, vCenter plugin, 
 summary: 安装或升级适用于vCenter的SANtricity 存储插件。 
 ---
-= 安装或升级适用于vCenter的存储插件
+= 安装或升级适用于vCenter的SANtricity存储插件
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-import-certificates-for-arrays.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 导入存储阵列的证书、以便它们可以在托管适用于vCenter的存储插件的系统中进行身份验证。 
 ---
-= 导入阵列的证书
+= 在适用于vCenter的SANtricity存储插件中导入阵列证书
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

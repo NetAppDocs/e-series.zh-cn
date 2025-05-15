@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-add-capacity-to-a-pool-or-volume-group.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 添加驱动器以扩展现有池或卷组中的可用容量。 
 ---
-= 向池或卷组添加容量
+= 在适用于vCenter的SANtricity存储插件中向池或卷组添加容量
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

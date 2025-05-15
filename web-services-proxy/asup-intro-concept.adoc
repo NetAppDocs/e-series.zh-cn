@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ASUP configuration Web Services, AutoSupport Web Services Proxy, WSP ASUP config 
 summary: 您可以配置 AutoSupport （ ASUP ），该功能会收集数据，然后自动将数据发送给技术支持以进行远程故障排除和问题分析。 
 ---
-= 使用 Web 服务代理管理 AutoSupport
+= 使用SANtricity万维网服务代理管理AutoSupport
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

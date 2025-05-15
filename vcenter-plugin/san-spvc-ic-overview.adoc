@@ -4,7 +4,7 @@ permalink: vcenter-plugin/san-spvc-ic-overview.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter, VMware vSphere Client 
 summary: 适用于 vCenter 的 SANtricity 存储插件可在 VMware vSphere 客户端会话中对 E 系列存储阵列进行集成管理。 
 ---
-= 适用于 vCenter 的存储插件概述
+= 了解适用于vCenter的SANtricity存储插件
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

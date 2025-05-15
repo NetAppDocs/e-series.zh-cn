@@ -4,7 +4,7 @@ permalink: manage-storage.html
 keywords: online help, System Manager, Unified Manager 
 summary: 管理存储 
 ---
-= 管理存储
+= 管理E系列存储系统
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

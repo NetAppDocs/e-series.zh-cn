@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-change-media-scan-settings-for-a-volume.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 介质扫描是一种后台操作、可扫描卷中的所有数据和冗余信息。使用此选项可以为一个或多个卷启用或禁用介质扫描设置、或者更改扫描持续时间。 
 ---
-= 更改卷的介质扫描设置
+= 在适用于vCenter的SANtricity存储插件中更改卷的介质扫描设置
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

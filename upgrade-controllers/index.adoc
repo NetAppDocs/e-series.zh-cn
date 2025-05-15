@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E-Series, eseries, E4000, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, upgrade controller, upgrade DIMMs 
 summary: 通过更换控制器升级 E 系列阵列概述。 
 ---
-= 升级控制器概述
+= 了解如何升级E系列控制器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

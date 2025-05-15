@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: 了解如何在两柱机架或NetApp系统机柜中安装E4060或DE460C存储系统。 
 ---
-= 安装硬件（ E4060 ）
+= 安装硬件- E4060
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

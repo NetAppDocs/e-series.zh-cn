@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Linux Unified Host Utilities, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries, SMcli, SMdevices 
 summary: 使用 iSCSI 时安装 Linux Unified Host Utilities 。 
 ---
-= 安装和配置 Linux Unified Host Utilities
+= 在E系列(iSCSI)中安装和配置Linux Unified Host Utilities
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

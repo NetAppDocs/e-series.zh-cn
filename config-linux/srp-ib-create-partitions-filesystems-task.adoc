@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: partitions, file systems, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 新 LUN 在 Linux 主机首次发现时没有分区或文件系统。必须先格式化 LUN ，然后才能使用它。您也可以选择在 LUN 上创建文件系统。 
 ---
-= 创建分区和文件系统
+= 在E系列中创建分区和文件系统- Linux (基于InfiniBand的SRP)
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

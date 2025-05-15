@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-view-ssd-cache-statistics.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 查看SSD缓存的统计信息、例如读取、写入、缓存命中率、缓存分配百分比、 和缓存利用率百分比。 
 ---
-= 查看SSD缓存统计信息
+= 在适用于vCenter的SANtricity存储插件中查看SSD缓存统计信息
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

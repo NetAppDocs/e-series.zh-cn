@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Cloud Connector restore, 
 summary: '您可以访问 SANtricity 云连接器应用程序左侧导航面板中的还原选项。"Restore" 选项将显示 "Restore" 页面，在此可以创建新的基于映像或基于文件的还原作业。' 
 ---
-= 还原
+= 在SANtricity云连接器中创建基于映像或基于文件的新恢复
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

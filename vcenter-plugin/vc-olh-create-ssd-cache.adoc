@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-create-ssd-cache.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: '要动态提高系统性能、您可以使用SSD缓存功能将最常访问的数据("热"数据)缓存到延迟较低的固态驱动器(SSD)上。' 
 ---
-= 创建SSD缓存
+= 在适用于vCenter的SANtricity存储插件中创建SSD缓存
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

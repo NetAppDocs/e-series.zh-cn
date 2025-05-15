@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-remove-capacity.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 您可以删除驱动器以减少现有池或SSD缓存的容量。 
 ---
-= 删除容量
+= 减少适用于vCenter的SANtricity存储插件中现有池或SSD缓存的容量
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

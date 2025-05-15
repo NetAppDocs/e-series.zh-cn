@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2800 replace drive, replacing E2800 drive, E2800 replace drive, replacing E2800 drive, E2800, E-Series, eseries 
 summary: 将 E2800 中的驱动器更换为具有 60 个驱动器的磁盘架。 
 ---
-= 更换 E2800 中的驱动器（ 60 个驱动器架）
+= 更换驱动器- E2800 (60个驱动器的磁盘架)
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

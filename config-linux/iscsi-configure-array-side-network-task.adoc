@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: configure iSCSI networking, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 在阵列端配置 iSCSI 网络。 
 ---
-= 配置阵列端网络
+= 在E系列- Linux (iSCSI)中配置阵列端网络
 :allow-uri-read: 
 :experimental: 
 :icons: font

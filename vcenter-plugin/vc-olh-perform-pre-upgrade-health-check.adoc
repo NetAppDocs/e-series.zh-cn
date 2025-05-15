@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-perform-pre-upgrade-health-check.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 运行状况检查会在升级过程中运行，但您也可以在开始之前单独运行运行运行运行状况检查。 
 ---
-= 执行升级前运行状况检查
+= 在适用于vCenter的SANtricity存储插件中执行升级前运行状况检查
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

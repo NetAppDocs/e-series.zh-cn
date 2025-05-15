@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: host wwpn, HBA utility, express linux configuration, software configuration, linux host, 
 summary: '您可以安装 FC HBA 实用程序，以便查看每个主机端口的全球通用端口名称 \ （ WWPN ）。此外，您还可以使用 HBA 实用程序更改 NetApp 互操作性表工具的 "Notes" 列中针对支持的配置建议的任何设置。' 
 ---
-= 确定主机 WWPN 并进行建议的设置
+= 确定E系列中的主机全球通用端口名称(WWPN)- Linux (FC)
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

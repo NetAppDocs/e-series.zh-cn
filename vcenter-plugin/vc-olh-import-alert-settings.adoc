@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-import-alert-settings.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 将警报配置从一个存储阵列导入到其他存储阵列。 
 ---
-= 导入警报设置
+= 在适用于vCenter的SANtricity存储插件中导入警报设置
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

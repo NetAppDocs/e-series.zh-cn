@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Nvme over FC, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 对于基于光纤通道的 NVMe 协议，您可以配置交换机并确定主机端口标识符。 
 ---
-= 执行基于 FC 的 NVMe 专用任务
+= 在E系列- VMware中执行基于FC的NVMe专用任务
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

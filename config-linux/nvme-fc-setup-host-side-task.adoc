@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: NVMe over Fibre Channel, host side, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 光纤通道环境中的 NVMe 启动程序配置包括安装和配置 NVMe-CLI 软件包，以及在主机上启用 NVMe/FC 启动程序。 
 ---
-= 在主机端设置基于光纤通道的 NVMe
+= 在E系列- Linux中的主机上设置基于FC的NVMe启动程序
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

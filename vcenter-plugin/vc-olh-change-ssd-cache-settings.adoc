@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-change-ssd-cache-settings.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 编辑SSD缓存的名称并查看其状态、最大容量和当前容量、驱动器安全性和数据保证状态及其关联的卷和驱动器。 
 ---
-= 更改SSD缓存设置
+= 在适用于vCenter的SANtricity存储插件中更改SSD缓存设置
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

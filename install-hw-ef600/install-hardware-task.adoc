@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: EF300, EF600, EF300C, EF600C installation, 
 summary: 将 EF300 或 EF600 安装在两柱机架或 NetApp 系统机柜中。 
 ---
-= Install the hardware
+= 安装硬件- EF300、EF600、EF300C和EF600C
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

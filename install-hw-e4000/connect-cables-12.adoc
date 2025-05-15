@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E4000, connect power cables 
 summary: 连接电源线并打开驱动器架的电源。 
 ---
-= 连接缆线(E4012)
+= 连接电源线- E4012
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

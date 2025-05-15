@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: 3040 40U cabinet, cabinet installation, drive tray installation, controller installation, shelf installation, E2800, E5700, EF300, EF600, 
 summary: 在 E 系列 3040 40U 机柜中安装驱动器托盘概述 
 ---
-= 在 3040 40U 机柜中安装托盘
+= 在3040 40U机柜中安装托盘(E系列)
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E5700 power supply, repair E5700 power supply, replace E5700 power supply, failed E5700 power supply 
 summary: 更换 E5700 24 驱动器电源。 
 ---
-= 更换 E5700 电源（ 24 个驱动器）
+= 更换电源- E5700 (24驱动器)
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Web Services, WSP, SANtricity API, 
 summary: 了解 Web 服务 API 
 ---
-= API 基础知识
+= 了解SANtricity Web服务代理API基础知识
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

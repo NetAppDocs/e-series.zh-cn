@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-create-storage.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 通过首先为特定应用程序类型创建工作负载来创建存储。接下来、您可以通过创建具有类似底层卷特征的卷来为工作负载添加存储容量。 
 ---
-= 创建存储
+= 在适用于vCenter的SANtricity存储插件中创建存储
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-change-the-settings-for-a-host.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 您可以更改主机或主机集群的名称、主机操作系统类型以及关联的主机集群。 
 ---
-= 更改主机的设置
+= 在适用于vCenter的SANtricity存储插件中更改主机的设置
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: modify Remote Storage Volumes settings, RTV settings, remote volume settings, remote storage E-Series 
 summary: '您可以通过 SANtricity 系统管理器的 " 远程存储 " 屏幕下的 " 查看 / 编辑设置 " 选项修改任何已配置的远程存储导入的连接设置。' 
 ---
-= 修改远程存储连接设置
+= 修改SANtricity远程存储卷的远程存储连接设置
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

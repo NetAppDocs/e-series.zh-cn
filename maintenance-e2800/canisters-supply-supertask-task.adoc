@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2800 replace 12-drive power supply, E2800 replace 24-drive power supply, replacing E2800 power supply, E2800, E-Series, eseries 
 summary: 更换 E2800 12 驱动器或 24 驱动器控制器架或驱动器架，其中包括两个具有集成风扇的电源。 
 ---
-= 更换 E2800 电源（ 12 驱动器或 24 驱动器）
+= 更换电源- E2800 (12驱动器或24驱动器)
 :allow-uri-read: 
 :experimental: 
 :icons: font

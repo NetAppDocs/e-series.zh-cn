@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: host protocol change, EF300 host protocol, EF600 host protocol 
 summary: 转换主机端口的协议后，执行其他步骤以使用新协议。 
 ---
-= 完成 EF300 或 EF600 的主机协议转换
+= 完整的主机协议转换—EF300和EF600
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

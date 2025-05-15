@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-delete-volume.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 删除一个或多个卷以增加池或卷组的可用容量。 
 ---
-= 删除卷
+= 在适用于vCenter的SANtricity存储插件中删除卷
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

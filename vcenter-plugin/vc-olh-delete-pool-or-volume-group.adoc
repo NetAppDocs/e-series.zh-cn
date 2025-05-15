@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-delete-pool-or-volume-group.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 删除池或卷组以创建更多未分配容量、您可以根据应用程序存储需求重新配置这些容量 
 ---
-= 删除池或卷组
+= 在适用于vCenter的SANtricity存储插件中删除池或卷组
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

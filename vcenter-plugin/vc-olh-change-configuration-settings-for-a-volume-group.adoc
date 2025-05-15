@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-change-configuration-settings-for-a-volume-grou
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 编辑卷组的设置、包括其名称和RAID级别。 
 ---
-= 更改卷组的配置设置
+= 在适用于vCenter的SANtricity存储插件中更改卷组的配置设置
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

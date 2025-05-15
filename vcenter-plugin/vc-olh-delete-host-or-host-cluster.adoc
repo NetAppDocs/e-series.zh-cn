@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-delete-host-or-host-cluster.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 您可以删除主机或主机集群、以使卷不再与该主机关联。 
 ---
-= 删除主机或主机集群
+= 在适用于vCenter的SANtricity存储插件中删除主机或主机集群
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

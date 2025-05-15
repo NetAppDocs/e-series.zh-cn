@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E5700 24-drive, replace E5700 24-drive, failed E5700 24-drive 
 summary: 更换 E5700 24 驱动器架中的驱动器。 
 ---
-= 更换 E5700 中的驱动器（ 24 个驱动器架）
+= 更换驱动器- E5700 (24驱动器磁盘架)
 :allow-uri-read: 
 :experimental: 
 :icons: font

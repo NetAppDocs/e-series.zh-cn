@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: multipath software for Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 配置多路径软件，以便在其中一个物理路径中断时为存储阵列提供冗余路径。 
 ---
-= 配置多路径软件
+= 在E系列- Linux中配置多路径软件(基于InfiniBand的iSER)
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

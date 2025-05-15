@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: 了解如何使用缆线将控制器连接到您的网络并完成存储系统设置和配置。 
 ---
-= 完成存储系统设置(E4012)
+= 完成存储系统设置- E4012
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

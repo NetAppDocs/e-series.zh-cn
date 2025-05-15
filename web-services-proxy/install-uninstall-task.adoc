@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: uninstall Web Services Proxy, remove WSP, 
 summary: 要删除 Web 服务代理和 Unified Manager ，您可以使用任何模式（图形，控制台，静默或 RPM 文件），而不管使用哪种方法安装代理。 
 ---
-= 卸载 Web 服务代理
+= 卸载SANtricity Web服务代理
 :allow-uri-read: 
 :experimental: 
 :icons: font

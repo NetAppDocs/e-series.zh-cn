@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: partitions, file systems, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 您可以在多路径设备上创建分区，也可以在命名空间上创建文件系统并挂载分区。 
 ---
-= 创建文件系统（ RHEL 7 和 SLES 12 ）
+= 在E系列中创建文件系统—Linux RHEL 7和SLES 12 (基于FC的NVMe)
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

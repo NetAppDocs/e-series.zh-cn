@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: 在更换E4000驱动器之前、请查看要求和注意事项。 
 ---
-= 更换E4000驱动器概述
+= 更换驱动器的要求- E4000
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

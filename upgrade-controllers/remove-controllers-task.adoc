@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E-Series, eseries, E4000, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, remove controller, removing controller, remove battery, removing battery 
 summary: 升级控制器的第一步是删除旧控制器以及电池。 
 ---
-= 删除控制器
+= 删除E系列控制器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

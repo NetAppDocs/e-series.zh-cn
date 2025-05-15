@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E5700 host interface card, E5700 HIC, replace E5700 HIC, failed E5700 HIC 
 summary: 查看更换 E5700 HIC 的要求。 
 ---
-= 更换 E5700 HIC 的要求
+= 更换主机接口卡(HIC)的要求- E5700
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

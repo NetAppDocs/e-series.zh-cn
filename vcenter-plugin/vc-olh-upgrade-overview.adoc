@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-upgrade-overview.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 您可以为多个相同类型的存储阵列管理SANtricity 软件和NVSRAM升级。 
 ---
-= 升级概述
+= 了解如何使用适用于vCenter的存储插件管理SANtricity软件升级
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

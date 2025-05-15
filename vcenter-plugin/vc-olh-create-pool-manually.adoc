@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-create-pool-manually.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 如果设置不符合自动池配置的要求、则可以手动创建池。池是一组逻辑分组的驱动器。 
 ---
-= 手动创建池
+= 在适用于vCenter的SANtricity存储插件中手动创建池
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

@@ -4,7 +4,7 @@ summary: 您可以更改读取缓存和写入缓存设置、以影响卷的整�
 permalink: vcenter-plugin/vc-olh-change-cache-settings-for-a-volume.html 
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 ---
-= 更改卷的缓存设置
+= 在适用于vCenter的SANtricity存储插件中更改卷的缓存设置
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

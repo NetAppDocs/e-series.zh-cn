@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 查看使用快速方法设置 E 系列阵列和 Windows 主机的要求。 
 ---
-= 假设
+= 假设(E系列和Windows)
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

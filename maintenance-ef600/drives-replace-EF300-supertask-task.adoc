@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: EF300, EF300C, replace drive, drive failure 
 summary: 更换 EF300 阵列中的驱动器。 
 ---
-= 更换 EF300 阵列中的驱动器
+= 更换驱动器- EF300
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

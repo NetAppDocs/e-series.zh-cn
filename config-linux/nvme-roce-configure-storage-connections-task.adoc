@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: NVMe over RoCE, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: '如果您的控制器包括通过 RoCE 连接 NVMe （基于融合以太网的 RDMA ），则可以从 SANtricity 系统管理器的 " 硬件 " 页面或 " 系统 " 页面配置 NVMe 端口设置。' 
 ---
-= 配置存储阵列 NVMe over RoCE 连接
+= 在E系列- Linux中配置基于RoCE的存储阵列NVMe连接
 :allow-uri-read: 
 :experimental: 
 :icons: font

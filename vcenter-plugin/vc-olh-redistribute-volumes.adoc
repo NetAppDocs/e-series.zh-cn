@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-redistribute-volumes.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 重新分配卷以将卷移回其首选控制器所有者 
 ---
-= 重新分配卷
+= 在适用于vCenter的SANtricity存储插件中重新分布卷
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

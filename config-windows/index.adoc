@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 对具有 E 系列系统的 Windows 主机使用快速配置。 
 ---
-= Windows 快速配置概述
+= E系列中的Windows快速配置- Windows
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

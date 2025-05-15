@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-import-storage-configuration-settings.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 将存储配置从一个存储阵列导入到其他存储阵列。 
 ---
-= 导入存储配置设置
+= 在适用于vCenter的SANtricity存储插件中导入存储配置设置
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

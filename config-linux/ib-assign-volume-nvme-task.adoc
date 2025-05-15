@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express linux configuration, assign volume, assign namespace, 
 summary: 您必须将卷 \ （命名空间 \ ）分配给主机或主机集群，以便用于 I/O 操作。此分配可授予主机或主机集群对存储阵列中一个或多个命名空间的访问权限。 
 ---
-= 分配卷
+= 使用SANtricity系统管理器分配卷—Linux (基于InfiniBand的NVMe)
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: EF300, EF600, EF600C, EF300C, replace drive, 
 summary: 在更换 EF300 或 EF600 中的驱动器之前，请查看要求和注意事项。 
 ---
-= 更换 EF300 或 EF600 驱动器的要求
+= 更换驱动器的要求- EF300或EF600
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

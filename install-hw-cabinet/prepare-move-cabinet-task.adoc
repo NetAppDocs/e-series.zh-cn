@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: 3040 40U cabinet, cabinet installation, drive tray installation, controller installation, shelf installation, E2800, E5700, EF300, EF600 
 summary: 准备移动机柜。 
 ---
-= 准备移动机柜
+= 准备移动3040 40U机柜(E系列)
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Remote Storage Volumes, RTV, remote volumes, remote storage E-Series 
 summary: 使用远程存储卷功能将数据从远程存储设备直接导入到本地 E 系列卷。 
 ---
-= 远程存储卷概述
+= 了解SANtricity远程存储卷
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-host-creation-overview.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 要使用适用于vCenter的存储插件管理存储、您必须发现或定义网络中的每个主机。 
 ---
-= 主机创建概述
+= 了解如何在适用于vCenter的SANtricity存储插件中创建主机
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

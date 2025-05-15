@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: EF300, EF600, EF300C, EF600C, replace DIMM 
 summary: 更换 EF300 或 EF600 阵列中的 DIMM 。 
 ---
-= 更换 EF300 或 EF600 中的 DIMM
+= 更换DIMM - EF300或EF600
 :allow-uri-read: 
 :experimental: 
 :icons: font

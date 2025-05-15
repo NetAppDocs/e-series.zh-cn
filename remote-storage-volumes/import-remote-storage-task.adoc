@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: import Remote Storage Volumes, RTV import, import remote volumes, remote storage E-Series 
 summary: 远程存储设备的导入可通过 SANtricity 系统管理器下的导入远程存储向导执行。通过远程存储导入功能，可以将远程存储设备中的数据移动到本地 E 系列阵列。 
 ---
-= 导入远程存储
+= 为SANtricity远程存储卷导入远程存储
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

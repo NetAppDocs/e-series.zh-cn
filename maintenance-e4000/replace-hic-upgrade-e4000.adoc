@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= 升级E4000中的HIC
+= 升级主机接口卡(HIC)- E4000
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

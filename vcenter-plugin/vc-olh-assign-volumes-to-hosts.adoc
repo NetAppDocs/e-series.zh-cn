@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-assign-volumes-to-hosts.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 您必须将卷分配给主机或主机集群、以便用于I/O操作。 
 ---
-= 将卷分配给主机
+= 在适用于vCenter的SANtricity存储插件中为主机分配卷
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

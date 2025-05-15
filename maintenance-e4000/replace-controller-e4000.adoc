@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= 更换E4000中的控制器
+= 更换控制器- E4000
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

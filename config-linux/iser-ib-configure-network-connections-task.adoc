@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: configure network connection, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 如果您的配置使用基于 Infiniband 的 iSER 协议，请执行本节中的步骤。 
 ---
-= 配置网络连接
+= 使用SANtricity系统管理器- Linux (基于InfiniBand的iSER)配置网络连接
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Web Services terms, WSP concepts 
 summary: 了解 Web 服务 API 
 ---
-= 术语和概念
+= 了解SANtricity Web服务代理术语
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

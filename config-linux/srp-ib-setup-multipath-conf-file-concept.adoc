@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: multipath.conf, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 使用 multipath.conf 文件是多路径守护进程 multipathd 的配置文件。 
 ---
-= 设置 multipath.conf 文件
+= 在E系列- Linux中设置Multipath.conf文件(基于InfiniBand的SRP)
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

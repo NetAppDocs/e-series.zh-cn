@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-rename-storage-array.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 更改管理页面上显示的存储阵列名称。 
 ---
-= 重命名存储阵列
+= 在适用于vCenter的SANtricity存储插件中重命名存储阵列
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

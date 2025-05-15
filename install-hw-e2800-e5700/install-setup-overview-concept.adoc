@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2800, E5700, installation process overview 
 summary: 查看安装和设置 E2800 和 E5700 的过程。 
 ---
-= 概述
+= 了解存储系统安装—E2800和E5700
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

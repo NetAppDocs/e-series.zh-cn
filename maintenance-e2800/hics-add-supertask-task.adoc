@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: adding E2800 HIC, add E2800 HIC, add host interface card, E2800, E-Series, eseries 
 summary: 将主机接口卡（ HIC ）添加到 E2800 阵列。 
 ---
-= 添加 E2800 主机接口卡（ HIC ）
+= 添加主机接口卡- E2800 (HIC)
 :allow-uri-read: 
 :experimental: 
 :icons: font

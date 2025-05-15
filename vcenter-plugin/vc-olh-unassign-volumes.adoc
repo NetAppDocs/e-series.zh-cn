@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-unassign-volumes.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 如果您不再需要对卷进行I/O访问、则可以从主机或主机集群中取消分配该卷。 
 ---
-= 取消分配卷
+= 在适用于vCenter的SANtricity存储插件中取消分配卷
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

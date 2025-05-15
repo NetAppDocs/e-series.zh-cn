@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-view-status.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 从适用于vCenter的存储插件或vSphere Client查看系统状态 
 ---
-= 查看状态
+= 在适用于vCenter的SANtricity存储插件中查看存储系统状态
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

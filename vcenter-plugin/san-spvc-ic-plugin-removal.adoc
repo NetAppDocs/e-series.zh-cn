@@ -4,7 +4,7 @@ permalink: vcenter-plugin/san-spvc-ic-plugin-removal.html
 keywords: remove vCenter plugin, uninstall Plugin for vCenter, unregister vCenter plugin, 
 summary: 删除 vCenter 插件。 
 ---
-= 删除适用于 vCenter 的存储插件
+= 删除适用于vCenter的SANtricity存储插件
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

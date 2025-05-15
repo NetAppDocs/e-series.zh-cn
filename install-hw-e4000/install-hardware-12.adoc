@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: 了解如何在两柱机架或 NetApp 系统机柜中安装 E4012 ， DE212C 或 DE224C 存储系统。 
 ---
-= 安装硬件（ E4012 ）
+= 安装硬件- E4012
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

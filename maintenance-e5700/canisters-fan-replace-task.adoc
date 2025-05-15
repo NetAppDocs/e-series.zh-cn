@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E5700 fan, repair E5700 fan, replace E5700 fan, failed E5700 fan 
 summary: 更换 E5700 风扇。 
 ---
-= 更换 E5700 风扇箱（ 60 个驱动器）
+= 更换风扇箱- E5700 (60个驱动器)
 :allow-uri-read: 
 :experimental: 
 :icons: font

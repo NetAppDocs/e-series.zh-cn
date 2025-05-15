@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E4000 connect power cables 
 summary: 连接电源线并打开驱动器架的电源。 
 ---
-= 为磁盘架布线(E4060)
+= 连接电源线- E4060
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

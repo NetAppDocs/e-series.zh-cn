@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E-Series, eseries, E2800, E5700, EF300, EF600, SANtricity, drive firmware, upgrade SANtricity, upgrade OS, upgrade E-Series, upgrade firmware, upgrading, upgrade IOM firmware, upgrade NVSRAM, upgrade controller 
 summary: 您可以升级驱动器的固件，以确保具有所有最新功能和错误修复。 
 ---
-= 升级驱动器固件
+= 升级E系列和EF系列驱动器固件
 :allow-uri-read: 
 :experimental: 
 :icons: font

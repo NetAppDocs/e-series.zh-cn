@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-view-certificates.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: '查看证书的摘要信息、其中包括使用证书的组织、颁发证书的机构、有效期和指纹(唯一标识符)' 
 ---
-= 查看证书
+= 在适用于vCenter的SANtricity存储插件中查看证书
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

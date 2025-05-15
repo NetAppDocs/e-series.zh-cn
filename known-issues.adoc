@@ -4,7 +4,7 @@ permalink: known-issues.html
 keywords: known, issues, santricity, os 
 summary: 已知问题 
 ---
-= 发行说明
+= E系列发行说明
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

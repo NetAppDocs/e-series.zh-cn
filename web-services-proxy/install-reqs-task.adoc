@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: installation, download, install proxy, 
 summary: Web 服务代理的安装和升级要求以及注意事项。 
 ---
-= 查看安装和升级要求
+= 查看SANtricity Web服务代理的安装和升级要求
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-upgrade-santricity-os.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 使用最新软件和NVSRAM升级一个或多个存储阵列、以确保您拥有所有最新功能和错误修复。 
 ---
-= 升级SANtricity 操作系统
+= 使用适用于vCenter的存储插件升级SANtricity软件和NVsan
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E4000 replace drive, replacing E4000 drive, E4000 replace drive, replacing E4000 drive, E4000, E-Series, eseries 
 summary: 将 E4000 中的驱动器更换为 12 驱动器或 24 驱动器磁盘架。 
 ---
-= 热添加驱动器架
+= 热添加驱动器架- IOM12或IOM12B模块- E4000
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

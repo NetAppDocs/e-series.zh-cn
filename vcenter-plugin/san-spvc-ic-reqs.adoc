@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: upgrade vCenter 
 summary: vCenter插件的安装和升级要求以及注意事项。 
 ---
-= 查看安装和升级要求
+= 适用于vCenter的SANtricity存储插件的安装和升级要求
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

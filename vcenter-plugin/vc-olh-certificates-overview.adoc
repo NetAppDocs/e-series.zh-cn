@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-certificates-overview.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: '通过证书管理、您可以创建证书签名请求(CSR)、导入证书以及管理现有证书。' 
 ---
-= 证书概述
+= 了解如何在适用于vCenter的SANtricity存储插件中管理证书
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

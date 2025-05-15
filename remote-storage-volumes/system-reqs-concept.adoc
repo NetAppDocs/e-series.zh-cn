@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Remote Storage Volumes requirements, RTV requirements, RTV restrictions, remote volumes, remote storage E-Series 
 summary: 您的系统必须满足远程存储卷的兼容性要求。 
 ---
-= 远程存储的要求和限制
+= 使用SANtricity远程存储卷的要求和限制
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

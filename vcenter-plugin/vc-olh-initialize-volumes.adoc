@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-initialize-volumes.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 手动初始化卷以从特定故障条件恢复。 
 ---
-= 初始化卷
+= 在适用于vCenter的SANtricity存储插件中初始化卷
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

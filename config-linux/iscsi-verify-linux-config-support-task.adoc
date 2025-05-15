@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 为了确保操作可靠，您需要创建一个实施计划，然后使用 NetApp 互操作性表工具（ IMT ）验证是否支持整个配置。 
 ---
-= 验证是否支持 Linux 配置
+= 验证E系列(iSCSI)中的Linux配置支持
 :allow-uri-read: 
 :experimental: 
 :icons: font

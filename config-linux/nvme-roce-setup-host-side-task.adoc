@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: RoCE 环境中的 NVMe 启动程序配置包括安装和配置 RDMA-core 和 NVMe-CLI 软件包，配置启动程序 IP 地址以及在主机上设置 NVMe-oF 层。 
 ---
-= 在主机端设置基于 RoCE 的 NVMe
+= 在E系列- Linux中的主机上通过RoCE设置NVMe启动程序
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

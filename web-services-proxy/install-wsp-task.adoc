@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: installation, download, install proxy, 
 summary: 安装涉及下载文件，然后在 Linux 或 Windows 服务器上安装代理软件包。 
 ---
-= 安装或升级Web服务代理文件
+= 安装或升级SANtricity Web服务代理文件
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

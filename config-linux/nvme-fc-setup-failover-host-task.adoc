@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: failover, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 将主机配置为运行故障转移。 
 ---
-= 在主机上设置故障转移
+= 在E系列- Linux (基于FC的NVMe)中的主机上设置故障转移
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

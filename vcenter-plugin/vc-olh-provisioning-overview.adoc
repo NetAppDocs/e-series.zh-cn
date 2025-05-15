@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-provisioning-overview.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 您可以创建称为卷的数据容器、以便主机可以访问阵列上的存储。 
 ---
-= 配置概述
+= 了解如何在适用于vCenter的SANtricity存储插件中配置存储
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

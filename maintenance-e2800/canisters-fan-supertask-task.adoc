@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2800 replace 60-drive fan canister, replacing E2800 fan canister, E2800 replace fan, E2800, E-Series, eseries 
 summary: 更换 60 驱动器控制器架或驱动器架中的风扇箱。 
 ---
-= 更换 E2800 风扇箱（ 60 个驱动器）
+= 更换风扇箱- E2800 (60个驱动器)
 :allow-uri-read: 
 :experimental: 
 :icons: font

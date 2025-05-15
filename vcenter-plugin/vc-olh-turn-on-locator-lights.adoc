@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-turn-on-locator-lights.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 您可以找到驱动器、以物理方式识别构成选定池、卷组或SSD缓存的所有驱动器。选定池、卷组或SSD缓存中的每个驱动器上都会亮起一个LED指示灯。 
 ---
-= 打开定位灯
+= 在适用于vCenter的SANtricity存储插件中打开驱动器上的LED指示灯
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

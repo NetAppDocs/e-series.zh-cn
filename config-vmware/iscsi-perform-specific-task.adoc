@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: iscsi, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 对于 iSCSI 协议，您可以在阵列端和主机端配置交换机并配置网络。然后，验证 IP 网络连接。 
 ---
-= 执行 iSCSI 专用任务
+= 在E系列- VMware中执行iSCSI专用任务
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: access System Manager Linux, express linux configuration, software configuration, linux host, 
 summary: 您可以使用 SANtricity 系统管理器中的设置向导配置存储阵列。 
 ---
-= 访问 SANtricity 系统管理器并使用设置向导
+= 使用SANtricity系统管理器配置存储- Linux (FC)
 :allow-uri-read: 
 :experimental: 
 :icons: font

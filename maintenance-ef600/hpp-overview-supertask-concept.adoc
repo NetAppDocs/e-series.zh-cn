@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: convert host protocol, EF600, EF300, EF600C, EF300C 
 summary: 在转换 EF300 或 EF600 主机协议之前，请查看要求和注意事项。 
 ---
-= EF300 或 EF600 主机协议转换的要求
+= 转换主机协议的要求—EF300或EF600
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

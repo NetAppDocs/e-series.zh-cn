@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2800 battery fail, E2800 battery, E2800 battery replacement, replace E2800 battery, replacing E2800 battery, E2800, E-Series, eseries 
 summary: 完成电池更换。 
 ---
-= 完成 E2800 电池更换
+= 完整电池更换- E2800
 :allow-uri-read: 
 :experimental: 
 :icons: font

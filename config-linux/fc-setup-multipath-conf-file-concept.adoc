@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: multipath.conf file, express linux configuration, software configuration, linux host, 
 summary: 使用 multipath.conf 文件，该文件是多路径守护进程 multipathd 的配置文件。 
 ---
-= 设置 multipath.conf 文件
+= 在E系列- Linux (FC)中设置多路径.conf文件
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

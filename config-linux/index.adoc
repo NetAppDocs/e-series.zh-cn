@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 对具有 E 系列系统的 Linux 主机使用快速配置。 
 ---
-= Linux 快速配置概述
+= 了解适用于E系列的Linux快速配置
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

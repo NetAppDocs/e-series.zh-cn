@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-change-configuration-settings-for-a-pool.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 编辑池的设置、包括其名称、容量警报设置、修改优先级和保留容量。 
 ---
-= 更改池的配置设置
+= 在适用于vCenter的SANtricity存储插件中更改池的配置设置
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

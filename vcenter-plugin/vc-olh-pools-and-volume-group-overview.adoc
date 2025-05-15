@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-pools-and-volume-group-overview.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: '要配置存储、请创建一个池或卷组、其中包含要在存储阵列中使用的硬盘驱动器(HDD)或固态磁盘(SSD)驱动器。' 
 ---
-= 池和卷组概述
+= 在适用于vCenter的SANtricity存储插件中了解存储池和卷组
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

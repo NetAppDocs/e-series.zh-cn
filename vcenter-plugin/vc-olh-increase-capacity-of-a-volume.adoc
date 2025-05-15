@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-increase-capacity-of-a-volume.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 调整卷大小以增加其报告的容量。 
 ---
-= 增加卷的容量
+= 在适用于vCenter的SANtricity存储插件中增加卷的容量
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

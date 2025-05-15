@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: NVMe volumes physical, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 根据 Linux 版本配置定向到设备目标的 I/O 。 
 ---
-= 访问 NVMe 卷以实现物理 NVMe 设备目标
+= 访问E系列中物理NVMe设备目标的NVMe卷—Linux (基于FC的NVMe)
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

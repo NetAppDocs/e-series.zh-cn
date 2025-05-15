@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: cabling, cables, power cable, power cabling, power supply cabling, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C 
 summary: 将每个组件的电源连接到单独的电路。 
 ---
-= 电源布线
+= 为存储系统布线(E系列)
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

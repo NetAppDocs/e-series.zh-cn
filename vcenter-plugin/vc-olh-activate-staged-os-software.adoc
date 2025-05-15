@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-activate-staged-os-software.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 您可以选择在更方便的时间激活软件文件。 
 ---
-= 激活暂存操作系统软件
+= 在适用于vCenter的SANtricity存储插件中激活暂存操作系统软件
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

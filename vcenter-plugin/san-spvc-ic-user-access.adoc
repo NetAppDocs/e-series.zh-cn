@@ -4,7 +4,7 @@ permalink: vcenter-plugin/san-spvc-ic-user-access.html
 keywords: user access vCenter plugin, user roles vCenter plugin, privileges vCenter plugin, access permissions vCenter plugin 
 summary: 配置适用于 vCenter 的存储插件的访问权限。 
 ---
-= 配置插件访问权限
+= 配置SANtricity存储插件的vCenter访问权限
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

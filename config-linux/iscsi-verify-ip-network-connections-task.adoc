@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 您可以使用 ping 测试来验证 Internet 协议 \ （ IP\ ）网络连接，以确保主机和阵列能够进行通信。 
 ---
-= 验证 IP 网络连接
+= 验证E系列- Linux (iSCSI)中的IP网络连接
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

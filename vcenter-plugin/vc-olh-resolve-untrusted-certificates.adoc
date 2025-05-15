@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-resolve-untrusted-certificates.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: '通过从存储阵列导入自签名证书或导入可信第三方颁发的证书颁发机构(CA)证书来解析不可信证书。' 
 ---
-= 解析不可信的证书
+= 在适用于vCenter的SANtricity存储插件中解析不可信证书
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

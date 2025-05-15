@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E5700 host interface card, E5700 HIC, upgrade E5700 HIC, update E5700 HIC, increase host ports 
 summary: 升级 E5700 中的 HIC 。 
 ---
-= 升级 E5700 主机接口卡（ HIC ）
+= 升级主机接口卡(HIC)-5700
 :allow-uri-read: 
 :experimental: 
 :icons: font
