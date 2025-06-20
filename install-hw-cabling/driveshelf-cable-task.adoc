@@ -13,13 +13,13 @@ summary: 将控制器架中的每个控制器连接到驱动器架中的 I/O 模
 [role="lead"]
 您必须将控制器架中的每个控制器连接到驱动器架中的 I/O 模块（ IOM ）。
 
-此 操作步骤 适用场景 IOM12 和 IOM12B 驱动器架。
+此过程适用于 IOM12、IOM12B 和 IOM12C 驱动器架。
 
 
-NOTE: 只有SANtricity OS 11.70.2及更高版本才支持IOM12B模块。在安装或升级到IOM12B之前、请确保已更新控制器的固件。
+NOTE: 只有SANtricity OS 11.70.2及更高版本才支持IOM12C模块。在安装或升级到IOM12C之前、请确保已更新控制器的固件。
 
 
-NOTE: 此操作步骤 适用于同类磁盘架 IOM 热插拔或更换。这意味着，您只能将 IOM12 模块更换为另一个 IOM12 模块，或者将 IOM12B 模块更换为另一个 IOM12B 模块。（您的磁盘架可以有两个 IOM12 模块，也可以有两个 IOM12B 模块。）
+NOTE: 此操作步骤 适用于同类磁盘架 IOM 热插拔或更换。这意味着，您只能将 IOM12 模块更换为另一个 IOM12 模块，或者将 IOM12C 模块更换为另一个 IOM12C 模块。（您的磁盘架可以有两个 IOM12 模块，也可以有两个 IOM12C 模块。）
 
 如果要使用缆线将旧控制器架连接到 DE212C ， DE224C 或 DE460 ，请参见 https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057["将 IOM 驱动器架添加到现有 E27XX ， E56XX 或 EF560 控制器架"^]。
 

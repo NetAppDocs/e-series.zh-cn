@@ -4557,7 +4557,6 @@
   <block id="69388a3aa77fde6c6db723db24c07886" category="paragraph">对于与 RPM 软件包管理系统兼容的 Linux 系统，您可以使用可选的 RPM 文件安装 Web 服务代理。</block>
   <block id="44fdd30cd930ac3164eb732ccfc71839" category="list-text">将 RPM 文件下载到要安装代理和 Unified Manager 的服务器。</block>
   <block id="6dcd1ebf4390170868ab9bcdfd967581" category="list-text">输入以下命令：</block>
-  <block id="832e1d3c786f0b6f9f452d072f2d4b27" category="paragraph">`rpm -u SANtricity webservices_nnn 。 nn 。 nnnn-1.6461.rpm`</block>
   <block id="e90cc19871614d9efbaffbaffd7e2d47" category="admonition">在上述命令中， `nn.nn.nn.nnnn` 表示版本号。</block>
   <block id="52877d65c00b08b2ad200ece4bbb448f" category="summary">出于安全考虑，您可以管理用户对 Web 服务 API 和 Unified Manager 的访问。</block>
   <block id="0cac4d311d45b98b5398187d39484757" category="section-title">访问管理概述</block>
@@ -6269,10 +6268,7 @@
   <block id="39a9002fa4dcf0afc27b1355c1567969" category="cell">介绍如何配置访问管理，包括基于角色的访问控制（ Role-Based Access Control ， RBAC ），轻型目录访问协议（ Lightweight Directory Access Protocol ， LDAP ）和安全断言标记语言（ Security Assertion Markup Language ， SAML ）。</block>
   <block id="82e361f392a68c54a4e7d72ceec97843" category="sidebar">配置网络连接— ​SRP 基于 Infiniband</block>
   <block id="b71e2b4d6a1e1e3ddb1014777fc5a53c" category="doc">SANtricity OS 中的新增功能</block>
-  <block id="e9983c2bf51c9aa8f38dce44157b9a2a" category="paragraph">此 操作步骤 适用场景 IOM12 和 IOM12B 驱动器架。</block>
-  <block id="2af3ffb0914986412fbce97033362ada" category="admonition">此操作步骤 适用于同类磁盘架 IOM 热插拔或更换。这意味着，您只能将 IOM12 模块更换为另一个 IOM12 模块，或者将 IOM12B 模块更换为另一个 IOM12B 模块。（您的磁盘架可以有两个 IOM12 模块，也可以有两个 IOM12B 模块。）</block>
   <block id="acd1dcb9f4c3f9c9b28f9c1a4d234d1b" category="admonition">电源更换操作步骤 适用于更换 IOM 。要更换 IOM ，请执行电源更换操作步骤 。</block>
-  <block id="ebc31fad1cf84954196a7706294df684" category="paragraph">此 操作步骤 适用场景 数据中心管理平台和 DCM2 驱动器架。</block>
   <block id="dbf42093a0041931999943f18d3f0986" category="paragraph">以下信息适用场景 为 E2800 ， E2800B ， EF280 ， E5700 ， EF5700B 布线， 或 EF570 控制器架连接到 DE212C ， DE224C 或 DE460 驱动器架。</block>
   <block id="f2c505979298b93cfd8e71dc78ddd1b0" category="admonition">请勿混合使用不同电压类型的 PSU 。请始终像这样替换。</block>
   <block id="b7b26f8fd8107cf68f2bc572008d19a7" category="admonition">替代控制器预安装了 16 GB 内存。如果您的控制器需要 64 GB 配置，请在安装替代控制器之前使用随附的升级套件。</block>
@@ -6362,7 +6358,6 @@
   <block id="c0e8c7e46cae3f0c9b9c738bc76c9ea8" category="paragraph">此时将显示增加报告的容量对话框。此对话框显示卷当前报告的容量以及卷关联的池或卷组中可用的容量。</block>
   <block id="5c82f6a54733344cb7eec2765ac13712" category="paragraph">根据您的选择增加卷的容量。请注意、此操作可能会很长、并且可能会影响系统性能。</block>
   <block id="4068dcbd83689810385f5bd61994998b" category="paragraph">扩展卷容量后、必须手动增加文件系统大小以匹配。如何执行此操作取决于所使用的文件系统。有关详细信息、请参见主机操作系统文档。</block>
-  <block id="27ff4e5987307be95b847357578a7d2c" category="summary">冗余检查可确定池或卷组中卷上的数据是否一致。</block>
   <block id="dbdb64210af00cba98b2ae65e68fc433" category="doc">什么是冗余检查？</block>
   <block id="527686381caf5b91f8b2570f0b90f7e1" category="paragraph">冗余检查可确定池或卷组中卷上的数据是否一致。如果池或卷组中的某个驱动器发生故障、则可以使用冗余数据快速重建替代驱动器上的信息。</block>
   <block id="ceb78409571f58fc00f9f8b5b24b8937" category="paragraph">一次只能对一个池或卷组执行此检查。卷冗余检查将执行以下操作：</block>
@@ -6648,7 +6643,6 @@
   <block id="6f77c9c07c72d4718892ec422f4427bc" category="doc">如何将主机端口与主机匹配？</block>
   <block id="e3603ec100f890e2ef8684fc0f32d90c" category="paragraph">获得此信息后、请从创建主机对话框中提供的列表中选择已登录到存储阵列的主机端口标识符。</block>
   <block id="2bba3e0602cd7a130a9a940ee66aefad" category="admonition">确保为要创建的主机选择适当的主机端口标识符。如果关联的主机端口标识符不正确、则可能会发生原因 从另一台主机意外访问此数据。</block>
-  <block id="490911223ced9bd35d325330312a99b5" category="summary">密码短语用于对存储在本地管理客户端上的安全密钥文件进行加密和解密。</block>
   <block id="7e2fd80391cbb19f61be6028669d1143" category="doc">为什么需要定义密码短语？</block>
   <block id="2f42cd01026066a070aa52e53e4d963f" category="paragraph">密码短语用于对存储在本地管理客户端上的安全密钥文件进行加密和解密。如果没有密码短语、则无法对安全密钥进行解密、并使用此安全密钥从启用了安全功能的驱动器中解锁数据、如果此驱动器重新安装在另一个存储阵列中。</block>
   <block id="2da87ae0f783e9cc7ac8f36a7af697e4" category="summary">默认集群是一个系统定义的实体、它允许登录到存储阵列的任何未关联主机端口标识符访问分配给默认集群的卷。</block>
@@ -6844,8 +6838,6 @@
   <block id="961886d373243f3f3f779b008441b5d2" category="cell">支持使用ATTO Technology、Inc.多路径驱动程序的Mac OS版本。</block>
   <block id="d93a7355c7e5ae529cbbd1c7386ef236" category="cell">Windows (ATTO)</block>
   <block id="1cef5a0ae504a39c3c685c81bb227bcc" category="cell">支持使用ATTO Technology、Inc.多路径驱动程序的Windows操作系统。</block>
-  <block id="fae9863ad38cf7cb4abba55837a6958e" category="cell">FlexArray (ALUA)</block>
-  <block id="80a4b6a6aea0733712df8ece7feeb565" category="cell">支持使用ALUA实现多路径的NetApp FlexArray 系统。</block>
   <block id="448462a9364fed0f780b5871c1332348" category="cell">IBM服务</block>
   <block id="ba5b374a9253be7b2e7ff414763a91ee" category="cell">支持IBM SAN卷控制器配置。</block>
   <block id="fb83a625e5852c1ba47fe358f2d50ffc" category="cell">出厂默认值</block>
@@ -6854,7 +6846,6 @@
   <block id="02677c9d7a9295a0b7ff23da80ed17c2" category="cell">支持使用具有3.9或更早内核的设备映射程序多路径故障转移解决方案 的Linux操作系统。</block>
   <block id="e9745a54dc083bc4c6e7adb0ba4a88bf" category="cell">窗口集群(已弃用)</block>
   <block id="ee99f98925e229fb230a1fca830d5dd4" category="cell">如果主机操作系统类型设置为此值、请改用Windows (集群或非集群)设置。</block>
-  <block id="e28ca758b5b6384ff2daa36accced63c" category="summary">在创建卷期间、系统会提示您提供有关工作负载使用情况的信息。</block>
   <block id="b5a3b95a88ff3f89275ca18c4736d4b8" category="doc">选定工作负载对卷创建有何影响？</block>
   <block id="0c6710fd70e8f6dfb7dc7c5ef665fd39" category="paragraph">在创建卷期间、系统会提示您提供有关工作负载使用情况的信息。系统会使用此信息为您创建最佳卷配置、您可以根据需要对其进行编辑。或者、您也可以在卷创建序列中跳过此步骤。</block>
   <block id="a9b6571e3fb4b307db1e9aeb13903f33" category="list-text">视频监控应用程序</block>
@@ -7010,7 +7001,6 @@
   <block id="25d294940d1800f4d27d4ba80d924e94" category="section-title">启用和禁用此功能</block>
   <block id="e8ce4dc5c23425001ae843ebfc09d20d" category="paragraph">在驱动器支持DULBE"的系统上、默认情况下会启用资源配置。您可以从"池和卷组"中禁用此默认设置。禁用资源配置是对现有卷执行的一项永久操作、无法反转(即、您无法为这些卷组和池重新启用资源配置)。</block>
   <block id="4435efc77a278305c3367a9af9389977" category="paragraph">但是、如果要为您创建的任何新卷重新启用资源配置、则可以从菜单：Settings[系统]执行此操作。请注意、在重新启用资源配置时、仅会影响新创建的卷组和池。任何现有卷组和池将保持不变。如果需要、您还可以从菜单：Settings[系统]再次禁用资源配置。</block>
-  <block id="e995e7f7f68380b2da6f062d6f736236" category="summary">对于EF300和EF600系统、可以将卷设置为支持512字节或4KiB块大小(也称为"扇区大小")。您必须在创建卷期间设置正确的值。</block>
   <block id="fb5754cb7d8aec1ca725e7242d365730" category="doc">关于主机块大小要求、我需要了解哪些信息？</block>
   <block id="e5e425d8ab1cbef0e34a067f0d88d470" category="paragraph">对于EF300和EF600系统、可以将卷设置为支持512字节或4KiB块大小(也称为"扇区大小")。您必须在创建卷期间设置正确的值。如果可能、系统会建议适当的默认值。</block>
   <block id="f4aa667b118a0a334c4fa467de995fc8" category="paragraph">在设置卷块大小之前、请阅读以下限制和准则。</block>
@@ -7020,7 +7010,6 @@
   <block id="bfa50d7e23cedec28f3a7c786ec7a651" category="list-text">如果使用写入4KiB块的驱动器创建卷组、则可以创建包含512字节或4KiB块的卷。</block>
   <block id="e131265d769e1bc2ac0e9288abe59c73" category="list-text">如果阵列具有iSCSI主机接口卡、则所有卷都将限制为512字节的块(无论卷组块大小如何)。这是由于实施了特定的硬件造成的。</block>
   <block id="714ec5306252a0c2268088a5e79bd8d2" category="list-text">设置块大小后、您将无法更改块大小。如果需要更改块大小、则必须删除卷并重新创建它。</block>
-  <block id="968c500c45a669526a5ae69ef252eb12" category="summary">如果要使两个或更多主机共享对同一组卷的访问、则需要创建主机集群。</block>
   <block id="36ba1dd2062be041e65d76f318fc9563" category="doc">为什么需要创建主机集群？</block>
   <block id="605c94544e16797cd75e903049c8c75f" category="paragraph">如果要使两个或更多主机共享对同一组卷的访问、则需要创建主机集群。通常、各个主机都安装了集群软件来协调卷访问。</block>
   <block id="25158e36dca2975554827639d80d3724" category="summary">您可以查看和管理软件存储库、其中列出了与适用于vCenter的存储插件关联的所有软件文件。</block>
@@ -7071,7 +7060,6 @@
   <block id="6ddafd51962fda13ede773e9d6350dd2" category="list-text">在*管理*页面中、选中存储阵列名称左侧的复选框。</block>
   <block id="374fea5b262769323b08b3962c808a45" category="list-text">选择行最右侧的省略号、然后从弹出菜单中选择*重命名存储阵列*。</block>
   <block id="96f8be2a5d55d9a167ed06cc1a5f9694" category="list-text">输入新名称并单击*保存*。</block>
-  <block id="c7f22d49f002f26198a719f2496c2e98" category="summary">导入设置功能是一个批处理操作、可将配置从一个存储阵列加载到多个存储阵列。在此操作期间导入的设置取决于源存储阵列在System Manager中的配置方式。</block>
   <block id="6aa467b445a7d222ea7a821c8df54a08" category="doc">导入了哪些设置？</block>
   <block id="5a336d7c8bb4d9fb626af7c0fffe68af" category="paragraph">导入设置功能是一个批处理操作、可将配置从一个存储阵列加载到多个存储阵列。</block>
   <block id="5f54df5b09ce6e5e7ccff3fed9aea673" category="paragraph">在此操作期间导入的设置取决于源存储阵列在System Manager中的配置方式。可以将以下设置导入到多个存储阵列：</block>
@@ -7084,7 +7072,6 @@
   <block id="1aa660524e4f7281ec5e49498a4718df" category="list-text">*系统设置*-配置包括卷的介质扫描设置、控制器的SSD缓存以及自动负载平衡(不包括主机连接报告)。</block>
   <block id="95ddff89f7e76cf544c140d3f049b138" category="summary">如果卷是使用命令行界面(CLI)创建的、或者已从其他存储阵列迁移(导入/导出)、则卷不会与工作负载关联。</block>
   <block id="184ee7795269728284ddf4700779c94b" category="doc">为什么这些卷不与工作负载关联？</block>
-  <block id="a755886af9ddc52625c98ff0c2403d42" category="summary">安全密钥由存储阵列中的控制器和启用了安全保护的驱动器共享。</block>
   <block id="2a0d49e5c65d1c328eea1427c45f821e" category="doc">在创建安全密钥之前、我需要了解哪些信息？</block>
   <block id="eb8e4643855758b3255653b9508bfb4a" category="paragraph">安全密钥由存储阵列中的控制器和启用了安全保护的驱动器共享。如果从存储阵列中删除了启用了安全保护的驱动器、则安全密钥可防止数据遭受未经授权的访问。</block>
   <block id="41f869dddf7c6279ec6063ce284c3e8e" category="paragraph">您可以使用以下方法之一创建和管理安全密钥：</block>
@@ -7189,7 +7176,6 @@
   <block id="5177a22291a0479f014a4c628e8c39bf" category="list-text">擦除已初始化的卷中的所有数据。</block>
   <block id="fc9997eb02932a98d6282e5da3bf886e" category="list-text">清除块索引、这样会将未写入的块读取为零填充(卷显示为完全空)。</block>
   <block id="0b74908e48cc1d1d0b3056cb2126fb0a" category="paragraph">此操作可能会很长，并且可能会影响系统性能。</block>
-  <block id="4599f147525488978c059ab5443c5a94" category="summary">此工作负载中的卷不与应用程序特定的工作负载关联、因此无法删除此工作负载。</block>
   <block id="cc41a400b6ddab31b3cc4c347ea5b96a" category="doc">为什么无法删除选定工作负载？</block>
   <block id="3bfd2179043341e09a4fc1cfd720d6ff" category="paragraph">此工作负载由一组使用命令行界面(CLI)创建或从其他存储阵列迁移(导入/导出)的卷组成。因此、此工作负载中的卷不会与特定于应用程序的工作负载关联、因此无法删除此工作负载。</block>
   <block id="bff2ada202630bbc11f607cc5ffa0e29" category="summary">当系统检测到至少11个未分配的驱动器或检测到一个符合现有池条件的未分配驱动器时、您可以自动创建池。</block>
@@ -7223,7 +7209,6 @@
   <block id="b19ae07679153c8839dce79280a9b977" category="paragraph">导入的设置包括LDAP (轻型目录访问协议)服务器的域名和URL、以及LDAP服务器用户组与存储阵列预定义角色的映射。</block>
   <block id="e79c0c6f8d005d753d2037c9281755c5" category="list-text">在选择设置对话框中、选择*目录服务*、然后单击*下一步*。</block>
   <block id="178bcda3e7560e5a5b5e8fa2c4f3b069" category="paragraph">现在、目标存储阵列配置了与源阵列相同的目录服务。</block>
-  <block id="4618a10c402a86f34f74700b56034c0f" category="summary">为池或卷组维护磁盘架和抽屉丢失保护</block>
   <block id="8a3f4e59944403d76cf4ffb618284325" category="doc">如何维护磁盘架和抽屉丢失保护？</block>
   <block id="5f18e254e37bfef58483cda02161565b" category="paragraph">要为池或卷组维护磁盘架和抽屉丢失保护、请使用下表中指定的标准。</block>
   <block id="a0db49ba470c1c9ae2128c3470339153" category="cell">级别</block>
@@ -7341,7 +7326,6 @@
   <block id="5e9ab766ec08679ade0079d0bb739b2e" category="list-text">单击*整合*。</block>
   <block id="310125557218a86df977fea54f7f1144" category="paragraph">系统将开始将卷组的可用容量区域整合(碎片整理)为一个连续的容量、以便执行后续的存储配置任务。</block>
   <block id="8b923050d3190a365119cba36abd83c1" category="paragraph">从导航边栏中、选择*操作*以查看整合可用容量操作的进度。此操作可能会很长，并且可能会影响系统性能。</block>
-  <block id="8289ad2daf4149715a39ad8d6af619b8" category="summary">具有已启用DA的基础卷的Snapshot卷不能分配给不支持数据保证(Data Assurance、DA)的主机。</block>
   <block id="a75d3526ba8cd40a248e9da80d0ba8d2" category="doc">为什么我看不到所有卷、主机或主机集群？</block>
   <block id="f956e41235aa6de0ef7cf1901fa9a994" category="paragraph">具有已启用DA的基础卷的Snapshot卷不能分配给不支持数据保证(Data Assurance、DA)的主机。您必须先在基础卷上禁用DA、然后才能将快照卷分配给不支持DA的主机。</block>
   <block id="92fc66f9534d94b4859793638454d6ee" category="paragraph">对于要将快照卷分配到的主机、请考虑以下准则：</block>
@@ -7906,7 +7890,6 @@
   <block id="77019701522f222bf26ade1b8082a1ee" category="sidebar">升级操作系统软件</block>
   <block id="ce3948f2b44ee14a18d362f994260727" category="sidebar">配置主机</block>
   <block id="f0ba1c2df528f80a7b9482044ac9d46b" category="sidebar">配置池和卷组</block>
-  <block id="483a5da192f46e3cfe8391d3ef234fc4" category="sidebar">常见问题解答</block>
   <block id="3ffd36cf4afe86c690f4b57be234a2ff" category="sidebar">EF系列产品规格</block>
   <block id="ecc348240fe0031a456c147f13126f0c" category="sidebar">E5700产品规格</block>
   <block id="239a8d1ddfc1ceae19ee25fea039a278" category="sidebar">E2800产品规格</block>
@@ -7974,10 +7957,7 @@
   <block id="04595c79a616b5c392556737aaa7347d" category="paragraph">* RHEL 7、RHEL 8和RHEL 9*</block>
   <block id="2a5b109c10fe6e93caf3666c9854f292" category="list-text">运行multipath -ll命令以获取NVMe设备列表。</block>
   <block id="210c9515d4a1e9c78e2608d073aeef56" category="list-text">在上记录启动程序的 GUID <block ref="00a1f89a34dac59e8a714860454ae51a" category="inline-xref-macro-rx"></block>。</block>
-  <block id="6dc10b003bcb8e0cbbcf076e7dbcdf2f" category="paragraph">此任务将包含适用场景 数据中心管理平台和 DCM2 驱动器架。</block>
   <block id="6616a8dcc33e3e23ed86909a9a46376e" category="admonition">SANtricity 11.40及更高版本支持iSCSI的数据保证功能。</block>
-  <block id="d8877bd06791feeb2257a189554b10c0" category="paragraph">这些过程适用于IOM12和IOM12B驱动器架。</block>
-  <block id="9d5445db77f905ba92077d0b48806948" category="admonition">这些过程适用于同类磁盘架IOM热插拔或更换。这意味着，您只能将 IOM12 模块更换为另一个 IOM12 模块，或者将 IOM12B 模块更换为另一个 IOM12B 模块。（您的磁盘架可以有两个 IOM12 模块，也可以有两个 IOM12B 模块。）</block>
   <block id="63651a0b8ef66d63649c69f52dd02292" category="list-text">Google Chrome 89或更高版本</block>
   <block id="695a09770fa3da1385898775bfef82b9" category="list-text">Mozilla Firefox 80或更高版本</block>
   <block id="de651d67770cb856f4d13c0980010807" category="list-text">Microsoft Edge 90或更高版本</block>
@@ -8059,7 +8039,6 @@
   <block id="7bb583eaeb72cab404957a32bf32e9fb" category="paragraph-title">示例A：E5700控制器架、在标准SAS配置中具有三个DE212C/DE224磁盘架。</block>
   <block id="ab945691a98936597c2ea25ebe10559a" category="paragraph-title">示例B：一个E5700控制器架、在标准SAS配置中具有一个DE212C/DE224磁盘架。</block>
   <block id="45d7b912755be5cce50a63e39e38af8a" category="section-title">第1步：验证新控制器的部件号</block>
-  <block id="f2ad0f8f286ab81e3d2722fa3c383e9b" category="admonition">只有SANtricity OS 11.70.2及更高版本才支持IOM12B模块。在安装或升级到IOM12B之前、请确保已更新控制器的固件。</block>
   <block id="fe52478447b1fa9a4c7ec89de67fdf4d" category="sidebar">热添加驱动器架</block>
   <block id="83af49c7a44a4352fd5c07a021524fea" category="paragraph">您必须运行最新兼容的RHEL 7、RHEL 8、RHEL 9、SUSE Linux Enterprise Server 12或15 Service Pack操作系统。请参见<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> 有关最新要求的完整列表。</block>
   <block id="889869e1d3bab19951bb91f386d721de" category="list-text">对于RHEL 8和RHEL 9、安装网络脚本：</block>
@@ -8481,9 +8460,7 @@
   <block id="5835021a0e70e0a13bc60ddff4162aca" category="paragraph"><block ref="5835021a0e70e0a13bc60ddff4162aca" category="inline-image-macro-rx" type="image"></block></block>
   <block id="17360156c8ceaa57309077e605e88697" category="image-alt">E2800和E5700安装流程工作流</block>
   <block id="9388df48e85777aba8981c9e79739824" category="inline-image-macro">E4012直接拓扑、宽度= 1000个峰值</block>
-  <block id="9dcbe6d474a3385e1258eeebe1d96cfa" category="paragraph"><block ref="9dcbe6d474a3385e1258eeebe1d96cfa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e5115f367ddc4b23f2a5a9dce410d220" category="inline-image-macro">E4012网络结构拓扑、宽度=1000个峰值</block>
-  <block id="fe5422a7f743c4750aa826cb030729eb" category="paragraph"><block ref="fe5422a7f743c4750aa826cb030729eb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2f998d3759a46f941c16045d05799b20" category="inline-image-macro">E4000控制器管理端口</block>
   <block id="419c5b2edef00ba85d62682d5ff0138c" category="paragraph"><block ref="419c5b2edef00ba85d62682d5ff0138c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f530fae0a98563bf22e6ee7a23163588" category="list-text">按照浏览器的说明继续并启动 SANtricity System Manager 。如果无法建立连接，请验证您是否未从 DHCP 服务器接收网络配置。</block>
@@ -8491,9 +8468,7 @@
   <block id="05f07938d9743df4b9673ac6e16d5eaf" category="list-text">使用先前设置的密码登录。此时将显示配置网络设置向导。</block>
   <block id="61c8d556c74bbd20f07d7c1565d11a11" category="list-text">在最简单的网络配置中、将控制器连接到Web浏览器、并使用SANtricity系统管理器管理单个E4000系列存储阵列。要访问 System Manager ，请使用与配置管理端口相同的 IP 地址。</block>
   <block id="ed82e034d7d377cc12aa1d89cea33d43" category="inline-image-macro">E4060直接拓扑、宽度= 1000个峰值</block>
-  <block id="98e6536dfa926f6bd4a1900657c27282" category="paragraph"><block ref="98e6536dfa926f6bd4a1900657c27282" category="inline-image-macro-rx" type="image"></block></block>
   <block id="427b3e2ab20960e704a22e39fbcda634" category="inline-image-macro">E4060网络结构拓扑、宽度=1000个峰值</block>
-  <block id="72c6889744a45c86c32b640c76b2138a" category="paragraph"><block ref="72c6889744a45c86c32b640c76b2138a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ab2bd875f2f303555807a3b13a6b64bb" category="paragraph"><block ref="ab2bd875f2f303555807a3b13a6b64bb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ff2e827a53ef25671ffc7469bb5208a2" category="list-title">示例A：一个E4000控制器架、其中三个DE212C/DE224C磁盘架采用标准SAS配置。</block>
   <block id="ecf826f3b05c4b630ca5e118d6536932" category="list-title">示例B：一个E4000控制器架、在标准SAS配置中具有一个DE212C/DE224C磁盘架。</block>
@@ -9711,4 +9686,22 @@
   <block id="ed389a9acb72de33be78325f147d7d8c" category="doc">了解SANtricity Web服务和Unified Manager</block>
   <block id="f14a1a04aab620524ee87bd0fd002ab1" category="doc">了解SANtricity Web服务代理术语</block>
   <block id="abf831fd1f3fab9981530f2ea36177b2" category="doc">管理SANtricity Web服务代理统计信息的自动轮询</block>
+  <block id="dce708315880727f8ba7e84bab86b168" category="paragraph">此过程适用于 IOM12、IOM12B 和 IOM12C 驱动器架。</block>
+  <block id="3f457ff9c17714d64ba75fd9d6d618f2" category="admonition">IOM12C 模块仅在 SANtricity OS 11.90R3 及更高版本上受支持。在安装或升级到IOM12C之前、请确保已更新控制器的固件。</block>
+  <block id="8d93e2013316d1241b304432f0103be5" category="admonition">此操作步骤 适用于同类磁盘架 IOM 热插拔或更换。这意味着，您只能将 IOM12 模块更换为另一个 IOM12 模块，或者将 IOM12C 模块更换为另一个 IOM12C 模块。（您的磁盘架可以有两个 IOM12 模块，也可以有两个 IOM12C 模块。）</block>
+  <block id="e0f75caa67759a6c5e34cbad6ae84d57" category="admonition">只有SANtricity OS 11.70.2及更高版本才支持IOM12C模块。在安装或升级到IOM12C之前、请确保已更新控制器的固件。</block>
+  <block id="bbfd15448c83d50ee0a4a62cc152d856" category="paragraph"><block ref="bbfd15448c83d50ee0a4a62cc152d856" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f7178ecd56d859f9f7e4878779a236ea" category="paragraph"><block ref="f7178ecd56d859f9f7e4878779a236ea" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="949ca69f081f10e2fc1938e0e24759c8" category="paragraph"><block ref="949ca69f081f10e2fc1938e0e24759c8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="142dc71d06d08da442f6fe84d80e526d" category="paragraph"><block ref="142dc71d06d08da442f6fe84d80e526d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dea137ce87e98617e1e7f9c6f97eeeff" category="admonition">这些过程适用于同类磁盘架IOM热插拔或更换。这意味着，您只能将 IOM12 模块更换为另一个 IOM12 模块，或者将 IOM12C 模块更换为另一个 IOM12C 模块。（您的磁盘架可以有两个 IOM12 模块，也可以有两个 IOM12C 模块。）</block>
+  <block id="88db80c02306ca8e9bac2283b0d2f6bf" category="paragraph">此过程适用于 DCM、DCM2 和 DCM3 驱动器架。</block>
+  <block id="b2d2940e83701ff478975b36d255b487" category="paragraph">此任务适用于 DCM、DCM2 和 DCM3 驱动器架。</block>
+  <block id="b1151aae9531d2f5e85d085e8878cea6" category="summary">如果您只是想快速了解问题解答，此常见问题解答会很有帮助。</block>
+  <block id="a318c851f3d3c0a7eeb1313f1422c3b3" category="doc">SANtricity Storage Plugin for vCenter 的常见问题解答</block>
+  <block id="33f3664698fdab78efe7579f9849af32" category="paragraph"><block ref="b6ee0733cf8f7004d998d8fc49cc2022" prefix="" category="inline-code"></block></block>
+  <block id="a10a0fef1a8b50d16443976fedae1e16" category="section-title">11.90R3中的新增功能</block>
+  <block id="c78544d43a065eb825edb9e16bf0e9ad" category="paragraph">SANtricity 操作系统对 IOM12C 和 DCM3 的支持</block>
+  <block id="94d90ce4793f949687897ec062d97b9c" category="paragraph">控制器固件版本 11.90R3 或更高版本现已支持 IOM12C 和 DCM3 SAS-3 磁盘架。IOM12C和 DCM3 磁盘架将替代 IOM12B 和 DCM2 磁盘架。</block>
+  <block id="3a2a69a35a4560167d4c0478029a3f70" category="sidebar">vCenter 存储插件常见问题解答</block>
 </blocks>

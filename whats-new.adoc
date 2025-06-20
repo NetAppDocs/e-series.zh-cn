@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: whats new, new features, SANtricity 11.90, SANtricity 11.80 
+keywords: whats new, new features, SANtricity, 11.9, 11.8 
 summary: SANtricity OS 中的新增功能。 
 ---
 = SANtricity OS 中的新增功能
@@ -14,6 +14,21 @@ summary: SANtricity OS 中的新增功能。
 [role="lead"]
 下表介绍了最新SANtricity操作系统版本中用于嵌入式管理E4000、EF300/EF300C、EF600/EF600C、E2800/EF280和E5700/EF570控制器的新增功能。
 
+
+
+== 11.90R3中的新增功能
+
+[cols="35h,~"]
+|===
+| 新增功能 | Description 
+
+
+ a| 
+SANtricity 操作系统对 IOM12C 和 DCM3 的支持
+ a| 
+控制器固件版本 11.90R3 或更高版本现已支持 IOM12C 和 DCM3 SAS-3 磁盘架。IOM12C和 DCM3 磁盘架将替代 IOM12B 和 DCM2 磁盘架。
+
+|===
 
 
 == 11.90R2中的新增功能

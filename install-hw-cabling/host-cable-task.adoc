@@ -45,7 +45,7 @@ image::../media/2hosts_4hbas_ieops-2146.svg[两个主机/四 个HBA和两个控�
 下图显示了一个连接示例。对于提供配置功能的交换机，您应隔离每个启动程序和目标对。
 
 .两台主机和两台交换机
-image::../media/topology_host_fabric_generic.png[两台主机和两台交换机的布线]
+image::../media/topology_host_fabric_generic_ieops-2152.svg[两台主机和两台交换机的布线]
 
 * （ 1 ） * _ 将每个主机适配器直接连接到交换机。 _
 

@@ -28,7 +28,7 @@ NOTE: 控制器左下方(e1a、e1b、e1c和e1d)和右上侧(e0a和e0b)的主机�
 --
 以下示例显示了使用直连拓扑连接到数据主机的布线。
 
-image:../media/drw_e4012_direct_topology_ieops-2047.svg["E4012直接拓扑、宽度= 1000个峰值"]
+image:../media/drw_e4012_direct_topology_ieops-2156.svg["E4012直接拓扑、宽度= 1000个峰值"]
 
 . 将每个主机HBA端口连接到控制器上的主机端口(e1a、e1b、e1c和e1d或e0a和e0b)。
 
@@ -41,7 +41,7 @@ NOTE: 有关其它布线图示例，请参阅 https://docs.netapp.com/us-en/e-se
 --
 以下示例显示了使用网络结构拓扑连接到数据主机的情况。
 
-image:../media/drw_e4012_fabric_topology_ieops-2046.svg["E4012网络结构拓扑、宽度=1000个峰值"]
+image:../media/drw_e4012_fabric_topology_ieops-2157.svg["E4012网络结构拓扑、宽度=1000个峰值"]
 
 . 将每个主机适配器直接连接到交换机。
 . 将每个交换机直接连接到控制器上的主机端口(e1a、e1b、e1c和e1d或e0a和e0b)。
