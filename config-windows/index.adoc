@@ -37,5 +37,4 @@ summary: 对具有 E 系列系统的 Windows 主机使用快速配置。
 * 联机帮助—介绍如何使用 SANtricity System Manager 完成配置和存储管理任务。可从产品中获取。
 * https://kb.netapp.com/["NetApp 知识库"^] （文章数据库）—提供各种 NetApp 产品和技术的故障排除信息，常见问题解答和说明。
 * http://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^] —用于搜索符合 NetApp 指定标准和要求的 NetApp 产品和组件的配置。
-* http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61343["NetApp 文档： Host Utilities"^] —提供当前 Windows Unified Host Utilities 版本的文档。
 

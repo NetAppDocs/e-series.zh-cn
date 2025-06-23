@@ -1132,15 +1132,7 @@
   <block id="093eba936291bd32a865bdc3cedc6822" category="list-text">查找目标 ID 。</block>
   <block id="13461e28dcd114adac2af3049403e6ed" category="admonition">dsmUtil 实用程序区分大小写。</block>
   <block id="31e6725ea9038f80c84ea9073561cdaf" category="list-text">查看 LUN 的路径，并验证是否具有预期的路径数。在命令的 ` &lt;target ID&gt;` 部分中，使用您在上一步中找到的目标 ID 。</block>
-  <block id="cade4234340dbc4fee36a7571946fd32" category="summary">安装适用于 Windows 的 Windows Unified Host Utilities 快速方法。</block>
-  <block id="b98d11fdfd34118f790a089b09e3367d" category="paragraph">Windows Unified Host Utilities 工具可帮助您将主机计算机连接到 NetApp 存储系统，并在主机计算机上设置所需的参数。此外，您还可以设置适当的磁盘超时，以便在使用 NetApp 存储时获得最佳读 / 写性能。</block>
-  <block id="45010da5958c7fc3d60c5414c380bb70" category="inline-link">NetApp 文档： Host Utilities</block>
-  <block id="6726b8f82b27b4eca9bba6dc03228ab6" category="admonition">有关详细信息，请参见位于下的 _Windows Host Utilities 安装指南 _<block ref="5a703dc316d0405f2b69548f35177839" category="inline-link-rx"></block>。</block>
-  <block id="e711e1dd664e14a77c4bff5ab909a662" category="list-text">使用<block ref="49d81d143d5c8b402603532056154481" category="inline-link-rx"></block> 确定要安装的 Unified Host Utilities 的适当版本。</block>
-  <block id="d7b565023737aad44d6724a49bd2b673" category="paragraph">在每个支持的配置中，版本会以一列的形式列出。</block>
   <block id="09ea0908fbfc4cde85bf416e35dc55c8" category="inline-link">NetApp 支持</block>
-  <block id="f64d5867fd911e2b14d8680010121759" category="list-text">从下载 Unified Host Utilities<block ref="2ff36e7792a0e0257d19a11dce8cade8" category="inline-link-rx"></block>。</block>
-  <block id="59fbc26a1831942cb6ebf2d627aa2db8" category="admonition">无法使用 SANtricity 存储管理器安装程序安装此实用程序包。</block>
   <block id="135d30ad6d2da4597cfa1d9690fba47a" category="summary">对于 SAS 协议，您可以确定主机端口地址并进行建议的设置。</block>
   <block id="d723a375133225f8e40ad6de1d56e805" category="paragraph">对于 SAS 协议，您可以确定主机端口地址并进行相应的设置。</block>
   <block id="bfcd4b5a45e2121dd605c54a4da4bd65" category="paragraph">使用 HBA 实用程序查找 SAS 地址，然后使用 HBA BIOS 进行相应的配置设置。</block>
@@ -1153,7 +1145,6 @@
   <block id="49bf621d794c6d35fdd6c9c6ba005c75" category="paragraph">此快速方法包括以下步骤，也在中进行了概述 <block ref="e728cc7e5761cb01fff7213fb14bd2b8" category="inline-link-macro-rx"></block>。</block>
   <block id="5903a917b575023b60264c602c220771" category="inline-link-macro">光纤通道（ FC ）</block>
   <block id="73f3e7e865d667420a49e86f5dd4e62e" category="list-text"><block ref="73f3e7e865d667420a49e86f5dd4e62e" category="inline-link-macro-rx"></block></block>
-  <block id="99958fd8a8267b3560ce1c363b5be7e7" category="list-text"><block ref="f8c7ff95c6f2730c965212cb5ee95d98" category="inline-link-rx"></block> —提供当前 Windows Unified Host Utilities 版本的文档。</block>
   <block id="a899d9da954027e694f26a36852504c1" category="summary">安装 DSM 软件包，其中包含适用于 Windows 的多路径软件。</block>
   <block id="1ba6b3a85eafdf73a826758f36c2adf8" category="paragraph">要为存储阵列提供冗余路径，您可以安装 SANtricity Windows DSM 软件包并使用适用于 Windows 的多路径软件包。</block>
   <block id="d1a338bb4fb19498373011fca875f51f" category="paragraph">正确的管理员或超级用户权限。</block>
@@ -1369,7 +1360,6 @@
   <block id="12cb93ac5470b7b9ed9a176553005bef" category="list-text">一个管理工作站，其浏览器可访问控制器的 SANtricity 系统管理器。（要打开 System Manager 界面，请将浏览器指向控制器的域名或 IP 地址。）</block>
   <block id="3a35aeaf167e71373e4f42c63fa412a6" category="paragraph">您也可以使用命令行界面（ CLI ）执行某些过程。如果您无法访问 CLI ，可以执行以下操作之一：</block>
   <block id="31380923165d24c4bc7be3835c03f97d" category="list-text">* 对于 SANtricity System Manager （ 11.60 及更高版本） * —从 System Manager 下载命令行界面包（ zip 文件）。转到菜单：设置 [ 系统 &gt; 加载项 &gt; 命令行界面 ] 。然后，您可以从操作系统提示符处执行问题描述命令行界面命令，例如 DOS C ：提示符。</block>
-  <block id="d4e243a780f83aeb7aba4ed3ddb02aab" category="list-text">* 对于 SANtricity 存储管理器 / 企业管理窗口（ EMW ） * —按照快速指南中的说明下载并安装该软件。您可以从 EMW 中运行命令行界面命令，方法是选择菜单： Tools[ 执行脚本 ] 。</block>
   <block id="b9d4867c50ac20e2b2f9a49c74311526" category="section-title">双工配置要求</block>
   <block id="ee745daf1ff11c64756223bf483ff385" category="paragraph">对于具有两个控制器的控制器架（双工配置），只要满足以下条件，您就可以在存储阵列启动并执行主机 I/O 操作时更换控制器箱：</block>
   <block id="57c68021dbcd118e7d2ccece06f119da" category="list-text">磁盘架中的第二个控制器箱处于最佳状态。</block>
@@ -3053,7 +3043,6 @@
   <block id="61f02e2c84e5b52874127600576222a5" category="list-text">转至硬件页面，确认所有组件均已显示。</block>
   <block id="4c1edfa8a9683e5a7cf6c1058c397f26" category="list-text">转到软件和固件清单对话框（转到菜单：支持 [ 升级中心 ] ，然后单击 * 软件和固件清单 * 链接）。验证新的软件和固件版本。</block>
   <block id="9923033ddd1d0d8a8cf07d6215998241" category="list-text">升级控制器 NVSRAM 时，在激活过程中，应用于现有 NVSRAM 的所有自定义设置都将丢失。激活过程完成后，您必须再次将自定义设置应用于 NVSRAM 。</block>
-  <block id="788d3c503714b3eb6632371a82cc20b5" category="list-text">使用 CLI 命令将存储阵列设置更改为双工。要使用命令行界面，您可以在下载命令行界面软件包时打开命令提示符，也可以在安装了 Storage Manager 的情况下打开企业管理窗口（ EMW ）。</block>
   <block id="a05448d81309432cf8e25da48e5e1c90" category="list-text">在命令提示符处：</block>
   <block id="b837c5d8d4c1034fca14d84eff94c0d9" category="list-text">使用以下命令将阵列从单工切换到双工：</block>
   <block id="6a66f87eeb104bf47e94bbe8480ce241" category="list-text">使用以下命令重置控制器。</block>
@@ -5087,10 +5076,6 @@
   <block id="902bc0f0e4bf7414bb5a92ff0daa7055" category="list-text">运行 `dIFF` 命令将复制的文件与原始文件进行比较。</block>
   <block id="86cd25e1b1566d77f5af83eb0ffcd3f0" category="paragraph">删除复制的文件和文件夹。</block>
   <block id="c60c64d662d0e7a5a446c9f7d86d1e12" category="summary">使用 multipath.conf 文件是多路径守护进程 multipathd 的配置文件。</block>
-  <block id="3a12d0edc81531758f12c83024fbc77e" category="summary">LInstall Linux Unified Host Utilities When Using iSER 。</block>
-  <block id="6cfa91f7028db85237c0770258925d8e" category="paragraph">Linux Unified Host Utilities 工具可帮助您管理 NetApp 存储，包括故障转移策略和物理路径。</block>
-  <block id="8a761de12813fd81d6a6c12a762a07f1" category="list-text">使用<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> 确定要安装的 Unified Host Utilities 的适当版本。</block>
-  <block id="f4011c90372ee12814aefc97e4debb36" category="list-text">从下载 Unified Host Utilities<block ref="4ce7a3cde07b85b80ee4fe046584534d" category="inline-link-rx"></block>。</block>
   <block id="d3f57efe528790f599c0cc28cb9e9853" category="paragraph">首先，您应验证 Linux 配置是否受支持，并查看控制器，主机和恢复限制。</block>
   <block id="1680224fdb838ac81966da41faeeb7ba" category="section-title">查看基于 FC 的 NVMe 的限制</block>
   <block id="176e6208df895306e7b0758c31537a3e" category="section-title">存储和灾难恢复限制</block>
@@ -5271,7 +5256,6 @@
   <block id="3b5c5ae54533da138be94559c533a510" category="list-text">单击 * 配置 * 。</block>
   <block id="d9c20a4f4eb3b39c23e7abe09762149f" category="list-text">对要使用的其他 HIC 端口重复步骤 5 和 6 。</block>
   <block id="532217e36a41f25d96ffca7947284f5c" category="paragraph">如果您是 iSCSI 用户，则在配置 iSCSI 时关闭了设置向导。</block>
-  <block id="6e66b862960ebd7ec3afa00536df9e2b" category="summary">使用 iSCSI 时安装 Linux Unified Host Utilities 。</block>
   <block id="5dd9d62ce4e8e03736012f8834a6e4fd" category="summary">您可以根据 Linux 版本配置定向到设备目标的 I/O 。DM-MP 负责管理这些虚拟目标的物理路径。</block>
   <block id="23a1a118541ab0d1766faa1805b06432" category="paragraph">您可以通过 ` /dev/mapper` 中的 `dm` device 或 `symlink` 访问这些块设备；例如：</block>
   <block id="0c6af110b63e1c65cc44419feea8f957" category="summary">查看使用快速方法设置 E 系列阵列和 Linux 主机的要求。</block>
@@ -5375,13 +5359,10 @@
   <block id="decdd7cb14919e61d850e61099b2b701" category="list-text">子网 4 ：主机 2 HCA 端口 2 和控制器 2 主机端口 2</block>
   <block id="c318d779fc072ffe72c7c3dd1e42553c" category="paragraph">在网络结构拓扑中，使用一个或多个交换机。请参见<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> 有关支持的交换机的列表。</block>
   <block id="257b40198f0083663eee051dc8899cd7" category="cell">软件启动程序 NQN</block>
-  <block id="e7f0bd2c7ce5a2859d99775fd89bb0a2" category="summary">使用 FC 时安装 Linux Unified Host Utilities 。</block>
   <block id="43256533b4d88b90a519151bb6b8744e" category="summary">确定主机端口 GUID 。</block>
   <block id="d405d36a5a07f387a8a07ebe6eeb8c55" category="list-text">运行 `ibstat` 命令以显示端口信息。</block>
   <block id="9fd1ccf35b45152e10c1dcc3a278a357" category="inline-xref-macro">SRP 工作表</block>
   <block id="e8377a168400202c4d751db31f2af66a" category="list-text">在上记录启动程序的 GUID <block ref="637e124a730f0905ce6e480d5b773394" category="inline-xref-macro-rx"></block>。</block>
-  <block id="bd97f9e0585f1ab3a70a824e4f5ffe79" category="summary">Linux Unified Host Utilities 7.1 包含用于管理 NetApp 存储的工具，包括故障转移策略和物理路径。</block>
-  <block id="c4a120813372f7f07d6de687ff0fc6a6" category="paragraph">Linux Unified Host Utilities 软件包包含用于管理 NetApp 存储的工具，包括故障转移策略和物理路径。</block>
   <block id="fa74964c5c74c111309afef2dec3ccb9" category="paragraph">首先，您应验证 Linux 配置是否受支持，并查看控制器，交换机，主机和恢复限制。</block>
   <block id="c6179d2fb67eca2c2f51c1dd8a357e71" category="section-title">验证基于 RoCE 的 NVMe 限制</block>
   <block id="f384907c3dd58bb2d8f3b9ac157c0414" category="section-title">交换机限制</block>
@@ -5967,8 +5948,6 @@
   <block id="cbb059200dfb7db372e5958a687a7f40" category="list-text">使用 SANtricity 软件配置和管理存储阵列。</block>
   <block id="20a131c60e6c405bb973f52c70e6d104" category="list-text">在最简单的网络配置中，将控制器连接到 Web 浏览器，然后使用 SANtricity 系统管理器管理单个 E2800 或 E5700 系列存储阵列。</block>
   <block id="005889eb2bd1ad96c577fc46302784e4" category="list-text">为磁盘架布线。</block>
-  <block id="c0775f0da6502a62c364501a8afa66ed" category="paragraph">根据您的配置为系统布线。如果所需布线选项比所示示示示例更多，请参见 <block ref="d28b440e6afa4df86a4a85820e62c38b" category="inline-link-macro-rx"></block>。</block>
-  <block id="1984650e2174e4cd6e72f937ef372c57" category="paragraph">对于所示示示示例，您需要使用以下缆线：</block>
   <block id="6bb39a0f441f51677398fb4553a6f0c1" category="paragraph">* SAS 缆线 *</block>
   <block id="597bde72a3d1602b00297a27da8f77e0" category="list-text">使用缆线将控制器 A 连接到第一个驱动器架的 IOM A 。</block>
   <block id="7f1c18457c9760a1f48d05d01c28a563" category="list-text">使用缆线将第一个驱动器架的 IOM A 连接到第二个驱动器架的 IOM A 。</block>
@@ -6009,8 +5988,6 @@
   <block id="4aef9ac85da2801779223aa21342d5bd" category="paragraph">安装了驱动器的磁盘架（挡板单独包装）</block>
   <block id="74a14e251e7e1bd23c324b4b1a8cd242" category="paragraph">SAS 缆线仅随驱动器架提供</block>
   <block id="37d313349fe563ae8b848d2dedc9b49d" category="paragraph">SAS 缆线</block>
-  <block id="ba51d8b064560c05234bcb7cf908140c" category="paragraph">根据您的配置为系统布线。如果所需的布线选项比本节所示的示例更多，请参见 <block ref="d28b440e6afa4df86a4a85820e62c38b" category="inline-link-macro-rx"></block>。</block>
-  <block id="825f1bce0ca9afca4f9d03067ac55692" category="paragraph">对于本节所示的示例，您需要使用以下缆线：</block>
   <block id="8595fe2de42408ab312cb1a2d109d144" category="list-text">使用缆线将控制器 B 连接到第二个驱动器架的 IOM B 。</block>
   <block id="56aa775b7b016485421d08de547d716b" category="summary">查看安装和设置 E2800 和 E5700 的过程。</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="doc">概述</block>
@@ -6035,7 +6012,6 @@
   <block id="cbcf19ef40f1b61a63478c8e22c42099" category="sidebar">以太网布线</block>
   <block id="c5d1e465274381bca5df236c2a5a7d57" category="sidebar">部署软件</block>
   <block id="18471c1ff811bd0bcb293d2453b59771" category="sidebar">验证 Linux 配置</block>
-  <block id="a44a6c0b1372610fbe5ce8ba27e0e377" category="sidebar">安装和配置主机实用程序</block>
   <block id="b7d6b71801787e9bb9cabee39a18d4be" category="sidebar">安装 SANtricity 存储管理器</block>
   <block id="511bc26995332ccd1bc373f2533ac9e7" category="sidebar">访问 SANtricity 系统管理器</block>
   <block id="4fa43a5f70872c9934e31e9e40e565f9" category="sidebar">配置多路径软件</block>
@@ -6076,7 +6052,6 @@
   <block id="f937177c870063d921c3b04fc46d70e9" category="sidebar">通过 FC 专用任务执行 NMVe</block>
   <block id="b847c90a690d3ed6ab537da4170e75ce" category="sidebar">在主机上配置存储</block>
   <block id="51db7ba6619e3142a5523bc5debfd5ad" category="sidebar">验证 Windows 配置</block>
-  <block id="4c3d64befec3af3f83707e126e8b1880" category="sidebar">安装和配置 Unified Host Utilities</block>
   <block id="cfd5a063d93f48df8b64774d28254314" category="sidebar">发现主机上的存储</block>
   <block id="55c745a83eb000156fff568d7b93fa8c" category="sidebar">升级系统</block>
   <block id="cf14c2021274780551c926622b5fa48e" category="sidebar">控制器硬件升级</block>
@@ -8034,10 +8009,6 @@
   <block id="731e4c243221cff11b35e735d54a097c" category="section-title">两柱机架—2U</block>
   <block id="08e15a26eb1bed02ff476c90993bb81d" category="section-title">四柱机架或机柜—2U</block>
   <block id="f7e582702fa43947010600df41688562" category="section-title">四柱机架—SuperRail</block>
-  <block id="88587640720455d00dd679a1ce9fe099" category="paragraph-title">示例A：一个E2860控制器架、在标准SAS配置中具有两个DE460C磁盘架。</block>
-  <block id="5e2cc996382bb24824986ff473c63abc" category="paragraph-title">示例B：一个E2860控制器架、其中一个DE460C磁盘架采用标准SAS配置。</block>
-  <block id="7bb583eaeb72cab404957a32bf32e9fb" category="paragraph-title">示例A：E5700控制器架、在标准SAS配置中具有三个DE212C/DE224磁盘架。</block>
-  <block id="ab945691a98936597c2ea25ebe10559a" category="paragraph-title">示例B：一个E5700控制器架、在标准SAS配置中具有一个DE212C/DE224磁盘架。</block>
   <block id="45d7b912755be5cce50a63e39e38af8a" category="section-title">第1步：验证新控制器的部件号</block>
   <block id="fe52478447b1fa9a4c7ec89de67fdf4d" category="sidebar">热添加驱动器架</block>
   <block id="83af49c7a44a4352fd5c07a021524fea" category="paragraph">您必须运行最新兼容的RHEL 7、RHEL 8、RHEL 9、SUSE Linux Enterprise Server 12或15 Service Pack操作系统。请参见<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> 有关最新要求的完整列表。</block>
@@ -8212,7 +8183,6 @@
   <block id="cc1b53336ed5c926305dd7ad876ab1d2" category="admonition">对于SANtricity OS 11.80GA及更高版本、EF600支持基本托盘中不含驱动器的扩展架配置使用此配置时、请确保驱动器已填充到扩展架中、并正确连接到基座托盘、然后再打开系统电源。</block>
   <block id="f9c81137922296691747f3cff9a92105" category="list-text"><block ref="f9c81137922296691747f3cff9a92105" category="inline-link-rx"></block></block>
   <block id="c68dfa9143daa0b2c3c80d2545e2410c" category="inline-link">下载SANtricity系统管理器联机帮助下的命令行界面(CLI)主题</block>
-  <block id="0c229260a68aeca566d73a23ad233dcd" category="admonition">或者、您也可以使用smcli命令<block ref="14993f95e0d6fc04f9966b0c368a7ed6" prefix=" " category="inline-code"></block> 以执行与Unified Host Utility工具相同的功能。SMCli,包括在SANtricity操作系统中，并可通过SANtricity系统管理器下载。有关如何通过SANtricity系统管理器下载SMcli的详细信息、请参阅<block ref="a9fe8fbe4d692fa7e3dc0b66710307cd" category="inline-link-rx"></block>。</block>
   <block id="ffc3de562db3aaacf94180bc367bf157" category="admonition">如果您使用的是 SANtricity 软件 11.60 及更高版本，则无需执行以下步骤。SANtricity 安全命令行界面（ SMcli ）包含在 SANtricity 操作系统中，可通过 SANtricity 系统管理器下载。有关如何通过SANtricity系统管理器下载SMcli的详细信息、请参阅 <block ref="07ba191255ffe5607ddf4202e3c76da7" category="inline-link-macro-rx"></block></block>
   <block id="fc4f413bbdc13c9d07bb87f1f0e4b5bc" category="admonition">从SANtricity软件11.80.1版开始、不再支持主机上下文代理。</block>
   <block id="5f0e6cffb0f871fd63ee412b0867faa5" category="admonition">对于运行SANtricity 11.60及更高版本的平台、默认子网掩码为255.255.0.0。</block>
@@ -8252,8 +8222,6 @@
   <block id="e5a4a8069ad5713adce4d473829f3108" category="admonition">只要出现以下更换情况、控制器的琥珀色警示LED就会熄灭：</block>
   <block id="a425ad1782379ad30aed42d2cca2a9de" category="list-text">备用电源出现故障</block>
   <block id="197afe3e4b0fdccae7f0384e342bb289" category="list-text">您可以使用smcli命令<block ref="14993f95e0d6fc04f9966b0c368a7ed6" prefix=" " category="inline-code"></block> 以显示卷的适用设备名称。SMCli,包括在SANtricity操作系统中，并可通过SANtricity系统管理器下载。有关如何通过SANtricity系统管理器下载SMcli的详细信息、请参阅<block ref="a9fe8fbe4d692fa7e3dc0b66710307cd" category="inline-link-rx"></block>。</block>
-  <block id="d699daec8de3b69e6a41a8c5e1e7f44e" category="inline-link">安装Linux Unified Host Utilities 7.1</block>
-  <block id="7c4ed11037f1ffa580c5462fde3a9a9c" category="list-text"><block ref="5a6c0185dc13c38c5945f8fa47c41898" category="inline-link-rx"></block> --介绍如何安装Linux Unified Host Utilities 7.1。</block>
   <block id="28af2c239fc893bd1a2013f2e8b4b941" category="section-title">11.80.1R1中的新增功能</block>
   <block id="5769aac2d83733db3bf7507b56dd86e9" category="paragraph">增加了新的自签名和CA签名管理证书的密钥大小长度。</block>
   <block id="8545f755b4f7a99afe330df57699f365" category="paragraph">SANtricity系统管理器和Unified Manager应用程序自签名证书的管理证书密钥大小长度已从2048位修改为3072位。此更改将应用于SANtricity应用程序中新生成的自签名证书和CA签名证书。密钥长度是固定的、不受NV遭受NV遭受 中默认密钥大小定义的影响。</block>
@@ -8411,9 +8379,6 @@
   <block id="8ad5f5a67faf8ddadaa0107a57f04b61" category="paragraph"><block ref="8ad5f5a67faf8ddadaa0107a57f04b61" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bee25ddf22954764638be8db059a3505" category="inline-image-macro">SAS电缆</block>
   <block id="39d650b4b632da15b05f78d8c80db6c3" category="paragraph"><block ref="39d650b4b632da15b05f78d8c80db6c3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="004c0caf3af4f9614a7e07b8bafd8e07" category="inline-image-macro">SAS配置中的E5700控制器</block>
-  <block id="9ffb511c6f5b44a46bde2c5f9739aa5b" category="paragraph"><block ref="9ffb511c6f5b44a46bde2c5f9739aa5b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="18cecd602006ce40ce09cf4e4c2d38b3" category="paragraph"><block ref="18cecd602006ce40ce09cf4e4c2d38b3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="40f3696ce1975405b3dd3b4c88fee920" category="paragraph"><block ref="40f3696ce1975405b3dd3b4c88fee920" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f043e2cf14bf90f5f6fdde2eedd27d54" category="inline-image-macro">电源架连接</block>
   <block id="11fd48921050b14f467f651de93de4a8" category="paragraph">*示例：电源连接位于磁盘架背面。*<block ref="a532dab930fd15f0637a30e402d8f9a2" category="inline-image-macro-rx" type="image"></block></block>
@@ -8447,9 +8412,6 @@
   <block id="a6afe792341ed6e15acdc5ac572683c9" category="paragraph"><block ref="a6afe792341ed6e15acdc5ac572683c9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5ac609c12de89a4fb426124bce2b8fe9" category="inline-image-macro">E5700管理端口</block>
   <block id="7638544025c69718a924e0f8e14fffd6" category="paragraph"><block ref="7638544025c69718a924e0f8e14fffd6" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0c939f4611f00ba920181cdd25b91423" category="inline-image-macro">SAS配置中的E2860控制器</block>
-  <block id="50c46e741de9ff81436b6f99809dde68" category="paragraph"><block ref="50c46e741de9ff81436b6f99809dde68" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b9e37640fcc1990a420e73cbc71cf5d9" category="paragraph"><block ref="b9e37640fcc1990a420e73cbc71cf5d9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fa0053c9f3ecff9854d2d18cb3d45034" category="inline-image-macro">磁盘架背面的电源连接</block>
   <block id="bf8c27ee38f4551cf3103f8ddc048822" category="paragraph">*示例：电源连接位于磁盘架背面。*<block ref="27f4b7324949481a832e2798f546c18f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d3f162fe328844acb0313cd8d2c4c0fd" category="paragraph"><block ref="d3f162fe328844acb0313cd8d2c4c0fd" category="inline-image-macro-rx" type="image"></block></block>
@@ -8470,12 +8432,8 @@
   <block id="ed82e034d7d377cc12aa1d89cea33d43" category="inline-image-macro">E4060直接拓扑、宽度= 1000个峰值</block>
   <block id="427b3e2ab20960e704a22e39fbcda634" category="inline-image-macro">E4060网络结构拓扑、宽度=1000个峰值</block>
   <block id="ab2bd875f2f303555807a3b13a6b64bb" category="paragraph"><block ref="ab2bd875f2f303555807a3b13a6b64bb" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ff2e827a53ef25671ffc7469bb5208a2" category="list-title">示例A：一个E4000控制器架、其中三个DE212C/DE224C磁盘架采用标准SAS配置。</block>
-  <block id="ecf826f3b05c4b630ca5e118d6536932" category="list-title">示例B：一个E4000控制器架、在标准SAS配置中具有一个DE212C/DE224C磁盘架。</block>
   <block id="bd6f2f179e92d79b65397b0d15328141" category="inline-image-macro">电源线</block>
   <block id="a18053fd03f0e0f1657ef8a7799c39b1" category="paragraph"><block ref="a18053fd03f0e0f1657ef8a7799c39b1" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0931fcfaf82a62b23c3cbb633e4d3754" category="list-title">示例A：一个E4060控制器架、在标准SAS配置中具有两个DE460C磁盘架。</block>
-  <block id="cb6592701a1a2879a7d91e2aa3483978" category="list-title">示例B：一个E4060控制器架、其中一个DE460C磁盘架采用标准SAS配置。</block>
   <block id="a43d4c0d877b46a949d2194ce9a5dc43" category="list-text">检查每个控制器上的LED。</block>
   <block id="4b478fea6990a79d7f3b2aed9f0dfaac" category="summary">按照以下步骤安装和设置E4000存储系统。</block>
   <block id="61d7360b301a1cb885e62542da3bb7d4" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>准备安装</block>
@@ -9299,7 +9257,6 @@
   <block id="7156af939da33d4706b3dc430b74da68" category="doc">在E系列- Linux (FC)中配置FC交换机</block>
   <block id="ec2fdd1f2e6ee695231cc1b65ac9e203" category="doc">在E系列中创建分区和文件系统- Linux (FC)</block>
   <block id="1f5f0de28e7314d825efd9a881bfdc65" category="doc">确定E系列中的主机全球通用端口名称(WWPN)- Linux (FC)</block>
-  <block id="5399debd6e55a777747669bf25cb7d73" category="doc">在E系列(FC)中安装和配置Linux Unified Host Utilities</block>
   <block id="a8052a427bf8a81e1230fb7ac881a3a5" category="doc">安装适用于SMCli(11.53或更早版本)的SANtricity Storage Manager - Linux (FC)</block>
   <block id="12da4c23be3ec49c3a0ebb3551baa6f7" category="doc">在E系列- Linux (FC)中设置多路径.conf文件</block>
   <block id="6b4af5eebbfa3ec509df83baaeba767a" category="doc">验证E系列(FC)中的Linux配置支持</block>
@@ -9315,7 +9272,6 @@
   <block id="2983522bb7971192a7b19239c78489c4" category="doc">在E系列- Linux (iSCSI)中配置网络</block>
   <block id="a55d76a868400bdc13ddafa3c0b123fd" category="doc">在E系列- Linux (iSCSI)中配置交换机</block>
   <block id="56a7cfd4a09dd9cc915effc3b709e56b" category="doc">在E系列中创建分区和文件系统- Linux (iSCSI)</block>
-  <block id="626515899065c3dfff76938d6bbbb573" category="doc">在E系列(iSCSI)中安装和配置Linux Unified Host Utilities</block>
   <block id="8ae63fb65e18e5737838f3f0f3616363" category="doc">安装适用于SMCli的SANtricity Storage Manager (11.53或更早版本)- Linux (iSCSI)</block>
   <block id="2cf4743e22ee36076d5e788acb85d307" category="doc">在E系列- Linux (iSCSI)中设置多路径.conf文件</block>
   <block id="83273ba9acef588f65385d940a4ea831" category="doc">验证E系列- Linux (iSCSI)中的IP网络连接</block>
@@ -9330,7 +9286,6 @@
   <block id="51b23502fc01639de89ab204ca319f19" category="doc">在E系列- Linux中配置子网管理器(基于InfiniBand的iSER)</block>
   <block id="c294953cfef25396092e6433e2aba579" category="doc">在E系列中创建分区和文件系统- Linux (基于InfiniBand的iSER)</block>
   <block id="31a15fd8e15a2f1fd50fd6998a8cf036" category="doc">确定E系列中的主机端口全局唯一ID - Linux (基于InfiniBand的iSER)</block>
-  <block id="53e9f7b6ed3130efe08a1831a1d64a86" category="doc">在E系列中安装和配置Linux Unified Host Utilities (基于InfiniBand的iSER)</block>
   <block id="066c8070ea2f5a6a1b0acad2fd1364ac" category="doc">安装适用于SMCli的SANtricity Storage Manager (11.53或更早版本)- Linux (基于InfiniBand的iSER)</block>
   <block id="bda8bb645a075548b4adde8ea4b33efe" category="doc">在E系列- Linux (基于InfiniBand的iSER)中设置多路径.conf文件</block>
   <block id="efe973952cf408c3cafd38a2c85cbddd" category="doc">验证E系列中的Linux配置支持(基于InfiniBand的iSER)</block>
@@ -9393,7 +9348,6 @@
   <block id="174bbe0956088982601d07bf4750fcf0" category="doc">在E系列- Linux (SAS)中配置多路径软件</block>
   <block id="221409e67aacfe941a04460977bee7ba" category="doc">在E系列中创建分区和文件系统- Linux (SAS)</block>
   <block id="e9ca753ba2dbe90aa92161ccb16e38bc" category="doc">确定E系列中的SAS主机标识符- Linux (SAS)</block>
-  <block id="7807c717a2b072f3a3dbcbc7fbc83c93" category="doc">在E系列(SAS)中安装和配置Linux Unified Host Utilities</block>
   <block id="68001805f74454d41c5344994334105d" category="doc">安装适用于SMCli(11.53或更早版本)的SANtricity Storage Manager - Linux (SAS)</block>
   <block id="35d216f5b1ca143eb3beeaa5d30dc52d" category="doc">在E系列- Linux (SAS)中设置多路径.conf文件</block>
   <block id="13c68af1e6a4e01e97dcf0b8bf97636a" category="doc">验证E系列(SAS)中的Linux配置支持</block>
@@ -9406,7 +9360,6 @@
   <block id="176cfa346487abc57acc41973cb76102" category="doc">在E系列- Linux中配置子网管理器(基于InfiniBand的SRP)</block>
   <block id="4d1495672528ba1edb974e7a3ec68925" category="doc">在E系列中创建分区和文件系统- Linux (基于InfiniBand的SRP)</block>
   <block id="722418d400a6f71b750c9b59435c9e9c" category="doc">确定E系列中的主机端口全局唯一ID - Linux (基于InfiniBand的SRP)</block>
-  <block id="1d454844786440b6542b0a49da213146" category="doc">在E系列中安装和配置Linux Unified Host Utilities (基于InfiniBand的SRP)</block>
   <block id="fd9fdffac380d0e2ac60f7758fdaa33c" category="doc">安装适用于SMCli(11.53或更早版本)的SANtricity Storage Manager - Linux (基于InfiniBand的SRP)</block>
   <block id="8035356b3e36fae458c1388504938a10" category="doc">在E系列- Linux中设置Multipath.conf文件(基于InfiniBand的SRP)</block>
   <block id="42396f2886c0bfaf606e08b85587f5d5" category="doc">验证E系列中的Linux配置支持(基于InfiniBand的SRP)</block>
@@ -9433,7 +9386,6 @@
   <block id="2da78d32565fd341c24051991af853a3" category="doc">在E系列- Windows中的主机上发现存储</block>
   <block id="23f932933101a11fe184222add659e37" category="doc">在E系列- Windows中执行FC专用任务</block>
   <block id="789eb7d135829ee567fe346777d49e67" category="doc">E系列中的Windows快速配置- Windows</block>
-  <block id="7bb420e284a64dd789cacc0c2a388526" category="doc">在E系列- Windows中安装和配置Linux Unified Host Utilities</block>
   <block id="b00b49ab9c451c373425a273154e607e" category="doc">安装适用于SMCli(11.53或更早版本)的SANtricity Storage Manager - Windows</block>
   <block id="15f21f59c18fb17f9281572969cc6092" category="doc">在E系列- Windows中执行iSCSI专用任务</block>
   <block id="b67f6d03f59f9609e0db3c46a02da64f" category="doc">假设(E系列和Windows)</block>
@@ -9704,4 +9656,16 @@
   <block id="c78544d43a065eb825edb9e16bf0e9ad" category="paragraph">SANtricity 操作系统对 IOM12C 和 DCM3 的支持</block>
   <block id="94d90ce4793f949687897ec062d97b9c" category="paragraph">控制器固件版本 11.90R3 或更高版本现已支持 IOM12C 和 DCM3 SAS-3 磁盘架。IOM12C和 DCM3 磁盘架将替代 IOM12B 和 DCM2 磁盘架。</block>
   <block id="3a2a69a35a4560167d4c0478029a3f70" category="sidebar">vCenter 存储插件常见问题解答</block>
+  <block id="289a353684efed006a33d9a21e3af645" category="paragraph">根据您的配置为系统布线。</block>
+  <block id="c156a7b267c4ea3bb09eb8d0a8694c1f" category="admonition">如果您需要比下面提供的示例更多的布线选项，请参阅<block ref="b04bca945c340a8933813e378ce89f33" category="inline-link-macro-rx"></block> 。</block>
+  <block id="62faeb5b26adfd078e5b6da1844d0928" category="list-text">*示例 A：标准 SAS 配置中带有三个 DE212C/DE224 磁盘架的控制器架*</block>
+  <block id="fc6e6113eb588c4adfd7c54ea9a4a484" category="list-text">*示例 B：标准 SAS 配置中带有一个 DE212C/DE224 磁盘架的控制器架*</block>
+  <block id="e0c51a35ed8248d1431ad993a2b53bbe" category="list-text">*示例 A：标准 SAS 配置中带有两个 DE460C 磁盘架的控制器架*</block>
+  <block id="d2700be2b791b06d1a0e0eaf56e916d3" category="list-text">*示例 B：标准 SAS 配置中带有一个 DE460C 磁盘架的控制器架*</block>
+  <block id="1bdf45714bb5554912e7596197bc58a3" category="admonition">如果您需要比下面提供的示例更多的布线选项，请参阅<block ref="9f10449945bf1a610348d9968bbe3b7e" category="inline-link-macro-rx"></block> 。</block>
+  <block id="3c3ac8675fb15b987b57d9203f7eabae" category="list-text">*示例 A：标准 SAS 配置中带有三个 DE212C/DE224C 磁盘架的 E4000 控制器架*</block>
+  <block id="eb3ac26ded8469cc0becb4bcba43a263" category="list-text">*示例 B：标准 SAS 配置中的 E4000 控制器架，带有一个 DE212C/DE224C 磁盘架*</block>
+  <block id="749e3259655b14ad4cd1d92b27ae554b" category="list-text">*示例 A：标准 SAS 配置中的 E4060 控制器架，配有两个 DE460C 磁盘架*</block>
+  <block id="cab141641940a0cb3eca1b1695f92d4b" category="list-text">*示例 B：标准 SAS 配置中的 E4060 控制器架和一个 DE460C 磁盘架*</block>
+  <block id="47e9a132733409a780b8b25a91969da6" category="list-text">使用 CLI 命令将存储阵列设置更改为双工。要使用 CLI，如果您下载了 CLI 包，请打开命令提示符，或者如果您安装了存储管理器，则可以打开企业管理窗口 (EMW)。</block>
 </blocks>
