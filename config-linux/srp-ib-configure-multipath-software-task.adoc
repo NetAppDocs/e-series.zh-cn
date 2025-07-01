@@ -63,8 +63,7 @@ dracut --force --add multipath
 例如，对于 grub ，它为 ` /boot/grub/menu.lst` ；对于 grub2 ，它为 ` /boot/grub2/menu.cfg` 。
 
 . 使用 https://docs.netapp.com/us-en/e-series-santricity/sm-storage/create-host-manually.html["手动创建主机"] 在联机帮助中使用操作步骤 检查是否已定义主机。验证每个主机类型设置是否基于中收集的内核信息 <<step4,第4步>>。
-
-
++
 
 NOTE: 对于映射到运行内核3.9或更早版本的主机的任何卷、将禁用自动负载平衡。
 
