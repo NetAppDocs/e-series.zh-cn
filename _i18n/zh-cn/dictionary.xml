@@ -5345,7 +5345,6 @@
   <block id="a8bea572b3060a8038be6b71b17745d4" category="admonition">如果使用 QSFP56 缆线连接支持 200 GB 的 HIC ，则只有在连接到 Mellanox 交换机和 / 或适配器时，自动协商才可用。</block>
   <block id="e337bedeaba2dae19359a1cd73b2475a" category="admonition">配置的基于 RoCE 的 NVMe 端口速度应与选定端口上 SFP 的速度功能匹配。所有端口都必须设置为相同的速度。</block>
   <block id="3596937c0cf910176242bc6491f8129d" category="paragraph">启用 IPv4 和 / 或启用 IPv6</block>
-  <block id="a28f1dea7eb219b33f56e3eb3cac6f30" category="paragraph">如有必要，请为最大传输单元（ MTU ）输入一个新大小（以字节为单位）。默认 MTU 大小为每帧 1500 字节。您必须输入一个介于 1500 到 4 ， 200 之间的值。</block>
   <block id="596f20504f6521dc4d0ce2868f49fcf0" category="paragraph">自动从 DHCP 服务器获取配置</block>
   <block id="7c67dad4c6c6549470b0aa55dab9fe7a" category="paragraph">选择此选项，然后在字段中输入静态地址。对于 IPv4 ，请包括网络子网掩码和网关。对于 IPv6 ，请包括可路由的 IP 地址和路由器 IP 地址。</block>
   <block id="6ed119e878f85e07fde7041bd5d855d2" category="admonition">如果只有一个可路由的 IP 地址，请将其余地址设置为 0 ： 0 ： 0 ： 0 ： 0 ： 0 ： 0 ： 0 。</block>
@@ -9668,4 +9667,5 @@
   <block id="749e3259655b14ad4cd1d92b27ae554b" category="list-text">*示例 A：标准 SAS 配置中的 E4060 控制器架，配有两个 DE460C 磁盘架*</block>
   <block id="cab141641940a0cb3eca1b1695f92d4b" category="list-text">*示例 B：标准 SAS 配置中的 E4060 控制器架和一个 DE460C 磁盘架*</block>
   <block id="47e9a132733409a780b8b25a91969da6" category="list-text">使用 CLI 命令将存储阵列设置更改为双工。要使用 CLI，如果您下载了 CLI 包，请打开命令提示符，或者如果您安装了存储管理器，则可以打开企业管理窗口 (EMW)。</block>
+  <block id="2db2ecd53dfa16abedb03a761e1763e8" category="paragraph">如有必要，请为最大传输单元（ MTU ）输入一个新大小（以字节为单位）。默认 MTU 大小为每帧 1500 字节。您必须输入一个介于1500和9000之间的值。</block>
 </blocks>
