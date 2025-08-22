@@ -62,7 +62,7 @@ RDMA 配置文件位于以下位置：
 ----
 . 启用并启动 OFED/RDMA 服务。
 +
-* RHEL 7.x 和 SLES 12.x 或更高版本 *
+*SLES 12.x 或更高版本*
 
 +
 ** 要在启动时加载 InfiniBand 模块，请执行以下操作：
@@ -81,7 +81,7 @@ systemctl start rdma
 
 . 启用 SRP 守护进程。
 +
-* RHEL 7.x 和 SLES 12 或更高版本 *
+*SLES 12 或更高版本*
 
 +
 ** 要使 SRP 守护进程在启动时启动，请执行以下操作：

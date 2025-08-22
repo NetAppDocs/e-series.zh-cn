@@ -2,16 +2,16 @@
 permalink: config-linux/nvme-roce-create-filesystems-sles-12-task.html 
 sidebar: sidebar 
 keywords: file systems, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
-summary: 对于 RHEL 7 和 SLES 12 ，您可以在命名空间上创建文件系统并挂载文件系统。 
+summary: 对于 SLES 12，您可以在命名空间上创建文件系统并挂载该文件系统。 
 ---
-= 在E系列中创建文件系统—Linux RHEL 7和SLES 12 (基于RoCE的NVMe)
+= 在 E 系列中创建文件系统 - Linux SLES 12（NVMe over RoCE）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-对于 RHEL 7 和 SLES 12 ，您可以在命名空间上创建文件系统并挂载文件系统。
+对于 SLES 12，您可以在命名空间上创建文件系统并挂载该文件系统。
 
 .步骤
 . 运行 `multipath -ll` 命令以获取 ` /dev/mapper/dm` 设备的列表。

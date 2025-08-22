@@ -14,7 +14,7 @@ summary: RoCE 环境中的 NVMe 启动程序配置包括安装和配置 RDMA-cor
 RoCE 环境中的 NVMe 启动程序配置包括安装和配置 RDMA-core 和 NVMe-CLI 软件包，配置启动程序 IP 地址以及在主机上设置 NVMe-oF 层。
 
 .开始之前
-您必须运行最新兼容的RHEL 7、RHEL 8、RHEL 9、SUSE Linux Enterprise Server 12或15 Service Pack操作系统。请参见 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^] 有关最新要求的完整列表。
+您必须运行最新兼容的 RHEL 8、RHEL 9、SUSE Linux Enterprise Server 12 或 15 服务包操作系统。查看 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]以获取最新要求的完整列表。
 
 .步骤
 . 安装 RDMA 和 NVMe-CLI 软件包：
@@ -29,7 +29,7 @@ RoCE 环境中的 NVMe 启动程序配置包括安装和配置 RDMA-core 和 NVM
 # zypper install nvme-cli
 ----
 +
-* RHEL 7、RHEL 8和RHEL 9*
+*RHEL 8 和 RHEL 9*
 
 +
 [listing]
@@ -103,7 +103,7 @@ REMOTE_IPADDR=
 STARTMODE='auto'
 ----
 +
-* RHEL 7 或 RHEL 8*
+* RHEL 8*
 
 +
 使用以下内容创建示例文件`/etc/sysconfig/network-scripts/ifcfg-eth4`。

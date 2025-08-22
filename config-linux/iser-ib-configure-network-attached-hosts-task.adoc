@@ -24,7 +24,7 @@ InfiniBand OFED 驱动程序堆栈支持在相同端口上同时运行 iSER 和 
 .步骤
 . 在主机上启用并启动 iSCSI 服务：
 +
-* Red Hat Enterprise Linux 7、8和9 (RHEL 7、RHEL 8和RHEL 9)*
+Red Hat Enterprise Linux 8 和 9（RHEL 8 和 RHEL 9）
 
 +
 [listing]

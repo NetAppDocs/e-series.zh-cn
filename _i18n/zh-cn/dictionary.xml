@@ -4891,8 +4891,6 @@
   <block id="0a82582b4bba9e052f69c0f2c36eac1a" category="summary">您可以通过更换现有控制器来升级存储阵列。控制器由主板，固件和软件组成。它控制驱动器并实施管理软件功能。</block>
   <block id="e3516c86194201deb982fe92e4fb83a3" category="doc">升级 E 系列控制器</block>
   <block id="9ca4f852cb231d38c7cf2bb9053a2245" category="summary">使用动态主机配置协议（ dhcp ）提供 IP 地址。</block>
-  <block id="e889c393ff8c52f357be63d353ebf65a" category="summary">对于 RHEL 7 和 SLES 12 ，您可以在命名空间上创建文件系统并挂载文件系统。</block>
-  <block id="da6e8accbd9a7e86c32239135f1ffed2" category="doc">创建文件系统（ RHEL 7 和 SLES 12 ）</block>
   <block id="facbcb2fa38d6402945c5fd2c6fcf386" category="list-text">运行 `multipath -ll` 命令以获取 ` /dev/mapper/dm` 设备的列表。</block>
   <block id="4c45d0d12df786bfe97882594b02cae1" category="paragraph">此命令的结果显示了两个设备， `dm-19` 和 `dm-16` ：</block>
   <block id="07c24368c59a3d6a71b9305c416c7d08" category="list-text">在分区上为每个 ` /dev/mapper/eui-` 设备创建一个文件系统。</block>
@@ -5016,7 +5014,6 @@
   <block id="2b430348ddae524592cd1c4207d8f170" category="summary">根据您的 SLES 版本（ SUSE Linux 版本）配置指向设备目标的 I/O 。</block>
   <block id="2760a5173fe84d55b4dfd0df17083b60" category="doc">访问虚拟设备目标的 NVMe 卷</block>
   <block id="71a0145e77943169ac5f0e901f7138e7" category="paragraph">您可以根据所使用的操作系统（以及扩展多路径方法）配置定向到设备目标的 I/O 。</block>
-  <block id="591c00758088276e03267ffcba122b79" category="paragraph">对于 RHEL 7 和 SLES 12 ， Linux 主机会将 I/O 定向到虚拟设备目标。DM-MP 负责管理这些虚拟目标的物理路径。</block>
   <block id="d47b596bd703372e505b66a0d7086453" category="section-title">虚拟设备是 I/O 目标</block>
   <block id="77c376f67e98384bf9e50220cc9566e0" category="paragraph">确保仅对 DM-MP 创建的虚拟设备运行 I/O ，而不对物理设备路径运行 I/O 。如果对物理路径运行 I/O ， DM-MP 将无法管理故障转移事件，并且 I/O 将失败。</block>
   <block id="60085e457c461011b1f7a0dc9d2287c9" category="paragraph">您可以通过 /dev/mapper 中的 `dm` device 或 `symlink` 访问这些块设备。例如：</block>
@@ -5107,7 +5104,6 @@
   <block id="bc2a327cbf5067ba22b3f62235282061" category="paragraph">开始使用此操作步骤之前，请查看以下 HBA 实用程序准则：</block>
   <block id="3e59e5ab1adea8ed176d6a2c2a73cadf" category="paragraph">请参见的注释列<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> 以获取建议。</block>
   <block id="b3e50929a30cfc00afbc55d231a50cdc" category="summary">您可以在多路径设备上创建分区，也可以在命名空间上创建文件系统并挂载分区。</block>
-  <block id="59c71eb9f304131ed908d87a5f9303f9" category="paragraph">对于 RHEL 7 和 SLES 12 ，您可以在所需的 dm 设备上创建文件系统并挂载文件系统。</block>
   <block id="a50e35ff2f76c0ac349de732916c537b" category="paragraph">对于 RHEL 8 和 SLES 15 ，您可以在原生 NVMe 设备上创建文件系统并挂载文件系统。</block>
   <block id="446e80fe7b2b546a067aa727557f83e0" category="paragraph">创建文件系统的方法因所选的文件系统而异。此示例显示了如何创建 ext4 文件系统。</block>
   <block id="975fd0c9892b022cfeeec8b2a371f30b" category="paragraph">选择要使用的主机接口类型。如果您配置的阵列只有一个可用的主机接口类型，则可能无法选择此设置。</block>
@@ -5293,8 +5289,6 @@
   <block id="9e780c0c06dd0edf0f09bcc9516acc1c" category="list-text">对于 Red Hat （ RHEL ）主机，运行 `rpm -q device-mapper-multipath` 验证软件包是否已安装</block>
   <block id="2176d0eb1d2a0a5ab5201af565e0b30b" category="list-text">对于 SLES 主机，请运行 `rpm -q multipath-tools` 来验证软件包是否已安装</block>
   <block id="7149b8af09961dfba911fe06ae6a3540" category="admonition">请参见 <block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> 为了确保安装了任何所需的更新，因为多路径可能无法在 GA 版本的 SLES 或 RHEL 中正常工作。</block>
-  <block id="7cab16eb74754bbe232b8775c104e66a" category="section-title">为 RHEL 7 或 SLES 12 启用设备映射程序多路径（ DMMP ）</block>
-  <block id="2c2e807f6a8822a2d088dfdcc394203e" category="paragraph">默认情况下，在 RHEL 和 SLES 中禁用 DM-MP 。要在主机上启用 DM-MP 组件，请完成以下步骤。</block>
   <block id="95be6b7c132218bd8782b6a7b0b982ed" category="list-text">将 NVMe E 系列设备条目添加到 /etc/multipath.conf 文件的 devices 部分，如以下示例所示：</block>
   <block id="159eb527caba422e175178bb8e7eb6a3" category="list-text">将 `multipathd` 配置为在系统启动时启动。</block>
   <block id="4a9f39582bee881ac128db3567909572" category="list-text">如果当前未运行，请启动 `multipathd` 。</block>
@@ -5316,11 +5310,9 @@
   <block id="8c4487a25ea9466f02e7c9276479f372" category="list-text">在 OFED/RDMA 配置文件中，设置 `Srp_load=yes` 和 `Srp_daema_enable=yes` 。</block>
   <block id="e9c7cbe50b485973bea871f161c62eae" category="paragraph">RDMA 配置文件位于以下位置：</block>
   <block id="199ab23853e7dbd4480051a2ba7f94c1" category="list-text">启用并启动 OFED/RDMA 服务。</block>
-  <block id="d2452f6f41a0fb1c9adc48a224fa39c1" category="paragraph">* RHEL 7.x 和 SLES 12.x 或更高版本 *</block>
   <block id="62a80434680a3501e732e0b0f17f43b5" category="list-text">要在启动时加载 InfiniBand 模块，请执行以下操作：</block>
   <block id="0e0f48a5b5a9c28eeecd7c27ed199bab" category="list-text">要立即加载 InfiniBand 模块，请执行以下操作：</block>
   <block id="d3f496df79399c10dc9661ba6b344e4b" category="list-text">启用 SRP 守护进程。</block>
-  <block id="e04f1e451cf291bf4dea0e5ac75365d9" category="paragraph">* RHEL 7.x 和 SLES 12 或更高版本 *</block>
   <block id="ec6db7aa1ba44acdf7ea7755f1bf3606" category="list-text">要使 SRP 守护进程在启动时启动，请执行以下操作：</block>
   <block id="c0e80cdff7e17bef2e455fab906a94bf" category="list-text">立即启动 SRP 守护进程：</block>
   <block id="f954d52b7d356b7898493ef1309b32ba" category="list-text">如果需要修改 SRP 配置，请输入以下命令创建 ` /etc/modprobe.d/IB_SRP.conf` 。</block>
@@ -5394,8 +5386,6 @@
   <block id="eee710143ae29bf272d75ad40d2ede5a" category="doc">在主机端设置基于光纤通道的 NVMe</block>
   <block id="a273add3419b2d63bd738c3a4f1e5e3a" category="paragraph">光纤通道环境中的 NVMe 启动程序配置包括安装和配置 NVMe-CLI 软件包以及在主机上启用 NVMe/FC 启动程序。</block>
   <block id="6ba6a18088999d632ca174b9873a3b12" category="list-text">安装 `NVMe-CLI` 软件包：</block>
-  <block id="969b64ee6a8c67d01b4cd1635a747bd2" category="inline-link">Broadcom 网站</block>
-  <block id="d55f94d596bbb6493b1bdec1808b9783" category="list-text">仅适用于 RHEL 7 ，通过下载并安装用于 NVMe/FC 连接的外部 Broadcom AutoConnect 脚本<block ref="54ac045dab92bf3efc1a15209419902d" category="inline-link-rx"></block>。输入关键字 * 通过 FC 驱动程序为收件箱 NVMe 输入 AutoConnect 脚本文件 * ，然后选择特定于您的操作系统的最新版本。</block>
   <block id="bd24eb8365cbbc52e79a70875ec8229b" category="list-text">对于 Qlogic ，请在安装 Broadcom NVMe/FC 自动连接脚本后修改 ` /lib/systemd/system/nvmefc-boot-connections.service` 以包含以下内容：</block>
   <block id="fb85e712c850b00626dd602822712dff" category="list-text">启用并启动 `nvmefc-boot-connections` 服务。</block>
   <block id="8d16de46536e749f63af504f807749de" category="paragraph">* Emulex HBA 的主机端设置： *</block>
@@ -7903,7 +7893,6 @@
   <block id="df45b26c6e6aa12c9a2da2dc8610745d" category="list-text">添加以下行。将步骤2中找到的值替换为<block ref="7804c104033334dfd1f4483b356e7e80" prefix=" " category="inline-code"></block> 和<block ref="a343d59b38a9422b5e453e8b5ab007c0" prefix=" " category="inline-code"></block>。适用于<block ref="16a2e561c536a77cbfd10490ea398be6" prefix=" " category="inline-code"></block> 和<block ref="5f2b9323c39ee3c861a7b382d205c3d3" prefix=" " category="inline-code"></block>、使用子网管理器的优先级、其中1为最低优先级、15为最高优先级。</block>
   <block id="a377bc45676f5d1c2a8f8219a09c9b83" category="list-text">添加以下行。</block>
   <block id="4eb5da929a8b5274983c883ec977d36a" category="list-text">将新服务通知systemd。</block>
-  <block id="1f34187b1a209107eee63f82ab42cc05" category="paragraph">* RHEL 7、RHEL 8或RHEL 9*</block>
   <block id="709e243fec7f9a41a7ff766bf8716ce5" category="paragraph">对于RHEL 8、RHEL 9、SLES 15、您可以在原生 NVMe设备上创建文件系统并挂载文件系统。</block>
   <block id="8c986ed4d501b7f34013f1474891eb88" category="list-text">运行<block ref="3d80983fc82ff72fd51e5d1f7e90c56d" prefix=" " category="inline-code"></block> 命令以获取NVMe设备列表。</block>
   <block id="c2254fad4178ca4085391a6ac3fc163a" category="paragraph">此命令的结果可用于查找与关联的设备<block ref="324b592ebf16794a0c88511b40085a76" prefix=" " category="inline-code"></block> 位置。对于以下示例、此值为<block ref="5873769649ae49105d6cefc7971b78c1" prefix=" " category="inline-code"></block>。</block>
@@ -7911,14 +7900,9 @@
   <block id="95aeb1de4d389845f041ab3587500dc3" category="paragraph">对于RHEL 8、RHEL 9和SLES 15、Linux主机会将I/O定向到物理NVMe设备目标。原生 NVMe 多路径解决方案用于管理主机显示的单个表面上物理设备的底层物理路径。</block>
   <block id="3762f5d6da93d64fb2c80f51749495f7" category="paragraph">最佳做法是对中的链路运行I/O<block ref="324b592ebf16794a0c88511b40085a76" prefix=" " category="inline-code"></block> 而不是直接连接到物理NVMe设备路径<block ref="9378e8badf02c342286a3b9928e4df7c" prefix=" " category="inline-code"></block>。可以使用以下命令找到这两个位置之间的链接：</block>
   <block id="cdd98f8f112f01967c6cf544d1185a31" category="paragraph">I/O运行到<block ref="324b592ebf16794a0c88511b40085a76" prefix=" " category="inline-code"></block> 将直接通过<block ref="9378e8badf02c342286a3b9928e4df7c" prefix=" " category="inline-code"></block> 它使用原生 NVMe多路径解决方案 对其下的所有路径进行虚拟化。</block>
-  <block id="489b1f76dfc3d23f283bb56e173cfce5" category="paragraph">以下操作步骤 适用于使用Broadcom Emulex或QLogic NVMe/FC功能FC HBA的RHEL 7、RHEL 8、RHEL 9、SLES 12和SLES 15。有关支持这些操作系统或 HBA 的版本的详细信息，请参见<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block>。</block>
-  <block id="efdd564b9ec4f2056fa78b410b589c82" category="paragraph">* RHEL 7、RHEL 8或RHEL 9*</block>
-  <block id="08fb030e8ad0e09b4e56de467f54c0b0" category="paragraph">RHEL 7 和 SLES 12 使用设备映射程序多路径（ DMMP ）为基于 RoCE 的 NVMe 提供多路径功能。RHEL 8、RHEL 9和SLES 15使用内置的原生 NVMe故障转移。根据您正在运行的操作系统，需要对多路径进行一些额外配置才能使其正常运行。</block>
   <block id="0d1a0f91594280f9d49e074cc400230c" category="admonition">对于RHEL 9和SLES 15、原生 NVMe多路径默认处于启用状态、不需要其他配置。</block>
   <block id="b850731c1bffd8d6372e832c36232f3e" category="admonition">*数据丢失风险。*您必须启用流量控制、以便与交换机上的全局暂停控制结合使用、以消除基于RoCE的NVMe环境中数据丢失的风险。</block>
-  <block id="52b757f8b32ea9abd11ade22593e1b87" category="paragraph">在使用基于 Infiniband 的 NVMe 时， RHEL 7 和 SLES 12 会使用设备映射程序多路径（ DMMP ）进行多路径。RHEL 8、RHEL9和SLES 15使用内置的原生 NVMe故障转移。根据您正在运行的操作系统，需要对多路径进行一些额外配置才能使其正常运行。</block>
   <block id="d061a1419e660c90553f0a82e4f669dc" category="admonition">对于SLES 15和RHEL 9、原生 NVMe多路径默认处于启用状态、不需要其他配置。</block>
-  <block id="1424a7cf2a070f7dd12d78a849490f2c" category="paragraph">在使用基于光纤通道的 NVMe 时， RHEL 7 和 SLES 12 会使用设备映射程序多路径（ DMMP ）进行多路径。RHEL 8、RHEL 9和SLES 15使用内置的原生 NVMe故障转移。根据您正在运行的操作系统，需要对多路径进行一些额外配置才能使其正常运行。</block>
   <block id="6ee2d18851ba4498d7c9ba43881528c3" category="admonition">在配置子网管理器之前、您必须安装InfiniBand diags软件包以通过获取全局唯一ID (GUID)<block ref="db1fff1f41e48ae933f89caa6a9035c4" prefix=" " category="inline-code"></block> 命令：请参见 <block ref="59608be4b8a68b7f95e7aa6a8924d39f" category="inline-xref-macro-rx"></block> 有关如何安装InfiniBand诊断软件包的信息。</block>
   <block id="44da8255024278223616706dabffdcf2" category="admonition">在配置子网管理器之前、您必须安装InfiniBand diags软件包以通过获取全局唯一ID (GUID)<block ref="db1fff1f41e48ae933f89caa6a9035c4" prefix=" " category="inline-code"></block> 命令：请参见 <block ref="8968844fa75d7274ef053da34cb4323f" category="inline-xref-macro-rx"></block> 有关如何安装InfiniBand诊断软件包的信息。</block>
   <block id="7bfe6a8c2694c58155bcb8132f65ecd8" category="list-text">启用<block ref="8732863da72605a20ed96b4eee87a5fb" prefix=" " category="inline-code"></block> 启动时执行守护进程。</block>
@@ -7927,8 +7911,6 @@
   <block id="278d29980d384d87e03c8f99681b0980" category="paragraph">对于RHEL 8、RHEL 9和SLES 15、您可以在原生 NVMe设备上创建文件系统并挂载文件系统。</block>
   <block id="8e11cf4b8ef8251a1517afd1c236dd0f" category="paragraph">此命令的结果可用于查找关联的设备<block ref="324b592ebf16794a0c88511b40085a76" prefix=" " category="inline-code"></block> 位置。以下示例为<block ref="5873769649ae49105d6cefc7971b78c1" prefix=" " category="inline-code"></block>。</block>
   <block id="1d17dd3572733d46cea446a1f0d4ef11" category="list-text">在上记录启动程序的 GUID <block ref="c3a1c379b3d644ae20d101147cd0dfd9" category="inline-xref-macro-rx"></block>。</block>
-  <block id="cdbf7b73734bd4442fcc96a6195b7a15" category="paragraph">* Red Hat Enterprise Linux 7、8和9 (RHEL 7、RHEL 8和RHEL 9)*</block>
-  <block id="04595c79a616b5c392556737aaa7347d" category="paragraph">* RHEL 7、RHEL 8和RHEL 9*</block>
   <block id="2a5b109c10fe6e93caf3666c9854f292" category="list-text">运行multipath -ll命令以获取NVMe设备列表。</block>
   <block id="210c9515d4a1e9c78e2608d073aeef56" category="list-text">在上记录启动程序的 GUID <block ref="00a1f89a34dac59e8a714860454ae51a" category="inline-xref-macro-rx"></block>。</block>
   <block id="6616a8dcc33e3e23ed86909a9a46376e" category="admonition">SANtricity 11.40及更高版本支持iSCSI的数据保证功能。</block>
@@ -8010,21 +7992,17 @@
   <block id="f7e582702fa43947010600df41688562" category="section-title">四柱机架—SuperRail</block>
   <block id="45d7b912755be5cce50a63e39e38af8a" category="section-title">第1步：验证新控制器的部件号</block>
   <block id="fe52478447b1fa9a4c7ec89de67fdf4d" category="sidebar">热添加驱动器架</block>
-  <block id="83af49c7a44a4352fd5c07a021524fea" category="paragraph">您必须运行最新兼容的RHEL 7、RHEL 8、RHEL 9、SUSE Linux Enterprise Server 12或15 Service Pack操作系统。请参见<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> 有关最新要求的完整列表。</block>
   <block id="889869e1d3bab19951bb91f386d721de" category="list-text">对于RHEL 8和RHEL 9、安装网络脚本：</block>
   <block id="8b8d5d75fe765c0900e1083326e233eb" category="paragraph">* RHEL 8*</block>
   <block id="40ae81b37293ba1a886134269b1c76e5" category="paragraph">* RHEL 9*</block>
-  <block id="3babbb5880d0a0a22e662b27203c0dbe" category="paragraph">* RHEL 7 或 RHEL 8*</block>
   <block id="8ce810d5ab2863c317f14fafb62a5090" category="paragraph">使用<block ref="94f122660e8e80af7b93d6609515bc99" prefix=" " category="inline-code"></block> 用于激活和编辑连接的工具。下面是一个示例文件<block ref="a8490166956a7c69a385a3a3169f183e" prefix=" " category="inline-code"></block> 该工具将生成：</block>
   <block id="e5e4c27b43623332619bb7b742c025ee" category="paragraph">下面是一个示例文件<block ref="4a417e605245176a0337befebb3390ec" prefix=" " category="inline-code"></block> 该工具将生成：</block>
   <block id="775835480314574c6cd9244c8c9b879b" category="list-text">对于RHEL 8或RHEL 9、安装网络脚本：</block>
-  <block id="6836b58aebbdd815358ecf435e05e390" category="list-text">对于RHEL 7、启用<block ref="0247feeacea55a1e5efb40b0947dbbbe" prefix=" " category="inline-code"></block>。编辑/etc/rdma/Rdma.conf文件并修改要加载的条目<block ref="0247feeacea55a1e5efb40b0947dbbbe" prefix=" " category="inline-code"></block>：</block>
   <block id="0cd1f8d86f769c38f1483db60702ae30" category="list-text">检查两个IB端口链路是否均已启动且状态=活动：</block>
   <block id="b19174b79ffa987ea20abbce564e973e" category="paragraph">使用<block ref="94f122660e8e80af7b93d6609515bc99" prefix=" " category="inline-code"></block> 用于激活和编辑连接的工具。下面是一个示例文件<block ref="9c2912b95ccba22459cf5353437988de" prefix=" " category="inline-code"></block> 该工具将生成：</block>
   <block id="2662a31940eac2df0a6809d02c631cbb" category="paragraph">下面是一个示例文件<block ref="c9f0a91feab8e55b8d9d166acc79562e" prefix=" " category="inline-code"></block> 该工具将生成：</block>
   <block id="b7577216b0e50cc5bbbbf4483bbc37cd" category="list-text">您也可以设置<block ref="68e21a6780edcb6acab77e2a42f4f506" prefix=" " category="inline-code"></block> 在/etc/iscsi/iscsid.conf中运行any之前<block ref="f88921f58beaaae5bcb9dffac54bf5ad" prefix=" " category="inline-code"></block> 重新启动后使会话持续存在的命令。</block>
   <block id="d0c7f819a9c352ec47123255b7bea069" category="list-text">为iSCSI端口配置网络。以下是适用于RHEL和SLES的示例说明：</block>
-  <block id="4578709b544309c3c129ddd77e647202" category="paragraph">* Red Hat Enterprise Linux 7 和 8 （ RHEL 7 和 RHEL 8 ） *</block>
   <block id="9dabae4a06d30c9c7f51e5f507819763" category="paragraph">创建示例文件<block ref="0d7d3fc433b1b9e503de96fc98959275" prefix=" " category="inline-code"></block> 包含以下内容。</block>
   <block id="d495950a6cee8eefb9fec72eb4759f52" category="paragraph">有关IPv6的可选附加项：</block>
   <block id="8a242e9b511ac07bc46f6d5758b40101" category="paragraph">* Red Hat Enterprise Linux 9 (RHEL 9)*</block>
@@ -9295,7 +9273,6 @@
   <block id="fb17130ec244634a0532f36a8cfa9912" category="doc">访问E系列中虚拟设备目标的NVMe卷—Linux (基于FC的NVMe)</block>
   <block id="43c850105df5604a2122f91584d74c9a" category="doc">在E系列- Linux (基于FC的NVMe)中配置FC交换机</block>
   <block id="f6034c055b35ceacc4497df2f77dfac2" category="doc">在E系列中使用DHCP配置IP地址- Linux (基于FC的NVMe)</block>
-  <block id="5a5a7d0233646e67c0a873bc58fd676e" category="doc">在E系列中创建文件系统—Linux RHEL 7和SLES 12 (基于FC的NVMe)</block>
   <block id="1e7e57c41f6250cf0dd2323e0ebba14a" category="doc">在E系列中创建文件系统—Linux RHEL 8、RHEL 9和SLES 15 (基于FC的NVMe)</block>
   <block id="dcb4a5fa07cd4ed36bb0fb3ad18e00b0" category="doc">使用SANtricity系统管理器创建主机—Linux (基于FC的NVMe)</block>
   <block id="d592eb2cd6c39918cf5b03b226488789" category="doc">在E系列- Linux (基于FC的NVMe)中显示主机可见的卷</block>
@@ -9311,7 +9288,6 @@
   <block id="639cd8f6ff7a3c560f2d878f2b7127b1" category="doc">在E系列中使用DHCP配置IP地址- Linux (基于InfiniBand的NVMe)</block>
   <block id="117959d1244ec1b0e9e0c3aeaace2244" category="doc">在E系列- Linux中配置存储阵列基于InfiniBand的NVMe连接</block>
   <block id="afd02878fb071c80a878b8f7ab1dc1e3" category="doc">在E系列中配置子网管理器—Linux (基于InfiniBand的NVMe)</block>
-  <block id="04e502fa46e2ee2c981093653742a47d" category="doc">在E系列中创建文件系统—Linux RHEL 7和SLES 12 (基于InfiniBand的NVMe)</block>
   <block id="2512b2a473d4ffd3d685aefe3f5ce29f" category="doc">在E系列中创建文件系统—Linux RHEL 8、RHEL 9和SLES 15 (基于InfiniBand的NVMe)</block>
   <block id="90a60ec18000092aa65e65fc3e62e2dc" category="doc">使用SANtricity系统管理器创建主机—Linux (基于InfiniBand的NVMe)</block>
   <block id="51aada41b528b8fcd1f725914e663229" category="doc">确定E系列中的主机端口全局唯一ID - Linux (基于InfiniBand的NVMe)</block>
@@ -9330,7 +9306,6 @@
   <block id="f4406895abc0e7fb7bba147a1b4018fc" category="doc">在E系列中使用DHCP配置IP地址- Linux (基于RoCE的NVMe)</block>
   <block id="2e7f926937a19390a696edcd1611efd8" category="doc">在E系列- Linux中配置基于RoCE的存储阵列NVMe连接</block>
   <block id="133ee7ce9eb1e935758f63664a8fc118" category="doc">在E系列- Linux (基于RoCE的NVMe)中配置交换机</block>
-  <block id="97cedd5ffd91c6d5809e8756bcd9d969" category="doc">在E系列中创建文件系统—Linux RHEL 7和SLES 12 (基于RoCE的NVMe)</block>
   <block id="3a0391db7b3c5ce929688d1fd3808797" category="doc">在E系列中创建文件系统—Linux RHEL 8、RHEL 9和SLES 15 (基于RoCE的NVMe)</block>
   <block id="1d775b87419a4b4faa9188d96fc9f1ef" category="doc">使用SANtricity系统管理器创建主机—Linux (基于RoCE的NVMe)</block>
   <block id="c06ab1417d3d38a6274ca96f4817729b" category="doc">从E系列中的主机发现存储并连接到Linux (基于RoCE的NVMe)</block>
@@ -9668,4 +9643,24 @@
   <block id="47e9a132733409a780b8b25a91969da6" category="list-text">使用 CLI 命令将存储阵列设置更改为双工。要使用 CLI，如果您下载了 CLI 包，请打开命令提示符，或者如果您安装了存储管理器，则可以打开企业管理窗口 (EMW)。</block>
   <block id="2db2ecd53dfa16abedb03a761e1763e8" category="paragraph">如有必要，请为最大传输单元（ MTU ）输入一个新大小（以字节为单位）。默认 MTU 大小为每帧 1500 字节。您必须输入一个介于1500和9000之间的值。</block>
   <block id="6d169c67d74922fc178491e0bef73793" category="doc">了解存储系统安装 - EF300、EF600、EF300C 和 EF600C</block>
+  <block id="77c49ca57dc8cc81b5609b5c3b6b0120" category="paragraph">红帽企业 Linux 8（RHEL 8）</block>
+  <block id="c2b5f394c3fe5ec74e8f006f7a1c41f2" category="paragraph">Red Hat Enterprise Linux 8 和 9（RHEL 8 和 RHEL 9）</block>
+  <block id="f6915e22a07b317f6f9f3f4164551c8d" category="paragraph">对于 SLES 12，I/O 由 Linux 主机定向到虚拟设备目标。  DM-MP 管理这些虚拟目标背后的物理路径。</block>
+  <block id="f9a6f2ee656556e80e38f8a39629d913" category="doc">在 E 系列中创建文件系统 - SLES 12（NVMe over FC）</block>
+  <block id="e6e90f0138a14d2c6523ea13f186d5ef" category="paragraph">对于 SLES 12，您可以在所需的 dm 设备上创建文件系统并挂载该文件系统。</block>
+  <block id="717270487102a24fa22876dec32c95f1" category="section-title">为 SLES 12 启用设备映射器多路径 (DMMP)</block>
+  <block id="cdfdf9bf8f4a464cd4abef555786cdbb" category="paragraph">默认情况下，SLES 中禁用 DM-MP。完成以下步骤以在主机上启用 DM-MP 组件。</block>
+  <block id="0a4a01fb64611536a7fb2c5e1e325d98" category="paragraph">以下步骤适用于使用 Broadcom Emulex 或 QLogic NVMe/FC 支持的 FC HBA 的 RHEL 8、RHEL 9、SLES 12 和 SLES 15。有关支持哪些 OS 或 HBA 版本的更多信息，请查阅<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block>。</block>
+  <block id="75dbe17d5307d64a197f24e012b0fe4e" category="paragraph">*RHEL 8 或 RHEL 9*</block>
+  <block id="6ef765942b756be59a09bba2c1bea181" category="summary">对于 SLES 12，您可以在命名空间上创建文件系统并挂载该文件系统。</block>
+  <block id="5f72169c48d94cfdf13fa8e7156de8ee" category="doc">在 E 系列中创建文件系统 - Linux SLES 12（NVMe over InfiniBand）</block>
+  <block id="f3b72a76b6437fffe54c5f6a0e82669c" category="section-title">启用设备映射器多路径 (DMMP) SLES 12</block>
+  <block id="6b6ebf19e3cedd310169b72fa687b40a" category="paragraph">您必须运行最新兼容的 RHEL 8、RHEL 9、SUSE Linux Enterprise Server 12 或 15 服务包操作系统。查看<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block>以获取最新要求的完整列表。</block>
+  <block id="8cccdb1fea835b32fb7acd0ac498244d" category="paragraph">*RHEL 8 或 RHEL 9*</block>
+  <block id="d3f59362d91c4f4d01ccdd309b5bb9fb" category="doc">在 E 系列中创建文件系统 - Linux SLES 12（NVMe over RoCE）</block>
+  <block id="e0b6fa7380c04b056266419d253d2d07" category="paragraph">SLES 12 使用设备映射器多路径 (DMMP) 为 RoCE 上的 NVMe 提供多路径支持。 RHEL 8、RHEL 9 和 SLES 15 使用内置的本机 NVMe 故障转移。根据您所运行的操作系统，需要对多路径进行一些额外的配置才能使其正常运行。</block>
+  <block id="31966977d62560abced8790961dab861" category="paragraph">*RHEL 8 和 RHEL 9*</block>
+  <block id="01d7072c63a7f17dd56f882aa05c191e" category="paragraph">*SLES 12.x 或更高版本*</block>
+  <block id="eb9f15fa21e7ecb26458bd00f198d235" category="paragraph">*SLES 12 或更高版本*</block>
+  <block id="fd5ba176689e7b1be93aaa098be59948" category="sidebar">创建文件系统（SLES 12）</block>
 </blocks>

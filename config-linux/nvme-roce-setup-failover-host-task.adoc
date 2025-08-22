@@ -24,13 +24,13 @@ summary: 将主机配置为运行故障转移。
 NOTE: 请参见 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^] 为了确保安装了所需的任何更新，因为多路径可能无法在 GA 版本的 SLES 或 RHEL 中正常工作。
 
 .关于此任务
-RHEL 7 和 SLES 12 使用设备映射程序多路径（ DMMP ）为基于 RoCE 的 NVMe 提供多路径功能。RHEL 8、RHEL 9和SLES 15使用内置的原生 NVMe故障转移。根据您正在运行的操作系统，需要对多路径进行一些额外配置才能使其正常运行。
+SLES 12 使用设备映射器多路径 (DMMP) 为 RoCE 上的 NVMe 提供多路径支持。 RHEL 8、RHEL 9 和 SLES 15 使用内置的本机 NVMe 故障转移。根据您所运行的操作系统，需要对多路径进行一些额外的配置才能使其正常运行。
 
 
 
-== 为 RHEL 7 或 SLES 12 启用设备映射程序多路径（ DMMP ）
+== 为 SLES 12 启用设备映射器多路径 (DMMP)
 
-默认情况下，在 RHEL 和 SLES 中禁用 DM-MP 。要在主机上启用 DM-MP 组件，请完成以下步骤。
+默认情况下，SLES 中禁用 DM-MP。完成以下步骤以在主机上启用 DM-MP 组件。
 
 .步骤
 . 将 NVMe E 系列设备条目添加到 ` /etc/multipath.conf` 文件的 devices 部分，如以下示例所示：

@@ -20,14 +20,12 @@ summary: 将主机配置为运行故障转移。
 * 对于 SLES 主机，请运行 `rpm -q multipath-tools` 来验证软件包是否已安装
 
 
-.关于此任务
-在使用基于光纤通道的 NVMe 时， RHEL 7 和 SLES 12 会使用设备映射程序多路径（ DMMP ）进行多路径。RHEL 8、RHEL 9和SLES 15使用内置的原生 NVMe故障转移。根据您正在运行的操作系统，需要对多路径进行一些额外配置才能使其正常运行。
+ SLES 12 use Device Mapper Multipath (DMMP) for multipathing when using NVMe over Fibre Channel. RHEL 8, RHEL 9, and SLES 15 use a built-in Native NVMe Failover. Depending on which OS you are running, some additional configuration of multipath is required to get it running properly.
 
 
+== 为 SLES 12 启用设备映射器多路径 (DMMP)
 
-== 为 RHEL 7 或 SLES 12 启用设备映射程序多路径（ DMMP ）
-
-默认情况下，在 RHEL 和 SLES 中禁用 DM-MP 。要在主机上启用 DM-MP 组件，请完成以下步骤。
+默认情况下，SLES 中禁用 DM-MP。完成以下步骤以在主机上启用 DM-MP 组件。
 
 .步骤
 . 将 NVMe E 系列设备条目添加到 /etc/multipath.conf 文件的 devices 部分，如以下示例所示：

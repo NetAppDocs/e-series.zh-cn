@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: partitions, file systems, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 您可以在多路径设备上创建分区，也可以在命名空间上创建文件系统并挂载分区。 
 ---
-= 在E系列中创建文件系统—Linux RHEL 7和SLES 12 (基于FC的NVMe)
+= 在 E 系列中创建文件系统 - SLES 12（NVMe over FC）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-对于 RHEL 7 和 SLES 12 ，您可以在所需的 dm 设备上创建文件系统并挂载文件系统。
+对于 SLES 12，您可以在所需的 dm 设备上创建文件系统并挂载该文件系统。
 
 .步骤
 . 运行 `multipath -ll` 命令以获取 ` /dev/mapper/dm` 设备的列表。
