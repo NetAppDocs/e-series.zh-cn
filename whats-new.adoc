@@ -16,6 +16,12 @@ summary: SANtricity OS 中的新增功能。
 
 
 
+== 11.90R4 版本新增功能
+
+此版本仅包含少量更改、没有任何新功能。有关此版本中变更的详细信息，请参阅 https://library.netapp.com/ecm/ecm_download_file/ECMLP3334464["E系列11.90发行说明"^]。
+
+
+
 == 11.90R3中的新增功能
 
 [cols="35h,~"]

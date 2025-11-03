@@ -33,7 +33,7 @@ summary: E 系列技术报告
 |  |  |  
 
 
-| https://www.netapp.com/ko/media/12421-tr4652.pdf["* TR-4652 ： SANtricity 动态磁盘池 *"^] | https://www.netapp.com/pdf.html?item=/media/17144-tr4737pdf.pdf["* TR-4737 ： SANtricity 自动负载平衡 *"^] | https://www.netapp.com/pdf.html?item=/media/17142-tr4736pdf.pdf["* TR-4736 ： SANtricity Web 服务 APi*"^] 
+| https://www.netapp.com/media/12421-tr-4652-santricity-os-ddp.pdf["* TR-4652 ： SANtricity 动态磁盘池 *"^] | https://www.netapp.com/pdf.html?item=/media/17144-tr4737pdf.pdf["* TR-4737 ： SANtricity 自动负载平衡 *"^] | https://www.netapp.com/pdf.html?item=/media/17142-tr4736pdf.pdf["* TR-4736 ： SANtricity Web 服务 APi*"^] 
 
 
 | 介绍存储管理员如何将类似磁盘的集合分组到池拓扑中，池中的所有驱动器都参与 I/O 工作流。 | 简要介绍 ALB 功能的行为，其主要配置参数及其主机互操作性增强功能。 | 介绍 SANtricity Web 服务概述，此 API 用于配置和管理 E 系列存储系统。 

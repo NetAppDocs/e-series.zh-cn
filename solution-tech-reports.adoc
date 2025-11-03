@@ -47,7 +47,7 @@ summary: E 系列技术报告
 |===
 
 
-| https://www.netapp.com/pdf.html?item=/media/17042-tr4320pdf.pdf["* TR-4320 ： Commvault Data Platform V11* 的最佳实践"^] | https://www.netapp.com/pdf.html?item=/media/17159-tr4471pdf.pdf["* TR-4471: Veeam Backup and Replication" 的最佳实践"^] | https://www.netapp.com/pdf.html?item=/media/16433-tr-4704pdf.pdf["* TR-4704 ：《使用 NetApp E 系列存储部署 Veritas NetBackup 》 *"^] 
+| https://www.netapp.com/media/79676-tr-4950.pdf["* TR-4320 ： Commvault Data Platform V11* 的最佳实践"^] | https://www.netapp.com/media/79436-tr-4948.pdf["* TR-4471: Veeam Backup and Replication" 的最佳实践"^] | https://www.netapp.com/pdf.html?item=/media/16433-tr-4704pdf.pdf["* TR-4704 ：《使用 NetApp E 系列存储部署 Veritas NetBackup 》 *"^] 
 
 
 | 介绍在 Commvault Data Platform V11 环境中使用 NetApp E 系列存储时的参考架构和最佳实践。 | 介绍在 Veeam Backup & Replication 9.5 环境中使用 NetApp E 系列存储时的参考架构和最佳实践。 | 介绍在 NetApp E 系列存储上部署 Veritas NetBackup 的情况。 
