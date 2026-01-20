@@ -81,9 +81,6 @@ systemctl start rdma
 
 . 启用 SRP 守护进程。
 +
-*SLES 12 或更高版本*
-
-+
 ** 要使 SRP 守护进程在启动时启动，请执行以下操作：
 +
 [listing]
