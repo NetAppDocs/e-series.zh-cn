@@ -51,16 +51,4 @@ image:../media/e2824_front.gif["DE224C"]
  a| 
 image:../media/de460c.gif["DE460C"]
 
-
-
- a| 
-* NE224 ： *
-
-* 2u24 （ 2 个机架单元； 24 个驱动器）
-* 2.5 英寸 NVMe SSD 驱动器
-* EF300、EF600。EF300C和EF600C控制器
-
- a| 
-image:../media/ne224.gif["NE224"]
-
 |===

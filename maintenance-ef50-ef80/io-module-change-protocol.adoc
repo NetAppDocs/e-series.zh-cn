@@ -1,0 +1,210 @@
+---
+permalink: maintenance-ef50-ef80/io-module-change-protocol.html 
+sidebar: sidebar 
+keywords: host protocol change, EF50, EF80 
+summary: 当您需要在现有 I/O 模块上使用不同的协议时，作为 I/O 模块升级的一部分，或者当新存储系统安装或控制器升级中新控制器上的默认协议不是您想要的协议时，您可以在 EF50 或 EF80 存储系统中更改主机 I/O 模块上的协议。 
+---
+= 更改主机 I/O 模块协议 - EF50 和 EF80
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+当您需要在现有 I/O 模块上使用不同的协议时，作为 I/O 模块升级的一部分，或者当新存储系统安装或控制器升级中新控制器上的默认协议不是您想要的协议时，您可以在 EF50 或 EF80 存储系统中更改主机 I/O 模块上的协议。
+
+.开始之前
+如果要在硬件过程（I/O 模块升级、新系统安装或控制器升级）中更改主机协议，则需要完成适用的硬件过程。
+
+
+NOTE: 必须已安装新硬件，因为默认协议和可用协议列表（您在此过程中查看）基于当前安装的主机 I/O 模块。
+
+[cols="1,2"]
+|===
+| 如果要更改主机协议... | 操作 
+
+
+ a| 
+在您现有的主机 I/O 模块上（无需安装新硬件）
+ a| 
+继续执行此过程。
+
+
+
+ a| 
+作为 I/O 模块升级的一部分
+ a| 
+在继续此过程之前，请升级主机 I/O 模块。
+
+使用 link:../maintenance-ef50-ef80/io-module-upgrade.html["升级 EF50 或 EF80 的 I/O 模块"] 过程。
+
+
+
+ a| 
+作为新存储系统安装的一部分
+ a| 
+在继续此过程之前，请完成系统安装和设置。
+
+使用 link:../install-hw-ef50-ef80/install-workflow.html["安装和设置 EF50 或 EF80"] 过程。
+
+
+
+ a| 
+作为控制器升级的一部分
+ a| 
+在继续此过程之前，请完成控制器升级。
+
+从 link:../upgrade-controllers/index.html["了解如何升级E系列控制器"] 过程开始。
+
+|===
+.关于此任务
+* 通过准备、停止主机 I/O 操作、更改协议，然后将主机配置为使用新协议，来更改主机 I/O 模块上的协议。
+* 已更改存储系统中所有主机 I/O 模块上的协议。
+* 更改主机 I/O 模块上的协议时，将暂时中断主机对所有卷的访问，并在重新启动期间使存储系统不可用，这需要几分钟的时间。
+
+
+
+
+== 步骤 1：为协议变更做好准备
+
+通过验证当前使用的协议，确定是否需要更改协议，如果需要，则安排停机维护窗口，准备更改主机 I/O 模块上的协议。
+
+.步骤
+. 如果不知道存储系统中主机 I/O 模块上的协议，请使用 SANtricity System Manager 进行验证。
++
+.. 选择 *Settings* > *System*。
+.. 在 *其他设置* 部分，选择 *更改主机 I/O 协议* 以打开该页面。
+.. 请参阅 *Host I/O Protocol* 字段中显示的默认协议。
++
+
+NOTE: 如果要查看主机 I/O 模块的可用协议列表，请选择 *Host I/O Protocol* 字段中的下拉菜单。协议列表基于当前安装的主机 I/O 模块。
+
+
+
+. 下一步取决于默认协议是否是您想要的协议：
++
+[cols="1,2"]
+|===
+| 条件 | 操作 
+
+
+ a| 
+默认协议是您想要的协议
+ a| 
+无需采取操作。您可以退出此过程。
+
+
+
+ a| 
+默认协议不是您想要的协议
+ a| 
+继续此过程以更改协议。
+
+|===
+. 请为此过程安排一个停机维护窗口。
+
+
+
+
+== 步骤 2：停止主机 I/O 操作
+
+更改协议之前，必须停止主机的所有 I/O 操作，然后从存储系统中删除所有定义的主机。
+
+
+NOTE: 在成功完成协议更改之前，您无法访问存储系统上的数据。
+
+.步骤
+. 确保存储系统与所有连接的主机之间没有发生 I/O 操作。例如，您可以执行以下步骤：
++
+** 停止涉及从存储映射到主机的 LUN 的所有进程。
+** 确保没有应用程序向从存储映射到主机的任何 LUN 写入数据。
+** 卸载与存储系统上的 LUN 关联的所有文件系统。
++
+
+NOTE: 停止主机 I/O 操作的确切步骤取决于主机操作系统和配置，这超出了本说明的范围。如果您不确定如何停止环境中的主机 I/O 操作，请考虑关闭主机或联系 https://mysupport.netapp.com/site/global/dashboard["NetApp 支持"^]。
+
++
+
+CAUTION: * 可能的数据丢失 * - 如果在执行 I/O 操作时继续执行此操作步骤，则可能会丢失数据。
+
+
+
+. 在每个控制器上，确保 NV Caching Active（绿色）LED 熄灭。
++
+当 NV 缓存活动（绿色）LED 熄灭时，缓存内存中的任何数据都已写入驱动器，可以安全地继续此过程。
+
++
+
+NOTE: 如果 NV Caching Active（绿色）LED 指示灯亮起，则缓存数据正在写入驱动器。您必须等待过程完成，并且 NV Caching Active（绿色）LED 指示灯关闭。但是，如果 LED 指示灯持续亮起超过五分钟，请 https://mysupport.netapp.com/site/global/dashboard["NetApp 支持"]，然后再继续此过程。
+
++
+NV 缓存活动（绿色）LED 位于控制器上的 NV 图标旁边。
+
++
+image::../media/drw_g_nvmem_led_ieops-1839.svg[NV 状态 LED 位置]
+
++
+[cols="1,4"]
+|===
+
+
+ a| 
+image::../media/icon_round_1.png[标注编号 1]
+ a| 
+控制器上的 NV 图标和 NV 缓存活动指示灯
+
+|===
+. 使用 SANtricity System Manager 确认控制器上的操作已完成：
++
+.. 选择 *Storage* > *Operations in progress* 以查看概览屏幕。
+.. 等待所有操作完成，概览屏幕显示 *当前没有正在进行的操作*，然后继续下一步。
+
+
+. 从存储系统中删除所有定义的主机。
++
+有关说明，请参见  https://docs.netapp.com/us-en/e-series-santricity/sm-storage/delete-host-or-host-cluster.html["在 SANtricity System Manager 中删除主机或主机集群"^] 程序。
+
+
+
+
+
+== 步骤 3：更改协议
+
+使用 SANtricity System Manager 更改主机 I/O 模块上的协议，等待控制器完成其重新启动周期，确认其状态为 Optimal，然后重新创建主机定义。
+
+.步骤
+. 选择 *Settings* > *System*。
+. 在 *其他设置* 部分，选择 *更改主机 I/O 协议* 以打开该页面。
+. 在 *Host I/O Protocol* 字段中，选择下拉菜单并选择要使用的协议。
++
+协议列表基于当前安装的主机 I/O 模块。
+
+. 在打开的字段中键入 *CHANGE* 以确认更改。
+. 选择 *Change* 按钮。
+. 等待控制器完成重新启动周期。
++
+此过程可能需要大约五分钟时间。
+
+. 当控制器恢复联机时，请使用 SANtricity System Manager 确认其状态为最佳。
+. 重新创建主机定义。
++
+有关说明，请参见  https://docs.netapp.com/us-en/e-series-santricity/sm-storage/create-host.html["在 SANtricity System Manager 中手动创建主机"^] 程序。
+
+
+
+
+
+== 步骤 4：配置主机以使用新协议
+
+更改主机协议后，必须将主机配置为使用新协议。
+
+有关分步说明，请参见适用于您的存储系统的指南：
+
+* link:../config-linux/index.html["Linux 快速配置"]
+* link:../config-vmware/index.html["VMware 快速配置"]
+* link:../config-windows/index.html["Windows 快速配置"]
++
+具体设置可能会有所不同。检查 http://mysupport.netapp.com/matrix["NetApp 互操作性表"^] 有关解决方案的具体说明和其他建议设置，请参见。
+
+

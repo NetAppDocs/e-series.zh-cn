@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: cabling, cables, power cable, power cabling, power supply cabling, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C 
 summary: 将每个组件的电源连接到单独的电路。 
 ---
-= 为存储系统布线(E系列)
+= 为存储系统布线电源 - E 系列
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -24,9 +24,9 @@ summary: 将每个组件的电源连接到单独的电路。
 .步骤
 . 将电源线连接到存储系统上的每个电源设备。
 . 将每个磁盘架的两根电源线连接到机柜或机架中的不同配电单元（ PDU ）。
-. 打开两个电源开关。
+. 打开两个电源。
 +
 
-NOTE: EF300和EF600存储系统没有电源开关。连接电缆后、它们将立即通电。
+NOTE: 根据您的存储系统，电源有电源开关或没有电源开关，您必须连接电源线才能接通电源。
 
 

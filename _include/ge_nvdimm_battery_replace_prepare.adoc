@@ -1,0 +1,37 @@
+= 
+:allow-uri-read: 
+
+
+.步骤
+. 确认 SANtricity System Manager 中的 Recovery Guru 报告了 _Battery Failed_ 状态或 _Battery Replacement Required_ 状态。如果报告了任一状态，则必须更换受影响的 NV 电池。
+. 解决任何其他存储系统问题。
++
+使用 SANtricity System Manager，查看 Recovery Guru 中的详细信息，以查看是否存在任何其他问题。
+
+. 请确保未使用任何卷，或者在使用这些卷的所有主机上安装了多路径驱动程序。
+. 确保您已具备以下条件：
++
+** 更换 NV 电池。
+** ESD 腕带或其他防静电预防措施。
+** 平坦、无静电的工作表面。
+** 用于标识连接到受损控制器的每根电缆的标签。
+** 具有浏览器的管理站，可以访问受损控制器的 SANtricity System Manager。
++
+要打开 System Manager 界面，请将浏览器指向受损控制器的域名或 IP 地址。
+
+
+
+. 使用 SANtricity System Manager 备份存储系统的配置数据库：
++
+如果删除控制器时出现问题，您可以使用保存的文件还原您的配置。系统保存 RAID 配置数据库的当前状态，其中包括受损控制器上卷组和磁盘池的所有数据。
+
++
+.. 选择 * 支持 * > * 支持中心 * > * 诊断 * 。
+.. 选择 * 收集配置数据 * 。
+.. 选择 *Collect*。
++
+此文件将保存在浏览器的 "Downloads" 文件夹中，名为 * configurationData-<arrayName>-<DateTime>.7z* 。
+
+
+
+

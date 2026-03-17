@@ -1,0 +1,66 @@
+= 
+:allow-uri-read: 
+
+
+.步骤
+. 从 SANtricity System Manager 的主页，确保存储系统处于"最佳"状态。
++
+
+NOTE: 如果状态不为"最佳"，请使用 Recovery Guru 或联系 https://mysupport.netapp.com/site/global/dashboard["NetApp 支持"^]来解决问题。
+
+. 确保存储系统与所有连接的主机之间没有发生 I/O 操作。
++
+例如，您可以执行以下步骤：
+
++
+** 停止所有涉及从存储系统映射到主机的 LUN 的进程。
+** 请确保没有应用程序将数据写入到从存储系统映射到主机的任何 LUN。
+** 卸载与存储系统上的卷关联的所有文件系统。
++
+
+NOTE: 停止主机 I/O 操作的确切步骤取决于主机操作系统和配置，这超出了本说明的范围。如果您不确定如何停止环境中的主机 I/O 操作，请考虑关闭主机或联系 https://mysupport.netapp.com/site/global/dashboard["NetApp 支持"^]。
+
++
+
+CAUTION: * 可能的数据丢失 * - 如果在执行 I/O 操作时继续执行此操作步骤，则主机应用程序可能会因为无法访问存储而无法访问数据。
+
+
+
+. 在每个控制器上，确保 NV Caching Active（绿色）LED 熄灭。
++
+当 NV Caching Active（绿色）LED 熄灭时，缓存存储器中的任何数据都已写入驱动器，可以安全地移除受损的控制器。
+
++
+
+NOTE: 如果 NV Caching Active（绿色）LED 指示灯亮起，则缓存数据正在写入驱动器。您必须等待过程完成，并且 NV Caching Active（绿色）LED 指示灯关闭。但是，如果 LED 指示灯持续亮起超过五分钟，请 https://mysupport.netapp.com/site/global/dashboard["NetApp 支持"]，然后再继续此过程。
+
++
+NV 缓存活动（绿色）LED 位于控制器上的 NV 图标旁边。
+
++
+image::../media/drw_g_nvmem_led_ieops-1839.svg[NV 状态 LED 位置]
+
++
+[cols="1,4"]
+|===
+
+
+ a| 
+image::../media/icon_round_1.png[标注编号 1]
+ a| 
+控制器上的 NV 图标和 NV 缓存活动指示灯
+
+|===
+. 确认控制器上的操作已在 SANtricity System Manager 中完成：
++
+.. 选择 *Storage* > *Operations in progress* 以查看概览屏幕。
+.. 等待所有操作完成，概览屏幕显示 *当前没有正在进行的操作*，然后继续下一步。
+
+
+. 关闭两个控制器的电源：
++
+.. 贴上标签，然后从两个控制器上拔下电源线。
+.. 等待两个控制器上的所有 LED 熄灭。
+
+
+

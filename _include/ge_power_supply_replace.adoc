@@ -1,0 +1,82 @@
+= 
+:allow-uri-read: 
+
+
+.步骤
+. 如果您尚未接地，请正确接地。
+. 打开电源线固定器，从 PSU 上拔下电源线，然后从 PSU 上拔下电源线。
++
+
+NOTE: 此 PSU 没有电源开关。
+
+. 卸下 PSU：
++
+image::../media/ef50-ef80_psu_ac_orange_tab_replace_ieops-2611.svg[更换 AC PSU]
+
++
+[cols="1,4"]
+|===
+
+
+ a| 
+image::../media/icon_round_1.png[标注编号 1]
+ a| 
+将 PSU 手柄向上旋转到其水平位置，然后抓住它。
+
+
+
+ a| 
+image::../media/icon_round_2.png[标注编号 2]
+ a| 
+用拇指按下橙色锁定选项卡，从控制器上释放 PSU。
+
+
+
+ a| 
+image::../media/icon_round_3.png[标注编号 3]
+ a| 
+将 PSU 从控制器中拉出，同时用另一只手支撑其重量。
+
+
+CAUTION: PSU 很短。将它从控制器中取出时，请始终使用两只手来支撑它，这样它就不会突然从控制器中摆动并伤害到您。
+
+|===
+. 拆开更换电源的包装，并将其放置在存储系统附近的平面上。
++
+Save all packing materials for use when returning the failed power supply.
+
+. 安装更换后的 PSU：
++
+.. 用双手支撑 PSU 的边缘并将其与控制器中的开口对齐。
+.. 轻轻地将 PSU 推入控制器，直到橙色锁定标签卡入到位。
++
+PSU 只能与内部连接器正确接合，并单向锁定到位。
+
++
+
+NOTE: 为避免损坏内部连接器，在将 PSU 滑入控制器时不要使用过大的力。
+
+.. 向下旋转手柄，使其不妨碍正常操作。
+
+
+. 将电源线重新连接到 PSU，并使用电源线固定器固定电源线。
++
+PSU 恢复供电后，状态指示灯应为绿色。
+
+. 确认 PSU 的状态为 Optimal，并且存储系统的 Attention LED 指示灯熄灭。
++
+如果状态不是 Optimal 或任何 Attention LED 指示灯亮起，请确认电源线已正确安装，并且 PSU 已正确安装。如有必要，请卸下并重新安装 PSU。
+
++
+
+NOTE: 如果无法解决此问题，请联系 https://mysupport.netapp.com/site/global/dashboard["NetApp 支持"]，然后再继续此过程。
+
+. 在 SANtricity System Manager 中，单击*支持 > 升级中心*，以确保安装了最新版本的 SANtricity 操作系统。
++
+根据需要安装最新版本。
+
+. 按照套件随附的 RMA 说明将故障部件退回 NetApp 。
++
+如果您需要 RMA 号码或更换程序的其他帮助，请通过 https://mysupport.netapp.com/site/global/dashboard["NetApp 支持"]、888-463-8277（北美）、00-800-44-638277（欧洲）或 +800-800-80-800（亚太地区）联系技术支持。//2025-11-17 ontap-systems-internal/issues/1391
+
+

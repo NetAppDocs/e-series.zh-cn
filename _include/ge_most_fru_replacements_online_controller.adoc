@@ -1,0 +1,40 @@
+= 
+:allow-uri-read: 
+
+
+使受损的控制器恢复联机。
+
+.步骤
+. 使用 SANtricity System Manager 将控制器置于联机状态：
++
+.. 选择 *Hardware* > *Controllers and components* 以显示控制器。
+.. 选择要置于联机状态的控制器以显示其上下文菜单。
+.. 选择 *Place online*，然后确认您要执行此操作。
++
+系统将控制器置于联机状态。
+
+
+
+. 在控制器启动时，检查控制器 LED 。
++
+重新建立与另一控制器的通信时：
+
++
+** 琥珀色警示 LED 仍保持亮起状态。
+** 主机链路 LED 可能亮起，闪烁或熄灭，具体取决于主机接口。
+
+
+. 当控制器恢复联机时：
++
+.. 确认其状态为最佳。
+.. 确认控制器上的注意 LED 熄灭。
++
+如果状态不是 Optimal 或任何 Attention LED 指示灯亮起，请确认所有电缆都已正确安装，并且控制器已正确安装。如有必要，请卸下并重新安装控制器。
+
++
+
+NOTE: 如果无法解决问题，请联系 https://mysupport.netapp.com/site/global/dashboard["NetApp 支持"^]，然后再继续此过程。如果需要，请使用 SANtricity System Manager 为您的存储系统收集支持数据。
+
+
+
+

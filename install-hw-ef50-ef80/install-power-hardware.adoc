@@ -1,0 +1,47 @@
+---
+permalink: install-hw-ef50-ef80/install-power-hardware.html 
+sidebar: sidebar 
+keywords: ef50, ef80, connect power cables 
+summary: 在为 EF50 或 EF80 存储系统连接控制器的镜像和主机网络连接后，打开控制器的电源。 
+---
+= 打开硬件 - EF50 和 EF80
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+连接 EF50 或 EF80 存储系统的控制器间镜像和主机连接后，即可打开控制器电源。
+
+.开始之前
+采取防静电预防措施。
+
+.步骤
+. 将电源线插入每个控制器电源，然后将其连接到不同电路上的电源。
++
+
+NOTE: 如果使用第三方配电装置 (PDU)，请勿直接使用控制器后面的电源插座，因为您可能会阻止对控制器的访问。
+
++
+* 电源线 *
+
++
+image:../media/power_cable_inst-hw-ef600.png["Power cables"]
+
++
+image::../media/drw_psu_layout_1_ieops-1886.svg[存储系统电源连接图]
+
++
+** 系统开始启动。初始启动可能需要长达 8 分钟。
+** 系统机箱上的 LED 指示灯闪烁，风扇启动，这表明控制器正在通电。
++
+在启动过程中，风扇很大声是正常的。
+
+** 系统机箱正面（挡板后面）的数字显示器不亮。
+
+
+. 使用每个电源上的固定装置固定电源线。
+
+
+.下一步是什么？
+打开您的存储系统电源后，link:install-complete-setup.html["完成存储系统设置"]。

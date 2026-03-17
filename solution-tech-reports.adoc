@@ -79,20 +79,8 @@ summary: E 系列技术报告
 |===
 
 
-| https://www.netapp.com/pdf.html?item=/media/31665-tr-4884.pdf["* TR-4884 ：采用 NetApp E 系列和 IBM Spectrum Scale* 的入门级 HPC 系统"^] | https://www.netapp.com/pdf.html?item=/media/22029-tr-4859.pdf["* TR-4859 ：《使用 NetApp E 系列存储部署 IBM Spectrum Scale 》 *"^] | https://www.netapp.com/pdf.html?item=/media/19407-tr-4856-deploy.pdf["* TR-4856 ：《使用 Red Hat Enterprise Linux Server* 的 E 系列的 BeeGFS 高可用性》"^] 
-
-
-| 介绍基于 NetApp E 系列存储系统和 IBM Spectrum Scale 的入门级 HPC 系统的参考架构。 | 介绍基于 IBM 的 Spectrum Scale 软件堆栈部署完整并行文件系统解决方案的过程。 | 介绍在 NetApp E 系列系统支持的 BeeGFS 架构中实施高可用性以及使用 RedHat Enterprise Linux 提供 BeeGFS 存储，元数据和管理服务所需的配置。 
+| https://www.netapp.com/pdf.html?item=/media/31665-tr-4884.pdf["* TR-4884 ：采用 NetApp E 系列和 IBM Spectrum Scale* 的入门级 HPC 系统"^] | https://www.netapp.com/pdf.html?item=/media/22029-tr-4859.pdf["* TR-4859 ：《使用 NetApp E 系列存储部署 IBM Spectrum Scale 》 *"^] |  
 
 
 |  |  |  
-
-
-|  |  |  
-
-
-| https://www.netapp.com/pdf.html?item=/media/19431-tr-4862.pdf["* TR-4862 ：《使用 SUSE Linux Enterprise Server* 的 E 系列的 BeeGFS 高可用性》"^] |  |  
-
-
-| 介绍在 NetApp E 系列系统支持的 BeeGFS 架构中实施高可用性以及使用 SUSE Linux Enterprise Server for BeeGFS 存储，元数据和管理服务所需的配置。 |  |  
 |===

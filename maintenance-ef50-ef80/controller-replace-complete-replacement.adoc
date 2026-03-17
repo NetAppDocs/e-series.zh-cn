@@ -1,0 +1,73 @@
+---
+permalink: maintenance-ef50-ef80/controller-replace-complete-replacement.html 
+sidebar: sidebar 
+keywords: ef50, ef80, how to complete the controller replacement process 
+summary: 要完成 EF50 或 EF80 存储系统的控制器更换，请确保存储系统固件是最新的，验证卷是否已返回其所有者，收集系统支持数据，并将故障部件返回 NetApp。 
+---
+= 完成控制器更换 - EF50 和 EF80
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+要完成 EF50 或 EF80 存储系统的控制器更换，请确保安装了最新版本的 SANtricity 操作系统，验证卷是否已返回到其拥有的控制器，收集系统支持数据，并将故障部件返回到 NetApp。
+
+
+
+== 步骤 1：确保 SANtricity 操作系统为最新版本，验证卷所有权，并收集支持数据
+
+使用 SANtricity System Manager，确保已安装最新版本的 SANtricity 操作系统，验证所有卷都已返回到其拥有的控制器，并收集支持数据，以便您可以恢复操作。
+
+.步骤
+. 请确保存储系统上已安装最新版本的 SANtricity 操作系统：
++
+.. 选择 *Support* > *Upgrade Center*
+.. 根据需要安装最新版本。
+
+
+. 验证所有卷都已返回到其拥有的控制器：
++
+[cols="1,2"]
+|===
+| 条件 | 操作 
+
+
+ a| 
+Recovery Guru 存在并指示卷不在其首选路径上（未返回到其所属控制器）
+ a| 
+.. 将卷重新分配给其拥有的控制器，通过选择 *Storage* > *Volumes* > *More* ，然后从下拉菜单中选择 *Redistribute volumes* 。
+.. 通过检查 Recovery Guru 是否存在并且仍然指示卷不在其首选路径上，验证所有卷已重新分配给其拥有的控制器。
+
+
+
+NOTE: 如果卷仍未返回到其拥有的控制器，请联系  https://mysupport.netapp.com/site/global/dashboard["NetApp 支持"]。
+
+
+
+ a| 
+Recovery Guru 不存在（似乎所有卷都已返回给其拥有的控制器）
+ a| 
+通过选择 *Storage* > *Volumes* > *More* 来验证所有卷是否已返回其拥有的控制器，然后从下拉菜单中选择 *Change volume ownership* 以查看卷所有者。
+
+|===
+. 为您的存储系统收集支持数据：
++
+.. 选择 * 支持 * > * 支持中心 * > * 诊断 * 。
+.. 选择 * 收集支持数据 * 。
+.. 选择 *Collect*。
++
+此文件将保存在浏览器的 "Downloads" 文件夹中，名为 * support-data.7z* 。
+
+
+
+
+
+
+
+== 步骤 2：将故障部件返回到 NetApp
+
+如套件附带的 RMA 说明中所述，将故障部件退回 NetApp。有关更多信息，请参阅 https://mysupport.netapp.com/site/info/rma["零件退货和更换"]页面。
+
+.下一步是什么？
+控制器更换已完成。您可以恢复正常操作。

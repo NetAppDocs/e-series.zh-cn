@@ -1,0 +1,23 @@
+= 
+:allow-uri-read: 
+
+
+.步骤
+. 选择 *Settings* > *System*。
+. 在 *其他设置* 部分，选择 *更改主机 I/O 协议* 以打开该页面。
+. 在 *Host I/O Protocol* 字段中，选择下拉菜单并选择要使用的协议。
++
+协议列表基于当前安装的主机 I/O 模块。
+
+. 在打开的字段中键入 *CHANGE* 以确认更改。
+. 选择 *Change* 按钮。
+. 等待控制器完成重新启动周期。
++
+此过程可能需要大约五分钟时间。
+
+. 当控制器恢复联机时，请使用 SANtricity System Manager 确认其状态为最佳。
+. 重新创建主机定义。
++
+有关说明，请参见  https://docs.netapp.com/us-en/e-series-santricity/sm-storage/create-host.html["在 SANtricity System Manager 中手动创建主机"^] 程序。
+
+

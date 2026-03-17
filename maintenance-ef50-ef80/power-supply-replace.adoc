@@ -1,0 +1,123 @@
+---
+permalink: maintenance-ef50-ef80/power-supply-replace.html 
+sidebar: sidebar 
+keywords: ef50, ef80, replace a power supply 
+summary: '更换 EF50 或 EF80 存储系统中出现故障或损坏的电源装置 (PSU)，确保系统持续获得稳定运行所需的电源。' 
+---
+= 更换电源 - EF50 和 EF80
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+更换 EF50 或 EF80 存储系统中出现故障或损坏的电源装置 (PSU)，确保系统持续获得稳定运行所需的电源。
+
+.开始之前
+* 通过查看 Recovery Guru 中的详细信息，确认电源出现问题。
+* 检查电源上的注意（琥珀色）LED 指示灯是否亮起，表明电源或其集成风扇出现故障。
+* 解决任何其他存储系统问题。
++
+在 Recovery Guru 中，选择 *Recheck* 以查看是否存在任何其他问题。
+
+* 确保您已具备以下条件：
++
+** 更换电源。
++
+
+NOTE: 请勿混合使用不同电压类型的 PSU 。请始终像这样替换。
+
+** 防静电腕带或您已采取其他防静电预防措施。
+** 平坦、无静电的工作表面。
+** 具有浏览器的管理站，可以访问受损控制器的 SANtricity System Manager。
++
+要打开 System Manager 界面，请将浏览器指向受损控制器的域名或 IP 地址。
+
+
+
+
+
+.关于此任务
+* 当电源出现故障时，必须尽快更换，以便存储系统具有冗余电源。
+* 通过从故障 PSU 拔下电源线、更换电源并重新连接电源线来更换电源。
+* 您可以打开存储系统位置（蓝色）LED（位于存储系统和两个控制器的正面），以帮助物理定位受影响的存储系统。使用 SANtricity System Manager，选择*硬件* > *控制器和组件*，选择*控制器架*选项卡，然后从上下文菜单中选择*打开定位灯*。
+
+
+.步骤
+. 如果您尚未接地，请正确接地。
+. 打开电源线固定器，从 PSU 上拔下电源线，然后从 PSU 上拔下电源线。
++
+
+NOTE: 此 PSU 没有电源开关。
+
+. 卸下 PSU：
++
+image::../media/ef50-ef80_psu_ac_orange_tab_replace_ieops-2611.svg[更换 AC PSU]
+
++
+[cols="1,4"]
+|===
+
+
+ a| 
+image::../media/icon_round_1.png[标注编号 1]
+ a| 
+将 PSU 手柄向上旋转到其水平位置，然后抓住它。
+
+
+
+ a| 
+image::../media/icon_round_2.png[标注编号 2]
+ a| 
+用拇指按下橙色锁定选项卡，从控制器上释放 PSU。
+
+
+
+ a| 
+image::../media/icon_round_3.png[标注编号 3]
+ a| 
+将 PSU 从控制器中拉出，同时用另一只手支撑其重量。
+
+
+CAUTION: PSU 很短。将它从控制器中取出时，请始终使用两只手来支撑它，这样它就不会突然从控制器中摆动并伤害到您。
+
+|===
+. 拆开更换电源的包装，并将其放置在存储系统附近的平面上。
++
+Save all packing materials for use when returning the failed power supply.
+
+. 安装更换后的 PSU：
++
+.. 用双手支撑 PSU 的边缘并将其与控制器中的开口对齐。
+.. 轻轻地将 PSU 推入控制器，直到橙色锁定标签卡入到位。
++
+PSU 只能与内部连接器正确接合，并单向锁定到位。
+
++
+
+NOTE: 为避免损坏内部连接器，在将 PSU 滑入控制器时不要使用过大的力。
+
+.. 向下旋转手柄，使其不妨碍正常操作。
+
+
+. 将电源线重新连接到 PSU，并使用电源线固定器固定电源线。
++
+PSU 恢复供电后，状态指示灯应为绿色。
+
+. 确认 PSU 的状态为 Optimal，并且存储系统的 Attention LED 指示灯熄灭。
++
+如果状态不是 Optimal 或任何 Attention LED 指示灯亮起，请确认电源线已正确安装，并且 PSU 已正确安装。如有必要，请卸下并重新安装 PSU。
+
++
+
+NOTE: 如果无法解决此问题，请联系 https://mysupport.netapp.com/site/global/dashboard["NetApp 支持"]，然后再继续此过程。
+
+. 在 SANtricity System Manager 中，单击*支持 > 升级中心*，以确保安装了最新版本的 SANtricity 操作系统。
++
+根据需要安装最新版本。
+
+. 按照套件随附的 RMA 说明将故障部件退回 NetApp 。
++
+如果您需要 RMA 号码或更换程序的其他帮助，请通过 https://mysupport.netapp.com/site/global/dashboard["NetApp 支持"]、888-463-8277（北美）、00-800-44-638277（欧洲）或 +800-800-80-800（亚太地区）联系技术支持。//2025-11-17 ontap-systems-internal/issues/1391
+
+

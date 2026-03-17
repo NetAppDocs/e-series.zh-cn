@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: cabling, cables, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C 
 summary: 使用缆线将主机直接连接到控制器或使用交换机。 
 ---
-= 为存储系统布线(E系列)
+= 为存储系统布线 - E-Series
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -22,6 +22,9 @@ summary: 使用缆线将主机直接连接到控制器或使用交换机。
 == 适用的硬件型号
 
 布线信息适用场景以下硬件型号。
+
+
+NOTE: 如果没有看到下面列出的控制器盘架（存储系统），请参阅 link:../getting-started/getup-run-concept.html["E系列快速入门"^] 并单击特定存储系统的链接以访问布线信息。
 
 |===
 | * 控制器架 * | * 驱动器架 * 
@@ -51,7 +54,7 @@ DE460C
 
 == 其他布线信息
 
-如果要为以下配置布线，请参见 https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057["将 IOM 驱动器架添加到现有 E27XX ， E56XX 或 EF560 控制器架。"^]
+如果要为以下任意配置布线，请参阅 https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057["将 IOM 驱动器架添加到现有 E27XX ， E56XX 或 EF560 控制器架。"^]
 
 |===
 | * 控制器架 * | * 驱动器架 * 

@@ -1,0 +1,75 @@
+---
+permalink: maintenance-ef50-ef80/maintain-overview.html 
+sidebar: sidebar 
+keywords: ef50, ef80 maintenance, maintenance, repairing ef50, ef80, replace ef50, ef80 components 
+summary: 维护 EF50 或 EF80 存储系统的硬件，以确保长期可靠性和最佳性能。执行定期维护任务，例如更换故障组件，因为这有助于防止停机和数据丢失。 
+---
+= 维护程序概述 - EF50 和 EF80
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+维护 EF50 或 EF80 存储系统的硬件，以确保长期可靠性和最佳性能。执行定期维护任务，例如更换故障组件，因为这有助于防止停机和数据丢失。
+
+维护程序假设您的 EF50 或 EF80 存储系统已部署在 SANtricity 环境中。
+
+
+
+== 系统组件
+
+对于您的 EF50 或 EF80 存储系统，您可以对以下组件执行维护过程。
+
+[cols="25,65"]
+|===
+
+
+ a| 
+link:controller-replace-workflow.html["控制器"]
+ a| 
+控制器由主板、固件和软件组成。它控制驱动器并运行 SANtricity 操作系统软件。
+
+
+
+ a| 
+link:dimm-replace.html["DIMM"]
+ a| 
+双列直插式内存模块 (DIMM) 是一种计算机内存。安装它们是为了将系统内存添加到控制器主板。
+
+
+
+ a| 
+link:drive-replace.html["驱动器"]
+ a| 
+驱动器是提供数据所需的物理存储的设备。
+
+
+
+ a| 
+link:fan-replace.html["风扇"]
+ a| 
+风扇冷却控制器和驱动器。
+
+
+
+ a| 
+link:io-module-overview.html["I/O 模块"]
+ a| 
+I/O 模块（Input/Output 模块）是一种硬件组件，充当控制器与需要与控制器交换数据的各种设备或系统之间的中介。
+
+
+
+ a| 
+link:nvdimm-battery-replace.html["NV 电池"]
+ a| 
+非易失性存储器（NVMEM）电池负责在断电后向 NVMEM 组件供电，同时将传输中的数据降级到闪存。
+
+
+
+ a| 
+link:power-supply-replace.html["Power supply"]
+ a| 
+电源在控制器中提供冗余电源。
+
+|===

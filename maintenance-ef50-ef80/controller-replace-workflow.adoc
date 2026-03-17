@@ -1,0 +1,38 @@
+---
+permalink: maintenance-ef50-ef80/controller-replace-workflow.html 
+sidebar: sidebar 
+keywords: ef50, ef80, replace the controller workflow 
+summary: 您可以通过满足存储系统要求、准备系统、将受损控制器置于离线状态、更换控制器、将新控制器置于在线状态以及完成更换过程来更换 EF50 或 EF80 存储系统中的受损控制器。 
+---
+= 控制器更换工作流程 - EF50 和 EF80
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以通过满足存储系统要求、准备系统、将受损控制器置于离线状态、更换控制器、将新控制器置于在线状态以及完成更换过程来更换 EF50 或 EF80 存储系统中的受损控制器。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"]link:controller-replace-requirements.html["查看控制器更换要求"]
+[role="quick-margin-para"]
+验证存储系统的控制器是否出现故障，验证存储系统的状态，获取用于此过程的工具，并具有管理工作站和浏览器以访问 SANtricity System Manager。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"]link:controller-replace-prepare.html["准备更换控制器"]
+[role="quick-margin-para"]
+打开替换控制器的包装，记下其 MAC 地址，确认其部件号正确，然后备份存储系统的配置数据库。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三个"]link:controller-replace-offline-controller.html["使受损的控制器脱机"]
+[role="quick-margin-para"]
+离线受损的控制器，以防止数据丢失，并确保更换受损控制器时的系统稳定性。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四个"]link:controller-replace-move-hardware.html["更换受损的控制器"]
+[role="quick-margin-para"]
+验证缓存内存中的任何数据是否已写入驱动器，从受损控制器拔下所有电缆，卸下控制器，将组件移至更换控制器，安装更换控制器，并重新连接所有电缆。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五个"]link:controller-replace-online-controller.html["使更换控制器联机"]
+[role="quick-margin-para"]
+确认替换控制器的 IP 地址，将控制器联机，并确认存储系统状态为 Optimal。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["六个"]link:controller-replace-complete-replacement.html["完成控制器更换"]
+[role="quick-margin-para"]
+确保安装了最新版本的 SANtricity 操作系统，验证卷是否返回到其拥有的控制器，收集系统支持数据，并将故障部件返回到 NetApp。

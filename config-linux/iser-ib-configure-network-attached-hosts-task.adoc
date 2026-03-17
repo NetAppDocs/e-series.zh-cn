@@ -163,7 +163,7 @@ iscsiadm -m node --target <Target IQN> -I iface-ib1 -p <Target Port IP\> -l
 ----
 iscsiadm -m session
 ----
-.. 从阵列中检查 iSCSI 会话状态。在 SANtricity 系统管理器中，导航到 * 存储阵列 * > * iSER * > * 查看 / 结束会话 * 。
+.. 从阵列中检查 iscsi 会话状态。从 SANtricity System Manager，导航到 *设置* > *系统* > *查看/结束 iSCSI 会话*。
 
 
 

@@ -15,26 +15,27 @@ summary: E 系列技术报告
 
 
 
-== 平台 TR
+== EF50、EF80 和 E4000 平台 TR
 
 [cols="9,9,9"]
 |===
 
 
-| https://www.netapp.com/pdf.html?item=/media/17026-tr4725pdf.pdf["* TR-4725 ： E2800 阵列功能概述 *"^] | https://www.netapp.com/pdf.html?item=/media/17120-tr4724pdf.pdf["+++TR-4724 ： E5700 阵列功能概述 ++*"^] | https://www.netapp.com/pdf.html?item=/media/21363-tr-4877.pdf["+++TR-4877 ： EF300 阵列功能概述 ++*"^] 
+| https://www.netapp.com/pdf.html?item=/media/116236-tr-5001-intro-to-netapp-e4000-arrays-with-santricity.pdf["* TR-5001 ： E4000 阵列功能概述 *"^] | https://www.netapp.com/pdf.html?item=/media/161852-tr-5017-introduction-to-netapp-ef80-array.pdf["*TR-5017：EF80 阵列功能概述*"^] | https://www.netapp.com/pdf.html?item=/media/161736-tr-5018-introduction-to-netapp-ef50-array.pdf["*TR-5018：EF50 阵列功能概述*"^] 
 
 
-| 介绍 E2800 混合阵列的硬件和软件功能以及最新的 SANtricity 操作系统功能。 | 介绍 E5700 产品信息，包括最新版本的 SANtricity 引入的新硬件和软件功能。 | 介绍 EF300 全闪存阵列的硬件和软件功能以及新的 SANtricity OS 功能。 
+| 介绍 E4000 混合阵列的硬件和软件功能以及最新的 SANtricity 操作系统功能。 | 介绍 EF80 全闪存阵列的硬件和软件功能以及最新的 SANtricity OS 功能。 | 介绍 EF50 全闪存阵列的硬件和软件功能以及最新的 SANtricity OS 功能。 
+|===
 
 
-|  |  |  
+== 传统平台 TR
+
+[cols="9,9,9,9"]
+|===
 
 
-|  |  |  
+| https://www.netapp.com/pdf.html?item=/media/17009-tr4800pdf.pdf["* TR-4800 ： EF600 阵列功能概述 *"^] | https://www.netapp.com/pdf.html?item=/media/21363-tr-4877.pdf["+++TR-4877 ： EF300 阵列功能概述 ++*"^] | https://www.netapp.com/pdf.html?item=/media/17026-tr4725pdf.pdf["* TR-4725 ： E2800 阵列功能概述 *"^] | https://www.netapp.com/pdf.html?item=/media/17120-tr4724pdf.pdf["+++TR-4724 ： E5700 阵列功能概述 ++*"^] 
 
 
-| https://www.netapp.com/pdf.html?item=/media/17009-tr4800pdf.pdf["* TR-4800 ： EF600 阵列功能概述 *"^] | https://www.netapp.com/pdf.html?item=/media/116236-tr-5001-intro-to-netapp-e4000-arrays-with-santricity.pdf["* TR-5001 ： E4000 阵列功能概述 *"^] |  
-
-
-| 介绍 EF600 全闪存阵列的硬件和软件功能以及新的 SANtricity OS 功能。 | 介绍 E4000 混合阵列的硬件和软件功能以及最新的 SANtricity 操作系统功能。 |  
+| 介绍 EF600 全闪存阵列的硬件和软件功能以及新的 SANtricity 操作系统功能。 | 介绍 EF300 全闪存阵列的硬件和软件功能以及新的 SANtricity 操作系统功能。 | 描述 E2800 混合阵列的硬件和软件功能以及最新的 SANtricity OS 功能。 | 描述 E5700 产品信息，包括最新版本的 SANtricity 引入的新硬件和软件功能。 
 |===

@@ -25,12 +25,19 @@ summary: 文档的早期版本
 * https://mysupport.netapp.com/ecm/ecm_download_file/ECMP1394872["向 E2600 和 E2700 添加第二个控制器"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2353447["更改或添加主机协议"^]
 * https://mysupport.netapp.com/ecm/ecm_download_file/ECMP1656638["将交流电源转换为直流电源"^]
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2589397["控制器升级指南—传统控制器型号"^]
 
 
 
 
 == 早期版本的软件文档
+
+
+
+=== SANtricity 11.9 版本
+
+* https://docs.netapp.com/us-en/e-series-santricity-119/index.html["System Manager帮助"^]
+* https://docs.netapp.com/us-en/e-series-santricity-119/index.html["Unified Manager帮助"^]
+
 
 
 

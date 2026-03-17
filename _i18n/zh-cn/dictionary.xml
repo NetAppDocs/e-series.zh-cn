@@ -673,7 +673,6 @@
   <block id="1eb0ff6df726e241747c0e89f25244ea" category="paragraph">如果要导入 CA 签名的证书，请退出发现向导并单击左侧面板中的 * 证书管理 * 。有关详细说明，请参见联机帮助。</block>
   <block id="e3edf5c3fccd5c6697f49aa29eea9d52" category="section-title">第 2 步：在发现期间解析不可信的证书</block>
   <block id="07cc0b154f9ccc95c3979e73595b247d" category="paragraph">在继续执行发现过程之前，您必须解决任何证书问题。</block>
-  <block id="42953292e20d0fe6df436b0360c37be2" category="list-text">如果 " 解析自签名证书 " 对话框打开，请查看为不可信证书显示的信息。有关详细信息，您还可以单击表最末尾的省略号，然后从弹出菜单中选择 * 查看 * 。</block>
   <block id="d51bf97a9da045099b54d30bd57c5b28" category="list-text">如果您信任与发现的存储阵列的连接，请单击 * 下一步 * ，然后单击 * 是 * 确认并继续到向导中的下一个对话框。自签名证书将标记为可信证书，存储阵列将添加到插件中。</block>
   <block id="674337fef1a1eb3f66ed81c2c9ecacf9" category="list-text">如果您不相信与存储阵列的连接，请选择 * 取消 * 并在添加任何存储阵列之前验证每个存储阵列的安全证书策略。</block>
   <block id="f090b90012bc562ab3ad569b3f605995" category="section-title">第 3 步：提供密码</block>
@@ -987,7 +986,6 @@
   <block id="c2f14ef319f065fe227efe97d6ea24a9" category="admonition">您无需从每个托盘的背面卸下电源或其他组件</block>
   <block id="c0fc5b77785e9ccc271b2b8dd4cb9834" category="list-text">将每个组件放在单独的防静电袋中。如果原始装运箱可用，请使用它们来运输组件。</block>
   <block id="8e13c4e8636891fcc6e5a23419cbc317" category="summary">在 E 系列 3040 40U 机柜中安装驱动器托盘概述</block>
-  <block id="57d5c442d5e080cc736db980fe00ba6d" category="paragraph">您可以在 E 系列 3040 40U 机柜中安装以下控制器驱动器托盘和扩展驱动器托盘：</block>
   <block id="c1720d086d67c4941ff4f5d3bdc66f28" category="list-text">E2612 ， E2624 和 E2660 控制器驱动器托盘</block>
   <block id="6fb7eb6545fb6a1d5229ab891080cda4" category="list-text">E2712 ， E2724 和 E2760 控制器驱动器托盘</block>
   <block id="ad11ae63512cece6b5faf0e830c04f54" category="list-text">E5412 ， E5424 和 E5460 控制器驱动器托盘</block>
@@ -1076,7 +1074,6 @@
   <block id="d37274e03d6538d0be57f24ae671fece" category="list-text">打开机柜中所有驱动器托盘的电源。</block>
   <block id="34a41d4e3b538464e1138ee17196dbda" category="paragraph">机柜安装完成。您可以恢复正常操作。</block>
   <block id="44fc66161e7a43ac157626f024173dde" category="paragraph">对于 iSCSI 协议，您可以配置交换机，在阵列端和主机端配置网络，然后验证 IP 网络连接。</block>
-  <block id="9c8c6bc1dd1c6a33336d55ccb262a475" category="list-text">两个单独的网络可实现高可用性。请确保使用 VLAN 或两个单独的网络将 iSCSI 流量隔离到不同的网段。</block>
   <block id="7a0cbf02537e0c5675240097a5e290c6" category="paragraph">为 iSCSI 网络配置基本冗余的一个有效策略是，将每个主机端口和每个控制器的一个端口连接到不同的交换机，并使用 VLAN 对不同网段上的每组主机和控制器端口进行分区。</block>
   <block id="193ade8f53ce0d3769717269d5021a04" category="paragraph">如果出于性能原因在 IP SAN 中使用巨型帧，请确保将阵列，交换机和主机配置为使用巨型帧。有关如何在主机和交换机上启用巨型帧的信息，请参见操作系统和交换机文档。要在阵列上启用巨型帧，请完成步骤 3 中的操作步骤。</block>
   <block id="7a44acba5c86f8f1ca8ef18dcb107358" category="list-text">System Manager GUI ，基于角色的访问控制（ Role-Based Access Control ， RBAC ）或 LDAP 以及为对存储阵列进行适当安全访问而配置的目录服务的密码。有关访问管理的详细信息，请参见 SANtricity System Manager 联机帮助。</block>
@@ -1126,7 +1123,6 @@
   <block id="e9c45dd6cb00ba8477b33a69aa171b96" category="list-text">创建新 LUN 上的文件并将其写入。</block>
   <block id="b3f0f7d7e200ade801e191d50af42d06" category="list-text">读取文件并验证数据是否已写入。</block>
   <block id="9f0a17fd8f2207d817cfe3c8c6a95585" category="list-text">要验证多路径是否正常工作，请更改卷所有权。</block>
-  <block id="0e47ea92ec60347bfe5d3c6449f27c14" category="list-text">在 SANtricity 系统管理器图形用户界面中，转到 * 存储 * &gt; * 卷 * ，然后选择 * 更多 * &gt; * 更改所有权 * 。</block>
   <block id="41213a903734e026a2aabeac116a7c55" category="list-text">在更改卷所有权对话框中，使用 * 首选所有者 * 下拉列表为列表中的一个卷选择另一个控制器，然后确认此操作。</block>
   <block id="b3b03c678d704e3c2546a61146e099e3" category="list-text">验证您是否仍可访问 LUN 上的文件。</block>
   <block id="093eba936291bd32a865bdc3cedc6822" category="list-text">查找目标 ID 。</block>
@@ -1240,7 +1236,6 @@
   <block id="56d5920f093315d1b4acca4634ea813e" category="paragraph">DE460C</block>
   <block id="6d15b7c798a29f86cded1b0859358dfd" category="section-title">其他布线信息</block>
   <block id="862335aa1afeb33c245d15b63267f502" category="inline-link">将 IOM 驱动器架添加到现有 E27XX ， E56XX 或 EF560 控制器架。</block>
-  <block id="4fffce6a4208f525b6fa4c44cc5bf6ce" category="paragraph">如果要为以下配置布线，请参见<block ref="4426bbb413c69380e459efdddf2e423d" category="inline-link-rx"></block></block>
   <block id="de79e6b334ef3f5c38431ae360ff09f6" category="paragraph">E2712 ， E2724 ， E5612 ， E5624 ， EF560</block>
   <block id="f2a12ad5f52528054619d431dc7c3054" category="paragraph">E2760 ， E5660</block>
   <block id="5c8edef9c398c6792341850977901070" category="inline-link">《同步和异步镜像功能说明和部署指南》</block>
@@ -3660,8 +3655,6 @@
   <block id="4b1723f1cc6cad1502f558faf333c23d" category="section-title">VSS</block>
   <block id="2f569257101cf136a49d983584bfc44f" category="section-title">HPC</block>
   <block id="9e90820ac4b8e4889e0e892b92aae973" category="section-title">功能 TR</block>
-  <block id="d4f48db40cc9ccb47737f1fc78496e37" category="summary">机架式安装硬件。</block>
-  <block id="bd0b9fd60ba60fb26f0df0fcd090ce57" category="paragraph">使用以下链接访问介绍如何安装机架安装硬件的文档。</block>
   <block id="d6fb953a021a6ff678e8a0c03802aad8" category="section-title">可调整的支持导轨</block>
   <block id="bfbdc837bd6c733a01be96f0d8c0fcbf" category="inline-link">安装可调整的支持导轨</block>
   <block id="2bf00abba5acdf11b805e02e28e0cf01" category="paragraph">访问<block ref="798f784939cffd43e8de29df7d9e6431" category="inline-link-rx"></block> 用于安装单独发售的控制器驱动器托盘或驱动器托盘（尚未安装在机柜中）。此操作步骤适用于以下 2U （ 9 厘米或 3.5 英寸）托盘：</block>
@@ -3951,7 +3944,6 @@
   <block id="648ed8661ad007c126d212b08e03c8c1" category="list-text">将更换用的风扇完全滑入磁盘架。</block>
   <block id="c4c2324e867c8ac1926d98eff2baef06" category="paragraph">安装新风扇后，将控制器箱重新安装到控制器架中。</block>
   <block id="30bbbdf3936bea4031a4d92241354b80" category="section-title">第 6 步：完成风扇更换</block>
-  <block id="a935fd8920ef566dc3502cb2fd802a9e" category="list-text">在 System Manager 中，导航到硬件页面。</block>
   <block id="8addc48a633646024884c3c4cdcfc464" category="list-text">选择已更换风扇的控制器。</block>
   <block id="d6475123c80be4addf74127c7fdabcec" category="paragraph">风扇更换已完成。您可以恢复正常操作。</block>
   <block id="3445e7362b27e4ba74cabda5b497847f" category="summary">在更换 EF300 或 EF600 HIC 之前，请查看要求和注意事项。</block>
@@ -5161,7 +5153,6 @@
   <block id="0434f4063ec0e6018b67e2628a0486e9" category="paragraph">对于每个会话，运行 iscsiadm 命令以登录到此会话。</block>
   <block id="529357696d4e7bff988966dd1a9b7030" category="list-text">验证 iSE1/iSCSI 会话。</block>
   <block id="8d78f4535f282487a2ab3ddd133fb30b" category="list-text">从主机检查 iSCSI 会话状态：</block>
-  <block id="c76785f55adb8111b0f0c955e99aaf58" category="list-text">从阵列中检查 iSCSI 会话状态。在 SANtricity 系统管理器中，导航到 * 存储阵列 * &gt; * iSER * &gt; * 查看 / 结束会话 * 。</block>
   <block id="b91274a21d960f7520a6ac949c997991" category="paragraph">当 OFED/RDMA 服务启动时， iSER 内核模块会在 iSCSI 服务运行时默认加载。要完成 iSER 连接设置，应加载 iSER 模块。目前，这需要重新启动主机。</block>
   <block id="3710c6fd95e8087b7e4f2fd5c68bd9b1" category="summary">SMdevices 工具是 NVMe-CLI 软件包的一部分，可用于查看主机上当前可见的卷。此工具可替代 NVMe list 命令。</block>
   <block id="3f8c2a243c2baf6f8bcf99653d3825cb" category="doc">显示主机可见的卷</block>
@@ -5243,7 +5234,6 @@
   <block id="1bfd8936faf8d2d6e911732cc86fad64" category="doc">光纤通道快速设置</block>
   <block id="13fd378eeb7a101fc09f1cbecaf60c62" category="summary">在管理工作站上安装 SANtricity 存储管理器软件时，默认情况下会安装图形用户界面（ gui ）和命令行界面（ cli\ ）。以下说明假定您将在管理工作站上安装 SANtricity 存储管理器图形用户界面，而不是在 I/O 主机上安装。</block>
   <block id="9e87cdc6a00e94ff824bf3066fcce29d" category="summary">如果控制器包含基于 InfiniBand 的 NVMe 端口，则可以使用 SANtricity 系统管理器配置每个端口的 IP 地址。</block>
-  <block id="9f8222c6083d597d584744e4fbf1e758" category="list-text">从 System Manager 界面中，选择 * 硬件 * 。</block>
   <block id="e605f070f133de407ce03a9b4c8f9b96" category="list-text">单击包含要配置的基于 InfiniBand 的 NVMe 端口的控制器。</block>
   <block id="a03fb9ed3e23d41ff2ce19057c3e8d50" category="list-text">选择 * 配置基于 InfiniBand 端口的 NVMe * 。</block>
   <block id="8a105984196bb35866ef84f5338bcea8" category="admonition">只有在 System Manager 检测到控制器上的基于 InfiniBand 的 NVMe 端口时，才会显示配置基于 InfiniBand 的 NVMe 选项。</block>
@@ -5415,7 +5405,6 @@
   <block id="8329426ded9436d4fbff44b5e4b4c72c" category="admonition">IQN 如下所示：</block>
   <block id="e6fa7633cc6e723b63becb0e5f1d6bb5" category="list-text">列出在主机上建立的 iSCSI 会话。</block>
   <block id="510c309ccc5b6c64d1c85d306a6a0f42" category="summary">在阵列端配置 iSCSI 网络。</block>
-  <block id="0e5c9a9b399a5ffb43c453285a8e27f7" category="paragraph">此任务介绍如何从 System Manager 的硬件页面访问 iSCSI 端口配置。您也可以从菜单： System[ 设置 &gt; 配置 iSCSI 端口 ] 访问配置。</block>
   <block id="dcd56d80ecc0d78aefb3259c4aa4270b" category="summary">对于 SLES 15 ，您可以在原生 NVMe 设备上创建文件系统并挂载该文件系统。</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">法律声明提供对版权声明、商标、专利等的访问。</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律声明</block>
@@ -5437,12 +5426,9 @@
   <block id="fd4afa980d6bd4e60fc6c8caabf1757e" category="paragraph">* DE460C ： *</block>
   <block id="b6bb42e2f777828c4d73a82302e2ef0a" category="list-text">4u60 （ 4 个机架单元； 60 个驱动器）</block>
   <block id="33d6fe66d2b404f7c25080e8098edd9c" category="list-text">3.5 英寸和 2.5 英寸驱动器（ NL-SAS ， SAS 和 SSD ）</block>
-  <block id="3fcdd0c9c8fbc91f7bb9df81e95c618f" category="paragraph">* NE224 ： *</block>
-  <block id="73fe55efcdaa2ad95e010a4bac9165df" category="list-text">2.5 英寸 NVMe SSD 驱动器</block>
   <block id="ae57e705c83e0b20d768cee453b91d4c" category="summary">E 系列存储阵列提供多种配置和型号。</block>
   <block id="d2bf6cf91aae10964c05d43904777ddb" category="doc">E 系列硬件概述</block>
   <block id="d234c0641fc33cad6a6c3c6ea71df215" category="paragraph">存储阵列包括磁盘架，控制器，驱动器，软件和固件。该阵列可以安装在机架或机柜中，并可为一个或两个控制器提供可自定义的硬件，这些硬件位于 12 ， 24 或 60 个驱动器的磁盘架中。您可以将存储阵列从多种接口类型连接到 SAN 以及各种主机操作系统。</block>
-  <block id="b3670f74b82245e2e94e5b08bb774ce5" category="paragraph">E 系列阵列有以下型号：</block>
   <block id="8a34e53d101b7f706ed37ea0908d0235" category="list-text">E2800 系列—入门级混合</block>
   <block id="790cc654b42cdeb32b1a2b7165e43ea3" category="list-text">EF280 系列—入门级全闪存</block>
   <block id="9ace4a887760531c4699ebc554565544" category="list-text">EF300 系列—入门级全闪存，全 NVMe</block>
@@ -5535,7 +5521,6 @@
   <block id="e04137252fedc7e9af87dd09f9516981" category="doc">了解 E 系列系统</block>
   <block id="a30c4e694d7edde326fee8d00122908f" category="paragraph">了解 E 系列系统，其中包括可满足企业数据存储需求的集成硬件和软件。</block>
   <block id="5c4cc7b84f5f2341e2a7255a66b90d60" category="summary">要启动并运行 E 系列系统，您需要安装硬件组件，配置主机系统以及配置存储。</block>
-  <block id="a852a041cd4afe33464b03fee2e3f120" category="paragraph">要安装 E 系列硬件，请访问适用于您的存储阵列和磁盘架类型的安装和设置说明：</block>
   <block id="9543914d3a895a3a83f2774c1ca09f7b" category="inline-link-macro">EF600 或 EF300 系列，带 24 个驱动器架</block>
   <block id="c15bb09da6c6817f5e7058dc3ca1fd7b" category="list-text"><block ref="c15bb09da6c6817f5e7058dc3ca1fd7b" category="inline-link-macro-rx"></block></block>
   <block id="b792aec7e5819c11f8219784d91447a6" category="inline-link">E2800/EF280 或 E5700/EF570 系列，配有 12 个或 24 个驱动器的磁盘架</block>
@@ -5601,7 +5586,6 @@
   <block id="4e44ffbd3dee7edcb8ad6dd4dc519054" category="paragraph">Web 服务代理是一种 RESTful API 服务器，可以管理数百个新的和旧的 E 系列阵列。代理单独安装在 Windows 或 Linux 服务器上。</block>
   <block id="024f85290ce8dc060b04f7283ae9349d" category="paragraph">Web 服务包含 API 文档，可用于直接与 REST API 进行交互。要访问 Web 服务 API 文档，请打开浏览器并输入指向安装了 Web 服务代理的服务器的 URL 。</block>
   <block id="be4ec548f7a100ef363d872487501afc" category="section-title">命令行界面（ CLI ）</block>
-  <block id="7c2d6bb641ac39d33616586566e145db" category="paragraph">命令行界面（ CLI ）是一种软件应用程序，可用于配置和监控存储阵列。使用 CLI ，您可以从操作系统提示符运行命令，例如 DOS C ：提示符， Linux 操作系统路径或 Solaris 操作系统路径。</block>
   <block id="29d01982ce991bab3710bffee1868167" category="summary">升级 SANtricity ® 操作系统概述</block>
   <block id="9689e6113317ad1f1bf249f414d62e3e" category="paragraph">您可以将操作系统和系统硬件组件升级到最新版本的 SANtricity 软件和固件。</block>
   <block id="45c4e8073edc6e504a5d60a909148a91" category="paragraph">这些升级过程包括以下方面的单独说明：</block>
@@ -5805,7 +5789,6 @@
   <block id="aa4306ca5582318a4c71780a034351e8" category="list-text">选中要通过运行状况检查运行的存储系统对应的复选框。</block>
   <block id="059bcb3d06d5b7c0c9b7f4d6d250d626" category="list-text">单击 * 开始 * 。</block>
   <block id="70c0249de1da6c602476f4e4d22c5c3d" category="paragraph">执行运行状况检查时，此进度将显示在对话框中。</block>
-  <block id="6288150d7ef4839b9a49ad845bc05aaf" category="list-text">运行状况检查完成后，您可以单击每行右侧的省略号（ ... ）以查看更多信息并执行其他任务。</block>
   <block id="b7d5630f68b2ae105a1892c1784263e4" category="admonition">如果任何阵列未通过运行状况检查，您可以跳过该特定阵列并继续对其他阵列进行升级，也可以停止整个过程并对未通过的阵列进行故障排除。</block>
   <block id="3630613364718f1a83010055203819c6" category="section-title">第 2 步：从支持站点下载软件文件</block>
   <block id="3f66d1daa91f535f68656dfae4716684" category="list-text">如果存储阵列仅包含一个控制器或未使用多路径驱动程序，请停止存储阵列的 I/O 活动，以防止出现应用程序错误。如果存储阵列有两个控制器，并且您安装了多路径驱动程序，则无需停止 I/O 活动。</block>
@@ -6146,7 +6129,6 @@
   <block id="668e2078ef1b1722c77cdb5c523a4463" category="sidebar">NetApp 知识库</block>
   <block id="2bae42f280067110dfd52cc69a468364" category="sidebar">Active IQ （需要登录）</block>
   <block id="54708ac788109e3332a896f8d957e38f" category="sidebar">E 系列 /SANtricity 下载（需要登录）</block>
-  <block id="a6d47447094eb5b7920c8d1f16d0d25d" category="paragraph">访问<block ref="384159b715a893ce026df1e06010cefa" category="inline-link-rx"></block>。</block>
   <block id="c9655bd030e403ee317812921fe9c345" category="inline-link">* TR-4893 ： SANtricity 远程存储卷 *</block>
   <block id="d8669c8a517e0a9ef2fc1b4209947887" category="cell"><block ref="d8669c8a517e0a9ef2fc1b4209947887" category="inline-link-rx"></block></block>
   <block id="1a1ac7a0c3f35e22cacb2c550a2df1d9" category="inline-link">* TR-4839 ： SANtricity 同步和异步镜像 *</block>
@@ -6196,22 +6178,10 @@
   <block id="b989c6f72bf677952e698328421db82b" category="cell"><block ref="b989c6f72bf677952e698328421db82b" category="inline-link-rx"></block></block>
   <block id="e1fad75d320cd96b4ad2ead776fbc81b" category="inline-link">* TR-4859 ：《使用 NetApp E 系列存储部署 IBM Spectrum Scale 》 *</block>
   <block id="01284e373ad40bcbe95d69ca79432e5d" category="cell"><block ref="01284e373ad40bcbe95d69ca79432e5d" category="inline-link-rx"></block></block>
-  <block id="923277575dfc7bb479a4c1326fc68339" category="inline-link">* TR-4856 ：《使用 Red Hat Enterprise Linux Server* 的 E 系列的 BeeGFS 高可用性》</block>
-  <block id="246730575426f6a6e68bf2f52c15bc44" category="cell"><block ref="246730575426f6a6e68bf2f52c15bc44" category="inline-link-rx"></block></block>
-  <block id="2b744bc0da850f7e10b8914e1573c0b3" category="cell">介绍基于 NetApp E 系列存储系统和 IBM Spectrum Scale 的入门级 HPC 系统的参考架构。</block>
-  <block id="d73f064cebb5bd197545fc7004a56153" category="cell">介绍基于 IBM 的 Spectrum Scale 软件堆栈部署完整并行文件系统解决方案的过程。</block>
-  <block id="0d183f627b10c74a5ad15f70918e5661" category="cell">介绍在 NetApp E 系列系统支持的 BeeGFS 架构中实施高可用性以及使用 RedHat Enterprise Linux 提供 BeeGFS 存储，元数据和管理服务所需的配置。</block>
-  <block id="1625bed3aae287fb145324112cba2acf" category="inline-link">* TR-4862 ：《使用 SUSE Linux Enterprise Server* 的 E 系列的 BeeGFS 高可用性》</block>
-  <block id="503f8b25bc421dea7e73387381d435f4" category="cell"><block ref="503f8b25bc421dea7e73387381d435f4" category="inline-link-rx"></block></block>
-  <block id="075df837bf753b5aee2b8bcb4b81e05c" category="cell">介绍在 NetApp E 系列系统支持的 BeeGFS 架构中实施高可用性以及使用 SUSE Linux Enterprise Server for BeeGFS 存储，元数据和管理服务所需的配置。</block>
   <block id="a28b8b732f1d7a87c511f615fe886bc4" category="inline-link">* TR-4725 ： E2800 阵列功能概述 *</block>
   <block id="16ee0112605f5c7f44d31ab4fb0f7c73" category="inline-link">+++TR-4724 ： E5700 阵列功能概述 ++*</block>
   <block id="346bfe6c5f1a40af18c578c446b216aa" category="inline-link">+++TR-4877 ： EF300 阵列功能概述 ++*</block>
-  <block id="c3bad4531ac09819ae11c8f1eef46379" category="cell">介绍 E2800 混合阵列的硬件和软件功能以及最新的 SANtricity 操作系统功能。</block>
-  <block id="170c5373a5aea2b6d6daa41c328182fc" category="cell">介绍 E5700 产品信息，包括最新版本的 SANtricity 引入的新硬件和软件功能。</block>
-  <block id="6bf4f338106e6cad43fd2f2fecfcaafa" category="cell">介绍 EF300 全闪存阵列的硬件和软件功能以及新的 SANtricity OS 功能。</block>
   <block id="f3a3500a11e0c13b98d7092f5af6a6c7" category="inline-link">* TR-4800 ： EF600 阵列功能概述 *</block>
-  <block id="6b4552e99c78bda589322e0594a1d89b" category="cell">介绍 EF600 全闪存阵列的硬件和软件功能以及新的 SANtricity OS 功能。</block>
   <block id="d46165f424a559168595411d0e129de6" category="inline-link">* TR-4474 ：《 SANtricity 驱动器安全功能指南》 *</block>
   <block id="7aeb5576c50c1baeaf78d974491ebf2e" category="cell"><block ref="7aeb5576c50c1baeaf78d974491ebf2e" category="inline-link-rx"></block></block>
   <block id="5671444c44b849b5c9fe3625aca83a32" category="inline-link">* TR-4712 ： SANtricity 管理安全功能 *</block>
@@ -7019,7 +6989,6 @@
   <block id="41903b7d098cd5fe2273e2627dcfd5a0" category="doc">重命名存储阵列</block>
   <block id="66950f592b3ef70bb4a866b674f1b7a5" category="paragraph">您可以更改vCenter存储插件的管理页面上显示的存储阵列名称。</block>
   <block id="6ddafd51962fda13ede773e9d6350dd2" category="list-text">在*管理*页面中、选中存储阵列名称左侧的复选框。</block>
-  <block id="374fea5b262769323b08b3962c808a45" category="list-text">选择行最右侧的省略号、然后从弹出菜单中选择*重命名存储阵列*。</block>
   <block id="96f8be2a5d55d9a167ed06cc1a5f9694" category="list-text">输入新名称并单击*保存*。</block>
   <block id="6aa467b445a7d222ea7a821c8df54a08" category="doc">导入了哪些设置？</block>
   <block id="5a336d7c8bb4d9fb626af7c0fffe68af" category="paragraph">导入设置功能是一个批处理操作、可将配置从一个存储阵列加载到多个存储阵列。</block>
@@ -7300,7 +7269,6 @@
   <block id="9448915bfa64b3a5e64429c61e5807e2" category="list-text">选择以下选项卡之一：</block>
   <block id="54b4e8d1c4d03ca179159ea57e350324" category="list-text">*管理*-显示托管插件的系统的证书。管理证书可以是自签名证书、也可以由证书颁发机构(CA)批准。它允许安全访问插件。</block>
   <block id="edb5b7738ffb508f1bbb13257bdeffc0" category="list-text">*可信*-显示插件可访问的存储阵列和其他远程服务器(例如LDAP服务器)的证书。证书可以从证书颁发机构(CA)颁发、也可以是自签名证书。</block>
-  <block id="177b3451c3ab8af94b99ec603169f482" category="list-text">从页面中选择一个证书、然后单击行末尾的省略号。</block>
   <block id="5df555ad8a5d58c2d2be3f9893464acb" category="list-text">单击*导出*、然后保存证书文件。</block>
   <block id="818d28e7b7b11b8d0de393cdf2bad961" category="list-text">在证书查看器应用程序中打开文件。</block>
   <block id="657b70e8c66d59c5eb96a02553896eb0" category="summary">数据保证(Data Assurance、DA)实施了T10保护信息(Protection Information、PI)标准、该标准可通过检查并更正在I/O路径上传输数据时可能发生的错误来提高数据完整性。</block>
@@ -7427,7 +7395,6 @@
   <block id="6579984382b6d6db4a9c1dca3719cfde" category="summary">查看证书的摘要信息、其中包括使用证书的组织、颁发证书的机构、有效期和指纹(唯一标识符)</block>
   <block id="6577f92f6d3e817e406cf5c8fc28fb74" category="doc">查看证书</block>
   <block id="57180671ca977e7c71697763b3f08403" category="paragraph">您可以查看证书的摘要信息、其中包括使用证书的组织、颁发证书的机构、有效期以及指纹(唯一标识符)。</block>
-  <block id="9c6c2f35f874859a647563b0d99e7685" category="list-text">要查看有关证书的详细信息、请选择其行、选择行末尾的省略号、然后单击*查看*或*导出*。</block>
   <block id="0932ef9adf6866c6e0d047c2fad05b80" category="summary">在实施驱动器安全功能时、当从存储阵列中删除启用了安全保护的驱动器时、您可以使用内部安全密钥或外部安全密钥锁定数据。</block>
   <block id="0f7d5d5826d8924ee5f59541261a0c9f" category="doc">内部安全密钥与外部安全密钥管理有何区别？</block>
   <block id="42bd0a690935b9f782ea60ca3c32e096" category="paragraph">安全密钥是一个字符串、在存储阵列中启用了安全保护的驱动器和控制器之间共享。内部密钥会保留在控制器的永久性内存上。外部密钥使用密钥管理互操作性协议(Key Management Interoperability Protocol、KMIP)在单独的密钥管理服务器上进行维护。</block>
@@ -8172,9 +8139,7 @@
   <block id="cbf7b24ce0d93efff84abb6dca91dc9e" category="list-text">缺少电源</block>
   <block id="07ed085acfb4f203e63427ca4494f863" category="section-title">11.80.1版中的新增功能</block>
   <block id="65e6e49c7d0840983a93edfc482a4650" category="paragraph"><block ref="14993f95e0d6fc04f9966b0c368a7ed6" prefix="" category="inline-code"></block> 参数</block>
-  <block id="f853f0f729e70cf8d4d12c4bb6b0dbfc" category="paragraph">新的<block ref="14993f95e0d6fc04f9966b0c368a7ed6" prefix=" " category="inline-code"></block> 参数现在可在SMCli,使用此新参数可以查找与存储阵列关联的所有SCSI本机块设备。有关详细信息、请参见链接：https://docs.netapp.com/us-en/e-series-cli/get-started/downloadable-smcli-parameters.html#identify-Devices[Downloadable smcli command line parameters^。</block>
   <block id="907ce89001794064fd8d544a753cf6cf" category="paragraph">以太网内核统计信息</block>
-  <block id="d1c09bea07e8eb52df56a18fb41d1ba1" category="paragraph">现在、System Manager中的查看iSCSI统计信息包页面提供了一个新的以太网内核统计信息选项。通过此新选项、您可以查看iSCSI设备的平台内核驱动程序的统计信息。有关详细信息、请参见链接：https://docs.netapp.com/us-en/e-series-santricity/sm-support/view-iscsi-statistics-packages-support.html[View iSCSI统计信息包^。</block>
   <block id="8aa767f8b92cfb3b4eab1f415d112646" category="paragraph">增加了通过REST API端点阻止IP地址的功能</block>
   <block id="676be4f62b5637bef1c26018afa904d4" category="paragraph">现在、用户可以通过设置端点阻止特定IP地址 <block ref="4b697cabc8d99483a2ddfc38c4cb6766" prefix="(" category="inline-code"></block>）。通过设置端点配置后、只有通过白列表指定的IP地址才能与存储设备进行通信。此新功能支持IPv4和IPv6地址列表。</block>
   <block id="c55dbb17c221990804802e322335dc65" category="paragraph">vCenter存储插件已更新、可与E系列11.80.1版兼容。</block>
@@ -8232,8 +8197,6 @@
   <block id="57b75c148600a92b21aa9e4a3a89228d" category="image-alt">VMware快速指南工作流"</block>
   <block id="e5de0ab074e4d0827cb5f8e4826ddf53" category="image-alt">iSCSI端口标识符</block>
   <block id="25e86314e2b9fd3c25d92450dad8de31" category="image-alt">Windows快速指南工作流</block>
-  <block id="a5739ed07187fa97fb95b86ca98419fc" category="inline-link">控制器升级指南—传统控制器型号</block>
-  <block id="819e472be532c198f4428448f644516b" category="list-text"><block ref="819e472be532c198f4428448f644516b" category="inline-link-rx"></block></block>
   <block id="056179e9e794d5023a226430ee4efb8d" category="section-title">SANtricity 11.8版</block>
   <block id="d16a613e55f21678f189a2fe147619f8" category="list-text"><block ref="d16a613e55f21678f189a2fe147619f8" category="inline-link-rx"></block></block>
   <block id="e8b164999d03a57227fb0dc4e31b1f9a" category="list-text"><block ref="e8b164999d03a57227fb0dc4e31b1f9a" category="inline-link-rx"></block></block>
@@ -8243,7 +8206,6 @@
   <block id="ac04abe31dcd141500e5d9732b2ac56b" category="list-text">E4000 系列—入门级混合</block>
   <block id="d8b8562346c10d2efbbb129845379264" category="list-text">机架尺寸</block>
   <block id="1c2bd945de8ed1b6e853b76b3def6a6d" category="image-alt">E2800 2U.</block>
-  <block id="e67af3d8fc936cb75428bd1c7912d629" category="image-alt">"E2800 4U"</block>
   <block id="756640f0aea5f5bea1cbe250a9d08989" category="list-text">接口</block>
   <block id="58a80778e63fff20f6605b02ba4256ff" category="inline-image-macro">EF280 2U.</block>
   <block id="db1f17f8825c1b566a696300d91ea1b0" category="paragraph"><block ref="db1f17f8825c1b566a696300d91ea1b0" category="inline-image-macro-rx" type="image"></block></block>
@@ -8259,7 +8221,6 @@
   <block id="7bc334dd290b9246bbe67354b072e5f1" category="image-alt">E4000 2U.</block>
   <block id="9d23e4d1385158413ca160140804380a" category="image-alt">E4000 4U.</block>
   <block id="1507bfcf58977c913870a8bc8fc69938" category="list-text">3.5 英寸 NL-SAS （最多 300 个）</block>
-  <block id="501741d2386f7d66c14219977b27bf3b" category="list-text">1 Gb或10Gbase-T iSCSI</block>
   <block id="2193ca2625399551b2952afc495bddf3" category="list-text">1 Gb、10 Gb或25 Gb iSCSI</block>
   <block id="02bfa8a1be678b9844bf1f40bdf0cadb" category="list-text">8 GB、16 GB或32 GB FC</block>
   <block id="403867e7b21e199d8564f994b90f564b" category="list-text">仅限E4000和E2800控制器</block>
@@ -8269,8 +8230,6 @@
   <block id="4f7cecf7d35b5225b9680d06b9f29855" category="paragraph"><block ref="4f7cecf7d35b5225b9680d06b9f29855" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d23f865aa12d33da2281ece479479e43" category="list-text">E4000、E2800和E5700控制器</block>
   <block id="3d6745de7ba5410e8691359e75378f43" category="paragraph"><block ref="3d6745de7ba5410e8691359e75378f43" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0d2ff89321d178d4c06957811edf6dbf" category="inline-image-macro">NE224</block>
-  <block id="dee81617ac256de3c537c504e55673b4" category="paragraph"><block ref="dee81617ac256de3c537c504e55673b4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9446a98ad14416153cc4d45ab8b531bf" category="inline-image-macro">性能</block>
   <block id="01e0b2ba5ead95d64e3071a148f7dc95" category="paragraph"><block ref="9736d9f6dc9242e38869944fa056dfab" category="inline-image-macro-rx" type="image"></block>*性能*</block>
   <block id="730eaa798c5f8a877db1f1518847a4e4" category="paragraph"><block ref="7671c6425a04efd849fb29c1bc3d6f15" category="inline-image-macro-rx" type="image"></block>*存储*</block>
@@ -8326,13 +8285,10 @@
   <block id="c8d0e728d6cfecbb35c8768caa389f1f" category="open-title">可容纳12个驱动器的磁盘架</block>
   <block id="e63d49fe11023df550eb4a2b6be77e84" category="paragraph">您可以使用缆线将控制器架连接到一个或多个 12 驱动器磁盘架。</block>
   <block id="37684c22af451e0c6390d46e13acdfbf" category="image-alt">一个控制器架和一个12驱动器架</block>
-  <block id="632ca86f36c69ae91aee0bebdff85617" category="admonition">EF300、EF600和E4000只有一个带外以太网管理端口。</block>
   <block id="d2204ecb6283608047831fca303cc5c1" category="image-alt">两台主机和两台交换机的布线</block>
   <block id="23d2013304f308363439909fd006bd4e" category="paragraph">E5724 ， EF570 ， E4012 ， E2812 ， E2824 ， EF280</block>
   <block id="6048408dac10f3e88fd732617c9d0ef5" category="paragraph">E4060、E2860、E5760</block>
   <block id="21b595c66275163668dce07beb8b7e59" category="list-text">将电源线连接到存储系统上的每个电源设备。</block>
-  <block id="17a780e85e64d833816350af0a8e60d6" category="list-text">打开两个电源开关。</block>
-  <block id="21194b925b5b062281c4893b747cceec" category="admonition">EF300和EF600存储系统没有电源开关。连接电缆后、它们将立即通电。</block>
   <block id="b354d93fbc8040931b33caebdbfe0ea8" category="inline-image-macro">直连拓扑布线</block>
   <block id="6a6b77d61f97c20fcc57f19dbcaf18b2" category="paragraph"><block ref="6a6b77d61f97c20fcc57f19dbcaf18b2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cb54bfbae17ecce7e95302793374bf9f" category="inline-image-macro">光纤拓扑布线</block>
@@ -8619,8 +8575,6 @@
   <block id="57207b374d19a30dbe137b5ae467d607" category="image-alt">'功能启用标识符"</block>
   <block id="f18161f026b7fe18b8f99003cf1deb9a" category="paragraph">当需要将缓存数据写入驱动器时，每个控制器背面的绿色缓存活动 LED 亮起。您必须等待此LED熄灭。<block ref="28dd70958999565be68b57e06af4d4d1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8907a9bd1bbd427cd7ead31cdae13f94" category="image-alt">更改功能包</block>
-  <block id="d2d2e8fa568a2d809242096cca97e884" category="image-alt">主机端口对话框</block>
-  <block id="141f194cf295ed23b58f7b6b7deada6c" category="image-alt">主机端口对话框</block>
   <block id="66d3b4d1ab378575dbea53cfe35695f9" category="image-alt">E2800控制器上的主机和HIC端口"</block>
   <block id="8ef7d812cf9839cb105b6657c47cfa09" category="image-alt">E2800控制器上的端口"</block>
   <block id="962bbd775bc59552889db0c450a4ef52" category="paragraph">您可能需要对硬件执行维护过程。本节介绍了维护E2800系统组件的具体步骤。</block>
@@ -8640,7 +8594,6 @@
   <block id="654a61d9a5e1b3845170185b185b333e" category="list-text">选择*支持›支持中心›诊断*。</block>
   <block id="6db1d7bcd2197569ee01531f7998318d" category="admonition">*可能的数据丢失*--如果在执行I/O操作时继续此过程，可能会丢失数据。</block>
   <block id="9ac50bab7d872b7afc76e70a644219ed" category="paragraph">文件将保存在浏览器的"Downloads"文件夹中、名称为support-data.7z。</block>
-  <block id="d1b689b610c29b4b11d641265472d3f2" category="list-text">如果图中显示了驱动器，请选择*控制器和组件*以显示控制器。</block>
   <block id="31af8cf3c364ef0721e22c79e63b47d0" category="paragraph">*对于控制器A*：<block ref="9e02aca819e4970527b62fd35f9cc9ec" prefix=" " category="inline-code"></block></block>
   <block id="c37d3d9443e25a97d64925af817282b0" category="paragraph">*对于控制器B*：<block ref="68414166ffb645078598902542c6a3c0" prefix=" " category="inline-code"></block></block>
   <block id="daf10491eeda068f969ac846c9108685" category="list-text">等待SANtricity系统管理器将控制器的状态更新为脱机。</block>
@@ -8943,7 +8896,6 @@
   <block id="e5a05d58c55c9440148099868dbc6fd1" category="image-alt">将控制器安装到控制器上</block>
   <block id="e04e79c61faf9262bb7c22ca0bdb75b4" category="image-alt">功能包子模型ID</block>
   <block id="3da943cddf027cccc8bff4dab3f603c8" category="paragraph">需要将缓存数据写入驱动器时，每个控制器背面的绿色缓存活动 LED * （ 1 ） * 亮起。您必须等待此LED熄灭。<block ref="784f4db10eef9c5c5e85ea37262dff8b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6e13bec83d2f599d1a78be9b1da319d5" category="image-alt">主机设置对话框</block>
   <block id="46ad3f7b9a79b945126e75570cf3ab20" category="image-alt">E5700控制器上的主机和HIC端口</block>
   <block id="9096c61779935802492b59d70ec38ff2" category="paragraph">您可能需要对硬件执行维护过程。本节将介绍维护E5700系统组件的具体步骤。</block>
   <block id="c207b913e93567336ac500416e963ac8" category="paragraph">本节中的过程假定E5700系统已部署在E系列环境中。</block>
@@ -8955,13 +8907,10 @@
   <block id="3543edeec6c44ef942e94faa0424acff" category="paragraph"><block ref="3543edeec6c44ef942e94faa0424acff" category="inline-link-rx"></block></block>
   <block id="72928326de21f42a5ececa543a870d56" category="image-alt">挤压手柄以卸下控制器</block>
   <block id="ccdf979892d06b3313dd81227d58f4e7" category="image-alt">拆下控制器时，用双手支撑控制器的重量</block>
-  <block id="d6f83577311942b64cb6a40c36e19ba8" category="image-alt">"按下卡舌以解锁电池</block>
   <block id="cf51ab08845e5a4f0e23f726ab226878" category="image-alt">拆下蓄电池接线的接头</block>
   <block id="881564a49c7f6fda30f82a5a4a67ecfc" category="image-alt">从控制器中取出电池</block>
   <block id="bd0981c1c09a4cb27cd19367269a0960" category="image-alt">插入电池</block>
   <block id="37103a0435b55e5bcc50923bcd69700e" category="image-alt">将控制器安装到磁盘架中</block>
-  <block id="7796e325c9459708cd9ee117cdbeea2c" category="list-text">轻轻挤压用于存放电池接线的连接器。向上拉、断开电池与主板的连接。<block ref="3c05df7462b23b6c10e264df1a62b979" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4d273b85509761057e1f5ed98030b157" category="list-text">将电池从控制器中提出、然后放在无静电的平坦表面上。<block ref="bd4cb93e7de73428d0302a4304ba8680" category="inline-image-macro-rx" type="image"></block></block>
   <block id="db1c3e8b775386049599abeb82b0cf3e" category="image-alt">卸下HIC板</block>
   <block id="b402c79d7af89342b9df6e7a9076d2d7" category="image-alt">松开HIC翼形螺钉</block>
   <block id="8d95b298422e28883fafdac45350d222" category="image-alt">从控制器卡上卸下HIC</block>
@@ -8982,7 +8931,6 @@
   <block id="d419ebdf988a4916b93d1fdd5b11236a" category="image-alt">在包含24个驱动器的磁盘架中为驱动器编号</block>
   <block id="a65c0f5d490f825f04f690d32ef8d39a" category="image-alt">在包含24个驱动器的磁盘架中错开驱动器</block>
   <block id="8f42fa94ab7e3c353702edcfc0d2eccd" category="image-alt">驱动器闩锁</block>
-  <block id="7b8f348a010f5a94503fcabe19088fbf" category="image-alt">"警示LED</block>
   <block id="339fbc928d6066116ebf66e38efedf8a" category="image-alt">驱动器手柄上的警示LED</block>
   <block id="40f837f06bbd36f49cef42babd88b053" category="image-alt">Orange release latch</block>
   <block id="ad1e03af8eb17b8b69c8e4baf69eb2b9" category="image-alt">使用凸轮把手将驱动器从磁盘架中提起</block>
@@ -9056,7 +9004,6 @@
   <block id="5c735cf53f3f1caaa88045e2bb54b863" category="paragraph">从E2600升级到E5500或E5600或从E2700升级到E5400时、需要执行其他步骤。</block>
   <block id="097915df103ac23c8ebc6c0064d8a291" category="paragraph">不得将E5400、E5500和E5600控制器置于SAS-3磁盘架中。</block>
   <block id="e3a720d87053b94a338fe8e8df7fa7af" category="paragraph">从E5500或E5600升级到E2600或从E5400升级到E2700时、需要执行其他步骤。</block>
-  <block id="0dda563975c4b705306e9f33cd4d1442" category="paragraph">5400、E5500和E5600控制器不得置于SAS-3磁盘架中。</block>
   <block id="16fe7fa56f57b127b296631d099ad261" category="paragraph">从E5400升级到E5500或E5600时需要执行其他步骤。</block>
   <block id="1d236b2937585f4d1069d1e2cc4679a0" category="paragraph">从EF540升级到EF550或EF560所需的其他步骤。</block>
   <block id="e65e60eb717f940240aa8824a61cf723" category="paragraph">不得将EF540、EF550和EF560控制器置于SAS-3磁盘架中。</block>
@@ -9090,8 +9037,6 @@
   <block id="45dc1f6fb3b875c733e188121fcc647a" category="paragraph">现在、可以通过System Manager导入外部通过私钥和公共密钥对生成的证书签名请求(CSR)文件。</block>
   <block id="c0f4196deec20490ebf6989158642c34" category="paragraph">现在、Web服务可以使用登录锁定功能</block>
   <block id="a30347233ec617731633ca56f8f1b923" category="paragraph">现在、嵌入式Web服务和代理Web服务均可使用新的登录锁定设置、该设置仅可通过REST API进行配置。</block>
-  <block id="27ed3c2f0cc271f3ffd55cef1621928d" category="sidebar">SANtricity系统管理器11.9.</block>
-  <block id="ece14770330886bc2d41238acbfe48aa" category="sidebar">SANtricity统一管理器7.</block>
   <block id="7e70e5b8ab3b4ffb0b5b632ee6ab89f2" category="sidebar">E4000</block>
   <block id="600edf74042bc3ae5ce2c2e58c76b005" category="sidebar">准备安装</block>
   <block id="04f92a4e594759f7a9084677140e7b63" category="sidebar">注意事项和要求</block>
@@ -9128,9 +9073,6 @@
   <block id="4720d0b863e013bea6899b10e0989bda" category="list-text">EF600C 系列—中端全闪存，全 NVMe</block>
   <block id="5ca6952c7c9ae5d4b8be61e6386f0222" category="open-title">EF300C 型号</block>
   <block id="14a2fa7582e1084e3800dde50d8cde03" category="open-title">EF600C 型号</block>
-  <block id="0db8edfb04068c99ae28246efebb6d4d" category="list-text">12gb SAS</block>
-  <block id="689052b8726f00a4623e9ada4d36af90" category="list-text">EF300、EF600。EF300C和EF600C控制器</block>
-  <block id="16736d8feb91d19d335e7acdefc20ef7" category="paragraph">Unified Manager 是一款基于 Web 的软件，用于管理整个域。在中央视图中、您可以查看所有较新的E系列和EF系列阵列的状态、例如E4000、E2800、EF280、EF300、E5700、EF570、EF600、EF300C和EF600C。您还可以对选定存储阵列执行批处理操作。</block>
   <block id="0fabf178487912291e67bdafbadfe77d" category="paragraph">以下信息适用场景使用缆线将 EF300 ， EF600 ， EF300C 或 EF600C 控制器架连接到 DE212C ， DE224C 或 DE460 驱动器架。</block>
   <block id="f1c197c528faee0553e4d6ce534048a7" category="paragraph">EF300、EF600、EF300C、EF600C</block>
   <block id="915fd81c3f189c50233446daf085a8f7" category="paragraph">您可以在两柱机架或NetApp系统机柜中安装EF300、EF600、EF300C或EF600C存储系统。</block>
@@ -9164,10 +9106,8 @@
   <block id="892b365a22314b2852ca18025911d1be" category="list-text">如果需要、请运行<block ref="3e0e995eb29f6805a04d4b3ac859bc4b" prefix=" " category="inline-code"></block>命令以验证DSM套件的安装。</block>
   <block id="fb00ee175135cc78e49e873e41c6e6ad" category="admonition">要运行命令、必须在Windows服务器上安装MPIO功能<block ref="3e0e995eb29f6805a04d4b3ac859bc4b" prefix=" " category="inline-code"></block>。</block>
   <block id="5f3ab4e439fcf2e4683f430d57044b3a" category="inline-link">适用于11.9x的SANtricity System Manager联机帮助</block>
-  <block id="e51c0393968b3aeac9a8857a4efc2e03" category="list-text"><block ref="e51c0393968b3aeac9a8857a4efc2e03" category="inline-link-rx"></block></block>
   <block id="25d302c40995ad55c0ad7701261d1310" category="list-text"><block ref="25d302c40995ad55c0ad7701261d1310" category="inline-link-rx"></block></block>
   <block id="718416bdd384ea0f59ab3278846e588d" category="list-text">EF300C 系列—入门级全闪存，全 NVMe</block>
-  <block id="2d782dd4047faa435e8a21598b64a8f9" category="admonition">对于SANtricity OS 11.80GA及更高版本、E2800、EF280、E5700、EF570、EF600/EF600C和EF300/EF300C阵列上的所有USB端口均会禁用。</block>
   <block id="145e67dd5fe93c51c814f0945a64eadf" category="list-text">支持可选的SAS扩展卡、允许SAS扩展架连接。</block>
   <block id="d0becf074be26c6d978c288daba24ca4" category="list-text">每个控制器支持一个主机接口卡。</block>
   <block id="346a8501979327018cc0ee11a3d0f1cf" category="list-text">支持30 TB或60 TB容量的NVMe SSD驱动器。</block>
@@ -9205,7 +9145,6 @@
   <block id="c591c8c3a8e8fbcf4843d55451e5745e" category="list-text">(可选)如果需要、可以通过执行以下操作来重新设置驱动器的密钥：</block>
   <block id="0b9601abb9585618affd66f5798a16b2" category="paragraph">*示例:*<block ref="b77e774fa880afa2bd8c8ca91507d0ce" prefix=" " category="inline-code"></block></block>
   <block id="73c97dd158942ee4b15d19f135952d89" category="list-text">*E4000、E2800、E5700、EF300和SANtricity型号等多种存储系统的管理软件。Unified Manager 是 SANtricity Web 服务代理的一部分，该代理是单独安装在主机系统上的 RESTful API 服务器，用于管理数百个新旧的 NetApp E 系列存储系统。有关详细信息，请参见 <block ref="c92032fad30345308610610a1d1083db" category="inline-link-macro-rx"></block>。</block>
-  <block id="e5a4c2aea29b525342429c88518c7f73" category="paragraph">下表介绍了最新SANtricity操作系统版本中用于嵌入式管理E4000、EF300/EF300C、EF600/EF600C、E2800/EF280和E5700/EF570控制器的新增功能。</block>
   <block id="baee5b8c18b240b4edfcc1ae3fe154f0" category="section-title">11.90R1中的新增功能</block>
   <block id="0b2fb9383075b5994701c94b27e4b6ee" category="paragraph">此版本推出了EF300C和EF600C全闪存NVMe存储系统。EF300C和EF600C是现有EF300和EF600存储系统的高容量闪存版本。EF300C和EF600C支持30 TB或60 TB大小的高容量NVMe SSD驱动器。EF300C/EF600C仅兼容动态磁盘池、不支持原有RAID。</block>
   <block id="8af7f744c39ae6285a380b6eb402fcb2" category="paragraph">支持E4000控制器上的12 Gb SAS接口</block>
@@ -9365,17 +9304,13 @@
   <block id="7553994c0c2dd633dd8ba10c100a4ded" category="doc">观看E系列演示视频</block>
   <block id="28ad05f35e1428f4aa007cdebf7e347b" category="doc">收集3040 40U机柜(E系列)所需的工具和设备</block>
   <block id="91600f4eb3d156a995ce1b1ec47ab182" category="doc">3040 40U (E系列)的完整机柜安装</block>
-  <block id="0f71fa2cf61422d9dc3e1435d1a0af51" category="doc">在3040 40U机柜中安装托盘(E系列)</block>
   <block id="59990da74a4038496ed36361a26b8595" category="doc">将3040 40U机柜移至其永久位置(E系列)</block>
   <block id="ec56f4e9e033e52e4f7f8c8185c4591d" category="doc">3040 40U机柜的机柜规格(E系列)</block>
   <block id="6b2ef569b713e6adc45d3acb0d954ff7" category="doc">准备移动3040 40U机柜(E系列)</block>
   <block id="3adc0491bdd09b8053984a5540955ccd" category="doc">存储系统布线要求(E系列)</block>
   <block id="1e493b1f08040d7c09ccc1ed1b693f77" category="doc">使用缆线将控制器架连接到驱动器架(E系列)</block>
-  <block id="4b5c2a585ea9bdccd0456a3e961a113f" category="doc">管理工作站的以太网布线(E系列)</block>
   <block id="0b550c27392097a1f95c24b17cf16d15" category="doc">使用缆线将主机连接到控制器或交换机(E系列)</block>
   <block id="3509ad356c5e72afa0565d920fcc76bc" category="doc">热添加驱动器架—IOM12或IOM12B模块(E系列)</block>
-  <block id="f899b9b9f53548c0dea1afd340c90841" category="doc">为存储系统布线(E系列)</block>
-  <block id="9114fe8bca33fe5311b3e215b9bee65f" category="doc">为存储系统布线(E系列)</block>
   <block id="cca8309690d775486ab4d0ee7986f907" category="doc">完整的存储系统设置和配置—E5724、EF570、EF280、E2812、E2824、DE212C和DE224C</block>
   <block id="3fd16291574811effb1e0ca2b7a8a80f" category="doc">连接电源线- E5724、EF570、EF280、E2812、E2824、DE212C和DE224C</block>
   <block id="65502541d5315d4477d4937aaa9cbd71" category="doc">安装硬件- E5724、EF570、EF280、E2812、E2824、DE212C和DE224C</block>
@@ -9462,7 +9397,6 @@
   <block id="0ae6740fd2e263304e2272eafbf3f5fc" category="doc">升级主机接口卡(HIC)-5700</block>
   <block id="574e60222b5873c99c68707bb46330da" category="doc">更改主机协议-5700</block>
   <block id="a04faa3422a272a2119ee55c0773f11d" category="doc">完成主机协议转换-5700</block>
-  <block id="3ca9f69205768ca2729cf2099f3c91fc" category="doc">更改主机端口协议的要求- 5700</block>
   <block id="3e59858b01d2a3adac687292b9354084" category="doc">维护硬件- 5700</block>
   <block id="88b3842ce4b08162538041eb2342c160" category="doc">更换电池的要求- EF300或EF600</block>
   <block id="e75a7519d171bb7557b6497aaf0fa138" category="doc">更换电池- EF300和EF600</block>
@@ -9489,7 +9423,6 @@
   <block id="634a392452d01560a6a3fa26e30785fe" category="doc">更换SAS扩展卡的要求- EF300和EF600</block>
   <block id="23c19e9851a45bd1a62c97b5c51e16ab" category="doc">管理E系列存储系统</block>
   <block id="2d77a77163078d96d0699098a7f29284" category="doc">浏览平台技术报告(E系列)</block>
-  <block id="de6a30ef0bb3367d4d98ffad8c434729" category="doc">机架式硬件(E系列)</block>
   <block id="82395b99bc2ea612343c2224c9ba96f7" category="doc">为SANtricity远程存储卷导入远程存储</block>
   <block id="2f9dd903f610e6360946707f5fcc7fb5" category="doc">了解SANtricity远程存储卷</block>
   <block id="053f568a9f3e7345f8aa801057559613" category="doc">修改SANtricity远程存储卷的远程存储连接设置</block>
@@ -9667,4 +9600,1095 @@
   <block id="980295b6698b8b2aea7adc1d9dafed8c" category="section-title">版本 11.90R5 中的新增功能</block>
   <block id="94bf3a177cda972f0b25d90290f4610c" category="paragraph">此版本仅包含缺陷修复，不包含新功能。有关此版本中更改的更多信息，请参见 E-Series SANtricity 操作系统 11.90R5 README。</block>
   <block id="b2676fbb812b8574fa9249e68163593f" category="paragraph">此版本仅包含小的更改，没有新功能。有关此版本中更改的更多信息，请参见 E-Series SANtricity 操作系统 11.90R4 README。</block>
+  <block id="fa55a39b22d11c5af001ea464e373e73" category="paragraph">更换两个控制器中的 I/O 模块或 I/O 模块空白。</block>
+  <block id="9c35ace50d74937ef9dd17f08d155adc" category="paragraph">从一个控制器开始，然后对另一个控制器重复步骤。</block>
+  <block id="64bdd93ecd6cd33ad364970a62243a9c" category="list-text">在其中一个控制器上，从目标插槽中取出 I/O 模块或 I/O 空白模块。</block>
+  <block id="d537bbb1a90b1eb333e8c8942be81f15" category="paragraph">下图显示了正在移除的 I/O 消隐模块。</block>
+  <block id="91e2872c9b5e53f0acf0e8a29206f6fe" category="image-alt">移除 I/O 消隐模块</block>
+  <block id="eff9a2b0e485ca3fb80f96fc9995fb62" category="inline-image-macro">标注编号 1</block>
+  <block id="8123303767547374b75236612d61eaea" category="paragraph"><block ref="8123303767547374b75236612d61eaea" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="aa03312c0581846f6b1b74dfc125406a" category="paragraph">在 I/O 模块或 I/O 空白模块上，逆时针旋转指旋螺钉以松开。</block>
+  <block id="746fda156f20e053f2c0e3b0e0ecab0e" category="inline-image-macro">标注编号 2</block>
+  <block id="5341a23a962393863fa78f7d211f8029" category="paragraph"><block ref="5341a23a962393863fa78f7d211f8029" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9f980fd836f75619a8c905db4727ab5c" category="paragraph">使用左侧的选项卡和指旋螺钉将 I/O 模块或 I/O 空白模块从控制器中拉出。</block>
+  <block id="e674b435d235be13e9b7dbef85887973" category="list-text">安装新的 I/O 模块：</block>
+  <block id="50d345bb76014f498b9ae6c6984cff5c" category="list-text">将 I/O 模块与控制器插槽开口的边缘对齐。</block>
+  <block id="a4021e89bcfb830d842cbafb733c367b" category="list-text">轻轻将 I/O 模块完全推入插槽，确保将模块正确插入连接器。</block>
+  <block id="067fbc2455a24fcb7cc811e76fc3caf3" category="paragraph">您可以使用左侧的选项卡和指旋螺钉推入 I/O 模块。</block>
+  <block id="3e5e3cc1c1b4c784727eb30ffda76671" category="list-text">顺时针旋转指旋螺钉以拧紧。</block>
+  <block id="b0cf669bd0a487d863af85efdd8ee648" category="list-text">将 I/O 模块连接到主机网络。</block>
+  <block id="88b736e6d5561b4dc7cce39802381ee6" category="inline-link-macro">为硬件布线</block>
+  <block id="6b692ea2048088c59ab42b3bcce87751" category="paragraph">您可以使用系统安装和设置内容中的 <block ref="276dc34fad45927c475bf0fb53ff5be5" category="inline-link-macro-rx"></block> 部分进行主机网络布线。</block>
+  <block id="a63801ba50b84ecd5c700166a0e8c4ae" category="list-text">重复这些步骤，将 I/O 模块添加到另一个控制器。</block>
+  <block id="a51606326fdc4dd84336979274179876" category="inline-link">零件退货和更换</block>
+  <block id="5f7d656732f3f6002e129feef4d6cf85" category="paragraph">如套件附带的 RMA 说明中所述，将故障部件退回 NetApp。有关更多信息，请参阅<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>页面。</block>
+  <block id="8bd6c0defe29f56847a7ba2ca43fd209" category="list-text">选择菜单：Hardware[Controllers and components]。</block>
+  <block id="d4baf862400654c024011c2d8c514cd3" category="list-text">在 SANtricity System Manager 中，单击菜单：硬件[控制器和组件]。</block>
+  <block id="b2dc0096c64cdaedcabd385ca2737e62" category="list-text">在 SANtricity System Manager 中，单击菜单：硬件[控制器和组件]，并根据需要向下滚动，以查看新添加的驱动器架。</block>
+  <block id="a813962ebe4fb11a5bc8e1ab3b8c1492" category="paragraph">下图显示了重新安装控制器时控制器手柄（从控制器的左侧）的操作，可以用作控制器重新安装步骤的参考。</block>
+  <block id="3a0c08ed150e453675cf3f353dfe471e" category="image-alt">控制器句柄操作以安装控制器</block>
+  <block id="2169e5b74d2794e67d2b6a5c16529024" category="paragraph">如果您在维修控制器时将控制器手柄直立旋转（在选项卡旁边）以将其移开，请将其向下旋转到水平位置。</block>
+  <block id="2e4775ea47760a070ebb6d0112d605ae" category="paragraph">按下手柄，将控制器重新插入机箱。</block>
+  <block id="5f695e51ae076dac62d244a3e86a2eae" category="image-alt">标注编号 3</block>
+  <block id="90bd32fd6a87b2827748364c93194903" category="paragraph">将手柄旋转到直立位置，并使用锁定卡舌锁定到位。</block>
+  <block id="4b4aa4bb336c5c33a46b6de47b20533b" category="list-text">合上控制器盖，顺时针旋转指旋螺钉，直至拧紧。</block>
+  <block id="1f8b9efbc618b713185c861f2ea953ec" category="list-text">将控制器插入机箱：</block>
+  <block id="f1733862ab533b1be5c046f342116e52" category="list-text">将控制器后部与机箱中的开口对齐，轻轻但牢固地按下手柄，直到控制器与中间背板相接并完全就位。</block>
+  <block id="28180201bfb2d7bf5615528194442289" category="admonition">将控制器滑入机箱时不要用力过大；这可能会损坏连接器。</block>
+  <block id="a676323e6fcbbd59df78bae524b7b40c" category="list-text">向上旋转控制器手柄，并用卡舌锁定到位。</block>
+  <block id="c190e47c300a3781bbf4edf442004427" category="list-text">将电源线重新连接到电源，并使用电源线固定器固定电源线。</block>
+  <block id="09792124be37eb490b4c100d51a769f1" category="paragraph">电源恢复供电后，状态 LED 应为绿色。</block>
+  <block id="a8ffa005f2f4d7ca0ce6fbc0cc743f6a" category="list-text">将所有电缆重新连接到控制器。</block>
+  <block id="432439ba5a9c5e97dd867034f0264d18" category="admonition">在将控制器置于在线状态之前，必须重新连接电缆。这对于镜像电缆连接尤其重要，因为它们可确保完整的系统冗余，并用于缓存镜像和 I/O 传输。</block>
+  <block id="f3e8f16b8c4599d4e7971f4a3b5b40ec" category="paragraph">验证缓存内存中的任何数据是否已写入驱动器，从受损控制器拔下所有电缆，然后从机箱中取出受损控制器。</block>
+  <block id="ddebde23a73a1e5da12a180120d90828" category="list-text">在受损的控制器上，确保 NV Caching Active（绿色）LED 熄灭。</block>
+  <block id="58965ac945ee10b0dc2cf0c64879cc65" category="paragraph">当 NV Caching Active（绿色）LED 熄灭时，缓存存储器中的任何数据都已写入驱动器，可以安全地移除受损的控制器。</block>
+  <block id="69461a453d92467af5f1dc2949bbb0fd" category="admonition">如果 NV Caching Active（绿色）LED 指示灯亮起，则缓存数据正在写入驱动器。您必须等待过程完成，并且 NV Caching Active LED 指示灯关闭。但是，如果 LED 指示灯持续亮起超过五分钟，请在继续此过程之前联系<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>。</block>
+  <block id="277a5437b393a9dae2e1f36dc8c357c0" category="paragraph">NV 缓存活动（绿色）LED 位于控制器上的 NV 图标旁边。</block>
+  <block id="7d4f1018779bf26ae6ea9c3314b4748f" category="image-alt">NV 状态 LED 位置</block>
+  <block id="e8ed7b11484014d720b422ee782eba78" category="paragraph">控制器上的 NV 图标和 NV 缓存活动指示灯</block>
+  <block id="67ae27d673fda2143fd1f63adf86608f" category="list-text">标记连接到受损控制器的每根电缆。</block>
+  <block id="37eda14e099a8035cd25a253d4f8db81" category="list-text">从受损控制器的电源上拔下电源线。</block>
+  <block id="db8fd2a28ebcf5092f7716116253ff49" category="admonition">电源 (PSU) 没有电源开关。</block>
+  <block id="b1a94eb82383e51048a46914dd3e98dc" category="list-text">从受损控制器上拔下所有电缆。</block>
+  <block id="f10ecb274bf637a86985f6cf212fc947" category="list-text">卸下受损的控制器：</block>
+  <block id="e11e72421be735a28947fbf0a54a814a" category="paragraph">下图显示了卸下控制器时控制器手柄的操作（从控制器的左侧）：</block>
+  <block id="1b18694f8589edd135989442717be84b" category="image-alt">控制器句柄操作以删除控制器</block>
+  <block id="68bd36189b3dd53d0a3db6843e43eae2" category="paragraph">在控制器的两端，向外推动垂直锁定凸耳，将手柄释放到水平位置。</block>
+  <block id="e38dbb05b47a9a2d1a0e6e4ce5ca2916" category="list-text">将手柄拉向您，将控制器从中间背板上卸下。</block>
+  <block id="992eed634c310c3384dab41dec7eef9e" category="paragraph">当您拉动时，手柄从控制器伸出，然后您感到一些阻力，继续拉动。</block>
+  <block id="4d194c1f374d114aeda5d40087c5bee3" category="list-text">将控制器滑出机箱，同时支撑控制器底部，并将其放置在平坦、无静电的工作表面上。</block>
+  <block id="6812d727082207717576976311f2f976" category="paragraph">如果需要，将手柄向上旋转（选项卡旁边），将它们移开。</block>
+  <block id="f6c4c0df663b5e47c04664435749c0cf" category="list-text">逆时针旋转指旋螺钉以松开控制器盖，然后打开盖子。</block>
+  <block id="ef13404364a970b4fd05be667ebe059d" category="doc">步骤 1：卸下控制器</block>
+  <block id="4d8761cf588ee1a042ea53ea8de854e2" category="list-text">在卸下故障控制器后的 60 分钟内安装更换控制器，以保持存储系统的正常冷却。</block>
+  <block id="040eb60b9c2067a203906826ad9b9de6" category="admonition">为防止过热，请勿让控制器托架空置超过 60 分钟。</block>
+  <block id="f314d733699a86d270cee4ccf938c861" category="list-text">在拔下受损控制器的任何电缆之前，必须将其置于离线状态。</block>
+  <block id="04f0343c36d2b01208704180f5a2822f" category="list-text">您可以打开存储系统位置（蓝色）LED（位于存储系统和两个控制器的正面），以帮助物理定位受影响的存储系统。使用 SANtricity System Manager，选择*硬件* &gt; *控制器和组件*，选择*控制器架*选项卡，然后从上下文菜单中选择*打开定位灯*。</block>
+  <block id="46dc7a6019d827f81ffce7b535eb038e" category="section-title">步骤 2：移动电源</block>
+  <block id="7bb165a1e14005ed2165449bfe570ee7" category="paragraph">将电源 (PSU) 移至更换控制器。</block>
+  <block id="8442028b3097bcfb1898e4700eb08397" category="list-text">从受损的控制器中取出 PSU：</block>
+  <block id="de7883b670e2aa03b8a1c8f09df0283d" category="paragraph">确保左侧控制器手柄处于直立位置，以便您可以访问 PSU。</block>
+  <block id="eb7daf9edab18c99ff21b5cd1a7d0573" category="image-alt">更换 AC PSU</block>
+  <block id="b39c0aa2f7a74f6bb1d82767252e81f0" category="paragraph">将 PSU 手柄向上旋转到其水平位置，然后抓住它。</block>
+  <block id="e53aa8a1ae4c16653020202824322401" category="paragraph">用拇指按下橙色锁定选项卡，从控制器上释放 PSU。</block>
+  <block id="69aa3d2e41b3de12291563841f390a9b" category="paragraph">将 PSU 从控制器中拉出，同时用另一只手支撑其重量。</block>
+  <block id="0675e42668a985b3678e0ac7bef7f3df" category="admonition">PSU 很短。将它从控制器中取出时，请始终使用两只手来支撑它，这样它就不会突然从控制器中摆动并伤害到您。</block>
+  <block id="2178955fc711a10316dabc28ec32b496" category="list-text">将 PSU 插入更换控制器：</block>
+  <block id="8ea2ecf6afc3dd784c96ad3320c6697c" category="list-text">用双手支撑 PSU 的边缘并将其与控制器中的开口对齐。</block>
+  <block id="9c45d770c4c72fca10bc51aff2728977" category="list-text">轻轻地将 PSU 滑入控制器，直到橙色锁定卡扣卡入到位。</block>
+  <block id="b5ecda37046d685b93693e01ecb6e6fe" category="paragraph">PSU 必须与内部连接器和锁定机构正确接合。如果您觉得 PSU 未正确就位，请重复此步骤。</block>
+  <block id="f8f3297fae2134dc5ae24c76ca45bcee" category="admonition">为避免损坏内部连接器，在将 PSU 滑入控制器时不要使用过大的力。</block>
+  <block id="f0167637a350c4dd2e81ce6e691cd9db" category="list-text">向下旋转手柄，使其不妨碍正常操作。</block>
+  <block id="489f4d822f036e8983d65332d7a37f54" category="section-title">步骤 3：移动风扇</block>
+  <block id="9409045caa9314bcb1f1483b708e0031" category="paragraph">将风扇移至更换控制器。</block>
+  <block id="6ebff45ffc34f047fbedc4110d404210" category="list-text">从受损控制器中取出一个风扇：</block>
+  <block id="4cad152e4a8c970b1849e94a2254d195" category="image-alt">风扇更换</block>
+  <block id="0598d6786d27c4929b62139fe114b783" category="cell">在蓝色触摸点处握住风扇的两侧。</block>
+  <block id="d9e9a2ba598d4bf9da2d14af94f3f75f" category="cell">将风扇向上拉，然后从插座中取出。</block>
+  <block id="2ca99cd6d9bea1fe091b4d30068a2d69" category="list-text">将风扇对准导轨，将其插入更换控制器，然后向下推，直到风扇连接器完全固定在插座中。</block>
+  <block id="7db206f9e6fccdb15b825a463365ed9a" category="list-text">对其余风扇重复这些步骤。</block>
+  <block id="4f42b1d0608fb1685f8d72748eac26b7" category="section-title">步骤 4：移动 NV 电池</block>
+  <block id="febcb77a862bc52409a4f8f740402587" category="paragraph">将 NV 电池移至更换控制器。</block>
+  <block id="3748cc234da371c99e3323c964dad4ff" category="list-text">从受损控制器中取出 NV 电池：</block>
+  <block id="1089c3637780c1a22ad88c3e30e3eaa6" category="image-alt">更换 NV 电池</block>
+  <block id="ac6ff89bfab84b4e4a936fbdfb584da9" category="paragraph">将 NV 电池向上提起并从其隔间中取出。</block>
+  <block id="2b6434ef9f5457450d4511d0fabd2506" category="paragraph">从固定器上拆下线束。</block>
+  <block id="5dedb299714fe96c61b1f1919b6e8cc2" category="list-text">推入并按住连接器上的卡舌。</block>
+  <block id="d3cc2e145aba0519f854557ed57acf4b" category="list-text">将连接器向上拉出插座。</block>
+  <block id="6b2547cf52b63bc6d939b98416cdfde1" category="paragraph">拉起时，从头到尾（纵向）轻轻摇动连接器以将其卸下。</block>
+  <block id="b43b37a5beb7724c79cd784767cd6f99" category="list-text">将 NV 电池安装到更换控制器中：</block>
+  <block id="fbbb65591b24687dbb68bedee8fff126" category="list-text">将接线连接器插入其插座。</block>
+  <block id="e443be76e4c5ed8e9dae5cbfde2b1592" category="list-text">将电线沿电源侧布线，插入其固定器，然后穿过 NV 电池舱前面的通道。</block>
+  <block id="0451eb98a36fb1804410bcc4ce9359cc" category="list-text">将 NV 电池放入隔间。</block>
+  <block id="3df44b0182c03fcb8c4156599eba109a" category="paragraph">NV 电池应平放在其隔间内。</block>
+  <block id="27f35b27313c8e5ab77d19b60ae6e137" category="section-title">第 5 步：移动系统 DIMM</block>
+  <block id="e2ab92defc59c42db8d7751871a85f99" category="paragraph">将 DIMM 移至更换控制器。</block>
+  <block id="aa873a0b11a643ef5c6d4ea9bb76770f" category="paragraph">如果您有 DIMM 空白，则无需移动它们，更换控制器应随附安装好的 DIMM 空白。</block>
+  <block id="44e8fcc7253fb9a1de8d7428592b78d3" category="list-text">从受损控制器中取出一个 DIMM：</block>
+  <block id="9f6b3b55748dc3abdda6a24404bc0981" category="image-alt">DIMM 更换</block>
+  <block id="8cadb74e8e3dadb4f0559d6574dc54d2" category="paragraph">DIMM 插槽编号和位置。</block>
+  <block id="ebef233acb3f41651dd2ed255f0710f3" category="admonition">根据您的存储系统型号，您将有两个或四个 DIMM。</block>
+  <block id="c8bca978ec187f4e3926d3fb1c0f21ed" category="list-text">注意插座中 DIMM 的方向，以便可以以正确的方向将 DIMM 插入更换控制器中。</block>
+  <block id="895d127cb9bb8c714cfeedec25196eb8" category="list-text">通过缓慢推开 DIMM 插槽两端的两个 DIMM 弹出凸耳来弹出 DIMM。</block>
+  <block id="f422e2b9703dc78004ddade23f0bbe2f" category="admonition">小心地握住 DIMM 的角落或边缘，以避免 DIMM 电路板组件受到压力。</block>
+  <block id="1ab8f30cd60bb4c699f4aa4f4a45d4ef" category="paragraph">将 DIMM 向上提起并从插槽中取出。</block>
+  <block id="2ff45566a080242bfba5b4556db91b26" category="paragraph">弹出器卡舌保持在打开位置。</block>
+  <block id="82d00c1935cb2a15e6506a8190030c0d" category="list-text">在替换控制器中安装 DIMM：</block>
+  <block id="60d8cb7af13a1de8e2ac89bf55defe6f" category="list-text">确保连接器上的 DIMM 弹出器卡舌处于打开位置。</block>
+  <block id="4db38c111b599a8d5245fba08b4ae7ea" category="list-text">握住 DIMM 的四角，并将其垂直插入插槽。</block>
+  <block id="cd3a33c660a3471bcf63783151894354" category="paragraph">DIMM 底部的插针之间的凹口应与插槽中的卡舌对齐。</block>
+  <block id="b3fb7cc55fec6d7df9078e2ee7739718" category="paragraph">正确插入时，DIMM 可以轻松插入，但在插槽中紧密贴合。如果没有，请重新插入 DIMM。</block>
+  <block id="7e08ee4b466dc677d31c40c8b0488339" category="list-text">目视检查 DIMM，确保其均匀对齐并完全插入插槽。</block>
+  <block id="9575090426787707867ccbc79b2a7518" category="list-text">在 DIMM 的顶部边缘小心但牢固地向下推，直到弹出器卡舌在 DIMM 两端的凹口上卡入到位。</block>
+  <block id="f2b46f48ad91312dbb629ca0d1eab3fe" category="list-text">对其余的 DIMM 重复这些步骤。</block>
+  <block id="c37a4d7725ea260112e56edceaf5e4d1" category="section-title">第 6 步：移动 I/O 模块</block>
+  <block id="b88a7ed45dedd1e4784a5c578bc8263e" category="paragraph">将 I/O 模块和任何 I/O 消隐模块移动到替换控制器。</block>
+  <block id="47f9ea1b3b16949857f797ce304a6208" category="list-text">从受损的控制器中删除一个 I/O 模块：</block>
+  <block id="e9a79f0407fd89b04b8d674513b95d8e" category="paragraph">请务必跟踪 I/O 模块位于哪个插槽中。</block>
+  <block id="87229a36d0751b8a6977451eb462ca89" category="paragraph">如果要卸下插槽 4 中的 I/O 模块，请确保右侧控制器手柄处于直立位置，以便可以访问 I/O 模块。</block>
+  <block id="0af6fe064800da7d11e3417d85012213" category="image-alt">移除 I/O 模块</block>
+  <block id="ffa468f89f7193e4d62e16f0859dcad7" category="paragraph">逆时针旋转 I/O 模块指旋螺钉以松开。</block>
+  <block id="5ea88ba805bdaacfdce62e862cfa864e" category="paragraph">使用左侧的端口标签选项卡和右侧的指旋螺钉将 I/O 模块从控制器中拉出。</block>
+  <block id="e04fbb1e210321f8cf00679d99037eff" category="list-text">将 I/O 模块安装到更换控制器中：</block>
+  <block id="66efd9c2b6ae55ef5c1ff3be01c1fe65" category="list-text">将 I/O 模块与插槽的边缘对齐。</block>
+  <block id="7188f4bfa76e7ca34fdec6ed68818a56" category="paragraph">您可以使用左侧的选项卡和右侧的指旋螺钉来推入 I/O Module。</block>
+  <block id="5994799013219684cd2468d0bd103219" category="list-text">重复这些步骤，将剩余的 I/O 模块和任何 I/O 消隐模块移至更换控制器。</block>
+  <block id="c15449579d92fa124a659aa412ed32be" category="section-title">第 7 步：安装控制器</block>
+  <block id="718f8a032a06d7322aab870b07f3a5bc" category="paragraph">将替换控制器安装到机箱中，重新连接其电源线及其所有电缆。</block>
+  <block id="b43b4b5f5821961553dbe6d4e6122a10" category="list-text">下一步取决于受损的控制器是否使用 DHCP 作为 IP 地址：</block>
+  <block id="bfa9de45095a3a90ebc55708a5ee6dd2" category="cell">条件</block>
+  <block id="c1325f6903ebb5ebb2bb519a73ddb1b0" category="cell">操作</block>
+  <block id="db2d89e0aea58b0bb054d06711dd1603" category="paragraph">受损的控制器未将 DHCP 用于 IP 地址</block>
+  <block id="6fbe3b2a04087d98d7111edd8b0800a6" category="paragraph">更换控制器采用您移除的受损控制器的 IP 地址。</block>
+  <block id="b1ba38ad947dd1578f31b0197f58b44d" category="paragraph">转至下一步。</block>
+  <block id="decfc22a794e17cd9475dd29aa12b845" category="paragraph">受损的控制器使用 DHCP 作为 IP 地址</block>
+  <block id="9f0090d15a85a71724021b2fe1054c22" category="paragraph">请网络管理员将受损控制器的 DNS/网络和 IP 地址与替换控制器的 MAC 地址相关联。</block>
+  <block id="96edeb3ef5f3d00c690483674749e606" category="list-text">使用 SANtricity System Manager 将控制器置于联机状态。</block>
+  <block id="51940da2e0e112c4e2164ed73dde4ca2" category="list-text">选择 *Hardware* &gt; *Controllers and components* 以显示控制器。</block>
+  <block id="43e5e56b16d9e995d72c9ea69ea1a621" category="list-text">选择您替换的控制器以显示其内容菜单。</block>
+  <block id="32d3fe65190b2b90e6f9f86e1ae465aa" category="list-text">选择 *Place online*。</block>
+  <block id="539f827e10e96fdd5bb9e40e8a033b35" category="list-text">当控制器启动时，请检查控制器 LED，以确保与其他控制器的通信已重新建立：</block>
+  <block id="9099077ffed39ba2a685301f4b1444f5" category="paragraph">如果报告 NVSRAM 不匹配，请使用以下 SMcli 命令升级 NVSRAM。如果数组不是 https 安全的，则需要 <block ref="ff2bddd61609f26dc3255408781890ad" prefix=" " category="inline-code"></block> 参数。</block>
+  <block id="ca34ccb280b5b0c1964d413938ebbdf1" category="admonition">如果无法完成 SMcli 命令，请联系<block ref="116f7ad90a3c7441981f82d8f8fba4d5" category="inline-link-rx"></block>或登录<block ref="fcc52edac3ce57829c48ee35d97a295d" category="inline-link-rx"></block>以创建案例。</block>
+  <block id="37c9a6ae0057d4ef2e7c8004d6bf9837" category="list-text">确认存储系统的状态为 Optimal，并且控制器的 Attention LED 已关闭。</block>
+  <block id="b1af2a1e075bf65c8a6d562cdf1d917c" category="paragraph">如果状态不是 Optimal 或任何 Attention LED 指示灯亮起，请确认所有电缆都已正确安装，并且控制器已正确安装。如有必要，请卸下并重新安装控制器。</block>
+  <block id="546c2059b7d78aee666e65a2118a57b9" category="admonition">如果您无法解决此问题，请联系<block ref="116f7ad90a3c7441981f82d8f8fba4d5" category="inline-link-rx"></block>。</block>
+  <block id="8fae6a367fd3c600bcac1c10f888063c" category="list-text">拆开更换控制器的包装，并将其放置在平坦的无静电表面上。</block>
+  <block id="c933121354c0223a9ad728051e709537" category="paragraph">保存包装材料，以便在退回受损控制器时使用。</block>
+  <block id="06d5fce8c355d461d669d434c31cd62c" category="list-text">记下更换控制器侧面的 MAC 地址。</block>
+  <block id="32fdd5186a012c3f888f7ed721176da8" category="paragraph">您将在稍后的控制器更换过程中使用 MAC 地址。</block>
+  <block id="07fda9eb36699866857d3a3fcf9d4fe3" category="list-text">确认替换控制器上的零件号与 SANtricity System Manager 中控制器的替换零件号相同：</block>
+  <block id="7b41eb08240d48ac49d0b954d04195aa" category="admonition">*可能丢失数据访问权限*：如果两个部件号不同，请不要尝试此过程。存在不匹配的控制器会导致更换控制器在您将其联机时锁定。</block>
+  <block id="8d416427e60142869e870aca364073af" category="list-text">记下更换控制器侧面的部件号。</block>
+  <block id="0afb06886c849a5b8e6ee76d561845a2" category="list-text">找到 Recovery Guru 详细信息区域中显示的受损控制器的更换零件号。</block>
+  <block id="c05de55475b8cbf67f50787bcf0bddba" category="paragraph">如果您需要手动查找此号码，请按照以下步骤操作：</block>
+  <block id="000bff5d070a7406db72435fc7376b96" category="list-text">选择 *Hardware* &gt; *Controllers and components*。</block>
+  <block id="3bca209bdd0840cefddce7cace13642a" category="list-text">选择受损控制器（Controller A 或 Controller B）的控制器图形以查看上下文菜单。</block>
+  <block id="035ca9e6fc4bda88ace0c0216c62980b" category="list-text">比较两个零件编号以确认它们是相同的。</block>
+  <block id="3cc46ef09d9c0e29c5f2806b83ebacde" category="list-text">下一步取决于零件号是否相同：</block>
+  <block id="743e5938189079dd3357c8b6f7009004" category="paragraph">两个零件编号相同</block>
+  <block id="d2aa5e318ed453a328d025435209fc91" category="paragraph">继续下一步。</block>
+  <block id="218db8bd137d4473a909b80dd224d93c" category="paragraph">这两个零件编号不同</block>
+  <block id="dc46f66aca33371e2046cc628d114249" category="paragraph">您不能继续此过程。</block>
+  <block id="c229d6affaf5d2de37a87c9381cd19ed" category="paragraph">请联系 <block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block> 以获得帮助。</block>
+  <block id="2f56d5fc53b80cd72cc9f205c589dd7b" category="list-text">使用 SANtricity System Manager 备份存储系统的配置数据库。</block>
+  <block id="9f5ae5484aae39bf79379c8e27f6637c" category="paragraph">如果删除控制器时出现问题，您可以使用保存的文件还原您的配置。系统保存 RAID 配置数据库的当前状态，其中包括控制器上卷组和磁盘池的所有数据。</block>
+  <block id="5a88e93518ef0439b565a12db4ca6079" category="list-text">选择 *Collect*。</block>
+  <block id="fa35372932fd7b7f194002545677ee4e" category="list-text">确认您的控制器出现故障。您可以通过两种方式确定：</block>
+  <block id="5c3e489f9f015dec0ad2d63f8ffe4ab0" category="list-text">SANtricity System Manager 中的 Recovery Guru 指示您更换控制器。</block>
+  <block id="f8e24f4f8665beda2711e14f280abf35" category="list-text">控制器上的琥珀色注意 LED 亮起，表示控制器出现故障。</block>
+  <block id="e99bb35d6b70ccf62eff1b0246a54916" category="list-text">验证存储系统的以下条件是否正确，以确保在存储系统开机并执行主机 I/O 操作时可以更换受损的控制器：</block>
+  <block id="7ce5d38198daa42ccdc1ccc6416a719c" category="list-text">机箱中的第二个控制器具有最佳状态。</block>
+  <block id="f132692f68dec483e8cae9d0aca02255" category="list-text">SANtricity System Manager 的 Recovery Guru 详细信息区域中的 *OK to remove* 字段显示 *Yes*，表明删除受损控制器是安全的。</block>
+  <block id="6e08763db3826f8c66338c02202737a2" category="list-text">与要更换的控制器具有相同部件号的替换控制器。</block>
+  <block id="6a621c69de29da855d69904cb723d4d8" category="list-text">用于识别要从控制器断开的每根电缆的标签。</block>
+  <block id="b4cc1ba5bf2164a993417d75aaa53475" category="list-text">具有浏览器的管理站，可以访问控制器的 SANtricity System Manager。</block>
+  <block id="9974af702a24ead987e72b92fd2e418c" category="paragraph">您可以通过将浏览器指向控制器的域名或 IP 地址来打开 SANtricity System Manager 界面。</block>
+  <block id="f92cc7ce14a5c6dd4e15865f19ea86db" category="paragraph">您也可以使用命令行界面 (CLI) 执行某些过程。使用 SANtricity System Manager 下载 CLI 包（zip 文件）：*设置* &gt; *系统* &gt; *附加组件*，然后选择*命令行界面*。然后，您可以从操作系统提示符发出 CLI 命令，例如 DOS C: 提示符。</block>
+  <block id="54f4a3ad5110292b1d20d9eeb3a833ba" category="list-text">找到有故障的 DIMM。</block>
+  <block id="8a682c66646ec7954594a9800184dc7d" category="inline-link">Netapp Hardware Universe</block>
+  <block id="a14eb1c2c4cf319a982bdbf18a929cc2" category="admonition">有关确切的 DIMM 位置，请参阅<block ref="4e43c3b83d98d9534ba258422aad47e3" category="inline-link-rx"></block>或控制器封面上的 FRU 图。</block>
+  <block id="9f212a86f239a9072597652a665776ee" category="list-text">卸下有故障的 DIMM：</block>
+  <block id="0fda818023e41f602e6784f9ba21bfa6" category="admonition">根据您的存储系统型号，您将有两个或四个 DIMM。</block>
+  <block id="f11db7eec0bc125e7dce7a2d804ea918" category="list-text">请注意插座中 DIMM 的方向，以便使用相同的方向插入更换的 DIMM。</block>
+  <block id="193ded937941ceaa24c58df5af5499e5" category="list-text">通过缓慢推开 DIMM 插槽两端的两个 DIMM 弹出凸耳，弹出有故障的 DIMM。</block>
+  <block id="2c6646edb004240e517d3920f69fd930" category="list-text">拆开替换 DIMM 的包装，并将其放置在存储系统附近的平坦无静电表面上。</block>
+  <block id="99ec8f391e3817f8a8becd2d19610ec6" category="paragraph">保存用于退回故障 DIMM 的包装材料。</block>
+  <block id="1ea787c242a7dcd215996d3c48964939" category="list-text">安装更换后的 DIMM：</block>
+  <block id="7f26eaf9050c56078183b827f935bcc6" category="paragraph">正确插入时，DIMM 可以轻松插入，但在插槽中紧密贴合。如果觉得 DIMM 插入不正确，请重新插入。切勿强行将 DIMM 插入插槽。</block>
+  <block id="7eb658f34658041c7b9e4400fbfc7d31" category="list-text">在 SANtricity System Manager 中，访问受损控制器的存储控制器配置文件：</block>
+  <block id="5c036fefd12c456d1d53c265712fe42d" category="list-text">转至 *Support* &gt; *Support Center*。</block>
+  <block id="bed19ecb958090751f399e852a95d4d8" category="list-text">在支持资源页面中，选择 *Storage Array Profile*。</block>
+  <block id="ffcca4c24b4d9a797fbd7d795ea331c4" category="list-text">如果 DIMM 显示以下任一条件，请记下 DIMM 的位置并继续此过程以更换 DIMM。</block>
+  <block id="2e5ab3c5b2a4ad7907ecf21576917151" category="paragraph">如果这些条件都不存在，则无需更换 DIMM。退出此过程。</block>
+  <block id="c08aea140bdd0ab5a4ceaf2ea1547bbe" category="list-text">出现故障的 DIMM</block>
+  <block id="29aa6af66313fa71148748a2db9289cf" category="list-text">DIMM 将 *Data Cache Module* 报告为非最佳</block>
+  <block id="def84981fcddd93884dffb8b5a63ae91" category="list-text">*Data Cache Module* 容量不匹配的 DIMM</block>
+  <block id="0e9652411744905ea48c93e5743075a9" category="list-text">解决任何其他存储系统问题。</block>
+  <block id="1648b39a8efbc7b387d8975a12526deb" category="paragraph">使用 SANtricity System Manager，查看 Recovery Guru 中的详细信息，以查看是否存在任何其他问题。</block>
+  <block id="5470a768e23dd3b38ec8c2ab00b4d086" category="list-text">适合您的存储系统配置的正确大小的替换 DIMM。</block>
+  <block id="5b87691ad5641c0085ec901b687091b7" category="list-text">防静电腕带或您已采取其他防静电预防措施。</block>
+  <block id="b2cf9771408dd8309b956d998815dd3c" category="list-text">平坦、无静电的工作表面。</block>
+  <block id="7ccf46f5dab89b439e9855887289c86c" category="list-text">用于标识连接到受损控制器的每根电缆的标签。</block>
+  <block id="9e41b9b1d28bb3e55520d4545a2d57d3" category="list-text">具有浏览器的管理站，可以访问受损控制器的 SANtricity System Manager。</block>
+  <block id="67bb6fcf50230280c150bad28d18532e" category="paragraph">要打开 System Manager 界面，请将浏览器指向受损控制器的域名或 IP 地址。</block>
+  <block id="64c2ba4173620e52c20564c1bdc69caa" category="list-text">在处理和安装 DIMM 期间防止静电放电（ESD）：</block>
+  <block id="49d0b232da44a7328387eae2814d8ff3" category="list-text">保留 ESD 袋和任何包装材料以退回故障的 DIMM，或在运送 DIMM 时使用经批准的包装。</block>
+  <block id="5d8ae0b85219aee0aa181d690523e9a4" category="list-text">始终佩戴防静电腕带，将其接地到存储系统机箱上未上漆的表面。</block>
+  <block id="f2f2d4e0fe7ef7582a624fac176d5f26" category="list-text">使用 SANtricity System Manager 备份存储系统的配置数据库：</block>
+  <block id="99aeea1fb1b2dcbab62413534d9ec17c" category="paragraph">如果删除控制器时出现问题，您可以使用保存的文件还原您的配置。系统保存 RAID 配置数据库的当前状态，其中包括受损控制器上卷组和磁盘池的所有数据。</block>
+  <block id="e3f34539c0392de4b6cccb551ad8d491" category="list-text">通过检查控制台错误消息来确定必须更换的风扇。</block>
+  <block id="9180e4524d2db3bcd87343fda3503ac8" category="list-text">卸下故障的风扇：</block>
+  <block id="c5326645ccf57e479af92bb7e5b12b3c" category="list-text">拆开更换风扇的包装，并将其放置在存储系统附近的无静电平坦表面上。</block>
+  <block id="a86e28354599b68b343a78aab39cd22a" category="paragraph">保存包装材料，以便在退回故障风扇时使用。</block>
+  <block id="eecfe81778edf5dc34051f280e2f122c" category="list-text">通过将更换风扇对准导轨插入，然后向下推，直到风扇连接器完全固定在插座中。</block>
+  <block id="9a92b3166375aa7c462deb8b92309c32" category="list-text">检查 Recovery Guru 是否指示无法移除有故障的风扇。如果是，请在继续此过程之前联系<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>。</block>
+  <block id="2d25e8226c440048c9e502acef78ce75" category="list-text">选择 *Settings* &gt; *System*。</block>
+  <block id="f40489bf823443ace8ab762d9a17849c" category="list-text">在 *其他设置* 部分，选择 *更改主机 I/O 协议* 以打开该页面。</block>
+  <block id="4723d6db6758b8fff57b2fcccacd2562" category="list-text">在 *Host I/O Protocol* 字段中，选择下拉菜单并选择要使用的协议。</block>
+  <block id="40e7a3d3edaa4c623f15403e6676b491" category="paragraph">协议列表基于当前安装的主机 I/O 模块。</block>
+  <block id="30cc9a1d254ab83b67c3f083c4ef6631" category="list-text">在打开的字段中键入 *CHANGE* 以确认更改。</block>
+  <block id="c7f108d72b11a69d9f9b213b4fcf08f3" category="list-text">选择 *Change* 按钮。</block>
+  <block id="dc42b5d491fc6401762c79419b8c1d71" category="list-text">等待控制器完成重新启动周期。</block>
+  <block id="03404525cd31ebe332bcd916a32408fe" category="paragraph">此过程可能需要大约五分钟时间。</block>
+  <block id="f0e003d8e910aac92eb678b35d88e454" category="list-text">当控制器恢复联机时，请使用 SANtricity System Manager 确认其状态为最佳。</block>
+  <block id="c86f60fc7fcc7f12bacc87413a01f8ea" category="list-text">重新创建主机定义。</block>
+  <block id="d5a35385e3c41cf9fd9e2f0a4a94c813" category="inline-link">在 SANtricity System Manager 中手动创建主机</block>
+  <block id="db8c72a9c6539d1e7ec1c1fb26b87ed0" category="paragraph">有关说明，请参见 <block ref="a53958d29b83920c5f55ec43c9dba875" category="inline-link-rx"></block> 程序。</block>
+  <block id="1fc86e94ed7b025b1b598bb2f43d1407" category="paragraph">有关分步说明，请参见适用于您的存储系统的指南：</block>
+  <block id="83e4a7b7f356dd5b4fc5814e9fd775dd" category="list-text">如果不知道存储系统中主机 I/O 模块上的协议，请使用 SANtricity System Manager 进行验证。</block>
+  <block id="b285314b6b465f044f782ffdd9cc362d" category="list-text">请参阅 *Host I/O Protocol* 字段中显示的默认协议。</block>
+  <block id="5773f5591c5be0dd5c50653e6d20aec4" category="admonition">如果要查看主机 I/O 模块的可用协议列表，请选择 *Host I/O Protocol* 字段中的下拉菜单。协议列表基于当前安装的主机 I/O 模块。</block>
+  <block id="f62d068f7839c83973a946e971309862" category="list-text">下一步取决于默认协议是否是您想要的协议：</block>
+  <block id="b8ed3149efb59c6c876d3d0175d04ca1" category="paragraph">默认协议是您想要的协议</block>
+  <block id="6254f83a536e9be53589a1db4776caa3" category="paragraph">无需采取操作。您可以退出此过程。</block>
+  <block id="d5dfda2c054ffb702ffa51688eadd327" category="paragraph">默认协议不是您想要的协议</block>
+  <block id="fe6e8d93cf140aed40cb0c118024a679" category="paragraph">继续此过程以更改协议。</block>
+  <block id="e4f1442149d9233a2ae070b8b54c13ce" category="list-text">请为此过程安排一个停机维护窗口。</block>
+  <block id="6ba03a3402729fd11feb88e957747228" category="list-text">确保存储系统与所有连接的主机之间没有发生 I/O 操作。例如，您可以执行以下步骤：</block>
+  <block id="efae40321ce137d3d4feb3148650f7a0" category="list-text">卸载与存储系统上的 LUN 关联的所有文件系统。</block>
+  <block id="8c966853804ddd0c8a58685b53b824cc" category="admonition">停止主机 I/O 操作的确切步骤取决于主机操作系统和配置，这超出了本说明的范围。如果您不确定如何停止环境中的主机 I/O 操作，请考虑关闭主机或联系<block ref="9a6f401ca1e7e89d8a0c29fb0cbe81b7" category="inline-link-rx"></block>。</block>
+  <block id="fa28d38e7ea04d9e1f9f826bf1c468a2" category="list-text">在每个控制器上，确保 NV Caching Active（绿色）LED 熄灭。</block>
+  <block id="1e73b048adbb2b88c1979ef16f8dbb06" category="paragraph">当 NV 缓存活动（绿色）LED 熄灭时，缓存内存中的任何数据都已写入驱动器，可以安全地继续此过程。</block>
+  <block id="1e20d67488b878e63809f430aa2d8f11" category="admonition">如果 NV Caching Active（绿色）LED 指示灯亮起，则缓存数据正在写入驱动器。您必须等待过程完成，并且 NV Caching Active（绿色）LED 指示灯关闭。但是，如果 LED 指示灯持续亮起超过五分钟，请<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>，然后再继续此过程。</block>
+  <block id="fc3d733029a58a51c05d34499b8293d0" category="list-text">使用 SANtricity System Manager 确认控制器上的操作已完成：</block>
+  <block id="62d71459ec4565a064b31e7101748457" category="list-text">选择 *Storage* &gt; *Operations in progress* 以查看概览屏幕。</block>
+  <block id="2f3292d0ca451b4603badba163d7d565" category="list-text">等待所有操作完成，概览屏幕显示 *当前没有正在进行的操作*，然后继续下一步。</block>
+  <block id="023e6709c3cc6f7e022c1f737b9ecf13" category="list-text">从存储系统中删除所有定义的主机。</block>
+  <block id="0f065244a3565fda62f0c2976c388d92" category="inline-link">在 SANtricity System Manager 中删除主机或主机集群</block>
+  <block id="f22e97d82d8d11d91cc641fd579fb1da" category="paragraph">有关说明，请参见 <block ref="540636eec801f992003aaa89b0185bd2" category="inline-link-rx"></block> 程序。</block>
+  <block id="488e6bea7b41710214f6a9d45e4750a0" category="paragraph">要更换发生故障的 I/O 模块，请在控制器中找到它，并按照特定的步骤顺序进行操作。</block>
+  <block id="630c54ca8fb6dd67fc002f28d89d1211" category="list-text">从出现故障的 I/O 模块中拔下电缆。</block>
+  <block id="539ae767713043504856676d47fbdf4b" category="paragraph">请务必给电缆贴上标签，以便了解电缆的来源。</block>
+  <block id="21ccb9fc686efabdb54b3721713084dd" category="list-text">从控制器上卸下发生故障的 I/O 模块：</block>
+  <block id="b5810c743736c228e22be74cd3df636d" category="paragraph">使用左侧的端口标签选项卡和指旋螺钉将 I/O 模块从控制器中拉出。</block>
+  <block id="e7a88b07d0fe11e52b015a7a07b1b7ee" category="list-text">将更换 I/O 模块安装到目标插槽中：</block>
+  <block id="9980a13f313ae24d02e08fa90a4a1b20" category="paragraph">您可以使用左侧的选项卡和指旋螺钉推入 I/O 模块。</block>
+  <block id="be9dc0332662b913cef88d5dcde78acd" category="list-text">连接 I/O 模块电缆。</block>
+  <block id="5dc4a3be8797d072e49c15b407d03894" category="list-text">更换 I/O 模块。</block>
+  <block id="375cfeccbd14312a2120114ef4e6ee91" category="paragraph">确保用相同类型的 I/O 模块替换出现故障的 I/O 模块。您无法安装其他类型的 I/O 模块。</block>
+  <block id="da3e4fc40468815155d8e6379f668342" category="paragraph">存储系统中的每个控制器中必须具有相同类型和数量的 I/O 模块。</block>
+  <block id="3b2f27b5942475fd5c2f0991a987c02b" category="admonition">*可能丢失数据访问权限* -- 存在不兼容或不匹配的 I/O 模块会导致控制器在通电时锁定。</block>
+  <block id="8c865d6d652233499322d22b56c020e9" category="list-text">用于识别连接到故障 I/O 模块的每根电缆的标签。</block>
+  <block id="d251d30f4b7b8bcd0e981a1e7fc5627b" category="paragraph">更换 I/O 模块后，必须重新启动控制器。</block>
+  <block id="91c7c4ae839664f690723e2789ab84a4" category="list-text">从 LOADER 提示符重启控制器：</block>
+  <block id="b8f2c5ae8a36c3665d2a4dca23133f73" category="paragraph"><block ref="bfa99df33b137bc8fb5f5407d7e58da8" prefix="" category="inline-code"></block></block>
+  <block id="9965554ffa71eff58da20fab93be4a17" category="admonition">重新启动受损的控制器还会重新初始化 I/O 模块和其他组件。</block>
+  <block id="6f3fa8086df2fa20b3e903512f693396" category="list-text">通过归还受损控制器的存储空间，使其恢复正常运行：</block>
+  <block id="1ca056bb10dec5191f061968413fb960" category="paragraph"><block ref="30edaf7c9fa43c78aeaf4b8fabb7af1a" prefix="" category="inline-code"></block></block>
+  <block id="257315f653a5868c10e8897449aa264f" category="list-text">从健康控制器的控制台还原自动回馈：</block>
+  <block id="3d2d5e9a2a8cef4225a4bd073c2aeefb" category="paragraph"><block ref="6f0c6616b99fea33a3020e0e0dcbe3c6" prefix="" category="inline-code"></block></block>
+  <block id="af4b4d5cc6a7f6d9937999949dd33233" category="list-text">如果启用了 AutoSupport，则恢复自动案例创建：</block>
+  <block id="824a761c1584c25f025a384b7b387c56" category="paragraph"><block ref="9ac424c0d7b432975df36a19daf50c9c" prefix="" category="inline-code"></block></block>
+  <block id="4d869e390c3cce7fd1a4c2c9abadcab9" category="list-text">拆开更换 I/O 模块的包装，并将其放置在存储系统附近的平坦无静电表面上。</block>
+  <block id="d46259c4ce941d8117d94864672cd1df" category="paragraph">保存包装材料，以便在退回有故障的 I/O 模块时使用。</block>
+  <block id="3768c58828c69b283a6a175e6472b661" category="list-text">确保安装了最新版本的 SANtricity OS：</block>
+  <block id="182b0637f4482f86eff29bbc8aa7426c" category="list-text">选择 *Support* &gt; *Upgrade Center*。</block>
+  <block id="d01c73e0727ec874d6c088a150f5596b" category="list-text">确认所有卷都已返回到其拥有的控制器：</block>
+  <block id="fb8397a799be1df6a0cd370840a4a371" category="list-text">选择 *Storage* &gt; *Volumes*。</block>
+  <block id="5aa0ebe3cbd2eef34e0886ee040329bf" category="list-text">在 *All Volumes* 页面中，验证卷是否已分发到其所属控制器。</block>
+  <block id="47fde62cd6bad69ac5ee1e4f98df4c8b" category="list-text">选择 *更多* &gt; *更改卷所有权* 以查看卷所有者。</block>
+  <block id="a8f077dbdc29aae8dd14716d5bdf7039" category="list-text">下一步取决于卷是否返回到其拥有的控制器：</block>
+  <block id="b4776fba955461ce5ba14e4862bd0a10" category="paragraph">所有卷均由其拥有的控制器拥有</block>
+  <block id="a5f7e0b057fe15e24d4b49097238ea2f" category="paragraph">未将任何卷返回给其拥有的控制器</block>
+  <block id="3bab8d68cb105bbbdf0a5a988015b9ad" category="paragraph">选择 *Storage* &gt; *Volumes* &gt; *More* ，然后从下拉菜单中选择 *Redistribute volumes* ，将卷返回给其拥有的控制器。</block>
+  <block id="15b8fe2de31dc0883ed9aa9334d10703" category="paragraph">在自动分发或手动分发后，仅将部分卷返回给其拥有的控制器</block>
+  <block id="f13ce0c51ce6e98e40ff73bf1a311ea3" category="paragraph">检查 Recovery Guru 以查找主机连接问题。</block>
+  <block id="671fd7f14da133cf6a7eee37a6157194" category="paragraph">如果没有 Recovery Guru 存在，或者如果在执行恢复 guru 步骤后，卷仍未返回给其拥有的控制器，请在继续此过程之前联系<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>。</block>
+  <block id="9488f9524146b79e5c3fcf42ad2d5e4b" category="list-text">为您的存储系统收集支持数据：</block>
+  <block id="87f43fac12a1c237d037f1944b505947" category="inline-xref-macro">更改 EF50 或 EF80 的主机 I/O 模块协议</block>
+  <block id="1f2378c23351d405c6f5b292526efdef" category="list-text">如果需要验证和更改主机 I/O 模块协议，请使用此过程<block ref="74b37660f98856046a08729a22608322" category="inline-xref-macro-rx"></block>。</block>
+  <block id="aedcd343fcb68e4a04190bee4c31ca0d" category="list-text">在其中一个控制器上，从要删除的 I/O 模块中拔下电缆，除非它是 I/O 空白模块。</block>
+  <block id="2d5c2fc8c3eaa1831af4698259afe710" category="paragraph">您可以给电缆贴上标签，以便了解它们的来源。但是，根据要升级到的 I/O 模块的类型，您可能无法重新连接到相同的端口，或者可能无法重复使用相同的电缆。</block>
+  <block id="4fdc5ef7aa01f9a5f4ff2540ea23d305" category="list-text">从目标插槽中取出 I/O 模块或 I/O 空白模块。</block>
+  <block id="9ae4e0bfb22619d98e91319153df15ff" category="list-text">拆开新 I/O 模块的包装，并将其放置在存储系统附近的平坦无静电表面上。</block>
+  <block id="168e8f01911230d3f41f25cd68c68cfa" category="paragraph">您可以使用系统安装和设置内容中的 <block ref="ed123abde8ecae3a647e0e4cc4ae2bec" category="inline-link-macro-rx"></block> 部分进行主机网络布线。</block>
+  <block id="42b2248297ad40cbde87588dc34af539" category="list-text">重复这些步骤以升级其他控制器中的 I/O 模块。</block>
+  <block id="842d0a92d83c39ec5bb127d94a1340d1" category="list-text">从 SANtricity System Manager 的主页，确保存储系统处于"最佳"状态。</block>
+  <block id="1c54e6b7b2c6a4233d29306192e39900" category="admonition">如果状态不为"最佳"，请使用 Recovery Guru 或联系<block ref="9a6f401ca1e7e89d8a0c29fb0cbe81b7" category="inline-link-rx"></block>来解决问题。</block>
+  <block id="9917fb40a9e6c06975fb8f9243c79b71" category="list-text">确保存储系统与所有连接的主机之间没有发生 I/O 操作。</block>
+  <block id="9967165701d83bd864422952ef200240" category="paragraph">例如，您可以执行以下步骤：</block>
+  <block id="cd89376f0923ec921f8ce2a5a6ef8178" category="list-text">停止所有涉及从存储系统映射到主机的 LUN 的进程。</block>
+  <block id="0cd64d526d84fa4bfc8d092fe191bd08" category="list-text">请确保没有应用程序将数据写入到从存储系统映射到主机的任何 LUN。</block>
+  <block id="8cd14a522d01d11d4df48615a78c1777" category="list-text">卸载与存储系统上的卷关联的所有文件系统。</block>
+  <block id="2cc0ecee1b51ebde25612c3f89f70dd5" category="list-text">确认控制器上的操作已在 SANtricity System Manager 中完成：</block>
+  <block id="cd726a2d971efaac94a9d391e2f68627" category="list-text">关闭两个控制器的电源：</block>
+  <block id="57c52ae3ab57d269bfcdd09fa130aa11" category="list-text">贴上标签，然后从两个控制器上拔下电源线。</block>
+  <block id="bc99972b341984a197e8d2d0ecf28533" category="list-text">等待两个控制器上的所有 LED 熄灭。</block>
+  <block id="43875314ce7ca196e665d736455cb139" category="list-text">插入两个控制器上的电源线。</block>
+  <block id="734539fc9e02f5e053728e7c5bfb837c" category="paragraph">控制器开始引导。</block>
+  <block id="0b3109a33c36f5898fbca8d3a13976f7" category="list-text">检查控制器上的 LED，以确保控制器之间的通信已重新建立：</block>
+  <block id="f573f92d576cf14be4f7901e04dfb2b9" category="list-text">注意 LED 保持亮起。</block>
+  <block id="3126a6f9eee32abaa08d58ed0a49a615" category="list-text">当控制器恢复联机时：</block>
+  <block id="14b348d983a5c81ef707d703552d609e" category="list-text">确认其状态为 Optimal。</block>
+  <block id="e93044d6f12583e6f0c55377a1a2ff8c" category="list-text">确认每个控制器上的注意 LED 熄灭。</block>
+  <block id="79523326f577fbe6d90a4e42b4bc60f4" category="paragraph">如果状态不是 Optimal 或任何注意 LED 指示灯亮起，请确认所有电缆均已正确安装。</block>
+  <block id="bcc7d313f9ff59780374bed744a70abb" category="admonition">如果您无法解决问题，请联系<block ref="116f7ad90a3c7441981f82d8f8fba4d5" category="inline-link-rx"></block>。如果需要，请使用 SANtricity System Manager 为您的存储系统收集支持数据。</block>
+  <block id="3f30607c8c189611a29aba345aefd909" category="list-text">为此程序安排停机维护窗口。在成功完成此过程之前，您无法访问存储系统上的数据。由于两个控制器在通电时必须具有相同的 I/O 模块配置，因此在升级 I/O 模块时必须关闭电源。</block>
+  <block id="e99ebf994137a95e61f5f7a52a0443b2" category="list-text">要升级的新 I/O 模块。</block>
+  <block id="cd8bbbf91ae9a194a24cb371e61472ae" category="paragraph">请确保存储系统支持要升级到的 I/O 模块，每个控制器的 I/O 模块类型和数量相同，并且了解插槽优先级（新 I/O 模块必须安装在每个控制器上的同一插槽中）。</block>
+  <block id="5d34f6bf4f46be7c85807174aa946833" category="paragraph">如果需要，您可以在 <block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block> 确认存储系统支持的 I/O 模块和插槽优先级。</block>
+  <block id="0f8915f18b413ad77f4f3dd091d9a678" category="list-text">用于将新 I/O 模块连接到网络的电缆。</block>
+  <block id="43f24ff5a34ee925d09b341d8520282a" category="list-text">具有可访问控制器的 SANtricity System Manager 的浏览器的管理站。</block>
+  <block id="3cfa2a76ec6b7919560b9e39a238b394" category="paragraph">要打开 System Manager 界面，请将浏览器指向目标控制器的域名或 IP 地址。</block>
+  <block id="6b5dc064a489209f487a1fbe74678501" category="paragraph">使用 SANtricity System Manager，确保已安装最新版本的 SANtricity 操作系统，验证所有卷都已返回到其拥有的控制器，并收集支持数据，以便您可以恢复操作。</block>
+  <block id="77480833ef5cc037425fc564bfa7d80e" category="list-text">请确保存储系统上已安装最新版本的 SANtricity 操作系统：</block>
+  <block id="5920ef825270be85c014f411676c870a" category="list-text">选择 *Support* &gt; *Upgrade Center*</block>
+  <block id="238bd8d0896c74de1b56b4553f8598d5" category="list-text">验证所有卷都已返回到其拥有的控制器：</block>
+  <block id="5bb1a60a48916e939ab17dfa0f0393a8" category="paragraph">Recovery Guru 存在并指示卷不在其首选路径上（未返回到其所属控制器）</block>
+  <block id="52b5a46fb893f7af6e4fcb7e04f0069d" category="list-text">将卷重新分配给其拥有的控制器，通过选择 *Storage* &gt; *Volumes* &gt; *More* ，然后从下拉菜单中选择 *Redistribute volumes* 。</block>
+  <block id="3d32eccfdf89dacd7ab5727eebb79421" category="list-text">通过检查 Recovery Guru 是否存在并且仍然指示卷不在其首选路径上，验证所有卷已重新分配给其拥有的控制器。</block>
+  <block id="319791616ac3e18fcd67e7ff7d9c482f" category="admonition">如果卷仍未返回到其拥有的控制器，请联系 <block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>。</block>
+  <block id="8dad8566f57d182c7561be9c94f26b6b" category="paragraph">Recovery Guru 不存在（似乎所有卷都已返回给其拥有的控制器）</block>
+  <block id="dff73266acfef23e2d87098944c35f9f" category="paragraph">通过选择 *Storage* &gt; *Volumes* &gt; *More* 来验证所有卷是否已返回其拥有的控制器，然后从下拉菜单中选择 *Change volume ownership* 以查看卷所有者。</block>
+  <block id="820d32b1a158d53c60563b13dff48c57" category="paragraph">每当您将控制器置于离线状态时，都需要等待至少一分钟才能使控制器恢复联机。此等待期允许存储系统更新控制器的状态，并确保将所有缓存数据写入驱动器。</block>
+  <block id="3885b5f478c69340cf83d7820ac679ec" category="list-text">如果受损控制器尚未离线，请使用 SANtricity System Manager 将其置于离线状态：</block>
+  <block id="c527532258073653760911f554503168" category="list-text">选择要置于脱机状态的控制器以显示其内容菜单。</block>
+  <block id="ef1ecc8a6946e0af409699163db6c3fc" category="list-text">选择 *Place offline*，然后确认您要执行此操作。</block>
+  <block id="fd183302e50d83588c2943337c36bef2" category="admonition">如果您使用尝试脱机的控制器访问 SANtricity System Manager，则会显示 SANtricity System Manager Unavailable 消息。选择*连接到备用网络连接*以使用其他控制器自动访问 SANtricity System Manager。</block>
+  <block id="7cc57a1eebb94325453f75fbf0275af0" category="list-text">使用 Recovery Guru 确认移除有故障的组件是安全的：</block>
+  <block id="ad22f97266cdfbff68c2e3e29d4e6330" category="list-text">选择 *Recheck*。</block>
+  <block id="5b34eec682dbd9bff0de7ee894cdd6fe" category="list-text">确认详细信息区域中的 *OK to remove* 字段显示 *Yes*。</block>
+  <block id="8b1060e414851c63305da424310bb1f9" category="admonition">如果 *OK to remove* 字段未显示 *Yes*，请不要继续移除有故障的组件。相反，请使用 Recovery Guru 对问题进行故障排除。</block>
+  <block id="362c272b3249d43a519fff1a1e85f81d" category="paragraph">使受损的控制器恢复联机。</block>
+  <block id="d4dc0ce64fc66520b80e9aec35fddf63" category="list-text">使用 SANtricity System Manager 将控制器置于联机状态：</block>
+  <block id="bf0aec9f26d4b8f7e108f8863cf2ad82" category="list-text">选择要置于联机状态的控制器以显示其上下文菜单。</block>
+  <block id="f39c900e77ab172808faa7d10efc77b9" category="list-text">选择 *Place online*，然后确认您要执行此操作。</block>
+  <block id="854bdd5faf1d0f3d3ab2991f9bfd4251" category="list-text">当控制器恢复联机时：</block>
+  <block id="7c95fa003f2eb15e450e38ee5342f76c" category="list-text">确认其状态为最佳。</block>
+  <block id="f77a09f0d502f55ba3caba0850739b1f" category="list-text">确认控制器上的注意 LED 熄灭。</block>
+  <block id="8a1b9966764bb347ebbc48432bd01c78" category="admonition">如果无法解决问题，请联系<block ref="9a6f401ca1e7e89d8a0c29fb0cbe81b7" category="inline-link-rx"></block>，然后再继续此过程。如果需要，请使用 SANtricity System Manager 为您的存储系统收集支持数据。</block>
+  <block id="eb6e0aa4b1edce20b022eab407528405" category="list-text">找到 NV 电池。</block>
+  <block id="87e83e1392e33b9e82110521a139bad8" category="list-text">取下 NV 电池：</block>
+  <block id="ae5529cd3fcab529cb7e4c4cc4ae0d75" category="list-text">拆开更换用 NV 电池的包装，并将其放置在存储系统附近的无静电平坦表面上。</block>
+  <block id="5afcbf849e9cb9a997b8740381124828" category="paragraph">保存包装材料，以便在退回故障 NV 电池时使用。</block>
+  <block id="d61cc7e5822a30588ead2cb9b0e8c0d8" category="list-text">安装更换后的 NV 电池：</block>
+  <block id="216cd6b3556908b9bf9092308aacc2f2" category="list-text">将 NV 电池放入其隔间。</block>
+  <block id="1bd0a6d1a38fb93b63ca830a2845a59a" category="list-text">确认 SANtricity System Manager 中的 Recovery Guru 报告了 _Battery Failed_ 状态或 _Battery Replacement Required_ 状态。如果报告了任一状态，则必须更换受影响的 NV 电池。</block>
+  <block id="20cc90805324d82c16bb0844a289dd0d" category="list-text">更换 NV 电池。</block>
+  <block id="806431b286fd0d267ecda9775a8a35c7" category="list-text">ESD 腕带或其他防静电预防措施。</block>
+  <block id="6f48d98c2df2386d39c71bc10860a818" category="list-text">打开电源线固定器，从 PSU 上拔下电源线，然后从 PSU 上拔下电源线。</block>
+  <block id="48ccf1334141c8dca1e2d34eeeaab837" category="admonition">此 PSU 没有电源开关。</block>
+  <block id="26cc3f70141c5f4b4f5a7a7c52321240" category="list-text">卸下 PSU：</block>
+  <block id="5b2b06b0e901e3f4d2327241b8bb8b28" category="list-text">拆开更换电源的包装，并将其放置在存储系统附近的平面上。</block>
+  <block id="6aaf2adda7ea3fae24f9570eb951048f" category="list-text">安装更换后的 PSU：</block>
+  <block id="ef030b8aef672e3379af07d3ad1245a3" category="list-text">轻轻地将 PSU 推入控制器，直到橙色锁定标签卡入到位。</block>
+  <block id="0359babd3c6d56d11928ec9f4c47fb26" category="paragraph">PSU 只能与内部连接器正确接合，并单向锁定到位。</block>
+  <block id="c5e3f2387032804b51b67e0c99e63c46" category="list-text">将电源线重新连接到 PSU，并使用电源线固定器固定电源线。</block>
+  <block id="eb3ac9b9efdc3a8db20ea72534f74755" category="paragraph">PSU 恢复供电后，状态指示灯应为绿色。</block>
+  <block id="8f1f6d4a09aef4cc3f2282b74c25da2a" category="list-text">确认 PSU 的状态为 Optimal，并且存储系统的 Attention LED 指示灯熄灭。</block>
+  <block id="a6782213451e1a25fd1e4a4a2aed3fb3" category="paragraph">如果状态不是 Optimal 或任何 Attention LED 指示灯亮起，请确认电源线已正确安装，并且 PSU 已正确安装。如有必要，请卸下并重新安装 PSU。</block>
+  <block id="44f81d663e1096dd20ceea19ab4ec6c4" category="admonition">如果无法解决此问题，请联系<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>，然后再继续此过程。</block>
+  <block id="6c18738e3a25840fa6f07d0185adf172" category="list-text">在 SANtricity System Manager 中，单击*支持 &gt; 升级中心*，以确保安装了最新版本的 SANtricity 操作系统。</block>
+  <block id="4cca325ed840b8ff6bedb9a2bcf0134f" category="paragraph">如果您需要 RMA 号码或更换程序的其他帮助，请通过<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>、888-463-8277（北美）、00-800-44-638277（欧洲）或 +800-800-80-800（亚太地区）联系技术支持。//2025-11-17 ontap-systems-internal/issues/1391</block>
+  <block id="202eb3bd191afdcc6574db0d2b210141" category="doc">步骤 1：准备更换驱动器</block>
+  <block id="09b3729e8c54aa618720de02a4a7354b" category="paragraph">通过确保驱动器出现故障、确认您具有受支持的替换驱动器、确保您具有 SANtricity System Manager 访问权限、采取静电放电预防措施以及物理定位故障驱动器来准备驱动器更换。</block>
+  <block id="5411b278ada6771813d99abbd542e77d" category="list-text">请确保您有一个适合您的存储系统配置的替换驱动器。</block>
+  <block id="cc088aad5d4e5812519f87b3cc0360c1" category="paragraph">如有需要，您可以使用 SANtricity System Manager 确认：</block>
+  <block id="c3bc0491c98d99a3bf13cbd6349a5120" category="list-text">选择 *Hardware* &gt; *Drives*。</block>
+  <block id="9676a503fc303740896f0f95f0b258d7" category="list-text">在图形上选择出现故障的驱动器以显示其上下文菜单，然后选择 *查看设置*。</block>
+  <block id="fc153c091910a3ff722411ca3258117f" category="paragraph">例如，如果您要更换具有安全功能的驱动器，请确保更换的驱动器也具有安全功能。</block>
+  <block id="ae05495bfd62e95fdf996cb961321009" category="list-text">确保您有一个带有浏览器的管理站，可以访问任一控制器的 SANtricity System Manager。</block>
+  <block id="e4208becdcb61cf8a0a6ac1925086064" category="paragraph">要打开 System Manager 界面，请将浏览器指向控制器的域名或 IP 地址之一。</block>
+  <block id="7e70118c7aa8f3ae30729f3a4f60d7a4" category="list-text">在处理和安装驱动器期间防止静电放电（ESD）：</block>
+  <block id="9c191e3864338074535e71631a29e170" category="list-text">请确保配备静电放电 (ESD) 腕带。</block>
+  <block id="8f296d2982b513dac8462f34100b1d01" category="paragraph">始终佩戴防静电腕带，将其接地到您的存储系统机箱上未上漆的表面上。如果没有腕带，请在处理驱动器之前触摸存储系统机箱上未上漆的表面。</block>
+  <block id="de7e79e521bea5ab59265cece37e5aba" category="list-text">请确保工作表面平整无静电。</block>
+  <block id="8d1d2e4f6a4c22781079d577bde99018" category="list-text">保留 ESD 袋和任何包装材料以退回故障驱动器，或在运输驱动器时使用经批准的包装。</block>
+  <block id="51cebed17b8d8bb9e3f3b47c6481ac7d" category="list-text">在处理和安装驱动器过程中避免物理损坏：</block>
+  <block id="906409d7e6d7896d7f1e4d11901b4d36" category="admonition">驱动器易碎；驱动器处理不当是驱动器故障的主要原因。</block>
+  <block id="022cbbd400562dd3ebc01ec14bc22327" category="list-text">切勿将驱动器强行推入驱动器托架。始终使用轻柔而坚定的压力来完全接合驱动器闩锁。</block>
+  <block id="e59368b4449cfc28e6da81f00820e988" category="list-text">如果需要，您可以使故障驱动器的注意（琥珀色）LED 闪烁，从而在存储系统中物理定位故障驱动器。使用 SANtricity System Manager，选择*硬件* &gt; *驱动器*，在图形上选择出现故障的驱动器以显示其上下文菜单，然后选择*打开定位灯*。</block>
+  <block id="cf839ce4b241d336571595d2daf797e5" category="admonition">您必须从存储系统正面卸下挡板，才能看到驱动器 LED。</block>
+  <block id="91a53f1fc2ef9e460e758feab83a284e" category="section-title">步骤 2：更换驱动器</block>
+  <block id="d0354c343189eb2f166a9771e3de1827" category="paragraph">将出现故障的驱动器更换为新驱动器。</block>
+  <block id="e31ab42775382bfbbce75a3c9166bca5" category="admonition">卸下故障驱动器后，应尽快安装更换驱动器。</block>
+  <block id="e1ad95c4430841bde7a938ee47472720" category="list-text">如果尚未卸下，请从存储系统正面卸下挡板。</block>
+  <block id="ffe10e0db69ea2cd258521a2ba16bd80" category="list-text">删除故障驱动器：</block>
+  <block id="802e81544e7cd56335454cb3f02f6c1a" category="image-alt">删除 NVMe 驱动器</block>
+  <block id="f8187b8825b1a2102bb75307f4e92872" category="paragraph">按下驱动器面板上的黑色释放按钮以打开凸轮手柄。</block>
+  <block id="36c4bb9266e617d3ca8a33eb9502e855" category="paragraph">向下旋转凸轮手柄，使驱动器与中间背板脱离。</block>
+  <block id="6c855930c5124022a374c12026485487" category="list-text">使用凸轮手柄将驱动器部分滑出驱动器舱。</block>
+  <block id="8200bcc78cceee3c1fd142a06af4ffba" category="list-text">等待 60 秒，让驱动器停止旋转。</block>
+  <block id="39969086c4f902c207b1de50ea68f7f4" category="list-text">用两只手将驱动器从驱动器舱中完全取出。</block>
+  <block id="7e44bba475da6d9d186426fb36056d7b" category="list-text">将驱动器放在远离磁场的防静电缓冲表面上。</block>
+  <block id="4936bdb0c666d8b1c5c0ab72006dfa8b" category="list-text">等待 60 秒，以便系统软件识别驱动器已被删除。</block>
+  <block id="63fd2f9912544ab3fe45fe4c0c3387e4" category="list-text">拆开更换驱动器，并将其放置在存储系统附近的平坦无静电表面上。</block>
+  <block id="b71aa18e656f10927bbf6f98aaf2f03f" category="paragraph">保存包装材料，以便在退回故障驱动器时使用。</block>
+  <block id="582046ffdac76c22bd6e1a671a0dd476" category="list-text">插入更换驱动器：</block>
+  <block id="ac5779e6538a2c75a0039ff0255644c0" category="list-text">用两只手将替换驱动器插入打开的驱动器舱，用力推直至驱动器停止。</block>
+  <block id="80f0f6a9b3efd9ccafa0901ee7c37fc1" category="list-text">合上凸轮手柄，使驱动器完全固定在中间平面上，凸轮手柄卡入到位。</block>
+  <block id="70c5de04671814ba5dcd9d09b741a1cf" category="paragraph">请务必慢慢关闭凸轮手柄，使其与驱动器表面正确对齐。</block>
+  <block id="71f51cf599c0c2d8d729e53c4a5f7cd6" category="paragraph">正确插入驱动器时，驱动器上的绿色 LED 亮起。</block>
+  <block id="8cea4214af8769b1ed6d235deb7aa6f2" category="section-title">步骤 3：完成驱动器更换</block>
+  <block id="194e5b06fc52bafef35cd966627ddb62" category="paragraph">确认更换驱动器正常工作，并确保驱动器重建已开始。</block>
+  <block id="df726dc38cf99f3a4f73c6e349498583" category="list-text">通过检查 LED 行为来确认更换驱动器是否正常工作，如果没有，请采取适当的纠正措施。</block>
+  <block id="e2e0d2a0e5302ad9370a95bbec7f737d" category="admonition">首次插入驱动器时，其注意 LED 可能已打开。但是，如果更换驱动器正常工作，LED 应在一分钟内熄灭。</block>
+  <block id="e7e568fd2613cdd44f30db1e3ce7a917" category="cell">如果更换驱动器 LED 的行为显示...</block>
+  <block id="d66eca965884610649e11844abb43d2c" category="paragraph">电源 LED 亮起或闪烁，注意 LED 熄灭</block>
+  <block id="753e98337d05b543b5faa7f7ea174734" category="paragraph">更换驱动器工作正常。</block>
+  <block id="53aa3bd9a12a1a326ddf7840c6f0c28d" category="paragraph">电源 LED 熄灭</block>
+  <block id="3702c4797937926ccc02190a8d22d3c2" category="paragraph">驱动器可能未正确安装。</block>
+  <block id="7768fcf3cc78310794819bd1f2cb97d2" category="list-text">卸下驱动器，等待 60 秒，然后重新安装。</block>
+  <block id="bf806136946c849db6689fdbf2226859" category="paragraph">注意 LED 指示灯亮起</block>
+  <block id="c6829989ff678a0d9d9b385ca91f6e02" category="paragraph">新驱动器可能有缺陷。</block>
+  <block id="a7621c18044658dd14b025c24c9ab382" category="list-text">用另一个新驱动器替换新驱动器。</block>
+  <block id="7896a76b0f7891b195e95650fdd9a3f7" category="list-text">如果 SANtricity System Manager 中的 Recovery Guru 指示驱动器重建未自动开始，请在 NetApp 支持人员或 Recovery Guru 的指示下手动开始重建，并使用以下步骤：</block>
+  <block id="650b3722bf13bca52f24cd90d065762e" category="admonition">根据您的配置，控制器可能会自动将数据重建到新驱动器。如果存储系统使用热备用驱动器，则在将数据复制到替换驱动器之前，控制器可能需要在热备用驱动器上执行完整的重建。此重建过程会增加完成此操作步骤所需的时间。</block>
+  <block id="6ba835c9ea82704f22ff2a15ee4695ba" category="list-text">选择 *Hardware* &gt; *Drive*。</block>
+  <block id="db44d1348f7ce991698e428d4ac21f44" category="list-text">在图形上选择替换驱动器以显示其上下文菜单，然后选择 *Reconstruct*。</block>
+  <block id="3412171ea011f81577b92476937a8ab4" category="list-text">重新安装挡板。</block>
+  <block id="95275f416abb0ceec250662ff9b425ed" category="section-title">步骤 4：将故障部件退回 NetApp</block>
+  <block id="3d29438eb952627ce8da2622cb656128" category="paragraph">此任务介绍如何从 System Manager 的硬件页面访问 iSCSI 端口配置。您还可以从菜单访问配置：System[Settings &gt; System &gt; Configure iSCSI ports]。</block>
+  <block id="cc8755fb46f774d060b45e3e5b0bd265" category="list-text">从左侧面板中，选择菜单：Hardware[Controllers and components]。</block>
+  <block id="0573a0c49744adecc0a9c55b42f713c1" category="list-text">从阵列中检查 iscsi 会话状态。从 SANtricity System Manager，导航到 *设置* &gt; *系统* &gt; *查看/结束 iSCSI 会话*。</block>
+  <block id="769ffa546ec00708bab1334064113cc6" category="list-text">在左侧面板中，选择菜单： Storage [Hosts]。</block>
+  <block id="2d3c6d3090e0743f13c7d2f6e6baa8a7" category="list-text">从 System Manager 界面的左侧面板中，选择 *Hardware*。</block>
+  <block id="54f28e00e77b3b878f53a93bac8c3b82" category="list-text">在 SANtricity System Manager 界面的左侧面板中，选择菜单：Storage[Hosts]。</block>
+  <block id="ae72018d6159d77eea99fbd937f32807" category="admonition">RHEL 10 没有网络脚本。</block>
+  <block id="57b95658e40e066ac07b2b5155110cfe" category="doc">在 E-Series 中执行 NVMe over RoCE 特定任务 - VMware</block>
+  <block id="53d3c9bb29457cb08e958f62619c1cdb" category="paragraph">对于 NVMe over RoCE 协议，您可以配置交换机并确定主机端口标识符。</block>
+  <block id="74c661da20b90780ad273fb5c128b862" category="section-title">步骤 1：记录您的配置</block>
+  <block id="2bfe70f1bbb7fed1420533e9fc335785" category="image-alt">基于 RoCE 端口的 NVMe 标识符"</block>
+  <block id="6cf4b8e3219ee11133fc7995b252a951" category="cell">阵列端口连接</block>
+  <block id="73b9973581e3be0105767aec77f4ea47" category="paragraph">阵列控制器（目标）端口 1</block>
+  <block id="704ce3ae94445e082d2bb1e87f0f047d" category="paragraph">阵列控制器（目标）端口 2</block>
+  <block id="d6476b3528136cc99ca7f3fb989ac43d" category="paragraph">阵列控制器（目标）端口 3</block>
+  <block id="820dc13fc0520d23bf688f0bf1558639" category="paragraph">阵列控制器（目标）端口 4</block>
+  <block id="0fa2bfc199fb42ad06edd03ea829fbb0" category="paragraph">这可能因阵列而异。EF300、EF600 和 EF50 将是 2 个启动器端口，最多 4 个目标端口，1 个或多个 VLAN。EF80 将是 2 个启动器端口，最多 6 个目标端口，1 个或多个 VLAN。</block>
+  <block id="e80331389c74f068dcf435a8c8a29bb4" category="section-title">步骤 2：配置 NVMe/RoCE 交换机</block>
+  <block id="391683bbbbffe7e0a99ae51301f2071f" category="paragraph-title">关于此</block>
+  <block id="438a6e391139858173b2b6dac23fd47c" category="paragraph">此任务描述了为 NVMe over RoCE 配置交换机的一般步骤。有关具体说明，请参见交换机供应商的文档。</block>
+  <block id="26df54b5f65f134865b888257f306e87" category="paragraph">在开始之前，请确保具备以下条件：</block>
+  <block id="0392371e7158cf2c0db91d780411aa58" category="list-text">两个独立的网络提供高可用性。确保将通过 RoCE 的 NVMe 流量隔离到单独的网络段。</block>
+  <block id="39b3011a351005c6917c0290e3df190d" category="section-title">步骤 3：配置网络 - NVMe/RoCE、VMware</block>
+  <block id="78b8e6cae2b1cdac934ac7e5e50b9d10" category="paragraph">根据您的数据存储要求，您可以通过多种方式设置 NVMe over RoCE 网络。有关为您的环境选择最佳配置的提示，请咨询您的网络管理员。</block>
+  <block id="e9e289b0246da257d8ab01dbf1cc2b7b" category="paragraph">此任务描述了为 NVMe over RoCE 配置网络的一般步骤。有关具体说明，请参见交换机供应商的文档。</block>
+  <block id="a2a9b18b5704619f25c646a7dd7e55a3" category="list-text">为 NVMe over RDMA 的无损以太网配置的交换机。</block>
+  <block id="545b4b08abb959614f088b43f97a909f" category="paragraph">在规划基于 RoCE 网络的 NVMe 时，请记住，VMware Configuration Maximums 指南指出，每台服务器支持的最大 RDMA NVMe 启动器端口数为 2。您必须考虑此要求，以避免配置过多的路径。</block>
+  <block id="4187e9e8059a578f846f0643c831b248" category="paragraph">为确保良好的多路径配置，请为 NVMe over RoCE 网络使用多个网段。在一个网段上至少放置一个主机端端口和每个阵列控制器的至少一个端口，在另一个网段上放置一组相同的主机端口和阵列端口。在可能的情况下，使用多个以太网交换机来提供额外的冗余。</block>
+  <block id="4083a5994667ca8da19b2478ec3e81dc" category="section-title">步骤 4：配置阵列端网络 - NVMe/RoCE，VMware</block>
+  <block id="0e6324e9719ceaa07fadd2cd1be58040" category="paragraph">您可以使用 SANtricity System Manager 界面在阵列端配置 NVMe over RoCE 网络。</block>
+  <block id="d6b31ed9b32c133fe85e6e39d08780c2" category="paragraph">此任务描述如何从 SANtricity System Manager 中的 *Controllers &amp; components* 页面访问 NVMe over RoCE 端口配置。您还可以从 SANtricity System Manager 中的 *Configure NVMe over RoCE ports* 页面访问配置。</block>
+  <block id="aad3b22915cf50f0fd3e3b9879b72e79" category="list-text">System Manager GUI、基于角色的访问控制 (RBAC) 或 LDAP 和目录服务的密码，以便对存储阵列进行适当的安全访问。有关 <block ref="23a01fa7b134b588c32da4771cbec201" category="inline-link-macro-rx"></block> 的详细信息，请参见 SANtricity System Manager 联机帮助。</block>
+  <block id="11309d8995227dbd773e6a41e7722a4e" category="list-text">在浏览器中输入以下 URL：<block ref="55e979022fc362aa6178b674515bb175" category="inline-link-rx"></block></block>
+  <block id="1acd76ed6c3f0124ed12e243db859a1f" category="list-text">单击具有要配置的 NVMe over RoCE 端口的控制器。</block>
+  <block id="f8e6e36c70e2e63ef7a939cbb02d5865" category="paragraph">此时将打开通过 RoCE 端口配置 NVMe 对话框。</block>
+  <block id="a4877c7c9117da300ffe160002ddd2d8" category="paragraph">选择所需的速度。下拉列表中显示的选项取决于您的网络可以支持的最大速度（例如 200 Gb/s）。</block>
+  <block id="4457e278f9112e9b42c14c2c5c668dde" category="paragraph">MTU 大小（通过单击显示更多端口设置可用。）</block>
+  <block id="e685a102ab6446248fa19b89877178fc" category="paragraph">默认最大传输单元 (MTU) 大小为每帧 4200 字节。必须输入介于 1500 和 9000 之间的值。</block>
+  <block id="4492cb7abfd1e28d0b26fbbee72d9daa" category="section-title">第 5 步：配置主机端网络—基于 RoCE 的 NVMe，VMware</block>
+  <block id="261d3f7bb6e5f35850bc2acca261fac8" category="paragraph">在主机端配置 NVMe over RoCE 网络，使 VMware NVMe over RDMA 存储适配器启动器能够与阵列建立会话。</block>
+  <block id="05d615f6664cae956f381bb230acde1c" category="paragraph">此配置使用基于差分服务代码点 (DSCP) 的优先级流量控制 (PFC) 启用无损网络。</block>
+  <block id="0ed3c60adcc47ad1357612793b6aabdd" category="list-text">识别 RDMA 网络适配器并记录 vmnic 配对的上行链路。</block>
+  <block id="afa34f00a26a4f8a79239d152a8c3291" category="inline-link-macro">查看 RDMA 网络适配器</block>
+  <block id="7b4b838a8e6a39d19b4b01a48e5b6798" category="paragraph">有关详细信息，请参见 <block ref="f5f383c62db37abde6b9e11de1beb7db" category="inline-link-macro-rx"></block>。</block>
+  <block id="aa9581d3822e83fca14cd2790f4eac14" category="list-text">使用 vSphere 标准交换机为 RDMA 适配器配置 VMkernel 端口绑定。</block>
+  <block id="3ccb1d7a3929e1fd5bb70b38cb2fbfcf" category="inline-link-macro">为 RDMA 适配器配置 VMkernel 绑定</block>
+  <block id="c1e46bbe0fb718118995e77291eee3d4" category="paragraph">有关详细信息，请参见 <block ref="8a57bfaaef21098675395ccfdc891238" category="inline-link-macro-rx"></block>。</block>
+  <block id="f885017e07530d4becbf0e4549cc05d6" category="list-text">添加软件 NVMe over RDMA 适配器。</block>
+  <block id="521a15c47fb41d8055141333f4c3f248" category="inline-link-macro">添加软件 NVMe over RDMA 或 NVMe over TCP 适配器</block>
+  <block id="e94f093cedfbfce205f798816cb4b2b2" category="paragraph">有关详细信息，请参见 <block ref="cd70a4ef9a53d1bbfc875c777ccad34e" category="inline-link-macro-rx"></block>。</block>
+  <block id="0cfb1ebe8e6ed1dc8e33c91b3000e048" category="list-text">为基于 RDMA 的 NVMe 添加 NVMe 控制器。</block>
+  <block id="90337554316c3b19c2d91138d603b539" category="inline-link-macro">添加基于网络结构的 NVMe 控制器</block>
+  <block id="e0d7db48d23e8cff7ae191360acf31de" category="paragraph">有关详细信息，请参见 <block ref="83bdfe48c9580eb725d2c481995c25a1" category="inline-link-macro-rx"></block>。</block>
+  <block id="3891cb89f09e8e3eabfd792314b804e2" category="list-text">通过 RDMA 为 NVMe 配置无损以太网。</block>
+  <block id="3a260f9a411ad8db6429729f48982d93" category="paragraph">您可以使用基于差分服务代码点 (DSCP) 的优先级流量控制 (PFC) 配置无损网络。</block>
+  <block id="afd44fd310a56c8f36703108f4aa4f7f" category="paragraph">要使用此选项，请参见以下内容：</block>
+  <block id="149b56d852021ec314bf4f68679500ed" category="inline-link-macro">为基于 RDMA 的 NVMe 配置无损以太网</block>
+  <block id="3b8d57b2e5639d016f1bc8fcade1f152" category="list-text"><block ref="ad41945339e2ff926d1d6a75739c5fe3" category="inline-link-macro-rx"></block>。</block>
+  <block id="b68729693cf4f61fa95f01f551453e65" category="section-title">第 6 步：验证 IP 网络连接 - NVMe over RoCE、VMware</block>
+  <block id="6c3e20ff9478d7e9f6ea7c0330c06865" category="list-text">在主机上执行以下命令：</block>
+  <block id="fe034a18b90c30c2ff0c730c6c031c30" category="paragraph">在此示例中，NVMe over RoCE 目标 IP 地址为 192.6.21.231。</block>
+  <block id="19ba2bfce822d4390f9fb1768a91674e" category="list-text">从每个主机的启动器地址（用于 NVMe over RoCE 的主机以太网端口的 IP 地址）向每个控制器 NVMe over RoCE 端口发出<block ref="bb8dcb7aca9e5a9c6d0064e07e54900b" prefix=" " category="inline-code"></block>命令。从配置中的每个主机服务器执行此操作，并根据需要更改 IP 地址。</block>
+  <block id="77866e8722847d7d6d7998480987782f" category="admonition">如果命令失败并显示消息<block ref="b0f01253dbd4eb514ef56969bca29b90" prefix=" " category="inline-code"></block>，请验证主机服务器、存储控制器和交换机端口上以太网接口的 MTU 大小。</block>
+  <block id="dd070ab356fd251ebb2cb06199f618e8" category="list-text">返回到 NVMe over RoCE 配置过程以完成目标发现。</block>
+  <block id="3a4b2c7a2c6f0691c5408e4cd5774299" category="list-text">两个独立的网络提供高可用性。请确保使用 VLAN 或两个单独的网络将 iSCSI 流量隔离到与其他类型的流量分开的网络段。</block>
+  <block id="23eba8f7f99e057ddd042a0dafa62dc8" category="paragraph">此任务介绍如何从 Hardware 页面访问 iSCSI 端口配置。您也可以从菜单访问配置：Settings[System &gt; Configure iSCSI ports]。</block>
+  <block id="12ba5ece841aa8fe999f4c5869dcdabb" category="list-text">在 SANtricity System Manager 中，转到 *Storage* &gt; *Volumes*，然后选择 *ellipsis icon* &gt; *Change volume ownership*。</block>
+  <block id="5881a3b85f7c9cc2dc191152347d4198" category="section-title">SANtricity 11.9 版本</block>
+  <block id="a342898a7b83e0ecaed58e67fcabddbf" category="list-text"><block ref="a342898a7b83e0ecaed58e67fcabddbf" category="inline-link-rx"></block></block>
+  <block id="0918432ee713960ea8c4bd23f9de9aac" category="list-text"><block ref="0918432ee713960ea8c4bd23f9de9aac" category="inline-link-rx"></block></block>
+  <block id="dfeb5c91f2e52f81a061d14460bfca55" category="paragraph">要安装 E-Series 硬件，请访问您的存储阵列和托架类型（如果适用）的安装和设置说明：</block>
+  <block id="bd93d02316281b84bfd0358488fd9774" category="inline-link-macro">EF50 或 EF80 存储系统</block>
+  <block id="8ffe6a7aa97446f89d209cd3ab9e681d" category="list-text"><block ref="8ffe6a7aa97446f89d209cd3ab9e681d" category="inline-link-macro-rx"></block></block>
+  <block id="5704b356a3cec514602bf36e401a7cf4" category="inline-link">SANtricity System Manager 12.0x 联机帮助</block>
+  <block id="10dcafa55de6544c34fc0dee6a147c65" category="list-text"><block ref="10dcafa55de6544c34fc0dee6a147c65" category="inline-link-rx"></block></block>
+  <block id="61ca3430c5f1d668a477b9838962bbf9" category="list-text"><block ref="61ca3430c5f1d668a477b9838962bbf9" category="inline-link-rx"></block></block>
+  <block id="8e9dcd9843d7c8730678fd7c801068df" category="paragraph">一些可用的 E 系列阵列型号如下所示。有关 E 系列阵列型号及其硬件规格的完整列表，请参见 NetApp Hardware Universe，网址为<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>。</block>
+  <block id="7f6b55be6501174a0381e1661006bb3b" category="list-text">EF50 系列 -- 入门级全闪存，全 NVMe</block>
+  <block id="a62e9e9348e227714a61855a62e70e62" category="list-text">EF80 系列 -- 中档全闪存，全 NVMe</block>
+  <block id="135d1c1e868b9c7b205a3d8afe8e4a14" category="admonition">对于 SANtricity 操作系统 11.80GA 或更高版本，在 SANtricity 操作系统运行时，所有 USB 端口都被禁用。</block>
+  <block id="d9ae6d7dcf9ed3ea02dc63067c88edf1" category="open-title">EF50 型号</block>
+  <block id="3651000984a70ca2a913e10dca8ae731" category="image-alt">EF50 2U</block>
+  <block id="3dadc77af7c67e422751b8a7966d6df4" category="list-text">支持具有以下容量的 NVMe SSD 驱动器：</block>
+  <block id="e0ec5ed632381f5afbd737a7ca158cdb" category="list-text">3.8 TB</block>
+  <block id="c7d332a0c322abaf8181c5babf32fd81" category="list-text">7.6 TB</block>
+  <block id="1f04a7c587f50d269f44d43229c966ac" category="list-text">15.3 TB</block>
+  <block id="394759e33023d9aed8900256bbd0f36f" category="list-text">30 TB</block>
+  <block id="5ce71a16ba311332a73292a8edf16714" category="list-text">60 TB</block>
+  <block id="abf322da5cf6ce6d86f8e19831b3f9fd" category="list-text">控制器机架中最多支持 24 个 NVMe SSD 驱动器。</block>
+  <block id="58cd2008aef7f82312626d5b5eebd50c" category="list-text">每个控制器支持一个或两个主机接口卡。</block>
+  <block id="0f13e2736fe0d1284715fd7874d606ae" category="list-text">支持用于双控制器通信的控制器间卡和电缆。</block>
+  <block id="4011a2ba674e279dec23ff377c80347d" category="inline-link">用缆线连接控制器间镜像连接 - EF50 和 EF80</block>
+  <block id="5158e66d0bec8144508506a3ed7a7a81" category="admonition">配置 EF50 系统时，正确连接镜像电缆至关重要。有关详细信息，请参见<block ref="3b7ab90f06bb9d32e376349f50ba2152" category="inline-link-rx"></block>。</block>
+  <block id="9b3675f4a440586ef54c10566347950c" category="list-text">64Gb NVMe / 光纤通道</block>
+  <block id="1e606555825231ac356605a792a3fc8d" category="list-text">64Gb 光纤通道</block>
+  <block id="de2808d235a9bb8c7352ce4f7a990025" category="open-title">EF80 型号</block>
+  <block id="c8774ee9d8d630bb7bf259737b9c0a43" category="image-alt">EF80 2U</block>
+  <block id="752f692c428a4be902070ec994e760f0" category="list-text">每个控制器支持一个、两个或三个主机接口卡。</block>
+  <block id="6f802ab99543c2bdbae4096d8954cdbf" category="admonition">配置 EF80 系统时，正确连接镜像电缆至关重要。有关详细信息，请参见<block ref="3b7ab90f06bb9d32e376349f50ba2152" category="inline-link-rx"></block>。</block>
+  <block id="cb4f52148019dcfece72b8c2fdb69580" category="list-text">1Gb 或 10Gb Base-T iSCSI</block>
+  <block id="465a2ea2b6d89c60ed23c2a9e0201429" category="image-alt">E2800 4U</block>
+  <block id="81d5eb12c368fe2301553d9c540a4dae" category="paragraph">Unified Manager 是基于 Web 的软件，用于管理整个域。从中央视图中，您可以查看所有较新 E-Series 和 EF-Series 阵列的状态，例如 EF50、EF80、E4000、E2800、EF280、EF300、E5700、EF570、EF600、EF300C 和 EF600C。您还可以在选定的存储阵列上执行批处理操作。</block>
+  <block id="60a6b0fbbfa61d15c4020f7f7e098cb9" category="paragraph">命令行界面 (CLI) 是一种软件应用程序，它提供了一种配置和监控存储阵列的方法。使用 CLI，可以从操作系统提示符运行命令，例如 <block ref="41f813272af86bac56724a37decae4bb" prefix=" " category="inline-code"></block> 提示符、Linux 操作系统路径或 Solaris 操作系统路径。</block>
+  <block id="bed0c69ad6322b88d0d19a7d7f4b2a18" category="doc">在 3040 40U 机柜中安装托盘 - E-Series</block>
+  <block id="f6d6ca01d250853987d01c1f2f3320d3" category="paragraph">您可以在 E-Series 3040 40U 机柜中安装以下控制器驱动器托盘和扩展驱动器托盘。</block>
+  <block id="724bffb2b9196928417abfcef2c53ecd" category="paragraph">如果您的控制器驱动器托盘或扩展驱动器托盘未在下面列出，请参阅<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>以验证是否支持您的控制器驱动器托盘或扩展驱动器托盘。</block>
+  <block id="a788f87717c430011cbd08f417a53334" category="doc">管理站的以太网布线 - E-Series</block>
+  <block id="0446bb64b3616c90897eb07d0cab4bac" category="paragraph">某些存储系统在每个控制器上只有一个带外 Ethernet 管理端口。</block>
+  <block id="bbdf425fc3c642c8de49d63dc15badbc" category="paragraph">有关特定于存储系统的缆线连接说明，请参阅 <block ref="420e50e517d79764f810d7bfbcee32b7" category="inline-link-macro-rx"></block> 并单击特定存储系统的链接。</block>
+  <block id="a44f563f123b3f3a9a9ba60801e3cc35" category="admonition">以下信息不适用于所有存储系统，有关特定于您的存储系统的主机布线，请参阅 <block ref="420e50e517d79764f810d7bfbcee32b7" category="inline-link-macro-rx"></block> 并单击您的特定存储系统的链接。</block>
+  <block id="46005072ff8ba642f00de1f96f5d8851" category="doc">为存储系统布线 - E-Series</block>
+  <block id="f58b5ce520289d0295b8af12ea9b3b6c" category="admonition">如果没有看到下面列出的控制器盘架（存储系统），请参阅 <block ref="420e50e517d79764f810d7bfbcee32b7" category="inline-link-macro-rx"></block> 并单击特定存储系统的链接以访问布线信息。</block>
+  <block id="38e73c38b9e2c6b284a24eeb6f0868fb" category="paragraph">如果要为以下任意配置布线，请参阅<block ref="4426bbb413c69380e459efdddf2e423d" category="inline-link-rx"></block></block>
+  <block id="ad69ba1272ea2f557940362e05d45875" category="doc">为存储系统布线电源 - E 系列</block>
+  <block id="a2f7472ef27aa6805d53dc2c352d968a" category="list-text">打开两个电源。</block>
+  <block id="e5d6cef3c0e33a5155a04c0c6d89905c" category="admonition">根据您的存储系统，电源有电源开关或没有电源开关，您必须连接电源线才能接通电源。</block>
+  <block id="32bfa1a65d1413942805620e277c6c06" category="summary">安装 EF50 或 EF80 存储系统硬件后，连接控制器间镜像和主机网络连接。（稍后在"完成存储系统设置"部分对管理端口进行布线。）</block>
+  <block id="c4f6e132f298cda01ed84c032ae3487c" category="doc">用缆线连接硬件 - EF50 和 EF80</block>
+  <block id="309528c65dc2e27541a0b466d6affaba" category="list-text">术语 _I/O 模块_ 用于指代本过程中的主机接口卡 (HIC)。</block>
+  <block id="28c4b42113d6ebd3c5e6ca40929d04a6" category="list-text">电缆图形有箭头图标，显示将连接器插入端口时电缆连接器拉片的正确方向（向上或向下）。</block>
+  <block id="fd2cb99acafb4f0144bfb5e0e4c31373" category="paragraph">插入连接器时，您应该感觉到它咔嗒一声卡入到位；如果感觉不到咔嗒声，请将其取出，翻转后重试。</block>
+  <block id="416f5908ffc86e7abf276c4f75904ee7" category="inline-image-macro">电缆拉舌方向</block>
+  <block id="c486d43df45ffe41cde84a1b0fa45aa0" category="paragraph"><block ref="c486d43df45ffe41cde84a1b0fa45aa0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="46469245a5087f6b4b434bb5f633b60f" category="section-title">步骤 1：连接控制器间镜像连接线</block>
+  <block id="36cd37cbec7f6507403c29b0149a41fe" category="paragraph">将控制器彼此连接以启用控制器间镜像。控制器间镜像连接可确保完整的系统冗余，并用于缓存镜像和 I/O 传输。EF50 和 EF80 存储系统的布线相同。</block>
+  <block id="38867b567fccc8548cc0e1cb94f126e8" category="admonition">无论存储系统中安装的控制器间镜像 I/O 模块的速度如何（存储系统支持 100 GbE 或 200 GbE），您都可以使用随附的 200 GbE 电缆。如果控制器间镜像 I/O 模块的速度为 100 GbE，则连接将以较低的速度（100 GbE）运行。</block>
+  <block id="2adc34a52429938fb3c735dddbb6ad63" category="list-text">将控制器连接在一起：</block>
+  <block id="064b137ca9cfb01af5cef5f59d057fe2" category="list-text">电缆控制器 A 端口 e4a 到控制器 B 端口 e4a。</block>
+  <block id="b2461cdc4faa4013beda2df06a62ad8a" category="list-text">电缆控制器 A 端口 e4b 到控制器 B 端口 e4b。</block>
+  <block id="ef69dbdbfe8f74a42b4f9a0ac932d33c" category="paragraph">*200 GbE 以太网电缆*</block>
+  <block id="417c36221853c2f66482de31e782fef4" category="image-alt">用于镜像连接的 100 gbe 以太网电缆</block>
+  <block id="a6e6ce518c6eb8d6c67720ecc4a737f4" category="inline-image-macro">ef50 和 ef80 控制器到控制器镜像连接电缆</block>
+  <block id="5d644f09086f71fe519efe2fabeeca7e" category="paragraph"><block ref="5d644f09086f71fe519efe2fabeeca7e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fe93f032d75b75aa618d6fc176216d00" category="section-title">步骤 2：连接主机电缆</block>
+  <block id="e0beadc999f5d9ec28e25241c431ecdf" category="paragraph">根据您的网络拓扑（直接连接或光纤连接）为存储系统连接主机电缆。</block>
+  <block id="c173ac3230ce83526a8085ae3cd5d64e" category="list-text">根据您的存储系统型号，存储系统中安装的主机 I/O 模块类型可以是以太网或光纤通道 (FC)。此过程中的布线示例显示了存储系统模型支持的两种类型的主机 I/O 模块。</block>
+  <block id="a8be157e2b0226635a9c82e18c4cfa57" category="list-text">布线示例未显示主机 1 和主机 2 中的 4 端口 64Gb FC HBA；但是，如果安装了这些 HBA，则以与 2 端口 HBA 相同的方式连接其他端口。</block>
+  <block id="bbe082a3eacdeda56097c89d8ad81785" category="open-title">直连式拓扑</block>
+  <block id="a10df42fda1dcd0500c334d90c5fb5fa" category="paragraph">以下示例显示了使用直接连接拓扑将存储系统连接到主机的布线情况。</block>
+  <block id="f25484c2cff0f0a8bf40ca5b2643a51b" category="example-title">EF50 具有两个 4 端口 64Gb FC I/O 模块</block>
+  <block id="4789d81b72046a7085ba4c174549efd3" category="list-text">布线示例显示了插槽 1 和 2 中的主机 I/O 模块。这是 EF50 存储系统支持的最大主机 I/O 模块数。但是，仅需要插槽 1 中的主机 I/O 模块；插槽 2 中的主机 I/O 模块是可选的。</block>
+  <block id="52b94d0d394a6131964981a1a413adc6" category="paragraph">如果您的存储系统安装了一个主机 I/O 模块，则可以忽略与其他主机 I/O 模块的缆线连接，而仅将缆线连接到已安装的主机 I/O 模块。</block>
+  <block id="2b4e6cdd607b62b8e3110cb10e7ad6bb" category="list-text">直连存储系统具有两条单独的冗余路径：路径 A 和路径 B。</block>
+  <block id="43578ef918fb73c2b038812c62a63b99" category="list-text">路径 A 连接显示为主机和控制器上的蓝色电缆和蓝色端口。它将每个主机上的 HBA 端口连接到控制器 A 端口 a 和 c。</block>
+  <block id="6960a98169bd0b24caf31b19f599b69c" category="list-text">路径 B 连接显示为主机和控制器上的红色电缆和红色端口。它将每个主机上的 HBA 端口连接到控制器 B 端口 a 和 c。</block>
+  <block id="d40af499527fcfbf4a1beb6c653d0028" category="list-text">虽然布线示例显示 I/O 模块端口 a 和 c 连接到主机，但您可以使用端口 a 和 b 或端口 c 和 d。</block>
+  <block id="67658d2d8d32f469aec261b50f7cf0aa" category="list-text">用缆线将主机连接到控制器：</block>
+  <block id="8c9ee539ce9a9f80f6828bd7aa0e6779" category="list-text">将主机 1 路径 A（蓝色）HBA 端口连接到控制器 A 的 a 端口（1a 和 2a）。</block>
+  <block id="44f41d563c7a22ac44c62ed7dce468ba" category="list-text">将主机 1 路径 B（红色）HBA 端口连接到控制器 B 的 a 端口（1a 和 2a）。</block>
+  <block id="38d1ecfc38020fa455c9c7bfb5155532" category="list-text">将主机 2 路径 A（蓝色）HBA 端口连接到控制器 A 的 c 端口（1c 和 2c）。</block>
+  <block id="55ea0702f44241e327e5ec1cdecf5314" category="list-text">将主机 2 路径 B（红色）HBA 端口连接到控制器 B 的 c 端口（1c 和 2c）。</block>
+  <block id="241c17a1be2cc4feae5c8c6007f8aed3" category="paragraph">*64 Gb/s FC 电缆*</block>
+  <block id="2e169c8e6f4cc1f6315545b46d7284a2" category="inline-image-macro">64 Gb fc 电缆</block>
+  <block id="0bf370304560205688213d22ba637c07" category="paragraph"><block ref="0bf370304560205688213d22ba637c07" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e85e9ec0ed7443a979b5f48d4a7c1803" category="inline-image-macro">EF50 直连拓扑到使用两个 4 端口 64gb fc io 模块的主机</block>
+  <block id="d87fb58ba458175d563a880f23be1d1e" category="paragraph"><block ref="d87fb58ba458175d563a880f23be1d1e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3f09e42612391922370ac3dec8b12648" category="example-title">具有三个 2 端口 200 GbE I/O 模块的 EF80</block>
+  <block id="aff6bfab25b0bdbb5d032cf798fd063b" category="list-text">布线示例显示了插槽 1、2 和 3 中的主机 I/O 模块。这是 EF80 存储系统支持的最大主机 I/O 模块数。但是，仅需要插槽 1 中的主机 I/O 模块；插槽 2 和插槽 3 中的主机 I/O 模块都是可选的。</block>
+  <block id="a297d61486bf2885c72e08236f9e7725" category="paragraph">如果存储系统安装的主机 I/O 模块较少，则可以忽略与其他主机 I/O 模块的缆线连接，而仅将缆线连接到已安装的主机 I/O 模块。</block>
+  <block id="3413e68c3b88961945f60f6d99511847" category="list-text">路径 A 连接显示为主机和控制器上的蓝色电缆和蓝色端口。它将每个主机上的 HBA 端口连接到控制器 A 端口 a 和 b。</block>
+  <block id="d346593b0d3bd96299bd7de49f3f5c93" category="list-text">路径 B 连接显示为主机和控制器上的红色电缆和红色端口。它将每个主机上的 HBA 端口连接到控制器 B 端口 a 和 b。</block>
+  <block id="e56102a10171f176b1e5aa5f79d08da3" category="list-text">将主机 1 路径 A（蓝色）HBA 端口连接到控制器 A 的 a 端口（e1a、e2a 和 e3a）。</block>
+  <block id="e50a0e85ecc292bb64bdc29422e37bbb" category="list-text">将主机 1 路径 B（红色）HBA 端口连接到控制器 B 的 a 端口（e1a、e2a 和 e3a）。</block>
+  <block id="10f37f14a3c746b2ecbf47471f35ada6" category="list-text">将主机 2 路径 A（蓝色）HBA 端口连接到控制器 A 的 b 端口（e1b、e2b 和 e3b）。</block>
+  <block id="2df3471ae8994614afacaf3a6af3577a" category="list-text">将主机 2 路径 B（红色）HBA 端口连接到控制器 B 的 b 端口（e1b、e2b 和 e3b）。</block>
+  <block id="b585e3620749cc9b290a69b15f369055" category="paragraph">*200 GbE 电缆*</block>
+  <block id="07954a9dbce90160eba5e0d906f74d9b" category="image-alt">200 GbE 电缆</block>
+  <block id="43476b318572f70438d476474ed2f777" category="inline-image-macro">EF80 直接连接拓扑到使用三个 2 端口 200GbE IB IO 模块的主机</block>
+  <block id="0f216ce4c6b7b4fa9f09839659d15cb1" category="paragraph"><block ref="0f216ce4c6b7b4fa9f09839659d15cb1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7ccfa9dc972967682b048d31cb495746" category="example-title">EF80 具有三个 4 端口 64Gb FC I/O 模块</block>
+  <block id="3164237db13edc41eba0640070a1eb4c" category="list-text">将主机 1 路径 A（蓝色）HBA 端口连接到控制器 A 的 a 端口（1a、2a 和 3a）。</block>
+  <block id="c4050daef87bce6f77d1ca02dd9993d6" category="list-text">将主机 1 路径 B（红色）HBA 端口连接到控制器 B 的 a 端口（1a、2a 和 3a）。</block>
+  <block id="f24bf0dc85c32afa94f0ec06e69c67d6" category="list-text">将主机 2 路径 A（蓝色）HBA 端口连接到控制器 A 的 c 端口（1c、2c 和 3c）。</block>
+  <block id="d3ce7893566ead23fa851e31842ddb2e" category="list-text">将主机 2 路径 B（红色）HBA 端口连接到控制器 B 的 c 端口（1c、2c 和 3c）。</block>
+  <block id="4967befbfdc01bec056647ecf6535038" category="inline-image-macro">EF80 直连拓扑到使用三个 4 端口 64gb fc io 模块的主机</block>
+  <block id="9e578d6a52704120b62df8f18f213466" category="paragraph"><block ref="9e578d6a52704120b62df8f18f213466" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3672457c67c4050c67776efa642e4088" category="open-title">Fabric-attached 拓扑</block>
+  <block id="c79493d7627db4beb028d464b1cb96e8" category="paragraph">以下示例显示了使用光纤连接拓扑将存储系统连接到主机的布线情况。</block>
+  <block id="724572661546b5c7e60f9a673deed941" category="list-text">光纤连接存储系统具有两条独立的冗余交换机路径：交换机 1 路径和交换机 2 路径。</block>
+  <block id="02105864ecb13507a2005506ced4c1af" category="list-text">交换机 1 路径连接显示为主机和控制器上的蓝色电缆和蓝色端口。它通过交换机 1 将每个主机上的 HBA 端口连接到控制器 A 和控制器 B 的 a 和 c 端口。</block>
+  <block id="520adf9f6ca58d04576019da1b65ff63" category="list-text">交换机 2 路径连接显示为主机和控制器上的红色电缆和红色端口。它通过交换机 2 将每个主机上的 HBA 端口连接到控制器 A 和控制器 B 的 b 和 d 端口。</block>
+  <block id="7511a9d551c40fc98c848597ed1b0b70" category="list-text">将主机连接到交换机。</block>
+  <block id="fccd2e024b66cd3cb678eb2817c3b3a3" category="paragraph">您可以使用交换机上的任何端口。</block>
+  <block id="4cf8f9ac2b00b8f87929247b5f9031a1" category="list-text">将主机 1 和主机 2 交换机 1 路径（蓝色）HBA 端口连接到交换机 1。</block>
+  <block id="d1b504b40950697d0f8716e4a6f4a954" category="list-text">将主机 1 和主机 2 的交换机 2 路径（红色）HBA 端口连接到交换机 2。</block>
+  <block id="55df7f6cda750a519a4e2ef3dfadbf9e" category="list-text">将开关连接到控制器：</block>
+  <block id="f92519e312966fea02f4a2ec7d6ec462" category="list-text">电缆开关 1（蓝色）到控制器 A 的 a 和 c 端口（1a、2a、1c 和 2c）。</block>
+  <block id="d3b637071f42b6a6f32accf660f24fb6" category="list-text">将电缆开关 1（蓝色）连接到控制器 B 的 a 和 c 端口（1a、2a、1c 和 2c）。</block>
+  <block id="79a9fdcaae97d141ab46175501357bc7" category="list-text">将电缆开关 2（红色）连接到控制器 A 的 b 和 d 端口（1b、2b、1d 和 2d）。</block>
+  <block id="57f1f281e72cb36e6eee17efb2d21697" category="list-text">将电缆开关 2（红色）连接到控制器 B 的 b 和 d 端口（1b、2b、1d 和 2d）。</block>
+  <block id="96816d89672e460ce991268ab12fc468" category="inline-image-macro">使用两个 4 端口 64gb fc io 模块的 EF50 fabric-attached 拓扑</block>
+  <block id="006d99462a8e32faf2a01db8aecd6d4f" category="paragraph"><block ref="006d99462a8e32faf2a01db8aecd6d4f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6a889796b87dd3c685247dbf20b2f306" category="list-text">布线示例显示了每台主机上的三个 HBA。如果您的主机少于三个 HBA，则可以忽略与其他 HBA 的缆线连接，而仅将缆线连接到已安装的 HBA。</block>
+  <block id="187793f18cc6cf4fe4668447e4351331" category="list-text">交换机 1 路径连接显示为主机和控制器上的蓝色电缆和蓝色端口。它通过交换机 1 将每个主机上的 HBA 端口连接到控制器 A 和控制器 B 的 a 端口。</block>
+  <block id="a9ca47cacdf86d16dd35a52e1fc8864a" category="list-text">交换机 2 路径连接显示为主机和控制器上的红色电缆和红色端口。它通过交换机 2 将每个主机上的 HBA 端口连接到控制器 A 和控制器 B 的 b 端口。</block>
+  <block id="b952c9ae768a48fd5ced278ead19212e" category="list-text">将主机连接到交换机：</block>
+  <block id="bc1c70b5e74fb8c35c3d6efaad68f371" category="list-text">电缆开关 1（蓝色）到控制器 A 的 a 端口（e1a、e2a 和 e3a）。</block>
+  <block id="97e8c64dbe1fb04d7e67df5c79f1574e" category="list-text">电缆开关 1（蓝色）到控制器 B 的 a 端口（e1a、e2a 和 e3a）。</block>
+  <block id="f7feda4fedcc765bbe499c2eda4b911b" category="list-text">将电缆开关 2（红色）连接到控制器 A 的 b 端口（e1b、e2b 和 e3b）。</block>
+  <block id="ff3036a0af7047d6ddf2731fa491d6a5" category="list-text">将电缆开关 2（红色）连接到控制器 B 的 b 端口（e1b、e2b 和 e3b）。</block>
+  <block id="2ec3c959154403a779d82acd5553d3e7" category="inline-image-macro">使用三个 2 端口 200GbE IO 模块的 EF80 fabric-attached 拓扑</block>
+  <block id="966f618ef898f1733ee8137b43541967" category="paragraph"><block ref="966f618ef898f1733ee8137b43541967" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a72def1402ebd27644148bab6231ba44" category="list-text">电缆开关 1（蓝色）到控制器 A 的 a 和 c 端口（1a、2a、3a、1c、2c 和 3c）。</block>
+  <block id="010c878d7bdefdb2c9cab54f15947420" category="list-text">电缆开关 1（蓝色）到控制器 B 的 a 和 c 端口（1a、2a、3a、1c、2c 和 3c）。</block>
+  <block id="8d42cd4b3a5baf9a3f412489f3e12e38" category="list-text">将电缆开关 2（红色）连接到控制器 A 的 b 和 d 端口（1b、2b、3b、1d、2d 和 3d）。</block>
+  <block id="4d454a0269f5bd61e2d91ca79541ed28" category="list-text">将电缆开关 2（红色）连接到控制器 B 的 b 和 d 端口（1b、2b、3b、1d、2d 和 3d）。</block>
+  <block id="59d64d676f36898288023f143fc14360" category="inline-image-macro">使用三个 4 端口 64gb fc io 模块的 EF80 fabric-attached 拓扑</block>
+  <block id="19693a6fcf27fa037b1b85c63e78d478" category="paragraph"><block ref="19693a6fcf27fa037b1b85c63e78d478" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="03ed2de1c6ced47cf2038751f6c4e1b4" category="inline-link-macro">打开您的存储系统电源</block>
+  <block id="c2d3ec5e666fe12eb961640fa7f0328b" category="paragraph">对存储系统的控制器间镜像和主机连接进行缆线连接后，<block ref="d0c3b85257c0c216b48d88ca57aa0056" category="inline-link-macro-rx"></block>。</block>
+  <block id="2559b1d3ade089296a5c82ea8def20df" category="summary">打开 EF50 或 EF80 存储系统后，通过在每个控制器上布线和配置管理端口来完成系统设置，以进行带外存储系统管理，配置存储系统，然后验证主机 I/O 模块协议是否正确。</block>
+  <block id="c52380e4285fce53ae461e4bdf6b4527" category="doc">完成存储系统设置 - EF50 和 EF80</block>
+  <block id="e12b25581394ec4377fd1f1f2eeac392" category="section-title">步骤 1：连接并配置管理端口</block>
+  <block id="6629e191e98b635ab2a2b11b4301d852" category="paragraph">连接每个控制器上的管理端口，然后使用 DHCP 服务器或静态 IP 地址配置端口。</block>
+  <block id="d0ae3b654b62807d5a54a174f1d72959" category="paragraph">连接电缆，然后使用 DHCP 服务器配置管理端口。</block>
+  <block id="61ba1ff27e2898b15f32e77189032c65" category="list-text">记下每个控制器一侧的 MAC 地址。使用 MAC 地址来标识分配给每个控制器的 IP 地址。</block>
+  <block id="8156b8ddd08d46672e5dfe4790169c7f" category="list-text">使用以太网电缆，将每个控制器的管理端口连接到网络。</block>
+  <block id="9c29eb35e98929529d99ca71cd855f4e" category="paragraph">*1000BASE-T RJ-45 电缆*</block>
+  <block id="79bcab102232e2b4e9e48cc24df07246" category="inline-image-macro">ef50 和 ef80 控制器管理端口布线到网络</block>
+  <block id="19ad83b4acd19aab6f8e95ca8c993414" category="paragraph"><block ref="19ad83b4acd19aab6f8e95ca8c993414" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="003c4caf1dce3180acf1d5247dfbe70b" category="paragraph">连接电缆，然后通过输入 IP 地址和子网掩码手动配置管理端口。</block>
+  <block id="859468079c73df988ea1ed8046040c27" category="inline-image-macro">ef50 和 ef80 控制器管理端口布线</block>
+  <block id="f8b3abe7e0303456c19fd8817298a9c9" category="paragraph"><block ref="f8b3abe7e0303456c19fd8817298a9c9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e5aa89c0d79fe2ea73905571507f7d3b" category="list-text">打开浏览器，使用默认 IP 地址（169.254.128.101）建立与控制器的连接。</block>
+  <block id="c7db1f4684c03e2484bfba0370a95f69" category="paragraph">控制器发回自签名证书。浏览器会通知您连接不安全。</block>
+  <block id="f8adbb67d95e9c46d61cbee9c21b8211" category="list-text">从笔记本电脑上拔下以太网电缆（将其连接到控制器 A），然后将其连接到网络。</block>
+  <block id="35ce24c3ab23606ee99470433057fd2c" category="admonition">如果失去与控制器 A 的连接，则可以将以太网电缆连接到控制器 B，以通过控制器 B (169.254.128.102) 重新建立与控制器 A 的连接。</block>
+  <block id="10126fb334ba32a6032b072ce7acbd2e" category="list-text">使用您之前设置的密码登录。此时将显示 *Configure Network Settings* 向导。</block>
+  <block id="13e4180d1580553590b559ee11c7cc32" category="paragraph">两个控制器管理端口现在均连接到网络：</block>
+  <block id="d67ba08b051a178d949c99bcba712b9a" category="section-title">步骤 2：配置您的存储系统</block>
+  <block id="7349b49b9949f97abcb087f10b1c4514" category="paragraph">使用 SANtricity System Manager 配置和管理您的存储系统。</block>
+  <block id="f7a6d7064913466b77286942b957f2c3" category="list-text">您必须将管理端口连接到网络并进行配置。</block>
+  <block id="986ea0888c4483b8908a23f50db781ba" category="list-text">验证并记录您的密码和配置的 IP 地址。</block>
+  <block id="f3409181b03b4a3024c85e7c68e5eb3c" category="list-text">使用配置的 IP 地址访问 SANtricity System Manager。</block>
+  <block id="af538554a39155c9eb46aaa2eba3ecc5" category="list-text">使用 SANtricity System Manager 管理您的存储系统。</block>
+  <block id="bcc65479fcb2279dc15af0b23b353e3c" category="paragraph">您可以参考 SANtricity System Manager 附带的在线帮助。</block>
+  <block id="96df99685c5bf4b192fba6beba5284f2" category="section-title">步骤 3：验证主机 I/O 模块协议是否正确</block>
+  <block id="8a088aa08c66f08cd396428bcc535e08" category="paragraph">您的存储系统在主机 I/O 模块上附带默认协议。如果默认协议不是您想要的协议，则可以进行更改。</block>
+  <block id="060d34665cae7c5bb801b31482b3bf4d" category="list-text">使用 SANtricity System Manager 验证存储系统中主机 I/O 模块上使用的默认协议。</block>
+  <block id="f4f194a527e25705dac27f3aad9c18bd" category="list-text">在 *其他设置* 部分中，单击 *更改主机 I/O 协议* 以打开该页面。</block>
+  <block id="259772d328f38bc90d62d168edac1c6a" category="list-text">请参阅 *Host I/O Protocol* 字段中显示的存储系统中主机 I/O 模块上使用的默认主机 I/O 协议。</block>
+  <block id="6391f60e0cb1e2d6260002d6fba8b38b" category="paragraph">无需采取操作。</block>
+  <block id="2db7cf25e25f43e12ef7a47f9be4a3f0" category="inline-link-macro">更改主机协议</block>
+  <block id="3bdea44956eca6a6fe526f7453672cb2" category="paragraph">您需要使用 <block ref="3b1e62b8f041cdbf32722b61a558d569" category="inline-link-macro-rx"></block> 过程进行更改。</block>
+  <block id="95212c9edc6cfd774f23d964ae66f173" category="admonition">更改主机端口协议涉及准备协议更改、停止主机 I/O 操作、更改协议，然后配置主机以使用新协议。</block>
+  <block id="bf6c3346ff3606822a029bdc5f1fd038" category="summary">准备安装 EF50 或 EF80 存储系统后，将机架安装硬件安装在机柜或电信机架中，然后安装并固定您的存储系统。</block>
+  <block id="45b4e7c20322f386ee8d6f6de5e46bd7" category="doc">安装硬件 - EF50 和 EF80</block>
+  <block id="8bd4acc38771e6801a9c3e79e0914f1f" category="paragraph">如果您的存储系统位于机柜中，则可以跳过此过程并转到 <block ref="5cf36f95205599c906eaa6f0709db155" category="inline-link-macro-rx"></block>。</block>
+  <block id="405064d385d6ce1555b45605e3b421aa" category="list-text">确保已将安装说明与机架安装硬件包装在一起。如果没有，请参见<block ref="eec13eeca211854cac70cc479967d6f5" category="inline-link-macro-rx"></block>。</block>
+  <block id="b433386c98551c70005a6f1b800aa07c" category="inline-link-macro">了解起重预防措施</block>
+  <block id="65ad8f381a574a2c77a99dbf0844f4df" category="list-text">请注意与存储系统重量相关的吊装预防措施。请参阅<block ref="eabddf68edb22dbc0c370477b7899ead" category="inline-link-macro-rx"></block>。</block>
+  <block id="263564b059d7a28fcd9c2e20b0931d38" category="list-text">了解通过存储系统的气流从安装驱动器的前面进入，并从端口所在的后面排出。</block>
+  <block id="ff446d73ac8e54e5df56f5d61576af50" category="list-text">使用机架安装硬件附带的说明为您的存储系统安装机架安装硬件。</block>
+  <block id="94f0afec3ec82f33c91d2a3d7d81f4e9" category="admonition">将机架安装硬件安装在机柜或机架的最低可用空间中，以防止存储系统在安装时翻倒。</block>
+  <block id="1c8c6696ac03ef01690be450b3767032" category="list-text">在机柜或电信机架中安装并固定您的存储系统：</block>
+  <block id="26e155b7fb3d206a4c26c4bef9241d99" category="list-text">将存储系统放置在导轨上，然后从底部支撑存储系统，将其滑入到位。</block>
+  <block id="0a508c750e66a219b3bc9449125a4672" category="list-text">使用随附的安装螺钉将存储系统固定到机柜或电信机架上。</block>
+  <block id="36eaeecf3fe5d82e498290c50c773db1" category="list-text">将挡板连接到存储系统前面。</block>
+  <block id="6770bca56cae3c3ef94c3fe33912cafc" category="list-text">将挡板放置在存储系统的前面，以便两端的孔与存储系统上的紧固件对齐。</block>
+  <block id="6bc9706054ddce477397a74fecd293ed" category="inline-link-macro">连接硬件电缆</block>
+  <block id="0761c2876a223e6e2037a4e9e910b582" category="paragraph">为您的存储系统安装硬件后，<block ref="bca22c8e81cd07d8c060c28f352f5c5b" category="inline-link-macro-rx"></block>。</block>
+  <block id="5b456164c38ae8e563b1428c3f0d26f8" category="summary">在为 EF50 或 EF80 存储系统连接控制器的镜像和主机网络连接后，打开控制器的电源。</block>
+  <block id="fd8cf1a58916f99d088946d5a7230216" category="doc">打开硬件 - EF50 和 EF80</block>
+  <block id="3a6ce1aff8484b4f121120d50d351c0c" category="paragraph">连接 EF50 或 EF80 存储系统的控制器间镜像和主机连接后，即可打开控制器电源。</block>
+  <block id="5ebae18682dda3e61a78b4f23c59fde0" category="list-text">将电源线插入每个控制器电源，然后将其连接到不同电路上的电源。</block>
+  <block id="bdc998a5bd1943bedb35cbcb343657f7" category="admonition">如果使用第三方配电装置 (PDU)，请勿直接使用控制器后面的电源插座，因为您可能会阻止对控制器的访问。</block>
+  <block id="fa2c4de61b033b70225eabcd36034670" category="image-alt">存储系统电源连接图</block>
+  <block id="892ecfa88ac2fc58f239974dc4b528a1" category="list-text">系统开始启动。初始启动可能需要长达 8 分钟。</block>
+  <block id="1f9fc1df1047f59669fdaf4a748c5da0" category="list-text">系统机箱上的 LED 指示灯闪烁，风扇启动，这表明控制器正在通电。</block>
+  <block id="efbb71632700af11cddc55ae7fa6b780" category="paragraph">在启动过程中，风扇很大声是正常的。</block>
+  <block id="e1c61cdd8939dd8764be2bd3a1144c7c" category="list-text">系统机箱正面（挡板后面）的数字显示器不亮。</block>
+  <block id="d420064a5f4919f9be16d853c6d1997c" category="list-text">使用每个电源上的固定装置固定电源线。</block>
+  <block id="68db173907f08cd16d03de80c901a549" category="inline-link-macro">完成存储系统设置</block>
+  <block id="d1b51920b70cb47316a2aed33df1996c" category="paragraph">打开您的存储系统电源后，<block ref="a1e08373f9f80025642e885c4d75384a" category="inline-link-macro-rx"></block>。</block>
+  <block id="939b07324bfa4e3da6dfef87a4f84101" category="summary">准备安装 EF50 或 EF80 存储系统时，请准备好站点，了解存储系统的吊装注意事项，打开包装箱，将内容与装箱单进行比较，并注册存储系统以获得支持优势。</block>
+  <block id="d5072f1b35968b264502fd8cb42bbc49" category="doc">准备安装 - EF50 和 EF80</block>
+  <block id="92c8397408f55d9526d554c55cde3d22" category="section-title">步骤 1：准备站点</block>
+  <block id="6953f9497ab506347f9ba3b6eab20b03" category="paragraph">确保计划使用的站点和机柜或机架符合您的存储系统的规格。</block>
+  <block id="784289434de2772034240714a84f80a9" category="list-text">使用 <block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block> 确认您的站点是否满足存储系统的环境和电气要求。</block>
+  <block id="2d0759237f73e187af2bdd02dc95f81b" category="list-text">请确保您的存储系统和任何交换机有足够的机柜或机架空间。</block>
+  <block id="7cea7d78ac598d08b8e997dc16a974d1" category="paragraph">如果需要，请参阅 <block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block> 以了解存储系统的确切尺寸。</block>
+  <block id="586f9ad5db82f223a8b9cca9ed48f572" category="list-text">2U 用于存储系统</block>
+  <block id="d870295bbe120d15107d49597065fc2e" category="list-text">1U 适用于大多数交换机</block>
+  <block id="2df7e61cfe4bf7857f54171cec3da494" category="list-text">安装任何所需的网络交换机。</block>
+  <block id="1cf5db804729f0321f20623e8571c4a9" category="list-text">确保您拥有管理软件支持的浏览器：</block>
+  <block id="60fed4620406884a24e2bd1911dc7b09" category="list-text">获取安装所需的以下设备和工具：</block>
+  <block id="8dd75d4e14815a2e3e3154ea67cd841e" category="list-text">静电放电 (ESD) 腕带</block>
+  <block id="49a15a25561dfc30f3be6f9fe84fa8a8" category="list-text">Philips #2 螺丝刀</block>
+  <block id="f848ac0e087570e2f0548d0780917956" category="section-title">步骤 2：了解起重注意事项</block>
+  <block id="67c51a66df4793c8b8e756080478ecb1" category="paragraph">在拆箱之前以及以后安装存储系统时，应了解存储系统的重量，以便在提起和移动存储系统时采取必要的预防措施。</block>
+  <block id="3397843644709c0d3ffeb76056124305" category="paragraph">EF50 或 EF80 存储系统的重量可达 61.5 磅（27.9 千克）。要提升存储系统，请使用两人或液压提升机。</block>
+  <block id="12c8eb3808a13f0adea4f2c3d86acb4c" category="image-alt">AFF A20 A30 A50 和 C30 和 C60 重量警告图标</block>
+  <block id="3389a768c543e525ee586ceed1a8a457" category="section-title">步骤 3：拆箱</block>
+  <block id="987f2c925ee0c9444d34b96f189dced8" category="paragraph">在确保您计划使用的场地和机柜或机架符合存储系统的规格，并且您了解提升预防措施后，打开所有箱子并将内容与装箱单上的项目进行比较。</block>
+  <block id="82174a976e9a37564a41e6138a110eb6" category="list-text">仔细打开所有盒子，并有条不紊地布置内容物。</block>
+  <block id="90eb119b01d3cadbc16dfa9f572e4edb" category="list-text">将您打开的内容与装箱单进行比较。</block>
+  <block id="926a0610eae5ca468bfd2273681ca46d" category="paragraph">您可以通过扫描装运箱侧面的二维码获取装箱单。</block>
+  <block id="344ce3f549ef16582b4401f70361f692" category="admonition">如果有任何差异，请将其记录下来，以便采取进一步行动。</block>
+  <block id="1726196375cd4d9085528facd587a31e" category="paragraph">以下项目是您可能会在框中看到的一些内容。</block>
+  <block id="e7bd175117d4b2dd641c299d6691449f" category="paragraph">如果需要，请参见<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block>以了解其他支持的电缆并确定其用途。</block>
+  <block id="958c530ea1ae0e18b942f8784148734c" category="cell">*硬件*</block>
+  <block id="09ff86ce1246a36d79f5d417bc9fb6be" category="cell">*电缆*</block>
+  <block id="82271aedc09b867b3aa3552e5c48a92b" category="list-text">带驱动器的存储系统</block>
+  <block id="e13e811059b612b97e5987f5a3cf4bef" category="list-text">带有说明的机架安装硬件</block>
+  <block id="efb4c0c41cf8767bf0f9361a8c61a50a" category="list-text">挡板</block>
+  <block id="810e6cad6b62fd7fa24c2ee6fabaae07" category="list-text">控制器间镜像 Ethernet 缆线</block>
+  <block id="06d2646a8077631818b55a12dc3c58ac" category="list-text">管理以太网缆线（RJ-45 缆线）</block>
+  <block id="b2cdf9589096f203f816541f43a15f6c" category="list-text">网络电缆</block>
+  <block id="afe4eb7c1ac7701fbfd8a1f07611fb30" category="section-title">步骤 4：注册您的存储系统</block>
+  <block id="ad017b49c0df10ceee360076dfe26820" category="paragraph">在确保您的站点符合您的存储系统规格，并且您已验证您拥有所订购的所有部件后，您应注册您的存储系统。</block>
+  <block id="f8cfcb3b6ce65079e1f57dd3a4507101" category="paragraph">注册过程需要每个控制器的序列号 (SN)。您可以在以下位置找到序列号：</block>
+  <block id="1594210318baaedcde7a9ee6cf877e2f" category="list-text">在每个控制器上</block>
+  <block id="3fc885acbf9f3f66cb5fefc99c0d76c6" category="list-text">在装箱单上</block>
+  <block id="cf163ceac39b37fd1108b3cf9ff2b719" category="list-text">在您的确认电子邮件中</block>
+  <block id="e1554fb7300ba3f33856607b4276dd89" category="image-alt">序列号标签示例</block>
+  <block id="212304f8cbbd7ebaff4e2249b78ee581" category="inline-link-macro">安装硬件</block>
+  <block id="abda3eb065a719f1d88a781d2e38ad9e" category="paragraph">准备安装存储系统后，<block ref="239db888dbc76fb83268465e5e6536a6" category="inline-link-macro-rx"></block>。</block>
+  <block id="be8d4ce4918ddae84d02431379d6d80c" category="summary">要安装和设置 EF50 或 EF80 存储系统，必须准备好站点，安装并连接硬件组件，打开存储系统的电源，并完成存储系统设置和配置。</block>
+  <block id="686032153c045cdea3816ea49738e842" category="doc">安装和设置 - EF50 和 EF80</block>
+  <block id="e33ae0add8106498514961d910b3b38e" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="bce179ad419bd48e9c41b073fd99e202" category="inline-link-macro-rx"></block></block>
+  <block id="edb3e9aff5e398b7b7eb19e2ba1c1378" category="paragraph">要准备安装，请准备好现场，了解存储系统的吊装注意事项，打开包装箱并将内容与装箱单进行比较，然后注册存储系统以获得支持优势。</block>
+  <block id="923a86c9f908f09f61d33d7831905371" category="inline-link-macro">安装硬件</block>
+  <block id="11b875727465892cf5bd1e3b8b38f3da" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="d8f87fb4140fea77f47017bd9ec5dcdd" category="inline-link-macro-rx"></block></block>
+  <block id="7569bbc639d17ce831941090847f5f57" category="paragraph">要安装硬件，请在机柜或机架中安装机架安装硬件，然后安装并固定您的存储系统。</block>
+  <block id="b8b738c80e941f2ecc3967c6dbe5c0aa" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block><block ref="5cf36f95205599c906eaa6f0709db155" category="inline-link-macro-rx"></block></block>
+  <block id="81d9ca4276f9010335b6aeeaa1d0680c" category="paragraph">要连接硬件，请将控制器彼此连接以启用控制器间镜像，这可确保完整的系统冗余，并用于缓存镜像和 I/O 传输，然后将控制器连接到主机网络。</block>
+  <block id="3f43328b333c4df4c9ec539236523e92" category="inline-link-macro">打开存储系统电源</block>
+  <block id="8d5f5b9f9f2dee34f15574ce8f524e4f" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="8a056a6439f08c4b1b6c616463cfac54" category="inline-link-macro-rx"></block></block>
+  <block id="5e570e70d5b47c9363d964970dc2a50c" category="paragraph">要为您的存储系统供电，请将电源线插入每个控制器电源，然后将它们连接到不同电路上的电源</block>
+  <block id="b669c7541b481751dcc71a055cce958b" category="inline-link-macro">完成存储系统设置</block>
+  <block id="78842b8d721f67915adcf3eb011b7c36" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="5ef3aa7bd3b14cfb714e4d5b256fce22" category="inline-link-macro-rx"></block></block>
+  <block id="38c38e882e02e5c78c715e5e344923bf" category="paragraph">要完成存储系统设置，请连接和配置控制器上的管理端口，配置和管理存储系统，然后验证主机 I/O 模块协议是否正确。</block>
+  <block id="3b4608a173577ff11cb5a970a95a9116" category="inline-link">12.0 发行说明</block>
+  <block id="3140eb9f268fa80dd4b189e0d7e0986b" category="list-text"><block ref="3140eb9f268fa80dd4b189e0d7e0986b" category="inline-link-rx"></block></block>
+  <block id="a75befa2f42df622990e46f9c7d49e08" category="list-text">在左侧面板下选择菜单：Hardware[Controllers and components]。</block>
+  <block id="a2b019c9963ef773b0ead6446cef828d" category="image-alt">风扇罐释放卡舌</block>
+  <block id="b00fd47d5fb356f57fefb70bd8db1fab" category="list-text">如果图形显示驱动器，请选择 *Show back of shelf* 以显示控制器</block>
+  <block id="1f36460e84582b36be552c6a17c0123a" category="list-text">在支持资源页面上，找到并选择 *Storage Array Profile* 链接。</block>
+  <block id="2e4d5d49cfefb01ef272ad2ab4919706" category="paragraph">此时将显示主机编辑设置对话框。</block>
+  <block id="91822d857a567731cff3a62cdcc4b262" category="list-text">如果图形显示驱动器，请选择 *Controller &amp; Components* 以显示控制器</block>
+  <block id="73296082d8b1d967de86e3ca1401778c" category="list-text">选择 *Storage › Volumes*。从 *All Volumes* 页面，验证卷是否分配给其首选所有者。选择 *More › Change ownership* 以查看卷所有者</block>
+  <block id="e5917c8b7ae11d456fbbf964f73d5ea5" category="list-text">如果卷全部由首选所有者所有，请继续执行第 4 步。</block>
+  <block id="f5513a279f3a0cf086ef71ad97fc2b02" category="list-text">单击所需的控制器并选择 *配置 iSCSI 端口*。</block>
+  <block id="702435126a074d634b351cf2ccccfcde" category="doc">更改主机端口协议的要求 - E5700</block>
+  <block id="c4039f7107e8ace0d297e2c9ce9db8c0" category="summary">要完成 EF50 或 EF80 存储系统的控制器更换，请确保存储系统固件是最新的，验证卷是否已返回其所有者，收集系统支持数据，并将故障部件返回 NetApp。</block>
+  <block id="1df492fb38de2abdeb3d08f3c3e7f6ed" category="doc">完成控制器更换 - EF50 和 EF80</block>
+  <block id="8353977824c9791b266dc918db656fa9" category="paragraph">要完成 EF50 或 EF80 存储系统的控制器更换，请确保安装了最新版本的 SANtricity 操作系统，验证卷是否已返回到其拥有的控制器，收集系统支持数据，并将故障部件返回到 NetApp。</block>
+  <block id="c544db45a7babe9836c72d84fccf4ad0" category="section-title">步骤 1：确保 SANtricity 操作系统为最新版本，验证卷所有权，并收集支持数据</block>
+  <block id="8d25d311e353251341d471f4c2d37620" category="section-title">步骤 2：将故障部件返回到 NetApp</block>
+  <block id="b7ed4d788cf16b7e63972cb4e46b077f" category="summary">通过卸下控制器、将组件移至更换控制器并安装更换控制器，来更换 EF50 或 EF80 存储系统中受损的控制器。</block>
+  <block id="4f76e3ac8bbd37b71def1f5a39dc253f" category="doc">更换控制器 - EF50 和 EF80</block>
+  <block id="6670723c2864ca1765e9359b7d487d58" category="paragraph">通过验证缓存内存中的任何数据是否已写入驱动器、从受损控制器上拔下所有电缆、卸下受损控制器、将组件移动到更换控制器并安装更换控制器，来更换 EF50 或 EF80 存储系统中的受损控制器。</block>
+  <block id="04930cabf99972a633341ff06ac0deb2" category="inline-link-macro">使更换控制器联机</block>
+  <block id="3afdcd3e40400319f3d0f83140582eb8" category="paragraph">更换损坏的控制器后，<block ref="b6ab23cdcb0c3e7e038497056f4f0fe6" category="inline-link-macro-rx"></block>。</block>
+  <block id="cb4238e638fc47d7b570d750fcab014f" category="summary">将受损的控制器在 EF50 或 EF80 存储系统中离线，以防止数据丢失，并确保更换控制器时的系统稳定性。</block>
+  <block id="0ed60882ea4f8296eaf657de750f0b1f" category="doc">使受损控制器脱机 - EF50 和 EF80</block>
+  <block id="9060587edeb01a63e3d3edc959678d1e" category="list-title">执行前</block>
+  <block id="b4851e92b19af0c5c82447fc0937709d" category="inline-link-macro">要求</block>
+  <block id="f1e36309340fc4f17fb40811d47953c7" category="list-text">您必须已满足此程序的<block ref="f3fc649d7930c1668979ef9e48f6bb30" category="inline-link-macro-rx"></block>。</block>
+  <block id="501c214438899badfe0ea96a964a43e0" category="inline-link-macro">准备</block>
+  <block id="140705b8013f323d672593a11f9c7bc9" category="list-text">您必须已完成此程序的<block ref="e3160eb47607c22388ca3029962b0ccc" category="inline-link-macro-rx"></block>。</block>
+  <block id="bce072f16c5d36a9b06ffd9b060b1032" category="inline-link-macro">更换受损的控制器</block>
+  <block id="002fd09fb9764aac2eb6c3186d15cbfd" category="paragraph">将受损控制器脱机后，<block ref="ee0880cd8b48b6c56cd4da2441971f2e" category="inline-link-macro-rx"></block>。</block>
+  <block id="beb7fb9c14796641ab9982a59ef200a1" category="summary">为 EF50 或 EF80 存储系统安装更换控制器后，请确认更换控制器的 IP 地址，将控制器置于联机状态，并确认存储系统状态为"最佳"。</block>
+  <block id="596db6c24eb9e12a170f6a7b400b16e8" category="doc">在线更换控制器 - EF50 和 EF80</block>
+  <block id="f6eeb21c85181baceb1efe4944921a82" category="paragraph">为 EF50 或 EF80 存储系统安装更换控制器后，请确认其 IP 地址，将控制器置于联机状态，并确认存储系统状态为"最佳"。</block>
+  <block id="a61002aab76d792f612bedb7d53fdd4f" category="inline-link-macro">完成控制器更换</block>
+  <block id="ab0cc7192570c60edb959133170bce4a" category="paragraph">将新控制器置于联机状态后，<block ref="867cf5cb10011fd216b1c24383b0303a" category="inline-link-macro-rx"></block>。</block>
+  <block id="920518de31657059b4af98be4e467165" category="summary">通过打开替换控制器的包装，确认其部件号正确，并备份配置数据库，准备替换 EF50 或 EF80 存储系统中受损的控制器。</block>
+  <block id="363003c031f52760e90e0fb1284fdefd" category="doc">准备更换控制器 - EF50 和 EF80</block>
+  <block id="23182ac7189b12133b9a6f5a17fdb931" category="paragraph">准备更换 EF50 或 EF80 存储系统中受损的控制器，方法是打开更换控制器的包装，记下其 MAC 地址，确认其部件号正确，并备份存储系统的配置数据库。</block>
+  <block id="14db85beb6439163bd9a3227e2e04e91" category="inline-link-macro">使受损控制器脱机</block>
+  <block id="c71f02ba1917135ea53e6af0e26795fd" category="paragraph">准备好控制器更换后，<block ref="911e69b58a894f7ac5b57ca9f4b1508e" category="inline-link-macro-rx"></block>。</block>
+  <block id="fb081072ce2cc9988433d80f3b47bbb0" category="summary">在更换 EF50 或 EF80 存储系统中的控制器之前，请确保满足成功更换的要求。这包括验证您有一个故障控制器、验证存储系统的状态、获取执行此过程所需的工具，以及拥有管理站和浏览器来访问 SANtricity System Manager。</block>
+  <block id="63d771a32f33c4067d74aa663218f475" category="doc">更换控制器的要求 - EF50 和 EF80</block>
+  <block id="c7ae60c36e5dd3e8b2951d1153d89ab3" category="paragraph">在更换 EF50 或 EF80 存储系统中的控制器之前，请确保满足成功更换的要求。这包括验证您有一个故障控制器、验证存储系统的状态、获取执行此过程所需的项目，以及拥有管理站和浏览器来访问 SANtricity System Manager。</block>
+  <block id="548802e3445e480c774adf86b3c9d40d" category="inline-link-macro">准备更换控制器</block>
+  <block id="2f1a84cd73a9d1b253690cee5a996165" category="paragraph">在满足控制器更换要求后，<block ref="eeedf715164715cd0f13218b7869f59b" category="inline-link-macro-rx"></block>。</block>
+  <block id="2a9a93ea6f0bd977cebbea5c7c3931ef" category="summary">您可以通过满足存储系统要求、准备系统、将受损控制器置于离线状态、更换控制器、将新控制器置于在线状态以及完成更换过程来更换 EF50 或 EF80 存储系统中的受损控制器。</block>
+  <block id="cbdd046cb437c2ec3b44256dfde2ff5b" category="doc">控制器更换工作流程 - EF50 和 EF80</block>
+  <block id="cc7b6ad2b5c5cf984ed2b31eb7cdec78" category="inline-link-macro">查看控制器更换要求</block>
+  <block id="63d82565e7082940cd04e84427b25ae7" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="fda781847f9aa68393ef9eb97f6097de" category="inline-link-macro-rx"></block></block>
+  <block id="406f1172b9d2b0ceb171aea9558a5a68" category="paragraph">验证存储系统的控制器是否出现故障，验证存储系统的状态，获取用于此过程的工具，并具有管理工作站和浏览器以访问 SANtricity System Manager。</block>
+  <block id="5bd0e0ff93ea373fce6b434f7436e2b8" category="inline-link-macro">准备更换控制器</block>
+  <block id="391ae3365d58e10f91759a9aed8f49ee" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="170cecc50318f7282077b231093216e9" category="inline-link-macro-rx"></block></block>
+  <block id="9f28a5a587a125c78a342f11c6c7d227" category="paragraph">打开替换控制器的包装，记下其 MAC 地址，确认其部件号正确，然后备份存储系统的配置数据库。</block>
+  <block id="8d3f4062332015f6157b0ecad22a9d48" category="inline-link-macro">使受损的控制器脱机</block>
+  <block id="1ccf90cd5ac66fe6dd1f867874ed8b64" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block><block ref="1193faafc7e0c8a7a7983a858e7e42c7" category="inline-link-macro-rx"></block></block>
+  <block id="e28eab3bed314967d77bc7840a0d700f" category="paragraph">离线受损的控制器，以防止数据丢失，并确保更换受损控制器时的系统稳定性。</block>
+  <block id="ae12cdf9e27ddc4e5b3ed69b1b80df01" category="inline-link-macro">更换受损的控制器</block>
+  <block id="c9e0c8f787b4607f27a6dfd442f2195a" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="45ea655895c2ecbabc8c7c647a3a6896" category="inline-link-macro-rx"></block></block>
+  <block id="d71f29ff8580c48c94518a4a3d3a4702" category="paragraph">验证缓存内存中的任何数据是否已写入驱动器，从受损控制器拔下所有电缆，卸下控制器，将组件移至更换控制器，安装更换控制器，并重新连接所有电缆。</block>
+  <block id="aec26d175b38820660573a49cf1f9f18" category="inline-link-macro">使更换控制器联机</block>
+  <block id="4ea338eb0a5f7427049ef44a30f11300" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="35702f6a9f1e3e47496742aca90b9ed6" category="inline-link-macro-rx"></block></block>
+  <block id="ec93f19c8004dc2ae1888fbff37617b8" category="paragraph">确认替换控制器的 IP 地址，将控制器联机，并确认存储系统状态为 Optimal。</block>
+  <block id="f4750e6ebd93a7a7ed78133f680ffe16" category="inline-link-macro">完成控制器更换</block>
+  <block id="9b45b4bd50c50f33264d635b111c66e7" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block><block ref="fb1d229074231f8b8a434041a80b00f6" category="inline-link-macro-rx"></block></block>
+  <block id="570aef57cad2607bde75709d4a86e944" category="paragraph">确保安装了最新版本的 SANtricity 操作系统，验证卷是否返回到其拥有的控制器，收集系统支持数据，并将故障部件返回到 NetApp。</block>
+  <block id="383ef5177a54d7409b9e3c66bbdd00ca" category="summary">更换 EF50 或 EF80 存储系统中的 DIMM，如果该 DIMM 出现故障、未处于最佳状态或容量不匹配。</block>
+  <block id="4ba23e997e0cdc38baff6119bdd2115e" category="doc">更换 DIMM - EF50 和 EF80</block>
+  <block id="127fa4a95ea776482897ccf0f46f143e" category="list-text">通过以下方式更换 DIMM：确定是否需要更换，准备，将受损控制器脱机，卸下控制器，更换 DIMM，重新安装控制器，将其置于联机状态，完成更换，并将故障部件退回 NetApp。</block>
+  <block id="4abfd4171ab973970a9c4d4bb9f0dcc4" category="paragraph">出现故障、报告未处于最佳状态或容量不匹配时，请更换 DIMM。</block>
+  <block id="c4576758d1a1108466321398e70b5733" category="paragraph">准备更换 DIMM 时，请确保没有其他需要解决的存储系统问题，确保卷处于正确状态，收集必要的工具和设备，采取预防措施以防止静电放电，并备份存储系统的配置数据库。</block>
+  <block id="eb86ff3cf478c1fcc648fa0ff4dfd4cb" category="section-title">步骤 3：将控制器置于离线状态</block>
+  <block id="83ed3aef216a1c44b0fcf6e080809513" category="paragraph">将受损的控制器脱机，以便您可以安全地执行此过程的其余部分。</block>
+  <block id="0418da6a466979d1781efe4f90178456" category="section-title">步骤 4：卸下控制器</block>
+  <block id="1ec9f66f0279da06042fe67fa7091043" category="section-title">第 5 步：更换 DIMM</block>
+  <block id="7942179afa9cc7db8c6e78df8351e369" category="paragraph">在损坏的控制器中找到有故障的 DIMM 并进行更换。</block>
+  <block id="498d0f96d2f0bf809b02158e756b9b7e" category="section-title">第 6 步：重新安装控制器</block>
+  <block id="9d2e538f87568cc8ea2f61ac14aeca34" category="paragraph">将控制器重新安装到机箱中，重新连接其电源线及其所有电缆。</block>
+  <block id="14e65a354dbea722cf5bf7e256aabd16" category="section-title">第 7 步：将控制器置于联机状态</block>
+  <block id="e63100abf181cb74cc24fbd0bf3b20b8" category="section-title">第 8 步：完成 DIMM 更换</block>
+  <block id="2324c9ff8290e7aacd93f5339cfc2986" category="section-title">第 9 步：将故障部件退回 NetApp</block>
+  <block id="38b6c237ab61ba051247de5055885fbe" category="summary">当驱动器出现故障或需要升级时，请更换 EF50 或 EF80 存储系统中的驱动器。</block>
+  <block id="b128b09f0503f3acadbab3ce838606d3" category="doc">更换驱动器 - EF50 和 EF80</block>
+  <block id="d73077f8b1eb74e5877c54065699aa12" category="paragraph">在 EF50 或 EF80 存储系统接收 I/O 时更换出现故障的驱动器，以确保持续的数据访问和系统性能。</block>
+  <block id="7167e6fb601eb461220ee6f5d0e38e0a" category="list-text">通过准备、更换驱动器、完成更换，然后将故障部件退回 NetApp 来更换驱动器。</block>
+  <block id="308f69e1eee5c954dd187a6972a6cb9e" category="list-text">SANtricity System Manager 中的 Recovery Guru 监控存储系统中的驱动器，并可通知您即将发生的驱动器故障或实际的驱动器故障。当驱动器出现故障时，其注意（琥珀色）LED 亮起。</block>
+  <block id="627ea20fba0ea612727b7cb7f0ea0aae" category="summary">当风扇出现故障或无法有效运行时，请更换 EF50 或 EF80 存储系统中的风扇模块，因为这可能会影响系统冷却和整体性能。</block>
+  <block id="dd25df4834294fa25b6149163a4481d5" category="doc">更换风扇模块 - EF50 和 EF80</block>
+  <block id="1745642b329ee9ae6c4d423166d61ff9" category="list-text">通过准备、将受损控制器脱机、卸下控制器、更换风扇、重新安装控制器、将其联机、完成更换并将故障部件退回 NetApp 来更换风扇。</block>
+  <block id="9b6957f30022c30a17cb5d4361b12eae" category="list-text">每个控制器包括五个风扇。如果风扇出现故障，您必须尽快更换，以确保控制器有足够的冷却。</block>
+  <block id="96336de8c1578c91e716fcd8afc5a855" category="section-title">步骤 1：准备更换风扇</block>
+  <block id="37856465ba7a20bffd2493fa67e0178b" category="paragraph">通过确认是否可以更换风扇、收集必要的工具和设备以及备份存储系统的配置数据库来准备更换风扇。</block>
+  <block id="ae28e006d886fe6332498f4bda14e9bc" category="section-title">步骤 2：将控制器置于脱机状态</block>
+  <block id="a9c0cea0fa970dd78f5c9b732ed7af82" category="section-title">步骤 3：卸下控制器</block>
+  <block id="4842d95adb9f7f65ba953748bf6ac5e2" category="section-title">步骤 4：更换风扇</block>
+  <block id="c565b1a4941f31e00246773e5d05fb49" category="paragraph">在损坏的控制器内找到有故障的风扇并进行更换。</block>
+  <block id="930eb6bbec480c5ceef6aa27e8f5aeda" category="section-title">第 5 步：重新安装控制器</block>
+  <block id="6f50fb2bdac922e7170a0ddac9c7c205" category="section-title">第 6 步：将控制器置于联机状态</block>
+  <block id="d4410b5505d1c8c1a6788f6153eff488" category="section-title">第 7 步：完成风扇更换</block>
+  <block id="e81625c6f6813a6e5480c2987f5bd781" category="section-title">第 8 步：将故障部件退回 NetApp</block>
+  <block id="289df06b8febb4ba9dab3e2d96e1d3df" category="summary">当您需要在现有 I/O 模块上使用不同的协议时，作为 I/O 模块升级的一部分，或者当新存储系统安装或控制器升级中新控制器上的默认协议不是您想要的协议时，您可以在 EF50 或 EF80 存储系统中更改主机 I/O 模块上的协议。</block>
+  <block id="dd4a92791444f756affba1a26a443eee" category="doc">更改主机 I/O 模块协议 - EF50 和 EF80</block>
+  <block id="4f0cc4f2a03a1631ef31204775a0d1e8" category="paragraph">如果要在硬件过程（I/O 模块升级、新系统安装或控制器升级）中更改主机协议，则需要完成适用的硬件过程。</block>
+  <block id="13e885e99d8fdc4ea504754a9295e124" category="admonition">必须已安装新硬件，因为默认协议和可用协议列表（您在此过程中查看）基于当前安装的主机 I/O 模块。</block>
+  <block id="accd5899181dedbb31fd58f7f6e12d94" category="cell">如果要更改主机协议...</block>
+  <block id="2c3909128c6ceedef97f5a05a1bd2bc2" category="paragraph">在您现有的主机 I/O 模块上（无需安装新硬件）</block>
+  <block id="6a58d5f6ed9134ff245eb1172f368af9" category="paragraph">继续执行此过程。</block>
+  <block id="045ce4df55a28d4fac9a9dbae23e1f97" category="paragraph">作为 I/O 模块升级的一部分</block>
+  <block id="f58a456bbd4f564af406f58dafcbe908" category="paragraph">在继续此过程之前，请升级主机 I/O 模块。</block>
+  <block id="ee562414bdcbb36fc239765997d6ccc9" category="inline-link-macro">升级 EF50 或 EF80 的 I/O 模块</block>
+  <block id="91b04b48455b88cb067b358ee56b37c7" category="paragraph">使用 <block ref="5f90355ca8ba90bc4c6c34291e857534" category="inline-link-macro-rx"></block> 过程。</block>
+  <block id="0975e62816b46fb66331e466cd678aee" category="paragraph">作为新存储系统安装的一部分</block>
+  <block id="ab507d8ac4de89c807db351bd7b994de" category="paragraph">在继续此过程之前，请完成系统安装和设置。</block>
+  <block id="2c7b646ea0004b99baf4e86a5c006ca4" category="inline-link-macro">安装和设置 EF50 或 EF80</block>
+  <block id="80f5d3fd8e0543d6156ca0af4a65ab6d" category="paragraph">使用 <block ref="5bc7e0b3ef0c2e4b7ad3897c10d8bbc7" category="inline-link-macro-rx"></block> 过程。</block>
+  <block id="a2eb841f561d6293a3006e8281b799d9" category="paragraph">作为控制器升级的一部分</block>
+  <block id="eb901a70ea1458a28ab0d07be1278180" category="paragraph">在继续此过程之前，请完成控制器升级。</block>
+  <block id="21bd9aea1b8d512de2b6a4057c816acc" category="paragraph">从 <block ref="9cd12a65522d368cb718912c4777f627" category="inline-link-macro-rx"></block> 过程开始。</block>
+  <block id="82cad080f04aa6a2f5b09355f1c92238" category="list-text">通过准备、停止主机 I/O 操作、更改协议，然后将主机配置为使用新协议，来更改主机 I/O 模块上的协议。</block>
+  <block id="8f8c2babd694314cdd77d5ad0b67c342" category="list-text">已更改存储系统中所有主机 I/O 模块上的协议。</block>
+  <block id="4c9b71bb189ece048356461b1775be6f" category="list-text">更改主机 I/O 模块上的协议时，将暂时中断主机对所有卷的访问，并在重新启动期间使存储系统不可用，这需要几分钟的时间。</block>
+  <block id="33296abf5a1642af31a4d756f85cb169" category="section-title">步骤 1：为协议变更做好准备</block>
+  <block id="6970ce3288781a5f5f4bb687b7a43bbc" category="paragraph">通过验证当前使用的协议，确定是否需要更改协议，如果需要，则安排停机维护窗口，准备更改主机 I/O 模块上的协议。</block>
+  <block id="41d72c8d647ea7b0a9aad9c594d3c098" category="section-title">步骤 2：停止主机 I/O 操作</block>
+  <block id="d87d058614a637dca18e8276b72b4d60" category="paragraph">更改协议之前，必须停止主机的所有 I/O 操作，然后从存储系统中删除所有定义的主机。</block>
+  <block id="8323bec76d3c20c5ff905fad50e89c4f" category="admonition">在成功完成协议更改之前，您无法访问存储系统上的数据。</block>
+  <block id="0c5fc7de27442b2cafd032bc7294a088" category="section-title">步骤 3：更改协议</block>
+  <block id="f281568467abf1639273a9b57450f6c3" category="paragraph">使用 SANtricity System Manager 更改主机 I/O 模块上的协议，等待控制器完成其重新启动周期，确认其状态为 Optimal，然后重新创建主机定义。</block>
+  <block id="9b2d6660ebdf1089f3521ca4c1853164" category="section-title">步骤 4：配置主机以使用新协议</block>
+  <block id="71f734bf869da0d12308b9e2aa7ccbf6" category="paragraph">更改主机协议后，必须将主机配置为使用新协议。</block>
+  <block id="a4d73645f4e06cae14a4fd28121eea4b" category="summary">EF50 和 EF80 存储系统提供升级或更换 I/O 模块的灵活性，以增强网络连接和性能。</block>
+  <block id="9d4faf90fbf60d477b0252d81536f322" category="doc">I/O 模块维护概述 - EF50 和 EF80</block>
+  <block id="9210272fa91df110b4b0c5eee37e7f61" category="paragraph">EF50 和 EF80 存储系统在更换或升级 I/O 模块方面提供了灵活性，以增强网络连接和性能。</block>
+  <block id="00015974de1f6f69c16403a005f48582" category="inline-link-macro">更换 I/O 模块</block>
+  <block id="b49ba47015c67eae9f182326198621a4" category="list-text"><block ref="b49ba47015c67eae9f182326198621a4" category="inline-link-macro-rx"></block></block>
+  <block id="c53f3fdfaf55dd8048784ee561500f34" category="paragraph">当存储系统中的 I/O 模块出现故障时，可以将其替换为相同类型的 I/O 模块，以将存储系统恢复到其最佳操作状态。</block>
+  <block id="4e2509f697c3b8d1e846cd633039ad0b" category="inline-link-macro">升级 I/O 模块</block>
+  <block id="84e5d72d80fde0676199c46e2d62e76e" category="list-text"><block ref="84e5d72d80fde0676199c46e2d62e76e" category="inline-link-macro-rx"></block></block>
+  <block id="26792491722e67c8f579995d575d9703" category="paragraph">您可以升级存储系统中的 I/O 模块以增加主机端口数量，从而增强网络连接并扩展系统处理数据流量的能力。</block>
+  <block id="fa2188ad1fdb23ca79cea5e526d0ee2e" category="summary">使用相同类型的 I/O 模块更换 EF50 或 EF80 存储系统中出现故障的 I/O 模块，以将存储系统恢复到最佳操作状态。</block>
+  <block id="6aafc28ff0b06c5d0635130532d5a922" category="doc">更换 I/O 模块 - EF50 和 EF80</block>
+  <block id="4831d2fac0f25621f059a75ed94f686b" category="list-text">通过准备、将受损控制器脱机、更换出现故障的 I/O 模块、将控制器重新联机以及将出现故障的部件返回 NetApp 来更换 I/O 模块。</block>
+  <block id="eda0698c7dcadcd604c916d474645b48" category="list-text">在此过程中，使用术语 _I/O 模块_ 代替主机接口卡 (HIC)。</block>
+  <block id="80c20b828151ee676b7b9618527dbfbb" category="list-text">I/O 模块故障 LED（适用于所有四个插槽）不工作。它们始终处于关闭状态，因此无法用于验证故障状态。</block>
+  <block id="4f3037ddb5c9b6c7a68504b5c92b8c80" category="paragraph">故障 LED 位于控制器上：插槽 1 和 2 的故障 LED 位于插槽 2 的右侧。插槽 3 和 4 的故障 LED 位于插槽 4 的左侧。</block>
+  <block id="8fa282433ed64f048c8bda03d8c3a8f4" category="list-text">无需从机箱中卸下受损控制器，因为在控制器就位的情况下可以访问 I/O 模块。</block>
+  <block id="b54d41dcdc297a1d3c688a796c1c2988" category="list-text">在拔下任何 I/O 模块电缆之前，必须将受损的控制器脱机。</block>
+  <block id="ef40daf4e99aa85c10b93245bfa2428b" category="section-title">步骤 1：准备更换 I/O 模块</block>
+  <block id="4a17540b2871c5addffeb5305fe834ca" category="paragraph">通过收集必要的工具和设备，并备份存储系统的配置数据库，准备更换 I/O 模块。</block>
+  <block id="20408433c451f2765ea5960cbacdd5e1" category="section-title">第 3 步：更换 I/O 模块</block>
+  <block id="f3d50818205db1d23cdaed8b0e86c827" category="paragraph">从出现故障的 I/O 模块中拔下电缆，将其更换为更换的 I/O 模块，然后连接更换的 I/O 模块。</block>
+  <block id="befdd23853982bc09987fc78ea428e05" category="section-title">步骤 4：将控制器联机</block>
+  <block id="440fc355bde6ccb740bf9a234b02fb78" category="section-title">第 5 步：完成 I/O 模块更换</block>
+  <block id="d099df7ce339c15abb7692668d035fea" category="section-title">第 6 步：将故障部件退回 NetApp</block>
+  <block id="f2292d18df84a927d0a755993bb3e79a" category="summary">您可以升级 EF50 或 EF80 存储系统中的 I/O 模块，以增加主机端口数量，从而增强网络连接，并扩展系统处理数据流量的能力。</block>
+  <block id="e3d06cd515ac1a713a4b65d4d9fedf14" category="doc">升级 I/O 模块 - EF50 和 EF80</block>
+  <block id="7d75a38e03bd858df8db3610fb3acd51" category="list-text">可以通过更换现有 I/O 模块或将 I/O 模块添加到未使用的 I/O 插槽来升级 I/O 模块。</block>
+  <block id="bfeba3c88f2dd8e9ae01db5901cb206f" category="paragraph">未使用的 I/O 插槽应安装空白模块，以防止可能的散热问题并符合 EMC 标准。</block>
+  <block id="6585307bb8265d1b09829c194403a0c5" category="list-text">通过准备、关闭两个控制器、升级两个控制器中的 I/O 模块、打开两个控制器的电源、验证升级是否成功以及在需要时验证和更改主机 I/O 模块协议来升级 I/O 模块。</block>
+  <block id="313b01d3c012a9b875daa679af1fd1e7" category="paragraph">无需从机箱中卸下控制器，因为可以通过控制器访问 I/O 模块。</block>
+  <block id="6a9a54592c082a4d23eb9e7d33336774" category="list-text">在拔下任何 I/O 模块电缆之前，必须关闭两个控制器的电源。</block>
+  <block id="942a0d6d365ab89aa795546b027df675" category="section-title">第 1 步：准备升级 I/O 模块</block>
+  <block id="fae136faafe232f4c4c3c8658cf61083" category="paragraph">通过安排停机维护窗口、收集必要的工具和设备以及备份存储系统的配置数据库，准备升级 I/O 模块。</block>
+  <block id="b8a7b4e576fb6085fc7818fc9cb8c107" category="section-title">步骤 2：关闭两个控制器的电源</block>
+  <block id="a0cebc91cd2b7996fba58618827eb72a" category="paragraph">关闭存储系统中的两个控制器，以便安全地升级两个控制器中的 I/O 模块。</block>
+  <block id="5c015311100b4946d20548386d241f50" category="section-title">第 3 步：升级 I/O 模块</block>
+  <block id="be1eb8f42694658bd7278f9f7905158c" category="paragraph">从要升级的 I/O 模块中拔下电缆（除非您有 I/O 空白模块），将 I/O 模块或 I/O 空白模块替换为新的 I/O 模块，然后对新的 I/O 模块进行电缆连接。</block>
+  <block id="0c3d18807d72e6a0351a3c2e490bcc31" category="section-title">步骤 4：打开两个控制器的电源</block>
+  <block id="ad6f3292eff5c6b917f69ae8c2ddbac6" category="paragraph">打开两个控制器的电源。</block>
+  <block id="3a959d60be14e56f6c7451b1cfba02bb" category="section-title">第 5 步：完成 I/O 模块升级</block>
+  <block id="31b3537334efd47611c131002c33e74d" category="paragraph">使用 SANtricity System Manager，确保已安装最新版本的 SANtricity 操作系统，验证所有卷都已返回到其拥有的控制器，收集支持数据以恢复操作，并在需要时验证和更改主机 I/O 模块协议。</block>
+  <block id="f92ca7c242e5a71bd3eb549d5c5bcb20" category="summary">维护 EF50 或 EF80 存储系统的硬件，以确保长期可靠性和最佳性能。执行定期维护任务，例如更换故障组件，因为这有助于防止停机和数据丢失。</block>
+  <block id="862bd6d24dd0f13ccfd37178cbd8bf90" category="doc">维护程序概述 - EF50 和 EF80</block>
+  <block id="fb0c3f0aa959723c48eb4727c35a9046" category="paragraph">维护程序假设您的 EF50 或 EF80 存储系统已部署在 SANtricity 环境中。</block>
+  <block id="82ffa69e587186e368733ebdc76144cb" category="paragraph">对于您的 EF50 或 EF80 存储系统，您可以对以下组件执行维护过程。</block>
+  <block id="9bbf373797bf7cf7ba62c80023682e25" category="inline-link-macro">控制器</block>
+  <block id="dceb619599d0aa6d9d89d0abf54e0b37" category="paragraph"><block ref="dceb619599d0aa6d9d89d0abf54e0b37" category="inline-link-macro-rx"></block></block>
+  <block id="683e240b7b471a69fe0c3c498ffcd133" category="paragraph">控制器由主板、固件和软件组成。它控制驱动器并运行 SANtricity 操作系统软件。</block>
+  <block id="cf3978c4f41003aa5f5fa0b3f484dfbe" category="inline-link-macro">DIMM</block>
+  <block id="57a64598a9ce65521278654300cbc21d" category="paragraph"><block ref="57a64598a9ce65521278654300cbc21d" category="inline-link-macro-rx"></block></block>
+  <block id="577d2d3976799dbcd1fc23ee08a572cc" category="paragraph">双列直插式内存模块 (DIMM) 是一种计算机内存。安装它们是为了将系统内存添加到控制器主板。</block>
+  <block id="f2c6151d6c0d99f3666129b97e2100f5" category="inline-link-macro">驱动器</block>
+  <block id="5d7bf1cac3020aecc9e419835da60990" category="paragraph"><block ref="5d7bf1cac3020aecc9e419835da60990" category="inline-link-macro-rx"></block></block>
+  <block id="8c2694371a75dd052d8b2e0cd66496fc" category="paragraph">驱动器是提供数据所需的物理存储的设备。</block>
+  <block id="add0180387a0985c32471180b375b8d9" category="inline-link-macro">风扇</block>
+  <block id="48fa76b6ceef78de919d0c14de5c1e8e" category="paragraph"><block ref="48fa76b6ceef78de919d0c14de5c1e8e" category="inline-link-macro-rx"></block></block>
+  <block id="90173eb1ed454afdf58b9269bb20c2b9" category="paragraph">风扇冷却控制器和驱动器。</block>
+  <block id="6dc123cb91289ee9a0c4db08f205d8dc" category="inline-link-macro">I/O 模块</block>
+  <block id="1cec3a4ecd2d4b7c8580770e953af5c3" category="paragraph"><block ref="1cec3a4ecd2d4b7c8580770e953af5c3" category="inline-link-macro-rx"></block></block>
+  <block id="807b26d7111f209057a30d265b88f6ae" category="paragraph">I/O 模块（Input/Output 模块）是一种硬件组件，充当控制器与需要与控制器交换数据的各种设备或系统之间的中介。</block>
+  <block id="d138e90428f37a60387c8577b6e009b8" category="inline-link-macro">NV 电池</block>
+  <block id="42e36784b087ac0d890c7f6dabed6982" category="paragraph"><block ref="42e36784b087ac0d890c7f6dabed6982" category="inline-link-macro-rx"></block></block>
+  <block id="7399f29b34d3f088dfc5e1147d31fb9f" category="paragraph">非易失性存储器（NVMEM）电池负责在断电后向 NVMEM 组件供电，同时将传输中的数据降级到闪存。</block>
+  <block id="95ab97eb0fe2b20f23eb848c59d681ac" category="paragraph"><block ref="95ab97eb0fe2b20f23eb848c59d681ac" category="inline-link-macro-rx"></block></block>
+  <block id="517e65cbfa02ca306eec69200485822d" category="paragraph">电源在控制器中提供冗余电源。</block>
+  <block id="3d7672bcb38d18989e39f972e1f11656" category="summary">当电池开始断电或出现故障时，请更换 EF50 或 EF80 存储系统中的 NV 电池，因为它负责在停电期间保留关键系统数据。</block>
+  <block id="d8c568441978a950cb6bffddff68ef00" category="doc">更换 NV 电池 - EF50 和 EF80</block>
+  <block id="e88aa91b6c2cdd74449e01fb276220d4" category="list-text">通过准备、将受损控制器脱机、卸下控制器、更换电池、重新安装控制器、将其联机、完成更换并将故障部件退回 NetApp 来更换 NV 电池。</block>
+  <block id="80e937eeb581acc45452bbd5771394ad" category="section-title">步骤 1：准备更换 NV 电池</block>
+  <block id="456b055ed2f4157d2dfa8258fdc82373" category="paragraph">准备更换 NV 电池时，请确认需要更换 NV 电池，确保没有其他需要解决的存储系统问题，确保卷处于正确状态，收集必要的工具和设备，并备份存储系统的配置数据库。</block>
+  <block id="35d08c0779d9e8f3a641ec1a7f861a7d" category="section-title">步骤 4：更换 NV 电池</block>
+  <block id="b872d46d1b1391643aea9ed8377ec3e1" category="paragraph">在损坏的控制器内找到有故障的 NV 电池并进行更换。</block>
+  <block id="8bd15bb00c8a8a4e533704a40a89b456" category="section-title">第 7 步：完成 NV 电池更换</block>
+  <block id="349183e8ca3928a2b870cc77a10e1248" category="summary">更换 EF50 或 EF80 存储系统中出现故障或损坏的电源装置 (PSU)，确保系统持续获得稳定运行所需的电源。</block>
+  <block id="dceeff04d941cbb6cd1ccef359f31bcc" category="doc">更换电源 - EF50 和 EF80</block>
+  <block id="37cc75713523b3a835397946c3cd7732" category="list-text">通过查看 Recovery Guru 中的详细信息，确认电源出现问题。</block>
+  <block id="654ef16eef9220dfb025e429508a6e88" category="list-text">检查电源上的注意（琥珀色）LED 指示灯是否亮起，表明电源或其集成风扇出现故障。</block>
+  <block id="2a05f53d4bb59b1be52dceab0bed35c9" category="paragraph">在 Recovery Guru 中，选择 *Recheck* 以查看是否存在任何其他问题。</block>
+  <block id="74e6d9631e10aa772749f20a5a8dc455" category="list-text">更换电源。</block>
+  <block id="02bd64844fca45ee306a2ba6447ae65a" category="list-text">当电源出现故障时，必须尽快更换，以便存储系统具有冗余电源。</block>
+  <block id="65937acdb7ff33c26f402341b49fbd3d" category="list-text">通过从故障 PSU 拔下电源线、更换电源并重新连接电源线来更换电源。</block>
+  <block id="ac00a3fbb58d5d1ef60315598a07c427" category="image-alt">按 Tab 键解锁电池</block>
+  <block id="3c05df7462b23b6c10e264df1a62b979" category="paragraph"><block ref="3c05df7462b23b6c10e264df1a62b979" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bd4cb93e7de73428d0302a4304ba8680" category="paragraph"><block ref="bd4cb93e7de73428d0302a4304ba8680" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1901d33751b197b105a90f9b18a4dea2" category="list-text">从 SANtricity System Manager，选择菜单：Storage[Operations in Progress]。等待所有操作完成，然后继续下一步。</block>
+  <block id="98d0f7dd59308ff3880b540cac190b75" category="list-text">选择 *Support Resources* 图块。</block>
+  <block id="f387869f7a557e1cc8219cc95cc27aab" category="list-text">在 SANtricity System Manager 主页中，选择菜单：Storage[Operations in Progress]。</block>
+  <block id="677e17d0f6af629e3c51089d951e8804" category="list-text">从 SANtricity System Manager 的主页，选择菜单：Storage[Operations in Progress]。等待所有操作完成，然后继续下一步。</block>
+  <block id="de358e2366c759734e9ef11bca18e0f0" category="section-title">EF50、EF80 和 E4000 平台 TR</block>
+  <block id="8fadf6f06c1c7141b3d1d50a3f04de9b" category="inline-link">*TR-5017：EF80 阵列功能概述*</block>
+  <block id="a50dc4bc58fc9aeb344f5c50afe5bd3d" category="cell"><block ref="a50dc4bc58fc9aeb344f5c50afe5bd3d" category="inline-link-rx"></block></block>
+  <block id="471c08271cbd79cec487c18217043cf8" category="inline-link">*TR-5018：EF50 阵列功能概述*</block>
+  <block id="76a2bf2a2e94949266b4f433d9e7dec4" category="cell"><block ref="76a2bf2a2e94949266b4f433d9e7dec4" category="inline-link-rx"></block></block>
+  <block id="df9d0224acf659f41bfbe698c857e7d9" category="cell">介绍 EF80 全闪存阵列的硬件和软件功能以及最新的 SANtricity OS 功能。</block>
+  <block id="09de21b70314692a1e1ddf19936baa87" category="cell">介绍 EF50 全闪存阵列的硬件和软件功能以及最新的 SANtricity OS 功能。</block>
+  <block id="24235092ddcc9f87c101c022c66fc071" category="section-title">传统平台 TR</block>
+  <block id="23802a859f6ae1b445ff1966bda32d98" category="cell">介绍 EF600 全闪存阵列的硬件和软件功能以及新的 SANtricity 操作系统功能。</block>
+  <block id="8256681282922e6be84f144c3e473c30" category="cell">介绍 EF300 全闪存阵列的硬件和软件功能以及新的 SANtricity 操作系统功能。</block>
+  <block id="db5e8529b3d3c60d7eb8b977e1849f12" category="cell">描述 E2800 混合阵列的硬件和软件功能以及最新的 SANtricity OS 功能。</block>
+  <block id="742fc41c7d55420b012c2f61a7b1fb34" category="cell">描述 E5700 产品信息，包括最新版本的 SANtricity 引入的新硬件和软件功能。</block>
+  <block id="081f7c88129f20a8400b03d02acb95ef" category="summary">机架安装硬件用于将硬件安装在机架或机柜中。安装说明应包含在机架安装硬件包装盒中。但是，如果您需要访问安装说明，请使用以下适用链接。</block>
+  <block id="34eec1fae6323a8e4f97ad347dfd919c" category="doc">机架安装硬件 - E-Series</block>
+  <block id="d2bcf423a50f5653cd8acd2d0df3c786" category="paragraph">机架安装硬件用于将存储系统安装在机架或机柜中。安装说明应包含在机架安装硬件包装盒中。但是，如果您需要访问安装说明，请使用以下适用的链接。</block>
+  <block id="07dcaef6380ad89d6b40baeb5fe12386" category="paragraph">对于较新的存储系统，您可以通过查看 NetApp Hardware Universe 来验证受支持的机架安装硬件<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>。</block>
+  <block id="ef76083b2a817d43d97a99b5c1ab84de" category="inline-link">将 SuperRail 安装到四柱式机架中</block>
+  <block id="def756057f2e0bcb61c48d1b9b91e88a" category="paragraph">访问<block ref="7c995aee9e99f0106e0939755e02170a" category="inline-link-rx"></block>。</block>
+  <block id="f18295dddf592b09ebe3ecb8198400f5" category="open-title">EF280 和 EF50 控制器型号</block>
+  <block id="da53e25fac17ed4b3598ecf27a51f580" category="inline-link-macro">EF50 和 EF80 - 步骤 7：安装控制器</block>
+  <block id="4434988acf524d96633e90e0f6f754ca" category="paragraph">有关安装新的 EF80 和 EF50 控制器的信息，请参见 <block ref="345c0319eb4d606a371b99e69dba5aef" category="inline-link-macro-rx"></block>。</block>
+  <block id="2372045f1c00945f73e802f5f900ce1f" category="open-title">其他 E 系列控制器型号</block>
+  <block id="fc4c28bdfff97e04c0abc7b5eacb89e7" category="list-text">*EF50 和 EF80 镜像布线*</block>
+  <block id="21cc022125303ee507deea7548b5dcdb" category="paragraph">EF80 和 EF50 系统使用高速 200GbE/100GbE 外部连接，以实现两个控制器之间的控制器间通信。每个控制器都配有安装在插槽 4 中的专用接口卡。此卡提供两个端口，系统包括两根 0.5m 200GbE 电缆。</block>
+  <block id="b0bede6c9377df6d183f97279899a84f" category="paragraph">使用这些电缆连接控制器端口，如下所示：</block>
+  <block id="9c1ee96eedeec477f6b838b7b363c31b" category="list-text">控制器 A 上的端口 e4a 到控制器 B 上的端口 e4a</block>
+  <block id="cab9ad8281ff22baa132aab94b6f32fb" category="list-text">控制器 A 上的端口 e4b 到控制器 B 上的端口 e4b</block>
+  <block id="c7d53650f3917ef2b9428155109bc900" category="admonition">请务必按照所述方式连接电缆。有关详细信息，请参见<block ref="3b7ab90f06bb9d32e376349f50ba2152" category="inline-link-rx"></block>。</block>
+  <block id="e9b2fff16e7657bafb7580bf84badce7" category="paragraph">请勿使用任何其他主机端口（Slot 1、Slot 2 或 Slot 3）进行控制器间通信，因为不支持此操作。正确的控制器间布线对于 EF50 和 EF80 阵列的正确运行至关重要。</block>
+  <block id="4ba0a69e8f5142ca314982a9994e29f5" category="open-title">EF50 和 EF80 控制器升级兼容性</block>
+  <block id="7a4b6bdd0b51c5a96d9cfe09dc272966" category="cell">从 EF300 到 EF50 或 EF80</block>
+  <block id="6063afe46ba92ef601b9b32789169cd8" category="list-text">EF50 和 EF80 仅支持双工配置</block>
+  <block id="ec93e6ce8af3fc96dca794d8be12360a" category="list-text">EF50 和 EF80 支持 64Gb Fibre Channel 主机接口卡</block>
+  <block id="33251a923b1a509958c658fb36f199b3" category="list-text">EF80 支持双 200Gbe NVMe over RoCE 和 NVMe over Infiniband 主机接口卡</block>
+  <block id="206beb0a8bbb60504cfc6cbab46d5f34" category="list-text">EF50 和 EF80 每个控制器最多支持 24 个 NVMe 驱动器</block>
+  <block id="42751e79e966a0fe96552c1a07a45596" category="list-text">EF50 和 EF80 支持 TLC 和 QLC NVMe 驱动器配置</block>
+  <block id="1ad6b4858d4c3e09a3e2797cdb500f04" category="list-text">EF50 和 EF80 不支持基板主机端口</block>
+  <block id="87c7e7a2d481ccd7b4ed54aeb79f20cb" category="list-text">EF50 和 EF80 不支持同步或异步镜像</block>
+  <block id="4762b632235aed94daad2a5bc1771e4b" category="list-text">EF50 和 EF80 不支持远程存储卷</block>
+  <block id="a2e0d74fd53fb0d21de03183f2c78bc4" category="list-text">EF50 和 EF80 不支持精简配置卷</block>
+  <block id="9cfea1bb9e1014a42c39daecf62a47de" category="list-text">EF50 最多支持 2 个主机接口卡，EF80 最多支持 3 个主机接口卡。</block>
+  <block id="0a99fe14d85ff8506bf291475fa128a5" category="admonition">从 EF300 升级到 EF50 或 EF80 时，可以通过 SANtricity System Manager 用户界面配置主机协议。有关详细信息，请参见<block ref="2b1779a97b74f646b7f4e0d2ea7d75e0" category="inline-link-rx"></block>。</block>
+  <block id="1f0911d54059484e987c7e36bc15c3e1" category="list-text">EF50 和 EF80 不支持 SAS 扩展。</block>
+  <block id="d672a46d709a93dd1700cc71f2727f33" category="cell">从 EF600 到 EF80</block>
+  <block id="582a6652312e7d481febfe59bd6caf40" category="list-text">EF80 仅支持双工配置</block>
+  <block id="ca1c5ed7eda3a31773fea15341e1215d" category="list-text">EF80 支持 64Gb Fibre Channel 主机接口卡</block>
+  <block id="58b56ee156843e197b7925eaf83c5686" category="list-text">EF80 每个控制器最多支持 24 个 NVMe 驱动器</block>
+  <block id="1c59414033cf253bbfe93b9a24e48c2c" category="list-text">EF80 不支持基板主机端口</block>
+  <block id="5e25cbd1fcc5ab86c5b4d4be2cc2c9d6" category="list-text">EF80 不支持同步或异步镜像</block>
+  <block id="fdec69be1d337d0a56258c3664fa8a98" category="list-text">EF80 不支持远程存储卷</block>
+  <block id="f2edbcbed514cfdd6754a2f40f13db4b" category="list-text">EF80 不支持精简配置卷</block>
+  <block id="00ca182480baeeccf3bcb6bb5c1f98c3" category="list-text">EF80 最多支持 3 个主机接口卡。</block>
+  <block id="0265b5dbf554054dde3a98afc886c622" category="admonition">从 EF600 升级到 EF80 时，可以通过 SANtricity System Manager 用户界面配置主机协议。有关详细信息，请参见<block ref="b4bee00978fbe62a1f735b787be3116c" category="inline-link-rx"></block>。</block>
+  <block id="353b820726dde980fadda7f3d579a641" category="list-text">EF80 不支持 SAS 扩展。</block>
+  <block id="dafff188f3a06d1fdaa68a607c17f832" category="inline-link-macro">EF50 和 EF80 - 步骤 1：卸下控制器</block>
+  <block id="a5e57f188bcd8ee5650622c76daaf7ef" category="paragraph">有关从 EF280 和 EF50 存储系统中移除控制器的信息，请参见 <block ref="29089e25df4bea78aa196aee147175c2" category="inline-link-macro-rx"></block>。</block>
+  <block id="d789ee5d8d5244777090beeda7a82875" category="list-text">运行状况检查完成后，您可以单击每行右侧的省略号 (...) 查看更多信息并执行其他任务。</block>
+  <block id="ac5947d69f7ee9f8d3f2e9ee0483a85b" category="list-text">如果"解析自签名证书"对话框打开，请查看为不受信任的证书显示的信息。有关详细信息，您也可以单击表格远端的省略号，然后从弹出菜单中选择 *View*。</block>
+  <block id="f95817b2bc0b41d0e6a92b658b3204e4" category="list-text">从页面中选择一个证书，然后单击该行末尾的省略号。</block>
+  <block id="57e6a2c38c0c83841001bc8084252a54" category="list-text">选择行最右侧的省略号，然后从弹出菜单中选择 *Rename storage array*。</block>
+  <block id="2bcb50ee17148fb9fd0603f1ac802486" category="list-text">要查看有关证书的更多信息，请选择其行，选择该行末尾的省略号，然后单击 *View* 或 *Export*。</block>
+  <block id="b65e70a586056d9f45f1ba1eca4b2d5e" category="paragraph">下表介绍了用于 EF80、EF50、E4000、EF300、EF600、E2800/EF280 和 E5700/EF570 控制器嵌入式管理的最新 SANtricity 操作系统版本中的新功能。</block>
+  <block id="5de3bf25939bdfa37414108f0d590980" category="section-title">版本 12.0 中的新增功能</block>
+  <block id="ff0fa97cb252835f443a15ae7e9b46d4" category="admonition">SANtricity OS 12.0 版本仅与新的 EF80 和 EF50 全闪存存储系统兼容。</block>
+  <block id="bf183e9df2b499bf43a8c68e4fec9235" category="paragraph">新存储系统型号 – EF80 和 EF50 全闪存存储系统</block>
+  <block id="5c6dee44700e6c5c47a1e1f079ae7fce" category="paragraph">此版本引入了 EF80 和 EF50 全 NVMe 闪存存储系统。EF80 和 EF50 每个控制器支持 24 个 NVME SSD 驱动器和一个主机接口卡 (HIC)。支持的 NVMe over Fabrics 主机接口包括 NVMe over RoCE、NVMe over IB for EF80 和 NVMe over FC for EF50。支持的 SCSI 接口包括光纤通道。</block>
+  <block id="6f8772ffc1694efdc2041680c31dc990" category="paragraph">EF80 和 EF30 也支持 30TB 或 60TB 大小的大容量 NVMe SSD 驱动器。EF80 和 EF30 仅兼容动态磁盘池使用，不支持传统 RAID。</block>
+  <block id="786003cdc863f3aad3e6d8b6bfb3da10" category="paragraph">SANtricity System Manager 的新用户界面</block>
+  <block id="22b06c9a9c11b263cfc8b70ea106720b" category="paragraph">对于新的 EF80 和 EF50 控制器，SANtricity System Manager 用户界面经过重新设计，以提供更现代的外观和感觉。新界面包括左侧面板导航和增强的可用性，以简化管理任务。</block>
+  <block id="33c4e4a69bd4b16424ffdb3de34b0af4" category="paragraph">服务器证书的使用者备用名称 (SAN) 现在仅允许字母、数字和连字符</block>
+  <block id="817a0c8fef1c872c585c0d94e85a802a" category="paragraph">在 SANtricity System Manager 或 Unified Manager 中创建或编辑服务器证书时，使用者备用名称 (SAN) 字段现在只允许使用字母、数字和连字符。此更改可增强安全性，并确保与 SSL/TLS 证书的行业标准兼容。</block>
+  <block id="98fb326bd031cfdd062648c1e4359ef9" category="paragraph">对于基于 SSD 和 NVMe 的系统，动态磁盘池段大小现在默认为 32K</block>
+  <block id="1970e3f7efbd3974c3dc8ec9d2745647" category="paragraph">对于基于 SSD 和 NVMe 的系统上的动态磁盘池，默认数据段大小已更改为 32K。以前，这些系统的动态磁盘池默认段大小固定为 128K。此更改可优化涉及小型和大型 I/O 操作混合的工作负载的性能。</block>
+  <block id="acc2a3dd457f3b89ae3e07ece78ae970" category="paragraph">现在可在 SANtricity System Manager 中使用脚本编辑器</block>
+  <block id="286df7907589603c59edb63682f9667f" category="inline-link-macro">使用脚本编辑器</block>
+  <block id="171f0d90684ea668d5afe1022c27fb99" category="paragraph">SANtricity System Manager 中现在提供了新的脚本编辑器。脚本编辑器允许您创建或编辑脚本文件，将脚本文件保存到存储管理站的本地磁盘，或从磁盘加载脚本文件。脚本编辑器提供用于管理存储系统的语法检查和命令执行功能。有关详细信息，请参见 <block ref="c2af2b5868d8fcf6c64d5f4e052c1d4f" category="inline-link-macro-rx"></block>。</block>
+  <block id="2b21cb9530a6c7704a66108d45c196a1" category="inline-link-macro">可下载的 SMcli 命令行参数</block>
+  <block id="c7b277569ea9232e1708c189c4c38af7" category="paragraph">SMcli 中现在有一个新<block ref="14993f95e0d6fc04f9966b0c368a7ed6" prefix=" " category="inline-code"></block>参数。此新参数允许您查找与存储阵列关联的所有 SCSI 本机块设备。有关详细信息，请参见<block ref="391452592dd6d4101b3a240969ca8672" category="inline-link-macro-rx"></block>。</block>
+  <block id="a5302be9e5d09f8d45fab47dcbe1907c" category="inline-link-macro">查看 iSCSI 统计数据包</block>
+  <block id="809701d680e9fe62bb27c816be37d1ce" category="paragraph">在 System Manager 的 View iSCSI Statistics Packages 页面下，现在提供了新的 Ethernet Kernel Statistics 选项。此新选项允许您查看 iSCSI 设备的平台内核驱动程序的统计信息。有关详细信息，请参见 <block ref="e06656598852b432960957ceca80ecb8" category="inline-link-macro-rx"></block>。</block>
+  <block id="38833d44319a29abce252a75db2a1f8b" category="sidebar">SANtricity System Manager 12.0</block>
+  <block id="12552cabe7cc02a88100da5f5c4c0b2d" category="sidebar">SANtricity Unified Manager 8</block>
+  <block id="c91faa8fa5379f94c18777a9515b9168" category="sidebar">执行基于 RoCE 的 NVMe 特定任务</block>
+  <block id="477a44c679560f083fcea73a8a50959d" category="sidebar">EF50 和 EF80</block>
+  <block id="706c1d4933d296d42d61b064f4e637ae" category="sidebar">安装工作流</block>
+  <block id="2b4c30fb054686456c65fcf2f769f659" category="sidebar">准备安装</block>
+  <block id="ea6245a5aad1d347d3bfd8727ccbe15c" category="sidebar">电缆硬件</block>
+  <block id="7b2ca066e862da1c95471b425468af14" category="sidebar">开启系统电源</block>
+  <block id="fad3eebd1aa676638de5e9e932b52f40" category="sidebar">完成系统设置</block>
+  <block id="7dd431cc03f43f663695fa547eddc199" category="sidebar">维护概述</block>
+  <block id="2c7a7771e539f2607f0d26dda217a9ea" category="sidebar">EF50 和 EF80 控制器</block>
+  <block id="4f46fe04ed7debd30ef1d3c151e24935" category="sidebar">控制器更换工作流</block>
+  <block id="e7fc429a9fe4efe32f4c14434a1cf635" category="sidebar">准备系统</block>
+  <block id="e675b7845041d1a89668c289f7f49020" category="sidebar">离线控制器</block>
+  <block id="9c21b9a95e80e599c60b7012bb970a3f" category="sidebar">联机控制器</block>
+  <block id="40b375b6007e5a697e97e419f1fb91c5" category="sidebar">完整控制器更换</block>
+  <block id="940fc0b5e0fa8e55af3a0a0a14398e22" category="sidebar">EF50 和 EF80 I/O 模块</block>
+  <block id="1ca4e63b42d944e09b1132b7f6f56b66" category="sidebar">I/O 模块概述</block>
+  <block id="db77cc51d1e45daf8e890b492be12264" category="sidebar">更换 I/O 模块</block>
+  <block id="f026d0a834b5192638b18ee631266375" category="sidebar">升级 I/O 模块</block>
+  <block id="fe377799fa9a443d32452d6d45334541" category="sidebar">I/O 模块主机协议</block>
 </blocks>

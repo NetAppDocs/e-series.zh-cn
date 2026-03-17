@@ -66,6 +66,25 @@ NOTE: 对于E4000控制器、只有光纤通道连接才支持镜像。
 
 
 
+* *EF50 和 EF80 镜像布线*
++
+EF80 和 EF50 系统使用高速 200GbE/100GbE 外部连接，以实现两个控制器之间的控制器间通信。每个控制器都配有安装在插槽 4 中的专用接口卡。此卡提供两个端口，系统包括两根 0.5m 200GbE 电缆。
+
++
+使用这些电缆连接控制器端口，如下所示：
+
++
+** 控制器 A 上的端口 e4a 到控制器 B 上的端口 e4a
+** 控制器 A 上的端口 e4b 到控制器 B 上的端口 e4b
++
+
+NOTE: 请务必按照所述方式连接电缆。有关详细信息，请参见 https://docs.netapp.com/us-en/e-series/install-hw-ef50-ef80/install-cable.html#step-1-cable-the-inter-controller-mirroring-connections["用缆线连接控制器间镜像连接 - EF50 和 EF80"]。
+
+
+
++
+请勿使用任何其他主机端口（Slot 1、Slot 2 或 Slot 3）进行控制器间通信，因为不支持此操作。正确的控制器间布线对于 EF50 和 EF80 阵列的正确运行至关重要。
+
 
 
 
@@ -76,6 +95,60 @@ NOTE: 对于E4000控制器、只有光纤通道连接才支持镜像。
 
 [role="tabbed-block"]
 ====
+.EF50 和 EF80 控制器升级兼容性
+--
+[cols="h,d,d,d"]
+|===
+| 升级路径 | 电池 | 功能支持 | SAS-3 磁盘架 
+
+
+| 从 EF300 到 EF50 或 EF80  a| 
+订购新电池。
+ a| 
+* EF50 和 EF80 仅支持双工配置
+* EF50 和 EF80 支持 64Gb Fibre Channel 主机接口卡
+* EF80 支持双 200Gbe NVMe over RoCE 和 NVMe over Infiniband 主机接口卡
+* EF50 和 EF80 每个控制器最多支持 24 个 NVMe 驱动器
+* EF50 和 EF80 支持 TLC 和 QLC NVMe 驱动器配置
+* EF50 和 EF80 不支持基板主机端口
+* EF50 和 EF80 不支持同步或异步镜像
+* EF50 和 EF80 不支持远程存储卷
+* EF50 和 EF80 不支持精简配置卷
+* EF50 最多支持 2 个主机接口卡，EF80 最多支持 3 个主机接口卡。
+
+
+
+NOTE: 从 EF300 升级到 EF50 或 EF80 时，可以通过 SANtricity System Manager 用户界面配置主机协议。有关详细信息，请参见 https://docs.netapp.com/us-en/e-series/maintenance-ef50-ef80/io-module-change-protocol.html["更改主机 I/O 模块协议 - EF50 和 EF80"]。
+ a| 
+* EF50 和 EF80 不支持 SAS 扩展。
+
+
+
+
+| 从 EF600 到 EF80  a| 
+订购新电池。
+ a| 
+* EF80 仅支持双工配置
+* EF80 支持 64Gb Fibre Channel 主机接口卡
+* EF80 支持双 200Gbe NVMe over RoCE 和 NVMe over Infiniband 主机接口卡
+* EF80 每个控制器最多支持 24 个 NVMe 驱动器
+* EF50 和 EF80 支持 TLC 和 QLC NVMe 驱动器配置
+* EF80 不支持基板主机端口
+* EF80 不支持同步或异步镜像
+* EF80 不支持远程存储卷
+* EF80 不支持精简配置卷
+* EF80 最多支持 3 个主机接口卡。
++
+
+NOTE: 从 EF600 升级到 EF80 时，可以通过 SANtricity System Manager 用户界面配置主机协议。有关详细信息，请参见 https://docs.netapp.com/us-en/e-series//maintenance-ef50-ef80/io-module-change-protocol.html["更改主机 I/O 模块协议 - EF50 和 EF80"]。
+
+
+ a| 
+* EF80 不支持 SAS 扩展。
+
+
+|===
+--
 .E4000控制器升级兼容性
 --
 [cols="h,d,d,d"]
@@ -191,7 +264,7 @@ E2700不支持原有快照。
  a| 
 E2700不支持原有快照。
  a| 
-5400、E5500和E5600控制器不得置于SAS-3磁盘架中。
+不得将E5400、E5500和E5600控制器置于SAS-3磁盘架中。
 
 
 

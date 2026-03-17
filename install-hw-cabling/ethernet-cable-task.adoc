@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: cabling, cables, ethernet cabling, ethernet cable, out of band, direct topology, fabric topology, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C 
 summary: 将存储系统连接到以太网网络以进行带外管理。 
 ---
-= 管理工作站的以太网布线(E系列)
+= 管理站的以太网布线 - E-Series
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -13,9 +13,13 @@ summary: 将存储系统连接到以太网网络以进行带外管理。
 [role="lead"]
 您可以将存储系统连接到以太网网络，以便进行带外存储阵列管理。所有存储阵列管理连接都必须使用以太网缆线。
 
+[NOTE]
+====
+某些存储系统在每个控制器上只有一个带外 Ethernet 管理端口。
 
-NOTE: EF300、EF600和E4000只有一个带外以太网管理端口。
+有关特定于存储系统的缆线连接说明，请参阅 link:../getting-started/getup-run-concept.html["E系列快速入门"^] 并单击特定存储系统的链接。
 
+====
 
 
 == 直接拓扑

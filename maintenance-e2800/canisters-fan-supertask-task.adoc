@@ -103,7 +103,7 @@ Save all packing material for use when returning the failed fan.
 
 . 按下橙色卡舌以释放风扇箱手柄。
 +
-image::../media/28_dwg_e2860_de460c_single_fan_canister_with_orange_tab_callout_maint-e2800.gif[]
+image::../media/28_dwg_e2860_de460c_single_fan_canister_with_orange_tab_callout_maint-e2800.gif[风扇罐释放卡舌]
 
 +
 按下 * （ 1 ） * _tab 以释放风扇箱把手

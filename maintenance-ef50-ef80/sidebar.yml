@@ -1,0 +1,44 @@
+---
+section: maintenance-ef50-ef80
+title: EF50 和 EF80
+entries:
+- title: 维护概述
+  url: "/maintenance-ef50-ef80/maintain-overview.html"
+- title: 控制器
+  pdf-filename: EF50 和 EF80 控制器
+  entries:
+  - title: 控制器更换工作流
+    url: "/maintenance-ef50-ef80/controller-replace-workflow.html"
+  - title: 查看要求
+    url: "/maintenance-ef50-ef80/controller-replace-requirements.html"
+  - title: 准备系统
+    url: "/maintenance-ef50-ef80/controller-replace-prepare.html"
+  - title: 离线控制器
+    url: "/maintenance-ef50-ef80/controller-replace-offline-controller.html"
+  - title: 更换控制器
+    url: "/maintenance-ef50-ef80/controller-replace-move-hardware.html"
+  - title: 联机控制器
+    url: "/maintenance-ef50-ef80/controller-replace-online-controller.html"
+  - title: 完整控制器更换
+    url: "/maintenance-ef50-ef80/controller-replace-complete-replacement.html"
+- title: DIMM
+  url: "/maintenance-ef50-ef80/dimm-replace.html"
+- title: 驱动器
+  url: "/maintenance-ef50-ef80/drive-replace.html"
+- title: 风扇
+  url: "/maintenance-ef50-ef80/fan-replace.html"
+- title: I/O 模块
+  pdf-filename: EF50 和 EF80 I/O 模块
+  entries:
+  - title: I/O 模块概述
+    url: "/maintenance-ef50-ef80/io-module-overview.html"
+  - title: 更换 I/O 模块
+    url: "/maintenance-ef50-ef80/io-module-replace.html"
+  - title: 升级 I/O 模块
+    url: "/maintenance-ef50-ef80/io-module-upgrade.html"
+- title: I/O 模块主机协议
+  url: "/maintenance-ef50-ef80/io-module-change-protocol.html"
+- title: NV 电池
+  url: "/maintenance-ef50-ef80/nvdimm-battery-replace.html"
+- title: Power supply
+  url: "/maintenance-ef50-ef80/power-supply-replace.html"

@@ -22,7 +22,7 @@ summary: 在阵列端配置 iSCSI 网络。
 
 
 .关于此任务
-此任务介绍如何从 System Manager 的硬件页面访问 iSCSI 端口配置。您也可以从菜单： System[ 设置 > 配置 iSCSI 端口 ] 访问配置。
+此任务介绍如何从 System Manager 的硬件页面访问 iSCSI 端口配置。您还可以从菜单访问配置：System[Settings > System > Configure iSCSI ports]。
 
 .步骤
 . 在浏览器中，输入以下 URL ： ` +https://<DomainNameOrIPAddress>+`
@@ -40,11 +40,7 @@ summary: 在阵列端配置 iSCSI 网络。
 +
 您稍后将使用此向导完成其他设置任务。
 
-. 选择 * 硬件 * 。
-. 如果图形显示了驱动器，请单击 * 显示磁盘架背面 * 。
-+
-此图将发生变化，以显示控制器，而不是驱动器。
-
+. 从左侧面板中，选择菜单：Hardware[Controllers and components]。
 . 单击包含要配置的 iSCSI 端口的控制器。
 +
 此时将显示控制器的上下文菜单。

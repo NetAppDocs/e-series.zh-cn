@@ -1,0 +1,5 @@
+= 
+:allow-uri-read: 
+
+
+如套件附带的 RMA 说明中所述，将故障部件退回 NetApp。有关更多信息，请参阅 https://mysupport.netapp.com/site/info/rma["零件退货和更换"]页面。

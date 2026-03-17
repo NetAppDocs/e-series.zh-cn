@@ -1,0 +1,256 @@
+---
+permalink: maintenance-ef50-ef80/io-module-replace.html 
+sidebar: sidebar 
+keywords: ef50, ef80 replace io module, replace hic, replace host interface card 
+summary: 使用相同类型的 I/O 模块更换 EF50 或 EF80 存储系统中出现故障的 I/O 模块，以将存储系统恢复到最佳操作状态。 
+---
+= 更换 I/O 模块 - EF50 和 EF80
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用相同类型的 I/O 模块更换 EF50 或 EF80 存储系统中出现故障的 I/O 模块，以将存储系统恢复到最佳操作状态。
+
+.关于此任务
+* 通过准备、将受损控制器脱机、更换出现故障的 I/O 模块、将控制器重新联机以及将出现故障的部件返回 NetApp 来更换 I/O 模块。
+* 在此过程中，使用术语 _I/O 模块_ 代替主机接口卡 (HIC)。
+* I/O 模块故障 LED（适用于所有四个插槽）不工作。它们始终处于关闭状态，因此无法用于验证故障状态。
++
+故障 LED 位于控制器上：插槽 1 和 2 的故障 LED 位于插槽 2 的右侧。插槽 3 和 4 的故障 LED 位于插槽 4 的左侧。
+
+* 无需从机箱中卸下受损控制器，因为在控制器就位的情况下可以访问 I/O 模块。
+* 在拔下任何 I/O 模块电缆之前，必须将受损的控制器脱机。
+* 您可以打开存储系统位置（蓝色）LED（位于存储系统和两个控制器的正面），以帮助物理定位受影响的存储系统。使用 SANtricity System Manager，选择*硬件* > *控制器和组件*，选择*控制器架*选项卡，然后从上下文菜单中选择*打开定位灯*。
+
+
+
+
+== 步骤 1：准备更换 I/O 模块
+
+通过收集必要的工具和设备，并备份存储系统的配置数据库，准备更换 I/O 模块。
+
+.步骤
+. 确保您已具备以下条件：
++
+** 更换 I/O 模块。
++
+确保用相同类型的 I/O 模块替换出现故障的 I/O 模块。您无法安装其他类型的 I/O 模块。
+
++
+存储系统中的每个控制器中必须具有相同类型和数量的 I/O 模块。
+
++
+
+CAUTION: *可能丢失数据访问权限* -- 存在不兼容或不匹配的 I/O 模块会导致控制器在通电时锁定。
+
+** 防静电腕带或您已采取其他防静电预防措施。
+** 平坦、无静电的工作表面。
+** 用于识别连接到故障 I/O 模块的每根电缆的标签。
+** 具有浏览器的管理站，可以访问受损控制器的 SANtricity System Manager。
++
+要打开 System Manager 界面，请将浏览器指向受损控制器的域名或 IP 地址。
+
+
+
+. 使用 SANtricity System Manager 备份存储系统的配置数据库：
++
+如果删除控制器时出现问题，您可以使用保存的文件还原您的配置。系统保存 RAID 配置数据库的当前状态，其中包括受损控制器上卷组和磁盘池的所有数据。
+
++
+.. 选择 * 支持 * > * 支持中心 * > * 诊断 * 。
+.. 选择 * 收集配置数据 * 。
+.. 选择 *Collect*。
++
+此文件将保存在浏览器的 "Downloads" 文件夹中，名为 * configurationData-<arrayName>-<DateTime>.7z* 。
+
+
+
+
+
+
+
+== 步骤 2：将控制器置于脱机状态
+
+将受损的控制器脱机，以便您可以安全地执行此过程的其余部分。
+
+.关于此任务
+每当您将控制器置于离线状态时，都需要等待至少一分钟才能使控制器恢复联机。此等待期允许存储系统更新控制器的状态，并确保将所有缓存数据写入驱动器。
+
+.步骤
+. 如果受损控制器尚未离线，请使用 SANtricity System Manager 将其置于离线状态：
++
+.. 选择 *Hardware* > *Controllers and components* 以显示控制器。
+.. 选择要置于脱机状态的控制器以显示其内容菜单。
+.. 选择 *Place offline*，然后确认您要执行此操作。
++
+
+NOTE: 如果您使用尝试脱机的控制器访问 SANtricity System Manager，则会显示 SANtricity System Manager Unavailable 消息。选择*连接到备用网络连接*以使用其他控制器自动访问 SANtricity System Manager。
+
+
+
+. 等待 SANtricity System Manager 将控制器状态更新为脱机。
++
+
+CAUTION: 更新状态之前，请勿开始任何其他操作。
+
+. 使用 Recovery Guru 确认移除有故障的组件是安全的：
++
+.. 选择 *Recheck*。
+.. 确认详细信息区域中的 *OK to remove* 字段显示 *Yes*。
++
+
+CAUTION: 如果 *OK to remove* 字段未显示 *Yes*，请不要继续移除有故障的组件。相反，请使用 Recovery Guru 对问题进行故障排除。
+
+
+
+
+
+
+
+== 第 3 步：更换 I/O 模块
+
+从出现故障的 I/O 模块中拔下电缆，将其更换为更换的 I/O 模块，然后连接更换的 I/O 模块。
+
+.步骤
+. 如果您尚未接地，请正确接地。
+. 从出现故障的 I/O 模块中拔下电缆。
++
+请务必给电缆贴上标签，以便了解电缆的来源。
+
+. 从控制器上卸下发生故障的 I/O 模块：
++
+image::../media/drw_g_io_module_replace_ieops-1900.svg[移除 I/O 模块]
+
++
+[cols="1,4"]
+|===
+
+
+ a| 
+image::../media/icon_round_1.png[标注编号 1]
+ a| 
+逆时针旋转 I/O 模块指旋螺钉以松开。
+
+
+
+ a| 
+image::../media/icon_round_2.png[标注编号 2]
+ a| 
+使用左侧的端口标签选项卡和指旋螺钉将 I/O 模块从控制器中拉出。
+
+|===
+. 拆开更换 I/O 模块的包装，并将其放置在存储系统附近的平坦无静电表面上。
++
+保存包装材料，以便在退回有故障的 I/O 模块时使用。
+
+. 将更换 I/O 模块安装到目标插槽中：
++
+.. 将 I/O 模块与插槽的边缘对齐。
+.. 轻轻将 I/O 模块完全推入插槽，确保将模块正确插入连接器。
++
+您可以使用左侧的选项卡和指旋螺钉推入 I/O 模块。
+
+.. 顺时针旋转指旋螺钉以拧紧。
+
+
+. 连接 I/O 模块电缆。
+
+
+
+
+== 步骤 4：将控制器联机
+
+使受损的控制器恢复联机。
+
+.步骤
+. 使用 SANtricity System Manager 将控制器置于联机状态：
++
+.. 选择 *Hardware* > *Controllers and components* 以显示控制器。
+.. 选择要置于联机状态的控制器以显示其上下文菜单。
+.. 选择 *Place online*，然后确认您要执行此操作。
++
+系统将控制器置于联机状态。
+
+
+
+. 在控制器启动时，检查控制器 LED 。
++
+重新建立与另一控制器的通信时：
+
++
+** 琥珀色警示 LED 仍保持亮起状态。
+** 主机链路 LED 可能亮起，闪烁或熄灭，具体取决于主机接口。
+
+
+. 当控制器恢复联机时：
++
+.. 确认其状态为最佳。
+.. 确认控制器上的注意 LED 熄灭。
++
+如果状态不是 Optimal 或任何 Attention LED 指示灯亮起，请确认所有电缆都已正确安装，并且控制器已正确安装。如有必要，请卸下并重新安装控制器。
+
++
+
+NOTE: 如果无法解决问题，请联系 https://mysupport.netapp.com/site/global/dashboard["NetApp 支持"^]，然后再继续此过程。如果需要，请使用 SANtricity System Manager 为您的存储系统收集支持数据。
+
+
+
+
+
+
+
+== 第 5 步：完成 I/O 模块更换
+
+使用 SANtricity System Manager，确保已安装最新版本的 SANtricity 操作系统，验证所有卷都已返回到其拥有的控制器，并收集支持数据，以便您可以恢复操作。
+
+.步骤
+. 请确保存储系统上已安装最新版本的 SANtricity 操作系统：
++
+.. 选择 *Support* > *Upgrade Center*
+.. 根据需要安装最新版本。
+
+
+. 验证所有卷都已返回到其拥有的控制器：
++
+[cols="1,2"]
+|===
+| 条件 | 操作 
+
+
+ a| 
+Recovery Guru 存在并指示卷不在其首选路径上（未返回到其所属控制器）
+ a| 
+.. 将卷重新分配给其拥有的控制器，通过选择 *Storage* > *Volumes* > *More* ，然后从下拉菜单中选择 *Redistribute volumes* 。
+.. 通过检查 Recovery Guru 是否存在并且仍然指示卷不在其首选路径上，验证所有卷已重新分配给其拥有的控制器。
+
+
+
+NOTE: 如果卷仍未返回到其拥有的控制器，请联系  https://mysupport.netapp.com/site/global/dashboard["NetApp 支持"]。
+
+
+
+ a| 
+Recovery Guru 不存在（似乎所有卷都已返回给其拥有的控制器）
+ a| 
+通过选择 *Storage* > *Volumes* > *More* 来验证所有卷是否已返回其拥有的控制器，然后从下拉菜单中选择 *Change volume ownership* 以查看卷所有者。
+
+|===
+. 为您的存储系统收集支持数据：
++
+.. 选择 * 支持 * > * 支持中心 * > * 诊断 * 。
+.. 选择 * 收集支持数据 * 。
+.. 选择 *Collect*。
++
+此文件将保存在浏览器的 "Downloads" 文件夹中，名为 * support-data.7z* 。
+
+
+
+
+
+
+
+== 第 6 步：将故障部件退回 NetApp
+
+如套件附带的 RMA 说明中所述，将故障部件退回 NetApp。有关更多信息，请参阅 https://mysupport.netapp.com/site/info/rma["零件退货和更换"]页面。

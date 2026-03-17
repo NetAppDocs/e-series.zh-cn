@@ -58,6 +58,15 @@ TIP: 要确保控制器电池正确安装在 E5XX 控制器驱动器托盘中，
 
 == 第 2 步：安装新的控制器箱
 
+[role="tabbed-block"]
+====
+.EF280 和 EF50 控制器型号
+--
+有关安装新的 EF80 和 EF50 控制器的信息，请参见 link:https://docs.netapp.com/us-en/e-series/maintenance-ef50-ef80/controller-replace-move-hardware.html#step-7-install-the-controller["EF50 和 EF80 - 步骤 7：安装控制器"^]。
+
+--
+.其他 E 系列控制器型号
+--
 将新控制器箱安装到控制器架中。
 
 .步骤
@@ -72,5 +81,7 @@ TIP: 要确保控制器电池正确安装在 E5XX 控制器驱动器托盘中，
 
 
 
+--
+====
 .下一步是什么？
 如果启用了驱动器安全保护功能，请转至link:upgrade-unlock-drives-task.html["解锁驱动器"]。否则，请转至link:complete-upgrade-controllers-task.html["完成控制器升级"]。

@@ -1,0 +1,23 @@
+= 
+:allow-uri-read: 
+
+
+.步骤
+. 在 SANtricity System Manager 中，访问受损控制器的存储控制器配置文件：
++
+.. 转至 *Support* > *Support Center*。
+.. 在支持资源页面中，选择 *Storage Array Profile*。
+.. 向下滚动或使用搜索字段查找 * 数据缓存模块 * 信息。
+
+
+. 如果 DIMM 显示以下任一条件，请记下 DIMM 的位置并继续此过程以更换 DIMM。
++
+如果这些条件都不存在，则无需更换 DIMM。退出此过程。
+
++
+** 出现故障的 DIMM
+** DIMM 将 *Data Cache Module* 报告为非最佳
+** *Data Cache Module* 容量不匹配的 DIMM
+
+
+

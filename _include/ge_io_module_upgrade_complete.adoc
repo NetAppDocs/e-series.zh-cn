@@ -1,0 +1,59 @@
+= 
+:allow-uri-read: 
+
+
+.步骤
+. 确保安装了最新版本的 SANtricity OS：
++
+.. 选择 *Support* > *Upgrade Center*。
+.. 根据需要安装最新版本。
+
+
+. 确认所有卷都已返回到其拥有的控制器：
++
+.. 选择 *Storage* > *Volumes*。
+.. 在 *All Volumes* 页面中，验证卷是否已分发到其所属控制器。
+.. 选择 *更多* > *更改卷所有权* 以查看卷所有者。
+
+
+. 下一步取决于卷是否返回到其拥有的控制器：
++
+[cols="1,2"]
+|===
+| 条件 | 操作 
+
+
+ a| 
+所有卷均由其拥有的控制器拥有
+ a| 
+转至下一步。
+
+
+
+ a| 
+未将任何卷返回给其拥有的控制器
+ a| 
+选择 *Storage* > *Volumes* > *More* ，然后从下拉菜单中选择 *Redistribute volumes* ，将卷返回给其拥有的控制器。
+
+
+
+ a| 
+在自动分发或手动分发后，仅将部分卷返回给其拥有的控制器
+ a| 
+检查 Recovery Guru 以查找主机连接问题。
+
+如果没有 Recovery Guru 存在，或者如果在执行恢复 guru 步骤后，卷仍未返回给其拥有的控制器，请在继续此过程之前联系 https://mysupport.netapp.com/site/global/dashboard["NetApp 支持"]。
+
+|===
+. 为您的存储系统收集支持数据：
++
+.. 选择 * 支持 * > * 支持中心 * > * 诊断 * 。
+.. 选择 * 收集支持数据 * 。
+.. 选择 *Collect*。
++
+此文件将保存在浏览器的 "Downloads" 文件夹中，名为 * support-data.7z* 。
+
+
+
+. 如果需要验证和更改主机 I/O 模块协议，请使用此过程xref:io-module-change-protocol.html[更改 EF50 或 EF80 的主机 I/O 模块协议]。
+

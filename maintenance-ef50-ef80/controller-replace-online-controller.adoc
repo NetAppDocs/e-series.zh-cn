@@ -1,0 +1,76 @@
+---
+permalink: maintenance-ef50-ef80/controller-replace-online-controller.html 
+sidebar: sidebar 
+keywords: ef50, ef80, how to online the controller 
+summary: '为 EF50 或 EF80 存储系统安装更换控制器后，请确认更换控制器的 IP 地址，将控制器置于联机状态，并确认存储系统状态为"最佳"。' 
+---
+= 在线更换控制器 - EF50 和 EF80
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+为 EF50 或 EF80 存储系统安装更换控制器后，请确认其 IP 地址，将控制器置于联机状态，并确认存储系统状态为"最佳"。
+
+.步骤
+. 下一步取决于受损的控制器是否使用 DHCP 作为 IP 地址：
++
+[cols="1,2"]
+|===
+| 条件 | 操作 
+
+
+ a| 
+受损的控制器未将 DHCP 用于 IP 地址
+ a| 
+更换控制器采用您移除的受损控制器的 IP 地址。
+
+转至下一步。
+
+
+
+ a| 
+受损的控制器使用 DHCP 作为 IP 地址
+ a| 
+请网络管理员将受损控制器的 DNS/网络和 IP 地址与替换控制器的 MAC 地址相关联。
+
+|===
+. 使用 SANtricity System Manager 将控制器置于联机状态。
++
+.. 选择 *Hardware* > *Controllers and components* 以显示控制器。
+.. 选择您替换的控制器以显示其内容菜单。
+.. 选择 *Place online*。
+
+
+. 当控制器启动时，请检查控制器 LED，以确保与其他控制器的通信已重新建立：
++
+** 琥珀色警示 LED 仍保持亮起状态。
+** 主机链路 LED 可能亮起，闪烁或熄灭，具体取决于主机接口。
+
+
+. 当控制器恢复联机时、检查Recovery Guru中是否报告NV挽 不匹配。
++
+如果报告 NVSRAM 不匹配，请使用以下 SMcli 命令升级 NVSRAM。如果数组不是 https 安全的，则需要  `-k` 参数。
+
++
+[listing]
+----
+SMcli <controller A IP> <controller B IP> -u admin -p <password> -k -c "download storageArray NVSRAM file=\"C:\Users\testuser\Downloads\NVSRAM .dlp file>\" forceDownload=TRUE;"
+----
++
+
+NOTE: 如果无法完成 SMcli 命令，请联系 https://www.netapp.com/company/contact-us/support/["NetApp 支持"^]或登录 https://mysupport.netapp.com["NetApp 支持站点"^]以创建案例。
+
+. 确认存储系统的状态为 Optimal，并且控制器的 Attention LED 已关闭。
++
+如果状态不是 Optimal 或任何 Attention LED 指示灯亮起，请确认所有电缆都已正确安装，并且控制器已正确安装。如有必要，请卸下并重新安装控制器。
+
++
+
+NOTE: 如果您无法解决此问题，请联系 https://www.netapp.com/company/contact-us/support/["NetApp 支持"^]。
+
+
+
+.下一步是什么？
+将新控制器置于联机状态后，link:controller-replace-complete-replacement.html["完成控制器更换"]。

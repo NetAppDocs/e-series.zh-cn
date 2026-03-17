@@ -1,0 +1,29 @@
+= 
+:allow-uri-read: 
+
+
+.步骤
+. 插入两个控制器上的电源线。
++
+控制器开始引导。
+
+. 检查控制器上的 LED，以确保控制器之间的通信已重新建立：
++
+** 注意 LED 保持亮起。
+** 主机链路 LED 可能亮起，闪烁或熄灭，具体取决于主机接口。
+
+
+. 当控制器恢复联机时：
++
+.. 确认其状态为 Optimal。
+.. 确认每个控制器上的注意 LED 熄灭。
++
+如果状态不是 Optimal 或任何注意 LED 指示灯亮起，请确认所有电缆均已正确安装。
+
++
+
+NOTE: 如果您无法解决问题，请联系 https://www.netapp.com/company/contact-us/support/["NetApp 支持"^]。如果需要，请使用 SANtricity System Manager 为您的存储系统收集支持数据。
+
+
+
+

@@ -31,7 +31,7 @@ summary: 验证主机是否可以将数据写入 LUN 并将其读回。
 ----
 . 要验证多路径是否正常工作，请更改卷所有权。
 +
-.. 在 SANtricity 系统管理器图形用户界面中，转到 * 存储 * > * 卷 * ，然后选择 * 更多 * > * 更改所有权 * 。
+.. 在 SANtricity System Manager 中，转到 *Storage* > *Volumes*，然后选择 *ellipsis icon* > *Change volume ownership*。
 .. 在更改卷所有权对话框中，使用 * 首选所有者 * 下拉列表为列表中的一个卷选择另一个控制器，然后确认此操作。
 .. 验证您是否仍可访问 LUN 上的文件。
 +

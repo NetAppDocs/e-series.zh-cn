@@ -55,6 +55,10 @@ RoCE 环境中的 NVMe 启动程序配置包括安装和配置 RDMA-core 和 NVM
 ----
 # yum install NetworkManager-initscripts-updown
 ----
++
+
+NOTE: RHEL 10 没有网络脚本。
+
 . 获取主机NQN、该主机将用于为阵列配置主机。
 +
 [listing]
