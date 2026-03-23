@@ -5939,7 +5939,6 @@
   <block id="50d72a9168ff12be707b9a6df88aff51" category="paragraph">了解如何在两柱机架或 NetApp 系统机柜中安装 E2860 ， E5760 或 DE460 存储系统。</block>
   <block id="1759ad5628dc48bcbb4047581abc3ad3" category="paragraph">如果机架安装硬件附带了相关说明，请参见这些说明，了解如何安装导轨。有关机架安装的其他说明，请参见 <block ref="d52e431030e2f3e076bf966941775b1c" category="inline-link-macro-rx"></block>。</block>
   <block id="2222f7f1fb65f3c37db013addee24d45" category="admonition">对于方孔机柜，您必须先安装提供的锁紧螺母，以使用螺钉固定磁盘架的前后。</block>
-  <block id="46e9881ea158268bc1b45e5e23f0d6d8" category="admonition">一个空的磁盘架重约为 132 磅（ 60 千克）。要安全移动空的磁盘架，需要一台机械升降机或四个人使用升降把手。</block>
   <block id="7f91b3bbd1281f9b80cef4d909c6db05" category="list-text">如果要用手抬起磁盘架，请连接四个提升把手。向上推每个手柄，直到其卡入到位。</block>
   <block id="f8a163eecaf819af57298c9a255ffb1c" category="list-text">从底部支撑好磁盘架，将其滑入机柜。如果使用了升降把手，请在将升降架滑入机柜时一次将其卸下一组。要卸下手柄，请向后拉释放闩锁，向下推，然后从磁盘架中拉出。</block>
   <block id="8f57d3a728dbee93c91f52df708a0f03" category="list-text">安装驱动器。</block>
@@ -8390,7 +8389,6 @@
   <block id="761cf09b3611d19694e4252d15e1966c" category="paragraph"><block ref="761cf09b3611d19694e4252d15e1966c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6c3dcb573d56a5a30ff50b77529d877d" category="paragraph"><block ref="6c3dcb573d56a5a30ff50b77529d877d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a001b169c43b4d43c428e192c798f2d8" category="summary">了解如何在两柱机架或NetApp系统机柜中安装E4060或DE460C存储系统。</block>
-  <block id="0fad8e68b65c361bdee769f9dbd44528" category="admonition">一个空磁盘架重254.91千克(253.33磅)。要安全移动空的磁盘架，需要一台机械升降机或四个人使用升降把手。</block>
   <block id="003208e55218399fa55767bab82a621b" category="paragraph"><block ref="003208e55218399fa55767bab82a621b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b256a5fe8f6f56f5347aa122890f5806" category="inline-image-macro">保护磁盘架</block>
   <block id="9f0aa011ca589af7af02bb2e87f91985" category="paragraph"><block ref="9f0aa011ca589af7af02bb2e87f91985" category="inline-image-macro-rx" type="image"></block></block>
@@ -10691,4 +10689,5 @@
   <block id="d37b8d3a8d7d50a2d15245479531c53d" category="section-title">版本 12.00 中的新增功能</block>
   <block id="631e6d7ea44751bbf0471574f75f550e" category="admonition">SANtricity OS 12.00 版本仅与新的 EF80 和 EF50 全闪存存储系统兼容。</block>
   <block id="dcf1521fe2188852a3d1ae5493b83c24" category="sidebar">SANtricity System Manager 12.00</block>
+  <block id="24fe914c4c521099e3e5332138db4935" category="admonition">一个空架子重约 134 lb（61 kg）。要安全地移动空架子，需要使用机械化升降机或四个人使用升降把手。</block>
 </blocks>
