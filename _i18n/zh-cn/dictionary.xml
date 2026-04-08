@@ -10640,7 +10640,6 @@
   <block id="0265b5dbf554054dde3a98afc886c622" category="admonition">从 EF600 升级到 EF80 时，可以通过 SANtricity System Manager 用户界面配置主机协议。有关详细信息，请参见<block ref="b4bee00978fbe62a1f735b787be3116c" category="inline-link-rx"></block>。</block>
   <block id="353b820726dde980fadda7f3d579a641" category="list-text">EF80 不支持 SAS 扩展。</block>
   <block id="dafff188f3a06d1fdaa68a607c17f832" category="inline-link-macro">EF50 和 EF80 - 步骤 1：卸下控制器</block>
-  <block id="a5e57f188bcd8ee5650622c76daaf7ef" category="paragraph">有关从 EF280 和 EF50 存储系统中移除控制器的信息，请参见 <block ref="29089e25df4bea78aa196aee147175c2" category="inline-link-macro-rx"></block>。</block>
   <block id="d789ee5d8d5244777090beeda7a82875" category="list-text">运行状况检查完成后，您可以单击每行右侧的省略号 (...) 查看更多信息并执行其他任务。</block>
   <block id="ac5947d69f7ee9f8d3f2e9ee0483a85b" category="list-text">如果"解析自签名证书"对话框打开，请查看为不受信任的证书显示的信息。有关详细信息，您也可以单击表格远端的省略号，然后从弹出菜单中选择 *View*。</block>
   <block id="f95817b2bc0b41d0e6a92b658b3204e4" category="list-text">从页面中选择一个证书，然后单击该行末尾的省略号。</block>
@@ -10690,4 +10689,6 @@
   <block id="631e6d7ea44751bbf0471574f75f550e" category="admonition">SANtricity OS 12.00 版本仅与新的 EF80 和 EF50 全闪存存储系统兼容。</block>
   <block id="dcf1521fe2188852a3d1ae5493b83c24" category="sidebar">SANtricity System Manager 12.00</block>
   <block id="24fe914c4c521099e3e5332138db4935" category="admonition">一个空架子重约 134 lb（61 kg）。要安全地移动空架子，需要使用机械化升降机或四个人使用升降把手。</block>
+  <block id="9e70d8ecbcfbe7711ec544e1649bcd7e" category="open-title">EF80 和 EF50 控制器型号</block>
+  <block id="982b4a8532b7c0f3dfe46d6bac4642d5" category="paragraph">有关从 EF80 和 EF50 存储系统中移除控制器的信息，请参见 <block ref="29089e25df4bea78aa196aee147175c2" category="inline-link-macro-rx"></block>。</block>
 </blocks>

@@ -19,9 +19,9 @@ summary: 升级控制器的第一步是删除旧控制器以及电池。
 
 [role="tabbed-block"]
 ====
-.EF280 和 EF50 控制器型号
+.EF80 和 EF50 控制器型号
 --
-有关从 EF280 和 EF50 存储系统中移除控制器的信息，请参见 link:https://docs.netapp.com/us-en/e-series/maintenance-ef50-ef80/controller-replace-move-hardware.html#step-1-remove-the-controller["EF50 和 EF80 - 步骤 1：卸下控制器"^]。
+有关从 EF80 和 EF50 存储系统中移除控制器的信息，请参见 link:https://docs.netapp.com/us-en/e-series/maintenance-ef50-ef80/controller-replace-move-hardware.html#step-1-remove-the-controller["EF50 和 EF80 - 步骤 1：卸下控制器"^]。
 
 --
 .其他 E 系列控制器型号
