@@ -10685,10 +10685,12 @@
   <block id="e866b10ba89d5ee2fe179d93f938430c" category="inline-link">12.00 发行说明</block>
   <block id="15df5baea5d41e42b8be265c67488ea8" category="list-text"><block ref="15df5baea5d41e42b8be265c67488ea8" category="inline-link-rx"></block></block>
   <block id="c9f4c41100461402ef108c1e6ccc6adf" category="paragraph"><block ref="c9f4c41100461402ef108c1e6ccc6adf" category="inline-link-rx"></block></block>
-  <block id="d37b8d3a8d7d50a2d15245479531c53d" category="section-title">版本 12.00 中的新增功能</block>
-  <block id="631e6d7ea44751bbf0471574f75f550e" category="admonition">SANtricity OS 12.00 版本仅与新的 EF80 和 EF50 全闪存存储系统兼容。</block>
   <block id="dcf1521fe2188852a3d1ae5493b83c24" category="sidebar">SANtricity System Manager 12.00</block>
   <block id="24fe914c4c521099e3e5332138db4935" category="admonition">一个空架子重约 134 lb（61 kg）。要安全地移动空架子，需要使用机械化升降机或四个人使用升降把手。</block>
   <block id="9e70d8ecbcfbe7711ec544e1649bcd7e" category="open-title">EF80 和 EF50 控制器型号</block>
   <block id="982b4a8532b7c0f3dfe46d6bac4642d5" category="paragraph">有关从 EF80 和 EF50 存储系统中移除控制器的信息，请参见 <block ref="29089e25df4bea78aa196aee147175c2" category="inline-link-macro-rx"></block>。</block>
+  <block id="0766a0860283ed4bfb84c83d84f27eb7" category="section-title">版本 12.0R1 中的新增功能</block>
+  <block id="5daddfd6f05e5067c7a89f1710325e32" category="paragraph">此版本仅包含小的更改，没有新功能。有关此版本中更改的更多信息，请参见 E-Series SANtricity 操作系统 12.0R1 README。</block>
+  <block id="5de3bf25939bdfa37414108f0d590980" category="section-title">版本 12.0 中的新增功能</block>
+  <block id="ff0fa97cb252835f443a15ae7e9b46d4" category="admonition">SANtricity OS 12.0 版本仅与新的 EF80 和 EF50 全闪存存储系统兼容。</block>
 </blocks>
