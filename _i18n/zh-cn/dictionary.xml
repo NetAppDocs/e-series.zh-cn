@@ -9832,7 +9832,6 @@
   <block id="f0e003d8e910aac92eb678b35d88e454" category="list-text">当控制器恢复联机时，请使用 SANtricity System Manager 确认其状态为最佳。</block>
   <block id="c86f60fc7fcc7f12bacc87413a01f8ea" category="list-text">重新创建主机定义。</block>
   <block id="d5a35385e3c41cf9fd9e2f0a4a94c813" category="inline-link">在 SANtricity System Manager 中手动创建主机</block>
-  <block id="db8c72a9c6539d1e7ec1c1fb26b87ed0" category="paragraph">有关说明，请参见 <block ref="a53958d29b83920c5f55ec43c9dba875" category="inline-link-rx"></block> 程序。</block>
   <block id="1fc86e94ed7b025b1b598bb2f43d1407" category="paragraph">有关分步说明，请参见适用于您的存储系统的指南：</block>
   <block id="83e4a7b7f356dd5b4fc5814e9fd775dd" category="list-text">如果不知道存储系统中主机 I/O 模块上的协议，请使用 SANtricity System Manager 进行验证。</block>
   <block id="b285314b6b465f044f782ffdd9cc362d" category="list-text">请参阅 *Host I/O Protocol* 字段中显示的默认协议。</block>
@@ -10693,4 +10692,5 @@
   <block id="5daddfd6f05e5067c7a89f1710325e32" category="paragraph">此版本仅包含小的更改，没有新功能。有关此版本中更改的更多信息，请参见 E-Series SANtricity 操作系统 12.0R1 README。</block>
   <block id="5de3bf25939bdfa37414108f0d590980" category="section-title">版本 12.0 中的新增功能</block>
   <block id="ff0fa97cb252835f443a15ae7e9b46d4" category="admonition">SANtricity OS 12.0 版本仅与新的 EF80 和 EF50 全闪存存储系统兼容。</block>
+  <block id="c34bc836af57fee3bb2df387de995660" category="paragraph">有关说明，请参见 <block ref="b1f1a9dce5288488396d4b3c3e74b2f3" category="inline-link-rx"></block> 程序。</block>
 </blocks>
