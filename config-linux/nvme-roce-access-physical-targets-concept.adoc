@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: NVMe volume physical, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 您可以根据 Linux 版本配置定向到设备目标的 I/O 。 
 ---
-= 在E系列中为物理NVMe设备目标访问NVMe卷—Linux (基于RoCE的NVMe)
+= 从主机访问 E-Series 目标的 NVMe 卷 - Linux（NVMe over RoCE）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -13,75 +13,96 @@ summary: 您可以根据 Linux 版本配置定向到设备目标的 I/O 。
 [role="lead"]
 您可以根据所使用的操作系统（以及扩展多路径方法）配置定向到设备目标的 I/O 。
 
-对于RHEL 8、RHEL 9和SLES 15、Linux主机会将I/O定向到物理NVMe设备目标。原生 NVMe 多路径解决方案用于管理主机显示的单个表面上物理设备的底层物理路径。
+对于 RHEL 9、RHEL 10、SLES 15 和 SLES 16，本机 NVMe 多路径解决方案管理主机显示的单个明显 NVMe 设备的物理路径。因此，我们将 I/O 直接定向到主机的 NVMe 设备，而不是基于 SCSI 的设备映射器多路径 (DMMP) 等多路径设备。NVMe 设备位置的详细信息如下。
 
 
 
-== 物理 NVMe 设备是 I/O 目标
+== NVMe 设备是 I/O 目标
 
-最佳做法是对中的链路运行I/O `/dev/disk/by-id/nvme-eui.[uuid#]` 而不是直接连接到物理NVMe设备路径 `/dev/nvme[subsys#]n[id#]`。可以使用以下命令找到这两个位置之间的链接：
+. 输入以下命令以查找从 E-Series 阵列映射到此主机的卷。
++
+以下命令提供主机上的低级 NVMe 设备位置、设备映射到的阵列名称、Volume 名称、NSID、唯一 Volume ID、当前拥有的控制器和卷大小。
 
++
+[listing]
+----
+# nvme netapp smdevices
+/dev/nvme0n1, Array Name creG63-FN, Volume Name 1, NSID 1, Volume ID 00001b7f606ec75100a0980000ed289e, Controller B, 1.10TB
+/dev/nvme0n2, Array Name creG63-FN, Volume Name 2, NSID 2, Volume ID 0000128a6a0d045500a0980000ed27f4, Controller A, 536.87GB
+/dev/nvme0n3, Array Name creG63-FN, Volume Name 3, NSID 3, Volume ID 00001b81606ec75b00a0980000ed289e, Controller B, 536.87GB
+/dev/nvme0n4, Array Name creG63-FN, Volume Name 4, NSID 4, Volume ID 0000128c6a0d045700a0980000ed27f4, Controller A, 214.75GB
+----
+. 对 `/dev/disk/by-id/nvme-eui.[Volume ID#]`中的链接运行 I/O。
++
+中的链接 `/dev/disk/by-id/nvme-eui.[Volume ID#]`是确定性的，不会更改。避免使用低级别 NVMe 设备位置 `(/dev/nvme[subsys#]n[id#])`，因为它可能会发生变化。可以使用以下命令找到这两个位置之间的链接：
+
++
 [listing]
 ----
 # ls /dev/disk/by-id/ -l
-lrwxrwxrwx 1 root root 13 Oct 18 15:14 nvme-eui.0000320f5cad32cf00a0980000af4112 -> ../../nvme0n1
-----
-I/O运行到 `/dev/disk/by-id/nvme-eui.[uuid#]` 将直接通过 `/dev/nvme[subsys#]n[id#]` 它使用原生 NVMe多路径解决方案 对其下的所有路径进行虚拟化。
 
-您可以运行以下命令来查看路径：
+lrwxrwxrwx 1 root root 13 May 19 15:07 nvme-eui.0000128a6a0d045500a0980000ed27f4 -> ../../nvme0n2
+lrwxrwxrwx 1 root root 13 May 19 15:07 nvme-eui.0000128c6a0d045700a0980000ed27f4 -> ../../nvme0n4
+lrwxrwxrwx 1 root root 13 May 19 15:07 nvme-eui.00001b7f606ec75100a0980000ed289e -> ../../nvme0n1
+lrwxrwxrwx 1 root root 13 May 19 15:07 nvme-eui.00001b81606ec75b00a0980000ed289e -> ../../nvme0n3
+----
+. 要查看 NVMe 设备的路径，请使用 `nvme list-subsys`命令。
++
+I/O 运行到 `/dev/disk/by-id/nvme-eui.[uuid#]`将直接通过
+`/dev/nvme[subsys#]n[id#]``传递，该解决方案使用 Native NVMe 多路径解决方案在其下方虚拟化所有路径。
 
-[listing]
-----
-# nvme list-subsys
-----
-示例输出：
-
-[listing]
-----
-nvme-subsys0 - NQN=nqn.1992-08.com.netapp:5700.600a098000a522500000000589aa8a6
-\
-+- nvme0 rdma traddr=192.4.21.131 trsvcid=4420 live
-+- nvme1 rdma traddr=192.4.22.141 trsvcid=4420 live
-----
-如果在使用 `nvme list-subsys` 命令时指定命名空间设备，则它会提供有关该命名空间路径的追加信息：
-
++
 [listing]
 ----
 # nvme list-subsys /dev/nvme0n1
-nvme-subsys0 - NQN=nqn.1992-08.com.netapp:5700.600a098000af44620000000058d5dd96
+nvme-subsys0 - NQN=nqn.1992-08.com.netapp:EF80.600a098000ed28cb0000000062b24855
+               hostnqn=nqn.2014-08.org.nvmexpress:uuid:5257c202-9d94-ea11-b761-00000000003c
 \
- +- nvme0 rdma traddr=192.168.130.101 trsvcid=4420 live non-optimized
- +- nvme1 rdma traddr=192.168.131.101 trsvcid=4420 live non-optimized
- +- nvme2 rdma traddr=192.168.130.102 trsvcid=4420 live optimized
- +- nvme3 rdma traddr=192.168.131.102 trsvcid=4420 live optimized
+ +- nvme0 tcp traddr=10.10.10.101,trsvcid=4420,src_addr=10.10.10.100 live non-optimized
+ +- nvme1 tcp traddr=10.10.10.11,trsvcid=4420,src_addr=10.10.10.100 live non-optimized
+ +- nvme2 tcp traddr=10.10.20.201,trsvcid=4420,src_addr=10.10.20.200 live optimized
+ +- nvme3 tcp traddr=10.10.20.21,trsvcid=4420,src_addr=10.10.20.200 live optimized
+ +- nvme4 tcp traddr=10.10.20.39,trsvcid=4420,src_addr=10.10.20.200 live non-optimized
+ +- nvme5 tcp traddr=10.10.20.31,trsvcid=4420,src_addr=10.10.20.200 live non-optimized
+ +- nvme6 tcp traddr=10.10.10.49,trsvcid=4420,src_addr=10.10.10.100 live optimized
+ +- nvme7 tcp traddr=10.10.10.41,trsvcid=4420,src_addr=10.10.10.100 live optimized
 ----
-此外，多路径命令还会挂接一些，以便您也可以通过这些命令查看原生故障转移的路径信息：
-
+. *可选* - 要通过旧版 Device Mapper Multipath (DMMP) 命令查看本机故障转移的路径信息，请使用  `multipath -ll` 命令。
++
 [listing]
 ----
 #multipath -ll
 ----
++
 
-NOTE: 要查看路径信息，必须在 /etc/multipath.conf 中设置以下内容：
+NOTE: 要通过传统 DMMP 命令查看路径信息，必须在  `/etc/multipath.conf` 文件中设置以下内容：
 
++
 [listing]
 ----
-
 defaults {
-        enable_foreign nvme
+    enable_foreign nvme
 }
 ----
++
+*输出示例*
 
-NOTE: 这在 RHEL 10 上将不再有效。它适用于 RHEL 9 及更早版本和 SLES 16 及更早版本。
-
-示例输出：
-
++
 [listing]
 ----
-eui.0000a0335c05d57a00a0980000a5229d [nvme]:nvme0n9 NVMe,Netapp E-Series,08520001
+eui.0000a0335c05d57a00a0980000a5229d [nvme]:nvme0n9 NVMe,Netapp E-
+Series,08520001
 size=4194304 features='n/a' hwhandler='ANA' wp=rw
 |-+- policy='n/a' prio=50 status=optimized
 | `- 0:0:1 nvme0c0n1 0:0 n/a optimized    live
 `-+- policy='n/a' prio-10 status=non-optimized
 `- 0:1:1 nvme0c1n1 0:0 n/a non-optimized    live
 ----
++
+
+NOTE: 此命令仅适用于 RHEL 9 或更早版本以及 SLES 16 或更早版本。
+
+
+
+.下一步是什么？
+在 I/O 运行到 NVMe 设备时，link:nvme-roce-create-filesystems-sles-15-task.html["创建文件系统"]。

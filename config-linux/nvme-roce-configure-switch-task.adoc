@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: configure switch, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 您可以根据供应商针对 NVMe over RoCE 的建议配置交换机。这些建议可能包括配置指令以及代码更新。 
 ---
-= 在E系列- Linux (基于RoCE的NVMe)中配置交换机
+= 在 E-Series - Linux（NVMe over RoCE）中配置交换机
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -14,9 +14,31 @@ summary: 您可以根据供应商针对 NVMe over RoCE 的建议配置交换机�
 您可以根据供应商针对 NVMe over RoCE 的建议配置交换机。这些建议可能包括配置指令以及代码更新。
 
 
-CAUTION: *数据丢失风险。*您必须启用流量控制、以便与交换机上的全局暂停控制结合使用、以消除基于RoCE的NVMe环境中数据丢失的风险。
+CAUTION: *数据丢失的风险。*您必须在无损环境中运行 NVMe/RoCE。在网络上使用基于全局暂停帧的流量控制或优先级流量控制 (PFC) 启用端到端流量控制，以消除数据丢失的风险。
+
+
+
+== 全局暂停帧
+
+全局暂停帧是最基本的流量控制形式，也是最容易实现的。当流量淹没网络端口时，会生成暂停帧，暂停该端口上的所有流量，直到前一个流量得到足够的处理，使网络端口能够跟上而不会丢弃传入流量。
 
 .步骤
-. 作为最佳实践配置，启用以太网暂停帧流量控制 * 端到端 * 。
+. 使用交换机供应商提供的文档启用基于全局暂停帧的流量控制 *端到端*。
+. 确保在此环境中连接到主机、阵列和交换机间链路的所有交换机端口上启用基于 Global Pause Frame 的流量控制。
+
+
+
+
+== 优先级流量控制
+
+优先级流量控制 (PFC) 是一种更复杂的流量控制形式，它为不同类型的流量分配不同的优先级。当在一个优先级上接收到过多的流量时，它会暂停，同时允许与其他优先级对应的流量继续，帮助防止某些类型的大量流量减慢其他形式的流量。
+
+此时，您必须使用运行 11.80.1 的带有 200Gb/s 以太网 HIC（PN 111-04583）的 EF600 E-Series Array 或运行任何受支持的 NVMe/RoCE HIC 的 EF80 E-Series Array。PFC 参数在阵列上进行硬编码，并要求将 NVMe/RoCE 流量标记为优先级 3，DSCP 值为 `106`。
+
+.步骤
+. 有关如何使用 PFC 值设置网络的详细信息，请参见交换机供应商文档。
 . 有关为您的环境选择最佳配置的提示，请咨询您的网络管理员。
 
+
+.下一步是什么？
+配置交换机后，link:nvme-roce-setup-host-side-task.html["在主机上通过 RoCE 设置 NVMe 启动器"]。

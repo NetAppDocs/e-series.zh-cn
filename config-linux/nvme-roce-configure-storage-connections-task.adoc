@@ -125,3 +125,6 @@ NOTE: 此选项仅在 iSCSI 环境中可用。它在基于 RoCE 的 NVMe 环境�
 |===
 . 单击 * 完成 * 。
 
+
+.下一步是什么？
+配置 NVMe over RoCE 端口设置后，link:nvme-roce-discover-connect-storage-host-task.html["发现并连接主机上的存储"]。

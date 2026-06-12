@@ -89,3 +89,6 @@ Safari
 有关详细信息，请参见 SANtricity System Manager 的联机帮助。
 
 
+
+.下一步是什么？
+在 SANtricity System Manager 中配置存储后，link:nvme-roce-configure-switch-task.html["配置交换机"]。

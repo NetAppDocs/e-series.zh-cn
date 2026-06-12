@@ -45,10 +45,9 @@ Name
  a| 
 主机操作系统类型
  a| 
-从下拉列表中选择以下选项之一：
+从下拉列表中选择以下选项：
 
 ** 适用于 SANtricity 11.60 及更高版本的 * Linux *
-** 对于 SANtricity 11.60 之前的版本， * Linux DM-MP （内核 3.10 或更高版本） *
 
 
 
@@ -89,3 +88,6 @@ Name
 成功创建主机后， SANtricity 系统管理器会为为主机配置的每个主机端口创建一个默认名称。
 
 默认别名为 `` < 主机名端口号 >`` 。例如，为 `主机 IPT 创建的第一个端口的默认别名是 ipt_1` 。
+
+.下一步是什么？
+创建主机后，link:nvme-roce-assign-volume-task.html["通过 SANtricity System Manager 分配卷"]。

@@ -14,96 +14,10 @@ summary: 将主机配置为运行故障转移。
 要为存储阵列提供冗余路径，您可以将主机配置为运行故障转移。
 
 .开始之前
-您必须在系统上安装所需的软件包。
-
-* 对于 Red Hat （ RHEL ）主机，运行 `rpm -q device-mapper-multipath` 验证软件包是否已安装
-* 对于 SLES 主机，请运行 `rpm -q multipath-tools` 来验证软件包是否已安装
-
-
-
-NOTE: 请参见 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^] 为了确保安装了所需的任何更新，因为多路径可能无法在 GA 版本的 SLES 或 RHEL 中正常工作。
+请参阅 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]以确保安装了任何所需的更新，因为初始版本中不可用的 SLES 或 RHEL 版本可能需要重要的错误修复。
 
 .关于此任务
-SLES 12 使用设备映射器多路径 (DMMP) 为 NVMe over RoCE 实现多路径。RHEL 8、RHEL 9、RHEL 10、SLES 15 和 SLES 16 使用内置的 Native NVMe 故障转移。根据您运行的操作系统，需要对多路径进行一些额外的配置才能使其正常运行。
+对于 SLES 15、SLES 16、RHEL 9 和 RHEL 10，默认情况下启用原生 NVMe 多路径，无需额外配置。
 
-
-
-== 为 SLES 12 启用设备映射器多路径 (DMMP)
-
-默认情况下，SLES 中禁用 DM-MP。完成以下步骤以在主机上启用 DM-MP 组件。
-
-.步骤
-. 将 NVMe E 系列设备条目添加到 ` /etc/multipath.conf` 文件的 devices 部分，如以下示例所示：
-+
-[listing]
-----
-
-devices {
-        device {
-                vendor "NVME"
-                product "NetApp E-Series*"
-                path_grouping_policy group_by_prio
-                failback immediate
-                no_path_retry 30
-        }
-}
-----
-. 将 `multipathd` 配置为在系统启动时启动。
-+
-[listing]
-----
-# systemctl enable multipathd
-----
-. 如果当前未运行，请启动 `multipathd` 。
-+
-[listing]
-----
-# systemctl start multipathd
-----
-. 验证 `multipathd` 的状态，以确保其处于活动状态且正在运行：
-+
-[listing]
-----
-# systemctl status multipathd
-----
-
-
-
-
-== 使用原生 NVMe 多路径设置 RHEL 8
-
-默认情况下，原生 NVMe 多路径在 RHEL 8 中处于禁用状态，必须使用以下操作步骤启用。
-
-. 设置 `modprobe` 规则以启用原生 NVMe 多路径。
-+
-[listing]
-----
-# echo "options nvme_core multipath=y" >> /etc/modprobe.d/50-nvme_core.conf
-----
-. 使用新的 `modprobe` 参数 remake `initramfs` 。
-+
-[listing]
-----
-# dracut -f
-----
-. 重新启动服务器以在启用原生 NVMe 多路径的情况下启动它。
-+
-[listing]
-----
-# reboot
-----
-. 确认在主机启动后原生 NVMe 多路径已启用。
-+
-[listing]
-----
-# cat /sys/module/nvme_core/parameters/multipath
-----
-+
-.. 如果命令输出为 `N` ，则原生 NVMe 多路径仍处于禁用状态。
-.. 如果命令输出为 `Y` ，则原生 NVMe 多路径将处于启用状态，您发现的任何 NVMe 设备将使用该功能。
-
-
-
-
-
-NOTE: 对于 SLES 15、SLES 16、RHEL 9 和 RHEL 10，默认情况下启用原生 NVMe 多路径，无需额外配置。
+.下一步是什么？
+启用本机 NVMe 多路径后，link:nvme-roce-access-physical-targets-concept.html["从主机访问 E 系列目标的 NVMe 卷"]。

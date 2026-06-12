@@ -316,16 +316,10 @@ sidebar:
           url: "/config-linux/nvme-roce-display-volumes-visible-host-task.html"
         - title: 在主机上设置故障转移
           url: "/config-linux/nvme-roce-setup-failover-host-task.html"
-        - title: 访问虚拟设备目标的 NVMe 卷
-          url: "/config-linux/nvme-roce-access-virtual-targets-concept.html"
         - title: 访问物理设备目标的 NVMe 卷
           url: "/config-linux/nvme-roce-access-physical-targets-concept.html"
-        - title: 创建文件系统（SLES 12）
-          url: "/config-linux/nvme-roce-create-filesystems-sles-12-task.html"
-        - title: 创建文件系统(RHEL 8、RHEL 9和SLES 15)
+        - title: 创建文件系统
           url: "/config-linux/nvme-roce-create-filesystems-sles-15-task.html"
-        - title: 验证主机上的存储访问
-          url: "/config-linux/nvme-roce-verify-storage-access-host-task.html"
         - title: 适用于 Linux 的基于 RoCE 的 NVMe 工作表
           url: "/config-linux/nvme-roce-worksheet-for-concept.html"
       - title: 基于光纤通道的 NVMe 设置

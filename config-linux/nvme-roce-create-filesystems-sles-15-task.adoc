@@ -2,41 +2,21 @@
 permalink: config-linux/nvme-roce-create-filesystems-sles-15-task.html 
 sidebar: sidebar 
 keywords: file systems, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
-summary: 对于 SLES 15 ，您可以在原生 NVMe 设备上创建文件系统并挂载该文件系统。 
+summary: 对于 RHEL 9、RHEL 10、SLES 15 和 SLES 16，您可以在本机 nvme 设备上创建文件系统并挂载文件系统。 
 ---
-= 在 E 系列 Linux RHEL 8、RHEL 9、RHEL 10、SLES 15 和 SLES 16 中创建文件系统（NVMe over RoCE）
+= 在 E 系列中创建文件系统 - Linux（基于 RoCE 的 NVMe）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-对于 RHEL 8、RHEL 9、RHEL 10、SLES 15 和 SLES 16，您需要在本地 nvme 设备上创建文件系统并挂载该文件系统。
+对于 RHEL 9、RHEL 10、SLES 15 和 SLES 16，您可以在本机 nvme 设备上创建文件系统并挂载文件系统。
+
+.开始之前
+请确保您已完成 link:nvme-roce-access-physical-targets-concept.html["从主机访问 E 系列目标的 NVMe 卷"] 任务，以确保 NVMe 设备配置正确且可访问。
 
 .步骤
-. 运行 `multipath -ll` 命令以获取NVMe设备列表。
-+
-[listing]
-----
-# multipath -ll
-----
-+
-此命令的结果可用于查找关联的设备 `/dev/disk/by-id/nvme-eui.[uuid#]` 位置。以下示例为 `/dev/disc/by-id/nvme-eui.000082dd5c05d39300a0980000a52225`。
-
-+
-[listing]
-----
-eui.000082dd5c05d39300a0980000a52225 [nvme]:nvme0n6 NVMe,NetApp E-Series,08520000
-size=4194304 features='n/a' hwhandler='ANA' wp=rw
-|-+- policy='n/a' prio=50 status=optimized
-| `- 0:0:1 nvme0c0n1 0:0 n/a optimized     live
-|-+- policy='n/a' prio=50 status=optimized
-| `- 0:1:1 nvme0c1n1 0:0 n/a optimized     live
-|-+- policy='n/a' prio=10 status=non-optimized
-| `- 0:2:1 nvme0c2n1 0:0 n/a non-optimized live
-`-+- policy='n/a' prio=10 status=non-optimized
-  `- 0:3:1 nvme0c3n1 0:0 n/a non-optimized live
-----
 . 使用位置在分区上为所需NVMe设备创建文件系统 `/dev/disk/by-id/nvme-eui.[id#]`。
 +
 创建文件系统的方法因所选的文件系统而异。此示例显示了如何创建 `ext4` 文件系统。
@@ -69,3 +49,6 @@ Writing superblocks and filesystem accounting information: done
 # mount /dev/disk/by-id/nvme-eui.000082dd5c05d39300a0980000a52225 /mnt/ext4
 ----
 
+
+.下一步是什么？
+创建文件系统后，link:nvme-roce-worksheet-for-concept.html["记录您的 NVMe over RoCE 配置信息"]。

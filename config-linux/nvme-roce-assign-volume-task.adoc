@@ -56,3 +56,6 @@ summary: 您必须将卷 \ （命名空间 \ ）分配给主机或主机集群�
 * 分配的卷将接收下一个可用的 NSID 。主机使用 NSID 访问卷。
 * 用户提供的卷名称将显示在与主机关联的卷列表中。
 
+
+.下一步是什么？
+分配卷后，link:nvme-roce-display-volumes-visible-host-task.html["向主机显示可见卷"]。

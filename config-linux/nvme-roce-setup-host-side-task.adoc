@@ -14,12 +14,12 @@ summary: RoCE 环境中的 NVMe 启动程序配置包括安装和配置 RDMA-cor
 RoCE 环境中的 NVMe 启动程序配置包括安装和配置 RDMA-core 和 NVMe-CLI 软件包，配置启动程序 IP 地址以及在主机上设置 NVMe-oF 层。
 
 .开始之前
-您必须运行最新的兼容 RHEL 8、RHEL 9、RHEL 10、SLES 12、SLES 15 或 SLES 16 服务包操作系统。参见 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^] 如需查看最新要求的完整列表。
+您必须运行最新的兼容 RHEL 9、RHEL 10、SLES 15 或 SLES 16 service pack 操作系统。有关最新要求的完整列表，请参阅 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]。
 
 .步骤
 . 安装 RDMA 和 NVMe-CLI 软件包：
 +
-*SLES 12、SLES 15 或 SLES 16*
+*SLES 15 或 SLES 16*
 
 +
 [listing]
@@ -29,7 +29,7 @@ RoCE 环境中的 NVMe 启动程序配置包括安装和配置 RDMA-core 和 NVM
 # zypper install nvme-cli
 ----
 +
-*RHEL 8、RHEL 9 或 RHEL 10*
+*RHEL 9 和 RHEL 10*
 
 +
 [listing]
@@ -38,15 +38,12 @@ RoCE 环境中的 NVMe 启动程序配置包括安装和配置 RDMA-core 和 NVM
 # yum install rdma-core
 # yum install nvme-cli
 ----
-. 对于RHEL 8和RHEL 9、安装网络脚本：
-+
-* RHEL 8*
 
-+
-[listing]
-----
-# yum install network-scripts
-----
+
+
+NOTE: 如果使用的是 NVIDIA HCA 并希望使用外部 DOCA 驱动程序，请参阅link:https://developer.nvidia.com/doca-downloads["NVIDIA DOCA 文档"]有关如何在此环境中正确安装驱动程序的信息。
+
+. 对于 RHEL 9，安装网络脚本：
 +
 * RHEL 9*
 
@@ -70,10 +67,10 @@ NOTE: RHEL 10 没有网络脚本。
 此步骤中使用的变量基于服务器硬件和网络环境。这些变量包括 `IPADDR` 和 `网关` 。以下是适用于 SLES 和 RHEL 的示例说明：
 
 +
-* SLES 12 和 SLES 15*
+*SLES 15*
 
 +
-使用以下内容创建示例文件`/etc/sysconfig/network/ifcfg-eth4`。
+使用以下内容创建示例文件 `/etc/sysconfig/network/ifcfg-eth4`，其中 MTU 设置为无需数据包碎片即可实现的最高值（通常为 9000）。
 
 +
 [listing]
@@ -83,7 +80,7 @@ BROADCAST=
 ETHTOOL_OPTIONS=
 IPADDR='192.168.1.87/24'
 GATEWAY='192.168.1.1'
-MTU=
+MTU=9000
 NAME='MT27800 Family [ConnectX-5]'
 NETWORK=
 REMOTE_IPADDR=
@@ -100,44 +97,7 @@ BROADCAST=
 ETHTOOL_OPTIONS=
 IPADDR='192.168.2.87/24'
 GATEWAY='192.168.2.1'
-MTU=
-NAME='MT27800 Family [ConnectX-5]'
-NETWORK=
-REMOTE_IPADDR=
-STARTMODE='auto'
-----
-+
-* RHEL 8*
-
-+
-使用以下内容创建示例文件`/etc/sysconfig/network-scripts/ifcfg-eth4`。
-
-+
-[listing]
-----
-BOOTPROTO='static'
-BROADCAST=
-ETHTOOL_OPTIONS=
-IPADDR='192.168.1.87/24’
-GATEWAY='192.168.1.1'
-MTU=
-NAME='MT27800 Family [ConnectX-5]'
-NETWORK=
-REMOTE_IPADDR=
-STARTMODE='auto'
-----
-+
-然后、创建示例文件`/etc/sysconfig/network-scripts/ifcfg-eth5`：
-
-+
-[listing]
-----
-BOOTPROTO='static'
-BROADCAST=
-ETHTOOL_OPTIONS=
-IPADDR='192.168.2.87/24'
-GATEWAY='192.168.2.1'
-MTU=
+MTU=9000
 NAME='MT27800 Family [ConnectX-5]'
 NETWORK=
 REMOTE_IPADDR=
@@ -160,7 +120,7 @@ type=ethernet
 interface-name=eth4
 
 [ethernet]
-mtu=4200
+mtu=9000
 
 [ipv4]
 address1=192.168.1.87/24
@@ -186,7 +146,7 @@ type=ethernet
 interface-name=eth5
 
 [ethernet]
-mtu=4200
+mtu=9000
 
 [ipv4]
 address1=192.168.2.87/24
@@ -203,8 +163,8 @@ method=auto
 [listing]
 ----
 
-# ifup eth4
-# ifup eth5
+# nmcli connection up eth4
+# nmcli connection up eth5
 ----
 . 在主机上设置 NVMe-oF 层。在下创建以下文件 `/etc/modules-load.d/` 以加载 `nvme_rdma` 内核模块并确保内核模块始终处于打开状态、即使在重新启动后也是如此：
 +
@@ -216,8 +176,16 @@ method=auto
 ----
 . 重新启动主机。
 +
-以验证 `nvme_rdma` 内核模块已加载、请运行以下命令：
+.. 或者，您可以通过运行以下命令加载  `nvme_rdma` 内核，而无需重新启动：
++
+[listing]
+----
 
+# modeprobe nvme_rdma
+----
+
+
+. 验证  `nvme_rdma` 内核模块是否已加载，运行此命令：
 +
 [listing]
 ----
@@ -229,4 +197,8 @@ rdma_cm               114688  7 rpcrdma,ib_srpt,ib_srp,nvme_rdma,ib_iser,ib_iser
 ib_core               393216  15 rdma_cm,ib_ipoib,rpcrdma,ib_srpt,ib_srp,nvme_rdma,iw_cm,ib_iser,ib_umad,ib_isert,rdma_ucm,ib_uverbs,mlx5_ib,qedr,ib_cm
 t10_pi                 16384  2 sd_mod,nvme_core
 ----
++
+.下一步是什么？
+在主机上通过 RoCE 设置 NVMe 启动器后，link:nvme-roce-configure-storage-connections-task.html["配置 NVMe over RoCE 端口设置"]。
+
 

@@ -51,3 +51,6 @@ NOTE: 如果断开并重新连接以太网缆线，或者存储阵列已重新�
 网络管理员需要使用 MAC 地址来确定每个控制器的 IP 地址。要通过浏览器连接到存储系统，您需要使用这些 IP 地址。
 
 
+
+.下一步是什么？
+使用 DHCP 配置 IP 地址后，link:nvme-roce-access-sam-setup-wizard-task.html["使用 SANtricity System Manager 配置存储"]。
