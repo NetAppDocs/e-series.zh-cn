@@ -15,6 +15,7 @@ summary: 打开 EF50 或 EF80 存储系统后，通过在每个控制器上布�
 
 
 
+[[step-1-cable-and-configure-the-management-ports]]
 == 步骤 1：连接并配置管理端口
 
 连接每个控制器上的管理端口，然后使用 DHCP 服务器或静态 IP 地址配置端口。
@@ -106,6 +107,7 @@ NOTE: 如果断开与控制器 B 的连接，则可以使用先前验证的控�
 ====
 
 
+[[step-2-configure-your-storage-system]]
 == 步骤 2：配置您的存储系统
 
 使用 SANtricity System Manager 配置和管理您的存储系统。
@@ -125,6 +127,7 @@ NOTE: 如果断开与控制器 B 的连接，则可以使用先前验证的控�
 
 
 
+[[step-3-verify-the-host-io-module-protocol-is-correct]]
 == 步骤 3：验证主机 I/O 模块协议是否正确
 
 您的存储系统在主机 I/O 模块上附带默认协议。如果默认协议不是您想要的协议，则可以进行更改。

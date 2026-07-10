@@ -19,6 +19,7 @@ summary: 安装或升级适用于vCenter的SANtricity 存储插件。
 
 
 
+[[review-installation-prerequisites]]
 == 查看安装前提条件
 
 请确保您的系统满足中的要求 link:san-spvc-ic-reqs.html["查看安装和升级要求"]。
@@ -28,6 +29,7 @@ NOTE: 升级过程不会保留*。vcenter.properties*文件。如果要升级、
 
 
 
+[[install-the-plugin-software]]
 == 安装插件软件
 
 要安装插件软件，请执行以下操作：
@@ -60,6 +62,7 @@ NOTE: 如有必要，您可以在安装后更改证书验证和 Web 服务端口
 
 
 
+[[register-the-plugin-with-a-vcenter-server-appliance]]
 == 将此插件注册到 vCenter Server 设备
 
 安装插件软件后，请向 vCSA 注册此插件。
@@ -79,6 +82,7 @@ NOTE: 此插件一次只能注册到一个 vCSA 。要注册到其他vCSA、您�
 
 
 
+[[verify-the-plugin-registration]]
 == 验证插件注册
 
 安装插件并执行注册脚本后，验证此插件是否已成功注册到 vCenter Server 设备。

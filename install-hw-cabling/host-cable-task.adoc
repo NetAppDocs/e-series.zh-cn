@@ -18,6 +18,7 @@ NOTE: 以下信息不适用于所有存储系统，有关特定于您的存储�
 
 
 
+[[cabling-for-a-direct-attached-topology]]
 == 直连拓扑的布线
 
 直连拓扑可将主机适配器直接连接到存储系统中的控制器。
@@ -41,6 +42,7 @@ image::../media/2hosts_4hbas_ieops-2146.svg[两个主机/四 个HBA和两个控�
 
 
 
+[[cabling-for-a-switch-topology]]
 == 为交换机拓扑布线
 
 交换机拓扑使用交换机将主机连接到存储系统中的控制器。交换机必须支持主机和控制器之间使用的连接类型。

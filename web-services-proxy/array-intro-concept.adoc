@@ -16,12 +16,14 @@ summary: 要管理网络中的存储系统，您必须先发现它们，然后�
 
 
 
+[[discover-storage-systems]]
 == 发现存储系统
 
 您可以设置自动发现或手动发现存储系统。
 
 
 
+[[automatically-discover-storage-systems]]
 === 自动发现存储系统
 
 您可以通过修改 wsconfig.xml 文件中的设置来指定在网络中自动发现存储系统。默认情况下， IPv6 自动发现处于禁用状态， IPv4 处于启用状态。
@@ -56,6 +58,7 @@ NOTE: 如果配置了路径，但未对路径进行配置，使服务器能够�
 
 
 
+[[discover-and-add-storage-systems-using-api-endpoints]]
 === 使用 API 端点发现和添加存储系统
 
 您可以使用 API 端点发现存储系统并将其添加到受管列表中。此操作步骤会在存储系统和 API 之间创建管理连接。
@@ -248,6 +251,7 @@ WWN
 
 
 
+[[scale-up-the-number-of-managed-storage-systems]]
 == 纵向扩展受管存储系统的数量
 
 默认情况下， API 最多可以管理 100 个存储系统。如果您需要管理更多，则必须满足服务器的内存要求。

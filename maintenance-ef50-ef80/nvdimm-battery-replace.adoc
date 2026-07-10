@@ -21,6 +21,7 @@ summary: 当电池开始断电或出现故障时，请更换 EF50 或 EF80 存�
 
 
 
+[[step-1-prepare-to-replace-the-nv-battery]]
 == 步骤 1：准备更换 NV 电池
 
 准备更换 NV 电池时，请确认需要更换 NV 电池，确保没有其他需要解决的存储系统问题，确保卷处于正确状态，收集必要的工具和设备，并备份存储系统的配置数据库。
@@ -61,6 +62,7 @@ summary: 当电池开始断电或出现故障时，请更换 EF50 或 EF80 存�
 
 
 
+[[step-2-place-the-controller-offline]]
 == 步骤 2：将控制器置于脱机状态
 
 将受损的控制器脱机，以便您可以安全地执行此过程的其余部分。
@@ -99,6 +101,7 @@ CAUTION: 如果 *OK to remove* 字段未显示 *Yes*，请不要继续移除有�
 
 
 
+[[step-3-remove-the-controller]]
 == 步骤 3：卸下控制器
 
 验证缓存内存中的任何数据是否已写入驱动器，从受损控制器拔下所有电缆，然后从机箱中取出受损控制器。
@@ -181,6 +184,7 @@ image::../media/icon_round_3.png[标注编号 3]
 
 
 
+[[step-4-replace-the-nv-battery]]
 == 步骤 4：更换 NV 电池
 
 在损坏的控制器内找到有故障的 NV 电池并进行更换。
@@ -240,6 +244,7 @@ NV 电池应平放在其隔间内。
 
 
 
+[[step-5-reinstall-the-controller]]
 == 第 5 步：重新安装控制器
 
 将控制器重新安装到机箱中，重新连接其电源线及其所有电缆。
@@ -298,6 +303,7 @@ NOTE: 在将控制器置于在线状态之前，必须重新连接电缆。这�
 
 
 
+[[step-6-place-the-controller-online]]
 == 第 6 步：将控制器置于联机状态
 
 使受损的控制器恢复联机。
@@ -339,6 +345,7 @@ NOTE: 如果无法解决问题，请联系 https://mysupport.netapp.com/site/glo
 
 
 
+[[step-7-complete-the-nv-battery-replacement]]
 == 第 7 步：完成 NV 电池更换
 
 使用 SANtricity System Manager，确保已安装最新版本的 SANtricity 操作系统，验证所有卷都已返回到其拥有的控制器，并收集支持数据，以便您可以恢复操作。
@@ -389,6 +396,7 @@ Recovery Guru 不存在（似乎所有卷都已返回给其拥有的控制器）
 
 
 
+[[step-8-return-the-failed-part-to-netapp]]
 == 第 8 步：将故障部件退回 NetApp
 
 如套件附带的 RMA 说明中所述，将故障部件退回 NetApp。有关更多信息，请参阅 https://mysupport.netapp.com/site/info/rma["零件退货和更换"]页面。

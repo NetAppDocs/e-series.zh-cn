@@ -125,18 +125,21 @@ NOTE: 如果 3040 机柜中装满了 DE6600 托盘，则其重量超过 2756 磅
 
 
 
+[[power-requirements-and-heat-dissipation]]
 == 电源要求和散热
 
 机柜的电源和散热规格如下。
 
 
 
+[[power-rating]]
 === 额定功率
 
 3040 40U 机柜的额定电压为 200 VAC 到 240 VAC ，频率为 50 Hz 到 60 Hz ，运行频率为该范围的 ±10% 。
 
 
 
+[[power-distribution-units-pdus]]
 === 配电单元（ PDU ）
 
 机柜包含两个相同的交流配电单元（ PDU ），每个 PDU 最多可提供 72A 的可用电源。PDU 垂直安装在机柜背面，每个 PDU 包含六个 12 A 电源组。每个电源组包含四个 IEC 60320-C19 电源插座和一个 15 安断路器。每个 PDU 共有 24 个插座和 6 个断路器。
@@ -152,6 +155,7 @@ NOTE: 如果 3040 机柜中装满了 DE6600 托盘，则其重量超过 2756 磅
 
 
 
+[[power-calculations-and-heat-calculations-for-the-cabinet]]
 === 机柜的功率计算和热量计算
 
 |===
@@ -379,12 +383,14 @@ DE6600 驱动器托盘
 |===
 
 
+[[maximum-number-of-trays]]
 == 最大托盘数
 
 3040 40U 机柜中可安装的最大托盘数取决于机架单元（ U ）中每个托盘的高度。
 
 
 
+[[tray-heights-in-rack-units-u]]
 === 机架单元中的托盘高度（ U ）
 
 每个机架单元为 1.75 英寸（ 4.45 厘米）。例如，您可以安装多达 10 个 4U 托盘，最多 20 个 2U 托盘或 2U 和 4U 托盘的组合，最大 40U 。

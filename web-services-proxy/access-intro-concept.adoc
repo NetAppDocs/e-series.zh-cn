@@ -15,12 +15,14 @@ summary: 出于安全考虑，您可以管理用户对 Web 服务 API 和 Unifie
 
 
 
+[[overview-of-access-management]]
 == 访问管理概述
 
 访问管理包括基于角色的登录，密码加密，基本身份验证和 LDAP 集成。
 
 
 
+[[role-based-access]]
 === 基于角色的访问
 
 基于角色的访问控制（ Role-Based Access Control ， RBAC ）可将预定义用户与角色关联起来。每个角色都会为特定级别的功能授予权限。
@@ -118,6 +120,7 @@ ro （只读）用户仅包含 storage.monitor 角色。在设置密码之前，
 |===
 
 
+[[password-encryption]]
 === 密码加密
 
 对于每个密码，您可以使用现有 SHA256 密码编码应用一个额外的加密过程。此附加加密过程会对每个 SHA256 哈希加密的每个密码（ Salt ）随机应用一组字节。所有新创建的密码均采用 Salted SHA256 加密。
@@ -127,12 +130,14 @@ NOTE: 在 Web 服务代理 3.0 版之前，密码仅通过 SHA256 哈希进行�
 
 
 
+[[basic-authentication]]
 === 基本身份验证
 
 默认情况下，基本身份验证处于启用状态，这意味着服务器返回基本身份验证质询。可以在 wsconfig.xml 文件中更改此设置。
 
 
 
+[[ldap]]
 === LDAP
 
 为 Web 服务代理启用了轻型目录访问协议（ Lightweight Directory Access Protocol ， LDAP ），这是一种用于访问和维护分布式目录信息服务的应用程序协议。LDAP 集成支持用户身份验证以及将角色映射到组。
@@ -141,12 +146,14 @@ NOTE: 在 Web 服务代理 3.0 版之前，密码仅通过 SHA256 哈希进行�
 
 
 
+[[configure-user-access]]
 == 配置用户访问
 
 您可以通过对密码应用额外加密，设置基本身份验证以及定义基于角色的访问来管理用户访问。
 
 
 
+[[apply-additional-encryption-to-passwords]]
 === 对密码应用额外加密
 
 为了获得最高的安全性，您可以使用现有 SHA256 密码编码对密码应用额外的加密。
@@ -170,6 +177,7 @@ NOTE: 或者，每当通过 Unified Manager 编辑密码时，您都可以对本
 
 
 
+[[configure-basic-authentication]]
 === 配置基本身份验证
 
 默认情况下，基本身份验证处于启用状态，这意味着服务器返回基本身份验证质询。如果需要，您可以在 wsconfig.xml 文件中更改此设置。
@@ -190,6 +198,7 @@ NOTE: 或者，每当通过 Unified Manager 编辑密码时，您都可以对本
 
 
 
+[[configure-role-based-access]]
 === 配置基于角色的访问
 
 要限制用户对特定功能的访问，您可以修改为每个用户帐户指定的角色。

@@ -17,6 +17,7 @@ summary: 根据 Linux 版本配置定向到设备目标的 I/O 。
 
 
 
+[[physical-nvme-devices-are-io-targets]]
 == 物理 NVMe 设备是 I/O 目标
 
 最佳做法是对中的链路运行I/O `/dev/disk/by-id/nvme-eui.[uuid#]` 而不是直接连接到物理NVMe设备路径 `/dev/nvme[subsys#]n[id#]`。可以使用以下命令找到这两个位置之间的链接：

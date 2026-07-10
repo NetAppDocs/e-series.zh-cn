@@ -18,6 +18,7 @@ summary: 适用于 vCenter 的 SANtricity 存储插件可在 VMware vSphere 客�
 
 
 
+[[available-tasks]]
 == 可用任务
 
 您可以使用插件执行以下任务：
@@ -41,12 +42,14 @@ image:../media/vcenter_communication2.png["vCenter通信环境"]
 
 
 
+[[interface-overview]]
 == 接口概述
 
 登录到插件后、主页将打开*管理-全部*。在此页面中、您可以查看和管理网络中发现的所有存储阵列。
 
 
 
+[[navigation-sidebar]]
 === 导航边栏
 
 导航边栏显示以下内容：
@@ -64,6 +67,7 @@ NOTE: 当存储阵列处于非最佳状态时、某些操作不可用。
 
 
 
+[[supported-browsers]]
 === 支持的浏览器
 
 适用于vCenter的存储插件可通过多种类型的浏览器进行访问。支持以下浏览器和版本。
@@ -75,12 +79,14 @@ NOTE: 当存储阵列处于非最佳状态时、某些操作不可用。
 
 
 
+[[user-roles-and-permissions]]
 === 用户角色和权限
 
 要访问适用于vCenter的存储插件中的任务、用户必须具有读写权限。默认情况下、所有已定义的VMware vCenter用户ID均无权在此插件中执行任务。
 
 
 
+[[configuration-overview]]
 == 配置概述
 
 配置包括以下步骤：
@@ -94,6 +100,7 @@ NOTE: 当存储阵列处于非最佳状态时、某些操作不可用。
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 有关在 vSphere Client 中管理数据存储库的详细信息，请参见 https://docs.vmware.com/en/VMware-vSphere/index.html["VMware vSphere 文档"^]。

@@ -38,6 +38,7 @@ summary: 升级 E2800 阵列中的主机接口卡（ HIC ）。
 
 
 
+[[step-1-prepare-to-upgrade-host-interface-cards]]
 == 第 1 步：准备升级主机接口卡
 
 准备升级主机接口卡（ Host Interface Card ， HIC ），方法是备份存储阵列的配置数据库，收集支持数据并停止主机 I/O 操作。然后，您可以关闭控制器架。
@@ -121,6 +122,7 @@ image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[缓存活动LED]
 
 
 
+[[step-2-remove-controller-canister]]
 == 第 2 步：拆下控制器箱
 
 您可以卸下控制器箱，以便升级新的主机接口卡（ HIC ）。卸下控制器箱时，必须断开所有缆线。然后，您可以将控制器箱滑出控制器架。
@@ -185,6 +187,7 @@ CAUTION: 始终用双手支撑控制器箱的重量。
 
 
 
+[[step-3-remove-a-host-interface-card]]
 == 第 3 步：卸下主机接口卡
 
 卸下原始主机接口卡（ HIC ），以便将其更换为升级后的接口卡。
@@ -232,6 +235,7 @@ image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[从控制器中卸�
 
 
 
+[[step-4-install-host-interface-card]]
 == 第 4 步：安装主机接口卡
 
 安装新的主机接口卡（ HIC ）以增加存储阵列中的主机端口数。
@@ -272,6 +276,7 @@ image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[将HIC安装到控�
 
 
 
+[[step-5-reinstall-controller-canister]]
 == 第 5 步：重新安装控制器箱
 
 安装新的主机接口卡（ HIC ）后，将控制器箱重新安装到控制器架中。
@@ -315,6 +320,7 @@ NOTE: 此时请勿将数据缆线连接到新 HIC 端口。
 
 
 
+[[step-6-complete-host-interface-card-upgrade]]
 == 第 6 步：完成主机接口卡升级
 
 通过检查控制器 LED 和七段显示器并确认控制器的状态为最佳，完成主机接口卡升级过程。

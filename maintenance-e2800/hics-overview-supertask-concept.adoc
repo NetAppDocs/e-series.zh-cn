@@ -16,6 +16,7 @@ summary: 查看更换 E2800 HIC 的要求。
 
 
 
+[[procedure-overview]]
 == 操作步骤概述
 
 更换 HIC 的步骤取决于您使用的是一个还是两个控制器，如下所示：
@@ -50,6 +51,7 @@ summary: 查看更换 E2800 HIC 的要求。
 |===
 
 
+[[requirements-for-adding-upgrading-or-replacing-a-hic]]
 == 添加，升级或更换 HIC 的要求
 
 如果您计划添加，升级或更换主机接口卡（ HIC ），请记住以下要求。

@@ -28,6 +28,7 @@ NOTE: SANtricity 云连接器工具已弃用、不再可供下载。
 
 
 
+[[install-device-mapper-multipath-dm-mp]]
 == 安装设备映射程序多路径（ DM-MP ）
 
 运行 SANtricity 云连接器的任何主机还必须运行 Linux 设备映射程序多路径（ DM-MP ）并安装多路径工具包。
@@ -36,12 +37,14 @@ SANtricity 云连接器发现过程依靠多路径工具包来发现和识别要
 
 
 
+[[install-cloud-connector]]
 == 安装 Cloud Connector
 
 您可以在图形模式或控制台模式下在 Linux 操作系统上安装 SANtricity 云连接器。
 
 
 
+[[graphical-mode]]
 === 图形模式
 
 您可以使用图形模式在 Linux 操作系统上安装 SANtricity 云连接器。
@@ -112,6 +115,7 @@ NOTE: 要在维护先前版本的同时安装 SANtricity 云连接器 4.0 版，
 
 
 
+[[console-mode]]
 === 控制台模式
 
 您可以使用控制台模式在 Linux 操作系统上安装 SANtricity 云连接器。
@@ -191,6 +195,7 @@ NOTE: 要在维护先前版本的同时安装 SANtricity 云连接器 4.0 版，
 
 
 
+[[add-server-certificate-and-ca-certificate-into-a-keystore]]
 == 将服务器证书和 CA 证书添加到密钥库中
 
 要使用从浏览器到 SANtricity 云连接器主机的安全 https 连接，您可以接受来自 SANtricity 云连接器主机的自签名证书，或者添加浏览器和 SANtricity 云连接器应用程序均可识别的证书和信任链。
@@ -235,6 +240,7 @@ keytool -import -trustcacerts -alias cloudconnect -file certnew.cer -keystore ke
 
 
 
+[[add-storagegrid-certificate-into-a-keystore]]
 == 将 StorageGRID 证书添加到密钥库中
 
 如果要将 StorageGRID 配置为 SANtricity 云连接器应用程序的目标类型，则必须先将 StorageGRID 证书添加到 SANtricity 云连接器密钥库中。

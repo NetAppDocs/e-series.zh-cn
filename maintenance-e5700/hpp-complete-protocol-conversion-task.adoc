@@ -18,6 +18,7 @@ summary: 完成 E5700 主机协议转换。
 
 
 
+[[complete-fc-to-iscsi-conversion]]
 == 完成 FC 到 iSCSI 的转换
 
 如果您之前使用的是 FC 主机端口，并且已转换为 iSCSI ，则可能需要修改现有配置以支持 iSCSI 。只有在不存在 iSCSI HIC 的情况下，以下操作步骤才适用。
@@ -71,6 +72,7 @@ NOTE: 如果您需要有关添加主机或主机集群的说明，请参阅 SANt
 
 
 
+[[complete-iscsi-to-fc-conversion]]
 == 完成 iSCSI 到 FC 的转换
 
 如果您之前使用的是 iSCSI 主机端口，并且已转换为 FC ，则可能需要修改现有配置以支持 FC 。以下操作步骤仅在不存在 FC HIC 时适用。
@@ -114,6 +116,7 @@ NOTE: 如果您需要有关添加主机或主机集群的说明，请参阅 SANt
 
 
 
+[[complete-conversion-for-ib-iser-tofrom-ib-srp-nvme-over-ib-nvme-over-roce-or-nvme-over-fc]]
 == IB-iSER 与 IB-SRP ，基于 IB 的 NVMe ，基于 RoCE 的 NVMe 或基于 FC 的 NVMe 之间的完整转换
 
 在应用功能包密钥将 InfiniBand iSER HIC 端口使用的协议转换为 SRP ，基于 InfiniBand 的 NVMe ，基于 RoCE 的 NVMe 或基于光纤通道的 NVMe 之后，您需要将主机配置为使用相应的协议。

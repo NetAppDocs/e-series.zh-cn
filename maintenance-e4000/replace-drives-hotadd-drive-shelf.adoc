@@ -33,6 +33,7 @@ NOTE: 要保持系统完整性，您必须严格按照显示的顺序执行操�
 
 
 
+[[step-1-prepare-to-add-the-drive-shelf]]
 == 第 1 步：准备添加驱动器架
 
 要准备热添加驱动器架，您必须检查是否存在严重事件并检查 IOM 的状态。
@@ -87,6 +88,8 @@ image::../media/sam1130_ss_hardware_iom_icon.gif[IOM icon]
 
 
 
+[[step-2-install-the-drive-shelf-and-apply-power]]
+[[step2_install_drive_shelf]]
 == 第 2 步：安装驱动器架并接通电源
 
 您可以安装新的驱动器架或先前安装的驱动器架，打开电源并检查是否存在需要注意的任何 LED 。
@@ -106,6 +109,7 @@ NOTE: 有关物理安装和电源布线的完整操作步骤，请参见适用�
 
 
 
+[[step-3-cable-your-system]]
 == 第 3 步：为系统布线
 
 将驱动器架连接到控制器 A ，确认 IOM 状态，然后将驱动器架连接到控制器 B
@@ -156,6 +160,7 @@ NOTE: 最佳状态表示已解决与新驱动器架相关的冗余丢失错误�
 
 
 
+[[step-4-complete-hot-add]]
 == 第 4 步：完成热添加
 
 您可以通过检查是否存在任何错误并确认新添加的驱动器架使用最新固件来完成热添加。

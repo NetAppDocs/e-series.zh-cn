@@ -15,6 +15,7 @@ summary: 您可以配置 AutoSupport （ ASUP ），该功能会收集数据，�
 
 
 
+[[overview-of-autosupport-asup]]
 == AutoSupport 概述（ ASUP ）
 
 AutoSupport （ ASUP ）功能会根据手动和基于计划的标准自动向 NetApp 传输消息。
@@ -94,12 +95,14 @@ WebServices-profile.json
 |===
 
 
+[[configure-autosupport]]
 == 配置 AutoSupport
 
 默认情况下， AutoSupport 在安装时处于启用状态；但是，您可以更改此设置或修改交付类型。
 
 
 
+[[enable-or-disable-autosupport]]
 === 启用或禁用 AutoSupport
 
 在首次安装 Web 服务代理期间， AutoSupport 功能处于启用或禁用状态，但您可以在 ASUPConfig 文件中更改此设置。
@@ -123,6 +126,7 @@ NOTE: 时间戳条目是多余的。
 
 
 
+[[configure-autosupport-delivery-method]]
 === 配置 AutoSupport 交付方法
 
 您可以将AutoSupport功能配置为使用HTTPS或SMTP传输方法。HTTPS 是默认传送方法。

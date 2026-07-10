@@ -38,6 +38,7 @@ CAUTION: * 可能丢失数据访问 * —如果 HIC 是为另一个 E 系列控�
 
 
 
+[[step-1-place-the-controller-offline]]
 == 第 1 步：使控制器脱机
 
 将受影响的控制器置于脱机状态，以便安全地更换 HIC 。
@@ -83,6 +84,7 @@ NOTE: 更新状态之前，请勿开始任何其他操作。
 
 
 
+[[step-2-remove-controller-canister]]
 == 第 2 步：拆下控制器箱
 
 卸下控制器箱，以便更换出现故障的主机接口卡。
@@ -116,6 +118,7 @@ image::../media/remove_controller_6.png[拆下控制器时，用双手支撑控�
 
 
 
+[[step-3-remove-the-hic]]
 == 第 3 步：卸下 HIC
 
 删除原始 HIC ，以便使用升级后的 HIC 进行更换。
@@ -164,6 +167,7 @@ NOTE: 上图为示例； HIC 的外观可能有所不同。
 
 
 
+[[step-4-replace-the-hic]]
 == 第 4 步：更换 HIC
 
 卸下旧 HIC 后，安装新的 HIC 。
@@ -198,6 +202,7 @@ NOTE: 上图为示例； HIC 的外观可能有所不同。
 
 
 
+[[step-5-reinstall-controller-canister]]
 == 第 5 步：重新安装控制器箱
 
 更换 HIC 后，将控制器箱重新安装到控制器架中。
@@ -220,6 +225,7 @@ image::../media/remove_controller_7.png[将控制器安装到磁盘架中]
 
 
 
+[[step-6-complete-hic-replacement]]
 == 第 6 步：完成 HIC 更换
 
 将控制器置于联机状态，收集支持数据并恢复操作。

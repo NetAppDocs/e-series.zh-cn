@@ -18,6 +18,7 @@ NOTE: 有关每个E系列控制器支持的配置的具体信息、请参见 htt
 
 
 
+[[hardware-and-firmware-requirements]]
 == 硬件和固件要求
 
 * * 双工和单工控制器升级 *
@@ -89,6 +90,7 @@ NOTE: 请务必按照所述方式连接电缆。有关详细信息，请参见 h
 
 
 
+[[upgrade-compatibility]]
 == 升级兼容性
 
 查看每个存储阵列型号支持的升级路径。
@@ -300,6 +302,7 @@ E2700不支持原有快照。
 ====
 
 
+[[sas-enclosures]]
 == SAS 机箱
 
 E5700 通过机头升级支持 DE5600 和 DE6600 SAS-2 机箱。如果将 E5700 控制器安装在 SAS-2 机箱中，则会禁用对基本主机端口的支持。
@@ -335,6 +338,7 @@ SAS-3 磁盘架包括以下型号：
 
 
 
+[[sas-2-to-sas-3-investment-protection]]
 == SAS-2 到 SAS-3 投资保护
 
 您可以重新配置 SAS-2 系统，以便在新的 SAS-3 控制器架（ E57XX/EF570/E28XX ）后面使用。

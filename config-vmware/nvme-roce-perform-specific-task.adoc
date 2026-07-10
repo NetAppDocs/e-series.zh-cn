@@ -15,12 +15,14 @@ summary: 对于光纤通道协议，您可以配置交换机并确定主机端�
 
 
 
+[[step-1-record-your-configuration]]
 == 步骤 1：记录您的配置
 
 您可以生成并打印此页面的 PDF ，然后使用以下工作表记录特定于协议的存储配置信息。要执行配置任务，您需要此信息。
 
 
 
+[[recommended-configuration]]
 === 建议的配置
 
 建议的配置包括两个启动程序端口和四个目标端口以及一个或多个 VLAN 。
@@ -29,6 +31,7 @@ image::../media/network_generic_worksheet.gif[基于 RoCE 端口的 NVMe 标识�
 
 
 
+[[host-identifiers]]
 === 主机标识符
 
 |===
@@ -52,6 +55,7 @@ image::../media/network_generic_worksheet.gif[基于 RoCE 端口的 NVMe 标识�
 |===
 
 
+[[target-identifiers]]
 === 目标标识符
 
 |===
@@ -91,6 +95,7 @@ image::../media/network_generic_worksheet.gif[基于 RoCE 端口的 NVMe 标识�
 |===
 
 
+[[mapping-host]]
 === 正在映射主机
 
 |===
@@ -109,12 +114,14 @@ image::../media/network_generic_worksheet.gif[基于 RoCE 端口的 NVMe 标识�
 |===
 
 
+[[recommended-configuration]]
 === 建议的配置
 
 这可能因阵列而异。EF300、EF600 和 EF50 将是 2 个启动器端口，最多 4 个目标端口，1 个或多个 VLAN。EF80 将是 2 个启动器端口，最多 6 个目标端口，1 个或多个 VLAN。
 
 
 
+[[step-2-configure-the-nvmeroce-switches]]
 == 步骤 2：配置 NVMe/RoCE 交换机
 
 您可以根据供应商针对 NVMe over RoCE 的建议配置交换机。这些建议可能包括配置指令以及代码更新。
@@ -132,6 +139,7 @@ image::../media/network_generic_worksheet.gif[基于 RoCE 端口的 NVMe 标识�
 
 
 
+[[step-3-configure-networking-nvmeroce-vmware]]
 == 步骤 3：配置网络 - NVMe/RoCE、VMware
 
 根据您的数据存储要求，您可以通过多种方式设置 NVMe over RoCE 网络。有关为您的环境选择最佳配置的提示，请咨询您的网络管理员。
@@ -154,6 +162,7 @@ image::../media/network_generic_worksheet.gif[基于 RoCE 端口的 NVMe 标识�
 
 
 
+[[step-4-configure-array-side-networking-nvmeroce-vmware]]
 == 步骤 4：配置阵列端网络 - NVMe/RoCE，VMware
 
 您可以使用 SANtricity System Manager 界面在阵列端配置 NVMe over RoCE 网络。
@@ -254,6 +263,7 @@ MTU 大小（通过单击显示更多端口设置可用。）
 
 
 
+[[step-5-configure-host-side-networkingnvme-over-roce-vmware]]
 == 第 5 步：配置主机端网络—基于 RoCE 的 NVMe，VMware
 
 在主机端配置 NVMe over RoCE 网络，使 VMware NVMe over RDMA 存储适配器启动器能够与阵列建立会话。
@@ -293,6 +303,7 @@ MTU 大小（通过单击显示更多端口设置可用。）
 
 
 
+[[step-6-verify-ip-network-connections-nvme-over-roce-vmware]]
 == 第 6 步：验证 IP 网络连接 - NVMe over RoCE、VMware
 
 您可以使用 ping 测试来验证 Internet 协议（ IP ）网络连接，以确保主机和阵列能够进行通信。

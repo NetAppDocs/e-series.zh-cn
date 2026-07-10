@@ -40,6 +40,7 @@ CAUTION: * 可能丢失数据访问 * —如果 HIC 是为另一个 E 系列控�
 
 
 
+[[step-1-place-controller-shelf-offline]]
 == 第 1 步：使控制器架脱机
 
 将控制器架置于脱机状态，以便安全地升级 HIC 。
@@ -96,6 +97,7 @@ CAUTION: * 可能的数据丢失 * - 如果在执行 I/O 操作时继续执行�
 
 
 
+[[step-2-remove-controller-canister]]
 == 第 2 步：拆下控制器箱
 
 拆下控制器箱，以便升级新的 HIC 。
@@ -129,6 +131,7 @@ image::../media/remove_controller_6.png[拆下控制器时，用双手支撑控�
 
 
 
+[[step-3-remove-the-hic]]
 == 第 3 步：卸下 HIC
 
 删除原始 HIC ，以便使用升级后的 HIC 进行更换。
@@ -177,6 +180,7 @@ NOTE: 上图为示例， HIC 的外观可能有所不同。
 
 
 
+[[step-4-upgrade-the-hic]]
 == 第 4 步：升级 HIC
 
 删除旧 HIC 后，您可以安装新 HIC 。
@@ -219,6 +223,7 @@ NOTE: 请勿使用螺丝刀，否则可能会过度拧紧螺钉。
 
 
 
+[[step-5-reinstall-controller-canister]]
 == 第 5 步：重新安装控制器箱
 
 升级 HIC 后，将控制器箱重新安装到控制器架中。
@@ -241,6 +246,7 @@ image::../media/remove_controller_7.png[将控制器安装到磁盘架中]
 
 
 
+[[step-6-complete-the-hic-upgrade]]
 == 第 6 步：完成 HIC 升级
 
 将控制器置于联机状态，收集支持数据并恢复操作。

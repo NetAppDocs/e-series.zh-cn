@@ -31,7 +31,7 @@ NOTE: 可能支持其他接口和操作系统。有关详细信息，请联系�
 
 
  a| 
-此站点不包含早于 _ 软件版本 11.50 或固件版本 8.50 的版本的信息。对于早期版本，请转到 https://www.netapp.com/us/documentation/eseries-santricity.aspx["E 系列和 SANtricity 文档资源"^] 页面。
+本网站不包含早于软件版本 11.50 或固件版本 8.50 的版本信息。有关早期版本，请转到 https://docs.netapp.com/us-en/e-series-santricity/early-versions.html#software-documentation-for-earlier-releases["早期版本的 E-Series 和 SANtricity 文档"^]页面。
 
 有关站点准备要求的信息，请访问 https://hwu.netapp.com/["NetApp Hardware Universe"^]。
 

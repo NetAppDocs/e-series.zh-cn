@@ -31,6 +31,7 @@ summary: 向仅包含一个控制器箱的控制器架添加另一个控制器�
 
 
 
+[[step-1-verify-the-new-controllers-part-number]]
 == 第1步：验证新控制器的部件号
 
 确认新控制器的部件号与当前安装的控制器相同。
@@ -65,6 +66,7 @@ CAUTION: * 可能会丢失数据访问 * - 如果两个部件号不同，请勿�
 
 
 
+[[step-2-install-host-interface-card]]
 == 第 2 步：安装主机接口卡
 
 如果当前安装的控制器包含一个 HIC ，则必须在第二个控制器箱中安装相同型号的主机接口卡（ HIC ）。
@@ -110,6 +112,7 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[安装该装�
 
 
 
+[[step-3-collect-support-data]]
 == 第 3 步：收集支持数据
 
 在更换组件之前和之后收集支持数据，以确保在更换组件无法解决问题时，您可以向技术支持发送一整套日志。
@@ -148,6 +151,7 @@ CAUTION: * 可能的数据丢失 * - 如果在执行 I/O 操作时继续执行�
 
 
 
+[[step-4-change-configuration-to-duplex]]
 == 第 4 步：将配置更改为双工
 
 在将另一个控制器添加到控制器架之前，您必须通过安装新的 NVSRAM 文件并使用命令行界面将存储阵列设置为双工来将配置更改为双工。NVSRAM 文件的双工版本包含在 SANtricity OS 软件（控制器固件）的下载文件中。
@@ -264,6 +268,7 @@ reset controller [a];
 
 
 
+[[step-5-remove-the-controller-blank]]
 == 第 5 步：卸下控制器挡片
 
 在安装第二个控制器之前，请先卸下控制器挡片。控制器挡片安装在只有一个控制器的控制器架中。
@@ -278,6 +283,7 @@ reset controller [a];
 
 
 
+[[step-6-install-second-controller-canister]]
 == 第 6 步：安装第二个控制器箱
 
 安装另一个控制器箱以将单工配置更改为双工配置。
@@ -300,6 +306,7 @@ image::../media/28_dwg_e2824_add_controller_canister.gif[安装第二个控制�
 
 
 
+[[step-7-complete-adding-a-second-controller]]
 == 第 7 步：添加第二个控制器
 
 完成添加第二个控制器的过程，确认其工作正常，重新安装双工 NVSRAM 文件，在控制器之间分布卷以及收集支持数据。

@@ -26,6 +26,7 @@ summary: 获取并导入CA签名证书、以安全访问托管适用于vCenter�
 
 
 
+[[step-1-complete-a-csr-file]]
 == 第1步：完成CSR文件
 
 您必须先生成证书签名请求(CSR)文件、用于标识您的组织以及运行插件的主机系统。或者、您也可以使用OpenSSL等工具生成CSR文件、然后跳至 <<第2步：提交CSR文件>>。
@@ -55,6 +56,7 @@ summary: 获取并导入CA签名证书、以安全访问托管适用于vCenter�
 
 
 
+[[step-2-submit-csr-file]]
 == 第2步：提交CSR文件
 
 创建证书签名请求(CSR)文件后、您可以将生成的CSR文件发送到CA、以接收托管此插件的系统的已签名管理证书。
@@ -76,6 +78,7 @@ CAUTION: 将CSR文件提交到CA后、请勿重新生成其他CSR文件。
 
 
 
+[[step-3-import-management-certificates]]
 == 第3步：导入管理证书
 
 从证书颁发机构(CA)收到签名证书后、请将这些证书导入到安装此插件的主机系统中。

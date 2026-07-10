@@ -20,6 +20,7 @@ summary: 当驱动器出现故障或需要升级时，请更换 EF50 或 EF80 �
 
 
 
+[[step-1-prepare-to-replace-the-drive]]
 == 步骤 1：准备更换驱动器
 
 通过确保驱动器出现故障、确认您具有受支持的替换驱动器、确保您具有 SANtricity System Manager 访问权限、采取静电放电预防措施以及物理定位故障驱动器来准备驱动器更换。
@@ -81,6 +82,7 @@ NOTE: 您必须从存储系统正面卸下挡板，才能看到驱动器 LED。
 
 
 
+[[step-2-replace-the-drive]]
 == 步骤 2：更换驱动器
 
 将出现故障的驱动器更换为新驱动器。
@@ -149,6 +151,7 @@ image::../media/icon_round_3.png[标注编号 3]
 
 
 
+[[step-3-complete-the-drive-replacement]]
 == 步骤 3：完成驱动器更换
 
 确认更换驱动器正常工作，并确保驱动器重建已开始。
@@ -214,6 +217,7 @@ NOTE: 根据您的配置，控制器可能会自动将数据重建到新驱动�
 
 
 
+[[step-4-return-the-failed-part-to-netapp]]
 == 步骤 4：将故障部件退回 NetApp
 
 如套件附带的 RMA 说明中所述，将故障部件退回 NetApp。有关更多信息，请参阅 https://mysupport.netapp.com/site/info/rma["零件退货和更换"]页面。

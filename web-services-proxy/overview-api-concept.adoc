@@ -15,6 +15,7 @@ summary: 了解 Web 服务 API
 
 
 
+[[url-elements-in-requests]]
 == 请求中的 URL 元素
 
 无论使用何种编程语言或工具，每次对 Web 服务 API 的调用都具有类似的结构，其中包含 URL ， HTTP 动词和接受标头。
@@ -72,6 +73,7 @@ API 路径包含三部分：
 |===
 
 
+[[supported-http-verbs]]
 == 支持的 HTTP 动词
 
 支持的 HTTP 动词包括 GET ， POST 和 DELETE ：
@@ -86,12 +88,14 @@ NOTE: 目前， Web 服务 API 不支持 PUT 或修补程序。而是可以使�
 
 
 
+[[accept-headers]]
 == 接受标题
 
 返回请求正文时， Web 服务将以 JSON 格式返回数据（除非另有说明）。某些客户端默认请求 "`text/html` " 或类似内容。在这些情况下， API 会以 HTTP 代码 406 进行响应，表示它无法提供此格式的数据。作为最佳实践，对于任何预期 JSON 为响应类型的情况，您应将 accept 标头定义为 "`application/json` " 。在其他未返回响应正文的情况下（例如， delete ），如果接受标头不会发生原因任何意外影响，则会返回相应正文。
 
 
 
+[[responses]]
 == Responses
 
 向 API 发出请求时，响应将返回两个关键信息：

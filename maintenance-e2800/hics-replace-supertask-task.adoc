@@ -34,6 +34,7 @@ summary: 更换出现故障的主机接口卡（ HIC ）。
 
 
 
+[[step-1-place-controller-offline]]
 == 第 1 步：使控制器脱机
 
 使控制器脱机的步骤取决于您使用的是一个控制器（单工）还是两个控制器（双工）。转至相应的说明：
@@ -44,6 +45,7 @@ summary: 更换出现故障的主机接口卡（ HIC ）。
 
 
 
+[[duplex-place-controller-offline]]
 === 双工：使控制器脱机
 
 如果您使用的是双工配置，请按照此步骤将控制器置于脱机状态，以便安全地删除故障 HIC 。
@@ -118,6 +120,7 @@ CAUTION: 更新状态之前，请勿开始任何其他操作。
 
 
 
+[[simplex-power-down-the-controller-shelf]]
 === 单工：关闭控制器架
 
 如果您采用单工配置，请关闭控制器架，以便安全地移除出现故障的 HIC 。
@@ -188,6 +191,7 @@ CAUTION: * 可能的数据丢失 * - 如果在执行 I/O 操作时继续执行�
 
 
 
+[[step-2-remove-controller-canister]]
 == 第 2 步：拆下控制器箱
 
 卸下控制器箱，以便添加新的主机接口卡（ HIC ）。
@@ -248,6 +252,7 @@ CAUTION: 始终用双手支撑控制器箱的重量。
 
 
 
+[[step-3-install-a-hic]]
 == 第 3 步：安装 HIC
 
 安装一个 HIC ，将故障 HIC 更换为新的 HIC 。
@@ -302,6 +307,7 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[将该控制�
 
 
 
+[[step-4-reinstall-controller-canister]]
 == 第 4 步：重新安装控制器箱
 
 安装 HIC 后，将控制器箱重新安装到控制器架中。
@@ -344,12 +350,14 @@ NOTE: 此时请勿将数据缆线连接到新 HIC 端口。
 
 
 
+[[step-5-place-controller-online]]
 == 第 5 步：使控制器联机
 
 将控制器置于联机状态的步骤取决于您使用的是一个控制器（单工）还是两个控制器（双工）。
 
 
 
+[[duplex-place-controller-online]]
 === 双工：将控制器置于联机状态
 
 对于双工配置，请使控制器联机，收集支持数据并恢复操作。
@@ -439,6 +447,7 @@ NOTE: 如果无法解决此问题，请联系技术支持。
 
 
 
+[[simplex-power-up-the-controller-shelf]]
 === 单工：启动控制器架
 
 对于单工配置，请为控制器架接通电源，收集支持数据并恢复操作。

@@ -15,6 +15,7 @@ summary: 查看更换 E5700 HIC 的要求。
 
 
 
+[[procedure-overview]]
 == 操作步骤概述
 
 您可以在 E5724 控制器架和 E5760 控制器架中添加，升级或更换 HIC 。
@@ -30,6 +31,7 @@ summary: 查看更换 E5700 HIC 的要求。
 
 
 
+[[requirements-for-adding-upgrading-or-replacing-a-hic]]
 == 添加，升级或更换 HIC 的要求
 
 如果您计划添加，升级或更换主机接口卡（ HIC ），请记住以下要求。

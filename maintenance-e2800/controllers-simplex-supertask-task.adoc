@@ -33,6 +33,7 @@ summary: 您可以在单工配置中更换发生故障的控制器箱。
 
 
 
+[[step-1-prepare-to-replace-controller-simplex]]
 == 第 1 步：准备更换控制器（单工）
 
 准备通过保存驱动器安全密钥，备份配置和收集支持数据来更换控制器箱。然后，您可以停止主机 I/O 操作并关闭控制器架。
@@ -120,12 +121,14 @@ CAUTION: * 可能的数据丢失 * - 如果在执行 I/O 操作时继续执行�
 
 
 
+[[step-2-remove-failed-controller-simplex]]
 == 第 2 步：删除故障控制器（单工）
 
 将故障箱更换为新箱。
 
 
 
+[[step-2a-remove-controller-canister-simplex]]
 === 步骤 2a ：卸下控制器箱（单工）
 
 拆下控制器箱。
@@ -180,6 +183,7 @@ CAUTION: 始终用双手支撑控制器箱的重量。
 
 
 
+[[step-2b-remove-battery-simplex]]
 === 步骤 2b ：取出电池（单工）
 
 从控制器架中取出控制器箱后，请取出电池。
@@ -215,6 +219,7 @@ image::../media/28_dwg_e2800_remove_battery_maint-e2800.gif[从控制器箱中�
 
 
 
+[[step-2c-remove-host-interface-card-simplex]]
 === 步骤 2c ：卸下主机接口卡（单工）
 
 如果控制器箱包含主机接口卡（ HIC ），请从原始控制器箱中取出 HIC ，以便可以在新控制器箱中重复使用。
@@ -248,12 +253,14 @@ image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[从控制器卡上�
 
 
 
+[[step-3-install-new-controller-simplex]]
 == 第 3 步：安装新控制器（单工）
 
 安装新的控制器箱以更换出现故障的控制器箱。
 
 
 
+[[step-3a-install-battery-simplex]]
 === 第 3a 步：安装电池（单工）
 
 将电池安装到更换用的控制器箱中。您可以安装从原始控制器箱中取出的电池，也可以安装您订购的新电池。
@@ -302,6 +309,7 @@ image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e2800.gif["金属法兰�
 
 
 
+[[step-3b-install-host-interface-card-simplex]]
 === 步骤 3b ：安装主机接口卡（单工）
 
 如果您从原始控制器箱中卸下了主机接口卡（ HIC ），请将该 HIC 安装到新控制器箱中。
@@ -338,6 +346,7 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[重新安装�
 
 
 
+[[step-3c-install-new-controller-canister-simplex]]
 === 第 3c 步：安装新的控制器箱（单工）
 
 安装电池和 HIC 后，如果最初安装了一个，则可以将新的控制器箱安装到控制器架中。
@@ -405,6 +414,7 @@ image::../media/28_dwg_e2824_remove_controller_canister_simplex_maint-e2800.gif[
 
 
 
+[[step-4-complete-controller-replacement-simplex]]
 == 第 4 步：全面更换控制器（单工）
 
 打开控制器架电源，收集支持数据并恢复操作。

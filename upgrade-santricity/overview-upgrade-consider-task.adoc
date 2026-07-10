@@ -16,12 +16,14 @@ summary: 查看存储阵列的 SANtricity 操作系统控制器软件和固件�
 
 
 
+[[controller-upgrades-single-or-multiple]]
 == 控制器升级（单个或多个）
 
 升级控制器之前，请查看这些主要注意事项。
 
 
 
+[[current-versions]]
 === 当前版本
 
 您可以按如下所示查看软件和固件的当前版本：
@@ -32,6 +34,7 @@ summary: 查看存储阵列的 SANtricity 操作系统控制器软件和固件�
 
 
 
+[[components-included-in-the-upgrade]]
 === 升级中包含的组件
 
 SANtricity 操作系统升级过程包括以下组件：
@@ -44,6 +47,7 @@ SANtricity 操作系统升级过程包括以下组件：
 
 
 
+[[components-to-upgrade-separately]]
 === 要单独升级的组件
 
 以下组件必须单独升级：
@@ -58,6 +62,7 @@ SANtricity 操作系统升级过程包括以下组件：
 
 
 
+[[dual-controllers-and-io-processing]]
 === 双控制器和 I/O 处理
 
 如果存储阵列包含两个控制器，并且您安装了多路径驱动程序，则在升级期间，存储阵列可以继续处理 I/O 。在升级期间，将执行以下过程：
@@ -72,6 +77,7 @@ SANtricity 操作系统升级过程包括以下组件：
 
 
 
+[[health-check]]
 === 运行状况检查
 
 在升级过程中运行状况检查。此运行状况检查会评估所有存储阵列组件，以确保升级可以继续进行。以下情况可能会阻止升级：
@@ -91,6 +97,7 @@ SANtricity 操作系统升级过程包括以下组件：
 
 
 
+[[immediate-or-staged-upgrade]]
 === 立即或分阶段升级
 
 您可以立即激活升级，也可以稍后暂存升级。您可以选择稍后激活，原因如下：
@@ -101,18 +108,21 @@ SANtricity 操作系统升级过程包括以下组件：
 
 
 
+[[drive-firmware-upgrade]]
 == 驱动器固件升级
 
 在升级驱动器固件之前，请查看以下主要注意事项。
 
 
 
+[[drive-compatibility]]
 === 驱动器兼容性
 
 每个驱动器固件文件都包含有关运行固件的驱动器类型的信息。您只能将指定的固件文件下载到兼容驱动器。System Manager 会在升级过程中自动检查兼容性。
 
 
 
+[[drive-upgrade-methods]]
 === 驱动器升级方法
 
 驱动器固件升级方法有两种：联机和脱机。

@@ -49,6 +49,7 @@ CAUTION: * 可能丢失数据访问 * - 如果卷已处于 " 已降级 " 状态�
 
 
 
+[[step-1-prepare-to-replace-drive-drawer-60-drive]]
 == 第 1 步：准备更换驱动器抽盒（ 60 个驱动器）
 
 准备更换驱动器抽盒，方法是确定是否可以在驱动器架联机时执行更换操作步骤，或者是否需要停止主机 I/O 活动并关闭任何已打开电源的磁盘架。如果要将磁盘架中的抽盒更换为抽盒丢失保护，则无需停止主机 I/O 活动并关闭任何磁盘架。
@@ -150,6 +151,7 @@ image::../media/e5700_ib_hic_w_cache_led_callouts_maint-e5700.gif[E5700控制器
 
 
 
+[[step-2-remove-cable-chains]]
 == 第 2 步：拆下缆线链
 
 卸下两个缆线链，以便卸下和更换出现故障的驱动器抽盒。左右缆线链允许抽盒滑入和滑出。
@@ -289,6 +291,7 @@ CAUTION: * 可能的硬件损坏 * - 如果驱动器托架已打开电源，则�
 
 
 
+[[step-3-remove-failed-drive-drawer-60-drive]]
 == 第 3 步：卸下故障驱动器抽盒（ 60 个驱动器）
 
 卸下故障驱动器抽盒，将其更换为新的驱动器抽盒。
@@ -343,6 +346,7 @@ image::../media/92_pht_de6600_drive_drawer_release_lever_maint-e5700.gif[释放�
 
 
 
+[[step-4-install-new-drive-drawer-60-drive]]
 == 第 4 步：安装新的驱动器抽盒（ 60 个驱动器）
 
 安装新的驱动器抽盒以更换出现故障的驱动器抽盒。
@@ -383,6 +387,7 @@ CAUTION: * 设备损坏风险 * —如果您感到绑定，请停止推驱动器
 
 
 
+[[step-5-attach-cable-chains]]
 == 第 5 步：连接缆线链
 
 连接缆线链，以便可以安全地将驱动器重新安装到驱动器抽盒中。
@@ -466,6 +471,7 @@ CAUTION: 设备故障的风险 * —如果连接器未锁紧，则在抽盒操�
 
 
 
+[[step-6-complete-drive-drawer-replacement-60-drive]]
 == 第 6 步：完整更换驱动器抽屉（ 60 个驱动器）
 
 重新插入驱动器并按正确顺序更换前挡板，以完成驱动器抽盒更换。

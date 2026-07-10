@@ -15,52 +15,56 @@ summary: E 系列技术报告
 
 
 
+[[splunk]]
 == Splunk
 
 [cols="9,9,9"]
 |===
 
 
-| https://www.netapp.com/pdf.html?item=/media/16851-tr-4623pdf.pdf["* TR-4623 ：采用 Splunk Enterprise* 的 E5700"^] | https://www.netapp.com/media/57104-tr-4903.pdf["* TR-4903 ： EF300 与 Splunk Enterprise*"^] | https://www.netapp.com/pdf.html?item=/media/72003-tr-4930.pdf["* TR-4930：EF600与Splunk Enterprise*"^] 
+| https://www.netapp.com/pdf.html?item=/media/16851-tr-4623.pdf["* TR-4623 ：采用 Splunk Enterprise* 的 E5700"^] | https://www.netapp.com/media/57104-tr-4903.pdf["* TR-4903 ： EF300 与 Splunk Enterprise*"^] | https://www.netapp.com/pdf.html?item=/media/72003-tr-4930.pdf["* TR-4930：EF600与Splunk Enterprise*"^] 
 
 
 | 介绍 E5700 系统和 Splunk 设计的集成架构。本文档还总结了从 Splunk 计算机日志事件模拟工具获得的性能测试结果。 | 介绍 EF300 全闪存阵列和 Splunk 设计的集成架构。本文档还总结了从 Splunk 计算机日志事件模拟工具获得的性能测试结果。 | 介绍EF600全闪存阵列和Splunk设计的集成架构。本文档还总结了从 Splunk 计算机日志事件模拟工具获得的性能测试结果。 
 |===
 
 
+[[enterprise-databases]]
 == 企业数据库
 
 [cols="9,9,9"]
 |===
 
 
-| https://www.netapp.com/pdf.html?item=/media/17086-tr4764pdf.pdf["* TR-4764 ：《采用 NetApp EF 系列的 Microsoft SQL Server 最佳实践指南》 *"^] | https://www.netapp.com/pdf.html?item=/media/17248-tr4794pdf.pdf["* TR-4794 ：《基于 NetApp EF 系列的 Oracle 数据库》 *"^] |  
+| https://www.netapp.com/pdf.html?item=/media/17086-tr4764.pdf["* TR-4764 ：《采用 NetApp EF 系列的 Microsoft SQL Server 最佳实践指南》 *"^] | https://www.netapp.com/pdf.html?item=/media/17248-tr4794.pdf["* TR-4794 ：《基于 NetApp EF 系列的 Oracle 数据库》 *"^] |  
 
 
 | 帮助存储管理员和数据库管理员在 NetApp EF 系列存储上成功部署 Microsoft SQL Server 。 | 帮助存储管理员和数据库管理员在 NetApp EF 系列存储上成功部署 Oracle 。 |  
 |===
 
 
+[[backup-recovery]]
 == 备份和恢复
 
 [cols="9,9,9"]
 |===
 
 
-| https://www.netapp.com/media/79676-tr-4950.pdf["* TR-4320 ： Commvault Data Platform V11* 的最佳实践"^] | https://www.netapp.com/media/79436-tr-4948.pdf["* TR-4471: Veeam Backup and Replication" 的最佳实践"^] | https://www.netapp.com/pdf.html?item=/media/16433-tr-4704pdf.pdf["* TR-4704 ：《使用 NetApp E 系列存储部署 Veritas NetBackup 》 *"^] 
+| https://www.netapp.com/media/79676-tr-4950.pdf["* TR-4320 ： Commvault Data Platform V11* 的最佳实践"^] | https://www.netapp.com/media/79436-tr-4948.pdf["* TR-4471: Veeam Backup and Replication" 的最佳实践"^] | https://www.netapp.com/pdf.html?item=/media/16433-tr-4704.pdf["* TR-4704 ：《使用 NetApp E 系列存储部署 Veritas NetBackup 》 *"^] 
 
 
 | 介绍在 Commvault Data Platform V11 环境中使用 NetApp E 系列存储时的参考架构和最佳实践。 | 介绍在 Veeam Backup & Replication 9.5 环境中使用 NetApp E 系列存储时的参考架构和最佳实践。 | 介绍在 NetApp E 系列存储上部署 Veritas NetBackup 的情况。 
 |===
 
 
+[[vss]]
 == VSS
 
 [cols="9,9,9"]
 |===
 
 
-| https://www.netapp.com/pdf.html?item=/media/17200-tr4825pdf.pdf["* TR-4825 ：《适用于视频监控的 NetApp E 系列最佳实践指南》 *"^] | https://www.netapp.com/pdf.html?item=/media/6143-tr4818pdf.pdf["* TR-4818 ：《使用 NetApp E 系列存储虚拟化视频管理系统》 *"^] | https://www.netapp.com/pdf.html?item=/media/19400-tr-4848.pdf["* TR-4848 ：采用 NetApp E 系列 E2800 磁盘存储阵列的博世视频录制解决方案 *"^] 
+| https://www.netapp.com/pdf.html?item=/media/17200-tr4825.pdf["* TR-4825 ：《适用于视频监控的 NetApp E 系列最佳实践指南》 *"^] | https://www.netapp.com/pdf.html?item=/media/6143-tr4818.pdf["* TR-4818 ：《使用 NetApp E 系列存储虚拟化视频管理系统》 *"^] | https://www.netapp.com/pdf.html?item=/media/19400-tr-4848.pdf["* TR-4848 ：采用 NetApp E 系列 E2800 磁盘存储阵列的博世视频录制解决方案 *"^] 
 
 
 | 介绍将 E 系列阵列部署到视频监控环境中的最佳实践。 | 介绍如何使用 NetApp E 系列存储设计和部署视频管理系统。 | 介绍视频监控解决方案架构，并详细介绍组件和存储最佳实践。 
@@ -73,6 +77,7 @@ summary: E 系列技术报告
 |===
 
 
+[[hpc]]
 == HPC
 
 [cols="9,9,9"]

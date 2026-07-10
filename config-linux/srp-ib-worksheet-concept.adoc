@@ -17,6 +17,7 @@ image::../media/port_identifiers_ib_srp.gif[基于IB的SRB端口标识符]
 
 
 
+[[host-identifiers]]
 == 主机标识符
 
 
@@ -70,12 +71,14 @@ _ 不适用 _
 |===
 
 
+[[recommended-configuration]]
 == 建议的配置
 
 建议的配置包括两个启动程序端口和四个目标端口。
 
 
 
+[[mapping-host-name]]
 == 正在映射主机名
 
 

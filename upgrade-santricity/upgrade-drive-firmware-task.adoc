@@ -16,6 +16,7 @@ summary: 您可以升级驱动器的固件，以确保具有所有最新功能�
 
 
 
+[[step-1-download-drive-firmware-files]]
 == 第 1 步：下载驱动器固件文件
 
 在此步骤中，您将转到 NetApp 支持站点将驱动器固件文件下载到管理客户端。
@@ -30,6 +31,7 @@ summary: 您可以升级驱动器的固件，以确保具有所有最新功能�
 
 
 
+[[step-2-begin-drive-firmware-upgrade]]
 == 第 2 步：开始升级驱动器固件
 
 在此步骤中，您将升级驱动器的固件。

@@ -23,6 +23,7 @@ summary: 使用适用于 vCenter 的插件界面发现网络中阵列的 IP 地�
 
 
 
+[[step-1-enter-network-addresses-for-discovery]]
 == 第 1 步：输入要发现的网络地址
 
 .步骤
@@ -61,6 +62,7 @@ summary: 使用适用于 vCenter 的插件界面发现网络中阵列的 IP 地�
 
 
 
+[[step-2-resolve-untrusted-certificates-during-discovery]]
 == 第 2 步：在发现期间解析不可信的证书
 
 在继续执行发现过程之前，您必须解决任何证书问题。
@@ -77,6 +79,7 @@ summary: 使用适用于 vCenter 的插件界面发现网络中阵列的 IP 地�
 
 
 
+[[step-3-provide-passwords]]
 == 第 3 步：提供密码
 
 作为发现的最后一步，您必须输入要添加到管理域的存储阵列的密码。

@@ -15,6 +15,7 @@ summary: 了解如何使用缆线将控制器连接到您的网络并完成存�
 
 
 
+[[step-1-cable-the-data-hosts]]
 == 第 1 步：为数据主机布线
 
 根据您的网络拓扑为系统布线。
@@ -51,6 +52,7 @@ image:../media/drw_e4012_fabric_topology_ieops-2157.svg["E4012网络结构拓扑
 ====
 
 
+[[step-2-connect-and-configure-the-management-connection]]
 == 第 2 步：连接并配置管理连接
 
 您可以使用 DHCP 服务器或静态 IP 地址配置控制器管理端口。
@@ -123,6 +125,7 @@ NOTE: 如果断开与控制器 B 的连接，则可以使用先前验证的控�
 ====
 
 
+[[step-3-configure-and-manage-your-storage-system]]
 == 第 3 步：配置和管理存储系统
 
 安装硬件后，请使用 SANtricity 软件配置和管理存储系统。

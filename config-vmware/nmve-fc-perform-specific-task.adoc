@@ -15,6 +15,7 @@ summary: 对于基于光纤通道的 NVMe 协议，您可以配置交换机并�
 
 
 
+[[step-1-configure-the-nvmefc-switches]]
 == 第 1 步：配置 NVMe/FC 交换机
 
 通过配置（分区）基于光纤通道的 NVMe （ FC ）交换机，主机可以连接到存储阵列并限制路径数。您可以使用交换机的管理界面对交换机进行分区。
@@ -41,6 +42,7 @@ NOTE: 供应商的 HBA 实用程序可用于升级和获取有关 HBA 的特定�
 
 
 
+[[step-2-determine-the-host-ports-wwpns-nvmefc-vmware]]
 == 第2步：确定主机端口WWPNs-NVMe/FC VMware
 
 要配置 FC 分区，必须确定每个启动程序端口的全球通用端口名称（ WWPN ）。
@@ -66,6 +68,7 @@ Emulex Corporation Emulex LPe16000 16Gb PCIe Fibre Channel Adapter
 
 
 
+[[step-3-enable-hba-drivers]]
 == 第 3 步：启用 HBA 驱动程序
 
 必须在 Broadcom/Emulex 和 Marvell/qlogic HBA 驱动程序中启用 NVMe 支持。
@@ -92,6 +95,7 @@ esxcfg-module -s "ql2xnvmesupport=1" qlnativefc
 
 
 
+[[step-4-record-your-configuration]]
 == 第 4 步：记录您的配置
 
 您可以生成并打印此页面的 PDF ，然后使用以下工作表记录基于光纤通道的 NVMe 存储配置信息。要执行配置任务，您需要此信息。
@@ -102,6 +106,7 @@ image::../media/port_identifiers_host_and_target_conf-vmw.gif[基于光纤通道
 
 
 
+[[host-identifiers]]
 === 主机标识符
 
 |===
@@ -134,6 +139,7 @@ _ 不适用 _
 |===
 
 
+[[target-identifiers]]
 === 目标标识符
 
 |===
@@ -191,6 +197,7 @@ _ 不适用 _
 |===
 
 
+[[mapping-host]]
 === 正在映射主机
 
 |===

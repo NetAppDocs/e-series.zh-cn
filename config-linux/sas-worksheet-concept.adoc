@@ -17,6 +17,7 @@ image::../media/sas_topology_diagram_conf-lin.gif[图： SAS 拓扑]
 
 
 
+[[host-identifiers]]
 == 主机标识符
 
 |===
@@ -65,12 +66,14 @@ _ 不适用 _
 |===
 
 
+[[target-identifiers]]
 == 目标标识符
 
 建议的配置包含两个目标端口。
 
 
 
+[[mapping-host]]
 == 正在映射主机
 
 |===

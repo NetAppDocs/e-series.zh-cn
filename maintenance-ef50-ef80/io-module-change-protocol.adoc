@@ -66,6 +66,7 @@ NOTE: 必须已安装新硬件，因为默认协议和可用协议列表（您�
 
 
 
+[[step-1-prepare-for-the-protocol-change]]
 == 步骤 1：为协议变更做好准备
 
 通过验证当前使用的协议，确定是否需要更改协议，如果需要，则安排停机维护窗口，准备更改主机 I/O 模块上的协议。
@@ -107,6 +108,7 @@ NOTE: 如果要查看主机 I/O 模块的可用协议列表，请选择 *Host I/
 
 
 
+[[step-2-stop-host-io-operations]]
 == 步骤 2：停止主机 I/O 操作
 
 更改协议之前，必须停止主机的所有 I/O 操作，然后从存储系统中删除所有定义的主机。
@@ -169,6 +171,7 @@ image::../media/icon_round_1.png[标注编号 1]
 
 
 
+[[step-3-change-the-protocol]]
 == 步骤 3：更改协议
 
 使用 SANtricity System Manager 更改主机 I/O 模块上的协议，等待控制器完成其重新启动周期，确认其状态为 Optimal，然后重新创建主机定义。
@@ -195,6 +198,7 @@ image::../media/icon_round_1.png[标注编号 1]
 
 
 
+[[step-4-configure-the-host-to-use-the-new-protocol]]
 == 步骤 4：配置主机以使用新协议
 
 更改主机协议后，必须将主机配置为使用新协议。

@@ -15,6 +15,7 @@ summary: 查看 E2800 上的主机端口协议转换要求。
 
 
 
+[[host-ports-you-can-change]]
 == 可以更改的主机端口
 
 
@@ -99,6 +100,7 @@ NOTE: 此外，还提供双端口 HIC 。
 
 
 
+[[requirements-for-changing-the-host-protocol]]
 == 更改主机协议的要求
 
 * 您必须为此操作步骤计划停机维护窗口。
@@ -111,6 +113,7 @@ NOTE: 此外，还提供双端口 HIC 。
 
 
 
+[[considerations-for-changing-the-host-protocol]]
 == 更改主机协议的注意事项
 
 更改主机协议的注意事项取决于基板主机端口和 HIC 端口的起始和结束协议。
@@ -122,6 +125,7 @@ NOTE: 只有在转换已使用的存储阵列时，以下注意事项才适用�
 
 
 
+[[converting-from-fc-to-iscsi]]
 === 从 FC 转换为 iSCSI
 
 * 如果您的配置包含连接到 FC 基板端口的 SAN 启动主机，请检查 https://mysupport.netapp.com/NOW/products/interoperability["NetApp 互操作性表"^] 用于确保 iSCSI 支持此配置的工具。否则，您将无法将主机协议转换为 iSCSI 。
@@ -151,6 +155,7 @@ CAUTION: 如果在转换为 iSCSI 之前未停用同步镜像关系，则系统�
 
 
 
+[[converting-from-iscsi-to-fc]]
 === 从 iSCSI 转换为 FC
 
 * 异步镜像要求本地存储阵列和远程存储阵列使用相同的协议。如果您当前正在对基板端口使用异步镜像，则必须在更改协议之前停用异步镜像。
@@ -159,6 +164,7 @@ CAUTION: 如果在转换为 iSCSI 之前未停用同步镜像关系，则系统�
 
 
 
+[[converting-from-fc-to-fciscsi]]
 === 从 FC 转换为 FC/iSCSI
 
 镜像注意事项：
@@ -244,6 +250,7 @@ NOTE: 在这种情况下，无法共享 DA 卷。
 
 
 
+[[converting-from-iscsi-to-fciscsi]]
 === 从 iSCSI 转换为 FC/iSCSI
 
 * 如果您计划转换用于镜像的端口，则必须将镜像关系移动到转换后仍保留 iSCSI 的端口。
@@ -258,6 +265,7 @@ NOTE: 在这种情况下，无法共享 DA 卷。
 
 
 
+[[converting-from-fciscsi-to-fc]]
 === 从 FC/iSCSI 转换为 FC
 
 * 将所有主机端口转换为 FC 时，请注意，必须在编号最高的 FC 端口上通过 FC 进行异步镜像。
@@ -322,6 +330,7 @@ FC
 
 
 
+[[converting-from-fciscsi-to-iscsi]]
 === 从 FC/iSCSI 转换为 iSCSI
 
 * iSCSI 不支持同步镜像。
@@ -337,6 +346,7 @@ CAUTION: * 可能的数据丢失 * - 如果在将端口转换为 iSCSI 之前未
 
 
 
+[[same-host-protocol-and-mirroring-operations]]
 === 相同的主机协议和镜像操作
 
 如果在应用功能包后用于镜像的主机端口保持相同的协议，则镜像操作不会受到影响。即使如此，在应用此功能包之前，您应确认所有镜像一致性组均已同步。

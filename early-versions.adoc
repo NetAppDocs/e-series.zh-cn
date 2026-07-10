@@ -15,6 +15,7 @@ summary: 文档的早期版本
 
 
 
+[[hardware-documentation-for-earlier-releases]]
 == 早期版本的硬件文档
 
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2484026["安装 E2712 ， E2724 ， E5612 ， E5624 控制器驱动器托盘以及 DE1600 和 DE5600 扩展驱动器托盘"^]
@@ -29,10 +30,12 @@ summary: 文档的早期版本
 
 
 
+[[software-documentation-for-earlier-releases]]
 == 早期版本的软件文档
 
 
 
+[[santricity-release-11-9]]
 === SANtricity 11.9 版本
 
 * https://docs.netapp.com/us-en/e-series-santricity-119/index.html["System Manager帮助"^]
@@ -41,6 +44,7 @@ summary: 文档的早期版本
 
 
 
+[[santricity-release-11-8]]
 === SANtricity 11.8版
 
 * https://docs.netapp.com/us-en/e-series-santricity-118/index.html["System Manager帮助"^]
@@ -49,6 +53,7 @@ summary: 文档的早期版本
 
 
 
+[[santricity-release-11-7]]
 === SANtricity 11.7版
 
 * https://docs.netapp.com/us-en/e-series-santricity-117/index.html["System Manager帮助"^]
@@ -57,6 +62,7 @@ summary: 文档的早期版本
 
 
 
+[[santricity-release-11-6]]
 === SANtricity 版本 11.6.
 
 * https://docs.netapp.com/us-en/e-series-santricity-116/index.html["System Manager帮助"^]
@@ -65,6 +71,7 @@ summary: 文档的早期版本
 
 
 
+[[santricity-release-11-5]]
 === SANtricity 11.5 版
 
 * https://docs.netapp.com/us-en/e-series-santricity-115/index.html["System Manager帮助"^]
@@ -72,6 +79,7 @@ summary: 文档的早期版本
 
 
 
+[[santricity-release-11-4]]
 === SANtricity 版本 11.4
 
 * https://mysupport.netapp.com/ecm/ecm_get_file/ECMLP2862590["AMW (E2700、E5600/EF560)帮助"^]

@@ -33,6 +33,7 @@ summary: 更换 EF300 或 EF600 阵列中的电池。
 
 
 
+[[step-1-place-controller-offline]]
 == 第 1 步：使控制器脱机
 
 备份数据并使受影响的控制器脱机。
@@ -79,6 +80,7 @@ NOTE: 更新状态之前，请勿开始任何其他操作。
 
 
 
+[[step-2-remove-controller-canister]]
 == 第 2 步：拆下控制器箱
 
 将故障电池更换为新电池。
@@ -109,6 +111,7 @@ image::../media/remove_controller_6.png[拆下控制器时，用双手支撑控�
 
 
 
+[[step-3-remove-failed-battery]]
 == 第 3 步：取出故障电池
 
 将故障电池从控制器中拉出。
@@ -141,6 +144,7 @@ CAUTION: 为了遵守国际航空运输协会（ IATA ）的规定，请勿通�
 
 
 
+[[step-4-install-new-battery]]
 == 第 4 步：安装新电池
 
 从控制器箱中取出故障电池后，请按照此步骤安装新电池。
@@ -163,6 +167,7 @@ image::../media/batt_5.png[插入电池]
 
 
 
+[[step-5-reinstall-controller-canister]]
 == 第 5 步：重新安装控制器箱
 
 将控制器重新安装到控制器架中。
@@ -181,6 +186,7 @@ image::../media/remove_controller_7.png[将控制器安装到磁盘架中]
 
 
 
+[[step-6-complete-battery-replacement]]
 == 第 6 步：完成电池更换
 
 将控制器置于联机状态，收集支持数据并恢复操作。

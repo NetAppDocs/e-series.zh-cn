@@ -18,6 +18,7 @@ summary: 将主机端口协议从光纤通道（ Fibre Channel ， FC ）更改�
 
 
 
+[[step-1-determine-whether-you-have-dual-protocol-sfps]]
 == 第 1 步：确定您是否具有双协议 SFP
 
 使用 SANtricity 系统管理器确定您拥有的 SFP 收发器类型。由于这些 SFP 可以与 FC 和 iSCSI 协议结合使用，因此称为 _dual-protocol_ 或 _unified_SFP 。
@@ -83,6 +84,7 @@ NOTE: E28xx 或 E57xx 控制器不支持 8 Gbps FC SFP 。仅支持 16 Gbps 和 
 
 
 
+[[step-2-obtain-the-feature-pack]]
 == 第 2 步：获取功能包
 
 要获取功能包，您需要控制器架中的序列号，功能激活代码以及存储阵列的功能启用标识符。
@@ -492,6 +494,7 @@ NOTE: 高级功能激活网站提供了一个链接，指向 "`高级功能激�
 
 
 
+[[step-3-stop-host-io]]
 == 第 3 步：停止主机 I/O
 
 在转换主机端口的协议之前，必须停止主机上的所有 I/O 操作。在成功完成转换之前，您无法访问存储阵列上的数据。
@@ -534,6 +537,7 @@ CAUTION: * 可能的数据丢失 * - 如果在执行 I/O 操作时继续执行�
 
 
 
+[[step-4-change-the-feature-pack]]
 == 第 4 步：更改功能包
 
 更改功能包以转换基板主机端口， IB HIC 端口或这两种类型的端口的主机协议。

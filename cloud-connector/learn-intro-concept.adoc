@@ -15,6 +15,7 @@ summary: 与 SANtricity 云连接器应用程序关联的系统要求，设置�
 
 
 
+[[host-hardware-requirements]]
 == 主机硬件要求
 
 您的硬件必须满足以下最低要求：
@@ -27,6 +28,7 @@ summary: 与 SANtricity 云连接器应用程序关联的系统要求，设置�
 
 
 
+[[supported-browsers]]
 == 支持的浏览器
 
 SANtricity 云连接器应用程序支持以下浏览器（请注意最低版本）：
@@ -43,6 +45,7 @@ NOTE: 在 Microsoft Internet Explorer v11 浏览器中使用兼容性视图设�
 
 
 
+[[compatible-storage-arrays-and-controller-firmware]]
 == 兼容的存储阵列和控制器固件
 
 在使用 SANtricity 云连接器应用程序之前，您应验证存储阵列和固件的兼容性。
@@ -51,6 +54,7 @@ NOTE: 在 Microsoft Internet Explorer v11 浏览器中使用兼容性视图设�
 
 
 
+[[compatible-operating-systems]]
 == 兼容的操作系统
 
 SANtricity 云连接器 4.0 应用程序与以下操作系统兼容并受其支持：
@@ -78,6 +82,7 @@ SUSE Linux Enterprise Server （ SLES ）
 |===
 
 
+[[supported-file-systems]]
 == 支持的文件系统
 
 您必须使用支持的文件系统通过 SANtricity 云连接器应用程序执行备份和还原。

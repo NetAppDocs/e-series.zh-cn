@@ -16,6 +16,7 @@ summary: 为了确保操作可靠，您需要创建一个实施计划，然后�
 
 
 
+[[verify-the-linux-configuration-is-supported]]
 == 验证是否支持 Linux 配置
 
 为了确保操作可靠，您需要创建一个实施计划，然后使用 NetApp 互操作性表工具（ IMT ）验证是否支持整个配置。
@@ -37,12 +38,14 @@ summary: 为了确保操作可靠，您需要创建一个实施计划，然后�
 
 
 
+[[review-restrictions-for-nvme-over-fc]]
 == 查看基于 FC 的 NVMe 的限制
 
 在使用基于光纤通道的NVMe之前、请参见 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^] 查看最新的控制器、主机和恢复限制。
 
 
 
+[[storage-and-disaster-recovery-restrictions]]
 === 存储和灾难恢复限制
 
 * 不支持异步和同步镜像。

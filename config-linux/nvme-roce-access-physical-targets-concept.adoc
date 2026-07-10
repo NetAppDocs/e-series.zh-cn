@@ -17,6 +17,7 @@ summary: 您可以根据 Linux 版本配置定向到设备目标的 I/O 。
 
 
 
+[[nvme-devices-are-io-targets]]
 == NVMe 设备是 I/O 目标
 
 . 输入以下命令以查找从 E-Series 阵列映射到此主机的卷。

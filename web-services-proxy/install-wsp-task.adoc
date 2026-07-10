@@ -15,6 +15,7 @@ summary: 安装涉及下载文件，然后在 Linux 或 Windows 服务器上安�
 
 
 
+[[download-web-services-proxy-files]]
 == 下载 Web 服务代理文件
 
 您可以从 NetApp 支持站点的软件下载页面下载安装文件和自述文件。
@@ -30,6 +31,7 @@ summary: 安装涉及下载文件，然后在 Linux 或 Windows 服务器上安�
 
 
 
+[[install-on-windows-or-linux-server]]
 == 在 Windows 或 Linux 服务器上安装
 
 您可以使用以下三种模式之一（图形，控制台或静默）或 RPM 文件（仅限 Linux ）安装 Web 服务代理和 Unified Manager 。
@@ -41,6 +43,7 @@ summary: 安装涉及下载文件，然后在 Linux 或 Windows 服务器上安�
 
 
 
+[[graphical-mode-install]]
 === 图形模式安装
 
 您可以在图形模式下为 Windows 或 Linux 运行安装。在图形模式下，系统会在 Windows 模式界面中显示提示。
@@ -79,6 +82,7 @@ NOTE: 在升级期间、系统不会提示您输入配置参数。
 
 
 
+[[console-mode-install]]
 === 控制台模式安装
 
 您可以在控制台模式下为 Windows 或 Linux 运行安装。在控制台模式下，终端窗口中会显示提示。
@@ -108,6 +112,7 @@ NOTE: 在升级期间、系统不会提示您输入配置参数。
 
 
 
+[[silent-mode-install]]
 === 静默模式安装
 
 您可以在静默模式下为 Windows 或 Linux 运行安装。在静默模式下，终端窗口中不会显示任何返回消息或脚本。
@@ -125,6 +130,7 @@ NOTE: 在升级期间、系统不会提示您输入配置参数。
 
 
 
+[[rpm-command-install-linux-only]]
 === rpm 命令安装（仅限 Linux ）
 
 对于与 RPM 软件包管理系统兼容的 Linux 系统，您可以使用可选的 RPM 文件安装 Web 服务代理。

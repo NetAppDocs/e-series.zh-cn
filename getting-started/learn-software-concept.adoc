@@ -26,6 +26,7 @@ NOTE: EF600 和 EF300 存储阵列不支持镜像，精简卷或 SSD 缓存功�
 
 
 
+[[santricity-system-manager]]
 == SANtricity 系统管理器
 
 System Manager 是嵌入在每个控制器上的基于 Web 的管理软件。要访问用户界面，请将浏览器指向控制器的 IP 地址。设置向导可帮助您开始进行系统配置。
@@ -92,6 +93,7 @@ image:../media/sam1130_icon_support.gif["支持"]*支持*
 |===
 
 
+[[santricity-unified-manager]]
 == SANtricity 统一管理器
 
 Unified Manager 是基于 Web 的软件，用于管理整个域。从中央视图中，您可以查看所有较新 E-Series 和 EF-Series 阵列的状态，例如 EF50、EF80、E4000、E2800、EF280、EF300、E5700、EF570、EF600、EF300C 和 EF600C。您还可以在选定的存储阵列上执行批处理操作。
@@ -160,6 +162,7 @@ image:../media/sam1140_icon_active_directory.gif["访问管理"]*访问管理*
 |===
 
 
+[[santricity-web-services-proxy]]
 == SANtricity Web 服务代理
 
 Web 服务代理是一种 RESTful API 服务器，可以管理数百个新的和旧的 E 系列阵列。代理单独安装在 Windows 或 Linux 服务器上。
@@ -168,6 +171,7 @@ Web 服务包含 API 文档，可用于直接与 REST API 进行交互。要访�
 
 
 
+[[command-line-interface-cli]]
 == 命令行界面（ CLI ）
 
 命令行界面 (CLI) 是一种软件应用程序，它提供了一种配置和监控存储阵列的方法。使用 CLI，可以从操作系统提示符运行命令，例如  `DOS C:` 提示符、Linux 操作系统路径或 Solaris 操作系统路径。

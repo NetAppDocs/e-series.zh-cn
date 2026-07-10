@@ -18,6 +18,7 @@ summary: 更换 EF300 或 EF600 电池的要求和注意事项。
 
 
 
+[[recovery-guru-alerts]]
 == Recovery Guru 警报
 
 如果 SANtricity System Manager 中的恢复 Guru 报告以下状态之一，则必须更换受影响的电池：
@@ -30,6 +31,7 @@ summary: 更换 EF300 或 EF600 电池的要求和注意事项。
 
 
 
+[[procedure-overview]]
 == 操作步骤概述
 
 要保护数据，您必须尽快更换发生故障的电池。
@@ -45,6 +47,7 @@ summary: 更换 EF300 或 EF600 电池的要求和注意事项。
 
 
 
+[[requirements]]
 == 要求
 
 如果您计划更换电池，则必须具备以下条件：

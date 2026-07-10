@@ -29,6 +29,7 @@ summary: 更换 EF300 或 EF600 中的风扇。
 
 
 
+[[step-1-place-controller-offline]]
 == 第 1 步：使控制器脱机
 
 使控制器箱脱机，以便安全地更换故障风扇。
@@ -75,6 +76,7 @@ NOTE: 更新状态之前，请勿开始任何其他操作。
 
 
 
+[[step-2-remove-controller-canister]]
 == 第 2 步：拆下控制器箱
 
 拆下控制器箱，以便将故障风扇更换为新风扇。
@@ -105,6 +107,7 @@ image::../media/remove_controller_6.png[拆下控制器时，用双手支撑控�
 
 
 
+[[step-3-remove-failed-fan]]
 == 第 3 步：卸下故障风扇
 
 您可以删除故障风扇，以便将其更换为新风扇。
@@ -123,6 +126,7 @@ image::../media/fan_2.png[卸下风扇]
 
 
 
+[[step-4-install-new-fan]]
 == 第 4 步：安装新风扇
 
 安装新风扇以更换故障风扇。
@@ -139,6 +143,7 @@ image::../media/fan_3_a.png[将风扇安装到控制器中]
 
 
 
+[[step-5-reinstall-controller-canister]]
 == 第 5 步：重新安装控制器箱
 
 安装新风扇后，将控制器箱重新安装到控制器架中。
@@ -157,6 +162,7 @@ image::../media/remove_controller_7.png[将控制器安装到磁盘架中]
 
 
 
+[[step-6-complete-fan-replacement]]
 == 第 6 步：完成风扇更换
 
 将控制器置于联机状态，收集支持数据并恢复操作。

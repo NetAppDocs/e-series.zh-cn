@@ -38,6 +38,7 @@ CAUTION: 必须使用两个控制器箱执行此操作步骤。控制器HIC配�
 
 
 
+[[step-1-place-controller-shelf-offline]]
 == 第 1 步：使控制器架脱机
 
 将控制器架置于脱机状态，以便可以安全地添加 SAS 扩展卡。
@@ -94,6 +95,7 @@ CAUTION: * 可能的数据丢失 * - 如果在执行 I/O 操作时继续执行�
 
 
 
+[[step-2-remove-controller-canister]]
 == 第 2 步：拆下控制器箱
 
 卸下控制器箱，以便添加新的 SAS 扩展卡。
@@ -124,6 +126,7 @@ image::../media/remove_controller_6.png[拆下控制器时，用双手支撑控�
 
 
 
+[[step-3-add-the-new-sas-expansion-card]]
 == 第 3 步：添加新的 SAS 扩展卡
 
 安装 SAS 扩展卡以允许驱动器托盘扩展。
@@ -149,6 +152,7 @@ image::../media/remove_controller_6.png[拆下控制器时，用双手支撑控�
 
 
 
+[[step-4-reinstall-the-controller-canister]]
 == 第 4 步：重新安装控制器箱
 
 安装新的 SAS 扩展卡后，将控制器箱重新安装到控制器架中。
@@ -167,6 +171,7 @@ image::../media/remove_controller_7.png[将控制器安装到磁盘架中]
 
 
 
+[[step-5-complete-sas-expansion-card-addition]]
 == 第 5 步：添加完 SAS 扩展卡
 
 将控制器置于联机状态，收集支持数据并恢复操作。

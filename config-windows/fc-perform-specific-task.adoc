@@ -15,6 +15,7 @@ summary: 对于光纤通道协议，您可以配置交换机并确定主机端�
 
 
 
+[[step-1-configure-the-fc-switches-windows]]
 == 第1步：配置FC交换机—Windows
 
 通过配置（分区）光纤通道（ FC ）交换机，主机可以连接到存储阵列并限制路径数。您可以使用交换机的管理界面对交换机进行分区。
@@ -38,6 +39,7 @@ summary: 对于光纤通道协议，您可以配置交换机并确定主机端�
 
 
 
+[[step-2-determine-host-wwpns-and-make-recommended-settings-fc-windows]]
 == 第2步：确定主机WWPN并进行建议的设置—FC、Windows
 
 您可以安装 FC HBA 实用程序，以便查看每个主机端口的全球通用端口名称（ WWPN ）。此外，您还可以使用 HBA 实用程序更改的 "Notes" 列中建议的任何设置 http://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^] 支持的配置。
@@ -64,6 +66,7 @@ summary: 对于光纤通道协议，您可以配置交换机并确定主机端�
 
 
 
+[[step-3-record-your-configuration]]
 == 第 3 步：记录您的配置
 
 您可以生成并打印此页面的 PDF ，然后使用以下工作表记录 FC 存储配置信息。要执行配置任务，您需要此信息。
@@ -74,6 +77,7 @@ image::../media/port_identifiers_host_and_target_conf-win.gif[光纤通道端口
 
 
 
+[[host-identifiers]]
 === 主机标识符
 
 |===
@@ -106,6 +110,7 @@ _ 不适用 _
 |===
 
 
+[[target-identifiers]]
 === 目标标识符
 
 |===
@@ -163,6 +168,7 @@ _ 不适用 _
 |===
 
 
+[[mapping-host-name]]
 === 正在映射主机名
 
 |===

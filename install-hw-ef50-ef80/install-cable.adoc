@@ -26,6 +26,7 @@ image:../media/drw_cable_pull_tab_direction_ieops-1699.svg["电缆拉舌方向"]
 
 
 
+[[step-1-cable-the-inter-controller-mirroring-connections]]
 == 步骤 1：连接控制器间镜像连接线
 
 将控制器彼此连接以启用控制器间镜像。控制器间镜像连接可确保完整的系统冗余，并用于缓存镜像和 I/O 传输。EF50 和 EF80 存储系统的布线相同。
@@ -53,6 +54,7 @@ image:../media/drw_ef50-ef80_mirroring_2p_100gbe_ieops-2659.svg["ef50 和 ef80 �
 
 
 
+[[step-2-cable-the-host-connections]]
 == 步骤 2：连接主机电缆
 
 根据您的网络拓扑（直接连接或光纤连接）为存储系统连接主机电缆。

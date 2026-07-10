@@ -19,6 +19,7 @@ summary: 使用适用于 vCenter 的插件创建卷，将卷分配给主机，�
 
 
 
+[[step-1-create-volumes]]
 == 第1步：创建卷
 
 卷是一种数据容器，用于管理和组织存储阵列上的存储空间。您可以使用存储阵列上的可用存储容量创建卷，这有助于组织系统的资源。" 卷 " 的概念类似于在计算机上使用文件夹 / 目录来组织文件以实现快速访问。
@@ -180,6 +181,7 @@ summary: 使用适用于 vCenter 的插件创建卷，将卷分配给主机，�
 
 
 
+[[step-2-create-host-access-and-assign-volumes]]
 == 第2步：创建主机访问权限并分配卷
 
 可以手动创建主机：
@@ -189,6 +191,7 @@ summary: 使用适用于 vCenter 的插件创建卷，将卷分配给主机，�
 
 
 
+[[manually-creating-the-host]]
 === 手动创建主机
 
 .开始之前
@@ -293,12 +296,14 @@ Name
 
 
 
+[[step-3-create-a-datastore-in-vsphere-client]]
 == 第3步：在vSphere Client中创建数据存储库
 
 要在vSphere Client中创建数据存储库、请参见 https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-5AC611E0-7CEB-4604-A03C-F600B1BA2D23.html["在 vSphere Client 中创建 VMFS 数据存储库"^] 主题。
 
 
 
+[[increase-capacity-of-existing-datastore-by-increasing-volume-capacity]]
 === 通过增加卷容量来增加现有数据存储库的容量
 
 您可以使用池或卷组中的可用容量来增加卷的报告容量（向主机报告的容量）。
@@ -337,6 +342,7 @@ NOTE: 只有某些操作系统才支持增加卷的容量。如果在不支持 L
 
 
 
+[[increase-capacity-of-existing-datastore-by-adding-volumes]]
 === 通过添加卷来增加现有数据存储库的容量
 
 . 您可以通过添加卷来增加数据存储库的容量。按照中的步骤进行操作 <<第1步：创建卷>>。

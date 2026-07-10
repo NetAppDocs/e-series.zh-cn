@@ -15,6 +15,7 @@ summary: Web 服务代理的安装和升级要求以及注意事项。
 
 
 
+[[installation-requirements]]
 == 安装要求
 
 您可以在 Windows 或 Linux 主机系统上安装和配置 Web 服务代理。
@@ -82,6 +83,7 @@ Web 服务代理是一款免费的独立产品，不需要许可证密钥。但�
 |===
 
 
+[[upgrade-considerations]]
 == 升级注意事项
 
 如果要从先前版本升级，请注意，某些项目会保留或删除。

@@ -15,6 +15,7 @@ summary: 要使 E 系列系统能够通过支持的 iSCSI 协议连接到远程�
 
 
 
+[[configure-remote-storage-device-and-e-series-array]]
 == 配置远程存储设备和 E 系列阵列
 
 在继续使用 SANtricity 系统管理器配置远程存储卷功能之前，请执行以下操作：
@@ -38,6 +39,7 @@ NOTE: 建议：在启动导入过程之前备份远程源卷。
 
 
 
+[[cable-the-storage-arrays]]
 == 为存储阵列布线
 
 在设置过程中，存储阵列和 I/O 主机必须连接到与 iSCSI 兼容的接口。
@@ -48,6 +50,7 @@ image:../media/remote_target_volumes_iscsi_use_case_1.png["iSCSI存储布线"] i
 
 
 
+[[configure-the-iscsi-ports]]
 == 配置 iSCSI 端口
 
 您必须配置 iSCSI 端口，以确保目标（本地 E 系列存储阵列）与源（远程存储阵列）之间的通信。

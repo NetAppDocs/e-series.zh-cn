@@ -19,6 +19,7 @@ image::../media/port_identifiers_host_and_target_conf-lin.gif[FC 网络配置]
 
 
 
+[[host-identifiers]]
 == 主机标识符
 
 |===
@@ -51,6 +52,7 @@ _ 不适用 _
 |===
 
 
+[[target-identifiers]]
 == 目标标识符
 
 |===
@@ -108,6 +110,7 @@ _ 不适用 _
 |===
 
 
+[[mapping-host]]
 == 正在映射主机
 
 |===

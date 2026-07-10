@@ -15,6 +15,7 @@ SANtricity Web 服务代理是一种 RESTful API 服务器，单独安装在主�
 
 
 
+[[installation-overview]]
 == 安装概述
 
 安装和配置 Web 服务代理涉及以下步骤：
@@ -27,6 +28,7 @@ SANtricity Web 服务代理是一种 RESTful API 服务器，单独安装在主�
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * Unified Manager —此代理安装包括 SANtricity Unified Manager 。 Unified Manager 是一个基于 Web 的界面，可用于对较新的 E 系列和 EF 系列存储系统进行配置访问。有关详细信息，请参见 Unified Manager 联机帮助，该帮助可从其用户界面或获得 https://docs.netapp.com/us-en/e-series-santricity/index.html["SANtricity 软件文档站点"^]。

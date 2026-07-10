@@ -33,6 +33,7 @@ CAUTION: 如果要在 StorageGRID 设备（例如 SG5612 或 SG5760 ）上升级
 
 
 
+[[step-1-perform-pre-upgrade-health-check]]
 == 第 1 步：执行升级前运行状况检查
 
 运行状况检查会在升级过程中运行，但您也可以在开始之前单独运行运行运行运行状况检查。运行状况检查会评估存储阵列的组件，以确保升级可以继续进行。
@@ -58,6 +59,7 @@ NOTE: 如果任何阵列未通过运行状况检查，您可以跳过该特定�
 
 
 
+[[step-2-download-software-files-from-support-site]]
 == 第 2 步：从支持站点下载软件文件
 
 在此步骤中，您将转到 NetApp 支持站点将新的可下载软件包（ DLP ）软件文件保存到管理主机系统中。
@@ -85,6 +87,7 @@ NOTE: 8.42 及更高版本需要使用数字签名固件。如果您尝试下载
 
 
 
+[[step-3-transfer-software-files-to-the-controllers]]
 == 第 3 步：将软件文件传输到控制器
 
 您可以将 SANtricity 操作系统软件文件和 NVSRAM 文件加载到存储库中，以便 Unified Manager 升级中心可以访问该文件。
@@ -163,6 +166,7 @@ NOTE: 软件存储库列出了与 Web 服务代理关联的所有软件文件。
 
 
 
+[[step-4-activate-staged-software-files-optional]]
 == 第 4 步：激活暂存软件文件（可选）
 
 您可以选择立即激活软件文件，也可以等到更方便的时间再激活。此操作步骤假定您稍后选择激活此软件文件。

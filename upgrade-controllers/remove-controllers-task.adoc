@@ -15,6 +15,7 @@ summary: 升级控制器的第一步是删除旧控制器以及电池。
 
 
 
+[[step-1-remove-controller]]
 == 第 1 步：删除控制器
 
 [role="tabbed-block"]
@@ -79,6 +80,7 @@ image:../media/28_dwg_e2824_remove_controller_canister_upg-hw.gif["拆下控制�
 ====
 
 
+[[step-2-remove-battery]]
 == 第 2 步：取出电池
 
 只有当您要使用新控制器箱中旧控制器箱中的电池时，才应取出电池。

@@ -16,6 +16,7 @@ summary: 您可以修改 Web 服务代理设置，以满足环境的独特操作
 
 
 
+[[stop-or-restart-the-webserver]]
 == 停止或重新启动 Web 服务器
 
 Web 服务器服务会在安装期间启动并在后台运行。在某些配置任务期间，您可能需要停止或重新启动 Web 服务器服务。
@@ -37,6 +38,7 @@ Web 服务器服务会在安装期间启动并在后台运行。在某些配置�
 
 
 
+[[resolve-port-conflicts]]
 == 解决端口冲突
 
 如果 Web 服务代理正在运行，而另一个应用程序在定义的地址或端口上可用，则可以在 wsconfig.xml 文件中解决端口冲突。
@@ -107,6 +109,7 @@ port
 
 
 
+[[configure-load-balancing-andor-high-availability]]
 == 配置负载平衡和 / 或高可用性
 
 要在高可用性（ HA ）配置中使用 Web 服务代理，您可以配置负载平衡。在 HA 配置中，通常一个节点接收所有请求，而另一个节点处于备用状态，或者在所有节点之间对请求进行负载平衡。
@@ -134,6 +137,7 @@ Web 服务代理可以位于高可用性（ HA ）环境中，无论请求的接
 
 
 
+[[disable-symbol-https]]
 == 禁用符号 HTTPS
 
 您可以禁用符号命令（默认设置）并通过远程操作步骤调用（ RPC ）发送命令。可以在 wsconfig.xml 文件中更改此设置。
@@ -162,6 +166,7 @@ NOTE: 使用基于 RPC 的符号时， Web 服务代理无法连接到禁用了�
 
 
 
+[[configure-cross-origin-resource-sharing]]
 == 配置跨源资源共享
 
 您可以配置跨源资源共享（ CORS ），这种机制使用额外的 HTTP 标头为一个源运行的 Web 应用程序提供从另一个源服务器访问选定资源的权限。

@@ -14,6 +14,7 @@ CAUTION: 为防止过热，请勿让控制器托架空置超过 60 分钟。
 
 
 
+[[step-1-remove-the-controller]]
 == 步骤 1：卸下控制器
 
 验证缓存内存中的任何数据是否已写入驱动器，从受损控制器拔下所有电缆，然后从机箱中取出受损控制器。
@@ -96,6 +97,7 @@ image::../media/icon_round_3.png[标注编号 3]
 
 
 
+[[step-2-move-the-power-supply]]
 == 步骤 2：移动电源
 
 将电源 (PSU) 移至更换控制器。
@@ -154,6 +156,7 @@ NOTE: 为避免损坏内部连接器，在将 PSU 滑入控制器时不要使用
 
 
 
+[[step-3-move-the-fans]]
 == 步骤 3：移动风扇
 
 将风扇移至更换控制器。
@@ -183,6 +186,7 @@ image::../media/icon_round_2.png[标注编号 2]
 
 
 
+[[step-4-move-the-nv-battery]]
 == 步骤 4：移动 NV 电池
 
 将 NV 电池移至更换控制器。
@@ -236,6 +240,7 @@ NV 电池应平放在其隔间内。
 
 
 
+[[step-5-move-system-dimms]]
 == 第 5 步：移动系统 DIMM
 
 将 DIMM 移至更换控制器。
@@ -301,6 +306,7 @@ DIMM 底部的插针之间的凹口应与插槽中的卡舌对齐。
 
 
 
+[[step-6-move-the-io-modules]]
 == 第 6 步：移动 I/O 模块
 
 将 I/O 模块和任何 I/O 消隐模块移动到替换控制器。
@@ -349,6 +355,7 @@ image::../media/icon_round_2.png[标注编号 2]
 
 
 
+[[step-7-install-the-controller]]
 == 第 7 步：安装控制器
 
 将替换控制器安装到机箱中，重新连接其电源线及其所有电缆。

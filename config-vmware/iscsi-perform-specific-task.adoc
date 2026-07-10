@@ -16,6 +16,7 @@ summary: 对于 iSCSI 协议，您可以在阵列端和主机端配置交换机�
 
 
 
+[[step-1-configure-the-switches-iscsi-vmware]]
 == 第1步：配置交换机—iSCSI、VMware
 
 您可以根据供应商针对 iSCSI 的建议配置交换机。这些建议可能包括配置指令以及代码更新。
@@ -37,6 +38,7 @@ NOTE: 控制器的交换机端口不支持端口通道 /LACP 。不建议使用�
 
 
 
+[[step-2-configure-networking-iscsi-vmware]]
 == 第2步：配置网络连接—iSCSI VMware
 
 根据数据存储要求，您可以通过多种方式设置 iSCSI 网络。有关为您的环境选择最佳配置的提示，请咨询您的网络管理员。
@@ -72,6 +74,7 @@ NOTE: 许多网络交换机必须配置为超过 9 ， 000 字节的 IP 开销�
 
 
 
+[[step-3-configure-array-side-networking-iscsi-vmware]]
 == 第3步：配置阵列端网络连接—iSCSI、VMware
 
 您可以使用 SANtricity 系统管理器图形用户界面在阵列端配置 iSCSI 网络。
@@ -87,7 +90,7 @@ NOTE: 许多网络交换机必须配置为超过 9 ， 000 字节的 IP 开销�
 此任务介绍如何从硬件页面访问 iSCSI 端口配置。您也可以从菜单： System[ 设置 > 配置 iSCSI 端口 ] 访问配置。
 
 
-NOTE: 有关如何在VMware配置上设置阵列端网络的其他信息，请参见以下技术报告： https://www.netapp.com/pdf.html?item=/media/17017-tr4789pdf.pdf["《 VMware E 系列 SANtricity iSCSI 与 ESXi 6.x 和 7.x 集成配置指南》"^]。
+NOTE: 有关如何在 VMware 配置上设置阵列端网络的其他信息，请参见以下技术报告： https://www.netapp.com/pdf.html?item=/media/17017-tr4789.pdf["《 VMware E 系列 SANtricity iSCSI 与 ESXi 6.x 和 7.x 集成配置指南》"^]。
 
 .步骤
 . 在浏览器中，输入以下 URL ： ` +https://<DomainNameOrIPAddress>+`
@@ -197,6 +200,7 @@ MTU 大小（可通过单击 * 显示更多端口设置 * 来获取。）
 
 
 
+[[step-4-configure-host-side-networking-iscsi]]
 == 第4步：配置主机端网络连接—iSCSI
 
 通过在主机端配置 iSCSI 网络， VMware iSCSI 启动程序可以与阵列建立会话。
@@ -222,6 +226,7 @@ MTU 大小（可通过单击 * 显示更多端口设置 * 来获取。）
 
 
 
+[[step-5-verify-ip-network-connections-iscsi-vmware]]
 == 第5步：验证IP网络连接—iSCSI、VMware
 
 您可以使用 ping 测试来验证 Internet 协议（ IP ）网络连接，以确保主机和阵列能够进行通信。
@@ -270,12 +275,14 @@ NOTE: 如果命令失败并显示消息 `sendto （） failed （ Message too lo
 
 
 
+[[step-6-record-your-configuration]]
 == 第 6 步：记录您的配置
 
 您可以生成并打印此页面的 PDF ，然后使用以下工作表记录特定于协议的存储配置信息。要执行配置任务，您需要此信息。
 
 
 
+[[recommended-configuration]]
 === 建议的配置
 
 建议的配置包括两个启动程序端口和四个目标端口以及一个或多个 VLAN 。
@@ -284,6 +291,7 @@ image::../media/50001_01_conf-vmw.gif[iSCSI端口标识符]
 
 
 
+[[target-iqn]]
 === 目标 IQN
 
 |===
@@ -299,6 +307,7 @@ image::../media/50001_01_conf-vmw.gif[iSCSI端口标识符]
 |===
 
 
+[[mapping-host-name]]
 === 正在映射主机名
 
 |===

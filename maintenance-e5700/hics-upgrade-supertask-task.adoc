@@ -38,6 +38,7 @@ summary: 升级 E5700 中的 HIC 。
 
 
 
+[[step-1-prepare-to-upgrade-hics]]
 == 第 1 步：准备升级 HIC
 
 通过备份存储阵列的配置数据库，收集支持数据和停止主机 I/O 操作，准备升级 HIC 。然后，您可以关闭控制器架。
@@ -121,6 +122,7 @@ image::../media/e5700_ib_hic_w_cache_led_callouts_maint-e5700.gif[E5700控制器
 
 
 
+[[step-2-remove-controller-canister]]
 == 第 2 步：拆下控制器箱
 
 拆下控制器箱，以便升级新的 HIC 。
@@ -185,6 +187,7 @@ CAUTION: 始终用双手支撑控制器箱的重量。
 
 
 
+[[step-3-remove-a-hic]]
 == 第 3 步：删除 HIC
 
 删除原始 HIC ，以便使用升级后的 HIC 进行更换。
@@ -232,6 +235,7 @@ image::../media/28_dwg_e2800_hic_thumbscrews_maint-e5700.gif[从控制器卡上�
 
 
 
+[[step-4-install-the-new-hic]]
 == 第 4 步：安装新的 HIC
 
 安装新主机 HIC 。
@@ -272,6 +276,7 @@ image::../media/28_dwg_e2800_hic_thumbscrews_maint-e5700.gif[将HIC安装到控�
 
 
 
+[[step-5-reinstall-controller-canister]]
 == 第 5 步：重新安装控制器箱
 
 安装新 HIC 后，将控制器箱重新安装到控制器架中。
@@ -315,6 +320,7 @@ NOTE: 此时请勿将数据缆线连接到新 HIC 端口。
 
 
 
+[[step-6-complete-the-hic-upgrade]]
 == 第 6 步：完成 HIC 升级
 
 检查控制器 LED 和七段显示，并确认控制器的状态为最佳。

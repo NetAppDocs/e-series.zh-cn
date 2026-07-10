@@ -15,6 +15,7 @@ summary: 对于 SAS 协议，您可以确定主机端口地址并进行建议的
 
 
 
+[[step-1-determine-sas-host-identifiers-vmware]]
 == 第1步：确定SAS主机标识符—vmware
 
 使用 HBA 实用程序查找 SAS 地址，然后使用 HBA BIOS 进行相应的配置设置。
@@ -36,6 +37,7 @@ summary: 对于 SAS 协议，您可以确定主机端口地址并进行建议的
 
 
 
+[[step-2-record-your-configuration]]
 == 第 2 步：记录您的配置
 
 您可以生成并打印此页面的 PDF ，然后使用以下工作表记录特定于协议的存储配置信息。要执行配置任务，您需要此信息。
@@ -44,6 +46,7 @@ image::../media/sas_topology_diagram_conf-vmw.gif[图： SAS 拓扑]
 
 
 
+[[host-identifiers]]
 === 主机标识符
 
 |===
@@ -92,12 +95,14 @@ _ 不适用 _
 |===
 
 
+[[target-identifiers]]
 === 目标标识符
 
 建议的配置包含两个目标端口。
 
 
 
+[[mapping-host-name]]
 === 正在映射主机名
 
 |===

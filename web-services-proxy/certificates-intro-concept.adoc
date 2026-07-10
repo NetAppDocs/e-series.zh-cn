@@ -15,6 +15,7 @@ summary: 使用 Web 服务代理配置文件， API 命令或 Unified Manager �
 
 
 
+[[enable-ssl]]
 == 启用 SSL
 
 Web 服务代理使用安全套接字层（ SSL ）来实现安全性，此功能在安装期间启用。您可以在 wsconfig.xml 文件中更改 SSL 端口指定。
@@ -43,6 +44,7 @@ Web 服务代理使用安全套接字层（ SSL ）来实现安全性，此功�
 
 
 
+[[bypass-certificate-validation]]
 == 绕过证书验证
 
 为了支持安全连接， Web 服务代理会根据自己的可信证书验证存储系统的` 证书。如果需要，您可以指定代理在连接到存储系统之前绕过此验证。
@@ -69,6 +71,7 @@ Web 服务代理使用安全套接字层（ SSL ）来实现安全性，此功�
 
 
 
+[[generate-and-import-a-host-management-certificate]]
 == 生成并导入主机管理证书
 
 证书用于标识客户端和服务器之间安全连接的网站所有者。要为安装了 Web 服务代理的主机系统生成和导入证书颁发机构（ CA ）证书，您可以使用 API 端点。
@@ -132,6 +135,7 @@ NOTE: 请勿再次调用 * POST ： /certificates * 或 * POST ： /certifics/re
 
 
 
+[[login-lockout-feature]]
 == 登录锁定功能
 
 只能通过REST API进行配置、您可以限制嵌入式Web服务和代理Web服务的登录尝试次数。根据您的设置、一旦超过Web服务的登录尝试次数、锁定功能将启用。

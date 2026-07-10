@@ -17,6 +17,7 @@ summary: 查看 E2800 箱类型和要求。
 
 
 
+[[power-supply]]
 == Power supply
 
 
@@ -26,6 +27,7 @@ NOTE: 电源更换操作步骤 适用于更换 IOM 。要更换 IOM ，请执行
 
 
 
+[[shelf-types-for-a-power-supply]]
 === 电源的磁盘架类型
 
 您可以更换以下磁盘架中的电源：
@@ -47,6 +49,7 @@ image::../media/28_dwg_e2812_power_fan_canisters.gif[带有电源风扇箱的E28
 
 
 
+[[requirements-for-replacing-a-power-supply]]
 === 更换电源的要求
 
 如果您计划更换电源，请记住以下要求。
@@ -67,12 +70,14 @@ NOTE: 如果磁盘架中的第二个电源（电源风扇箱）未处于最佳�
 
 
 
+[[power-canister]]
 == 动力箱
 
 每个 60 驱动器控制器架或驱动器架都包含两个电源箱，以实现电源冗余。
 
 
 
+[[shelf-types-for-a-power-canister]]
 === 电源箱的磁盘架类型
 
 您可以更换以下磁盘架中的电源箱：
@@ -93,6 +98,7 @@ image::../media/28_dwg_e2860_de460c_psu_maint-e2800.gif[电源罐]
 
 
 
+[[requirements-for-replacing-a-power-canister]]
 === 更换电源箱的要求
 
 如果您计划更换电源箱，请记住以下要求。
@@ -118,12 +124,14 @@ NOTE: 如果磁盘架中的第二个电源箱状态不是最佳，或者 Recover
 
 
 
+[[fan-canister]]
 == 风扇箱
 
 每个 60 驱动器控制器架或驱动器架都包含两个风扇箱。
 
 
 
+[[shelf-types-for-a-fan-canister]]
 === 风扇箱的磁盘架类型
 
 您可以更换以下磁盘架中的风扇箱：
@@ -147,6 +155,7 @@ CAUTION: * 可能的设备损坏 * - 如果在通电的情况下更换风扇箱�
 
 
 
+[[requirements-for-replacing-a-fan-canister]]
 === 更换风扇箱的要求
 
 如果您计划更换风扇箱，请记住以下要求。

@@ -27,6 +27,7 @@ summary: 使用相同类型的 I/O 模块更换 EF50 或 EF80 存储系统中出
 
 
 
+[[step-1-prepare-to-replace-an-io-module]]
 == 步骤 1：准备更换 I/O 模块
 
 通过收集必要的工具和设备，并备份存储系统的配置数据库，准备更换 I/O 模块。
@@ -71,6 +72,7 @@ CAUTION: *可能丢失数据访问权限* -- 存在不兼容或不匹配的 I/O 
 
 
 
+[[step-2-place-the-controller-offline]]
 == 步骤 2：将控制器置于脱机状态
 
 将受损的控制器脱机，以便您可以安全地执行此过程的其余部分。
@@ -109,6 +111,7 @@ CAUTION: 如果 *OK to remove* 字段未显示 *Yes*，请不要继续移除有�
 
 
 
+[[step-3-replace-the-io-module]]
 == 第 3 步：更换 I/O 模块
 
 从出现故障的 I/O 模块中拔下电缆，将其更换为更换的 I/O 模块，然后连接更换的 I/O 模块。
@@ -160,6 +163,7 @@ image::../media/icon_round_2.png[标注编号 2]
 
 
 
+[[step-4-place-the-controller-online]]
 == 步骤 4：将控制器联机
 
 使受损的控制器恢复联机。
@@ -201,6 +205,7 @@ NOTE: 如果无法解决问题，请联系 https://mysupport.netapp.com/site/glo
 
 
 
+[[step-5-complete-the-io-module-replacement]]
 == 第 5 步：完成 I/O 模块更换
 
 使用 SANtricity System Manager，确保已安装最新版本的 SANtricity 操作系统，验证所有卷都已返回到其拥有的控制器，并收集支持数据，以便您可以恢复操作。
@@ -251,6 +256,7 @@ Recovery Guru 不存在（似乎所有卷都已返回给其拥有的控制器）
 
 
 
+[[step-6-return-the-failed-part-to-netapp]]
 == 第 6 步：将故障部件退回 NetApp
 
 如套件附带的 RMA 说明中所述，将故障部件退回 NetApp。有关更多信息，请参阅 https://mysupport.netapp.com/site/info/rma["零件退货和更换"]页面。

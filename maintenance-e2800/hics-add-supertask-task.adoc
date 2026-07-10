@@ -38,6 +38,7 @@ summary: 将主机接口卡（ HIC ）添加到 E2800 阵列。
 
 
 
+[[step-1-prepare-to-add-hic]]
 == 第 1 步：准备添加 HIC
 
 准备添加 HIC ，方法是备份存储阵列的配置数据库，收集支持数据并停止主机 I/O 操作。然后，您可以关闭控制器架。
@@ -118,6 +119,7 @@ image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[E2800控制器�
 
 
 
+[[step-2-remove-controller-canister]]
 == 第 2 步：拆下控制器箱
 
 卸下控制器箱，以便添加新的主机接口卡。
@@ -178,6 +180,7 @@ CAUTION: 始终用双手支撑控制器箱的重量。
 
 
 
+[[step-3-install-the-hic]]
 == 第 3 步：安装 HIC
 
 安装 HIC 以增加存储阵列中的主机端口数。
@@ -232,6 +235,7 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[将该控制�
 
 
 
+[[step-4-reinstall-controller-canister]]
 == 第 4 步：重新安装控制器箱
 
 安装新 HIC 后，将控制器箱重新安装到控制器架中。
@@ -271,6 +275,7 @@ NOTE: 此时请勿将数据缆线连接到新 HIC 端口。
 
 
 
+[[step-5-complete-hic-addition]]
 == 第 5 步：添加 HIC
 
 检查控制器 LED 和七段显示，然后确认控制器的状态为最佳。

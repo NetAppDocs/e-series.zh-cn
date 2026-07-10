@@ -16,6 +16,7 @@ summary: 您可以访问 SANtricity 云连接器应用程序左侧导航面板�
 
 
 
+[[modify-s3-account-settings]]
 == 修改 S3 帐户设置
 
 您可以在 "S3 帐户设置 " 窗口中修改 SANtricity 云连接器应用程序的现有 S3 设置。
@@ -46,6 +47,7 @@ summary: 您可以访问 SANtricity 云连接器应用程序左侧导航面板�
 
 
 
+[[manage-storage-arrays]]
 == 管理存储阵列
 
 您可以在管理存储阵列页面中从注册到 SANtricity 云连接器主机的 Web 服务代理添加或删除存储阵列。
@@ -88,6 +90,7 @@ summary: 您可以访问 SANtricity 云连接器应用程序左侧导航面板�
 
 
 
+[[modify-web-services-proxy-settings]]
 == 修改 Web 服务代理设置
 
 您可以在 " Web 服务代理设置 " 窗口中修改 SANtricity 云连接器应用程序的现有 Web 服务代理设置。
@@ -113,6 +116,7 @@ summary: 您可以访问 SANtricity 云连接器应用程序左侧导航面板�
 
 
 
+[[change-santricity-cloud-connector-password]]
 == 更改 SANtricity 云连接器密码
 
 您可以在更改密码屏幕中更改 SANtricity 云连接器应用程序的密码。

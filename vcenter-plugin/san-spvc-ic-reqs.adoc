@@ -15,6 +15,7 @@ summary: vCenter插件的安装和升级要求以及注意事项。
 
 
 
+[[installation-requirements]]
 == 安装要求
 
 您可以在Windows主机系统上安装和配置适用于vCenter的存储插件。插件安装包括以下要求。
@@ -63,6 +64,7 @@ summary: vCenter插件的安装和升级要求以及注意事项。
 |===
 
 
+[[upgrade-considerations]]
 == 升级注意事项
 
 如果要从先前版本升级、请注意、必须在升级之前从vCSA中取消注册此插件。

@@ -17,6 +17,7 @@ summary: 机架安装硬件用于将硬件安装在机架或机柜中。安装�
 
 
 
+[[adjustable-support-rails]]
 == 可调整的支持导轨
 
 访问 https://mysupport.netapp.com/ecm/ecm_download_file/ECMP1652045["安装可调整的支持导轨"^] 用于安装单独发售的控制器驱动器托盘或驱动器托盘（尚未安装在机柜中）。此操作步骤适用于以下 2U （ 9 厘米或 3.5 英寸）托盘：
@@ -28,18 +29,21 @@ summary: 机架安装硬件用于将硬件安装在机架或机柜中。安装�
 
 
 
+[[two-post-rack-2u]]
 == 两柱机架—2U
 
 访问 https://mysupport.netapp.com/ecm/ecm_download_file/ECMM1280302["将 2U 设备安装到两柱机架中"^]。
 
 
 
+[[four-post-rack-or-cabinet-2u]]
 == 四柱机架或机柜—2U
 
 访问 https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2484194["在四柱机架或机柜中安装 2U 12 驱动器机箱"^]。
 
 
 
+[[four-post-rack-superrail]]
 == 四柱机架—SuperRail
 
 访问 https://docs.netapp.com/us-en/ontap-systems/platform-supplemental/superrail-install.html["将 SuperRail 安装到四柱式机架中"^]。

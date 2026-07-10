@@ -29,6 +29,7 @@ summary: 您可以升级 EF50 或 EF80 存储系统中的 I/O 模块，以增加
 
 
 
+[[step-1-prepare-to-upgrade-io-modules]]
 == 第 1 步：准备升级 I/O 模块
 
 通过安排停机维护窗口、收集必要的工具和设备以及备份存储系统的配置数据库，准备升级 I/O 模块。
@@ -74,6 +75,7 @@ CAUTION: *可能丢失数据访问权限* -- 存在不兼容或不匹配的 I/O 
 
 
 
+[[step-2-power-off-both-controllers]]
 == 步骤 2：关闭两个控制器的电源
 
 关闭存储系统中的两个控制器，以便安全地升级两个控制器中的 I/O 模块。
@@ -143,6 +145,7 @@ image::../media/icon_round_1.png[标注编号 1]
 
 
 
+[[step-3-upgrade-the-io-modules]]
 == 第 3 步：升级 I/O 模块
 
 从要升级的 I/O 模块中拔下电缆（除非您有 I/O 空白模块），将 I/O 模块或 I/O 空白模块替换为新的 I/O 模块，然后对新的 I/O 模块进行电缆连接。
@@ -201,6 +204,7 @@ image:../media/icon_round_2.png["标注编号 2"]
 
 
 
+[[step-4-power-on-both-controllers]]
 == 步骤 4：打开两个控制器的电源
 
 打开两个控制器的电源。
@@ -233,6 +237,7 @@ NOTE: 如果您无法解决问题，请联系 https://www.netapp.com/company/con
 
 
 
+[[step-5-complete-the-io-module-upgrade]]
 == 第 5 步：完成 I/O 模块升级
 
 使用 SANtricity System Manager，确保已安装最新版本的 SANtricity 操作系统，验证所有卷都已返回到其拥有的控制器，收集支持数据以恢复操作，并在需要时验证和更改主机 I/O 模块协议。

@@ -16,12 +16,14 @@ summary: SANtricity OS 中的新增功能。
 
 
 
+[[new-features-in-version-12-0r1]]
 == 版本 12.0R1 中的新增功能
 
 此版本仅包含小的更改，没有新功能。有关此版本中更改的更多信息，请参见 E-Series SANtricity 操作系统 12.0R1 README。
 
 
 
+[[new-features-in-version-12-0]]
 == 版本 12.0 中的新增功能
 
 
@@ -70,18 +72,21 @@ SANtricity System Manager 中现在提供了新的脚本编辑器。脚本编辑
 |===
 
 
+[[new-features-in-version-11-90r5]]
 == 版本 11.90R5 中的新增功能
 
 此版本仅包含缺陷修复，不包含新功能。有关此版本中更改的更多信息，请参见 E-Series SANtricity 操作系统 11.90R5 README。
 
 
 
+[[new-features-in-version-11-90r4]]
 == 11.90R4 版本新增功能
 
 此版本仅包含小的更改，没有新功能。有关此版本中更改的更多信息，请参见 E-Series SANtricity 操作系统 11.90R4 README。
 
 
 
+[[new-features-in-version-11-90r3]]
 == 11.90R3中的新增功能
 
 [cols="35h,~"]
@@ -97,12 +102,14 @@ SANtricity 操作系统对 IOM12C 和 DCM3 的支持
 |===
 
 
+[[new-features-in-version-11-90r2]]
 == 11.90R2中的新增功能
 
 此版本仅包含少量更改、没有任何新功能。有关此版本中变更的详细信息，请参阅 https://library.netapp.com/ecm/ecm_download_file/ECMLP3334464["E系列11.90发行说明"^]。
 
 
 
+[[new-features-in-version-11-90r1]]
 == 11.90R1中的新增功能
 
 [cols="35h,~"]
@@ -125,6 +132,7 @@ E4000控制器现在支持12 Gb SAS主机接口卡。
 |===
 
 
+[[new-features-in-version-11-90]]
 == 11.90版中的新增功能
 
 [cols="35h,~"]
@@ -168,24 +176,28 @@ E4000控制器现在支持12 Gb SAS主机接口卡。
 |===
 
 
+[[new-features-in-version-11-80-1r4]]
 == 11.80.1R4中的新增功能
 
 此版本仅包含少量更改、没有任何新功能或限制。有关此版本中更改的详细信息、请参阅自述文件。
 
 
 
+[[new-features-in-version-11-80-1r3]]
 == 11.80.1R3中的新增功能
 
 此版本仅包含少量更改、没有任何新功能或限制。有关此版本中更改的详细信息、请参阅自述文件。
 
 
 
+[[new-features-in-version-11-80-1r2]]
 == 11.80.1R2中的新增功能
 
 此版本仅包含少量更改、没有任何新功能或限制。有关此版本中更改的详细信息、请参阅自述文件。
 
 
 
+[[new-features-in-version-11-80-1r1]]
 == 11.80.1R1中的新增功能
 
 [cols="35h,~"]
@@ -201,6 +213,7 @@ SANtricity系统管理器和Unified Manager应用程序自签名证书的管理�
 |===
 
 
+[[new-features-in-version-11-80-1]]
 == 11.80.1版中的新增功能
 
 [cols="35h,~"]
@@ -244,6 +257,7 @@ Web服务代理已更新到6.1版、以便与E系列11.80.1版兼容。
 |===
 
 
+[[new-features-in-version-11-80]]
 == 11.80版中的新增功能
 
 [cols="35h,~"]

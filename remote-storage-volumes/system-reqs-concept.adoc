@@ -15,10 +15,12 @@ summary: 您的系统必须满足远程存储卷的兼容性要求。
 
 
 
+[[hardware-requirements]]
 == 硬件要求
 
 
 
+[[supported-protocols]]
 === 支持的协议
 
 对于初始版本的远程存储卷功能，仅支持 iSCSI 和 IPv4 协议。
@@ -27,6 +29,7 @@ summary: 您的系统必须满足远程存储卷的兼容性要求。
 
 
 
+[[storage-system-requirements]]
 === 存储系统要求
 
 E 系列存储系统必须包括：
@@ -41,12 +44,14 @@ E 系列存储系统必须包括：
 
 
 
+[[volume-requirements]]
 == 卷要求：
 
 用于导入的卷必须满足大小，状态和其他条件的要求。
 
 
 
+[[remote-storage-volume]]
 === 远程存储卷
 
 导入的源卷称为 " 远程存储卷 " 。 此卷必须满足以下条件：
@@ -73,6 +78,7 @@ E 系列存储系统必须包括：
 
 
 
+[[target-volume-candidates]]
 === 目标卷候选项
 
 目标卷是本地 E 系列系统上的目标卷。
@@ -93,6 +99,7 @@ System Manager 会在导入远程存储向导中自动检查这些要求。在�
 
 
 
+[[restrictions]]
 == 限制
 
 远程存储功能具有以下限制：
@@ -111,6 +118,7 @@ System Manager 会在导入远程存储向导中自动检查这些要求。在�
 
 
 
+[[preparation-for-production-imports]]
 == 准备生产导入
 
 您应在生产导入之前执行测试或 " 试运行 " 导入，以验证存储和网络结构配置是否正确。

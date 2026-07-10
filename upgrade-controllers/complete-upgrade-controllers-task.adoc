@@ -18,6 +18,7 @@ summary: 启动控制器架并验证控制器软件版本，以完成控制器�
 
 
 
+[[step-1-power-on-controller]]
 == 第 1 步：启动控制器
 
 您必须打开控制器架的电源，以确认其工作正常。
@@ -95,6 +96,7 @@ NOTE: 在使用内部密钥管理对混合安全驱动器执行控制器更换�
 
 
 
+[[step-2-check-status-of-controllers-and-trays]]
 == 第 2 步：检查控制器和托盘的状态
 
 您可以使用 LED 和存储管理软件检查控制器和托盘的状态。
@@ -119,6 +121,7 @@ NOTE: 在使用内部密钥管理对混合安全驱动器执行控制器更换�
 
 
 
+[[step-3-validate-controller-software-version]]
 == 第 3 步：验证控制器软件版本
 
 您必须确保新控制器运行的操作系统（控制器固件）级别和 NVSRAM 正确。

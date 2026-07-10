@@ -18,6 +18,7 @@ summary: 完成 E2800 阵列的主机端口协议转换。
 
 
 
+[[complete-fc-to-iscsi-conversion]]
 == 完成 FC 到 iSCSI 的转换
 
 如果将所有主机端口从 FC 转换为 iSCSI ，则必须配置 iSCSI 网络。
@@ -62,6 +63,7 @@ NOTE: 如果您需要有关添加主机或主机集群的说明，请参阅 SANt
 
 
 
+[[complete-iscsi-to-fc-conversion]]
 == 完成 iSCSI 到 FC 的转换
 
 如果将所有主机端口从 iSCSI 转换为 FC ，则必须配置 FC 网络。
@@ -97,6 +99,7 @@ NOTE: 如果您需要有关添加主机或主机集群的说明，请参阅 SANt
 
 
 
+[[complete-fc-to-fciscsi-conversion]]
 == 完成 FC 到 FC/iSCSI 的转换
 
 如果您之前已拥有所有 FC 主机端口，并且已将其中一些端口转换为 iSCSI ，则可能需要修改现有配置以支持 iSCSI 。
@@ -105,6 +108,7 @@ NOTE: 如果您需要有关添加主机或主机集群的说明，请参阅 SANt
 
 
 
+[[option-1-move-fc-hosts-and-add-new-iscsi-hosts]]
 === 选项 1 ：移动 FC 主机并添加新的 iSCSI 主机
 
 . 将任何 FC 主机从新的 iSCSI 端口移至保留 FC 的端口。
@@ -115,6 +119,7 @@ NOTE: 如果您需要有关添加主机或主机集群的说明，请参阅 SANt
 
 
 
+[[option-2-convert-fc-hosts-to-iscsi]]
 === 选项 2 ：将 FC 主机转换为 iSCSI
 
 . 关闭连接到转换后的端口的 FC 主机。
@@ -134,6 +139,7 @@ NOTE: 如果您需要有关添加主机或主机集群的说明，请参阅 SANt
 
 
 
+[[complete-iscsi-to-fciscsi-conversion]]
 == 完成 iSCSI 到 FC/iSCSI 的转换
 
 如果您之前已拥有所有 iSCSI 主机端口，并且已将其中一些端口转换为 FC ，则可能需要修改现有配置以支持 FC 。
@@ -142,6 +148,7 @@ NOTE: 如果您需要有关添加主机或主机集群的说明，请参阅 SANt
 
 
 
+[[option-1-move-iscsi-hosts-and-add-new-fc-hosts]]
 === 选项 1 ：移动 iSCSI 主机并添加新的 FC 主机
 
 . 将所有 iSCSI 主机从新 FC 端口移至保留 iSCSI 的端口。
@@ -152,6 +159,7 @@ NOTE: 如果您需要有关添加主机或主机集群的说明，请参阅 SANt
 
 
 
+[[option-2-convert-iscsi-hosts-to-fc]]
 === 选项 2 ：将 iSCSI 主机转换为 FC
 
 . 关闭连接到转换后的端口的 iSCSI 主机。
@@ -171,6 +179,7 @@ NOTE: 如果您需要有关添加主机或主机集群的说明，请参阅 SANt
 
 
 
+[[complete-fciscsi-to-fc-conversion]]
 == 完成 FC/iSCSI 到 FC 的转换
 
 如果您之前同时使用了 FC 主机端口和 iSCSI 主机端口，并且已将所有端口转换为 FC ，则可能需要修改现有配置才能使用新的 FC 端口。
@@ -179,6 +188,7 @@ NOTE: 如果您需要有关添加主机或主机集群的说明，请参阅 SANt
 
 
 
+[[option-1-remove-iscsi-hosts-and-add-fc-hosts]]
 === 选项 1 ：删除 iSCSI 主机并添加 FC 主机
 
 . 如果您尚未使用双协议 SFP ，请卸下所有 iSCSI SFP ，并将其更换为 FC SFP 或双协议 SFP 。
@@ -189,6 +199,7 @@ NOTE: 如果您需要有关添加主机或主机集群的说明，请参阅 SANt
 
 
 
+[[option-2-convert-iscsi-hosts-to-fc]]
 === 选项 2 ：将 iSCSI 主机转换为 FC
 
 . 关闭连接到已转换端口的 iSCSI 主机。
@@ -208,6 +219,7 @@ NOTE: 如果您需要有关添加主机或主机集群的说明，请参阅 SANt
 
 
 
+[[complete-fciscsi-to-iscsi-conversion]]
 == 完成 FC/iSCSI 到 iSCSI 的转换
 
 如果您之前同时使用了 FC 主机端口和 iSCSI 主机端口，并且已将所有端口转换为 iSCSI ，则可能需要修改现有配置才能使用新的 iSCSI 端口。
@@ -216,6 +228,7 @@ NOTE: 如果您需要有关添加主机或主机集群的说明，请参阅 SANt
 
 
 
+[[option-1-remove-fc-hosts-and-add-iscsi-hosts]]
 === 选项 1 ：删除 FC 主机并添加 iSCSI 主机
 
 . 如果您尚未使用双协议 SFP ，请卸下所有 FC SFP ，并将其更换为 iSCSI SFP 或双协议 SFP 。
@@ -225,6 +238,7 @@ NOTE: 如果您需要有关添加主机或主机集群的说明，请参阅 SANt
 
 
 
+[[option-2-convert-fc-hosts-to-iscsi]]
 === 选项 2 ：将 FC 主机转换为 iSCSI
 
 . 关闭连接到已转换端口的 FC 主机。

@@ -38,6 +38,7 @@ CAUTION: * 可能的设备损坏 * - 如果在打开电源的情况下执行此�
 
 
 
+[[step-1-prepare-to-replace-fan-canister]]
 == 第 1 步：准备更换风扇箱
 
 准备通过收集存储阵列的支持数据并查找故障组件来更换 60 驱动器控制器架或驱动器架中的风扇箱。
@@ -89,6 +90,7 @@ image::../media/28_dwg_e2860_de460c_single_fan_canister_with_led_callout_maint-e
 
 
 
+[[step-2-remove-failed-fan-canister-and-install-new-one]]
 == 第 2 步：拆下发生故障的风扇箱并安装新的风扇箱
 
 拆下发生故障的风扇箱，以便用新的风扇箱进行更换。
@@ -120,6 +122,7 @@ image::../media/28_dwg_e2860_de460c_fan_canister_handle_with_callout_maint-e2800
 
 
 
+[[step-3-complete-fan-canister-replacement]]
 == 第 3 步：完成风扇箱更换
 
 确认新的风扇箱工作正常，收集支持数据并恢复正常运行。

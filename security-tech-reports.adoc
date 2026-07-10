@@ -15,13 +15,14 @@ summary: E 系列技术报告
 
 
 
+[[security-trs]]
 == 安全 TR
 
 [cols="9,9,9"]
 |===
 
 
-| https://www.netapp.com/pdf.html?item=/media/17162-tr4474pdf.pdf["* TR-4474 ：《 SANtricity 驱动器安全功能指南》 *"] | https://www.netapp.com/pdf.html?item=/media/17079-tr4712pdf.pdf["* TR-4712 ： SANtricity 管理安全功能 *"] | https://www.netapp.com/pdf.html?item=/media/17218-tr4813pdf.pdf["* TR-4813 ：管理 E 系列系统的证书 *"] 
+| https://www.netapp.com/pdf.html?item=/media/17162-tr4474.pdf["* TR-4474 ：《 SANtricity 驱动器安全功能指南》 *"] | https://www.netapp.com/pdf.html?item=/media/17079-tr4712.pdf["* TR-4712 ： SANtricity 管理安全功能 *"] | https://www.netapp.com/pdf.html?item=/media/17218-tr4813.pdf["* TR-4813 ：管理 E 系列系统的证书 *"] 
 
 
 | 介绍 E 系列系统的全磁盘加密功能，包括对 FIPS 140-2 验证驱动器的支持以及内部和外部密钥管理支持。 | 介绍 NetApp E 系列 E2800 ， E5700 ， EF280 ， EF570 ， EF300 的 SANtricity 安全功能 和 EF600 存储系统。 | 介绍如何使用最新的 E 系列控制器和应用程序管理安全证书。 

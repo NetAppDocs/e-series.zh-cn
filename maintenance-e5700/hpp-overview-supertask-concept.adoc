@@ -15,6 +15,7 @@ summary: 转换 E5700 的主机协议。
 
 
 
+[[host-ports-you-can-change]]
 == 可以更改的主机端口
 
 
@@ -26,6 +27,7 @@ image::../media/e5700_with_2_port_100g_edr_infiniband_hic_w_callouts.gif[E5700�
 
 
 
+[[requirements]]
 == 要求
 
 * 您必须为此操作步骤计划停机维护窗口。
@@ -38,6 +40,7 @@ image::../media/e5700_with_2_port_100g_edr_infiniband_hic_w_callouts.gif[E5700�
 
 
 
+[[considerations-for-changing-the-host-protocol]]
 == 更改主机协议的注意事项
 
 更改主机协议的注意事项取决于基板主机端口和 HIC 端口的起始和结束协议。
@@ -49,6 +52,7 @@ NOTE: 只有在转换已使用的存储阵列时，以下注意事项才适用�
 
 
 
+[[converting-from-fc-to-iscsi]]
 === 从 FC 转换为 iSCSI
 
 * 异步镜像要求本地存储阵列和远程存储阵列使用相同的协议。
@@ -75,6 +79,7 @@ CAUTION: 如果在转换为 iSCSI 之前未停用同步镜像关系，则系统�
 
 
 
+[[converting-from-iscsi-to-fc]]
 === 从 iSCSI 转换为 FC
 
 * 异步镜像要求本地存储阵列和远程存储阵列使用相同的协议。如果您当前正在对基板端口使用异步镜像，则必须在更改协议之前停用异步镜像。
@@ -83,6 +88,7 @@ CAUTION: 如果在转换为 iSCSI 之前未停用同步镜像关系，则系统�
 
 
 
+[[converting-ib-iser-tofrom-ib-srp]]
 === 将 IB-iSER 转换为 IB-SRP 或从 IB-SRP 转换为 IB-iSER
 
 * 从 iSER 转换为 SRP 时，您无需对硬件进行任何更改。
@@ -102,6 +108,7 @@ NOTE: 禁用后，无法在卷上重新启用 DA 。
 
 
 
+[[mirroring-operations-need-same-host-protocol]]
 === 镜像操作需要使用相同的主机协议
 
 如果在应用功能包后用于镜像的主机端口保持相同的协议，则镜像操作不会受到影响。即使如此，在应用此功能包之前，您应确认所有镜像一致性组均已同步。应用此功能包后，您应测试本地存储阵列与远程存储阵列之间的通信。如果您对此有任何疑问，请参见 SANtricity System Manager 的联机帮助。

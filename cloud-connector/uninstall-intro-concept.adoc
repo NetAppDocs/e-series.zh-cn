@@ -15,6 +15,7 @@ summary: 您可以通过图形卸载程序或控制台卸载 SANtricity 云连�
 
 
 
+[[uninstall-using-graphical-mode]]
 == 使用图形模式卸载
 
 您可以使用图形模式在 Linux 操作系统上卸载 SANtricity 云连接器。
@@ -46,6 +47,7 @@ SANtricity 云连接器的卸载过程已初始化。
 
 
 
+[[uninstall-using-console-mode]]
 == 使用控制台模式卸载
 
 您可以使用控制台模式在 Linux 操作系统上卸载 SANtricity 云连接器。

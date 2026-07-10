@@ -15,18 +15,21 @@ summary: 管理存储
 
 
 
+[[online-help-for-system-manager]]
 == System Manager联机帮助
 
 访问 https://docs.netapp.com/us-en/e-series-santricity/system-manager/index.html["SANtricity系统管理器联机帮助"^]，从中可以找到有关如何规划、配置、管理存储阵列以及对其进行故障排除的信息。
 
 
 
+[[online-help-for-unified-manager]]
 == Unified Manager联机帮助
 
 访问 https://docs.netapp.com/us-en/e-series-santricity/unified-manager/index.html["SANtricity Unified Manager联机帮助"^]，您可以在其中了解如何对多个网络存储阵列执行存储管理命令。
 
 
 
+[[command-reference]]
 == 命令参考
 
 访问 https://docs.netapp.com/us-en/e-series-cli/index.html["命令参考"^]，您可以在此了解如何使用命令行界面（ CLI ）命令配置和监控存储阵列。

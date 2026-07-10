@@ -15,6 +15,7 @@ Web 服务包括 API 文档，您可以通过这些文档直接与 REST API 进�
 
 
 
+[[log-in-to-web-services-api]]
 == 登录到 Web 服务 API
 
 安装 Web 服务代理后，您可以在浏览器中访问交互式 API 文档。
@@ -99,6 +100,7 @@ API 文档按高级类别（例如：管理，配置）进行组织。单击某�
 
 
 
+[[log-in-to-unified-manager]]
 == 登录到 Unified Manager
 
 安装 Web 服务代理后，您可以访问 Unified Manager 以在基于 Web 的界面中管理多个存储系统。

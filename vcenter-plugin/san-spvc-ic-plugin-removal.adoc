@@ -20,6 +20,7 @@ summary: 删除 vCenter 插件。
 
 
 
+[[unregister-the-plugin-from-a-vcenter-server-appliance]]
 == 从 vCenter Server 设备取消注册此插件
 
 要从 vCenter Server 设备取消注册插件，请选择以下方法之一：
@@ -30,6 +31,7 @@ summary: 删除 vCenter 插件。
 
 
 
+[[method-1-execute-the-registration-script]]
 === 方法1：执行注册脚本
 
 . 通过命令行打开提示符并导航到以下目录：
@@ -57,6 +59,7 @@ summary: 删除 vCenter 插件。
 
 
 
+[[method-2-use-the-vcenter-server-mob-pages]]
 === 方法2：使用vCenter Server移动页面
 
 . 打开 Web 浏览器并输入以下 URL ：
@@ -78,6 +81,7 @@ NOTE: 此操作步骤会从 vCenter Server 设备中取消注册此插件，但�
 
 
 
+[[remove-the-plugin-webserver-from-the-application-host]]
 == 从应用程序主机中删除插件 Web 服务器
 
 要从应用程序主机中删除插件软件，请执行以下步骤：

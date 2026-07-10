@@ -18,6 +18,7 @@ summary: 查看 E2800 电池更换要求和注意事项。
 
 
 
+[[recovery-guru-alerts]]
 == Recovery Guru 警报
 
 如果 SANtricity System Manager 中的恢复 Guru 报告以下状态之一，则必须更换受影响的电池：
@@ -30,6 +31,7 @@ summary: 查看 E2800 电池更换要求和注意事项。
 
 
 
+[[procedure-overview]]
 == 操作步骤概述
 
 要保护数据，您必须尽快更换发生故障的电池。
@@ -46,6 +48,7 @@ summary: 查看 E2800 电池更换要求和注意事项。
 
 
 
+[[duplex-or-simplex-configuration]]
 == 双工或单工配置
 
 更换电池的步骤取决于您使用的是一个还是两个控制器，如下所示：
@@ -80,6 +83,7 @@ summary: 查看 E2800 电池更换要求和注意事项。
 |===
 
 
+[[requirements-for-replacing-a-battery]]
 == 更换电池的要求
 
 如果您计划更换发生故障的电池，则必须：

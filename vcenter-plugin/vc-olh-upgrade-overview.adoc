@@ -18,6 +18,7 @@ summary: 您可以为多个相同类型的存储阵列管理SANtricity 软件和
 
 
 
+[[upgrade-workflow]]
 == 升级工作流
 
 以下步骤提供了执行软件升级的高级工作流：
@@ -39,24 +40,28 @@ NOTE: 您还可以指定稍后激活此软件。
 
 
 
+[[upgrade-considerations]]
 == 升级注意事项
 
 在升级多个存储阵列之前、请在规划过程中查看主要注意事项。
 
 
 
+[[current-versions]]
 === 当前版本
 
 您可以从适用于vCenter的存储插件的"管理"页面查看每个已发现存储阵列的当前SANtricity OS软件版本。此版本显示在SANtricity OS软件列中。单击每行中的操作系统版本时、会在弹出对话框中显示控制器固件和NVSRAM信息。
 
 
 
+[[other-components-requiring-upgrade]]
 === 其他需要升级的组件
 
 在升级过程中、您可能还需要升级主机的多路径/故障转移驱动程序或HBA驱动程序、以便主机可以正确地与控制器进行交互。有关兼容性信息，请参见 link:https://imt.netapp.com/matrix/["互操作性表工具"^]。
 
 
 
+[[dual-controllers]]
 === 双控制器
 
 如果存储阵列包含两个控制器，并且您安装了多路径驱动程序，则在升级期间，存储阵列可以继续处理 I/O 。在升级期间，将执行以下过程：

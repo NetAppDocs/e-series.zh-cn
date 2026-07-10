@@ -18,6 +18,7 @@ NOTE: 对于 EF300 和 EF600 ，必须将块大小设置为 512 字节，以确�
 
 
 
+[[step-1-configure-the-fc-switches-vmware]]
 == 第1步：配置FC交换机—VMware
 
 通过配置（分区）光纤通道（ FC ）交换机，主机可以连接到存储阵列并限制路径数。您可以使用交换机的管理界面对交换机进行分区。
@@ -44,6 +45,7 @@ NOTE: 供应商的 HBA 实用程序可用于升级和获取有关 HBA 的特定�
 
 
 
+[[step-2-determine-the-host-port-wwpns-fc]]
 == 第2步：确定主机端口WWPNs-FC
 
 要配置 FC 分区，必须确定每个启动程序端口的全球通用端口名称（ WWPN ）。
@@ -69,6 +71,7 @@ Emulex Corporation Emulex LPe16000 16Gb PCIe Fibre Channel Adapter
 
 
 
+[[step-3-record-your-configuration]]
 == 第 3 步：记录您的配置
 
 您可以生成并打印此页面的 PDF ，然后使用以下工作表记录 FC 存储配置信息。要执行配置任务，您需要此信息。
@@ -79,6 +82,7 @@ image::../media/port_identifiers_host_and_target_conf-vmw.gif[光纤通道端口
 
 
 
+[[host-identifiers]]
 === 主机标识符
 
 |===
@@ -111,6 +115,7 @@ _ 不适用 _
 |===
 
 
+[[target-identifiers]]
 === 目标标识符
 
 |===
@@ -168,6 +173,7 @@ _ 不适用 _
 |===
 
 
+[[mapping-host]]
 === 正在映射主机
 
 |===

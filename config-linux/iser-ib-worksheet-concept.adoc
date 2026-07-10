@@ -15,6 +15,7 @@ summary: 使用此工作表记录基于 Infiniband 的 iSER 存储配置信息�
 
 
 
+[[host-identifiers]]
 == 主机标识符
 
 
@@ -63,6 +64,7 @@ NOTE: 软件启动程序 IQN 在任务期间确定， xref:iser-ib-configure-net
 |===
 
 
+[[recommended-configuration]]
 == 建议的配置
 
 建议的配置包括两个主机（启动程序）端口和四个目标端口。
@@ -71,6 +73,7 @@ image::../media/port_identifiers_ib_iser.gif[iSER over IB网络配置]
 
 
 
+[[target-iqn]]
 == 目标 IQN
 
 记录存储阵列的目标 IQN 。您将在中使用此信息 xref:iser-ib-configure-network-attached-hosts-task.adoc[为存储连接的主机配置网络连接]。
@@ -90,6 +93,7 @@ image::../media/port_identifiers_ib_iser.gif[iSER over IB网络配置]
 |===
 
 
+[[network-configuration]]
 == 网络配置：
 
 记录将用于 InfiniBand 网络结构上的主机和存储的网络配置。这些说明假定将使用两个子网实现完全冗余。
@@ -98,6 +102,7 @@ image::../media/port_identifiers_ib_iser.gif[iSER over IB网络配置]
 
 
 
+[[subnet-a]]
 === 子网 A
 
 定义要使用的子网。
@@ -157,6 +162,7 @@ _ 不适用 _
 |===
 
 
+[[subnet-b]]
 === 子网 B
 
 定义要使用的子网。
@@ -216,6 +222,7 @@ _ 不适用 _
 |===
 
 
+[[mapping-host-name]]
 == 正在映射主机名
 
 

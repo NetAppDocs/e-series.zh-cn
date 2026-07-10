@@ -15,6 +15,7 @@ summary: 使用此工作表记录基于 Infiniband 的 NVMe 存储配置信息�
 
 
 
+[[host-identifiers]]
 == 主机标识符
 
 
@@ -63,6 +64,7 @@ NOTE: 软件启动程序 NQN 在任务期间确定。
 |===
 
 
+[[recommended-configuration]]
 == 建议的配置
 
 在直连拓扑中，一个或多个主机直接连接到子系统。在 SANtricity OS 11.50 版本中，我们支持从每个主机到子系统控制器的单个连接，如下所示。在此配置中，每个主机的一个 HCA （主机通道适配器）端口应与所连接的 E 系列控制器端口位于同一子网中，但与另一个 HCA 端口位于不同的子网中。
@@ -71,6 +73,7 @@ image::../media/nvmeof_direct_connect.gif[基于Infiniband直接连接的NVMe示
 
 
 
+[[target-nqn]]
 == 目标 NQN
 
 记录存储阵列的目标 NQN 。您将在中使用此信息 xref:nvme-ib-configure-storage-connections-task.adoc[配置存储阵列基于 InfiniBand 的 NVMe 连接]。
@@ -90,6 +93,7 @@ image::../media/nvmeof_direct_connect.gif[基于Infiniband直接连接的NVMe示
 |===
 
 
+[[network-configuration]]
 == 网络配置：
 
 记录将用于 InfiniBand 网络结构上的主机和存储的网络配置。这些说明假定将使用两个子网实现完全冗余。
@@ -98,6 +102,7 @@ image::../media/nvmeof_direct_connect.gif[基于Infiniband直接连接的NVMe示
 
 
 
+[[subnet-a]]
 === 子网 A
 
 定义要使用的子网。
@@ -157,6 +162,7 @@ _ 不适用 _
 |===
 
 
+[[subnet-b]]
 === 子网 B
 
 定义要使用的子网。
@@ -216,6 +222,7 @@ _ 不适用 _
 |===
 
 
+[[mapping-host-name]]
 == 正在映射主机名
 
 

@@ -15,12 +15,14 @@ summary: 使用缆线将控制器连接到网络以完成存储系统设置和�
 
 
 
+[[step-1-cable-the-data-hosts]]
 == 第 1 步：为数据主机布线
 
 根据您的网络拓扑为存储系统布线。
 
 
 
+[[option-1-direct-attach-topology]]
 === 选项 1 ：直连拓扑
 
 以下示例显示了使用直连拓扑连接到数据主机的布线。
@@ -37,6 +39,7 @@ image:../media/direct_topo.png["直连拓扑布线"]
 |===
 
 
+[[option-2-fabric-topology]]
 === 选项 2 ：网络结构拓扑
 
 以下示例显示了使用网络结构拓扑连接到数据主机的情况。
@@ -54,12 +57,14 @@ image:../media/fabric_topo.png["光纤拓扑布线"]
 |===
 
 
+[[step-2-connect-and-configure-the-management-connection]]
 == 第 2 步：连接并配置管理连接
 
 您可以使用 DHCP 服务器或静态 IP 地址配置控制器管理端口。
 
 
 
+[[option-1-dhcp-server]]
 === 选项 1 ： DHCP 服务器
 
 了解如何使用 DHCP 服务器配置管理端口。
@@ -99,6 +104,7 @@ image:../media/ethernet_callout.png["EF600管理端口"]
 
 
 
+[[option-2-static-ip-address]]
 === 选项 2 ：静态 IP 地址
 
 了解如何通过输入 IP 地址和子网掩码手动配置管理端口。
@@ -174,6 +180,7 @@ NOTE: 如果断开与控制器 B 的连接，则可以使用先前验证的控�
 
 
 
+[[step-3-configure-storage-system]]
 == 第 3 步：配置存储系统
 
 安装 EF300 或 EF600 硬件后，请使用 SANtricity 软件配置和管理存储系统。

@@ -27,6 +27,7 @@ summary:
 
 
 
+[[step-1-prepare-to-replace-battery]]
 == 步骤1：准备更换电池
 
 准备更换电池的步骤取决于您采用的是双工配置（两个控制器）还是单工配置（一个控制器）。
@@ -168,6 +169,7 @@ NOTE: 如果您正在使用尝试脱机的控制器访问 SANtricity 系统管�
 ====
 
 
+[[step-2-remove-e4000-controller-canister]]
 == 步骤2：卸下E4000控制器箱
 
 您需要从控制器架中取出控制器箱，以便取出电池。
@@ -195,6 +197,7 @@ CAUTION: To prevent degraded performance, do not twist, fold, pinch, or step on 
 
 
 
+[[step-3-install-the-new-battery]]
 == 第3步：安装新电池
 
 您必须取出故障电池并进行更换。
@@ -251,6 +254,7 @@ image::../media/legend_icon_02.png[两个图标]
 
 
 
+[[step-4-reinstall-the-controller-canister]]
 == 第 4 步：重新安装控制器箱
 
 更换控制器箱中的组件后、将其重新安装到机箱中。
@@ -270,6 +274,7 @@ NOTE: If you removed the media converters (QSFPs or SFPs), remember to reinstall
 
 
 
+[[step-5-complete-battery-replacement]]
 == 第5步：完成电池更换
 
 完成电池更换的步骤取决于您使用的是双工(两个控制器)还是单工(一个控制器)配置。

@@ -40,6 +40,7 @@ summary: 更换 E2800 12 驱动器或 24 驱动器控制器架或驱动器架，
 
 
 
+[[step-1-prepare-to-replace-power-supply]]
 == 第 1 步：准备更换电源
 
 准备更换 12 驱动器或 24 驱动器控制器架或驱动器架中的电源。
@@ -93,6 +94,7 @@ image::../media/28_dwg_913w_power_supply_back_view_maint-e2800.gif[Power supply 
 
 
 
+[[step-2-remove-failed-power-supply]]
 == 第 2 步：卸下故障电源
 
 卸下故障电源，以便更换为新的电源。
@@ -125,6 +127,7 @@ CAUTION: When removing a power supply, always use two hands to support its weigh
 
 
 
+[[step-3-install-new-power-supply]]
 == 第 3 步：安装新的电源
 
 安装新电源以更换故障电源。
@@ -151,6 +154,7 @@ CAUTION: 将电源滑入系统时，请勿用力过大；否则可能会损坏�
 
 
 
+[[step-4-complete-power-supply-replacement]]
 == 第 4 步：完成电源更换
 
 确认新电源正常工作，收集支持数据并恢复正常运行。

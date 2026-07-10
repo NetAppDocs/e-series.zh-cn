@@ -15,6 +15,7 @@ summary: 了解 Web 服务 API
 
 
 
+[[web-services]]
 == Web 服务
 
 Web 服务是一种应用程序编程接口（ Application Programming Interface ， API ），可用于配置，管理和监控 NetApp E 系列和 EF 系列存储系统。通过发出 API 请求，您可以完成 E 系列存储系统的配置，配置和性能监控等工作流。
@@ -74,6 +75,7 @@ image::../media/web_services_proxy_overview.gif[Web服务代理概述]
 |===
 
 
+[[unified-manager]]
 == Unified Manager
 
 此代理安装包包含 Unified Manager ，它是一个基于 Web 的界面，可用于对 E2800 ， E5700 ， EF300 和 EF600 等较新的 E 系列和 EF 系列存储系统进行配置访问。

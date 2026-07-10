@@ -30,6 +30,7 @@ summary: 当 EF300 或 EF600 控制器出现故障时，请更换电源。
 
 
 
+[[step-1-remove-failed-power-supply]]
 == 第 1 步：卸下故障电源
 
 卸下故障电源，以便更换为新的电源。
@@ -62,6 +63,7 @@ image::../media/psup_3.png[将电源滑出]
 
 
 
+[[step-2-install-new-power-supply-and-complete-the-replacement]]
 == 第 2 步：安装新的电源并完成更换
 
 卸下故障电源后，安装一个新的电源。

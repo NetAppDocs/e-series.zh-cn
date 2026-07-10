@@ -17,6 +17,7 @@ summary: 维护 EF300 和 EF600 硬件
 
 
 
+[[system-components]]
 == 系统组件
 
 对于EF300、EF600、EF300C和EF600C存储系统、您可以对以下组件执行维护过程。

@@ -38,6 +38,7 @@ CAUTION: * 可能丢失数据访问 * —如果为另一个 E 系列控制器设
 
 
 
+[[step-1-place-controller-shelf-offline]]
 == 第 1 步：使控制器架脱机
 
 将控制器架置于脱机状态，以便安全地升级 HIC 。
@@ -98,6 +99,8 @@ CAUTION: * 可能的数据丢失 * - 如果在执行 I/O 操作时继续执行�
 
 
 
+[[step-2-remove-controller-canister]]
+[[step2_remove_controller_canister]]
 == 第 2 步：拆下控制器箱
 
 从系统中卸下控制器箱、然后卸下控制器箱盖。
@@ -119,6 +122,8 @@ image::../media/drw_E4000_open_controller_module_cover_IEOPS-870.png[打开控�
 
 
 
+[[step-3-upgrade-the-hic]]
+[[step3_upgrade_hic]]
 == 第 3 步：升级 HIC
 
 拆下并更换HIC。
@@ -146,6 +151,8 @@ image::../media/drw_E4000_replace_HIC_source_IEOPS-864.png[从控制器模块中
 
 
 
+[[step-4-reinstall-controller-canister]]
+[[step4_reinstall_controller]]
 == 第 4 步：重新安装控制器箱
 
 将控制器箱重新安装到机箱中。
@@ -166,6 +173,7 @@ NOTE: If you removed the media converters (QSFPs or SFPs), remember to reinstall
 
 
 
+[[step-5-complete-the-hic-upgrade]]
 == 第 5 步：完成 HIC 升级
 
 将两个控制器置于联机状态、收集支持数据并恢复操作。

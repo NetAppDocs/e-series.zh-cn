@@ -20,6 +20,7 @@ NOTE: SANtricity 云连接器工具已弃用、不再可供下载。
 
 
 
+[[considerations]]
 == 注意事项
 
 在使用这些过程时，请注意：
@@ -30,6 +31,7 @@ NOTE: SANtricity 云连接器工具已弃用、不再可供下载。
 
 
 
+[[types-of-backups]]
 == 备份类型
 
 SANtricity 云连接器提供两种类型的备份：基于映像的备份和基于文件的备份。

@@ -17,6 +17,7 @@ summary:
 
 
 
+[[requirements-for-adding-second-controller]]
 == 添加第二个控制器的要求
 
 您可以向E4000控制器架的单工版本添加第二个控制器箱。在添加第二个控制器之前，您必须：
@@ -42,6 +43,7 @@ NOTE: 这不适用于StorageGRID设备。
 
 
 
+[[requirements-for-replacing-controller]]
 == 更换控制器的要求
 
 更换发生故障的控制器箱时、您必须从原始控制器箱中取出电池、HIC和DIMM、然后将其安装到更换用的控制器箱中。
@@ -66,6 +68,7 @@ NOTE: 这不适用于StorageGRID设备。
 
 
 
+[[duplex-configuration-requirements]]
 === 双工配置要求
 
 如果控制器架具有两个控制器（双工配置），则只要满足以下条件，您就可以在存储阵列启动并执行主机 I/O 操作时更换控制器箱：
@@ -76,6 +79,7 @@ NOTE: 这不适用于StorageGRID设备。
 
 
 
+[[simplex-configuration-requirements]]
 === 单工配置要求
 
 如果您只有一个控制器箱（单工配置），则在更换控制器箱之前，无法访问存储阵列上的数据。您必须停止主机 I/O 操作并关闭存储阵列。

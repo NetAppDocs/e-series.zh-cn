@@ -19,6 +19,7 @@ summary: 配置适用于 vCenter 的存储插件的访问权限。
 
 
 
+[[review-required-vsphere-privileges]]
 == 查看所需的 vSphere 特权
 
 要在 vSphere Client 中访问此插件，必须将您分配给具有适当 vSphere 权限的角色。具有 " 配置数据存储库 " vSphere 权限的用户可以对插件进行读写访问，而具有 " 浏览数据存储库 " 权限的用户可以进行只读访问。如果用户既不具有上述权限，插件将显示 " 权限不足 " 消息。
@@ -34,6 +35,7 @@ summary: 配置适用于 vCenter 的存储插件的访问权限。
 |===
 
 
+[[configure-storage-administrator-roles]]
 == 配置存储管理员角色
 
 要为插件用户提供读 / 写权限，您可以创建，克隆或编辑角色。有关在 vSphere Client 中配置角色的详细信息，请参见 VMware 文档中心中的以下主题：
@@ -43,6 +45,7 @@ summary: 配置适用于 vCenter 的存储插件的访问权限。
 
 
 
+[[access-role-actions]]
 === 访问角色操作
 
 . 从 vSphere Client 的主页中，从访问控制区域中选择 * 管理员 * 。
@@ -63,6 +66,7 @@ NOTE: 管理员角色不可编辑。
 
 
 
+[[create-a-new-role]]
 === 创建新角色
 
 . 在权限列表中，选择要分配给此角色的访问权限。
@@ -76,6 +80,7 @@ NOTE: 管理员角色不可编辑。
 
 
 
+[[clone-a-role]]
 === 克隆角色
 
 . 为角色命名并提供问题描述。
@@ -92,6 +97,7 @@ NOTE: 管理员角色不可编辑。
 
 
 
+[[edit-an-existing-role]]
 === 编辑现有角色
 
 . 在权限列表中，选择要分配给此角色的访问权限。
@@ -105,6 +111,7 @@ NOTE: 管理员角色不可编辑。
 
 
 
+[[set-permissions-for-vcenter-server-appliance]]
 == 设置 vCenter Server 设备的权限
 
 为角色设置权限后，您必须向 vCenter Server 设备添加权限。此权限允许给定的用户或组访问此插件。

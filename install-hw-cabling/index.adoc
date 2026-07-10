@@ -19,6 +19,7 @@ summary: 使用缆线将主机直接连接到控制器或使用交换机。
 
 
 
+[[applicable-hardware-model]]
 == 适用的硬件型号
 
 布线信息适用场景以下硬件型号。
@@ -52,6 +53,7 @@ DE460C
 |===
 
 
+[[additional-cabling-information]]
 == 其他布线信息
 
 如果要为以下任意配置布线，请参阅 https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057["将 IOM 驱动器架添加到现有 E27XX ， E56XX 或 EF560 控制器架。"^]
@@ -73,4 +75,4 @@ E2760 ， E5660
 DE460C
 
 |===
-有关通过布线支持镜像功能的信息，请参见 https://www.netapp.com/pdf.html?item=/media/17133-tr4656pdf.pdf["《同步和异步镜像功能说明和部署指南》"^]。
+有关支持镜像功能的布线的信息，请参见 https://www.netapp.com/pdf.html?item=/media/17133-tr4656.pdf["《同步和异步镜像功能说明和部署指南》"^]。

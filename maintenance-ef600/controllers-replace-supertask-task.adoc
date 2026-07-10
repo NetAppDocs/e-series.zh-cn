@@ -53,6 +53,7 @@ NOTE: 只要出现以下更换情况、控制器的琥珀色警示LED就会熄�
 
 
 
+[[step-1-prepare-to-replace-controller]]
 == 第 1 步：准备更换控制器
 
 通过验证更换用的控制器箱是否具有正确的 FRU 部件号，备份配置并收集支持数据，准备更换出现故障的控制器箱。
@@ -119,6 +120,7 @@ CAUTION: 更新状态之前，请勿开始任何其他操作。
 
 
 
+[[step-2-remove-failed-controller]]
 == 第 2 步：删除故障控制器
 
 拆下一个控制器箱，将故障箱更换为一个新的控制器箱。
@@ -127,6 +129,7 @@ CAUTION: 更新状态之前，请勿开始任何其他操作。
 
 
 
+[[step-2a-remove-controller-canister]]
 === 步骤 2a ：卸下控制器箱
 
 拆下发生故障的控制器箱，以便用新的控制器箱进行更换。
@@ -160,6 +163,7 @@ image::../media/remove_controller_6.png[拆下控制器时，用双手支撑控�
 
 
 
+[[step-2b-remove-battery]]
 === 步骤 2b ：取出电池
 
 从发生故障的控制器箱中取出电池，以便将其安装到新的控制器箱中。
@@ -183,6 +187,7 @@ image:../media/batt_4.png["从控制器中取出电池"]
 
 
 
+[[step-2c-remove-the-hic]]
 === 第 2c 步：删除 HIC
 
 如果控制器箱包含 HIC ，则必须从原始控制器箱中卸下 HIC 。否则，您可以跳过此步骤。
@@ -218,6 +223,7 @@ image::../media/hic_4.png[从控制器卡上卸下HIC]
 
 
 
+[[step-2d-remove-power-supply]]
 === 步骤 2D ：卸下电源
 
 卸下电源，以便将其安装到新控制器中。
@@ -246,6 +252,7 @@ CAUTION: When removing a power supply, always use two hands to support its weigh
 
 
 
+[[step-2e-remove-dimms]]
 === 步骤 2e ：卸下 DIMM
 
 卸下 DIMM ，以便将其安装到新控制器中。
@@ -272,6 +279,7 @@ image::../media/dimim_3.png[卸下DIMM]
 
 
 
+[[step-2f-remove-fans]]
 === 步骤 2f ：卸下风扇
 
 卸下风扇，以便将其安装到新控制器中。
@@ -286,6 +294,7 @@ image::../media/fan_2.png[卸下风扇]
 
 
 
+[[step-3-install-new-controller]]
 == 第 3 步：安装新控制器
 
 安装新的控制器箱以更换出现故障的控制器箱。
@@ -294,6 +303,7 @@ image::../media/fan_2.png[卸下风扇]
 
 
 
+[[step-3a-install-battery]]
 === 步骤 3a ：安装电池
 
 将电池安装到更换用的控制器箱中。
@@ -317,6 +327,7 @@ image::../media/batt_5.png[安装电池]
 
 
 
+[[step-3b-install-the-hic]]
 === 第 3b 步：安装 HIC
 
 如果从原始控制器箱中取出了 HIC ，则必须将该 HIC 安装到新控制器箱中。否则，您可以跳过此步骤。
@@ -355,6 +366,7 @@ NOTE: 上图为示例； HIC 的外观可能有所不同。
 
 
 
+[[step-3c-install-power-supply]]
 === 步骤 3c ：安装电源
 
 将电源安装到更换用的控制器箱中。
@@ -375,6 +387,7 @@ image::../media/psup_4.png[将电源安装到控制器中]
 
 
 
+[[step-3d-install-dimms]]
 === 步骤 3D ：安装 DIMM
 
 将 DIMM 安装到新控制器箱中。
@@ -407,6 +420,7 @@ image::../media/dimm_5.png[向上按DIMM插槽上的闩锁以固定]
 
 
 
+[[step-3e-install-fans]]
 === 步骤 3e ：安装风扇
 
 将风扇安装到更换用的控制器箱中。
@@ -424,6 +438,7 @@ image::../media/fan_3_a.png[将风扇安装到控制器中]
 
 
 
+[[step-3f-install-new-controller-canister]]
 === 步骤 3f ：安装新的控制器箱
 
 最后，将新控制器箱安装到控制器架中。
@@ -451,6 +466,7 @@ NOTE: 如果原始控制器未使用 DHCP 作为 IP 地址，则新控制器将�
 
 
 
+[[step-4-complete-controller-replacement]]
 == 第 4 步：完成控制器更换
 
 将控制器置于联机状态，收集支持数据并恢复操作。

@@ -33,6 +33,7 @@ summary: 更换 E5700 中的 HIC 。
 
 
 
+[[step-1-place-controller-offline-duplex]]
 == 第 1 步：使控制器脱机（双工）
 
 如果您采用双工配置，则必须将受影响的控制器置于脱机状态，以便安全地删除出现故障的 HIC 。
@@ -105,6 +106,7 @@ NOTE: 更新状态之前，请勿开始任何其他操作。
 
 
 
+[[step-2-remove-controller-canister]]
 == 第 2 步：拆下控制器箱
 
 拆下控制器箱，以便添加新的 HIC 。
@@ -165,6 +167,7 @@ CAUTION: 始终用双手支撑控制器箱的重量。
 
 
 
+[[step-3-install-a-hic]]
 == 第 3 步：安装 HIC
 
 安装新的 HIC 以更换故障 HIC 。
@@ -219,6 +222,7 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e5700.gif[将控制器�
 
 
 
+[[step-4-reinstall-controller-canister]]
 == 第 4 步：重新安装控制器箱
 
 安装 HIC 后，将控制器箱重新安装到控制器架中。
@@ -261,6 +265,7 @@ NOTE: 此时请勿将数据缆线连接到新 HIC 端口。
 
 
 
+[[step-5-place-controller-online-duplex]]
 == 第 5 步：使控制器联机（双工）
 
 如果您使用的是双工配置，请使控制器联机以确认存储阵列运行正常，收集支持数据并恢复操作。
