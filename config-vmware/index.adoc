@@ -26,7 +26,7 @@ summary: 对采用 E 系列系统的 VMware 主机使用快速配置。
 ** link:fc-perform-specific-task.html["Fibre Channel"]
 ** link:iscsi-perform-specific-task.html["iSCSI"]
 ** link:sas-perform-specific-task.html["（ SAS ）。"]
-** link:nvme-perform-specific-task.html["NVMe"]
+** link:nvme-roce-perform-specific-task.html["基于 RoCE 的 NVMe"]
 
 
 . 在存储阵列上创建逻辑卷。

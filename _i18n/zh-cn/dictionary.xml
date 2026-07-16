@@ -10718,8 +10718,6 @@
   <block id="56dd88f73dc9e3fe0f4f088112d50bf6" category="admonition">*数据丢失的风险。*您必须在无损环境中通过 RoCE 运行 NVMe。在网络上使用全局暂停帧或优先级流量控制 (PFC) 启用端到端流量控制，以消除数据丢失的风险。PFC 要求将 NVMe over RoCE 标记为 DSCP 值为<block ref="f0935e4cd5920aa6c7c996a5ee53a70f" prefix=" " category="inline-code"></block>的优先级 3 流量。</block>
   <block id="cfc9a52b36b4bac1175d85feda4737d6" category="inline-link-macro">使用 DHCP 配置 IP 地址</block>
   <block id="ab76f1b6a91823d84cc28d97a438ee49" category="paragraph">在验证 Linux 配置支持和查看限制后，<block ref="26e7ddc4a99218cc55e1c183bc759716" category="inline-link-macro-rx"></block>。</block>
-  <block id="70d9e3c68d42d6ec42ab792e06c44357" category="inline-link-macro">NVMe</block>
-  <block id="1791f8465d11d224647d11ee0eab3955" category="list-text"><block ref="1791f8465d11d224647d11ee0eab3955" category="inline-link-macro-rx"></block></block>
   <block id="68df22b283edf6918b272ee1e4eef450" category="paragraph">更换故障的 HIC 时，您必须使一个控制器离线，使系统处于非冗余状态，更换 HIC，并使控制器恢复在线。</block>
   <block id="7f3980e2c518e011140305dfa2c7cc40" category="list-text">为此程序安排停机维护时段。在成功完成此过程之前，您无法访问存储阵列上的数据。由于两个控制器在通电时必须具有相同的 HIC 配置，因此在安装 HIC 时，必须将一个控制器脱机才能将系统置于非冗余状态。</block>
   <block id="79a7b3d475a1ce35fef4a7398f3e40b8" category="list-text">对于 EF300 控制器，必须将 SAS 扩展卡安装在端口 1 中，以便进行驱动器托盘扩展。</block>
@@ -10745,4 +10743,5 @@
   <block id="22839016e944bb39ae944b854e55b7ef" category="cell"><block ref="22839016e944bb39ae944b854e55b7ef" category="inline-link-rx"></block></block>
   <block id="6a7c8d63e9ff78bb1b7b5d797d0587e5" category="cell"><block ref="6a7c8d63e9ff78bb1b7b5d797d0587e5" category="inline-link-rx"></block></block>
   <block id="1ed965aef797c8ec8dad05a7ba9680f3" category="cell"><block ref="1ed965aef797c8ec8dad05a7ba9680f3" category="inline-link-rx"></block></block>
+  <block id="030083a432b10805a22ebd213eb3faf3" category="list-text"><block ref="030083a432b10805a22ebd213eb3faf3" category="inline-link-macro-rx"></block></block>
 </blocks>
