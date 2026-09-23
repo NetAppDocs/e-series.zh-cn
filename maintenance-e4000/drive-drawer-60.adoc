@@ -2,9 +2,9 @@
 permalink: maintenance-e4000/drive-drawer-60.html 
 sidebar: sidebar 
 keywords: E4000 replace drive drawer, replacing E4000 drive drawer, E4000 replace drive drawer, replacing E4000 drive drawer, E4000, E-Series, eseries 
-summary: 更换 E2860 控制器架或 DE460C 驱动器架中的驱动器抽盒。 
+summary: 您可以更换 E4060 控制器架或 DE460C 驱动器架中的驱动器抽盒。 
 ---
-= 更换驱动器抽盒- E4000 (60个驱动器的磁盘架)
+= 更换 E4000 60 驱动器架中的驱动器抽屉
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -15,7 +15,7 @@ summary: 更换 E2860 控制器架或 DE460C 驱动器架中的驱动器抽盒�
 您可以更换 E4060 控制器架或 DE460C 驱动器架中的驱动器抽盒。
 
 .关于此任务
-更换 E4060 控制器架或 DE460C 驱动器架中发生故障的驱动器抽盒的步骤取决于抽盒中的卷是否受抽盒丢失保护。如果驱动器抽盒中的所有卷都位于具有抽盒丢失保护的磁盘池或卷组中，则可以联机执行此操作步骤。否则，在更换驱动器抽盒之前，您必须停止所有主机 I/O 活动并关闭磁盘架电源。
+更换 E4060 控制器架或 DE460C 驱动器架中出现故障的驱动器抽屉的步骤取决于抽屉中的卷是否受到抽屉丢失保护的保护。如果驱动器抽屉中的所有卷都位于具有抽屉丢失保护的磁盘池或卷组中，则可以在线执行此过程。否则，在更换驱动器抽屉之前，必须通过停止所有主机 I/O 活动并关闭整个存储系统（控制器盘架和所有扩展盘架）来离线执行此过程。
 
 .开始之前
 * 确保驱动器架满足以下所有条件：
@@ -46,14 +46,14 @@ CAUTION: * 可能丢失数据访问 * - 如果卷已处于 " 已降级 " 状态�
 
 
 
-NOTE: 如果需要有关如何更换E系列DE460c扩展架的信息，请参阅 https://kb.netapp.com/on-prem/E-Series/Hardware-KBs/How_to_replace_an_E_Series_DE460c_controller_expansion_shelf["NetApp知识库"^]。
+NOTE: 如果您需要有关如何更换E系列DE460C扩展架的信息，请参阅 https://kb.netapp.com/on-prem/E-Series/Hardware-KBs/How_to_replace_an_E_Series_DE460c_controller_expansion_shelf["NetApp知识库"^]。
 
 
 
 [[step-1-prepare-to-replace-drive-drawer]]
 == 第 1 步：准备更换驱动器抽盒
 
-确定是否可以在驱动器架联机时执行更换操作步骤，或者是否需要停止主机 I/O 活动并关闭任何已打开电源的磁盘架。
+确定是否可以在驱动器盘架联机时执行更换过程，或者是否需要停止主机 I/O 活动并关闭任何已通电的盘架（离线执行该过程）。
 
 如果要将磁盘架中的抽盒更换为抽盒丢失保护，则无需停止主机 I/O 活动并关闭任何磁盘架。
 
@@ -64,11 +64,11 @@ NOTE: 如果需要有关如何更换E系列DE460c扩展架的信息，请参阅 
 ** 如果已打开电源，请转至下一步。
 
 
-. 访问 CLI ，然后输入以下命令：
+. 访问 CLI，然后输入以下命令将目标抽屉置于服务模式：
 +
 [listing]
 ----
-SMcli <ctlr_IP1\> -p "array_password" -c "set tray [trayID] drawer [drawerID]
+SMcli <ctlr_IP1\> -k -u "array_username" -p "array_password" -c "set tray [trayID] drawer [drawerID]
 serviceAllowedIndicator=on;"
 ----
 +
@@ -76,6 +76,7 @@ serviceAllowedIndicator=on;"
 
 +
 ** ` <ctlr_ip1>` 是控制器的标识符。
+**  `array_username` 是存储阵列的用户名。必须用双引号（"）将  `array_username` 的值括起来。
 ** `array_password` 是存储阵列的密码。您必须将 `array_password` 的值用双引号（ "" ）括起来。
 ** `` 磁盘架 ID] 是包含要更换的驱动器抽盒的驱动器架的标识符。驱动器架 ID 值为 0 到 99 。您必须将 `纸托 ID` 的值用方括号括起来。
 ** `` ， rawerID] 是要更换的驱动器抽盒的标识符。抽盒 ID 值为 1 （顶部抽盒）到 5 （底部抽盒）。您必须将 `drawerID` 的值用方括号括起来。
@@ -87,7 +88,7 @@ serviceAllowedIndicator=on;"
 +
 [listing]
 ----
-SMcli <ctlr_IP1\> -p "safety-1" -c "set tray [10] drawer [1]
+SMcli <ctlr_IP1\> -k -u "array_username" -p "array_password" -c "set tray [10] drawer [1]
 serviceAllowedIndicator=forceOnWarning;"
 ----
 . 确定是否需要停止主机 I/O 活动，如下所示：
@@ -120,7 +121,7 @@ CAUTION: * 可能的数据丢失 * - 如果在执行 I/O 操作时继续执行�
 +
 当需要将缓存数据写入驱动器时，每个控制器背面的绿色缓存活动 LED 亮起。您必须等待此 LED 关闭。
 
-. 从 SANtricity 系统管理器的主页页面中，选择 * 查看正在执行的操作 * 。
+. 从 SANtricity System Manager 的左侧面板中，选择菜单：Storage[Operations in Progress]。
 . 等待所有操作完成，然后再继续下一步。
 . 使用以下过程之一关闭磁盘架：
 +
@@ -160,7 +161,7 @@ Each drive drawer has left and right cable chains.左右缆线链允许抽盒滑
 
 
 
-CAUTION: * 可能的硬件损坏 * - 如果驱动器托架已打开电源，则缆线链将通电，直到两端均已拔出为止。为避免设备发生短接，如果缆线链的另一端仍插入，请勿让已拔出的缆线链连接器接触金属机箱。
+CAUTION: *可能的硬件损坏* —— 如果驱动器架已通电，则电缆链将保持通电状态，直到两端均拔下插头。为避免设备短路，如果电缆链的另一端仍插入，请勿让已拔出的电缆链连接器接触金属机箱。
 
 .步骤
 . 请确保驱动器架和控制器架不再具有 I/O 活动且已关闭电源，或者您已发出 `Set Intention Ind指示 灯` CLI 命令。
@@ -176,8 +177,8 @@ image::../media/28_dwg_e2860_de460c_fan_canister_handle_with_callout_maint-e2800
 +
 * （ 1 ） * _ 风扇箱把手 _
 
-.. 使用把手将风扇箱从驱动器托盘中拉出，并放在一旁。
-.. 如果托盘已打开电源，请确保左侧风扇达到其最大速度。
+.. 使用手柄，将风扇箱从驱动器架中拉出，并将其放在一旁。
+.. 如果磁盘架已打开电源，请确保左侧风扇达到其最大速度。
 +
 
 CAUTION: * 由于过热可能导致设备损坏 * - 如果托盘已打开电源，请勿同时卸下两个风扇。否则，设备可能会过热。
@@ -271,7 +272,7 @@ CAUTION: * 由于过热可能导致设备损坏 * - 如果磁盘架已打开电�
 .. 要拔下缆线链，请将其拉向您大约 1 英寸（ 2.5 厘米）。将缆线链连接器保留在垂直导轨中。
 +
 
-CAUTION: * 可能的硬件损坏 * - 如果驱动器托架已打开电源，则缆线链将通电，直到两端均已拔出为止。为避免设备发生短接，如果缆线链的另一端仍插入，请勿让已拔出的缆线链连接器接触金属机箱。
+CAUTION: *可能的硬件损坏* —— 如果驱动器架已通电，则电缆链将保持通电状态，直到两端均拔下插头。为避免设备短路，如果电缆链的另一端仍插入，请勿让已拔出的电缆链连接器接触金属机箱。
 
 
 
@@ -393,7 +394,7 @@ When attaching a cable chain, reverse the order you used when disconnecting the 
 .步骤
 . 请确保：
 +
-** 已安装新驱动器抽盒。
+** 已安装新的驱动器抽屉。
 ** You have two replacement cable chains, marked as LEFT and RIGHT (on the horizontal connector next to the drive drawer).
 
 
@@ -470,7 +471,7 @@ CAUTION: 设备故障的风险 * —如果连接器未锁紧，则在抽盒操�
 [[step-6-complete-drive-drawer-replacement]]
 == 第 6 步：完成驱动器抽盒更换
 
-重新插入驱动器并按正确顺序更换前挡板。
+按正确的顺序重新插入驱动器，将驱动器抽屉重新安装到驱动器架中，重新连接前挡板，重新接通电源（如果需要），然后手动重建驱动器（如果需要）。
 
 
 CAUTION: * 可能丢失数据访问 * - 您必须将每个驱动器安装在驱动器抽盒的原始位置。
@@ -533,6 +534,10 @@ CAUTION: * 设备故障的风险 * —请确保通过推动两个控制杆完全
 
 
 
+
+. 如果您在线执行驱动器抽屉更换程序，并且更换抽屉中的任何驱动器出现故障，则必须手动重建驱动器。
++
+使用 SANtricity System Manager 完成此link:https://docs.netapp.com/us-en/e-series-santricity/sm-hardware/reconstruct-drive-manually.html["手动重建驱动器"^]过程。
 
 
 

@@ -1,0 +1,198 @@
+---
+permalink: config-linux/nvme-tcp-setup-host-side-task.html 
+sidebar: sidebar 
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: TCP 环境中的 NVMe 启动器配置包括安装和配置 nvme-cli 包、配置启动器 IP 地址以及在主机上设置 NVMe-oF 层。 
+---
+= 在 E 系列 Linux 主机上设置 NVMe over TCP 启动器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+TCP 环境中的 NVMe 启动器配置包括安装和配置 nvme-cli 包、配置启动器 IP 地址以及在主机上设置 NVMe-oF 层。
+
+.开始之前
+您必须运行最新的兼容 RHEL 9、RHEL 10、SLES 15 或 SLES 16 service pack 操作系统。有关最新要求的完整列表，请参阅 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]。
+
+.步骤
+. 如果要为 HCA 使用收件箱以太网驱动程序，请按以下步骤安装 `nvme-cli`软件包：
++
+*SLES 15 或 SLES 16*
+
++
+[listing]
+----
+
+# zypper install nvme-cli
+----
++
+*RHEL 9 和 RHEL 10*
+
++
+[listing]
+----
+
+# yum install nvme-cli
+----
++
+如果使用的是 NVIDIA HCA 并希望使用外部 DOCA 驱动程序，请参阅link:https://developer.nvidia.com/doca-downloads["NVIDIA 文档"]以了解如何在此环境中正确安装驱动程序。
+
+. 对于 RHEL 9，安装网络脚本：
++
+* RHEL 9*
+
++
+[listing]
+----
+# yum install NetworkManager-initscripts-updown
+----
++
+
+NOTE: RHEL 10 没有网络脚本。
+
+. 获取主机NQN、该主机将用于为阵列配置主机。
++
+[listing]
+----
+# cat /etc/nvme/hostnqn
+----
+. 在用于通过 TCP 连接 NVMe 的以太网端口上设置 IPv4 IP 地址。为每个网络接口创建一个配置脚本，其中包含该接口的不同变量。
++
+此步骤中使用的变量基于服务器硬件和网络环境。这些变量包括 `IPADDR` 和 `网关` 。以下是适用于 SLES 和 RHEL 的示例说明：
+
++
+*SLES 15*
+
++
+使用以下内容创建示例文件 `/etc/sysconfig/network/ifcfg-eth4`。
+
++
+[listing]
+----
+BOOTPROTO='static'
+BROADCAST=
+ETHTOOL_OPTIONS=
+IPADDR='192.168.1.87/24'
+GATEWAY='192.168.1.1'
+MTU=9000
+NAME='<adapter name>'
+NETWORK=
+REMOTE_IPADDR=
+STARTMODE='auto'
+----
++
+然后、创建示例文件`/etc/sysconfig/network/ifcfg-eth5`：
+
++
+[listing]
+----
+BOOTPROTO='static'
+BROADCAST=
+ETHTOOL_OPTIONS=
+IPADDR='192.168.2.87/24'
+GATEWAY='192.168.2.1'
+MTU=9000
+NAME='<adapter name>'
+NETWORK=
+REMOTE_IPADDR=
+STARTMODE='auto'
+----
++
+*RHEL 9、RHEL 10 或 SLES 16*
+
++
+使用 `nmtui` 用于激活和编辑连接的工具。下面是一个示例文件 `/etc/NetworkManager/system-connections/eth4.nmconnection` 该工具将生成：
+
++
+[listing]
+----
+
+[connection]
+id=eth4
+uuid=<unique uuid>
+type=ethernet
+interface-name=eth4
+
+[ethernet]
+mtu=9000
+
+[ipv4]
+address1=192.168.1.87/24
+method=manual
+
+[ipv6]
+addr-gen-mode=default
+method=auto
+
+[proxy]
+----
++
+下面是一个示例文件 `/etc/NetworkManager/system-connections/eth5.nmconnection` 该工具将生成：
+
++
+[listing]
+----
+
+[connection]
+id=eth5
+uuid=<unique uuid>
+type=ethernet
+interface-name=eth5
+
+[ethernet]
+mtu=9000
+
+[ipv4]
+address1=192.168.2.87/24
+method=manual
+
+[ipv6]
+addr-gen-mode=default
+method=auto
+
+[proxy]
+----
+. 启用网络接口：
++
+[listing]
+----
+
+# nmcli connection up eth4
+# nmcli connection up eth5
+----
+. 在主机上设置 NVMe-oF 层。在 `/etc/modules-load.d/`下创建以下文件，以加载 `nvme_tcp`内核模块，并确保内核模块始终处于开启状态，即使在重新启动后也是如此：
++
+[listing]
+----
+
+# cat /etc/modules-load.d/nvme_tcp.conf
+  nvme_tcp
+----
+. 重新启动主机。
++
+.. 或者，您可以通过运行以下命令加载 `nvme_tcp`内核模块，而无需重新启动：
++
+[listing]
+----
+
+# modprobe nvme_tcp
+----
+
+
+. 验证  `nvme_tcp` 内核模块是否已加载，运行此命令：
++
+[listing]
+----
+# lsmod | grep nvme
+nvme_tcp               45056  0
+nvme_fabrics           24576  1 nvme_tcp
+nvme_core             114688  5 nvme_tcp,nvme_fabrics
+t10_pi                 16384  2 sd_mod,nvme_core
+----
++
+.下一步是什么？
+在主机上设置 NVMe over TCP 启动器后，link:nvme-tcp-configure-storage-connections-task.html["配置 NVMe over TCP 端口设置"]。
+
+

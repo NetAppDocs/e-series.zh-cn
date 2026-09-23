@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: replace controller, replace canister, EF300, EF600, EF300C, EF600C 
 summary: 更换 EF300 或 EF600 控制器架中的单个控制器。 
 ---
-= 更换控制器- EF300和EF600
+= 更换EF300或EF600阵列中的控制器
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -69,7 +69,7 @@ NOTE: 只要出现以下更换情况、控制器的琥珀色警示LED就会熄�
 如果控制器出现故障并需要更换，则更换部件号将显示在 Recovery Guru 的 Details 区域中。如果您需要手动查找此编号，请按照以下步骤操作：
 
 +
-.. 选择 * 硬件 * 。
+.. 选择菜单：Hardware[Controllers and components]。
 .. 找到标记有控制器图标的控制器架 image:../media/sam1130_ss_hardware_controller_icon_maint-ef600.gif[""]。
 .. 单击控制器图标。
 .. 选择控制器，然后单击 * 下一步 * 。
@@ -100,8 +100,7 @@ CAUTION: * 可能会丢失数据访问 * - 如果两部分编号不同，请勿�
 
 . 如果控制器尚未脱机，请立即使用 SANtricity 系统管理器将其脱机。
 +
-.. 选择 * 硬件 * 。
-.. 如果图形显示了驱动器，请选择 * 显示磁盘架背面 * 以显示控制器。
+.. 选择菜单：Hardware[Controllers and components]。
 .. 选择要置于脱机状态的控制器。
 .. 从上下文菜单中，选择 * 置于脱机状态 * ，然后确认要执行此操作。
 

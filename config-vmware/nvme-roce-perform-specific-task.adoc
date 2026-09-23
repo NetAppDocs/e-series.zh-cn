@@ -1,124 +1,50 @@
 ---
 permalink: config-vmware/nvme-roce-perform-specific-task.html 
 sidebar: sidebar 
-keywords: NVMe over RoCE protocol, switches, zone switches, zoning, host port identifiers, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E4000, EF50, EF80 E-Series, eseries 
-summary: 对于光纤通道协议，您可以配置交换机并确定主机端口标识符。 
+keywords: NVMe over RoCE protocol, switches, zone switches, zoning, host port identifiers, express vmware configuration, software configuration, vmware host, E5700, EF300, EF600, EF50, EF80, E-Series, eseries 
+summary: '对于 NVMe over RoCE 协议，您需要配置交换机并确定主机 NVMe 限定名称 (NQN)。' 
 ---
-= 在 E-Series 中执行 NVMe over RoCE 特定任务 - VMware
+= 在 E 系列中为 VMware 配置 NVMe over RoCE 交换机
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-对于 NVMe over RoCE 协议，您可以配置交换机并确定主机端口标识符。
+对于 NVMe over RoCE 协议，您需要配置交换机并确定主机 NVMe 限定名称 (NQN)。
+
+
+NOTE: 在使用 4096 字节驱动器时，必须将卷设置为使用 512 字节仿真（512e），以确保与 VMware 的兼容性。有关将卷设置为使用 512 字节仿真（512e）的详细信息，请参见 SANtricity System Manager 联机帮助。
 
 
 
 [[step-1-record-your-configuration]]
 == 步骤 1：记录您的配置
 
-您可以生成并打印此页面的 PDF ，然后使用以下工作表记录特定于协议的存储配置信息。要执行配置任务，您需要此信息。
+您可以生成并打印此页面的 PDF，然后使用以下工作表记录协议特定的存储配置信息。执行配置任务时需要此信息。
+
+图中显示了连接到由 VLAN 和/或唯一子网分隔的 E 系列存储阵列的主机。一个 VLAN/子网用蓝线表示；另一个 VLAN/子网用红线表示。每个 VLAN/子网至少包含一个启动器端口和一半的目标端口。主机和/或控制器端口的数量将根据网络接口的数量和控制器型号而有所不同。您可能有更多可用端口（每个控制器最多 6 个）。
+
+image::../media/network_generic_worksheet.gif[基于RoCE的NVMe端口标识符]
 
 
 
-[[recommended-configuration]]
-=== 建议的配置
+[[host-mapping-information]]
+=== 主机映射信息
 
-建议的配置包括两个启动程序端口和四个目标端口以及一个或多个 VLAN 。
-
-image::../media/network_generic_worksheet.gif[基于 RoCE 端口的 NVMe 标识符"]
-
-
-
-[[host-identifiers]]
-=== 主机标识符
-
+[cols="35h,~"]
 |===
-| 标注编号 | 主机端口连接 | 软件启动程序 NQN 
+| 正在映射主机名 |  
 
 
- a| 
-1.
- a| 
-主机（启动程序） 1.
- a| 
+| 主机操作系统类型 |  
 
 
+| 主机 NQN |  
 
- a| 
-1.
- a| 
-主机（启动程序） 2.
- a| 
 
+| 目标 NQN |  
 |===
-
-
-[[target-identifiers]]
-=== 目标标识符
-
-|===
-| 标注编号 | 阵列端口连接 | 目标 NQN 
-
-
- a| 
-2.
- a| 
-阵列控制器（目标）端口 1
- a| 
-
-
-
- a| 
-2.
- a| 
-阵列控制器（目标）端口 2
- a| 
-
-
-
- a| 
-2.
- a| 
-阵列控制器（目标）端口 3
- a| 
-
-
-
- a| 
-2.
- a| 
-阵列控制器（目标）端口 4
- a| 
-
-|===
-
-
-[[mapping-host]]
-=== 正在映射主机
-
-|===
-
-
- a| 
-正在映射主机名
- a| 
-
-
-
- a| 
-主机操作系统类型
- a| 
-
-|===
-
-
-[[recommended-configuration]]
-=== 建议的配置
-
-这可能因阵列而异。EF300、EF600 和 EF50 将是 2 个启动器端口，最多 4 个目标端口，1 个或多个 VLAN。EF80 将是 2 个启动器端口，最多 6 个目标端口，1 个或多个 VLAN。
-
 
 
 [[step-2-configure-the-nvmeroce-switches]]
@@ -126,10 +52,11 @@ image::../media/network_generic_worksheet.gif[基于 RoCE 端口的 NVMe 标识�
 
 您可以根据供应商针对 NVMe over RoCE 的建议配置交换机。这些建议可能包括配置指令以及代码更新。
 
-.关于此
+.关于此任务
 此任务描述了为 NVMe over RoCE 配置交换机的一般步骤。有关具体说明，请参见交换机供应商的文档。
 
-在开始之前，请确保具备以下条件：
+.开始之前
+确保您已具备以下条件：
 
 * 两个独立的网络提供高可用性。确保将通过 RoCE 的 NVMe 流量隔离到单独的网络段。
 
@@ -139,21 +66,21 @@ image::../media/network_generic_worksheet.gif[基于 RoCE 端口的 NVMe 标识�
 
 
 
-[[step-3-configure-networking-nvmeroce-vmware]]
-== 步骤 3：配置网络 - NVMe/RoCE、VMware
+[[step-3-configure-networking]]
+== 步骤 3：配置网络
 
 根据您的数据存储要求，您可以通过多种方式设置 NVMe over RoCE 网络。有关为您的环境选择最佳配置的提示，请咨询您的网络管理员。
 
 .关于此任务
 此任务描述了为 NVMe over RoCE 配置网络的一般步骤。有关具体说明，请参见交换机供应商的文档。
 
-在开始之前，请确保具备以下条件：
+.开始之前
+确保您已具备以下条件：
 
-* 为 NVMe over RDMA 的无损以太网配置的交换机。
+* 为 NVMe over RDMA 配置无损以太网的交换机（如果交换机在路径中）。
 
 
-.关于此任务
-在规划基于 RoCE 网络的 NVMe 时，请记住，VMware Configuration Maximums 指南指出，每台服务器支持的最大 RDMA NVMe 启动器端口数为 2。您必须考虑此要求，以避免配置过多的路径。
+在规划基于 RoCE 网络的 NVMe 时，请记住， https://configmax.broadcom.com/guest["VMware 配置最大值指南"^]每个服务器支持的最大 RDMA NVMe 启动器端口数为 2。您必须考虑此要求，以避免配置过多的路径。
 
 为确保良好的多路径配置，请为 NVMe over RoCE 网络使用多个网段。在一个网段上至少放置一个主机端端口和每个阵列控制器的至少一个端口，在另一个网段上放置一组相同的主机端口和阵列端口。在可能的情况下，使用多个以太网交换机来提供额外的冗余。
 
@@ -162,15 +89,16 @@ image::../media/network_generic_worksheet.gif[基于 RoCE 端口的 NVMe 标识�
 
 
 
-[[step-4-configure-array-side-networking-nvmeroce-vmware]]
-== 步骤 4：配置阵列端网络 - NVMe/RoCE，VMware
+[[step-4-configure-array-side-networking]]
+== 步骤 4：配置阵列端网络
 
 您可以使用 SANtricity System Manager 界面在阵列端配置 NVMe over RoCE 网络。
 
 .关于此任务
 此任务描述如何从 SANtricity System Manager 中的 *Controllers & components* 页面访问 NVMe over RoCE 端口配置。您还可以从 SANtricity System Manager 中的 *Configure NVMe over RoCE ports* 页面访问配置。
 
-在开始之前，请确保具备以下条件：
+.开始之前
+确保您已具备以下条件：
 
 * 一个存储阵列控制器的 IP 地址或域名。
 * System Manager GUI、基于角色的访问控制 (RBAC) 或 LDAP 和目录服务的密码，以便对存储阵列进行适当的安全访问。有关 link:https://docs.netapp.com/us-en/e-series-santricity/um-certificates/overview-access-management-um.html["访问管理"^] 的详细信息，请参见 SANtricity System Manager 联机帮助。
@@ -186,7 +114,7 @@ image::../media/network_generic_worksheet.gif[基于 RoCE 端口的 NVMe 标识�
 
 . 在设置管理员密码和确认密码字段中输入管理员角色的 System Manager 密码，然后单击 * 设置密码 * 。
 +
-如果未配置池，卷组，工作负载或通知，则设置向导将启动。
+如果未配置任何池、卷组、工作负载或通知，则会启动设置向导。
 
 . 关闭设置向导。
 +
@@ -263,53 +191,57 @@ MTU 大小（通过单击显示更多端口设置可用。）
 
 
 
-[[step-5-configure-host-side-networkingnvme-over-roce-vmware]]
-== 第 5 步：配置主机端网络—基于 RoCE 的 NVMe，VMware
+[[step-5-configure-host-side-networking]]
+== 第5步：配置主机端网络
 
 在主机端配置 NVMe over RoCE 网络，使 VMware NVMe over RDMA 存储适配器启动器能够与阵列建立会话。
 
+.开始之前
+如果主机通过以太网交换机连接到存储阵列，则必须在交换机上配置无损网络，如步骤 2 和步骤 3 所述。在这种情况下，基于交换机的无损网络设置优先，您无需完成以下主机端先决条件。
+
+如果主机与存储阵列有直接连接（路径中没有交换机），请在配置主机端 NVMe over RDMA 适配器之前完成以下先决条件。
+
+.先决条件：为 NVMe over RDMA 配置无损以太网（仅限直接连接）
+使用基于差分服务代码点(DSCP)的优先级流量控制(PFC)配置无损网络。
+
+有关详细信息，请参见link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/about-vmware-nvme-storage/requirements-for-vmware-nvme-storage.html#GUID-B764140D-BCF3-4C99-8169-E5B058757518-en["为基于 RDMA 的 NVMe 配置无损以太网"^]。
+
 .关于此任务
-此配置使用基于差分服务代码点 (DSCP) 的优先级流量控制 (PFC) 启用无损网络。
+此任务创建 NVMe over RDMA 主机适配器，并将控制器连接添加到存储。
 
 .步骤
 . 识别 RDMA 网络适配器并记录 vmnic 配对的上行链路。
 +
-有关详细信息，请参见 link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-storage/about-vmware-nvme-storage/configuring-nvme-over-rdma-roce-v2-on-esxi/view-rdma-network-adapters.html["查看 RDMA 网络适配器"^]。
+有关详细信息，请参见link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/about-vmware-nvme-storage/configuring-nvme-over-rdma-roce-v2-on-esxi/view-rdma-network-adapters.html["查看 RDMA 网络适配器"^]。
 
 . 使用 vSphere 标准交换机为 RDMA 适配器配置 VMkernel 端口绑定。
 +
-有关详细信息，请参见 link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-storage/about-vmware-nvme-storage/configuring-nvme-over-rdma-roce-v2-on-esxi/configure-vmkernel-binding-for-the-rdma-adapter.html["为 RDMA 适配器配置 VMkernel 绑定"^]。
+有关详细信息，请参见link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/about-vmware-nvme-storage/configuring-nvme-over-rdma-roce-v2-on-esxi/configure-vmkernel-binding-for-the-rdma-adapter/configure-vmkernel-binding-with-a-vsphere-standard-switch.html["为 RDMA 适配器配置 VMkernel 绑定"^]。
 
 . 添加软件 NVMe over RDMA 适配器。
 +
-有关详细信息，请参见 link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-storage/about-vmware-nvme-storage/configuring-nvme-over-rdma-roce-v2-on-esxi/add-software-nvme-over-rdma-or-nvme-over-tcp-adapters.html["添加软件 NVMe over RDMA 或 NVMe over TCP 适配器"^]。
+有关详细信息，请参见link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/about-vmware-nvme-storage/configuring-nvme-over-rdma-roce-v2-on-esxi/add-software-nvme-over-rdma-or-nvme-over-tcp-adapters.html["添加软件 NVMe over RDMA 或 NVMe over TCP 适配器"^]。
 
 . 为基于 RDMA 的 NVMe 添加 NVMe 控制器。
 +
-有关详细信息，请参见 link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-storage/about-vmware-nvme-storage/configuring-nvme-over-rdma-roce-v2-on-esxi/add-controller-for-nvme-over-fabrics.html["添加基于网络结构的 NVMe 控制器"^]。
-
-. 通过 RDMA 为 NVMe 配置无损以太网。
-+
-您可以使用基于差分服务代码点 (DSCP) 的优先级流量控制 (PFC) 配置无损网络。
-
-+
-要使用此选项，请参见以下内容：
-
-+
-** link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-storage/about-vmware-nvme-storage/requirements-for-vmware-nvme-storage.html#GUID-B764140D-BCF3-4C99-8169-E5B058757518-en["为基于 RDMA 的 NVMe 配置无损以太网"^]。
+有关详细信息，请参见link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/about-vmware-nvme-storage/configuring-nvme-over-rdma-roce-v2-on-esxi/add-controller-for-nvme-over-fabrics.html["添加基于网络结构的 NVMe 控制器"^]。
 
 
 
 
+NOTE: 在此过程中，可以从"添加控制器"对话框获取主机 NQN。稍后配置主机映射时将需要此信息。
+
+成功添加后，可以从 vSphere Client 上的存储适配器视图中查看连接。如果不成功，请跳到步骤 6 以验证与端口的通信并更正任何连接设置。
 
 
-[[step-6-verify-ip-network-connections-nvme-over-roce-vmware]]
-== 第 6 步：验证 IP 网络连接 - NVMe over RoCE、VMware
+
+[[step-6-verify-ip-network-connections]]
+== 第 6 步：验证 IP 网络连接
 
 您可以使用 ping 测试来验证 Internet 协议（ IP ）网络连接，以确保主机和阵列能够进行通信。
 
 .步骤
-. 在主机上执行以下命令：
+. 在主机上，运行以下命令：
 +
 [listing]
 ----
@@ -335,5 +267,5 @@ round-trip min/avg/max = 0.406/0.721/0.902 ms
 
 NOTE: 如果命令失败并显示消息 `sendto() failed (Message too long)`，请验证主机服务器、存储控制器和交换机端口上以太网接口的 MTU 大小。
 
-. 返回到 NVMe over RoCE 配置过程以完成目标发现。
+. 如果步骤 5 发现失败，请返回 NVMe over RoCE 主机端网络配置过程以完成添加目标控制器。
 

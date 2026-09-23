@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: access System Manager Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 您可以使用 SANtricity 系统管理器中的设置向导配置存储阵列。 
 ---
-= 使用SANtricity系统管理器配置存储—Linux (基于RoCE的NVMe)
+= 使用 SANtricity System Manager for RoCE 配置 E 系列存储
 :allow-uri-read: 
 :experimental: 
 :icons: font

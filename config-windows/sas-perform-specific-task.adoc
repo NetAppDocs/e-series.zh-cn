@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: sas, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 对于 SAS 协议，您可以确定主机端口地址并进行建议的设置。 
 ---
-= 在E系列- Windows中执行SAS专用任务
+= 为 E-Series 中的 Windows 主机配置特定于 SAS 的设置
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

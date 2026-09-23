@@ -2,9 +2,9 @@
 permalink: config-linux/sas-configure-ip-address-dhcp-task.html 
 sidebar: sidebar 
 keywords: IP address, DHCP, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
-summary: 使用动态主机配置协议（ dhcp ）提供 IP 地址。 
+summary: '使用动态主机配置协议(DHCP)提供IP地址。' 
 ---
-= 在E系列中使用DHCP配置IP地址- Linux (SAS)
+= 使用 DHCP 为 E 系列 Linux SAS 主机配置 IP 地址
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

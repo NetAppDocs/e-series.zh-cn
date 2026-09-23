@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ef50, ef80 replace io module, replace hic, replace host interface card 
 summary: 使用相同类型的 I/O 模块更换 EF50 或 EF80 存储系统中出现故障的 I/O 模块，以将存储系统恢复到最佳操作状态。 
 ---
-= 更换 I/O 模块 - EF50 和 EF80
+= 更换 EF50 或 EF80 存储系统中的 I/O 模块
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

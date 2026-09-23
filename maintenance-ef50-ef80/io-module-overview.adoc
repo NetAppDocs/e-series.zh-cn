@@ -2,16 +2,16 @@
 permalink: maintenance-ef50-ef80/io-module-overview.html 
 sidebar: sidebar 
 keywords: ef50, ef80, replace io module, upgrade io module, io module overview 
-summary: EF50 和 EF80 存储系统提供升级或更换 I/O 模块的灵活性，以增强网络连接和性能。 
+summary: EF50 和 EF80 存储系统在更换或升级 I/O 模块方面提供了灵活性，以增强网络连接和性能，并增加存储容量。 
 ---
-= I/O 模块维护概述 - EF50 和 EF80
+= 了解有关 EF50 和 EF80 存储系统的 I/O 模块维护的信息
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-EF50 和 EF80 存储系统在更换或升级 I/O 模块方面提供了灵活性，以增强网络连接和性能。
+EF50 和 EF80 存储系统在更换或升级 I/O 模块方面提供了灵活性，以增强网络连接和性能，并增加存储容量。
 
 * link:io-module-replace.html["更换 I/O 模块"]
 +
@@ -19,6 +19,10 @@ EF50 和 EF80 存储系统在更换或升级 I/O 模块方面提供了灵活性�
 
 * link:io-module-upgrade.html["升级 I/O 模块"]
 +
-您可以升级存储系统中的 I/O 模块以增加主机端口数量，从而增强网络连接并扩展系统处理数据流量的能力。
+您可以升级存储系统中的 I/O 模块，以增加主机端口数量、增强网络连接、扩展系统处理数据流量的能力并连接 SAS 扩展磁盘架。
+
++
+
+NOTE: 运行 SANtricity 12.10 或更高版本的存储系统支持 SAS 扩展 I/O 模块。
 
 

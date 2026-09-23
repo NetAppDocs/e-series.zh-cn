@@ -1,21 +1,28 @@
 ---
 permalink: config-vmware/configure-storage-host-task.html 
 sidebar: sidebar 
-keywords: configure storage ESXi, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
-summary: 您可以将分配给 ESXi 主机的存储用作虚拟机文件系统（ VMFS\ ）数据存储库或原始设备映射（ RDM ）。基于光纤通道的 NVMe 协议不支持 RDM 。 
+keywords: configure storage ESXi, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, EF50, EF80, E4000, E-Series, eseries 
+summary: '可以将分配给 ESXi 主机的存储用作虚拟机文件系统 (VMFS) 数据存储区或原始设备映射 (RDM)。NVMe over fabric 协议（NVMe over FC、NVMe over RoCE、NVMe over TCP）不支持 RDM。' 
 ---
-= 在主机上配置E系列- VMware中的存储
+= 在 E-Series for VMware 的主机上配置存储
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-您可以将分配给 ESXi 主机的存储用作虚拟机文件系统（ Virtual Machine File System ， VMFS ）数据存储库或原始设备映射（ Raw Device Mapping ， RDM ）。基于光纤通道的 NVMe 协议不支持 RDM 。
+可以将分配给 ESXi 主机的存储用作虚拟机文件系统 (VMFS) 数据存储区或原始设备映射 (RDM)。NVMe over fabric 协议（NVMe over FC、NVMe over RoCE、NVMe over TCP）不支持 RDM。
 
-ESXi 的所有 6._x_ 和 7_x_ 版本均支持 VMFS 版本 5 和 6 。
+ESXi 的所有当前版本都支持 VMFS 版本 5 和 6。
+
+
+NOTE: 不建议在 VMware 上使用 VMFS 扩展。建议对现有后备卷执行 DVE 操作 (https://kb.netapp.com/on-prem/E-Series/Management-Apps-KBs/How_to_expand_Volumes["如何扩展卷 - NetApp 知识库"^]），而不是将另一个卷作为扩展添加到现有 VMFS 数据存储区以增加容量，从而扩展 VMFS 数据存储区。
+
+
+NOTE: 建议在 Linux 虚拟机上使用虚拟 RDM 或虚拟磁盘而不是物理 RDM。
 
 .步骤
 . 确保已正确发现映射到 ESXi 主机的卷。
-. 有关使用vSphere Client或vSphere Web Client创建VMFS数据存储库或将卷用作VMM的说明，请参阅。 https://docs.vmware.com/index.html["VMware 文档网站"^]
+. 有关创建 VMFS 数据存储区的说明，请参见 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/working-with-datastores-in-vsphere-storage-environment/vsphere-vmfs-datastore-concepts-and-operations/create-a-vsphere-vmfs-datastore.html["创建 vSphere VMFS 数据存储区"^]。
+. 有关创建 RDM 的说明，请参见 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/raw-device-mapping-in-vsphere.html["vSphere 中的原始设备映射"^]。
 

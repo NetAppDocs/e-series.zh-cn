@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: EF300, EF600, EF300C, EF600C, installation, create account, register hardware 
 summary: 要安装 EF300 或 EF600 ，请创建一个帐户并注册硬件。 
 ---
-= 准备安装- EF300、EF600、EF300C和EF600C
+= 准备安装 EF300 或 EF600 存储系统
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -21,7 +21,16 @@ summary: 要安装 EF300 或 EF600 ，请创建一个帐户并注册硬件。
 
 
 .步骤
-. 在中创建帐户并注册硬件 http://mysupport.netapp.com/["NetApp 支持"^]。
+. 注册您的系统：
++
+
+NOTE: 您可以立即或稍后注册系统。稍后，在系统启动时，系统会提示您注册系统。
+
++
+.. 如果您还没有账号，请在 http://mysupport.netapp.com/["NetApp 支持"^]创建账号。
+.. 按照 NetApp 知识库文章 https://kb.netapp.com/nss/System_Registration/How_to_register_a_new_system_on_the_NetApp_Support_Site["如何注册新系统"^]中的说明注册您的系统。
+
+
 . 确保收到的包装盒中包含以下物品。
 +
 |===
@@ -41,7 +50,7 @@ image:../media/superrails_inst-hw-ef600.png["机架式硬件"]
 
 |===
 +
-The following table identifies the types of cables you might receive.如果您收到的缆线未在表中列出，请参见 https://hwu.netapp.com/["Hardware Universe"] 以找到缆线并确定其用途。
+下表标识了您可能收到的电缆类型。如果您收到表中未列出的电缆，请参阅 link:https://hwu.netapp.com["NetApp Hardware Universe"^] 以找到该电缆并确定其用途。
 
 +
 |===

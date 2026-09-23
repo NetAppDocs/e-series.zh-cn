@@ -1,0 +1,158 @@
+---
+permalink: config-linux/nvme-tcp-worksheet-for-concept.html 
+sidebar: sidebar 
+keywords: NVMe over TCP worksheet Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 使用此工作表记录 NVMe over TCP 存储配置信息。 
+---
+= 适用于 E 系列 Linux 主机的 NVMe over TCP 配置工作表
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以生成并打印此页面的 PDF，然后使用以下工作表记录 NVMe over TCP 存储配置信息。您需要此信息来执行置备任务。
+
+
+
+[[direct-connect-topology]]
+== 直连拓扑
+
+在直接连接拓扑中，一个或多个主机直接连接到子系统。在 SANtricity 操作系统 11.50 版本中，我们支持从每台主机到子系统控制器的单一连接，如下所示。在此配置中，每个主机的一个 NIC（网络接口卡）端口应与其连接的 E 系列控制器端口位于同一子网，但与其他 NIC 端口位于不同的子网。
+
+image::../media/nvmeof_direct_connect.gif[NVMe over TCP 直接连接示例]
+
+满足这些要求的示例配置包括四个网络子网，如下所示：
+
+* 子网 1：主机 1 网卡端口 1 和控制器 1 主机端口 1
+* 子网 2：主机 1 NIC 端口 2 和控制器 2 主机端口 1
+* 子网 3：主机 2 NIC 端口 1 和控制器 1 主机端口 2
+* 子网 4：主机 2 NIC 端口 2 和控制器 2 主机端口 2
+
+
+
+
+[[switch-connect-topology]]
+== 交换机连接拓扑
+
+在网络结构拓扑中，使用一个或多个交换机。请参见 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^] 有关支持的交换机的列表。
+
+image::../media/nvmeof_switch_connect.gif[NVMe over TCP 交换机连接示例]
+
+
+
+[[host-identifiers]]
+== 主机标识符
+
+找到并记录每个主机上的启动程序 NQN 。
+
+|===
+| 主机端口连接 | 软件启动程序 NQN 
+
+
+ a| 
+主机（启动程序） 1.
+ a| 
+{nbsp}
+
+
+
+ a| 
+{nbsp}
+ a| 
+{nbsp}
+
+
+
+ a| 
+主机（启动程序） 2.
+ a| 
+{nbsp}
+
+
+
+ a| 
+{nbsp}
+ a| 
+{nbsp}
+
+
+
+ a| 
+{nbsp}
+ a| 
+{nbsp}
+
+|===
+
+
+[[target-nqn]]
+== 目标 NQN
+
+记录存储阵列的目标 NQN 。
+
+|===
+| 阵列名称 | 目标 NQN 
+
+
+ a| 
+阵列控制器（目标）
+ a| 
+
+|===
+
+
+[[target-nqns]]
+== 目标 NQN
+
+记录阵列端口要使用的 NQN 。
+
+|===
+| 阵列控制器（目标）端口连接 | NQN 
+
+
+ a| 
+控制器 A ，端口 1
+ a| 
+
+
+
+ a| 
+控制器 B ，端口 1
+ a| 
+
+
+
+ a| 
+控制器 A ，端口 2
+ a| 
+
+
+
+ a| 
+控制器 B ，端口 2
+ a| 
+
+|===
+
+
+[[mapping-host-name]]
+== 正在映射主机名
+
+
+NOTE: 映射主机名会在工作流期间创建。
+
+|===
+
+
+ a| 
+正在映射主机名
+ a| 
+
+
+
+ a| 
+主机操作系统类型
+ a| 
+
+|===

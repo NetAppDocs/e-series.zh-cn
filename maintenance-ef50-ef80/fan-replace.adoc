@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ef50, ef80, swap, out, fan, module, interrupt, service, sequence, task, hot-swap, hot-swap a fan module 
 summary: 当风扇出现故障或无法有效运行时，请更换 EF50 或 EF80 存储系统中的风扇模块，因为这可能会影响系统冷却和整体性能。 
 ---
-= 更换风扇模块 - EF50 和 EF80
+= 更换 EF50 或 EF80 存储系统中的风扇模块
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

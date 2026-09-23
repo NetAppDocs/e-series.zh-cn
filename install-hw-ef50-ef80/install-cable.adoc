@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: ef50, ef80, cabling, cable, host cabling, direct-attached topology, fabric-attached topology 
 summary: '安装 EF50 或 EF80 存储系统硬件后，连接控制器间镜像和主机网络连接。（稍后在"完成存储系统设置"部分对管理端口进行布线。）' 
 ---
-= 用缆线连接硬件 - EF50 和 EF80
+= 用缆线连接 EF50 和 EF80 存储系统的硬件
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-安装 EF50 或 EF80 存储系统硬件后，连接控制器间镜像和主机网络连接。（稍后在"完成存储系统设置"部分对管理端口进行布线。）
+安装 EF50 或 EF80 存储系统硬件后，连接控制器间镜像、主机网络连接和 SAS 磁盘架（如果适用）。（稍后在"完成存储系统设置"部分对管理端口进行布线。）
 
 .关于此任务
 * 术语 _I/O 模块_ 用于指代本过程中的主机接口卡 (HIC)。
@@ -60,7 +60,10 @@ image:../media/drw_ef50-ef80_mirroring_2p_100gbe_ieops-2659.svg["ef50 和 ef80 �
 根据您的网络拓扑（直接连接或光纤连接）为存储系统连接主机电缆。
 
 .关于此任务
-* 根据您的存储系统型号，存储系统中安装的主机 I/O 模块类型可以是以太网或光纤通道 (FC)。此过程中的布线示例显示了存储系统模型支持的两种类型的主机 I/O 模块。
+* 根据您的存储系统型号和正在运行的 SANtricity 版本，支持不同类型的主机 I/O 模块。此过程中的布线示例显示了以太网和光纤通道 (FC) 主机 I/O 模块。
++
+要查看存储系统型号支持的所有主机 I/O 模块和插槽优先级，请参阅 link:https://hwu.netapp.com["NetApp Hardware Universe"^]。
+
 * 布线示例未显示主机 1 和主机 2 中的 4 端口 64Gb FC HBA；但是，如果安装了这些 HBA，则以与 2 端口 HBA 相同的方式连接其他端口。
 
 
@@ -330,5 +333,93 @@ image:../media/drw_ef80_4p_64gb_fc_3hic_fabric_ieops-2675.svg["使用三个 4 �
 =====
 --
 ====
+
+
+[[step-3-cable-the-sas-shelf-connections]]
+== 步骤 3：连接 SAS 磁盘架线缆
+
+以下步骤说明如何将控制器连接到一个 DE460C 磁盘架或由三个 DE460C 磁盘架组成的磁盘架堆栈。
+
+.关于此任务
+* 布线示例显示了 DE460C 磁盘架；但是，相同的布线适用于所有受支持的 SAS 磁盘架。有关受支持的 SAS 磁盘架，请参阅 link:https://hwu.netapp.com["NetApp Hardware Universe"^]。
+* 有关存储系统和所有布线选项（如光纤）支持的最大磁盘架数，请参见 link:https://hwu.netapp.com["NetApp Hardware Universe"^]。
+* 布线过程显示控制器在插槽 3 中具有一个 SAS I/O 模块。这是 SANtricity 12.10 唯一支持的 SAS I/O 模块配置。
+* 电缆插图显示控制器 A 电缆连接为蓝色，控制器 B 电缆连接为红色。
+* 始终对控制器和一个或多个机架进行电缆连接，以便 A 侧路径 (IOMA) 和 B 侧路径 (IOMB) 有两个电缆连接，如电缆连接图所示。
+* 您使用的是存储系统附带的存储电缆，可能是以下电缆类型：
++
+*mini-SAS HD 线缆*
+
++
+image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[mini-SAS HD 线缆]
+
+
+
+[role="tabbed-block"]
+====
+.选项 1：一个 DE460C 磁盘架
+--
+将每个控制器连接到 DE460C 机架上的每个 IOM12 模块，以便控制器具有到机架的 A 侧路径（IOMA）和 B 侧路径（IOMB）。
+
+.步骤
+. 将控制器 A 端口 3a 通过缆线连接到磁盘架 IOMA 端口 1。
+. 将控制器 A 端口 3b 通过缆线连接到磁盘架 IOMA 端口 2。
+. 将控制器 A 端口 3c 通过缆线连接到磁盘架 IOMB 端口 3。
+. 将控制器 A 端口 3d 通过缆线连接到磁盘架 IOMB 端口 4。
+. 将电缆控制器 B 端口 3a 连接到托架 IOMA 端口 3。
+. 将控制器 B 端口 3b 连接到磁盘架 IOMA 端口 4。
+. 将控制器 B 端口 3c 连接到磁盘架 IOMB 端口 1。
+. 将控制器 B 端口 3d 连接到磁盘架 IOMB 端口 2。
+
+
+完成磁盘架的布线后，布线应如下所示：
+
+image:../media/drw_ef50-ef80_1_de460c_cabling_ieops-2981.svg["将控制器端口通过缆线连接到一个 DE460C 磁盘架"]
+
+--
+.选项 2：三个 DE460C 磁盘架
+--
+将三个磁盘架连接在一起（磁盘架到磁盘架连接），然后将每个控制器连接到磁盘架堆栈的每一端（磁盘架 1 和磁盘架 3），以便控制器具有到磁盘架堆栈的 A 侧路径（IOMA）和 B 侧路径（IOMB）。
+
+. 为 IOMA 路径的磁盘架到磁盘架连接布线：
++
+.. 使用缆线将磁盘架 1 IOMA 端口 1 连接到磁盘架 2 IOMA 端口 4。
+.. 电缆架 1 IOMA 端口 2 到架 2 IOMA 端口 3。
+.. 将磁盘架 2 IOMA 端口 1 连接到磁盘架 3 IOMA 端口 4。
+.. 使用缆线将磁盘架 2 IOMA 端口 2 连接到磁盘架 3 IOMA 端口 3。
+
+
+. 为 IOMB 路径的磁盘架到磁盘架连接布线：
++
+.. 使用缆线将磁盘架 1 IOMB 端口 1 连接到磁盘架 2 IOMB 端口 3。
+.. 电缆架 1 IOMB 端口 2 到架 2 IOMB 端口 4。
+.. 将磁盘架 2 IOMB 端口 1 连接到磁盘架 3 IOMB 端口 3。
+.. 使用缆线将磁盘架 2 IOMB 端口 2 连接到磁盘架 3 IOMB 端口 4。
+
+
+. 将控制器 A 的电缆连接到磁盘架 3（IOMA 路径）和 1（IOMB 路径）：
++
+.. 电缆控制器 A 端口 3a 到机架 3 IOMA 端口 1
+.. 将控制器 A 端口 3b 通过缆线连接到磁盘架 3 IOMA 端口 2。
+.. 将控制器 A 端口 3c 通过缆线连接到磁盘架 1 IOMB 端口 3。
+.. 将控制器 A 端口 3d 通过缆线连接到磁盘架 1 IOMB 端口 4。
+
+
+. 将控制器 B 连接到磁盘架 1（IOMA 路径）和 3（IOMB 路径）：
++
+.. 电缆控制器 B 端口 3a 到货架 1 IOMA 端口 3。
+.. 将控制器 B 端口 3b 通过电缆连接到磁盘架 1 IOMA 端口 4。
+.. 将控制器 B 端口 3c 通过电缆连接到磁盘架 3 IOMB 端口 1。
+.. 将控制器 B 端口 3d 通过电缆连接到磁盘架 3 IOMB 端口 2。
+
+
+
+
+完成磁盘架的布线后，布线应如下所示：
+
+image:../media/drw_ef50-ef80_3_de460c_cabling_ieops-2992.svg["将控制器通过线缆连接到 de460c 磁盘架 1 和 3"]
+
+--
+====
 .下一步是什么？
-对存储系统的控制器间镜像和主机连接进行缆线连接后，link:install-power-hardware.html["打开您的存储系统电源"]。
+为存储系统完成布线后，link:install-power-hardware.html["打开您的存储系统电源"]。

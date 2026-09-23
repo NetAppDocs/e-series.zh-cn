@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ef50, ef80, how to complete the controller replacement process 
 summary: 要完成 EF50 或 EF80 存储系统的控制器更换，请确保存储系统固件是最新的，验证卷是否已返回其所有者，收集系统支持数据，并将故障部件返回 NetApp。 
 ---
-= 完成控制器更换 - EF50 和 EF80
+= 完成 EF50 和 EF80 存储系统上的控制器更换
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

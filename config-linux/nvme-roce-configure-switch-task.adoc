@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: configure switch, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 您可以根据供应商针对 NVMe over RoCE 的建议配置交换机。这些建议可能包括配置指令以及代码更新。 
 ---
-= 在 E-Series - Linux（NVMe over RoCE）中配置交换机
+= 在 E 系列 Linux 环境中配置 NVMe over RoCE 交换机
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -35,7 +35,7 @@ CAUTION: *数据丢失的风险。*您必须在无损环境中运行 NVMe/RoCE�
 
 优先级流量控制 (PFC) 是一种更复杂的流量控制形式，它为不同类型的流量分配不同的优先级。当在一个优先级上接收到过多的流量时，它会暂停，同时允许与其他优先级对应的流量继续，帮助防止某些类型的大量流量减慢其他形式的流量。
 
-此时，您必须使用运行 11.80.1 的带有 200Gb/s 以太网 HIC（PN 111-04583）的 EF600 E-Series Array 或运行任何受支持的 NVMe/RoCE HIC 的 EF80 E-Series Array。PFC 参数在阵列上进行硬编码，并要求将 NVMe/RoCE 流量标记为优先级 3，DSCP 值为 `106`。
+此时，您必须使用运行 11.80.1 的带有 200Gb/s 以太网 HIC（PN 111-04583）的 EF600 E-Series Array 或运行任何受支持的 NVMe/RoCE HIC 的 EF80 E-Series Array。PFC 参数在阵列上进行硬编码，并要求将 NVMe/RoCE 流量标记为优先级 3，DSCP 值为 `26`。
 
 .步骤
 . 有关如何使用 PFC 值设置网络的详细信息，请参见交换机供应商文档。

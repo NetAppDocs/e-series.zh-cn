@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: EF300, EF300C, replace drive, drive failure 
 summary: 更换 EF300 阵列中的驱动器。 
 ---
-= 更换驱动器- EF300
+= 更换 EF300 阵列中的驱动器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -52,7 +52,7 @@ SANtricity System Manager 中的恢复 Guru 可监控存储阵列中的驱动器
 . 如果 SANtricity System Manager 中的恢复 Guru 已通知您驱动器出现 _ 即将发生故障 _ ，但驱动器尚未出现故障，请按照恢复 Guru 中的说明对驱动器进行故障转移。
 . 如果需要，请使用 SANtricity 系统管理器确认您有合适的替代驱动器。
 +
-.. 选择 * 硬件 * 。
+.. 选择菜单：Hardware[Drives]。
 .. 在磁盘架图中选择故障驱动器。
 .. 单击驱动器以显示其上下文菜单，然后选择 * 查看设置 * 。
 .. 确认替代驱动器的容量等于或大于要更换的驱动器，并且具有您期望的功能。
@@ -147,7 +147,7 @@ When you first insert a drive, its Attention LED might be on.However, the LED sh
 NOTE: 只有在技术支持或 Recovery Guru 指示执行此操作时，才能执行此操作。
 
 +
-.. 选择 * 硬件 * 。
+.. 选择菜单：Hardware[Drives]。
 .. 单击已更换的驱动器。
 .. 从驱动器的上下文菜单中，选择 * 重建 * 。
 .. 确认要执行此操作。
@@ -332,7 +332,7 @@ The green Activity LED for the replaced drive on the front of the drive drawer c
 NOTE: 只有在技术支持或 Recovery Guru 指示执行此操作时，才能执行此操作。
 
 +
-.. 选择 * 硬件 * 。
+.. 选择菜单：Hardware[Drives]。
 .. 单击已更换的驱动器。
 .. 从驱动器的上下文菜单中，选择 * 重建 * 。
 .. 确认要执行此操作。

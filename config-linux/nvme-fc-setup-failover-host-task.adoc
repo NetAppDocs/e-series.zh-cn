@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: failover, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 将主机配置为运行故障转移。 
 ---
-= 在E系列- Linux (基于FC的NVMe)中的主机上设置故障转移
+= 在 Linux 主机上为 E-Series 中的 NVMe over FC 设置故障转移
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -105,4 +105,58 @@ devices {
 
 
 
-NOTE: 对于 SLES 15、SLES 16、RHEL 9 和 RHEL 10，默认情况下启用原生 NVMe 多路径，无需额外配置。
+NOTE: 对于 RHEL 9 和 SLES 15，默认情况下，本机 NVMe 多路径处于启用状态，无需额外配置。
+
+
+
+[[configure-nvme-io-policy]]
+== 配置 NVMe I/O 策略
+
+.关于此任务
+Linux NVMe 本机多路径可能默认为 `numa` I/O 策略。对于 E 系列/EF 系列 NVMe-over-Fabrics 配置，建议的 I/O 策略是 `round-robin`，它在所有可用路径上均匀分配 I/O。
+
+.步骤
+. 验证当前 NVMe I/O 策略：
++
+[listing]
+----
+# cat /sys/module/nvme_core/parameters/iopolicy
+numa
+----
+. 使用以下方法之一设置 `round-robin` I/O 策略：
++
+** *持久（推荐）* — 创建 udev 规则文件：
++
+.<code>/etc/udev/rules.d/71-nvme-io-policy.rules</code>
+[listing]
+----
+ACTION=="add|change", SUBSYSTEM=="nvme-subsystem", ATTR{iopolicy}="round-robin"
+----
++
+然后重新加载并应用规则：
+
++
+[listing]
+----
+udevadm control --reload
+udevadm trigger --subsystem-match=nvme-subsystem
+----
+** *引导时的全局设置* — 将以下内核参数添加到引导加载程序配置中：
++
+[listing]
+----
+nvme_core.iopolicy=round-robin
+----
+** *非持久性（在线，无 I/O 中断）* — 立即应用，无需重新启动：
++
+[listing]
+----
+echo "round-robin" > /sys/class/nvme-subsystem/nvme-subsys0/iopolicy
+----
++
+
+NOTE: 此设置在重启后不会保留。
+
+
+
+

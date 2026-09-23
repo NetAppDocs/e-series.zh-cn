@@ -22,12 +22,12 @@ E 系列存储阵列提供多种配置和型号。
 * E4000 系列—入门级混合
 * EF600 系列—中端全闪存，全 NVMe
 * EF300 系列—入门级全闪存，全 NVMe
-* EF300C 系列—入门级全闪存，全 NVMe
-* EF600C 系列—中端全闪存，全 NVMe
-* E2800 系列—入门级混合
-* EF280 系列—入门级全闪存
-* E5700 系列—中端混合
-* EF570 系列—中端全闪存
+* EF300C 系列——入门级全闪存、高密度 NVMe
+* EF600C 系列——中端全闪存、高密度 NVMe
+* E2800 系列（已停止供货）-- 入门级混合
+* EF280 系列（已停止供货）-- 入门级全闪存
+* E5700 系列（停售）-- 中端混合型
+* EF570 系列（已停产）-- 中档全闪存
 
 
 
@@ -57,6 +57,10 @@ image::../media/ef50_2u_front.png[EF50 2U]
 ** 15.3 TB
 ** 30 TB
 ** 60 TB
++
+
+NOTE: 对于 30TB 和 60TB 驱动器，EF50 仅支持动态磁盘池使用，不支持传统 RAID。
+
 
 
 * 控制器机架中最多支持 24 个 NVMe SSD 驱动器。
@@ -65,6 +69,13 @@ image::../media/ef50_2u_front.png[EF50 2U]
 +
 
 NOTE: 配置 EF50 系统时，正确连接镜像电缆至关重要。有关详细信息，请参见 https://docs.netapp.com/us-en/e-series/install-hw-ef50-ef80/install-cable.html#step-1-cable-the-inter-controller-mirroring-connections["用缆线连接控制器间镜像连接 - EF50 和 EF80"]。
+
+* 支持可选的SAS扩展卡、允许SAS扩展架连接。
+* 如果在系统启动期间有足够的未分配驱动器，则会自动创建单个磁盘池。
+* 从 SANtricity 操作系统 12.10 开始，EF50 支持 3.8 TB、7.6 TB 和 15.3 TB 驱动器与 30 TB 和 60 TB 驱动器的混合。混合盘架中的这些驱动器将自动放置在单个磁盘池中，不支持 RAID。
++
+
+NOTE: 可以通过 SANtricity System Manager 或 SANtricity CLI 删除自动创建的磁盘池。有关详细信息，请参见 https://docs.netapp.com/us-en/e-series-cli/commands-a-z/delete-diskpool.html["删除磁盘池 - SANtricity CLI 指南"^]和 https://docs.netapp.com/us-en/e-series-santricity/sm-storage/delete-pool-or-volume-group.html["删除池或卷组 - SANtricity System Manager 指南"^]。
 
 
 
@@ -76,6 +87,7 @@ NOTE: 配置 EF50 系统时，正确连接镜像电缆至关重要。有关详�
 
 * 64Gb NVMe / 光纤通道
 * 64Gb 光纤通道
+* 25 GB iSCSI
 
 
 --
@@ -104,6 +116,10 @@ image::../media/ef80_2u_front.png[EF80 2U]
 ** 15.3 TB
 ** 30 TB
 ** 60 TB
++
+
+NOTE: 对于 30TB 和 60TB 驱动器，EF80 仅支持动态磁盘池使用，不支持传统 RAID。
+
 
 
 * 控制器机架中最多支持 24 个 NVMe SSD 驱动器。
@@ -113,6 +129,12 @@ image::../media/ef80_2u_front.png[EF80 2U]
 
 NOTE: 配置 EF80 系统时，正确连接镜像电缆至关重要。有关详细信息，请参见 https://docs.netapp.com/us-en/e-series/install-hw-ef50-ef80/install-cable.html#step-1-cable-the-inter-controller-mirroring-connections["用缆线连接控制器间镜像连接 - EF50 和 EF80"]。
 
+* 支持可选的SAS扩展卡、允许SAS扩展架连接。
++
+如果安装了 SAS 扩展卡，则用于主机连接的主机接口卡的最大数量限制为每个控制器两个。
+
+* 如果在系统启动期间有足够的未分配驱动器，则会自动创建单个磁盘池。
+* 从 SANtricity 操作系统 12.10 开始，EF80 支持 3.8 TB、7.6 TB 和 15.3 TB 驱动器与 30 TB 和 60 TB 驱动器的混合。混合盘架中的这些驱动器将自动放置在单个磁盘池中，不支持 RAID。+ 注意：可以通过 SANtricity System Manager 或 SANtricity CLI 删除自动创建的磁盘池。有关详细信息，请参见 https://docs.netapp.com/us-en/e-series-cli/commands-a-z/delete-diskpool.html["删除磁盘池 - SANtricity CLI 指南"^]和 https://docs.netapp.com/us-en/e-series-santricity/sm-storage/delete-pool-or-volume-group.html["删除池或卷组 - SANtricity System Manager 指南"^]。
 
 
 --
@@ -121,6 +143,7 @@ NOTE: 配置 EF80 系统时，正确连接镜像电缆至关重要。有关详�
 --
 可用于以下接口：
 
+* 200Gb NVMe / TCP
 * 200 GB NVMe/RoCE
 * 64Gb NVMe / 光纤通道
 * 200 GB NVMe/IB
@@ -162,6 +185,7 @@ image::../media/e4000_4u_front.png[E4000 4U.]
 --
 可用于以下接口：
 
+* 25 GB iSCSI
 * 12 GB SAS
 * 1Gb 或 10Gb Base-T iSCSI
 * 1 Gb、10 Gb或25 Gb iSCSI
@@ -250,7 +274,11 @@ image:../media/ef570_front.gif["EF600 2U."]
 ** 不支持扩展架配置。
 
 
-* 如果在系统启动期间没有足够的未分配驱动器、则会自动创建一个磁盘池。
+* 如果在系统启动期间有足够的未分配驱动器，则会自动创建单个磁盘池。
++
+
+NOTE: 可以通过 SANtricity System Manager 或 SANtricity CLI 删除自动创建的磁盘池。有关详细信息，请参见 https://docs.netapp.com/us-en/e-series-cli/commands-a-z/delete-diskpool.html["删除磁盘池 - SANtricity CLI 指南"^]和 https://docs.netapp.com/us-en/e-series-santricity/sm-storage/delete-pool-or-volume-group.html["删除池或卷组 - SANtricity System Manager 指南"^]。
+
 
 
 --
@@ -342,6 +370,10 @@ image:../media/ef570_front.gif["EF300 2U."]
 
 * 每个控制器支持一个主机接口卡。
 * 如果在系统启动期间没有足够的未分配驱动器、则会自动创建一个磁盘池。
++
+
+NOTE: 可以通过 SANtricity System Manager 或 SANtricity CLI 删除自动创建的磁盘池。有关详细信息，请参见 https://docs.netapp.com/us-en/e-series-cli/commands-a-z/delete-diskpool.html["删除磁盘池 - SANtricity CLI 指南"^]和 https://docs.netapp.com/us-en/e-series-santricity/sm-storage/delete-pool-or-volume-group.html["删除池或卷组 - SANtricity System Manager 指南"^]。
+
 
 
 --
@@ -363,7 +395,7 @@ image:../media/ef570_front.gif["EF300 2U."]
 
 
 --
-.E2800 型号
+.E2800 型号（EOA）
 --
 机架尺寸::
 +
@@ -405,7 +437,7 @@ image::../media/e2860_front.gif[E2800 4U]
 
 
 --
-.EF280 型号
+.EF280 型号（EOA）
 --
 机架尺寸::
 +
@@ -435,7 +467,7 @@ image:../media/ef570_front.gif["EF280 2U."]
 
 
 --
-.E5700 型号
+.E5700 型号（EOA）
 --
 机架尺寸::
 +
@@ -481,7 +513,7 @@ image::../media/e2860_front.gif[E5700 4U.]
 
 
 --
-.EF570 型号
+.EF570 型号（EOA）
 --
 机架尺寸::
 +

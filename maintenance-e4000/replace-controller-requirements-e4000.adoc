@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= 更换控制器的要求- E4000
+= E4000控制器更换要求
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

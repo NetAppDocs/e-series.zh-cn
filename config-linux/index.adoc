@@ -29,6 +29,7 @@ Linux 快速方法包括以下步骤。
 ** 基于 Infiniband 的 SRP
 ** 基于 Infiniband 的 NVMe
 ** 基于 RoCE 的 NVMe
+** 基于 TCP 的 NVMe
 ** 基于光纤通道的 NVMe
 
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= 再添加一个罐- E4000
+= 向 E4000 阵列添加第二个控制器箱
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -39,7 +39,7 @@ summary:
 . 找到控制器箱背面的 MAC 地址和 FRU 部件号标签。
 . 在 SANtricity 系统管理器中，找到已安装控制器箱的更换部件号。
 +
-.. 选择 * 硬件 * 。
+.. 选择菜单：Hardware[Controllers and components]。
 .. 找到标有控制器图标的控制器架。
 .. 单击控制器图标image:../media/sam1130_ss_hardware_controller_icon_maint-e2800.gif["控制器图标的GIF"]。
 .. 选择控制器，然后单击 * 下一步 * 。
@@ -324,7 +324,7 @@ NOTE: 使用 SANtricity 系统管理器安装新的 NVSRAM 文件时，必须安
 . 控制器重新启动后，可以选择在控制器 A 和新控制器 B 之间分布卷
 +
 .. 选择*存储›卷*。
-.. 从所有卷选项卡中，选择*更多›更改所有权*。
+.. 在"所有卷"选项卡中，选择 *ellipse icon › Change Ownership*。
 .. 在文本框中键入以下命令： `change ownership`
 +
 此时将启用更改所有权按钮。

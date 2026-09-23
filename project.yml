@@ -39,6 +39,7 @@ sidebar:
   - title: 安装硬件
     entries:
     - section: install-hw-ef50-ef80
+    - section: install-hw-e4000
     - title: EF300 和 EF600
       entries:
       - title: 概述
@@ -53,33 +54,34 @@ sidebar:
         url: "/install-hw-ef600/power-controller-shelves-task.html"
       - title: 完成存储系统设置
         url: "/install-hw-ef600/complete-setup-task.html"
-    - title: E2800 和 E5700
+    - title: 停用系统
       entries:
-      - title: 概述
-        url: "/install-hw-e2800-e5700/index.html"
-      - title: 安装过程
-        url: "/install-hw-e2800-e5700/install-setup-overview-concept.html"
-      - title: 安装和设置 60 个驱动器
+      - title: E2800 和 E5700
         entries:
-        - title: 准备安装
-          url: "/install-hw-e2800-e5700/e2860-e5760-prepare-task.html"
-        - title: 安装硬件
-          url: "/install-hw-e2800-e5700/e2860-e5760-install-hardware-task.html"
-        - title: 使用缆线架
-          url: "/install-hw-e2800-e5700/e2860-e5760-connect-cables-task.html"
-        - title: 完成存储系统设置
-          url: "/install-hw-e2800-e5700/e2860-e5760-complete-setup-task.html"
-      - title: 安装和设置 12 个和 24 个驱动器
-        entries:
-        - title: 准备安装
-          url: "/install-hw-e2800-e5700/e2824-e5724-prepare-task.html"
-        - title: 安装硬件
-          url: "/install-hw-e2800-e5700/e2824-e5724-install-hardware-task.html"
-        - title: 连接缆线
-          url: "/install-hw-e2800-e5700/e2824-e5724-connect-cables-task.html"
-        - title: 完成存储系统设置
-          url: "/install-hw-e2800-e5700/e2824-e5724-complete-setup-task.html"
-    - section: install-hw-e4000
+        - title: 概述
+          url: "/install-hw-e2800-e5700/index.html"
+        - title: 安装过程
+          url: "/install-hw-e2800-e5700/install-setup-overview-concept.html"
+        - title: 安装和设置 60 个驱动器
+          entries:
+          - title: 准备安装
+            url: "/install-hw-e2800-e5700/e2860-e5760-prepare-task.html"
+          - title: 安装硬件
+            url: "/install-hw-e2800-e5700/e2860-e5760-install-hardware-task.html"
+          - title: 使用缆线架
+            url: "/install-hw-e2800-e5700/e2860-e5760-connect-cables-task.html"
+          - title: 完成存储系统设置
+            url: "/install-hw-e2800-e5700/e2860-e5760-complete-setup-task.html"
+        - title: 安装和设置 12 个和 24 个驱动器
+          entries:
+          - title: 准备安装
+            url: "/install-hw-e2800-e5700/e2824-e5724-prepare-task.html"
+          - title: 安装硬件
+            url: "/install-hw-e2800-e5700/e2824-e5724-install-hardware-task.html"
+          - title: 连接缆线
+            url: "/install-hw-e2800-e5700/e2824-e5724-connect-cables-task.html"
+          - title: 完成存储系统设置
+            url: "/install-hw-e2800-e5700/e2824-e5724-complete-setup-task.html"
     - title: 3040 40U 机柜
       entries:
       - title: 概述
@@ -296,8 +298,6 @@ sidebar:
           url: "/config-linux/nvme-roce-verify-linux-config-support-task.html"
         - title: 使用 DHCP 配置 IP 地址
           url: "/config-linux/nvme-roce-configure-ip-address-dhcp-task.html"
-        - title: 安装 SANtricity 存储管理器
-          url: "/config-linux/nvme-roce-install-smcli-11-53-task.html"
         - title: 访问 SANtricity 系统管理器
           url: "/config-linux/nvme-roce-access-sam-setup-wizard-task.html"
         - title: 配置交换机
@@ -322,6 +322,36 @@ sidebar:
           url: "/config-linux/nvme-roce-create-filesystems-sles-15-task.html"
         - title: 适用于 Linux 的基于 RoCE 的 NVMe 工作表
           url: "/config-linux/nvme-roce-worksheet-for-concept.html"
+      - title: NVMe over TCP 设置
+        entries:
+        - title: 验证 Linux 配置
+          url: "/config-linux/nvme-tcp-verify-linux-config-support-task.html"
+        - title: 使用 DHCP 配置 IP 地址
+          url: "/config-linux/nvme-tcp-configure-ip-address-dhcp-task.html"
+        - title: 访问 SANtricity 系统管理器
+          url: "/config-linux/nvme-tcp-access-sam-setup-wizard-task.html"
+        - title: 配置交换机
+          url: "/config-linux/nvme-tcp-configure-switch-task.html"
+        - title: 在主机上设置 NVMe over TCP
+          url: "/config-linux/nvme-tcp-setup-host-side-task.html"
+        - title: 配置 NVMe 端口设置
+          url: "/config-linux/nvme-tcp-configure-storage-connections-task.html"
+        - title: 从主机连接到存储
+          url: "/config-linux/nvme-tcp-discover-connect-storage-host-task.html"
+        - title: 定义主机
+          url: "/config-linux/nvme-tcp-define-host-task.html"
+        - title: 分配卷
+          url: "/config-linux/nvme-tcp-assign-volume-task.html"
+        - title: 显示主机可见的卷
+          url: "/config-linux/nvme-tcp-display-volumes-visible-host-task.html"
+        - title: 在主机上设置故障转移
+          url: "/config-linux/nvme-tcp-setup-failover-host-task.html"
+        - title: 访问物理设备目标的 NVMe 卷
+          url: "/config-linux/nvme-tcp-access-physical-targets-concept.html"
+        - title: 创建文件系统
+          url: "/config-linux/nvme-tcp-create-filesystems-sles-15-task.html"
+        - title: 适用于 Linux 的 NVMe over TCP 工作表
+          url: "/config-linux/nvme-tcp-worksheet-for-concept.html"
       - title: 基于光纤通道的 NVMe 设置
         entries:
         - title: 验证 Linux 配置
@@ -374,14 +404,16 @@ sidebar:
         url: "/config-vmware/access-sam-setup-wizard-task.html"
       - title: 执行特定于 FC 的任务
         url: "/config-vmware/fc-perform-specific-task.html"
-      - title: 通过 FC 专用任务执行 NMVe
-        url: "/config-vmware/nmve-fc-perform-specific-task.html"
+      - title: 执行基于 RoCE 的 NVMe 特定任务
+        url: "/config-vmware/nvme-roce-perform-specific-task.html"
+      - title: 执行 NVMe over FC 特定任务
+        url: "/config-vmware/nvme-fc-perform-specific-task.html"
+      - title: 执行 NVMe over TCP 特定任务
+        url: "/config-vmware/nvme-tcp-perform-specific-task.html"
       - title: 执行 iSCSI 专用任务
         url: "/config-vmware/iscsi-perform-specific-task.html"
       - title: 执行 SAS 专用任务
         url: "/config-vmware/sas-perform-specific-task.html"
-      - title: 执行基于 RoCE 的 NVMe 特定任务
-        url: "/config-vmware/nvme-roce-perform-specific-task.html"
       - title: 发现主机上的存储
         url: "/config-vmware/discover-storage-host-task.html"
       - title: 在主机上配置存储
@@ -453,6 +485,7 @@ sidebar:
   - title: 维护系统
     entries:
     - section: maintenance-ef50-ef80
+    - section: maintenance-e4000
     - title: EF300 和 EF600
       pdf-filename: EF300-EF600 维护系统
       entries:
@@ -490,6 +523,8 @@ sidebar:
           url: "/maintenance-ef600/drives-replace-EF600-supertask-task.html"
         - title: 热添加驱动器架
           url: "/maintenance-ef600/drives-hotadd-drive-shelf-task.html"
+      - title: Drive drawer
+        url: "/maintenance-ef600/drive-drawer-de460c-replace.html"
       - title: 风扇
         pdf-filename: EF300-EF600 可保持风扇正常运行
         entries:
@@ -528,147 +563,148 @@ sidebar:
           url: "/maintenance-ef600/sas-overview-supertask-concept.html"
         - title: 添加 SAS 扩展卡
           url: "/maintenance-ef600/sas-add-supertask-task.html"
-    - title: E2800
-      pdf-filename: E2800 维护系统
+    - title: 停用系统
       entries:
-      - title: 概述
-        url: "/maintenance-e2800/index.html"
-      - title: 电池
-        pdf-filename: E2800 维护电池
+      - title: E2800
+        pdf-filename: E2800 维护系统
         entries:
-        - title: 概述和要求
-          url: "/maintenance-e2800/batteries-overview-requirements-concept.html"
-        - title: 准备更换电池
-          url: "/maintenance-e2800/batteries-prepare-replace-task.html"
-        - title: 拆下控制器箱
-          url: "/maintenance-e2800/batteries-remove-controller-canister-task.html"
-        - title: 取出故障电池
-          url: "/maintenance-e2800/batteries-remove-failed-task.html"
-        - title: 安装新电池
-          url: "/maintenance-e2800/batteries-install-new-task.html"
-        - title: 重新安装控制器箱
-          url: "/maintenance-e2800/batteries-reinstall-controller-canister-task.html"
-        - title: 完成电池更换
-          url: "/maintenance-e2800/batteries-complete-replacement-task.html"
-      - title: 控制器
-        pdf-filename: E2800 维护控制器
+        - title: 概述
+          url: "/maintenance-e2800/index.html"
+        - title: 电池
+          pdf-filename: E2800 维护电池
+          entries:
+          - title: 概述和要求
+            url: "/maintenance-e2800/batteries-overview-requirements-concept.html"
+          - title: 准备更换电池
+            url: "/maintenance-e2800/batteries-prepare-replace-task.html"
+          - title: 拆下控制器箱
+            url: "/maintenance-e2800/batteries-remove-controller-canister-task.html"
+          - title: 取出故障电池
+            url: "/maintenance-e2800/batteries-remove-failed-task.html"
+          - title: 安装新电池
+            url: "/maintenance-e2800/batteries-install-new-task.html"
+          - title: 重新安装控制器箱
+            url: "/maintenance-e2800/batteries-reinstall-controller-canister-task.html"
+          - title: 完成电池更换
+            url: "/maintenance-e2800/batteries-complete-replacement-task.html"
+        - title: 控制器
+          pdf-filename: E2800 维护控制器
+          entries:
+          - title: 概述和要求
+            url: "/maintenance-e2800/controllers-overview-supertask-concept.html"
+          - title: 添加第二个控制器箱
+            url: "/maintenance-e2800/controllers-second-add-task.html"
+          - title: 更换双工配置中的控制器
+            url: "/maintenance-e2800/controllers-duplex-supertask-task.html"
+          - title: 更换单工配置中的控制器
+            url: "/maintenance-e2800/controllers-simplex-supertask-task.html"
+        - title: 箱
+          pdf-filename: E2800 可维护箱
+          entries:
+          - title: 概述和要求
+            url: "/maintenance-e2800/canisters-overview-supertask-concept.html"
+          - title: 更换电源（ 12 个或 24 个驱动器）
+            url: "/maintenance-e2800/canisters-supply-supertask-task.html"
+          - title: 更换电源箱（ 60 个驱动器）
+            url: "/maintenance-e2800/canisters-60-replace-power-task.html"
+          - title: 更换风扇箱（ 60 个驱动器）
+            url: "/maintenance-e2800/canisters-fan-supertask-task.html"
+        - title: 驱动器
+          pdf-filename: E2800 维护驱动器
+          entries:
+          - title: 概述和要求
+            url: "/maintenance-e2800/drives-overview-supertask-concept.html"
+          - title: 更换驱动器（ 12 个或 24 个驱动器）
+            url: "/maintenance-e2800/drives-12-24-supertask-task.html"
+          - title: 更换驱动器（ 60 个驱动器）
+            url: "/maintenance-e2800/drives-60-replace-task.html"
+          - title: 更换驱动器抽盒（ 60 个驱动器）
+            url: "/maintenance-e2800/drives-60-supertask-task.html"
+          - title: 热添加驱动器架
+            url: "/maintenance-e2800/drives-hotadd-drive-shelf-task.html"
+        - title: 主机接口卡
+          pdf-filename: E2800 可维护 HIC
+          entries:
+          - title: 概述和要求
+            url: "/maintenance-e2800/hics-overview-supertask-concept.html"
+          - title: 添加主机接口卡
+            url: "/maintenance-e2800/hics-add-supertask-task.html"
+          - title: 升级主机接口卡
+            url: "/maintenance-e2800/hics-upgrade-supertask-task.html"
+          - title: 更换主机接口卡
+            url: "/maintenance-e2800/hics-replace-supertask-task.html"
+        - title: 主机端口协议转换
+          pdf-filename: E2800 转换主机协议
+          entries:
+          - title: 概述和要求
+            url: "/maintenance-e2800/hpp-overview-supertask-concept.html"
+          - title: 更改主机协议
+            url: "/maintenance-e2800/hpp-change-host-protocol-task.html"
+          - title: 完成主机协议转换
+            url: "/maintenance-e2800/hpp-complete-protocol-conversion-task.html"
+      - title: E5700
+        pdf-filename: E5700 维护系统
         entries:
-        - title: 概述和要求
-          url: "/maintenance-e2800/controllers-overview-supertask-concept.html"
-        - title: 添加第二个控制器箱
-          url: "/maintenance-e2800/controllers-second-add-task.html"
-        - title: 更换双工配置中的控制器
-          url: "/maintenance-e2800/controllers-duplex-supertask-task.html"
-        - title: 更换单工配置中的控制器
-          url: "/maintenance-e2800/controllers-simplex-supertask-task.html"
-      - title: 箱
-        pdf-filename: E2800 可维护箱
-        entries:
-        - title: 概述和要求
-          url: "/maintenance-e2800/canisters-overview-supertask-concept.html"
-        - title: 更换电源（ 12 个或 24 个驱动器）
-          url: "/maintenance-e2800/canisters-supply-supertask-task.html"
-        - title: 更换电源箱（ 60 个驱动器）
-          url: "/maintenance-e2800/canisters-60-replace-power-task.html"
-        - title: 更换风扇箱（ 60 个驱动器）
-          url: "/maintenance-e2800/canisters-fan-supertask-task.html"
-      - title: 驱动器
-        pdf-filename: E2800 维护驱动器
-        entries:
-        - title: 概述和要求
-          url: "/maintenance-e2800/drives-overview-supertask-concept.html"
-        - title: 更换驱动器（ 12 个或 24 个驱动器）
-          url: "/maintenance-e2800/drives-12-24-supertask-task.html"
-        - title: 更换驱动器（ 60 个驱动器）
-          url: "/maintenance-e2800/drives-60-replace-task.html"
-        - title: 更换驱动器抽盒（ 60 个驱动器）
-          url: "/maintenance-e2800/drives-60-supertask-task.html"
-        - title: 热添加驱动器架
-          url: "/maintenance-e2800/drives-hotadd-drive-shelf-task.html"
-      - title: 主机接口卡
-        pdf-filename: E2800 可维护 HIC
-        entries:
-        - title: 概述和要求
-          url: "/maintenance-e2800/hics-overview-supertask-concept.html"
-        - title: 添加主机接口卡
-          url: "/maintenance-e2800/hics-add-supertask-task.html"
-        - title: 升级主机接口卡
-          url: "/maintenance-e2800/hics-upgrade-supertask-task.html"
-        - title: 更换主机接口卡
-          url: "/maintenance-e2800/hics-replace-supertask-task.html"
-      - title: 主机端口协议转换
-        pdf-filename: E2800 转换主机协议
-        entries:
-        - title: 概述和要求
-          url: "/maintenance-e2800/hpp-overview-supertask-concept.html"
-        - title: 更改主机协议
-          url: "/maintenance-e2800/hpp-change-host-protocol-task.html"
-        - title: 完成主机协议转换
-          url: "/maintenance-e2800/hpp-complete-protocol-conversion-task.html"
-    - section: maintenance-e4000
-    - title: E5700
-      pdf-filename: E5700 维护系统
-      entries:
-      - title: 概述
-        url: "/maintenance-e5700/index.html"
-      - title: 电池
-        pdf-filename: E5700 可维护电池
-        entries:
-        - title: 概述和要求
-          url: "/maintenance-e5700/batteries-intro-concept.html"
-        - title: 更换电池
-          url: "/maintenance-e5700/batteries-replace-supertask-task.html"
-      - title: 控制器
-        pdf-filename: E5700 维护控制器
-        entries:
-        - title: 概述和要求
-          url: "/maintenance-e5700/controllers-overview-concept.html"
-        - title: 更换双工配置中的控制器
-          url: "/maintenance-e5700/controllers-duplex-supertask-task.html"
-      - title: 箱
-        pdf-filename: E5700 可维护箱
-        entries:
-        - title: 概述和要求
-          url: "/maintenance-e5700/canisters-overview-supertask-concept.html"
-        - title: 更换电源（ 24 个驱动器）
-          url: "/maintenance-e5700/canisters-supply-replace-task.html"
-        - title: 更换电源箱（ 60 个驱动器）
-          url: "/maintenance-e5700/canisters-power-supertask-task.html"
-        - title: 更换风扇箱（ 60 个驱动器）
-          url: "/maintenance-e5700/canisters-fan-replace-task.html"
-      - title: 驱动器
-        pdf-filename: E5700 维护驱动器
-        entries:
-        - title: 概述和要求
-          url: "/maintenance-e5700/drives-overview-supertask-concept.html"
-        - title: 更换驱动器（ 24 个驱动器）
-          url: "/maintenance-e5700/drives-24-supertask-task.html"
-        - title: 更换驱动器（ 60 个驱动器）
-          url: "/maintenance-e5700/drives-60-replace-task.html"
-        - title: 更换驱动器抽盒（ 60 个驱动器）
-          url: "/maintenance-e5700/drives-drawer-supertask-task.html"
-        - title: 热添加驱动器架
-          url: "/maintenance-e5700/drives-hotadd-drive-shelf-task.html"
-      - title: 主机接口卡
-        pdf-filename: E5700 可维护 HIC
-        entries:
-        - title: 概述和要求
-          url: "/maintenance-e5700/hics-overview-supertask-concept.html"
-        - title: 添加主机接口卡
-          url: "/maintenance-e5700/hics-add-supertask-task.html"
-        - title: 升级主机接口卡
-          url: "/maintenance-e5700/hics-upgrade-supertask-task.html"
-        - title: 更换主机接口卡
-          url: "/maintenance-e5700/hics-replace-supertask-task.html"
-      - title: 主机端口协议
-        pdf-filename: E5700 更改主机协议
-        entries:
-        - title: 概述和要求
-          url: "/maintenance-e5700/hpp-overview-supertask-concept.html"
-        - title: 更改主机协议
-          url: "/maintenance-e5700/hpp-change-host-protocol-task.html"
-        - title: 完成主机协议转换
-          url: "/maintenance-e5700/hpp-complete-protocol-conversion-task.html"
+        - title: 概述
+          url: "/maintenance-e5700/index.html"
+        - title: 电池
+          pdf-filename: E5700 可维护电池
+          entries:
+          - title: 概述和要求
+            url: "/maintenance-e5700/batteries-intro-concept.html"
+          - title: 更换电池
+            url: "/maintenance-e5700/batteries-replace-supertask-task.html"
+        - title: 控制器
+          pdf-filename: E5700 维护控制器
+          entries:
+          - title: 概述和要求
+            url: "/maintenance-e5700/controllers-overview-concept.html"
+          - title: 更换双工配置中的控制器
+            url: "/maintenance-e5700/controllers-duplex-supertask-task.html"
+        - title: 箱
+          pdf-filename: E5700 可维护箱
+          entries:
+          - title: 概述和要求
+            url: "/maintenance-e5700/canisters-overview-supertask-concept.html"
+          - title: 更换电源（ 24 个驱动器）
+            url: "/maintenance-e5700/canisters-supply-replace-task.html"
+          - title: 更换电源箱（ 60 个驱动器）
+            url: "/maintenance-e5700/canisters-power-supertask-task.html"
+          - title: 更换风扇箱（ 60 个驱动器）
+            url: "/maintenance-e5700/canisters-fan-replace-task.html"
+        - title: 驱动器
+          pdf-filename: E5700 维护驱动器
+          entries:
+          - title: 概述和要求
+            url: "/maintenance-e5700/drives-overview-supertask-concept.html"
+          - title: 更换驱动器（ 24 个驱动器）
+            url: "/maintenance-e5700/drives-24-supertask-task.html"
+          - title: 更换驱动器（ 60 个驱动器）
+            url: "/maintenance-e5700/drives-60-replace-task.html"
+          - title: 更换驱动器抽盒（ 60 个驱动器）
+            url: "/maintenance-e5700/drives-drawer-supertask-task.html"
+          - title: 热添加驱动器架
+            url: "/maintenance-e5700/drives-hotadd-drive-shelf-task.html"
+        - title: 主机接口卡
+          pdf-filename: E5700 可维护 HIC
+          entries:
+          - title: 概述和要求
+            url: "/maintenance-e5700/hics-overview-supertask-concept.html"
+          - title: 添加主机接口卡
+            url: "/maintenance-e5700/hics-add-supertask-task.html"
+          - title: 升级主机接口卡
+            url: "/maintenance-e5700/hics-upgrade-supertask-task.html"
+          - title: 更换主机接口卡
+            url: "/maintenance-e5700/hics-replace-supertask-task.html"
+        - title: 主机端口协议
+          pdf-filename: E5700 更改主机协议
+          entries:
+          - title: 概述和要求
+            url: "/maintenance-e5700/hpp-overview-supertask-concept.html"
+          - title: 更改主机协议
+            url: "/maintenance-e5700/hpp-change-host-protocol-task.html"
+          - title: 完成主机协议转换
+            url: "/maintenance-e5700/hpp-complete-protocol-conversion-task.html"
   - title: 管理存储
     url: "/manage-storage.html"
   - title: 使用 SANtricity 解决方案

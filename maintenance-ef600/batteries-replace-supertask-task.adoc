@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: replace battery, battery fail, EF300C, EF600C, EF300, EF600 
 summary: 更换 EF300 或 EF600 阵列中的电池。 
 ---
-= 更换电池- EF300和EF600
+= 更换EF300或EF600阵列中的电池
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -60,8 +60,7 @@ summary: 更换 EF300 或 EF600 阵列中的电池。
 
 . 如果控制器尚未脱机，请立即使用 SANtricity 系统管理器将其脱机。
 +
-.. 选择 * 硬件 * 。
-.. 如果图形显示了驱动器，请选择 * 显示磁盘架背面 * 以显示控制器。
+.. 选择菜单：Hardware[Controllers and components]。
 .. 选择要置于脱机状态的控制器。
 .. 从上下文菜单中，选择 * 置于脱机状态 * ，然后确认要执行此操作。
 +
@@ -194,8 +193,7 @@ image::../media/remove_controller_7.png[将控制器安装到磁盘架中]
 .步骤
 . 将控制器置于联机状态。
 +
-.. 在 System Manager 中，导航到硬件页面。
-.. 选择 * 显示控制器的背面 * 。
+.. 在 SANtricity System Manager 中，选择菜单：Hardware[Controllers and components]。
 .. 选择已更换电池的控制器。
 .. 从下拉列表中选择 * 置于联机状态 * 。
 

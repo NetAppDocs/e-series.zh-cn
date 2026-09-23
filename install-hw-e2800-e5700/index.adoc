@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2800, E5700, installation 
 summary: 安装和设置 E2800 或 E5700 阵列。 
 ---
-= 安装和设置- E2800和E5700存储系统
+= E2800 和 E5700 存储系统的安装和设置工作流程
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -14,6 +14,9 @@ summary: 安装和设置 E2800 或 E5700 阵列。
 了解如何安装和设置 E2800 或 E5700 存储系统。
 
 您可以选择以下格式之一来指导您完成新存储系统的安装和设置。
+
+
+NOTE: E2800 和 E5700 存储系统是已停产（EOA）的产品，不再可供购买，但仍受支持。本节中的信息仅供参考。
 
 * * PDF *
 +

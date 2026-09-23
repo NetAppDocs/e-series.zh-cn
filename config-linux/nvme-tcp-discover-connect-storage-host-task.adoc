@@ -1,0 +1,107 @@
+---
+permalink: config-linux/nvme-tcp-discover-connect-storage-host-task.html 
+sidebar: sidebar 
+keywords: discover storage, host, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 在 SANtricity System Manager 中定义每个主机之前，您必须先从主机发现目标控制器端口，然后建立 NVMe 连接。 
+---
+= 从 Linux 主机发现并连接到 E 系列存储
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在 SANtricity System Manager 中定义每个主机之前，您必须先从主机发现目标控制器端口，然后建立 NVMe 连接。
+
+.步骤
+. 使用以下命令验证是否可以从主机 ping 每个阵列 HIC 端口：
++
+[listing]
+----
+ping <IP of array HIC port>
+----
+. 使用以下命令发现 NVMe-oF 目标上所有路径的可用子系统：
++
+[listing]
+----
+nvme discover -t tcp -a target_ip_address
+----
++
+在此命令中， `target_ip_address` 是目标端口的 IP 地址。
+
++
+
+NOTE: `nvme discover` 命令可发现子系统中的所有控制器端口，而不管主机访问权限如何。
+
++
+[listing]
+----
+# nvme discover -t tcp -a 192.168.134.101
+Discovery Log Number of Records 12, Generation counter 0
+=====Discovery Log Entry 0======
+trtype:  tcp
+adrfam:  ipv6
+subtype: nvme subsystem
+treq:    not specified
+portid:  0
+trsvcid: 4420
+subnqn:  nqn.1992-08.com.netapp:EF80.6d039ea0005d29280000000069ddb538
+traddr:  fe80:0:0:0:200:ff:fe00:1
+eflags:  none
+sectype: none
+=====Discovery Log Entry 1======
+trtype:  tcp
+adrfam:  ipv6
+subtype: nvme subsystem
+treq:    not specified
+portid:  0
+trsvcid: 4420
+subnqn:  nqn.1992-08.com.netapp:EF80.6d039ea0005d29280000000069ddb538
+traddr:  fd23:0:0:0:192:168:131:101
+eflags:  none
+sectype: none
+----
+. 对于任何其他连接，请重复步骤 2。
+. 使用以下命令连接到第一个路径上发现的子系统： `nvme connect -t tcp -n discovered_sub_nqn -a target_ip_address -Q queue_depth_setting -l controller_loss_timeout_period`
++
+
+NOTE: 上面列出的命令不会在重新启动后继续存在。每次重新启动后都需要执行此  `nvme connect` 命令才能重新建立 NVMe 连接。
+
++
+
+NOTE: 未为主机无法访问的任何已发现端口建立连接。
+
++
+
+NOTE: 如果使用此命令指定端口号，则连接将失败。默认端口是为连接设置的唯一端口。
+
++
+
+NOTE: 默认情况下，队列深度设置为 `128`。请勿更改此默认值，因为 NVMe over TCP 要求队列深度为 `128`。
+
++
+[listing]
+----
+# nvme connect -t tcp -a 192.168.134.101 -n nqn.1992-08.com.netapp:EF80.6d039ea0005d29280000000069ddb538 -Q 128 -l 3600
+----
+. 对于任何其他连接，请重复步骤 4。
+. **可选** - 将主机设置为在每次启动时自动发现并连接到目标。
++
+.. 将步骤 2 和步骤 3 中的发现参数添加到 `/etc/nvme/discovery.conf`，使用以下过程和格式：
++
+[listing]
+----
+# echo "--transport=tcp --traddr=target_ip_address --trsvcid=4420" | sudo tee -a /etc/nvme/discovery.conf
+----
+.. 使用以下命令填充 `/etc/nvme/discovery.conf`文件后启用 nvmf-autoconnect 服务：
++
+[listing]
+----
+sudo systemctl enable nvmf-autoconnect.service
+----
+
+
+
+
+.下一步是什么？
+建立连接后，link:nvme-tcp-define-host-task.html["定义主机"]。

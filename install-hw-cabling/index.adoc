@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: cabling, cables, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C 
 summary: 使用缆线将主机直接连接到控制器或使用交换机。 
 ---
-= 为存储系统布线 - E-Series
+= 了解 E 系列存储系统的布线
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -75,4 +75,4 @@ E2760 ， E5660
 DE460C
 
 |===
-有关支持镜像功能的布线的信息，请参见 https://www.netapp.com/pdf.html?item=/media/17133-tr4656.pdf["《同步和异步镜像功能说明和部署指南》"^]。
+有关支持镜像功能的布线的信息，请参见 https://www.netapp.com/pdf.html?item=/media/19405-tr-4839.pdf["《同步和异步镜像功能说明和部署指南》"^]。

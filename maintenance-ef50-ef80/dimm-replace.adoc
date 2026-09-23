@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ef50, ef80, replace a dimm 
 summary: 更换 EF50 或 EF80 存储系统中的 DIMM，如果该 DIMM 出现故障、未处于最佳状态或容量不匹配。 
 ---
-= 更换 DIMM - EF50 和 EF80
+= 更换 EF50 和 EF80 存储系统中的 DIMM
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -2,16 +2,16 @@
 permalink: maintenance-ef50-ef80/io-module-upgrade.html 
 sidebar: sidebar 
 keywords: ef50, ef80, upgrade io module, upgrade hic, upgrade host interface card 
-summary: 您可以升级 EF50 或 EF80 存储系统中的 I/O 模块，以增加主机端口数量，从而增强网络连接，并扩展系统处理数据流量的能力。 
+summary: 您可以升级 EF50 或 EF80 存储系统中的 I/O 模块，以增加主机端口数量从而增强网络连接、扩展系统处理数据流量的能力，并连接 SAS 扩展架。 
 ---
-= 升级 I/O 模块 - EF50 和 EF80
+= 升级 EF50 或 EF80 存储系统中的 I/O 模块
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-您可以升级 EF50 或 EF80 存储系统中的 I/O 模块，以增加主机端口数量，从而增强网络连接，并扩展系统处理数据流量的能力。
+您可以升级 EF50 或 EF80 存储系统中的 I/O 模块，以增加主机端口数量从而增强网络连接、扩展系统处理数据流量的能力，并连接 SAS 扩展架。
 
 .关于此任务
 * 在此过程中，使用术语 _I/O 模块_ 代替主机接口卡 (HIC)。
@@ -32,24 +32,25 @@ summary: 您可以升级 EF50 或 EF80 存储系统中的 I/O 模块，以增加
 [[step-1-prepare-to-upgrade-io-modules]]
 == 第 1 步：准备升级 I/O 模块
 
-通过安排停机维护窗口、收集必要的工具和设备以及备份存储系统的配置数据库，准备升级 I/O 模块。
+通过安排停机维护窗口、更新固件、收集必要的工具和设备以及备份存储系统的配置数据库，准备升级 I/O 模块。
 
 .步骤
 . 为此程序安排停机维护窗口。在成功完成此过程之前，您无法访问存储系统上的数据。由于两个控制器在通电时必须具有相同的 I/O 模块配置，因此在升级 I/O 模块时必须关闭电源。
+. 将固件更新到最新版本。要更新固件，请按照 link:../upgrade-santricity/index.html["升级 SANtricity OS"^]
 . 确保您已具备以下条件：
 +
 ** 要升级的新 I/O 模块。
 +
-请确保存储系统支持要升级到的 I/O 模块，每个控制器的 I/O 模块类型和数量相同，并且了解插槽优先级（新 I/O 模块必须安装在每个控制器上的同一插槽中）。
+确保要升级到的 I/O 模块受您的存储系统和 SANtricity 版本支持，每个控制器的 I/O 模块类型和数量相同，并且了解插槽优先级（新 I/O 模块必须安装在每个控制器上的同一插槽中）。
+
++
+您可以在 https://hwu.netapp.com["NetApp Hardware Universe"^]确认存储系统支持的 I/O 模块和插槽优先级。
 
 +
 
 CAUTION: *可能丢失数据访问权限* -- 存在不兼容或不匹配的 I/O 模块会导致控制器在通电时锁定。
 
-+
-如果需要，您可以在  https://hwu.netapp.com["NetApp Hardware Universe"^] 确认存储系统支持的 I/O 模块和插槽优先级。
-
-** 用于将新 I/O 模块连接到网络的电缆。
+** 用于将新 I/O 模块连接到网络或 SAS 扩展架的电缆。
 ** 防静电腕带或您已采取其他防静电预防措施。
 ** 平坦、无静电的工作表面。
 ** 具有可访问控制器的 SANtricity System Manager 的浏览器的管理站。
@@ -151,7 +152,9 @@ image::../media/icon_round_1.png[标注编号 1]
 从要升级的 I/O 模块中拔下电缆（除非您有 I/O 空白模块），将 I/O 模块或 I/O 空白模块替换为新的 I/O 模块，然后对新的 I/O 模块进行电缆连接。
 
 .关于此任务
-从一个控制器开始，然后对另一个控制器重复步骤。
+* 从一个控制器开始，然后对另一个控制器重复步骤。
+* 该图显示从插槽 2 中卸下 I/O 模块。根据升级到的 I/O 模块类型，插槽可能会有所不同。
+
 
 .步骤
 . 如果您尚未接地，请正确接地。
@@ -195,9 +198,11 @@ image:../media/icon_round_2.png["标注编号 2"]
 .. 顺时针旋转指旋螺钉以拧紧。
 
 
-. 将 I/O 模块连接到主机网络。
+. 将 I/O 模块连接到主机网络或 SAS 扩展架。
 +
-您可以使用系统安装和设置内容中的 link:../install-hw-ef50-ef80/install-cable.html["为硬件布线"^] 部分进行主机网络布线。
+** 对于主机网络布线，您可以使用系统安装和设置内容中的link:../install-hw-ef50-ef80/install-cable.html["为硬件布线"^]部分进行主机网络布线。
+** 对于 SAS 扩展架布线，您可以使用link:../install-hw-cabling/hotadd-drive-shelf-task.html["在 E 系列存储系统中热添加驱动器架"^]过程。
+
 
 . 重复这些步骤以升级其他控制器中的 I/O 模块。
 
@@ -207,7 +212,7 @@ image:../media/icon_round_2.png["标注编号 2"]
 [[step-4-power-on-both-controllers]]
 == 步骤 4：打开两个控制器的电源
 
-打开两个控制器的电源。
+打开两个控制器的电源，检查控制器之间的通信是否已重新建立，然后确认控制器是否正常工作。
 
 .步骤
 . 插入两个控制器上的电源线。
@@ -297,3 +302,6 @@ NOTE: 如果您无法解决问题，请联系 https://www.netapp.com/company/con
 
 . 如果需要验证和更改主机 I/O 模块协议，请使用此过程xref:io-module-change-protocol.html[更改 EF50 或 EF80 的主机 I/O 模块协议]。
 
+
+.下一步
+将 I/O 模块升级到存储系统的过程已完成。您可以恢复正常操作。

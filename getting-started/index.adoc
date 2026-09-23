@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E-Series, eseries, E4000, E2800, E5700, EF300, EF600, E4000, EF300C, EF600C 
 summary: 此站点包含有关特定 E 系列版本，型号和组件的信息。 
 ---
-= 此站点包含的内容
+= 本 E-Series 文档中包含的内容
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

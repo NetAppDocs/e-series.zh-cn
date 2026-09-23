@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2800 maintenance, E2800 repair, replace E2800 components, replacing E2800 components, 
 summary: 对 E2800 组件执行维护。 
 ---
-= 维护硬件- E2800
+= 维护 E2800 存储系统的硬件
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -14,6 +14,9 @@ summary: 对 E2800 组件执行维护。
 您可能需要对硬件执行维护过程。本节介绍了维护E2800系统组件的具体步骤。
 
 本节中的过程假定E2800系统已部署在E系列环境中。
+
+
+NOTE: E2800 存储系统是已停产 (EOA) 的产品，不再可供购买，但仍受支持。本节中的信息仅供参考。
 
 
 

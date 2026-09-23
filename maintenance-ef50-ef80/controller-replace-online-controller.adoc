@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ef50, ef80, how to online the controller 
 summary: '为 EF50 或 EF80 存储系统安装更换控制器后，请确认更换控制器的 IP 地址，将控制器置于联机状态，并确认存储系统状态为"最佳"。' 
 ---
-= 在线更换控制器 - EF50 和 EF80
+= 在线更换 EF50 和 EF80 存储系统上的控制器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

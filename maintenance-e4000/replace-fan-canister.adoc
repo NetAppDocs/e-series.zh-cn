@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E4000 replace canister, replacing E4000 canister, E4000 replace fan, replacing E4000 fan, E4000, E-Series, eseries 
 summary: 查看E4000罐的类型和要求。 
 ---
-= 更换风扇箱- E4000 (60个驱动器)
+= 更换 E4000 60 驱动器架中的风扇箱
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -54,13 +54,12 @@ CAUTION: * 可能的设备损坏 * - 如果在打开电源的情况下执行此�
 
 . 在 SANtricity 系统管理器中，确定哪个风扇箱出现故障。
 +
-.. 选择 * 硬件 * 。
+.. 选择菜单：Hardware[Controllers and components]。
 .. 查看*磁盘架*下拉列表右侧的风扇image:../media/sam1130_ss_hardware_fan_icon_maint-e2800.gif["风扇图标"]图标、确定哪个磁盘架具有故障风扇箱。
 +
 如果组件发生故障，此图标将为红色。
 
-.. 当您找到带有红色图标的磁盘架时，请选择*控制器和组件*。
-.. 选择风扇箱或红色风扇图标。
+.. 当您找到带有红色图标的磁盘架时，请选择风扇箱或红色风扇图标。
 .. 在 * 风扇 * 选项卡上，查看风扇箱的状态以确定必须更换的风扇箱。
 +
 必须更换状态为 * 失败 * 的组件。

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: host protocol change, EF300, EF600, EF600C, EF300C 
 summary: 更改 EF300 或 EF600 阵列的主机端口协议。 
 ---
-= 更改主机协议—EF300和EF600
+= 更改 EF300 或 EF600 存储系统上的主机协议
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -35,7 +35,7 @@ image::../media/sam1130_ss_e2800_storage_array_profile_sn_smid_copy_maint-ef600.
 . 找到 * 功能包子型号 ID* 。
 +
 .. 在 SANtricity 系统管理器中，选择 * 支持 * 。
-.. 选择 *Support Resources* 图块。
+.. 选择*支持资源*选项卡。
 .. 在支持资源选项卡上，找到并选择 * 存储阵列配置文件 * 链接。
 .. 在文本框中键入 * 功能包子型号 ID* ，然后单击 * 查找 * 。
 .. 找到起始配置的功能包子型号 ID 。
@@ -669,8 +669,7 @@ image::../media/sam1130_ss_system_change_feature_pack_maint-ef600.gif[更改功�
 
 . 确认主机端口具有所需的协议。
 +
-.. 在 SANtricity 系统管理器中，选择 * 硬件 * 。
-.. 单击 * 显示磁盘架的背面 * 。
+.. 从 SANtricity System Manager 中，选择菜单：硬件[控制器和组件]。
 .. 选择控制器 A 或控制器 B 的图形
 .. 从上下文菜单中选择 * 查看设置 * 。
 .. 选择 * 主机接口 * 选项卡。

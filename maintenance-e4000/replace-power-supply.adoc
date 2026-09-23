@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E4000 replace canister, replacing E4000 canister, E4000 replace power supply, replacing E4000 power supply, E4000 replace fan, replacing E4000 fan, E4000, E-Series, eseries 
 summary: 查看E4000罐的类型和要求。 
 ---
-= 更换电源- E4000
+= 更换 E4000 存储系统中的电源
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -52,13 +52,12 @@ NOTE: 请勿混用不同电压类型的PSU。请始终像这样替换。
 您可以在 Recovery Guru 的 Details 区域中找到此信息，也可以查看为磁盘架显示的信息。
 
 +
-.. 选择 * 硬件 * 。
+.. 选择菜单：Hardware[Controllers and components]。
 .. 查看*Shelf*下拉列表右侧的电源image:../media/sam1130_ss_hardware_power_icon_maint-e2800.gif["电源图标"]和风扇image:../media/sam1130_ss_hardware_fan_icon_maint-e2800.gif["风扇图标"]图标，确定哪个磁盘架的电源出现故障。
 +
 如果组件出现故障，其中一个或两个图标将显示为红色。
 
-.. 当您找到带有红色图标的磁盘架时，请选择*控制器和组件*。
-.. 选择任一电源。
+.. 当您找到带有红色图标的磁盘架时，请选择其中一个电源。
 .. 在 * 电源 * 和 * 风扇 * 选项卡上，查看电源风扇箱，电源和风扇的状态，以确定必须更换的电源。
 +
 必须更换状态为 * 失败 * 的组件。

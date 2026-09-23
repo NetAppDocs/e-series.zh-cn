@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= 升级主机接口卡(HIC)- E4000
+= 升级 E4000 主机接口卡
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -88,7 +88,7 @@ CAUTION: * 可能的数据丢失 * - 如果在执行 I/O 操作时继续执行�
 +
 当需要将缓存数据写入驱动器时，每个控制器背面的绿色缓存活动 LED 亮起。您必须等待此 LED 关闭。
 
-. 从 SANtricity 系统管理器的主页页面中，选择 * 查看正在执行的操作 * 。等待所有操作完成，然后再继续下一步。
+. 从 SANtricity System Manager 的主页，选择菜单：Storage[Operations in Progress]。等待所有操作完成，然后继续下一步。
 . 关闭控制器架。
 +
 .. 标记并拔下控制器架上的两根电源线。

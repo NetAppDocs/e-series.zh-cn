@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: EF300, EF600, EF300C, EF600C, installation, power on, power cables 
 summary: 连接电源线并打开驱动器架的电源。 
 ---
-= 打开控制器架(EF300、EF600、EF300C和EF600C)的电源
+= 打开 EF300 或 EF600 存储系统的控制器架电源
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

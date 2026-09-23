@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: host port GUIDs, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 确定主机端口 GUID 。 
 ---
-= 确定E系列中的主机端口全局唯一ID - Linux (基于InfiniBand的NVMe)
+= 确定使用 NVMe over InfiniBand 的 E 系列 Linux 主机的主机端口 GUID
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

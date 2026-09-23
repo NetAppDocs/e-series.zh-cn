@@ -1,17 +1,17 @@
 ---
 permalink: config-vmware/index.html 
 sidebar: sidebar 
-keywords: express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
+keywords: express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, EF50, EF80, E4000, E-Series, eseries 
 summary: 对采用 E 系列系统的 VMware 主机使用快速配置。 
 ---
-= E系列中的VMware快速配置
+= E 系列 VMware 主机配置快速入门
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-用于安装存储阵列和访问 SANtricity System Manager 的 VMware 快速方法适用于为 E 系列存储系统设置独立的 VMware 主机。它旨在以最低的决策点尽快启动和运行存储系统。
+用于安装存储阵列和访问 SANtricity System Manager 的 VMware 快速方法适用于为配备 E 系列存储系统的独立 VMware 主机进行设置。它旨在以最少的决策点使存储系统尽快启动并运行。
 
 
 
@@ -22,11 +22,12 @@ summary: 对采用 E 系列系统的 VMware 主机使用快速配置。
 
 . 设置以下通信环境之一：
 +
-** link:nmve-fc-perform-specific-task.html["基于光纤通道的 NVMe"]
-** link:fc-perform-specific-task.html["Fibre Channel"]
+** link:nvme-fc-perform-specific-task.html["基于光纤通道的 NVMe"]
+** link:fc-perform-specific-task.html["Fibre Channel（光纤通道）(FCP)"]
 ** link:iscsi-perform-specific-task.html["iSCSI"]
 ** link:sas-perform-specific-task.html["（ SAS ）。"]
 ** link:nvme-roce-perform-specific-task.html["基于 RoCE 的 NVMe"]
+** link:nvme-tcp-perform-specific-task.html["基于 TCP 的 NVMe"]
 
 
 . 在存储阵列上创建逻辑卷。
@@ -42,7 +43,7 @@ summary: 对采用 E 系列系统的 VMware 主机使用快速配置。
 * https://kb.netapp.com/["NetApp 知识库"^] （文章数据库）—提供各种 NetApp 产品和技术的故障排除信息，常见问题解答和说明。
 * http://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^] —用于搜索符合 NetApp 指定标准和要求的 NetApp 产品和组件的配置。
 * https://www.netapp.com/pdf.html?item=/media/17017-tr4789.pdf["《 VMware E 系列 SANtricity iSCSI 与 ESXi 6.X 集成配置指南》"^] -- 提供有关 iSCSI 与 VMware 集成的技术详细信息。
-* https://configmax.broadcom.com/home["VMware 配置最大值"^]--介绍如何将虚拟和物理存储配置为不超过ESS/ESXi支持的最大值。
-* https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-9AEE5F4D-0CB8-4355-BF89-BB61C5F30C70.html["VMware NVMe 存储的要求和限制"^]。
-* https://docs.vmware.com/en/VMware-vSphere/index.html["VMware vSphere 文档"^] —提供了 ESXi vCenter Server 文档。
+* https://configmax.broadcom.com/guest["VMware 配置最大值"^] -- 描述如何配置虚拟和物理存储，使其保持在 ESX/ESXi 支持的最大允许范围内。
+* https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/about-vmware-nvme-storage/requirements-for-vmware-nvme-storage.html["VMware NVMe 存储的要求"^] -- NVMe over fabrics 特定配置要求。
+* https://techdocs.broadcom.com/["Broadcom 技术文档"^] -- VMware 云基础架构软件和 vSphere 技术文档。
 

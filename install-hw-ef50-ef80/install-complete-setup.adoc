@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: 打开 EF50 或 EF80 存储系统后，通过在每个控制器上布线和配置管理端口来完成系统设置，以进行带外存储系统管理，配置存储系统，然后验证主机 I/O 模块协议是否正确。 
 ---
-= 完成存储系统设置 - EF50 和 EF80
+= 完成 EF50 和 EF80 存储系统的存储系统设置
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

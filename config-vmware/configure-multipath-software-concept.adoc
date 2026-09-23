@@ -1,22 +1,55 @@
 ---
 permalink: config-vmware/configure-multipath-software-concept.html 
 sidebar: sidebar 
-keywords: multipath software for vmware, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
-summary: 配置 m 软件，以便在其中一个物理路径中断时提供指向存储阵列的冗余路径。 
+keywords: multipath software for vmware, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E4000, EF50, EF80, E-Series, eseries 
+summary: 配置多路径软件，以便在其中一个物理路径中断时提供指向存储阵列的冗余路径。 
 ---
-= 在E系列- VMware中配置多路径软件
+= E 系列中 VMware 主机的多路径工作原理
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-要为存储阵列提供冗余路径，您可以配置多路径软件。
+要提供到存储阵列的冗余路径，请配置多路径软件。
 
-如果某个物理路径中断，多路径软件可提供指向存储阵列的冗余路径。多路径软件为操作系统提供一个虚拟设备，该虚拟设备表示存储的活动物理路径。多路径软件还可管理更新虚拟设备的故障转移过程。对于 VMware ， NVMe/FC 使用高性能插件（ HPP ）。
+如果某个物理路径中断，多路径软件可提供指向存储阵列的冗余路径。多路径软件为操作系统提供一个虚拟设备，该虚拟设备表示存储的活动物理路径。多路径软件还可管理更新虚拟设备的故障转移过程。
 
-VMware 提供的插件（称为存储阵列类型插件（ SAARP ））仅适用于 FC ， iSCSI 和 SAS 协议，用于处理特定供应商` 存储阵列的故障转移实施。
 
-您应使用的 SATA 为 * 。 VMW_SAP_ALUA* 。
 
-有关详细信息，请参见 https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-DB5BC795-E4D9-4350-9C5D-12BB3C0E6D99.html["VMware SATA"^]。
+[[multipathing-policies]]
+== 多路径策略
+
+多路径策略的详细信息如下。对于 FCP、iSCSI 和 SAS 协议，默认为本机多路径插件 (NMP)。对于基于网络结构的 NVMe（基于 FC 的 NVMe、基于 RoCE 的 NVMe 以及基于 TCP 的 NVMe），默认值为高性能插件 (HPP)。
+
+
+
+[[native-multipathing-plug-ins-nmp]]
+=== 本机多路径插件(NMP)
+
+仅适用于 FCP、iSCSI 和 SAS 协议， https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/understanding-multipathing-and-failover-in-the-esxi-environment/vmware-multipathing-module.html["VMware 提供本机多路径插件 (NMP)"^]，称为存储阵列类型插件 (SATP)，用于处理特定供应商存储阵列的故障转移实施。
+
+您应该使用的 SATP 是 *VMW_SATP_ALUA*（这是 NetApp E 系列的默认选择）。有关详细信息，请参见 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/understanding-multipathing-and-failover-in-the-esxi-environment/vmware-satps.html["VMware SATA"^]。
+
+
+
+==== 路径选择插件和策略(PSP)
+
+这些插件是 VMware NMP 的子模块。NMP 根据设备类型为每个逻辑设备分配默认 PSP。您可以覆盖默认 PSP。有关详细信息，请参见 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/understanding-multipathing-and-failover-in-the-esxi-environment/viewing-and-managing-storage-paths-on-esxi-hosts/change-the-path-selection-policy.html["更改路径选择策略"^]。NMP 为 NetApp 设备分配 VMW_PSP_RR（Round Robin）的默认路径选择策略。这是推荐的 PSP。
+
+有关详细信息，请参见 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/understanding-multipathing-and-failover-in-the-esxi-environment/vmware-psps.html["VMware 路径选择插件和策略"^]。
+
+
+
+[[high-performance-plug-in-hpp]]
+=== 高性能插件（HPP）
+
+HPP 取代了高速设备（例如 NVMe）的 NMP。HPP 是声明 NVMe-oF 目标的默认插件。ESX 支持端到端 NVMe（无需仿真）以及 SCSI 到 NVMe 仿真。HPP 仅支持主动/主动和隐式 ALUA 目标。
+
+
+
+==== 路径选择方案（PSS）
+
+为了支持多路径，HPP 在为 I/O 请求选择物理路径时使用路径选择方案 (PSS)。HPP 声明的设备的默认方案是 LB-RR（负载平衡 - 轮询）。这是推荐的 PSS。
+
+有关 HPP 或 PSS 的更多信息，请参见 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/understanding-multipathing-and-failover-in-the-esxi-environment/vmware-hpp.html["VMware 高性能插件和路径选择方案"^]。

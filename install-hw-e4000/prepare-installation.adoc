@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= 准备安装—E4012和E4060
+= 准备安装 E4012 或 E4060 存储系统
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -14,7 +14,16 @@ summary:
 您必须对站点进行准备、以满足E4000系列存储系统的规格要求。
 
 .步骤
-. 在中创建帐户并注册硬件 http://mysupport.netapp.com/["NetApp 支持"^]。
+. 注册您的系统：
++
+
+NOTE: 您可以立即或稍后注册系统。稍后，在系统启动时，系统会提示您注册系统。
+
++
+.. 如果您还没有账号，请在 http://mysupport.netapp.com/["NetApp 支持"^]创建账号。
+.. 按照 NetApp 知识库文章 https://kb.netapp.com/nss/System_Registration/How_to_register_a_new_system_on_the_NetApp_Support_Site["如何注册新系统"^]中的说明注册您的系统。
+
+
 . 确保您收到的包装盒中有以下物品：
 +
 [role="tabbed-block"]

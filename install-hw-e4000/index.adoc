@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: 按照以下步骤安装和设置E4000存储系统。 
 ---
-= 安装和设置- E4000存储系统
+= E4000 存储系统的安装和设置工作流程
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

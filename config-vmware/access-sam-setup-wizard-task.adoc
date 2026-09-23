@@ -1,10 +1,10 @@
 ---
 permalink: config-vmware/access-sam-setup-wizard-task.html 
 sidebar: sidebar 
-keywords: access System Manager vmware, express vmware configuration,software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
+keywords: access System Manager vmware, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, EF50, EF80, E4000, E-Series, eseries 
 summary: 您可以使用 SANtricity 系统管理器中的设置向导配置存储阵列。 
 ---
-= 使用SANtricity系统管理器- VMware配置存储
+= 使用适用于 VMware 的 SANtricity System Manager 配置 E 系列存储
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -77,7 +77,7 @@ Safari
 
 . 在设置管理员密码和确认密码字段中输入管理员角色的 System Manager 密码，然后单击 * 设置密码 * 。
 +
-如果未配置池，卷组，工作负载或通知，则设置向导将启动。
+如果未配置任何池、卷组、工作负载或通知，则会启动设置向导。
 
 . 使用设置向导执行以下任务：
 +
@@ -91,6 +91,6 @@ Safari
 . 如果尚未创建卷，请转到菜单： Storage[ 卷 > 创建 > 卷 ] 创建一个卷。
 +
 
-NOTE: 对于 EF300 和 EF600 ，必须将块大小设置为 512 字节，以确保与 VMware 兼容。有关将卷设置为 512 字节的详细信息，请参见 SANtricity 系统管理器联机帮助。
+NOTE: 在使用 4096 字节驱动器时，必须将卷设置为使用 512 字节仿真（512e），以确保与 VMware 的兼容性。有关将卷设置为使用 512 字节仿真（512e）的详细信息，请参见 SANtricity System Manager 联机帮助。
 
 

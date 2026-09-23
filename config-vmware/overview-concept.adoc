@@ -1,10 +1,10 @@
 ---
 permalink: config-vmware/overview-concept.html 
 sidebar: sidebar 
-keywords: express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
+keywords: express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, EF50, EF80, E4000, E-Series, eseries 
 summary: 查看使用快速方法设置 E 系列阵列和 VMware 主机的要求。 
 ---
-= 假设(E系列和VMware)
+= E 系列的 VMware Express 配置假设
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -64,12 +64,13 @@ IP 地址
  a| 
 * 您不会使用共享卷。
 * 您将创建池，而不是卷组。
+* 在使用 4096 字节驱动器时，必须将卷设置为使用 512 字节仿真（512e），以确保与 VMware 的兼容性。有关将卷设置为使用 512 字节仿真（512e）的详细信息，请参见 SANtricity System Manager 联机帮助。
 
 
 
 
  a| 
-协议： FC
+协议：光纤通道 (FCP)
  a| 
 * 您已建立所有主机端 FC 连接并激活交换机分区。
 * 您正在使用 NetApp 支持的 FC HBA 和交换机。
@@ -102,6 +103,26 @@ IP 地址
  a| 
 * 您正在使用 NetApp 支持的 SAS HBA 。
 * 您正在使用中列出的 SAS HBA 驱动程序和固件版本 http://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]。
+
+
+
+
+ a| 
+协议：基于 RoCE 的 NVMe（基于融合以太网的 RDMA）
+ a| 
+* 您正在使用支持RDMA流量的以太网交换机
+* 已使用基于差分服务代码点(DSCP)的优先级流量控制(PFC)为无损网络配置以太网交换机
+* 您正在使用 http://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]中列出的 RDMA 驱动程序和固件版本。
+
+
+
+
+ a| 
+协议：NVMe over TCP
+ a| 
+* 您正在使用支持TCP流量的以太网交换机
+* 您已根据供应商对 TCP 的建议配置以太网交换机。
+* 您正在使用 http://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]中列出的网络驱动程序和固件版本。
 
 
 |===

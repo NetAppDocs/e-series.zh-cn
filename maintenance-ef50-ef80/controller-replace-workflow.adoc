@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ef50, ef80, replace the controller workflow 
 summary: 您可以通过满足存储系统要求、准备系统、将受损控制器置于离线状态、更换控制器、将新控制器置于在线状态以及完成更换过程来更换 EF50 或 EF80 存储系统中的受损控制器。 
 ---
-= 控制器更换工作流程 - EF50 和 EF80
+= EF50 和 EF80 存储系统的控制器更换工作流程
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

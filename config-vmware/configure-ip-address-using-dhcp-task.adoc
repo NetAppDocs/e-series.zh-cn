@@ -1,10 +1,10 @@
 ---
 permalink: config-vmware/configure-ip-address-using-dhcp-task.html 
 sidebar: sidebar 
-keywords: IP address, DHCP, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
-summary: 使用动态主机配置协议（ dhcp ）以 VMware 快速方法提供 IP 地址。 
+keywords: IP address, DHCP, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, EF50, EF80, E4000, E-Series, eseries 
+summary: '使用动态主机配置协议 (DHCP) 在 VMware Express 方法中提供 IP 地址。' 
 ---
-= 在E系列中使用DHCP配置IP地址- VMware
+= 在适用于 VMware 的 E 系列中使用 DHCP 配置 IP 地址
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

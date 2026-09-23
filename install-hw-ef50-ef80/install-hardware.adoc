@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: 准备安装 EF50 或 EF80 存储系统后，将机架安装硬件安装在机柜或电信机架中，然后安装并固定您的存储系统。 
 ---
-= 安装硬件 - EF50 和 EF80
+= 安装 EF50 和 EF80 存储系统的硬件
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

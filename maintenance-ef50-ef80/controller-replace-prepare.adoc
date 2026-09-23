@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ef50, ef80, prepare the impaired controller 
 summary: 通过打开替换控制器的包装，确认其部件号正确，并备份配置数据库，准备替换 EF50 或 EF80 存储系统中受损的控制器。 
 ---
-= 准备更换控制器 - EF50 和 EF80
+= 准备更换 EF50 和 EF80 存储系统上的控制器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E4000 replace drive, replacing E4000 drive, E4000 replace drive, replacing E4000 drive, E4000, E-Series, eseries 
 summary: 将 E4000 中的驱动器更换为 12 驱动器或 24 驱动器磁盘架。 
 ---
-= 热添加驱动器架- IOM12或IOM12B模块- E4000
+= 热添加带有 IOM12 或 IOM12B 模块的 E4000 驱动器架
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -65,7 +65,7 @@ NOTE: 如果在过去两到三周内发生未解决的严重事件，请停止�
 
 . 如果已将IOM连接到硬件、请完成以下步骤。否则、请转至<<step2_install_drive_shelf,第2步：安装驱动器架并接通电源。>>
 +
-.. 选择 * 硬件 * 。
+.. 选择菜单：Hardware[Controllers and components]。
 .. 选择 * IOM （ ESM ） * 图标。
 +
 image::../media/sam1130_ss_hardware_iom_icon.gif[IOM icon]
@@ -122,7 +122,7 @@ NOTE: 有关物理安装和电源布线的完整操作步骤，请参见适用�
 +
 image::../media/hot_e4000_cabling_1.png[用缆线连接驱动器架]
 
-. 在 SANtricity 系统管理器中，单击 * 硬件 * 。
+. 在 SANtricity System Manager 中，选择菜单：Hardware[Controllers and components]。
 +
 
 NOTE: 此时，在操作步骤中，您只有一条指向控制器架的活动路径。
@@ -168,7 +168,7 @@ NOTE: 最佳状态表示已解决与新驱动器架相关的冗余丢失错误�
 .步骤
 . 在 SANtricity 系统管理器中，单击 * 主页 * 。
 . 如果页面中央顶部显示标记为 * 从问题中恢复 * 的链接，请单击该链接，然后解决 Recovery Guru 中指示的任何问题。
-. 在 SANtricity 系统管理器中，单击 * 硬件 * ，然后根据需要向下滚动以查看新添加的驱动器架。
+. 在 SANtricity System Manager 中，选择菜单：硬件[控制器和组件]，然后根据需要向下滚动，以查看新添加的驱动器架。
 . 对于先前安装在其他存储系统中的驱动器，请一次向新安装的驱动器架添加一个驱动器。请等待识别每个驱动器，然后再插入下一个驱动器。
 +
 存储系统识别驱动器后， * 硬件 * 页面中的驱动器插槽表示为蓝色方框。

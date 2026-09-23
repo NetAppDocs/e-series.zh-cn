@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: define Linux host, configure linux host, express linux configuration, linux host, 
 summary: 您可以使用 SANtricity 系统管理器定义向存储阵列发送数据的主机。定义主机是让存储阵列知道连接了哪些主机并允许对卷进行 I/O 访问所需的步骤之一。 
 ---
-= 使用SANtricity系统管理器创建主机—Linux (基于RoCE的NVMe)
+= 在 Linux 上为 NVMe over RoCE 创建 E 系列主机
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -29,6 +29,7 @@ summary: 您可以使用 SANtricity 系统管理器定义向存储阵列发送�
 +
 此时将显示创建主机对话框。
 
+. 单击 *+Add Host Port* 以访问主机端口字段并添加主机的主机端口标识符。您可以添加一个或多个主机端口标识符以与主机关联。
 . 根据需要选择主机设置。
 +
 |===

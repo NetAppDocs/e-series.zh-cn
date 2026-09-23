@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2800 battery fail, E2800 battery, E2800 battery replacement, replace E2800 battery, replacing E2800 battery, E2800, E-Series, eseries 
 summary: 查看 E2800 电池更换要求和注意事项。 
 ---
-= 更换电池的要求- E2800
+= E2800 存储系统的电池更换要求
 :allow-uri-read: 
 :experimental: 
 :icons: font

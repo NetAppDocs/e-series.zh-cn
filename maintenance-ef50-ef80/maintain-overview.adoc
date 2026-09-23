@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ef50, ef80 maintenance, maintenance, repairing ef50, ef80, replace ef50, ef80 components 
 summary: 维护 EF50 或 EF80 存储系统的硬件，以确保长期可靠性和最佳性能。执行定期维护任务，例如更换故障组件，因为这有助于防止停机和数据丢失。 
 ---
-= 维护程序概述 - EF50 和 EF80
+= 了解 EF50 和 EF80 存储系统的维护程序
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -44,6 +44,13 @@ link:dimm-replace.html["DIMM"]
 link:drive-replace.html["驱动器"]
  a| 
 驱动器是提供数据所需的物理存储的设备。
+
+
+
+ a| 
+link:drive-drawer-de460c-replace.html["Drive drawer"]
+ a| 
+驱动器抽屉是 DE460C 驱动器架中五个组件之一，最多可容纳 12 个驱动器。
 
 
 

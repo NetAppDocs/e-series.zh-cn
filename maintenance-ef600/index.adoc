@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: EF300 maintenance, EF600 maintenance, repairing EF300, repairing EF600, EF600C, EF300C replace EF300 components, replace EF600 components 
 summary: 维护 EF300 和 EF600 硬件 
 ---
-= 维护硬件- EF300和EF600
+= EF300 和 EF600 系统的硬件维护
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -51,6 +51,13 @@ https://docs.netapp.com/us-en/e-series/maintenance-ef600/dimms-overview-supertas
 https://docs.netapp.com/us-en/e-series/maintenance-ef600/drives-overview-supertask-concept.html["驱动器"]
  a| 
 驱动器是为数据提供物理存储介质的设备。
+
+
+
+ a| 
+link:drive-drawer-de460c-replace.html["Drive drawer"]
+ a| 
+驱动器抽屉是 DE460C 驱动器架中五个组件之一，最多可容纳 12 个驱动器。
 
 
 

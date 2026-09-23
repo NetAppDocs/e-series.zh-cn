@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: host protocol change, EF50, EF80 
 summary: 当您需要在现有 I/O 模块上使用不同的协议时，作为 I/O 模块升级的一部分，或者当新存储系统安装或控制器升级中新控制器上的默认协议不是您想要的协议时，您可以在 EF50 或 EF80 存储系统中更改主机 I/O 模块上的协议。 
 ---
-= 更改主机 I/O 模块协议 - EF50 和 EF80
+= 更改 EF50 或 EF80 系统中的主机 I/O 模块协议
 :allow-uri-read: 
 :experimental: 
 :icons: font

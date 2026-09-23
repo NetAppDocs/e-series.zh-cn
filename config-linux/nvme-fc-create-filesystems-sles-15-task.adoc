@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: file systems, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 对于 RHEL 8 和 SLES 15 ，您可以在原生 NVMe 设备上创建文件系统并挂载文件系统。 
 ---
-= 在 E 系列 Linux RHEL 8、RHEL 9、RHEL 10、SLES 15 和 SLES 16 中创建文件系统（NVMe over FC）
+= 在适用于 RHEL 8、RHEL 9 和 SLES 15 NVMe over FC 主机的 E 系列卷上创建文件系统
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

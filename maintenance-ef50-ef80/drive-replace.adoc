@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ef50, ef80, replace the drives 
 summary: 当驱动器出现故障或需要升级时，请更换 EF50 或 EF80 存储系统中的驱动器。 
 ---
-= 更换驱动器 - EF50 和 EF80
+= 更换 EF50 和 EF80 存储系统中的驱动器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

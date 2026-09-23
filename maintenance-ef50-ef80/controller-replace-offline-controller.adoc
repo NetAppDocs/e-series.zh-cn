@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ef50, ef80, offline the impaired controller 
 summary: 将受损的控制器在 EF50 或 EF80 存储系统中离线，以防止数据丢失，并确保更换控制器时的系统稳定性。 
 ---
-= 使受损控制器脱机 - EF50 和 EF80
+= 使 EF50 和 EF80 存储系统上的受损控制器脱机
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

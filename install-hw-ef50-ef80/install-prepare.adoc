@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: 准备安装 EF50 或 EF80 存储系统时，请准备好站点，了解存储系统的吊装注意事项，打开包装箱，将内容与装箱单进行比较，并注册存储系统以获得支持优势。 
 ---
-= 准备安装 - EF50 和 EF80
+= 准备安装 EF50 或 EF80 存储系统
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -21,10 +21,10 @@ summary: 准备安装 EF50 或 EF80 存储系统时，请准备好站点，了�
 确保计划使用的站点和机柜或机架符合您的存储系统的规格。
 
 .步骤
-. 使用  https://hwu.netapp.com["NetApp Hardware Universe"^] 确认您的站点是否满足存储系统的环境和电气要求。
+. 使用 link:https://hwu.netapp.com["NetApp Hardware Universe"^] 确认您的站点是否符合存储系统的环境和电气要求。
 . 请确保您的存储系统和任何交换机有足够的机柜或机架空间。
 +
-如果需要，请参阅  https://hwu.netapp.com["NetApp Hardware Universe"^] 以了解存储系统的确切尺寸。
+如果需要，请参阅 link:https://hwu.netapp.com["NetApp Hardware Universe"^] 以了解存储系统的确切尺寸。
 
 +
 ** 2U 用于存储系统
@@ -81,7 +81,7 @@ NOTE: 如果有任何差异，请将其记录下来，以便采取进一步行�
 以下项目是您可能会在框中看到的一些内容。
 
 +
-如果需要，请参见 https://hwu.netapp.com/["NetApp Hardware Universe"^]以了解其他支持的电缆并确定其用途。
+如果需要，请参见link:https://hwu.netapp.com["NetApp Hardware Universe"^]以了解其他支持的电缆，并确定其用途。
 
 +
 [cols="9,9,5"]
@@ -114,9 +114,12 @@ NOTE: 如果有任何差异，请将其记录下来，以便采取进一步行�
 
 在确保您的站点符合您的存储系统规格，并且您已验证您拥有所订购的所有部件后，您应注册您的存储系统。
 
-. 在中创建帐户并注册硬件 http://mysupport.netapp.com/["NetApp 支持"^]。
+
+NOTE: 您可以立即或稍后注册存储系统。稍后，在系统启动时，系统会提示您注册系统。
+
+. 记下每个控制器的序列号(SN)。
 +
-注册过程需要每个控制器的序列号 (SN)。您可以在以下位置找到序列号：
+您可以在以下位置找到序列号：
 
 +
 ** 在每个控制器上
@@ -127,6 +130,8 @@ image::../media/drw_ef50-ef80_sn_label_ieops-2689.svg[序列号标签示例]
 
 
 
+. 如果您还没有账号，请在 http://mysupport.netapp.com/["NetApp 支持"^]创建账号。
+. 按照 NetApp 知识库文章 https://kb.netapp.com/nss/System_Registration/How_to_register_a_new_system_on_the_NetApp_Support_Site["如何注册新系统"^]中的说明注册您的系统。
 
 
 .下一步是什么？

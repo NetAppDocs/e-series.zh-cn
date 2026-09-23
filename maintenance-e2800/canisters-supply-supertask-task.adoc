@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2800 replace 12-drive power supply, E2800 replace 24-drive power supply, replacing E2800 power supply, E2800, E-Series, eseries 
 summary: 更换 E2800 12 驱动器或 24 驱动器控制器架或驱动器架，其中包括两个具有集成风扇的电源。 
 ---
-= 更换电源- E2800 (12驱动器或24驱动器)
+= 更换 E2800 12 驱动器或 24 驱动器架上的电源
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -62,7 +62,7 @@ summary: 更换 E2800 12 驱动器或 24 驱动器控制器架或驱动器架，
 
 +
 .. 选择 * 硬件 * 。
-.. 查看*Shelf*下拉列表右侧的电源image:../media/sam1130_ss_hardware_power_icon_maint-e2800.gif["电源图标"]和风扇image:../media/sam1130_ss_hardware_fan_icon_maint-e2800.gif["'风扇图标\""]图标，确定哪个磁盘架的电源出现故障。
+.. 查看 *Shelf* 下拉列表右侧的电源 image:../media/sam1130_ss_hardware_power_icon_maint-e2800.gif["电源图标"] 和风扇 image:../media/sam1130_ss_hardware_fan_icon_maint-e2800.gif["风扇图标"] 图标，以确定哪个磁盘架的电源出现故障。
 +
 如果组件出现故障，其中一个或两个图标将显示为红色。
 

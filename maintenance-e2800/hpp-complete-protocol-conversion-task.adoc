@@ -1,10 +1,10 @@
 ---
 permalink: maintenance-e2800/hpp-complete-protocol-conversion-task.html 
 sidebar: sidebar 
-keywords: 'E2800 convert host port protocol, convert E2800 FC iSCSI, Fibre Channel protocol, iSCSI protocol, convert HPP, converting host port protocol, SFP+ (optical) host ports, E2800, E-Series, eseries' 
+keywords: E2800 convert host port protocol, convert E2800 FC iSCSI, Fibre Channel protocol, iSCSI protocol, convert HPP, converting host port protocol, SFP optical host ports, E2800, E-Series, eseries 
 summary: 完成 E2800 阵列的主机端口协议转换。 
 ---
-= 完成主机协议转换—E2800
+= 完成 E2800 阵列的主机协议转换
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -29,6 +29,7 @@ summary: 完成 E2800 阵列的主机端口协议转换。
 您应根据供应商针对 iSCSI 的建议配置用于传输 iSCSI 流量的交换机。这些建议可能包括配置指令以及代码更新。
 
 . 在 SANtricity 系统管理器中，选择菜单：硬件 [ 配置 iSCSI 端口 ] 。
+. 单击开关并选择*Configure iSCSI ports*。
 . 选择端口设置。
 +
 您可以通过多种方式设置 iSCSI 网络。有关为您的环境选择最佳配置的提示，请咨询您的网络管理员。

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 使用 Windows 快速配置工作流。 
 ---
-= 了解E系列中的Windows工作流
+= E-Series 的 Windows 配置工作流程
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

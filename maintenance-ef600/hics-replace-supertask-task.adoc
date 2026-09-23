@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: replace EF300 HIC, replace EF600 HIC, host interface card failed, HIC failure 
 summary: 更换发生故障的 EF300 或 EF600 主机接口卡（ HIC ）。 
 ---
-= 更换发生故障的主机接口卡(HIC)- EF300或EF600
+= 更换EF300或EF600存储系统中出现故障的HIC
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -16,6 +16,9 @@ summary: 更换发生故障的 EF300 或 EF600 主机接口卡（ HIC ）。
 
 .关于此任务
 更换故障的 HIC 时，您必须使一个控制器离线，使系统处于非冗余状态，更换 HIC，并使控制器恢复在线。
+
+
+NOTE: 更换相同协议类型的 HIC 时，无需关闭 EF300 和 EF600 存储阵列（例如，用另一个光纤通道 HIC 替换光纤通道 HIC）。
 
 .开始之前
 * 请查看 link:hics-overview-supertask-concept.html["EF300 或 EF600 HIC 升级的要求"]。
@@ -262,7 +265,7 @@ NOTE: 如果无法解决此问题，请联系技术支持。
 
 . 验证所有卷是否均已返回到首选所有者。
 +
-.. 选择菜单： Storage[Volumes] 。在 * 所有卷 * 页面中，验证卷是否已分发到其首选所有者。选择菜单：更多 [ 更改所有权 ] 以查看卷所有者。
+.. 选择菜单：Storage[Volumes]。从*所有卷*页面，验证是否已将卷分发给其首选所有者。选择*省略号图标* > *更改所有权*以查看卷所有者。
 .. 如果卷全部归首选所有者所有，请继续执行步骤 6 。
 .. 如果未返回任何卷，则必须手动返回这些卷。转到菜单：更多 [ 重新分配卷 ] 。
 .. 如果在自动分发或手动分发后，只有部分卷返回给其首选所有者，则必须检查 Recovery Guru 以了解主机连接问题。

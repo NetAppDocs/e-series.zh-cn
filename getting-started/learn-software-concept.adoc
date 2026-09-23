@@ -1,10 +1,10 @@
 ---
 permalink: getting-started/learn-software-concept.html 
 sidebar: sidebar 
-keywords: E-Series, eseries, E4000, E2800, E5700, EF300, EF600, SANtricity, E-Series software, E-Series user interface 
+keywords: E-Series, eseries, E4000, EF80, EF50, EF300, EF600, SANtricity, E-Series software, E-Series user interface 
 summary: E 系列系统包括用于存储配置和其他任务的 SANtricity 软件。 
 ---
-= 了解SANtricity软件
+= 了解适用于 E 系列的 SANtricity 软件
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -96,7 +96,7 @@ image:../media/sam1130_icon_support.gif["支持"]*支持*
 [[santricity-unified-manager]]
 == SANtricity 统一管理器
 
-Unified Manager 是基于 Web 的软件，用于管理整个域。从中央视图中，您可以查看所有较新 E-Series 和 EF-Series 阵列的状态，例如 EF50、EF80、E4000、E2800、EF280、EF300、E5700、EF570、EF600、EF300C 和 EF600C。您还可以在选定的存储阵列上执行批处理操作。
+Unified Manager 是基于 Web 的软件，用于管理整个域。从中央视图中，您可以查看所有较新的 E 系列和 EF 系列阵列的状态，例如 EF50、EF80、E4000、EF300、EF600、EF300C 和 EF600C。您还可以对选定的存储阵列执行批处理操作。
 
 Unified Manager 与 Web 服务代理一起安装在管理服务器上。要访问 Unified Manager ，请打开浏览器并输入指向安装了 Web 服务代理的服务器的 URL 。
 

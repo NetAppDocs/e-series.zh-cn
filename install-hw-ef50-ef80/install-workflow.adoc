@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: 要安装和设置 EF50 或 EF80 存储系统，必须准备好站点，安装并连接硬件组件，打开存储系统的电源，并完成存储系统设置和配置。 
 ---
-= 安装和设置 - EF50 和 EF80
+= EF50 和 EF80 存储系统的安装和设置工作流程
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -23,11 +23,11 @@ summary: 要安装和设置 EF50 或 EF80 存储系统，必须准备好站点�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三个"]link:install-cable.html["为硬件布线"]
 [role="quick-margin-para"]
-要连接硬件，请将控制器彼此连接以启用控制器间镜像，这可确保完整的系统冗余，并用于缓存镜像和 I/O 传输，然后将控制器连接到主机网络。
+要连接硬件，请将控制器相互连接以启用控制器间镜像，这可确保完整的系统冗余，并用于缓存镜像和 I/O 传输，然后将控制器连接到主机网络，如果适用，再连接 SAS 扩展架。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四个"]link:install-power-hardware.html["打开存储系统电源"]
 [role="quick-margin-para"]
-要为您的存储系统供电，请将电源线插入每个控制器电源，然后将它们连接到不同电路上的电源
+要打开存储系统的电源，请打开磁盘架电源并分配磁盘架 ID（如果适用），然后打开控制器电源。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五个"]link:install-complete-setup.html["完成存储系统设置"]
 [role="quick-margin-para"]
