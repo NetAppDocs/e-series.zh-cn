@@ -17,7 +17,7 @@ summary: 将控制器架中的每个控制器连接到驱动器架中的 I/O 模
 * 此过程适用于 IOM12、IOM12B 和 IOM12C 驱动器架。
 +
 
-NOTE: 只有SANtricity OS 11.70.2及更高版本才支持IOM12C模块。在安装或升级到IOM12C之前、请确保已更新控制器的固件。
+NOTE: IOM12C 模块仅在 SANtricity OS 11.90R3 及更高版本上受支持。在安装或升级到IOM12C之前、请确保已更新控制器的固件。
 
 * 如果要使用缆线将旧控制器架连接到 DE212C ， DE224C 或 DE460 ，请参见 https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057["将 IOM 驱动器架添加到现有 E27XX ， E56XX 或 EF560 控制器架"^]。
 * 如果要在新系统安装过程中将 EF50 或 EF80 存储系统缆线连接到 SAS 扩展盘架，请参阅link:../install-hw-ef50-ef80/install-cable.html["用缆线连接 EF50 和 EF80 存储系统的硬件"]过程。

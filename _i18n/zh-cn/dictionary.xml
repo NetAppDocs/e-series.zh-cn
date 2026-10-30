@@ -9112,7 +9112,6 @@
   <block id="dce708315880727f8ba7e84bab86b168" category="paragraph">此过程适用于 IOM12、IOM12B 和 IOM12C 驱动器架。</block>
   <block id="3f457ff9c17714d64ba75fd9d6d618f2" category="admonition">IOM12C 模块仅在 SANtricity OS 11.90R3 及更高版本上受支持。在安装或升级到IOM12C之前、请确保已更新控制器的固件。</block>
   <block id="8d93e2013316d1241b304432f0103be5" category="admonition">此操作步骤 适用于同类磁盘架 IOM 热插拔或更换。这意味着，您只能将 IOM12 模块更换为另一个 IOM12 模块，或者将 IOM12C 模块更换为另一个 IOM12C 模块。（您的磁盘架可以有两个 IOM12 模块，也可以有两个 IOM12C 模块。）</block>
-  <block id="e0f75caa67759a6c5e34cbad6ae84d57" category="admonition">只有SANtricity OS 11.70.2及更高版本才支持IOM12C模块。在安装或升级到IOM12C之前、请确保已更新控制器的固件。</block>
   <block id="bbfd15448c83d50ee0a4a62cc152d856" category="paragraph"><block ref="bbfd15448c83d50ee0a4a62cc152d856" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f7178ecd56d859f9f7e4878779a236ea" category="paragraph"><block ref="f7178ecd56d859f9f7e4878779a236ea" category="inline-image-macro-rx" type="image"></block></block>
   <block id="949ca69f081f10e2fc1938e0e24759c8" category="paragraph"><block ref="949ca69f081f10e2fc1938e0e24759c8" category="inline-image-macro-rx" type="image"></block></block>
@@ -10797,7 +10796,6 @@
   <block id="63caec46d73c7fc7cfb31576f03448b3" category="list-text">添加软件 NVMe over TCP 适配器。</block>
   <block id="38e873b40f9f1fadf5b58bb3e7881a0a" category="paragraph">有关详细信息，请参见<block ref="83ec1ea21d3b4612b4378c8e0322370e" category="inline-link-macro-rx"></block>。</block>
   <block id="35364a0d878a8e2835e056f68bbe94ca" category="list-text">为基于 TCP 的 NVMe 添加 NVMe 控制器。</block>
-  <block id="85711dc46edb07fe18d562b7bd2afd62" category="paragraph">有关详细信息，请参见<block ref="138a9b696f8791e3b3cb78426f306288" category="inline-link-macro-rx"></block>。</block>
   <block id="6ffa0472c7a35ad33e212ebdffd65a85" category="paragraph">在此示例中，NVMe over TCP 目标 IP 地址为 192.29.11.111。</block>
   <block id="6ecdef344e2ba5fc1740960e5ecc14b7" category="list-text">从每个主机的启动器地址（用于 NVMe over TCP 的主机以太网端口的 IP 地址）向每个控制器 NVMe over TCP 端口发出<block ref="bb8dcb7aca9e5a9c6d0064e07e54900b" prefix=" " category="inline-code"></block>命令。在配置中的每个主机服务器上执行此操作，并根据需要更改 IP 地址。</block>
   <block id="ef85308abea9690943da10064f1e07e0" category="list-text">如果步骤 5 发现失败，请返回 NVMe over TCP 主机端网络配置过程以完成添加目标控制器。</block>
@@ -11180,4 +11178,5 @@
   <block id="1994aa7db9e9fad5a648e62ba534a9a8" category="sidebar">适用于 Linux 的 NVMe over TCP 工作表</block>
   <block id="13b5a4ce04bdd18c6dbe66e0aff43c56" category="sidebar">执行 NVMe over FC 特定任务</block>
   <block id="12100775087ee0a5c3fb85e5dbaf178d" category="sidebar">执行 NVMe over TCP 特定任务</block>
+  <block id="7baca5088011490565ae0a1cf6125785" category="paragraph">有关详细信息，请参见 <block ref="540ffd17fd5ec0a460640b11d1bd0a3b" category="inline-link-macro-rx"></block>。</block>
 </blocks>

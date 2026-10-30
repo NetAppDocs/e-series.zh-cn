@@ -211,7 +211,7 @@ MTU 大小（通过单击显示更多端口设置可用。）
 
 . 为基于 TCP 的 NVMe 添加 NVMe 控制器。
 +
-有关详细信息，请参见link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/about-vmware-nvme-storage/configuring-nvme-over-tcp-on-esxi/shared-content/submaps/GUID-23E6D699-BEDC-4B5F-9515-3390C0E73888_copy.html["添加基于网络结构的 NVMe 控制器"^]。
+有关详细信息，请参见 link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/about-vmware-nvme-storage/configuring-nvme-over-tcp-on-esxi.html["添加基于网络结构的 NVMe 控制器"^]。
 
 
 
