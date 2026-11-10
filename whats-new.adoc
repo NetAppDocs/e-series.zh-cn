@@ -16,6 +16,13 @@ summary: SANtricity OS 中的新增功能。
 
 
 
+[[new-features-in-version-12-10r1]]
+== 版本 12.10R1 中的新增功能
+
+此版本仅包含小的更改，没有新功能。有关此版本中更改的更多信息，请参见 E-Series SANtricity 操作系统 12.10R1 README。
+
+
+
 [[new-features-in-version-12-10]]
 == 版本 12.10 中的新增功能
 

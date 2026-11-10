@@ -11179,4 +11179,6 @@
   <block id="13b5a4ce04bdd18c6dbe66e0aff43c56" category="sidebar">执行 NVMe over FC 特定任务</block>
   <block id="12100775087ee0a5c3fb85e5dbaf178d" category="sidebar">执行 NVMe over TCP 特定任务</block>
   <block id="7baca5088011490565ae0a1cf6125785" category="paragraph">有关详细信息，请参见 <block ref="540ffd17fd5ec0a460640b11d1bd0a3b" category="inline-link-macro-rx"></block>。</block>
+  <block id="712baff1701c605dfc39f4e5da7d934e" category="section-title">版本 12.10R1 中的新增功能</block>
+  <block id="9bee6f4318d6dc6bfd57ef5376da8437" category="paragraph">此版本仅包含小的更改，没有新功能。有关此版本中更改的更多信息，请参见 E-Series SANtricity 操作系统 12.10R1 README。</block>
 </blocks>
